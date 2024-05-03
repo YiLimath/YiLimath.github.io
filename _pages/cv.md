@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Ph.D in Birational Geometry and Complex Geometry, WuHan University, 2023 
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Artifical Intelligence and Automation, HuaZhong University of Science and Technology, 2015
 
 
 Publications
@@ -33,6 +33,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
