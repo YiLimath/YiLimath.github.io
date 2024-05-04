@@ -1,6 +1,6 @@
 ---
-title: 'Future Blog Post'
-date: 2199-01-01
+title: 'Boundedness of pluricanonical maps of varieties of general type reading notes'
+date: 2024-05-04
 permalink: /posts/2012/08/blog-post-4/
 tags:
   - cool posts
