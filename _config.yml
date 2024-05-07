@@ -21,7 +21,7 @@ repository               : "YiLimath/YiLimath.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Photo.png"
+  avatar           : "profile.png"
   name             : "Yi Li"
   pronouns         : # example: "she/her"  
   bio              : "I am a first year PhD student majoring in birational geometry"
