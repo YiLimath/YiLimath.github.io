@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yi Li's Homepage"
+title                    : "Li Yi's Homepage"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -22,7 +22,7 @@ repository               : "YiLimath/YiLimath.github.io"
 author:
   # Biographic information
   avatar           : "Photo.png"
-  name             : "Yi Li"
+  name             : "Li Yi"
   pronouns         : # example: "she/her"  
   bio              : "I am a second year PhD student majoring in birational geometry"
   location         : "WuHan, China"
