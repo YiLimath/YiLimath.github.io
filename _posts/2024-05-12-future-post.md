@@ -1,0 +1,247 @@
+---
+title: 'Non Kahler Hodge decomposition'
+date: 2024-05-12
+tags:
+  - Hodge theory
+  - Complex Geometry
+---
+
+
+# 0. Overview
+
+In this post we will study the Hodge decomposition on non Kahler manifold. We'll start in Section 1. by establishing some fundamental concepts essential for delving into the study of non-Kähler Hodge decomposition. Following this, we'll have a brief overview on Hodge to de Rham spectral sequence, we'll show its degeneration at the $E_1$ page if and only if the differential is strict; note that a vanishing $d_1$ does not necessitate implies $E_1$ degeneration. In Section 2. we will discuss the formal Hodge decomposition, it has three equivalent characterizations and we will prove they are equivalent. In Section 3. we distinct the non natural and natural Hodge structure. In Section 4. we will show two characterizations of ddbar manifold, the first one says that a compact complex manifold is ddbar iff the Hodge to deRham spectral sequence degenerate at $E_1$-page and the formal Hodge decomposition holds. The second characterization says that a compact complex manifold is ddbar iff the it carries a natural Hodge decomposition. In the last section, we will prove a interesting result due to Demailly that a complex manifold carries a strong Hodge decomposition as long as its modification is. As a direct consequence Moishezon manifold and Fujiki manifold possess a strong Hodge decomposition.
+
+# 1. Basic definitions
+
+## Truncated filtration on the space differential forms
+
+The truncated filtration will be essential in what follows: we define $$\text{Fil}^p A^h(X)=\bigoplus_{i=p}^h A^{i, h-i}(X)$$
+
+There is another filtration defined to be 
+
+$${ }^{\prime \prime} \text{Fil}^q A^h(X)=\bigoplus_{j=q}^h A^{h-j, j}(X)$$
+
+
+## Induced filtration on the deRham cohomology
+
+The filtration on the differential will induce a truncated filtration on the deRham cohomology
+$$\text{Fil}^pH^h(X) = \frac{\ker d^h \cap \text{Fil}^p A^h(X)}{\text{im} d^{h-1} \cap \text{Fil}^p A^h(X)}$$
+
+
+## Conjugation relation
+By definition easy to see the following conjugation relations
+We have 
+
+$$\overline{A^{q, p}(X)}=A^{p, q}(X)$$
+
+and therefore
+
+$$\overline{\text{Fil}^q A^h(X)}={ }^{\prime \prime} \text{Fil}^q A^h(X)$$
+
+As a consequence we also has 
+
+$$\overline{\text{Fil}^q H^h(X)}={ }^{\prime \prime} \text{Fil}^q H^h(X) .$$
+
+
+## Formal (p,q)-cohomology and Dolbeault (p,q)-cohomology
+
+We can define the $H^{p,q}(X)$ using the filtration defined above as 
+
+$$H^{p,q}(X) : = \text{Fil}^pH^h(X)\cap \overline{\text{Fil}^qH^h(X)}$$
+
+Caveat. Note that in general it's not true that $H^{p,q}(X)\cong H^{p,q}_\bar{\partial}(X)$, we will see later that it's true when the truncated filtration defines a Hodge filtration.
+
+## Definition Hodge filtration and formal Hodge decomposition
+
+Now we can define the central object 
+
+
+Definition. Let $X$ be a complex manifold, the formal Hodge decomposition is defined to be $$H^h(X, \mathbb{C})=\bigoplus_{p+q=k}  H^{p, q}, \text { with } \quad H^{p, q}=F^p\left(H^k\right) \cap \overline{F^q\left(H^k\right)}$$
+And we call the filtration $(\text{Fil}^p H^h(X))$ is a Hodge filtration of weight $h$.
+
+The formal Hodge decomposition has the following equivalent characterization:
+
+Theorem. 
+Let $\left(\text{Fil}^p H^h(X)\right)$ be the filtration as above then the following are equivalent:
+(1) $(\text{Fil}^pH^h(X))$ is a Hodge filtration of weight $h$ and defines a formal Hodge decomposition i.e. 
+
+$$H^h(X, \mathbb{C})=\bigoplus_{p+q=k}  H^{p, q}, \text { with } \quad H^{p, q}=	\text{Fil}^p\left(H^k\right) \cap \overline{	\text{Fil}^q\left(H^k\right)}$$
+
+
+(2) 
+
+$$
+H^h(X)=\text{Fil}^p H^h(X) \oplus \overline{\text{Fil}^q H^h(X)} \quad \text { for every }(p, q) \text { with } p+q=h+1 .
+$$
+
+(3) The natural homomorphism 
+
+$$\bigoplus_{p' \ge p}H^{p',h-p'}(X)\to \text{Fil}^pH^h(X)$$
+
+is bijective for all $p$.
+
+Moreover, if this is the case, there is a canonical isomorphism
+$$
+\text{Fil}^p H^h(X) \cap \overline{\text{Fil}^q H^h(X)} \simeq\text{Gr}^p H^h(X) \quad \text { for every }(p, q) \text { with } p+q=h,
+$$
+where $\text{Gr}^p H^h(X)=\text{Fil}^p H^h(X) /\text{Fil}^{p+1} H^h(X)$.
+
+Proof of equivalence between (1) and (2).
+
+It's easy to prove the equivalence 
+
+$$H^h(X)=\text{Fil}^p H^h(X) \oplus \overline{{Fil}^q H^h(X)} \quad \text { for every }(p, q) \text { with } p+q=h+1 .$$
+
+iff
+
+$$H^h(X, \mathbb{C})=\bigoplus_{p+q=k}  H^{p, q}, \text { with } \quad H^{p, q}=F^p\left(H^k\right) \cap \overline{F^q\left(H^k\right)}$$
+
+
+For $c \in \text{Fil}^p H^h$ we denote by $[c]^p$ its class in $\text{Gr}^p H^h$. We define a morphism
+
+$$
+\text{Fil}^p H^h \cap \overline{\text{Fil}^q H^h} \longrightarrow \text{Gr}^p H^h \quad \text { by } c \mapsto[c]^p
+$$
+
+and show that it is an isomorphism. For the surjectivity, take $[c]^p \in\text{Gr}^p H^h, c \in\text{Fil}^p H^h$. Then we may write uniquely $c=\sum_{i=0}^h c^{i, h-i}$ with $c^{i, h-i} \in\text{Fil}^i H^h \cap \overline{\text{Fil}^{h-i} H^h}$. We have $[c]^p=\left[c^{\prime}\right]^p, c^{\prime}=\sum_{i=0}^p c^{i, h-i}$. 
+
+Since $\sum_{i=p+1}^h c^{i, h-i} \in\text{Fil}^{p+1} H^h \subset\text{Fil}^p H^h$, we have $c^{\prime} \in\text{Fil}^p H^h$. On the other hand, $c^{\prime}$ is also in and $c^{\prime} \mapsto[c]^p$. For the injectivity, take $c \in\text{Fil}^p H^h \cap \overline{\text{Fil}^q H^h}$ such that $[c]^p=0$. This means that $c \in\text{Fil}^{p+1} H^h \cap \overline{F^q H^h}=0$.
+
+## Definition Hodge structure and natural Hodge structure
+
+We say that $X$ admits a Hodge structure of weight $h$, if there exist isomorphisms
+$$
+H_{\bar{\partial}}^{p, q}(X) \simeq \overline{H_{\bar{\partial}}^{q, p}(X)}, p+q=h, \quad \text { and } \quad H^h(X) \simeq \bigoplus_{p+q=h} H_{\bar{\partial}}^{p, q}(X) .
+$$
+
+Remark. Hodge structure defined above is simply a dimensional constraint, since any two finite dimensional vector spaces with same dimension should (non canonical) isomorphic to each other.
+
+A Hodge structure as above is said to be natural, if the following conditions hold:
+(H1) Every class in $H_{\bar{\partial}}^{p, q}(X), p+q=h$, admits a representative $\omega$ with $\partial \omega=0$ and $\bar{\partial} \omega=0$, i.e., $d \omega=0$. Moreover, the assignment $\omega \mapsto \bar{\omega}$ induces the first isomorphism above.
+(H2) Every class in $H^h(X)$ admits a representative $\omega$ which may be written $\omega=\sum_{p+q=h} \omega^{p, q}$, where $\omega^{p, q}$ is a $(p, q)$-form with $d \omega^{p, q}=0$ (i.e. lies in the cohomology class). Moreover, the assignment $$\begin{align}H^h(X)& \to \bigoplus_{p+q = h}H^{p,q}(X)\\\omega &\mapsto\left(\omega^{p, q}\right)_{p+q=h}\end{align}$$ induces the second isomorphism above.
+
+
+Remark. One needs to check the map $\omega \mapsto \bar{\omega}$ is defined on the level of differential form, to descend it on the cohomology level one needs to check that the map sends cocycle to cocycle and coboundary to coboundary.
+
+Remark. There exist some complex manifold that admits non natural Hodge structure.
+
+
+
+# Degeneration of the Hodge to deRham spectral sequence
+
+## $E_0$ and $E_1$ page of the Hodge to deRham spectral sequence
+
+For the Hodge to deRham S.S. (or F.S.S) the $E_0$ page is defined to be:
+$$\boxed{E_0^{p, q}(X)=\text{Gr}_p \mathcal{A}^{p+q}(X, \mathbb{C})=\frac{\text{Fil}^p \mathcal{A}^{p+q}(X, \mathbb{C})}{\text{Fil}^{p+1} \mathcal{A}^{p+q}(X, \mathbb{C})}=\mathcal{A}^{p, q}(X, \mathbb{C}) \text { and } d_0=\bar{\partial} \text {; }}$$
+where $\text{Fil}^p \mathcal{A}^k(X, \mathbb{C}):=\bigoplus_{i \geq p} \mathcal{A}^{i, k-i}(X) \subset \mathcal{A}^k(X, \mathbb{C})$ and $p\le \min\{k,n\}$ and $k\le 2n$.
+
+Therefore based on the definition of $E_0$ page the $E_1$ page should be Dolbeault cohomology that is 
+$$\boxed{E^{p,q}_1(X) = H^{p,q}_{\bar{\partial}}(X),\ \text{and } d_1 =[\partial]}$$
+
+The Hodge to deRham sequence converge in the sense 
+
+$$E_1^{p,q}: = H^{p,q}_{\bar{\partial}}(X)\Longrightarrow H^{p+q}_{dR}(X,\mathbb{C})$$
+
+with the filtraction on $H^k_{dR}(X,\mathbb{C})$ the one that contructed just above. 
+
+## A criterion for $E_1$ degeneration
+Let $K$ be a complex with a biregular filtration
+$F$. The following conditions are equivalent:
+i) The spectral sequence defined by $F$ degenerates at rank $1\left(E_1=E_{\infty}\right)$
+ii) The morphism $H^i\left(F^p(K)\right) \rightarrow F^p H^i(K)$ is an isomorphism for all $p$.
+iii) The differentials $d: K^i \rightarrow K^{i+1}$ are strictly compatible with the filtrations. (i.e., every exact form which is a sum of terms of types $(p, q),(p+1, q-1), \ldots,(p+q, 0)$ can be written as $d \beta$ where $\beta$ is decomposable into types $(p, q-1), \ldots,(p+q-1,0)$.)
+
+
+## Example Iwasawa manifold that does not has E1 degeneration but differential of E2 vanish
+
+Kodaira showed that for compact complex surfaces $d_1$ is always zero and the first example with $d_1 \neq 0$ was the Iwasawa manifold: consider the nilpotent complex Lie group
+
+and the discrete cocompat subgroup $\Gamma:=G \cap \mathrm{Gl}(3, \mathbb{Z}[i]) \subset G$. Then $X:=G / \Gamma$ is a complex parallelisable nilmanifold such that $E_1 ¥ E_2=E_{\infty}$. Later it was shown that for such manifold we have always $d_2=0$.
+
+## Hodge to deRham spectral sequence can be arbitrary non-degenerate
+Theorem - For every $n \geq 2$ there exist a complex $4 n$ - 2-dimensional compact complex manifold $X_n$ such that the Frölicher spectral sequence does not degenerate at the $E_n$ term, i.e., $d_n \neq 0$.
+
+## Vanishing of differential at $E_1$ page may not implies $E_1$ page degenerate
+There exists a compact complex manifold $N$ of complex dimension 3 such that $E_1^{p, q}(N) \equiv E_2^{p, q}(N)$ for all $p$ and $q$, and $E_2^{0,2}(N) \neq E_3^{0.2}(N)$.
+
+
+# Natural Hodge structure
+
+Definition. We say that $X$ admits a Hodge structure of weight $h$, if there exist isomorphisms
+$$
+H_{\bar{\partial}}^{p, q}(X) \simeq \overline{H_{\bar{\partial}}^{q, p}(X)}, p+q=h, \quad \text { and } \quad H_{d R}^h(X) \simeq \bigoplus_{p+q=h} H_{\bar{\partial}}^{p, q}(X) .
+$$
+
+A Hodge structure as above is said to be natural, if the following conditions hold:
+(H1) Every class in $H_{\bar{\partial}}^{p, q}(X), p+q=h$, admits a representative $\omega$ with $\partial \omega=0$ and $\bar{\partial} \omega=0$, i.e., $d \omega=0$. Moreover, the assignment $\omega \mapsto \bar{\omega}$ induces the first isomorphism above.
+(H2) Every class in $H_{d R}^h(X)$ admits a representative $\omega$ which may be written $\omega=\sum_{p+q=h} \omega^{p, q}$, where $\omega^{p, q}$ is a $(p, q)$-form with $d \omega^{p, q}=0$ (i.e. lies in the cohomology class). Moreover, the assignment $\omega \mapsto\left(\omega^{p, q}\right)_{p+q=h}$ induces the second isomorphism above.
+
+## Criterion for $X$ to admit a natural Hodge structure 
+
+A complex manifold $X$ admits a natural Hodge structure of weight $h$ if and only if the following conditions hold:
+(i) the morphism  $\ker d \cap \text{Fil}^p A^h(X) \rightarrow A^{p, h-p}(X), \omega \mapsto \omega^{p, h-p}$, induces an isomorphism $\text{Gr}^p H^h(X) \simeq H_{\bar{\partial}}^{p, h-p}(X)$ for every $p$ .
+(ii) $\left(\text{Fil}^p H^h(X)\right)$ is a Hodge filtration on $H^h(X)$ of weight $h$.
+
+
+# ddbar lemma
+
+We first state the ddbar lemma without the proof
+
+Let $X$ be a compact Kähler manifold. Then for a $d$-closed form $\alpha$ of type $(p, q)$ the following conditions are equivalent:
+i) The form $\alpha$ is $d$-exact, i.e. $\alpha=d \beta$ for some $\beta \in \mathcal{A}_{\mathbb{C}}^{p+q-1}(X)$.
+ii) The form $\alpha$ is $\partial$-exact, i.e. $\alpha=\partial \beta$ for some $\beta \in \mathcal{A}^{p-1, q}(X)$.
+iii) The form $\alpha$ is $\bar{\partial}$-exact, i.e. $\alpha=\bar{\partial} \beta$ for some $\beta \in \mathcal{A}^{p, q-1}(X)$.
+iv) The form $\alpha$ is $\partial \bar{\partial}$-exact, i.e. $\alpha=\partial \bar{\partial} \beta$ for some $\beta \in \mathcal{A}^{p-1, q-1}(X)$.
+
+
+## Characterization of ddbar lemma in terms of filtration
+A complex manifold $X$ satisfies the $\partial \bar{\partial}$-Lemma if and only if the following two conditions hold:
+(1) the Frölicher spectral sequence degenerates at $E_1$,
+(2) the filtration $\text{Fil}^p H^h(X)$ induce a formal Hodge decomposition of weight $h$ for every $h \geq 0$.
+
+Proof. TODO
+
+## A complex manifold is ddbar manifold iff it admits natural Hodge structure
+
+A complex manifold satisfies the $\partial \bar{\partial}$-Lemma if and only if it admits a natural Hodge structure of weight $h$ for every $h$.
+
+Proof. TODO
+
+## Local stability of ddbar condition
+On direct consequence of the characterization above is the local stability of ddbar condition:
+
+Satisfying the $\partial \bar{\partial}-$ Lemma is a stable property under small deformations of the complex structure.
+
+
+Proof. Let $\left\{X_t\right\}_t$ be a complex-analytic family of compact complex manifolds. Since, for every $k \in \mathbb{N}$, the dimensions $h_{B C}^k\left(X_t\right)$ are upper-semicontinuous functions at $t$ , while the dimensions $b_k\left(X_t\right)$ are constant in $t$, one gets that, if $X_{t_0}$ satisfies the equality $h_{B C}^k\left(X_{t_0}\right)+h_A^k\left(X_{t_0}\right)=$ $2 b_k\left(X_{t_0}\right)$ for every $k \in \mathbb{N}$, the same holds true for $X_t$ with $t$ near $t_0$.
+
+
+# Effect of a Modification on Hodge decomposition
+
+## Definition Strong Hodge decomposition
+
+Definition. We say that a compact manifold admits a strong Hodge decomposition if the natural maps
+$$
+H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \longrightarrow H^{p, q}(X, \mathbb{C}), \quad \bigoplus_{p+q=k} H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \longrightarrow H^k(X, \mathbb{C})
+$$
+are isomorphisms.
+
+## Kahler manifold has strong Hodge decomposition
+
+Let $X$ be a compact Kähler manifold. Then the natural morphisms
+$$
+H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \longrightarrow H^{p, q}(X, \mathbb{C}), \quad \bigoplus_{p+q=k} H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \longrightarrow H_{\mathrm{DR}}^k(X, \mathbb{C})
+$$
+are isomorphisms.
+
+Proof.  The surjectivity of $H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \rightarrow H^{p, q}(X, \mathbb{C})$ comes from the fact that every class in $H^{p, q}(X, \mathbb{C})$ can be represented by a harmonic $(p, q)$-form, thus by a $d$-closed $(p, q)$ form; the injectivity means nothing more than the ddbar lemma. Hence $H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \simeq H^{p, q}(X, \mathbb{C}) \simeq \mathscr{H}^{p, q}(X, \mathbb{C})$, and the isomorphism $\bigoplus_{p+q=k} H_{\mathrm{BC}}^{p, q}(X, \mathbb{C}) \longrightarrow$ $H_{\mathrm{DR}}^k(X, \mathbb{C})$ follows from the decomposition $\mathscr{H}^k(X, \mathbb{C})=\bigoplus_{p+q=k} \mathscr{H}^{p, q}(X, \mathbb{C}) .$
+
+## Existence of Hodge structure on modification implies existence of a Hodge structure down stairs
+
+Theorem. If $\widetilde{X}$ admits a strong Hodge decomposition, and if $\mu: \widetilde{X} \longrightarrow X$ is a modification, then $X$ also admits a strong Hodge decomposition.
+
+Proof. TODO.
+
+## Moishezon manifold admits strong Hodge decomposition
+
+
