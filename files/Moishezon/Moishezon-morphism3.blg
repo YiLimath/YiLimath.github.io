@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Moishezon-morphism3.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Moishezon-morphism3-blx.bib
+Database file #2: mybib.bib
+Biblatex version: 3.13
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 6 entries,
+            6365 wiz_defined-function locations,
+            1235 strings with 9635 characters,
+and the built_in function-call counts, 27401 in all, are:
+= -- 1643
+> -- 696
+< -- 138
++ -- 690
+- -- 346
+* -- 1999
+:= -- 2984
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 48
+chr.to.int$ -- 46
+cite$ -- 10
+duplicate$ -- 2750
+empty$ -- 2536
+format.name$ -- 315
+if$ -- 5659
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 0
+newline$ -- 176
+num.names$ -- 205
+pop$ -- 1721
+preamble$ -- 1
+purify$ -- 70
+quote$ -- 0
+skip$ -- 945
+stack$ -- 0
+substring$ -- 2719
+swap$ -- 748
+text.length$ -- 161
+text.prefix$ -- 5
+top$ -- 1
+type$ -- 192
+warning$ -- 0
+while$ -- 410
+width$ -- 0
+write$ -- 171
