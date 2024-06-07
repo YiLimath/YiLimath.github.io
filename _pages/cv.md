@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Ph.D in Birational Geometry and Complex Geometry, WuHan University, 2023 
-* B.S. in Artifical Intelligence and Automation, HuaZhong University of Science and Technology, 2015
+* B.S. and M.S. in Artifical Intelligence and Automation, HuaZhong University of Science and Technology, 2015
 
 
 Publications
