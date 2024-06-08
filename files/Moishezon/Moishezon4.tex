@@ -155,10 +155,45 @@
 	(1) By Cartan A. we have $$H^p(S,R^q \pi_* \mathcal{O}_X) = 0 ,\ p>0$$the Leray spectral sequence arguement thus implies the first isomorphism,
 	(2) Since we assume the cohomological constant of $h^{0,2}$, by Grauert base change theorem it will imply the second isomorphism.
 	
-	Now we can do the diagram chasing on the exact sequence above. The idea is to find a cohomology class $c \in H^2(X_s,\mathbb{Z})$ by the simply connectness of $\Delta$ it will lift it to $c\in H^2(\mathcal{X},\mathbb{Z})$, if we can prove the vanishing of $e_2(c) \in H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})$ then by the exactness of the sequence we can find some global line bundle $\mathcal{L}\in \operatorname{Pic}(\mathcal{X})$.
+	Thus the commutative diagram becomes 
+	\begin{center}
+		\begin{tikzcd}
+			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+			\arrow["\cong", from=1-4, to=2-4]
+			\arrow[from=2-1, to=2-2]
+			\arrow[from=2-2, to=2-3]
+			\arrow[from=2-2, to=3-2]
+			\arrow[from=2-3, to=2-4]
+			\arrow[from=2-3, to=3-3]
+			\arrow[from=2-4, to=2-5]
+			\arrow[from=2-4, to=3-4]
+			\arrow[from=3-1, to=3-2]
+			\arrow[from=3-2, to=3-3]
+			\arrow[from=3-3, to=3-4]
+			\arrow[from=3-4, to=3-5]
+			\arrow["\cong", from=3-4, to=4-4]
+		\end{tikzcd}
+	\end{center}
+	Where we have the evaluation $\text{ev}_s:H^0(\mathcal{X},R^2\pi_* \mathcal{O}_{\mathcal{X}})\to R^2\pi_* \mathcal{O}_{\mathcal{X}}(s)$ in the diagram above.
 	
+	The idea is to find a cohomology class $c \in H^2(X_s,\mathbb{Z})$ by the simply connectness of $\Delta$ it will lift it to $c\in H^2(\mathcal{X},\mathbb{Z})$, if we can prove the vanishing of $e_2(c) \in H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})$ then by the exactness of the sequence we can find some global line bundle $\mathcal{L}\in \operatorname{Pic}(\mathcal{X})$.
+	
+	Observe that the cohomology group $H^2(X_s,\mathbb{Z})\cong H^2(\mathcal{X},\mathbb{Z})$  by Ehresmann's theorem, and this $\mathbb{Z}$ coefficient cohomology group can only have counable many elements, taking uncountble many $L_t$, it must have some $c\in H$ such that there is uncountable many $t$ such that $c_1(L_t) = c$.
+	
+	Since this $c\in H^2(X_s,\mathbb{Z})$ coming from $\operatorname{Pic}(X_s)$, we have $e_2(c) = 0\in R^2\pi_* \mathcal{O}_{\mathcal{X}}(s)$ and thus if we lift it to $c \in H^2(\mathcal{X},\mathbb{Z})$ the global section $e_2(c) \in H^0(\mathcal{X},R^2 \pi_* \mathcal{O}_{\mathcal{X}})$ it will be zero on uncounable many points. Thus by the identity principle easy to see $e_2(c) =0 \in H^2(\mathcal{X},R^2\pi_* \mathcal{O}_{\mathcal{X}})$. Thus thus lift to some global line bundle $\mathcal{L}\in \operatorname{Pic}(\mathcal{X})$ with the restriction $c_1(\mathcal{L}|_{X_s}) =c_1(L_s)$ and we can now apply the lemma about deformation density of Iitaka-Kodaira dimension below and conclude that $\mathcal{L}$ is indeed a big line bundle to finish the proof.
 	
 	\end{proof}
+	
+	\begin{theorem}[Deformation density of Iitaka-Kodaira dimension, see \cite{RaoTsai, LiebermanSernesi}]~\\
+		Let $\pi: \mathcal{X} \rightarrow Y$ be a flat family from a complex manifold over a one-dimensional connected complex manifold $Y$ with possibly reducible fibers. 
+		
+		If there exists a holomorphic line bundle $L$ on $\mathcal{X}$ such that the Kodaira-Iitaka dimension $\kappa\left(L_t\right)=\kappa$ for each $t$ in an uncountable set $B$ of $Y$, then any fiber $X_t$ in $\pi$ has at least one irreducible component $C_t$ with $\kappa\left(\left.L\right|_{C_t}\right) \geq \kappa$. 
+		
+		In particular, if any fiber $X_t$ for $t \in Y$ is irreducible, then $\kappa\left(L_t\right) \geq \kappa$. 
+	\end{theorem}
 	\printbibliography	
 	
 \end{document}

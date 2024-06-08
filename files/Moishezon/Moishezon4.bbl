@@ -78,6 +78,42 @@
     \field{year}{2022}
   \endentry
 
+  \entry{LiebermanSernesi}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LD}{%
+         family={Lieberman},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Sernesi},
+         familyi={S\bibinitperiod},
+         given={Edoardo},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDSE1}
+    \strng{fullhash}{LDSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1007/BF01364893
+    \endverb
+    \field{issn}{0025-5831,1432-1807}
+    \field{number}{1}
+    \field{pages}{77\bibrangedash 88}
+    \field{title}{Semicontinuity of {$L$}-dimension}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01364893
+    \endverb
+    \field{volume}{225}
+    \field{journaltitle}{Math. Ann.}
+    \field{year}{1977}
+  \endentry
+
   \entry{RaoTsai}{article}{}
     \name{author}{2}{}{%
       {{hash=RS}{%
