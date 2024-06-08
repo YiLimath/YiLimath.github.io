@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  8 JUN 2024 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  8 JUN 2024 09:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -890,7 +890,7 @@ Package logreq Info: Writing requests to 'Moishezon-morphism3.run.xml'.
 Here is how much of TeX's memory you used:
  21801 strings out of 480608
  438003 string characters out of 5905572
- 854957 words of memory out of 5000000
+ 854956 words of memory out of 5000000
  37331 multiletter control sequences out of 15000+600000
  539526 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -912,7 +912,7 @@ b><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:
 /Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Moishezon-morphism3.pdf (7 pages, 242117 bytes).
+Output written on Moishezon-morphism3.pdf (7 pages, 242075 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
