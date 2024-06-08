@@ -82,7 +82,7 @@
 	The fibers of a proper, Moishezon morphism are Moishezon.
 	\end{theorem}
 	\begin{remark}
-		Before proving the theorem, we make a remark that Moishezon morphism is stable under base change (which can be viewed as a generation of the theorem \ref{Moishezon-morphism}), see also \cite{Moishezonmorphism} Remark 17.
+		Before proving the theorem, we make a remark that Moishezon morphism is stable under base change (which can be viewed as a generation of the Theorem \ref{Moishezon-morphism}), see also \cite{Moishezonmorphism} Remark 17.
 	\end{remark}
 	
 	\begin{proof}
@@ -98,8 +98,65 @@
 	
 	\section{Moishezon locus, fiberwise Moishezon morphism is locally Moishezon under smoothness assumption}
 	
-	We begin this Section by defining very big locus, general type locus and Moishezon locus. 
-
+	We begin this section by defining very big locus, general type locus and Moishezon locus. 
+	\begin{definition}[(Very big locus, general type locus, Moishezon locus),see \cite{Moishezonmorphism} Definition 18]~\\
+	Let $g: X \rightarrow S$ be a proper morphism of normal analytic spaces and $L$ a line bundle on $X$. Set
+	\begin{enumerate}
+		\item  $\operatorname{VB}_S(L):=\left\{s \in S: L_s\right.$ is very big on $\left.X_s\right\} \subset S$,
+		\item $\operatorname{GT}_S(X):=\left\{s \in S: X_s\right.$ is of general type $\} \subset S$,
+		\item $\operatorname{MO}_S(X):=\left\{s \in S: X_s\right.$ is Moishezon $\} \subset S$,
+		\item $\mathrm{PR}_S(X):=\left\{s \in S: X_s\right.$ is projective $\} \subset S$.
+	\end{enumerate}
+	here very big means the place $s\in S$ that $$X_s \dashrightarrow \operatorname{Proj}_S(g_* L_s) = (\operatorname{Proj}_S(g_* L))_s$$is birational onto its closure of the image. 
+	\end{definition}
+	We first show that very big locus admits alternating property i.e. it's either nowhere dense or contains some dense open subset
+	
+	\begin{theorem}[Alternating property for very big locus, see \cite{Moishezonmorphism} Lemma 19]\label{verybig}~\\
+		 Let $g: X \rightarrow S$ be a proper morphism of normal irreducible analytic spaces(and therefore $S$ is integral)  and $L$ a line bundle on $X$. Then $\operatorname{VB}_S(L) \subset S$ is
+		(1) either nowhere dense (in the analytic Zariski topology),
+		(2) or it contains a dense open subset of $S$, and $g: X \rightarrow S$ is Moishezon.
+	\end{theorem}
+	\begin{proof}
+	By passing to an open subset of $S$, we may assume that $g$ is flat, $g_* L$ is locally free and commutes with restriction to fibers. We get a meromorphic map $\phi: X \dashrightarrow \mathbb{P}_S\left(g_* L\right)$. There is thus a smooth, bimeromorphic model $\pi: X^{\prime} \rightarrow X$ such that $\phi \circ \pi: X^{\prime} \rightarrow \mathbb{P}_S\left(g_* L\right)$ is a morphism.
+	
+	After replacing $X$ by $X^{\prime}$ and again passing to an open subset of $S$, we may assume that $g$ is flat, $g_* L$ is locally free, commutes with restriction to fibers, and $\phi: X \rightarrow \mathbb{P}_S\left(g_* L\right)$ is a morphism. Let $Y \subset \mathbb{P}_S\left(g_* L\right)$ denote its image and $W \subset X$ the Zariski closed set of points where $\pi: X \rightarrow Y$ is not smooth. Set $Y^{\circ}:=Y \backslash \phi(W)$ and $X^{\circ}:=X \backslash \phi^{-1}(\phi(W))$. The restriction $\phi^{\circ}: X^{\circ} \rightarrow Y^{\circ}$ is then smooth and proper.
+	
+	We assume that $\phi^{-1}(y)$ is a single point for a dense set in $Y$, hence for a dense set in $Y^{\circ}$. Since $\phi^{\circ}$ is smooth and proper, it is then an isomorphism. Thus $\phi$ is bimeromorphic on every irreducible fiber that has a nonempty intersection with $X^{\circ}$.
+	\end{proof}
+	As a direct consequence (combined with the classical result by Hacon and Mckernan \cite{HaconMckernan}) we have the general type locus also admits alternating property.
+	
+	\begin{theorem}[Alternating property for general type locus, see \cite{Moishezonmorphism} Corollary 20]~\\
+		Let $g: X \rightarrow S$ be a proper morphism of normal, irreducible analytic spaces. Then $$\text{GT}_S(X) = \{s\in S \mid X_s \text{ is of general type}\}$$(1) either nowhere dense (in the analytic Zariski topology),
+		(2) or it contains a dense open subset of $S$, and $g: X \rightarrow S$ is Moishezon
+	\end{theorem}
+	
+	\begin{proof}
+		Proof. Using resolution of singularities, we may assume that $X$ is smooth. By passing to an open subset of $S$, we may also assume that $\underline{S}$ and $g$ are smooth. By \cite{HaconMckernan} there is an $m$ (depending only on $\operatorname{dim} X_s$ ) such that $\left|m K_{X_s}\right|$ is very big whenever $X_s$ is of general type. Thus Lemma \ref{verybig} applies to $L=m K_X$.
+	\end{proof}
+	
+	Before proving Theorem 21. Let us first recall the basic idea that being used in \cite{RaoTsai}
+	\begin{theorem}[Uncoutnable many fibers are Moishezon with deformation invariance of Hodge number implies the morphism is Moishezon, see \cite{RaoTsai} Proposition 3.15]~\\
+		
+	    Let $\pi: \mathcal{X} \rightarrow \Delta$ be a one-parameter degeneration. 
+		(1) Assume that there exists an uncountable subset $B$ of $\Delta$ such that for each $t \in B$, the fiber $X_t$ admits a line bundle $L_t$ with the property that $c_1\left(L_t\right)$ comes from the restriction to $X_t$ of some cohomology class in $H^2(\mathcal{X}, \mathbb{Z})$.
+		(2) Assume further that the Hodge number $h^{0,2}\left(X_t\right):=h^1\left(X_t, \mathcal{O}_{X_t}\right)$ is independent of $t \in \Delta$ (the original theorem require only Hodge (0,1) deformation invariance)
+	\end{theorem}
+	\begin{proof}
+	Apply the sheaf exponential exact sequence so that 
+	
+	\begin{center}
+		\begin{tikzcd} {} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_X)} & {} \\ {} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \arrow[from=1-1, to=1-2] \arrow[from=1-2, to=1-3] \arrow[from=1-2, to=2-2] \arrow["{e_2}", from=1-3, to=1-4] \arrow[from=1-3, to=2-3] \arrow[from=1-4, to=1-5] \arrow[from=1-4, to=2-4] \arrow[from=2-1, to=2-2] \arrow[from=2-2, to=2-3] \arrow["{e_2}"', from=2-3, to=2-4] \arrow[from=2-4, to=2-5] \end{tikzcd}
+	\end{center}
+	
+	Observe that $$H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}}) \cong R^2\pi_* \mathcal{O}_X(\Delta),\ H^2(X_s, \mathcal{O}_{X_s}) \cong R^2 \pi_* \mathcal{O}_{\mathcal{X}}(s)$$
+	
+	Indeed
+	
+	(1) By Cartan A. we have $$H^p(S,R^q \pi_* \mathcal{O}_X) = 0 ,\ p>0$$the Leray spectral sequence arguement thus implies the first isomorphism,
+	(2) Since we assume the cohomological constant of $h^{0,2}$, by Grauert base change theorem it will imply the second isomorphism.
+	
+	Now we can do the diagram chasing on the exact sequence above. 
+	\end{proof}
 	\printbibliography	
 	
 \end{document}

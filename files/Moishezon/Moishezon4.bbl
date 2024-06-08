@@ -17,6 +17,43 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{HaconMckernan}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HCD}{%
+         family={Hacon},
+         familyi={H\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={McKernan},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCDMJ1}
+    \strng{fullhash}{HCDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1007/s00222-006-0504-1
+    \endverb
+    \field{issn}{0020-9910,1432-1297}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 25}
+    \field{title}{Boundedness of pluricanonical maps of varieties of general
+  type}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00222-006-0504-1
+    \endverb
+    \field{volume}{166}
+    \field{journaltitle}{Invent. Math.}
+    \field{year}{2006}
+  \endentry
+
   \entry{Moishezonmorphism}{article}{}
     \name{author}{1}{}{%
       {{hash=KJ}{%
@@ -38,6 +75,36 @@
     \field{title}{Moishezon morphisms}
     \field{volume}{18}
     \field{journaltitle}{Pure Appl. Math. Q.}
+    \field{year}{2022}
+  \endentry
+
+  \entry{RaoTsai}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={Sheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TIH}{%
+         family={Tsai},
+         familyi={T\bibinitperiod},
+         given={I-Hsun},
+         giveni={I\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RSTIH1}
+    \strng{fullhash}{RSTIH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{issn}{1093-6106,1945-0036}
+    \field{number}{4}
+    \field{pages}{507\bibrangedash 554}
+    \field{title}{Invariance of plurigenera and {C}how-type lemma}
+    \field{volume}{26}
+    \field{journaltitle}{Asian J. Math.}
     \field{year}{2022}
   \endentry
 \enddatalist
