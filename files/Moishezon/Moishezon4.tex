@@ -35,6 +35,7 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{assumption}[theorem]{Assumption}
 
@@ -67,227 +68,38 @@
 
 \begin{document}
 	
-	\lecture{3 --- 05,30, 2024}{Spring 2024}{}{Yi Li}
+	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
 	\section{Overview}
-	Today we will continue our discussion on the paper about Moishezon morphisms. Last time, we proved that a Moishezon manifold admits a (strong) Hodge decomposition. We also showed that a Kähler Moishezon space with a 1-rational singularity is automatically projective. Finally, we gave three different definitions for a Moishezon morphism and proved that they are equivalent. This time, we will prove the following:
-	\begin{enumerate}
-		\item  A proper surjective morphism equipped with a relatively big line bundle is locally bimeromorphic to a projective morphism.
-		\item If the base space is Moishezon, then the total space is Moishezon if and only if the morphism is Moishezon.
-		\item The restriction of a generic finite surjective morphism to the exceptional set is a Moishezon morphism.
-	\end{enumerate}
+	Today we will continue our discussion on the paper Moishezon morphism. Recall that last time we proved that a proper surjective morphism equipped with a relatively big line bundle is locally bimeromorphic to a projective morphism. We also proved that if the base space is Moishezon, then the total space is Moishezon if and only if the morphism is Moishezon. And finally the restriction of the generic surjective morphism on the exceptional set is a Moishezon morphism.
 	
-	\section{Chow's lemma, Reducing Proper Morphism to Projective Morphisms}
+	This time we will show:
+	(1) The fiber of the Moishezon morphism is Moishezon,
+	(2) The alternation property of the very big locus, general type locus, and Moishezon locus, which is either nowhere dense or contains some dense open subset.
 	
-	Recall that we define a morphism to be Moishezon if it's bimeromorphic to a projective morphism:
-	\begin{definition}[Moishezon morphism, see \cite{Moishezonmorphism} definition (10)]
-	Assume now that $S$ is reduced. A proper morphism of analytic spaces $g: X \rightarrow S$ is Moishezon if $g: X \rightarrow S$ is bimeromorphic to a projective morphism $g^{\mathrm{p}}: X^{\mathrm{p}} \rightarrow$ $S$. 
-	
-	That is, there is a closed subspace $Y \subset X \times_S X^{\mathrm{p}}$ such that the coordinate projections $Y \rightarrow X$ and $Y \rightarrow X^{\mathrm{p}}$ are bimeromorphic.
-
-	\begin{center}
-\begin{tikzcd} & Y \\ X && {X^p} \\ & S \arrow[from=2-1, to=3-2] \arrow[from=2-3, to=3-2] \arrow[from=1-2, to=2-1] \arrow[from=1-2, to=2-3] \arrow[dashed, from=2-1, to=2-3] \end{tikzcd}
-
-	\end{center}
-	
-
-	
-	
-	\end{definition}
-	
-	For proper bimeromorphic morphism between complex analytic spaces we have the Hironaka Chow's lemma (we state it below without proof)
-	\begin{theorem}[Hironaka Chow's lemma, see \cite{DasHacon}, Theorem 2.17 ]
-		Let $f: X \rightarrow Y$ be a <mark style="background: proper bimeromorphic morphism between two complex spaces such that $Y$ is reduced and $\sigma$-compact. Then there exists a projective bimeromorphic morphism $\nu: X^{\prime} \rightarrow X$ from a complex space $X^{\prime}$ such that the composition $f^{\prime}=f \circ \nu: X^{\prime} \rightarrow Y$ is projective.
+	\section{The fiber of the Moishezon morphism is again Moishezon}
+	We will start today's discussion by using \cite{Moishezonmorphism}, Lemma 15. to prove the following theorem
+	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
+	The fibers of a proper, Moishezon morphism are Moishezon.
 	\end{theorem}
+	\begin{remark}
+		Before proving the theorem, we make a remark that Moishezon morphism is stable under base change (which can be viewed as a generation of the theorem \ref{Moishezon-morphism}), see also \cite{Moishezonmorphism} Remark 17.
+	\end{remark}
 	
-	Our main goal of this Section is to prove the following result
-	\begin{theorem}[Reducing Proper Morphism to Projective Morphisms, \cite{DasHacon}, Lemma 2.18 ]
-		Let $f: X \rightarrow S$ be a proper surjective morphism of analytic varieties, and let $L$ be a $f$-big line bundle on $X$ and $D$ a $\mathbb{Q}$-divisor. 
-		
-		Then over any relatively compact open subset $V \subset S$, there exists a proper bimeromorphic morphism $\alpha: W \rightarrow$ $f^{-1} V$ from a smooth analytic variety $W$ such that $\beta=\left.f\right|_{f^{-1} V} \circ \alpha: W \rightarrow V$ is a projective morphism and $\left(W, \alpha_*^{-1}\left(\left.D\right|_{f^{-1} V}\right)+\operatorname{Ex}(\alpha)\right)$ is a log smooth pair.
-	\end{theorem}
-	We make a remark before proving the result, \cite{ClaudonHoring} Lemma 2.5. states that $\alpha$ can be choosen to be a projective morphism.
 	\begin{proof}
-	Let $\phi: X \nrightarrow Y$ be the relative Iitaka fibration of $L$ over $S$ and $g: Y \rightarrow S$ the induced projective morphism. Since $L$ is $f$-big, $\phi: X \rightarrow Y$ is bimeromorphic. Let $p: \Gamma \rightarrow X$ and $q: \Gamma \rightarrow Y$ be the resolution of indeterminacy of $\phi$ so that $p$ is proper.
-		
-	Now fix a relatively compact open subset $V \subset S$. Choose another relatively compact open set $U \subset S$ containing $V$ such that $\bar{V} \subset U$. Note that $U$ is $\sigma$-compact, since it is relatively compact. Since $f$ and $g$ are both proper morphisms, it follows that $X_U:=f^{-1} U$ and $Y_U:=g^{-1} U$ are both $\sigma$-compact. Let $\Gamma_U:=q^{-1}\left(g^{-1} U\right)=p^{-1}\left(f^{-1} U\right)$. Then from the commutative diagram above it follows that $\left.q\right|_{\Gamma_U}: \Gamma_U \rightarrow g^{-1} U$ is a proper morphism. In particular, $\Gamma_U$ is $\sigma$-compact. Note that $\left.q\right|_{\Gamma_U}$ is bimeromorphic. Therefore by Theorem 2.17 there is a projective bimeromorphic morphism $h: Z \rightarrow \Gamma_U$ from an analytic variety $Z$ such that $\left.q\right|_{\Gamma_U} \circ h: Z \rightarrow Y_U$ is a projective bimeromorphic morphism. Since $g$ is projective, so is $Z \rightarrow U$.
+	Let $g: X \rightarrow S$ be a proper, Moishezon morphism. It is bimeromorphic to a projective morphism $X^{\mathrm{p}} \rightarrow S$. We may assume $X^{\mathrm{p}}$ to be normal. Let $Y$ be the normalization of the closure of the graph of $X \dashrightarrow X^{\mathrm{p}}$.
 	
-	Now we replace $U$ by our previously fixed open set $V$. Then $Z_V:=(g \circ$ $q \circ h)^{-1} V$ is a relatively compact open subset of $Z$. Let $r: W \rightarrow Z_V$ be the $\log$ resolution of $\left(Z_V,(p \circ h)_*^{-1}\left(\left.D\right|_{f^{-1} V}\right)\right)$ as in Theorem 2.16. Let $\alpha:=$ $\left.\left.p\right|_{\Gamma_V} \circ h\right|_{h^{-1} \Gamma_V} \circ r$ and $\beta:=\left.\left.\left.g\right|_{g^{-1} V} \circ q\right|_{\Gamma_V} \circ h\right|_{h^{-1} \Gamma_V} \circ r$, where $\Gamma_V:=p^{-1}\left(f^{-1} V\right)=$ $q^{-1}\left(g^{-1} V\right)$. Note that $\beta$ is a projective morphism, since it is a componsition of projective morphisms over relatively compact bases. 
+	Fix now $s \in S$. Let $Z_s \subset X_s$ be an irreducible component and $W_s \subset Y_s$ an irreducible component that dominates $Z_s$. 
 	
-	\begin{center}
-		\begin{tikzcd} & \Gamma \\ X && Y \\ & S \arrow["p"', from=1-2, to=2-1] \arrow["q", from=1-2, to=2-3] \arrow["\phi", dashed, from=2-1, to=2-3] \arrow["f"', from=2-1, to=3-2] \arrow["g", from=2-3, to=3-2] \end{tikzcd}
-	\end{center}
+	By image of a Moishezon space is Moishezon if the morphism is surjective, it is enough to show that $W_s$ is Moishezon.
 	
-	Then $\alpha: W \rightarrow f^{-1} V$ is a proper bimeromorpic morphism and $\beta: W \rightarrow V$ is a projective morphism such that $\beta=\left.f\right|_{f^{-1} V} \circ \alpha$ and $\left(W, \alpha_*^{-1}\left(\left.D\right|_{f^{-1} V}\right)+\operatorname{Ex}(\alpha)\right)$ is a log smooth pair.
-	
+	If $\pi: Y \rightarrow X^{\mathrm{p}}$ is generically an isomorphism along $W_s$, then $W_s$ is bimeromorphic to an irreducible component of $X_s^{\mathrm{p}}$, hence Moishezon. Otherwise $W_s \subset \operatorname{Ex}(\pi)$. Now $\operatorname{Ex}(\pi) \rightarrow X^{\mathrm{p}}$ is Moishezon by (15) and $\operatorname{dim} \operatorname{Ex}(\pi)<$ $\operatorname{dim} Y=\operatorname{dim} X$. So $W_s$ is contained in a fiber of $\operatorname{Ex}(\pi) \rightarrow S$, hence Moishezon by induction on the dimension.
 	\end{proof}
 	
-	We end this Section by comparing it with the definition of Moishezon morphism (the definition in \cite{Moishezonmorphism})
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
-		\caption{Comparison between different definitions for Moishezon morphism}
-		\label{fig:moishezon-morphism-definition}
-	\end{figure}
 	
-	\section{When the base is Moishezon then the total space is Moishezon iff the morphism is Moishezon}
-	Before proving the main theorem of this Section, we first summarize some analog results below
+	\section{Moishezon locus, fiberwise Moishezon morphism is locally Moishezon under smoothness assumption}
 	
-	\begin{theorem}[Moishezon in the fibration, see \cite{Moishezonmorphism,Jean}]~
+	We begin this Section by defining very big locus, general type locus and Moishezon locus. 
 
-
-	(1) Let $g: X \rightarrow S$ be a proper morphism of analytic spaces, $S$ Moishezon. Then $g$ is Moishezon iff $X$ is Moishezon.
-	
-	(2) Let $g:X\to S$ be a proper morphism of analytic spaces, $S$ projective. Then $g$ is projective iff $X$ is projective.
-	
-	(3) If $\pi: X \rightarrow Y$ is a Kähler morphism, and $Y$ a Kähler space then any open $U \subset \subset X$ is Kähler. More precisely: If $\kappa_Y$ is a Kähler metric on $Y$ and $\kappa_\pi$ a relative Kähler metric for $\pi$, then for any $U \subset \subset X$ there is a constant $c_0>0$ such that for any $c>c_0$,$\left(\kappa_\pi+c \pi^* \kappa_Y\right)_{\left.\right|_U}$ is a Kähler metric on $U$.
-
-	\end{theorem}
-	
-	\begin{proof}[(Proof of (2), If the morphism is projective then the total space is projective)]
-		We will prove it using the Kleiman's ampleness criterion, which says a divisor is relative ample iff it has positive intersection with relative Mori cone $\overline{\text{NE}(\pi)}$.
-		
-		Also we have proved before the relative Kleiman Mori cone is can be expressed as $$\overline{\text{NE}(\pi)} = \overline{\text{NE}(X)}\cap (\pi^* H)^\perp$$
-		
-		We divide the problem into 2 cases:
-		
-		Case 1.(when $\alpha\in \overline{\text{NE}(\pi)}$) In this case we can apply the relative version Kleiman cone criterion for ample divisors. And thus $$\alpha \cdot (m \pi^* H +D) = \alpha \cdot D >0$$
-		
-		Case 2.(when $\alpha \notin \overline{\text{NE}(\pi)}$) In this case we have $\alpha \cdot \pi^*H \ne 0$ since $\alpha$ in the closure of $\text{NE}(X)$ thus $\alpha \cdot \pi^* H \ge 0$. On the other hand it's non-zero, the only possibility is thus $$\alpha \cdot \pi^* H >0$$
-		Thus for sufficient large $m\gg 0$ we have $$\alpha \cdot (m\pi^* H + D) >0$$ (here we use the finite dimension of $N^1(X)_\mathbb{R}$ so that we can choose a uniform $m$)
-		
-		Combine these two cases, easy to see $$m \pi^* H +D $$is ample for $m \gg 0$.
-	\end{proof}
-	
-	\begin{proof}[(Proof of (2), the morphism between projective varieties is projective)]
-		Consider the factorization
-		
-		\begin{center}
-			\begin{tikzcd} X && {X\times Y} \\ && Y \arrow["\iota", hook, from=1-1, to=1-3] \arrow["f"', from=1-1, to=2-3] \arrow[from=1-3, to=2-3] \end{tikzcd}
-		\end{center}
-		where $$\iota:X\to X\times Y ,\quad x \mapsto (x,f(x))$$is the embedding with the image being the graph, since $X, Y$ are projective, we have $X\times Y$ is also projective.
-	\end{proof}
-	
-	\begin{proof}[(Proof of (1), the morphism between Moishezon spaces is Moishezon)]
-	Consider the following graph embdding:
-		\begin{center}
-		\begin{tikzcd} X && {X\times S} & {X^p \times S} \\ && S \arrow[hook, from=1-1, to=1-3] \arrow["f"', from=1-1, to=2-3] \arrow[dashed, from=1-3, to=1-4] \arrow["\pi", from=1-3, to=2-3] \arrow["{\pi^p}", from=1-4, to=2-3] \end{tikzcd}
-		
-		\end{center}
-		where $$\iota:X\to X\times S ,\quad x \mapsto (x,f(x))$$is the embedding with the image being the graph, since $X$ is Moishezon it's bimeromorphic to a projective variety, clearly by the definition $\pi^p$ is projective and thus $\pi$ is Moishezon. And restriction of the Moishezon morphism is Moishezon therefore $f:X\to S$ is Moishezon morphism.
-	\end{proof}
-	
-	Finally we gave a proof that if the morphism is Moishezon then the total space is Moishezon (under the projective assumption, see \cite{strictnef}, Lemma 2.5)
-	
-	\begin{proof}[(Proof of (1), when the morphism is Moishezon then the total space is Moishezon)]
-		By Kodaira lemma we have $$A  = E +H,\quad E\ge 0 \text{ and }H \text{ is ample}$$now we pull back since pull back of effective Cartier divisor is still effective and sum of big divisor and pseudo effective divisor is still big. We can assume w.l.o.g. that $A$ is ample divisor. 
-		
-		Let $H$ be $g$-ample on $X$. (Since we assume projective, there always has such divisor)
-		
-		Then choose $m$ such that
-		$$
-		g_* \mathcal{O}_X(m N-H)
-		$$
-		has positive rank. 
-		
-		Indeed By definition on generic fiber $\eta$ the restriction $N|_{X_\eta}$ is big and also $H|_{X_\eta}$ is ample and thus by the Kodaira lemma we have $$h^0(X_\eta, mN|_{X_\eta} - H|_{X_\eta})>0$$ therefore the direct image is a locally free sheaf with positive rank.
-		
-		
-		Now choose $k$ large enough, such that $g_* \mathcal{O}_X(m N-H) \otimes \mathcal{O}_Y(k A)$ has a section. Indeed by Serre vanishing theorem the sheaf is even global generated.
-		
-		Thus
-		$$
-		E:=m N-H+g^*(k A)
-		$$
-		is effective (by the projection formula), 
-		
-		and $m N+g^*(k A)=H+E$ is the sum of an ample and an effective line bundle, hence big. 
-		
-		Thus also $N+g^*(k A)$ is big for large $k$
-		
-	\end{proof}
-	\section{Restriction of the proper generic finite morphism on the exceptional set is Moishezon}
-	We will end today's discussion with the following theorem
-	\begin{theorem}[Restriction of the proper generic finite morphism on the exceptional set is Moishezon,see \cite{Moishezonmorphism} Lemma 15]~\\
-	Let $g: X \rightarrow S$ be a proper, generically finite, dominant morphism of normal, complex, analytic spaces. Then $\operatorname{Ex}(g) \rightarrow S$ is Moishezon.
-	\end{theorem}
-	\begin{proof}
-	We prove the special case when the smooth locus of $S$ is dense in $g(\operatorname{Ex}(g))$. This is a harmless assumption if $S$ is Stein (or quasi-projective) Indeed by the Noetherian normalization, there always exist a finite map $S\to \mathbb{C}^{\dim S}$ when $S$ is Stein and quasi-finite morphism $S\to \mathbb{P}^{\dim S}$ when $S$ is quasi-projective. If we replace $S$ by $\mathbb{C}^{\dim S}$ or $\mathbb{P}^{\dim S}$ it will be special case above. Consider the diagram
-	\begin{center}
-		\begin{tikzcd}
-			X & Y \\
-			& {\mathbb{C}^{\dim S}}
-			\arrow[from=1-1, to=1-2]
-			\arrow[from=1-1, to=2-2]
-			\arrow[from=1-2, to=2-2]
-		\end{tikzcd}
-	\end{center}
-	Since finite lifting of Moishezon morphism is Moishezon, if $X\to \mathbb{C}^n$ is Moishezon then so will $X\to S$. 
-	
-	Let $E_0$ be a $g$-exceptional divisor. Set $\left(g_0: X_0 \rightarrow S_0\right):=(g: X \rightarrow S)$ and $Z_0:=g_0\left(E_0\right)$.
-	
-	If $g_i: X_i \rightarrow S_i$ and $E_i \subset X_i$ are already defined, we set $Z_i:=g_i\left(E_i\right)$. Let $S_{i+1}$ be the normalization of the blow-up $B_{Z_i} S_i$, and $g_{i+1}: X_{i+1} \rightarrow S_{i+1}$ the normalization of the graph of $X_i \rightarrow S_i \dashrightarrow S_{i+1}$.
-	
-	Let $E_{i+1} \subset X_{i+1}$ denote the bimeromorphic transform of $E_i$. (Note that $X_{i+1} \rightarrow X_i$ is an isomorphism over an open subset of $E_i$.)
-	
-	Indeed the construction can be pictured as below
-	\begin{center}
-		\begin{tikzcd} {X_{i+1}:=(\Gamma_\phi)^\nu} && {S_{i+1}=(\text{Bl}_{Z_i}S_i)^\nu} \\ {\Gamma_\phi} && {\text{Bl}_{Z_i}S_i} \\ {X_i} && {S_i} \arrow[from=1-1, to=1-3] \arrow[from=1-1, to=2-1] \arrow[from=1-3, to=2-3] \arrow[from=2-1, to=1-3] \arrow[from=2-1, to=3-1] \arrow[from=2-3, to=3-3] \arrow["\phi"{description}, dashed, from=3-1, to=1-3] \arrow[from=3-1, to=3-3] \end{tikzcd}
-	\end{center}
-	
-	Recall that at beginning we assume the smooth locus of $S$ is dense in $g(\operatorname{Ex}(g))$. That is by generic smoothness if we choose some general points $e\in E_i$ then it will be smooth point of $X_i$ and $S_i$ is also smooth around the point $g(e)$.
-	
-	Thus to compute the Jacobian we can take the Euclidean model, Let $a\left(E_i, S_i\right)$ denote the vanishing order of the Jacobian of $g_i$ along $E_i$. By an elementary computation we get that
-	$$
-	a\left(E_{i+1}, S_{i+1}\right) \leq a\left(E_i, S_i\right)+1-\operatorname{codim}\left(Z_i \subset S_i\right) .
-	$$
-	Thus eventually we reach the situation when $\operatorname{codim}\left(Z_i \subset S_i\right)=1$, indeed if $\operatorname{codim}\left(Z_i \subset S_i\right)\ge 2$ then the Jacobian of $g_i$ along $E_i$ will eventually goes to zero. Contradiction.
-	
-	Thus by comparing the dimension we know when restrict the morphism $X_i\to S_i$ to $E_i\to Z_i$ it will become a generic finite morphism. Note that the morphism $S_{i+1}\to S_{i}$ is composition of blow up and normalization thus it's projective, restrict to $Z_{i+1}\to Z_i$ is again projective. Thus we have by the Stein factorization on $E_i \to Z_i$ into 
-	\begin{center}
-		\begin{tikzcd}
-			{E_i} & W & {Z_i} \\
-			& {Z_0}
-			\arrow["c", from=1-1, to=1-2]
-			\arrow[from=1-1, to=2-2]
-			\arrow["f", from=1-2, to=1-3]
-			\arrow[from=1-2, to=2-2]
-			\arrow["p", from=1-3, to=2-2]
-		\end{tikzcd}
-	\end{center}
-	Where $f$ is finite, since $E_i\to Z_i$ is generic finite the contraction morphism $c$ is bimeromorphic, and composition $W\to Z_i\to Z_0$ is projective, therefore $E_i \rightarrow Z_i$ is Moishezon and also $E_i\to S_i$.
-	\end{proof}
-	
-	%	Here is a subsubsection. You can use these as well.
-	%	
-	%	\subsection{Using Boldface}
-	%	Make sure to use lots of boldface.
-	%	
-	%	\paragraph{Question:}
-	%	How would you use boldface?
-	%	
-	%	\paragraph{Example:}
-	%	This is an example showing how to use boldface to 
-	%	help organize your lectures.
-	%	
-	%	
-	%	\paragraph{Some Formatting.}
-	%	Here is some formatting that you can use in your notes:
-	%	\begin{itemize}
-		%		\item {\em Item One} -- This is the first item.
-		%		\item {\em Item Two} -- This is the second item.
-		%		\item \dots and here are other items.
-		%	\end{itemize}
-	%	
-	%	If you need to number things, you can use this style:
-	%	\begin{enumerate}
-		%		\item {\em Item One} -- Again, this is the first item.
-		%		\item {\em Item Two} -- Again, this is the second item.
-		%		\item \dots and here are other items.
-		%	\end{enumerate}
-	%	
-	%	\paragraph{Bibliography.}
-	
-	%\bibliography{mybib}
-		\printbibliography	
+	\printbibliography	
 	
 \end{document}
