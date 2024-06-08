@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  8 JUN 2024 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  8 JUN 2024 01:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**Moishezon-morphism3.tex
-(./Moishezon-morphism3.tex
+**BCHM3.tex
+(./BCHM3.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -751,19 +751,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip77
-\f@nch@O@elh=\skip78
-\f@nch@O@erh=\skip79
-\f@nch@O@olh=\skip80
-\f@nch@O@orh=\skip81
-\f@nch@O@elf=\skip82
-\f@nch@O@erf=\skip83
-\f@nch@O@olf=\skip84
-\f@nch@O@orf=\skip85
-)
 \@quotelevel=\count403
 \@quotereset=\count404
 
@@ -772,23 +759,23 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count405
 \l__pdf_internal_box=\box60
 )
-(./Moishezon-morphism3.aux)
-\openout1 = `Moishezon-morphism3.aux'.
+(./BCHM3.aux)
+\openout1 = `BCHM3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
  ABD: EveryShipout initializing macros
 (d:/Tex/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -805,8 +792,19 @@ LaTeX Font Info:    ... okay on input line 68.
 \everyMPtoPDFconversion=\toks42
 ) (d:/Tex/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(d:/Tex/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(d:/Tex/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -824,98 +822,36 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout4 = `Moishezon-morphism3-blx.bib'.
+\openout4 = `BCHM3-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Moishezon-morphism3.bbl' found.
+Package biblatex Info: ... file 'BCHM3.bbl' found.
 
-(./Moishezon-morphism3.bbl)
-Package biblatex Info: Reference section=0 on input line 68.
-Package biblatex Info: Reference segment=0 on input line 68.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 83
-.
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 83
-.
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+(./BCHM3.bbl)
+Package biblatex Info: Reference section=0 on input line 58.
+Package biblatex Info: Reference segment=0 on input line 58.
 
 
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+LaTeX Warning: Empty bibliography on input line 60.
 
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[1{d:/Tex/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-] [2]
-<Moishezon morphism definition.png, id=27, 563.10374pt x 215.30438pt>
-File: Moishezon morphism definition.png Graphic file (type png)
-<use Moishezon morphism definition.png>
-Package pdftex.def Info: Moishezon morphism definition.png  used on input line 
-127.
-(pdftex.def)             Requested size: 399.2946pt x 152.67334pt.
-
-[3 <./Moishezon morphism definition.png>]
-Overfull \hbox (4.88275pt too wide) in paragraph at lines 171--172
-[]\OT1/cmr/m/n/10.95 Consider the fol-low-ing graph
- []
-
-
-Overfull \hbox (21.9765pt too wide) in paragraph at lines 182--182
-[]\OT1/cmr/m/n/10.95 By Ko-daira lemma
- []
-
-[4] [5] [6] [7] (./Moishezon-morphism3.aux)
-Package logreq Info: Writing requests to 'Moishezon-morphism3.run.xml'.
-\openout1 = `Moishezon-morphism3.run.xml'.
+(./BCHM3.aux)
+Package logreq Info: Writing requests to 'BCHM3.run.xml'.
+\openout1 = `BCHM3.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21801 strings out of 480608
- 438003 string characters out of 5905572
- 854957 words of memory out of 5000000
- 37331 multiletter control sequences out of 15000+600000
- 539526 words of font info for 54 fonts, out of 8000000 for 9000
+ 20970 strings out of 480608
+ 420276 string characters out of 5905572
+ 838493 words of memory out of 5000000
+ 36532 multiletter control sequences out of 15000+600000
+ 532638 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,16n,86p,972b,1231s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:
-/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/Tex/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/Tex/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Tex/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Tex/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/Tex/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Tex/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:
-/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/Tex/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/Tex/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Moishezon-morphism3.pdf (7 pages, 242117 bytes).
+ 67i,1n,86p,879b,747s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 3 PDF objects out of 1000 (max. 8388607)
+ 3 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
