@@ -1,0 +1,254 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Moishezon morphism reading seminars} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\usepackage[backend=bibtex,style=IEEE,sorting=nty]{biblatex}
+\addbibresource{mybib.bib}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Moishezon morphism reading seminars}
+\rhead{}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\begin{document}
+	
+	\lecture{5 --- 06, 13, 2024}{Spring 2024}{}{Yi Li}
+	\section{Overview}
+	Today we will continue our discussion on the paper Moishezon morphism. We will first finish our discussion on the Moishezon locus, we will prove a interesting locally freeness result about the direct image sheaves. Then we will delve into today's main topic, the proof of the Conjecture 5 with additional assumptions that the central fiber is KLT and not uniruled.
+	
+	\section{The Moishezon locus}
+	We first prove an interesting locally freeness criterion for direct image sheaves.
+	\begin{theorem}[locally freeness criterion for $R^if_*\mathcal{O}_X$, see \cite{Moishezonmorphism}, Theorem 24]\label{locallyfree}
+	Let $f: X \rightarrow S$ be a smooth, proper morphism of analytic spaces. Assume that $H^i\left(X_s, \mathbb{C}\right) \rightarrow H^i\left(X_s, \mathcal{O}_{X_s}\right)$ is surjective for every $i$ for some $s \in S$. Then $R^i g_* \mathcal{O}_X$ is locally free in a neighborhood of $s$ for every $i$.
+	\end{theorem}
+	\begin{proof}
+		We begin our proof by noticing by the direct image theorem it's enough to show the surjectivity of the base change morphism 
+		$$
+		\phi_s^i: R^i f_* \mathcal{O}_X \rightarrow H^i\left(X_s, \mathcal{O}_{X_s}\right)
+		$$
+		for every $i$. 
+		
+		Indeed the base change theorem shows that the surjectivity of the base change morphisms $\phi_s^i$ and $\phi_s^{i-1}$ implies the locally freeness of the direct image $R^if_* (\mathcal{O}_X)$.
+		
+		Next by the Theorem on Formal Functions, it is enough to prove this when $S$ is replaced by any Artinian local scheme $S_n$, whose closed point is $s$.
+		
+		By Cartan B easy to see the vanishing of $H^p(S_n,R^if_* \mathcal{O}_X)=0,\ \forall q,\forall p>0$ then by the Leray spectral sequence arguement we get $$H^0\left(S_n, R^i f_* \mathcal{O}_X\right)=H^i\left(X_n, \mathcal{O}_{X_n}\right)$$
+		
+		On the affine base the fiber of the coherent sheaf is indeed the global section, as a consequence $$R^if_* \mathcal{O}_X(s) = H^0(S_n,R^i f_* \mathcal{O}_X)= H^i(X_n,\mathcal{O}_{X_n})$$
+		
+		The base change morphism thus becomes $$\psi^i: H^i\left(X_n, \mathcal{O}_{X_n}\right) \rightarrow H^i\left(X_s, \mathcal{O}_{X_s}\right) .$$
+		
+		Let $\mathbb{C}_{X_n}$ (resp. $\mathbb{C}_{X_s}$ ) denote the sheaf of locally constant functions on $X_n$ (resp. $X_s$ ) and $j_n: \mathbb{C}_{X_n} \rightarrow \mathcal{O}_{X_n}$ (resp. $j_s: \mathbb{C}_{X_s} \rightarrow \mathcal{O}_{X_s}$ ) the natural inclusions. We have a commutative diagram
+		\begin{center}
+			\begin{tikzcd} {H^i(X_n,\mathbb{C}_{X_n})} & {H^i(X_s,\mathbb{C}_{X_s})} \\ {H^i(X_n,\mathcal{O}_{X_n})} & {H^i(X_s,\mathcal{O}_{X_s})} \arrow["{\alpha^j}", from=1-1, to=1-2] \arrow["{j_n'}"', from=1-1, to=2-1] \arrow["{j_s'}", from=1-2, to=2-2] \arrow["{\psi^j}"', from=2-1, to=2-2] \end{tikzcd}
+			
+		\end{center}
+		Note that $\alpha^i$ is an isomorphism since the inclusion $X_s \hookrightarrow X_n$ is a homeomorphism, and $j_s^i$ is surjective since $X_s$ is Du Bois. Thus $\psi^i$ is also surjective.
+	\end{proof}
+	Using this we can prove the theorem below
+	\begin{theorem}[Fiberwise Moishezon morphism is locally Moishezon if it's smooth, see \cite{Moishezonmorphism},Corollary 22]
+		Let $g: X \rightarrow S$ be a smooth, proper morphism of normal, irreducible analytic spaces whose fibers are Moishezon. Then $g$ is locally Moishezon.
+	\end{theorem}
+	\begin{proof}
+		Since we have proved the Moishezon manifolds admit strong Hodge decomposition, the morphism $$H^i\left(X_s, \mathbb{C}\right) \rightarrow H^i\left(X_s, \mathcal{O}_{X_s}\right)$$ is surjective for every $i$.
+		
+		The result then follows clearly by \ref{locallyfree} and \cite{Moishezonmorphism} Theorem 21. 
+	\end{proof}
+	\section{Fiberwise bimeromorphic map}
+	\begin{definition}[Fiberwise bimeromorphic map, see \cite{Moishezonmorphism}, definition 26]
+		Definition 26. Let $g_i: X^i \rightarrow S$ be a proper morphisms. A bimeromorphic map $\phi: X^1 \dashrightarrow X^2$ is fiberwise bimeromorphic if $\phi$ induces a bimeromorphic $\operatorname{map} \phi_s: X_s^1 \dashrightarrow X_s^2$ for every $s \in S$.
+	\end{definition}
+	Although the bimeromorphic map is not fiberwise bimeromorphic in general, it is indeed fiberwise bimeromorphic on a dense open subset.
+	\begin{theorem}[Bimeromorphic map is generic fiberwise bimeromorphic]\label{fiberwisebimero}
+		Let $f:X \dashrightarrow Y$ be a bimeromorphic map between complex varieties over the base $S$, prove that on the generic fiber the morphism induce a bimeromorphic map on the fiber.
+	\end{theorem}
+	\begin{proof}
+	Since $f$ is bimeromorphic there exist some open dense subset such that $f|_V : V \stackrel{\sim}\to U$ then I claim the morphism induce bimeromorphic map on the fibers $X_s$ such that $X_s \cap V \ne \emptyset$.
+	
+	Indeed since $X_s \cap V \subset X_s$ is dense in $X_s$ indeed we have $$\overline{X_s \cap V} \subset X_s \cap \overline{V} = X_s \cap X = X_s$$thus we have $X_s\cap V$ dense in $X_s$. 
+	
+	we have that $X_s\cap V$ is dense open subset of $X_s$, and therefore it induce an bimeromorphism on the fiber $$X_s \dashrightarrow Y_s$$
+	
+	Finally note that the set $$\{s\in S \mid X_s \cap V \ne \emptyset \} = f(V) = \{s\in S \mid X_s \dashrightarrow Y_s \text{ is bimeromorphism}\}$$ and image of dense subset under a continuous map is dense, thus we find the bimeromorphic map induce bimeromorphic map on the generic fiber of the morphism.
+	
+	\end{proof}
+	\section{Proof of conjecture 5 under the assumption that the central fiber is KLT and not uniruled}
+	In this section we will begin our discussion on Conjecture 5. We first recall what Conjecture 5 is about
+	
+	\begin{conjecture}[Fiberwise bimeromorphic conjecture for Moishezon morphism, see \cite{Moishezonmorphism}, Conjecture 5]
+		Let $g: X \rightarrow \mathbb{D}$ be a flat, proper, Moishezon morphism. Assume that $X_0$ has canonical (resp. log terminal) singularities. 
+		
+		Then $g$ is fiberwise birational (26) to a flat, projective morphism $g^{\mathrm{p}}: X^{\mathrm{p}} \rightarrow \mathbb{D}$ such that
+		(1) $X_0^{\mathrm{p}}$ has canonical (resp. log terminal) singularities,
+		(2) $X_s^{\mathrm{p}}$ has terminal singularities for $s \neq 0$, and
+		(3) $K_{X_{\mathrm{P}}}$ is $\mathbb{Q}$-Cartier.
+	\end{conjecture}
+	\begin{remark}
+		Before continue the discussion about this conjecture, let us first look closely what this conjecture is about? The conjecture shows that flat Moishezon morphim is not only bimeromorphic to some projective model it's indeed fiberwise bimeromorphic to some projective model, if we assume the singularity on the central fiber is nice.
+		
+		As a remark by Prof. Rao, this conjecture may be closely related to the invariance of plurigenera question.
+	\end{remark}
+	
+	Prof. Kollár varfies the conjecture when the central fiber is KLT with non unirule condition, the central topic of today's lecture will be the proof of this theorem. But before that let us list the intermediate results that will be used (the proof of them will be discussed later).
+	
+	\begin{theorem}[Inversion of adjunction, see \cite{Moishezonmorphism}, Proposition 30]\label{inversion}
+		Let $X$ be a normal, complex analytic space, $X_0 \subset X$ a Cartier divisor and $\Delta$ an effective $\mathbb{R}$-divisor such that $K_X+\Delta$ is $\mathbb{R}$-Cartier. Then $\left(X, X_0+\Delta\right)$ is PLT in a neighborhood of $X_0$ iff $\left(X_0,\left.\Delta\right|_{X_0}\right)$ is KLT.
+	\end{theorem}
+	\begin{theorem}[Canonical modification theorem, see \cite{Moishezonmorphism}, colloary 30]
+		Let $f: X \rightarrow \mathbb{D}$ be a flat, proper, Moishezon morphism. Assume that $X_0$ is log terminal. 
+		Then $X$ has a canonical modification $\pi$ : $X^{\mathrm{c}} \rightarrow X$, such that
+		(a) $X_0^{\mathrm{c}}$ is log terminal and,
+		
+		(b) $\pi$ is fiberwise birational.
+		
+	\end{theorem}
+	\begin{lemma}[A limiting expression for restricted base locus, see \cite{Moishezonmorphism}, (31.1)]
+		Let $X \rightarrow S$ be a proper, Moishezon morphism, $D$ an $\mathbb{R}$-divisor on $X$, and $A$ a big $\mathbb{R}$-divisor on $X$ such that $\mathbf{B}^{\operatorname{div}}(A)=\emptyset$. Then, for every prime divisor $F \subset X$,
+		$$
+		\operatorname{coeff}_F \mathbf{B}_{-}^{\mathrm{div}}(D)=\lim _{\epsilon \rightarrow 0} \operatorname{coeff}_F \mathbf{B}_{-}^{\mathrm{div}}(D+\epsilon A)
+		$$
+	\end{lemma}
+	and
+	\begin{lemma}[An estimate for restricted base locus, see \cite{Moishezonmorphism}, (31.2)]
+	Let $X_i \rightarrow S$ be proper, Moishezon morphisms, $h: X_1 \rightarrow X_2$ a proper, bimeromorhic morphism, $D_2$ a pseudo-effective, $\mathbb{R}$-Cartier divisor on $X_2$, and $E$ an effective, $h$-exceptional divisor. Then $$ \mathbf{B}_{-}^{\mathrm{div}}\left(E+h^* D_2\right) \geq E$$
+	\end{lemma}
+	Finally let me make a remark on why restricted base locus is useful here, indeed the restricted base locus contains precisely the divisors that will be contracted by the minimal model program:
+	\begin{theorem}[Restricted base locus contains the divisors that will be contracted by the MMP]\label{Restrictedbase}
+	
+	\end{theorem}
+	Now we can goes into the proof of the theorem
+	\begin{theorem}[A flat Moishezon morphism with KLT and non-uniruled central fiber will be fiberwise bimeromorphic to a projective morphism, \cite{Moishezonmorphism}, Theorem 28]
+	Let $g: X \rightarrow \mathbb{D}$ be a flat, proper, Moishezon morphism. Assume that
+	\begin{enumerate}
+		\item $X_0$ has log terminal singularities and
+		\item $X_0$ is not uniruled
+	\end{enumerate}
+	Then
+	\begin{enumerate}
+		\item[(a)] $g$ is fiberwise birational to a flat, projective morphism $g^{\mathrm{p}}: X^{\mathrm{p}} \rightarrow \mathbb{D}$ (possibly over a smaller disc),
+		\item[(b)] $X_0^{\mathrm{p}}$ has log terminal singularities,
+		\item[(c)] $X_s^{\mathrm{p}}$ is not uniruled and has terminal singularities for $s \neq 0$,
+		\item[(d)] $K_{X^{\mathrm{p}}}$ is $\mathbb{Q}$-Cartier
+	\end{enumerate}
+	\end{theorem}
+	\begin{proof}
+		We take a resolution of singularities $Y \rightarrow X$ such that $Y \rightarrow \mathbb{D}$ is projective, and then take a relative minimal model of $Y \rightarrow \mathbb{D}$. We hope that it gives what we want. There are, however, several obstacles. Next we discuss these, and their solutions, but for all technical details we refer to later sections.
+		
+		\textbf{Step 1. Reduce the variety to the one that has Q-Cartier canonical divisor.}
+		
+		We need to control the singularities of $X$. First for a flat proper Moishezon morphism with KLT central fiber, there exist a canonical modifiction which si fiberwise birational and the central fiber is KLT reduces us to the case when $K_X$ is $\mathbb{Q}$-Cartier. 
+		
+		Indeed by the canonical modificaiton we can find some canonical modification $X^c \to X$ such that $X^c$ is canonical singularity and the the morphism $X^c\to X$ is the fiberwise birational map, thus if we can prove the result for $X^c \to \mathbb{D}$ then it will also be true for the $X\to \mathbb{D}$ (since composition of fiberwise birational map is again fiberwise birational) 
+		
+		We assume this from now on. Then the inversion of adjunction for PLT pair implies that the pair $\left(X, X_0\right)$ is PLT. by setting $\Delta = 0$ in the inversion of adjunction. (To apply the inversion of adjunction here we require $K_X$ to be $\mathbb{Q}$-Cartier)
+		
+		
+		\textbf{Step 2. Take base change morphism require the projective model to a semistable one.}
+		
+		After a base change $z \mapsto z^r$ we get $g^r: X^r \rightarrow \mathbb{D}$. For suitable $r$, there is a semi-stable, projective resolution $h: Y \rightarrow \mathbb{D}$; we may also choose it to be equivariant for the action of the cyclic group $G \cong \mathbb{Z}_r$. All subsequent steps will be $G$-equivariant. We denote by $X_0^Y$ the birational transform of $X_0$ and by $E_i$ the other irreducible components of $Y_0$.
+		
+		\textbf{Step 3. Prove the generic fibers are not uniruled.}
+		
+		We will prove it by contradiction, note that for a dominant morphism if the source is uniruled then so is the target (see \cite{Rationalcurve} IV. 1.2 Lemma). On the other hand, since the deformation limit of uniruled variety is uniruled on each irreducible and reduced components (see \cite{Rationalcurve} IV 1.7) We have $X_0^Y$ being uniruled but then $X_0$ will also be uniruled which contradicts to the assumption.
+		
+		And finally by \cite{BDPP} Corollar 0.3. easy to see $K_{Y_s}$ is pseudo-effective.
+		
+		\textbf{Step 4. Run the MMP using BCHM}
+		
+		We require the condition that the general fibers are of log general type. To achieve this, let $H$ be an ample,
+		
+		$G$-equivariant divisor such that $Y_0+H$ is snc. For $\epsilon>0$ we get a pair $(Y, \epsilon H)$ whose general fibers $\left(Y_s, \epsilon H_s\right)$ are of log general type since $K_{Y_s}$ is pseudoeffective. For such algebraic families, relative minimal models are known to exist by BCHM. 
+		
+		We also know that $\left(Y, Y_0+\epsilon H\right)$ is dlt for $0<\epsilon \ll 1$.  
+		
+		Thus we get the MMP $$\phi:(Y, \epsilon H) \dashrightarrow\left(Y^{\mathrm{m}}, \epsilon H^{\mathrm{m}}\right),$$
+		
+		\textbf{Step 5. Singularity of the output minimal model}
+		
+		We claim $\left(Y^{\mathrm{m}}, Y_0^{\mathrm{m}}+\epsilon H^{\mathrm{m}}\right)$ is DLT, and $H^{\mathrm{m}}$ is $\mathbb{Q}$-Cartier for general choice of $\epsilon$ and also thus $\left(Y^{\mathrm{m}}, Y_0^{\mathrm{m}}\right)$ is also dlt.
+		
+		Indeed Step of MMP will preserve DLT condition (see \cite{BCHM} Lemma 3.10.10.) easy to see $\left(Y^{\mathrm{m}}, Y_0^{\mathrm{m}}+\epsilon H^{\mathrm{m}}\right)$ is DLT. On the other hand by Lemma 1.5.1. of \cite{Alex}, easy to see if $\epsilon$ is sufficient general the $\mathbb{Q}$-linear independent condition satisfies and therefore $H^m$ is indeed a $\mathbb{Q}$-Cartier divisor. And finally by \cite{KollarMori} Corollary 2.39. the $\left(Y^{\mathrm{m}}, Y_0^{\mathrm{m}}\right)$ is also DLT (note that we really need $\mathbb{Q}$-Cartier condition). 
+		 
+		\textbf{Step 6. The minimal model will contract precisely the divisors $E_i$.}
+		Recall that we have $$\mathbf{B}_-^{\operatorname{div}}(K_Y + Y_0) \ge (a_i+1) E_i$$
+		On the other hand $$\operatorname{coeff}_F \mathbf{B}_{-}^{\mathrm{div}}(D)=\lim _{\epsilon \rightarrow 0} \operatorname{coeff}_F \mathbf{B}_{-}^{\mathrm{div}}(D+\epsilon A)$$for any prime divisor $F$. Thus for sufficient small $\epsilon$ $E_i$ also contains in the restricted base locus of $K_Y+Y_0+\epsilon H$ then by Theorem \ref{Restrictbase} the MMP will contract those $E_i$.
+		
+		\textbf{Step 7. The morphism $X \dashrightarrow Y^m$ is fiberwise birational morphism.}
+		
+		Since Cone theorem, those divisor being contracted will be covered by rational curves. But we assume that $X_0$ is not uniruled. By Theorem \ref{fiberwisebimero} the generic fiber of $X \dashrightarrow Y^m$ are bimeromorphic, that is we know for $s\ne 0$ there is bimeromorphic mapping between the fibers.
+		
+		On needs to prove that the central fiber $X_0$ is bimeromorphic to the central fiber $Y_0^m$. Indeed by the definition of strict transform, we pick the defining domain of the birational map $Y \to X$ so that $V\stackrel{\sim}\to U$ and we pick $X_0 \cap U \stackrel{\sim}\to X_0^Y \cap V$, observe that $X_0\cap U \subset X_0$ dense (since $\overline{ X_0 \cap U}\subset \overline{X_0}\cap \overline{U} = X_0 \cap X = X_0$) and $X_0^Y \cap V\subset X_0^Y$ dense. We get that $X_0$ and $X_0^Y$ are birational.
+		
+		\textbf{Step 8. The pair $(Y_s,\epsilon H_s)$ is terminal, and also the pair $(Y_s^m, \epsilon H_s^m)$ and also $Y_s^m$.}
+		
+		Note that $h:Y \to \mathbb{D}$ is smooth away from $Y_0$ (by the semi-stable family) thus $\left(Y_s, \epsilon H_s\right)$ is terminal for $s \neq 0$ and $0 \leq \epsilon \ll 1$ (see \cite{KollarMori} Corollary 2.35. (2))
+		
+		Since $H_s$ is ample, by negativity lemma we do not contract it. o $\left(Y_s^{\mathrm{m}}, \epsilon H_s^{\mathrm{m}}\right)$ is still terminal (since minimal model program preserve the terminal singularity indeed we have flip diagram and divisorial contraction preserve KLT (DLT, LC, terminal) singularity (see \cite{KollarMori} Corollary 3.43) note that the divisorial contraction preserve the terminal singularity require the exceptional set does not contains in the support of $H_s$. Hence so is $Y_s^{\mathrm{m}}$ (see \cite{KollarMori} Corollary 2.35.)
+		
+		\textbf{Step 9. Proving that the central fiber has KLT singularity.}
+		
+		
+		 $\left(Y^{\mathrm{m}}, Y_0^{\mathrm{m}}\right)$ is dlt(since DLT) , hence plt since $Y_0^{\mathrm{m}}$ is irreducible (see \cite{KollarMori} Proposition 5.51.)
+		 
+		 Thus $Y_0^{\mathrm{m}}$ is KLT by the easy direction of inversion of adjunction (see Theorem \ref{Inversion}).
+	\end{proof}
+	\printbibliography	
+	
+\end{document}
