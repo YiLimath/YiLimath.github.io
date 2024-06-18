@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  16 JUN 2024 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  16 JUN 2024 15:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -873,11 +873,7 @@ Overfull \hbox (12.87177pt too wide) in paragraph at lines 227--228
 
 LaTeX Warning: Reference `Restrictbase' on page 5 undefined on input line 231.
 
-[5]
-
-LaTeX Warning: Reference `Inversion' on page 6 undefined on input line 250.
-
-[6] [7] (./Moishezon5.aux)
+[5] [6] [7] (./Moishezon5.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -886,10 +882,10 @@ Package logreq Info: Writing requests to 'Moishezon5.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21490 strings out of 480608
- 429972 string characters out of 5905572
+ 21489 strings out of 480608
+ 429961 string characters out of 5905572
  849022 words of memory out of 5000000
- 37019 multiletter control sequences out of 15000+600000
+ 37018 multiletter control sequences out of 15000+600000
  540147 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,14n,86p,884b,1234s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -910,7 +906,7 @@ b><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:
 /Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Moishezon5.pdf (7 pages, 221259 bytes).
+Output written on Moishezon5.pdf (7 pages, 221296 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
