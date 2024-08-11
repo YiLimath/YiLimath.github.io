@@ -1,5 +1,5 @@
 ---
-title: 'Reading seminar-Moishezon morphism Part 1'
+title: 'Moishezon morphism seminar note: Part 1 Overview'
 date: 2024-04-18
 permalink: /posts/2024/04/Moishezon-morphism-1/
 tags:

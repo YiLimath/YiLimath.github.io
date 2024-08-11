@@ -1,5 +1,5 @@
 ---
-title: 'Reading seminar-BCHM part 1'
+title: 'Birational geometry note: BCHM Part1 Overview'
 date: 2024-04-17
 permalink: /posts/2024/04/BCHM-1/
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on the minimal log discrepancy and termination of flips'
+title: 'Birational Geometry Note: The minimal log discrepancy and termination of flips'
 date: 2024-08-11
 permalink: /posts/2024/08/Minimal-log-discrepancy/
 tags:

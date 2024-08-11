@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on Shokurov rationally connectedness conjecture'
+title: 'Birational Geometry Note: Shokurov rationally connectedness conjecture'
 date: 2024-08-11
 permalink: /posts/2024/08/Shokurov-Rationally-connectedness/
 tags:

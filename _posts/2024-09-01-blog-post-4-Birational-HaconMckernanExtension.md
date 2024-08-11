@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on Existence of flips Part I: Hacon Mckernan extension theorem'
+title: 'Birational Geometry Note: Existence of flips PartI Hacon Mckernan extension theorem'
 date: 2024-08-11
 permalink: /posts/2024/08/Existence-of-flips-PartI-Hacon-Mckernan-Extension/
 tags:

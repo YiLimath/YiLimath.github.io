@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Riemann-Hilbert correspondence'
+title: 'Hodge theory note: Riemann-Hilbert correspondence'
 date: 2024-08-01
 permalink: /posts/2024/08/Riemann-Hilbert-correspondence/
 tags:

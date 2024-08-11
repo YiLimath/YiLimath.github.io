@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Algebraic construction of Gauss Manin connection by Katz and Oda'
+title: 'Hodge theory note: Algebraic construction of Gauss Manin connection by Katz and Oda'
 date: 2024-08-01
 permalink: /posts/2024/08/Gauss-Manin-connection/
 tags:

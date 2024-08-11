@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Ahlfors lemma (Yau-Schwartz inequality) with applications'
+title: 'Hodge theory note: Ahlfors lemma (Yau-Schwartz inequality) with applications'
 date: 2024-08-01
 permalink: /posts/2024/08/Ahlfors-lemma-with-applications/
 tags:

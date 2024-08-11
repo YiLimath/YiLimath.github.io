@@ -1,5 +1,5 @@
 ---
-title: 'Reading seminar-BCHM part 3: Consequences of BCHM'
+title: 'Birational geometry note: BCHM Part3 Consequences of BCHM'
 date: 2024-06-05
 permalink: /posts/2024/06/BCHM-3/
 tags:

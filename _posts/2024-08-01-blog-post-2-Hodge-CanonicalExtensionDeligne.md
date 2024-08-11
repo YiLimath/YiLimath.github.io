@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Deligne canonical extension on a punctured disc'
+title: 'Hodge theory note: Deligne canonical extension on a punctured disc'
 date: 2024-08-01
 permalink: /posts/2024/08/Deligne-canonical-extension/
 tags:

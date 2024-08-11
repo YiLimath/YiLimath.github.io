@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Existence of mixed Hoge structure on the quasiprojective varieties'
+title: 'Hodge theory note: Existence of mixed Hoge structure on the quasiprojective varieties'
 date: 2024-08-01
 permalink: /posts/2024/08/Existence-of-Mixed-Hodge-structure/
 tags:

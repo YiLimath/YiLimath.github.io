@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on Mori dream spaces'
+title: 'Birational Geometry Note: Mori dream spaces'
 date: 2024-08-11
 permalink: /posts/2024/08/Mori-dream-spaces/
 tags:

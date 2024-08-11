@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on Ambro canonical bundle formula'
+title: 'Birational Geometry Note: Ambro canonical bundle formula'
 date: 2024-08-11
 permalink: /posts/2024/08/Ambro-canonical-bundle-formula/
 tags:

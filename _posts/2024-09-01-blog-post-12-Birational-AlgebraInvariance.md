@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on algebraic proof of Siu invariance of plurigenera'
+title: 'Birational Geometry Note: algebraic proof of Siu invariance of plurigenera'
 date: 2024-08-02
 permalink: /posts/2024/08/Algebraic-Proof-of-Invariance-of-Plurigenera/
 tags:

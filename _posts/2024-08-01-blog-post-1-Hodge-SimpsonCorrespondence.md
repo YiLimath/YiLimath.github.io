@@ -1,5 +1,5 @@
 ---
-title: 'Reading notes Non Abelian Hodge theory and Simpson correspondence'
+title: 'Hodge theory note: Non Abelian Hodge theory and Simpson correspondence'
 date: 2024-08-01
 permalink: /posts/2024/08/Non-Abelian-Hodge-and-Simpson-correspondence/
 tags:

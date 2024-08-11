@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on the Sarkisov program'
+title: 'Birational Geometry Note: The Sarkisov program'
 date: 2024-08-11
 permalink: /posts/2024/08/Sarkisov-Program/
 tags:

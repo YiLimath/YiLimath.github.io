@@ -1,5 +1,5 @@
 ---
-title: 'Reading seminar Moishezon morphism Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism'
+title: 'Moishezon morphism Note Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism'
 date: 2024-06-13
 permalink: /posts/2024/06/Moishezon5/
 tags:

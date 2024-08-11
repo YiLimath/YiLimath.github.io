@@ -1,5 +1,5 @@
 ---
-title: 'Birational geometry note on Kahler minimal model program Part 1'
+title: 'Birational Geometry Note: Kahler minimal model program PartI Overview'
 date: 2024-08-02
 permalink: /posts/2024/08/Kahler-MMP/
 tags:
