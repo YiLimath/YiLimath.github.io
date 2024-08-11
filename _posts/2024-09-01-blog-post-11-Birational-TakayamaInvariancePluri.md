@@ -1,5 +1,5 @@
 ---
-title: 'Note on analytic proof of invariance of plurigenera by Takayama'
+title: 'Birational geometry note on analytic proof of invariance of plurigenera by Takayama'
 date: 2024-08-02
 permalink: /posts/2024/08/Algebraic-Proof-of-Invariance-of-Plurigenera/
 tags:

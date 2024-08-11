@@ -1,5 +1,5 @@
 ---
-title: 'Note on Theorem of Angehrn and Siu'
+title: 'Birational geometry note on Theorem of Angehrn and Siu'
 date: 2024-08-11
 permalink: /posts/2024/08/Theorem-of-Angehrn-and-Siu/
 tags:
