@@ -1,5 +1,5 @@
 ---
-title: 'Deformation theory note on Deformation of scheme 1st order deformation'
+title: 'Deformation Theory Note: Deformation of scheme 1st order deformation'
 date: 2024-08-11
 permalink: /posts/2024/08/Deformation-of-subscheme/
 tags:
