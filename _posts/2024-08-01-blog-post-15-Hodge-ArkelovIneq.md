@@ -1,5 +1,5 @@
 ---
-title: 'Note on Arkelov inequality and its generalizations'
+title: 'Hodge theory note on Arkelov inequality and its generalizations'
 date: 2024-08-01
 permalink: /posts/2024/08/Arkelov-inequality/
 tags:

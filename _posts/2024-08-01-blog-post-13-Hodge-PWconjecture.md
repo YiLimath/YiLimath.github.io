@@ -1,5 +1,5 @@
 ---
-title: 'Note on P = W conjecture'
+title: 'Hodge theory note on P = W conjecture'
 date: 2024-08-01
 permalink: /posts/2024/08/P=W-conjecture/
 tags:

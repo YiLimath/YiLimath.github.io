@@ -1,5 +1,5 @@
 ---
-title: 'Note on Existence of limiting mixed Hodge structure on the semi-stable 1-parameter degeneration'
+title: 'Hodge theory note on Existence of limiting mixed Hodge structure on the semi-stable 1-parameter degeneration'
 date: 2024-08-01
 permalink: /posts/2024/08/Existence-of-limiting-MHS/
 tags:

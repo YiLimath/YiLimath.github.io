@@ -1,5 +1,5 @@
 ---
-title: 'Note on Local invariance cycle theorem, Wangs exact sequence and the Clemens-Schimid exact sequence'
+title: 'Hodge theory note on Local invariance cycle theorem, Wangs exact sequence and the Clemens-Schimid exact sequence'
 date: 2024-08-01
 permalink: /posts/2024/08/Local-Invariant-Cycle-and-Clemens-Schimid/
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 'Note on Poincare-Verdier duality theorem'
+title: 'Hodge theory note: Poincare-Verdier duality theorem'
 date: 2024-08-01
 permalink: /posts/2024/08/Poincare-Verdier-Duality/
 tags:

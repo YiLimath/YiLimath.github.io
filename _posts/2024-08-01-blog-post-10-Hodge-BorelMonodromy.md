@@ -1,5 +1,5 @@
 ---
-title: 'Note on Borel Monodromy theorem'
+title: 'Hodge theory note: Borel Monodromy theorem'
 date: 2024-08-01
 permalink: /posts/2024/08/Borel-Monodromy-theorem/
 tags:

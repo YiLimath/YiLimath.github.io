@@ -1,5 +1,5 @@
 ---
-title: 'Note on Cattani Deligne Kaplan theorem on locus of Hodge class'
+title: 'Hodge theory note: Cattani Deligne Kaplan theorem on locus of Hodge class'
 date: 2024-08-01
 permalink: /posts/2024/08/Cattani-Deligne-Kaplan-theorem/
 tags:
