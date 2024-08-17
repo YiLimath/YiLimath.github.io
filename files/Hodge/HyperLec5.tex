@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Moishezon morphism reading seminars} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\usepackage[backend=bibtex,style=IEEE,sorting=nty]{biblatex}
+\addbibresource{mybib.bib}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Moishezon morphism reading seminars}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
+	\section{Overview}
+	The topics will be discussed in today's lecture are: 
+	
+	(1) We will try to figure out the tangent bundle and horizental bundle of period domain and prove that derivative of period mapping is horizental,
+	(2) What nice about the horizental tangent bundle is that it has very nice curvature property, we will deduce the Griffiths curvature formula and compute the bisectional curvature and holomorphic sectional curvature, and showing the hyperboilicity using the curvature result that we deduce,
+	(3) Finally we will give a very interesting application which shows that moduli space of Calabi-Yau manifolds is hyperbolic. (The idea of the proof is try to show the local Torelli property which will implies hyperbolicity).
+%	
+%	\section{The fiber of the Moishezon morphism is again Moishezon}
+%	
+%	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
+%	
+%	\end{theorem}
+%	
+%	
+%	\begin{remark}
+%	\cite{Moishezonmorphism} 
+%	\end{remark}
+%	
+%	\begin{proof}
+%		
+%	\end{proof}
+%
+%	\begin{center}
+%		\begin{tikzcd}
+%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+%			\arrow["\cong", from=1-4, to=2-4]
+%			\arrow[from=2-1, to=2-2]
+%			\arrow[from=2-2, to=2-3]
+%			\arrow[from=2-2, to=3-2]
+%			\arrow[from=2-3, to=2-4]
+%			\arrow[from=2-3, to=3-3]
+%			\arrow[from=2-4, to=2-5]
+%			\arrow[from=2-4, to=3-4]
+%			\arrow[from=3-1, to=3-2]
+%			\arrow[from=3-2, to=3-3]
+%			\arrow[from=3-3, to=3-4]
+%			\arrow[from=3-4, to=3-5]
+%			\arrow["\cong", from=3-4, to=4-4]
+%		\end{tikzcd}
+%	\end{center}
+%
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+%		\caption{Comparison between different definitions for Moishezon morphism}
+%		\label{fig:moishezon-morphism-definition}
+%	\end{figure}
+%	
+	\printbibliography	
+	
+\end{document}
