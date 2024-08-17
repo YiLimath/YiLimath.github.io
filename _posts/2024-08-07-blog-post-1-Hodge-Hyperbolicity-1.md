@@ -22,23 +22,21 @@ Here are the topics that will be discussed in this series of lectures:
 
 
 
-For detailed information see my notes 
+For detailed information see my notes:
 
 [Lec 1 Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec1.pdf)
 
-
 [Lec-2 Green Green Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec2.pdf)
-
 
 [Lec-3 Review Hodge theory](https://yilimath.github.io/files/Hodge/HyperLec3.pdf)
 
-
 [Lec-4 Variational Hodge theory and an introduction to period domain and period mapping](https://yilimath.github.io/files/Hodge/HyperLec4.pdf)
-
 
 [Lec-5 curvature property of period domain](https://yilimath.github.io/files/Hodge/HyperLec5.pdf)
 
 [Lec-6 Applications of Ahlfors estimate, geometric information coming from fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
 
-[Lec-7 Applications of Ahlfors estimate, geometric information coming from fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
+[Lec-7 Non Abelian Hodge theory in archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec7.pdf)
+
+[Lec-8 Non Abelian Hodge theory in non archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
 
