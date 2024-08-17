@@ -1,6 +1,6 @@
 ---
 title: 'Lecture notes on Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture Lec 1'
-date: 2024-08-18
+date: 2024-08-19
 permalink: /posts/2024/08/Lec1-Hyperbolicity/
 tags:
   - Hodge theory
