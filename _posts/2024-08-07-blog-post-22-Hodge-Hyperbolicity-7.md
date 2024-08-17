@@ -15,5 +15,5 @@ The topics will be discussed in today's lecture are:
 (3) 
 
 
-For detailed information see my notes [Lec-7 Applications of Ahlfors estimate, geometric information coming from fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
+For detailed information see my notes [Lec-7 Applications of Ahlfors estimate, fundamental group representation and geometry](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
 

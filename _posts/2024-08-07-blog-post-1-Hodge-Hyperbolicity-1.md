@@ -7,12 +7,12 @@ tags:
   - Complex analytic geometry
 ---
 
-In today's lecture, Professor Ya Deng first gave a brief overview of this series of lectures, then went into the discussion of some basic notions about hyperbolicity.
+These series of notes summarize the lectures from the short course taught by Professor Ya Deng at Kunming in 2024. 
 
 
-We can divide this series lectures into 4 parts: 
+Here are the topics that will be discussed in this series of lectures:
 
-(1) Part 1: we will discuss the variational Hodge theory develop by Griffiths, Deligne, Schimid.
+(1) Part 1: we will discuss the classical results on variational Hodge theory, 
 
 (2) Part 2: we will discuss NonAbelian Hodge theory.
 
@@ -22,5 +22,23 @@ We can divide this series lectures into 4 parts:
 
 
 
-For detailed information see my notes (coming before 2024.8.18) [Lec 1 Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec1.pdf)
+For detailed information see my notes 
+
+[Lec 1 Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec1.pdf)
+
+
+[Lec-2 Green Green Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec2.pdf)
+
+
+[Lec-3 Review Hodge theory](https://yilimath.github.io/files/Hodge/HyperLec3.pdf)
+
+
+[Lec-4 Variational Hodge theory and an introduction to period domain and period mapping](https://yilimath.github.io/files/Hodge/HyperLec4.pdf)
+
+
+[Lec-5 curvature property of period domain](https://yilimath.github.io/files/Hodge/HyperLec5.pdf)
+
+[Lec-6 Applications of Ahlfors estimate, geometric information coming from fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
+
+[Lec-7 Applications of Ahlfors estimate, geometric information coming from fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
 
