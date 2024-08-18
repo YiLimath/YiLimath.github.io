@@ -23,6 +23,6 @@ For detailed information see my notes:
 
 (5) [Lec-5 Tian Todorov Bogomolov thheorem](https://yilimath.github.io/files/Deformation/TianTodorovBogomolov.pdf)
 
-(6) [Paun Demailly proof of invariance of plurigenera](https://yilimath.github.io/files/Deformation/PaunInvariancePluri.pdf)
+(6) [Lec-6 Paun Demailly proof of invariance of plurigenera](https://yilimath.github.io/files/Deformation/PaunInvariancePluri.pdf)
 
-(7) [Deformation limit question](https://yilimath.github.io/files/Deformation/DeformationLimit.pdf)
+(7) [Lec-7 Deformation limit question](https://yilimath.github.io/files/Deformation/DeformationLimit.pdf)
