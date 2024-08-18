@@ -1,5 +1,5 @@
 ---
-title: 'Lecture notes on Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture'
+title: 'Lecture notes on Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture Augest 2024'
 date: 2024-08-19
 permalink: /posts/2024/08/Hyperbolicity-Lecture/
 tags:
