@@ -11,4 +11,3 @@ Goal of this reading seminar: We will discuss the classical paper [BCHM](https:/
 
 ### Related notes
 (1) [BCHM Part 2](https://yilimath.github.io/posts/2024/05/BCHM-1/)
-(2) [BCHM Part 3]()

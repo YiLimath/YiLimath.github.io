@@ -20,4 +20,4 @@ This time:
 
 
 
-For the detailed discussion see my lecture notes: [Moishezon morphism part 3](https://yilimath.github.io/files/Moishezon/Moishezon3.pdf)
+For the detailed discussion see my lecture notes: [Moishezon morphism part 3](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf)
