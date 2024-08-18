@@ -7,7 +7,7 @@ tags:
 ---
 
 
-These series of notes summarize the lectures from the short course at Kunming in 2024. 
+These series of notes summarize the lectures from the short course in Augest 2024 at Kunming. 
 
 
 For detailed information see my notes:

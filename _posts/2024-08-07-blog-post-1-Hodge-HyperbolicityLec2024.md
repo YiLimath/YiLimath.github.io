@@ -7,7 +7,7 @@ tags:
   - Complex analytic geometry
 ---
 
-These series of notes summarize the lectures from the short course taught by Professor Ya Deng at Kunming in 2024. 
+These series of notes summarize the lectures from the short course in Augest 2024 at Kunming. 
 
 
 Here are the topics that will be discussed in this series of lectures:
