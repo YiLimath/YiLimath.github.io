@@ -1,13 +1,12 @@
 ---
-title: 'Birational Geometry Note: algebraic proof of Siu invariance of plurigenera'
+title: 'Birational Geometry Note: Shokurov Rationally Connectedness conjecture'
 date: 2024-08-02
-permalink: /posts/2024/08/Algebraic-Proof-of-Invariance-of-Plurigenera/
+permalink: /posts/2024/08/Shokurov-Rationally-Connectedness/
 tags:
   - Birational geometry
-  - Complex analytic geometry
 ---
 
-The aim of this note is to give an algebraic proof of Siu's invariance of plurigenera (under the general type assumption).
+The aim of this note is to give an introduction on the Shokurov rationally connectedness conjecture
 
-For detailed information see my reading notes (coming before) [Siu's invariance of plurigenera](https://yilimath.github.io/files/Boundedness/AlgebraicInvarianceOfPlurigenera.pdf)
+For detailed information see my reading notes [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/files/Birational/ShokurovRationallyConnect.pdf)
 
