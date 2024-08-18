@@ -41,5 +41,5 @@ For detailed information see my notes:
 [Lec-8 Non Abelian Hodge theory in non archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec8.pdf)
 
 
-[Supplementary-1 Non Abelian Hodge theory in compact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf)
+[Supplementary-1 Non Abelian Hodge theory in noncompact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf)
 
