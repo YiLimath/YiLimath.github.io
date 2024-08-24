@@ -9,9 +9,9 @@ tags:
 
 This series of notes will study the Iitaka conjecture in details.
 
-Let us first briefly outline the topics that will be discussed in this series of notes
+Let us first outline the topics that will be discussed in this series of notes
 
 (1) 
 
 
-For detailed information see my reading notes[Theorem of Angehrn and Siu](https://yilimath.github.io/files/Birational/BoundednessGeneralType/AngehrnSiu.pdf)
+For detailed information see my reading notes[Iitaka conjecture](https://yilimath.github.io/files/Birational/KodairaDim/Iitaka.pdf)
