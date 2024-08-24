@@ -1,6 +1,6 @@
 ---
 title: 'Lecture notes on Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture Augest 2024'
-date: 2024-08-19
+date: 2024-08-24
 permalink: /posts/2024/08/Hyperbolicity-Lecture/
 tags:
   - Hodge theory
@@ -24,22 +24,22 @@ Here are the topics that will be discussed in this series of lectures:
 
 For detailed information see my notes:
 
-[Lec 1 Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec1.pdf)
+(1) [Lec 1 Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec1.pdf)
 
-[Lec-2 Green Green Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec2.pdf)
+(2) [Lec-2 On the Green Green Lang conjecture](https://yilimath.github.io/files/Hodge/HyperLec2.pdf)
 
-[Lec-3 Review Hodge theory](https://yilimath.github.io/files/Hodge/HyperLec3.pdf)
+(3) [Lec-3 Review Hodge theory](https://yilimath.github.io/files/Hodge/HyperLec3.pdf)
 
-[Lec-4 Variational Hodge theory and an introduction to period domain and period mapping](https://yilimath.github.io/files/Hodge/HyperLec4.pdf)
+(4) [Lec-4 Variational Hodge theory and an introduction to period domain and period mapping](https://yilimath.github.io/files/Hodge/HyperLec4.pdf) [updated 8.24]
 
-[Lec-5 curvature property of period domain, Ahlfors estimate with applications](https://yilimath.github.io/files/Hodge/HyperLec5.pdf)
+(5) [Lec-5 Curvature property of period domain, Ahlfors estimate with applications](https://yilimath.github.io/files/Hodge/HyperLec5.pdf)
 
-[Lec-6 Geometry and fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
+(6) [Lec-6 Geometry and fundamental group representation](https://yilimath.github.io/files/Hodge/HyperLec6.pdf)
 
-[Lec-7 Non Abelian Hodge theory in archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec7.pdf)
+(7) [Lec-7 Non Abelian Hodge theory in archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec7.pdf)
 
-[Lec-8 Non Abelian Hodge theory in non archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec8.pdf)
+(8) [Lec-8 Non Abelian Hodge theory in non archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec8.pdf)
 
 
-[Supplementary-1 Non Abelian Hodge theory in noncompact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf)
+(9) [Supplementary-1 Non Abelian Hodge theory in noncompact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf)
 
