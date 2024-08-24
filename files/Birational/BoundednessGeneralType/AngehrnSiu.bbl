@@ -16,5 +16,68 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{DemaillyAG}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DJP}{%
+         family={Demailly},
+         familyi={D\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Press, Somerville, MA; Higher Education Press, Beijing}%
+    }
+    \strng{namehash}{DJP1}
+    \strng{fullhash}{DJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Dem12}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{isbn}{978-1-57146-234-3}
+    \field{pages}{viii+231}
+    \field{series}{Surveys of Modern Mathematics}
+    \field{title}{Analytic methods in algebraic geometry}
+    \field{volume}{1}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Lazars2Vec}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LR}{%
+         family={Lazarsfeld},
+         familyi={L\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag, Berlin}%
+    }
+    \strng{namehash}{LR1}
+    \strng{fullhash}{LR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Laz04}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1007/978-3-642-18808-4
+    \endverb
+    \field{isbn}{3-540-22534-X}
+    \field{note}{Positivity for vector bundles, and multiplier ideals}
+    \field{pages}{xviii+385}
+    \field{series}{Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge.
+  A Series of Modern Surveys in Mathematics [Results in Mathematics and Related
+  Areas. 3rd Series. A Series of Modern Surveys in Mathematics]}
+    \field{title}{Positivity in algebraic geometry. {II}}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-642-18808-4
+    \endverb
+    \field{volume}{49}
+    \field{year}{2004}
+  \endentry
+\enddatalist
 \endinput

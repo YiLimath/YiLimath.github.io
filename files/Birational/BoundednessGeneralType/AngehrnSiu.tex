@@ -83,18 +83,114 @@
 	\section{Introduction}
 	The aim of this note is to prove the theorem of Angehrn and Siu. The theorem gave a quadratic result for global generation of the adjoint bundle. The major difficulty in the proof of the theorem is how to construct an effective $\mathbb{Q}$-divisor $D$ s.t. (a) the log canonical threshold $\text{LCT}(D,x) = 1$, and (b) $x$ is the isolated point the LC locus. Once we successfully construct such divisor $D$, the proof easily follows by appling the Nadal vanishing theorem to the exact sequence associated to the multiplier ideal sheaf $\mathcal{J}_D$. 
 	
+	Let us briefly sketch the idea on how to produce divisor $D$ above: We start our construction by observing that the multiplier ideal will vanish at a given smooth point if the multiplicity of the divisor $D_1$ is sufficient large. We then inductively construct a sequence of divisors $D_i$ such that the vanishing locus will strictly decrease $$Z_1= V(\mathcal{J}(D_1))\supsetneq Z_2 = V(\mathcal{J}(D_2)) \supsetneq \ldots,$$since the dimension strictly decrease, there is some divisor $D_k$ such that $V(\mathcal{J}(D_k))$ is a point. The major problem that will appear in the induction process is that although $x\in X$ is smooth point of $X$ but it can be singular point of $Z_1$. The idea of Angehrn and Siu is taking a curve passing through $x$ such that all the nearby points on the curve are smooth points and therefore it's possible to construct some divisor $D_{2,t}$, then they use a limiting arguement and construct $D_{2,t}\to D_2$ and check that $D_2$ is the one that we hope. 
 	
-	This note is organized as follows: In Section 2. we will state the main theorem with some applications. In Section 3. we will summarize the technical tools needed in the proof. In Section 4. we will prove the main results. We end this note by showing some further development after Angehrn and Siu.
-	\section{Statement of the theorem}
+	This note is organized as follows: In Section 2. we will state the main theorem with some applications. In Section 3. we will summarize the technical tools needed in the proof. In Section 4. we will prove the main results. We will end this note by showing some further development after Angehrn and Siu. 
 	
+	The major references of this note are \cite{DemaillyAG}, \cite{Lazars2Vec}. 
+	
+	\section{Main results}
+	
+	\begin{theorem}
+		Let $X$ be a smooth projective variety of dimension $n$, and let $L$ be an ample divisor on $X$. Fix a point $x \in X$, and assume that
+		$$
+		\left(L^{\operatorname{dim} Z} \cdot Z\right)>\binom{n+1}{2}^{\operatorname{dim} Z} = M^{\dim Z}
+		$$
+		for every irreducible subvariety $Z \subseteq X$ passing through $x$ (including of course $X$ itself $)$. Then $K_X+L$ is free at $x$, i.e. $\mathcal{O}_X\left(K_X+L\right)$ has a section which does not vanish at $x$.
+		
+		In particular, if $L \equiv_{\text {num }} m A$ for some $m>\binom{n+1}{2}$ and some ample $A$, then $K_X+L$ is free. 
+
+	\end{theorem}
+
 	
 	\section{Technical tools}
-	
+	\subsection{Producing multiplier ideal vanishing at given point}
+	The theorem below shows that the higher the multiplicity of a divisor, the deeper the multiplier ideal sheaf associated to the divisor.
+	\begin{lemma}
+		Let $X$ be smooth variety with $D\ge 0$ and effective $\mathbb{R}$-divisor, then 
+		
+		\begin{enumerate}
+			\item If $\text{mult}_x D<1$ then $\mathcal{J}(D)_x = \mathcal{O}_{X,x}$,
+			\item If $\text{mult}_x D \geq n$, then $\mathcal{J}(D) \subset \mathfrak{m}_x$, where $\mathfrak{m}_x$ is the corresponding maximal ideal.
+		\end{enumerate}
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
+	\subsection{Using divisor with large volume to produce a section with high multiplicity}
+	\begin{lemma}
+		Let $x \in V$ be a smooth point on an irreducible projective variety of dimension $d$, $0<a \in \mathbb{Q}$ and $A$ an ample Cartier divisor on $V$ such that the volume is lowerbound $A^d = \text{Vol}(A)>a^d$. 
+		
+		Then, for any $k \gg 0$, there exists a divisor $A_k \in|k A|$ such that $\operatorname{mult}_x(A)>k a$.
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
+	\subsection{Cutting down the LC locus using some divisor with high multiplicity}
+	\begin{lemma}
+		Let $X$ be a smooth variety and $x \in X$ a fixed point. Consider an effective $\mathbf{Q}$-divisor $D$ on $X$ with $c(D ; x)=1$, and suppose that
+		$$
+		Z={ }_{\text {def }} \operatorname{LC}(D ; x)
+		$$
+		is irreducible of dimension $d$ at $x$. 
+		
+		
+		Fix a general smooth point $y \in Z$, and let $B$ be any effective $\mathbf{Q}$-divisor on $X$, with $Z \nsubseteq \operatorname{Supp} B$. Assume that
+		$$
+		\operatorname{mult}_y\left(Z ; B_Z\right)>d=\operatorname{dim} Z,
+		$$
+		where $B_Z$ denotes the restriction of $B$ to $Z$, and as indicated the multiplicity is computed on $Z$. 
+		
+		Then 
+		\begin{enumerate}
+			\item For $0<\varepsilon \ll 1$,
+			$$
+			\mathcal{J}(X,(1-\varepsilon) D+B)
+			$$
+			is non-trivial at $y$.
+			\item If moreover $\mathcal{J}(X, D+B)=\mathcal{J}(X, D)$ away from $Z$, then
+			$$
+			Z^{\prime}={ }_{\text {def }} \operatorname{Zeroes}(\mathcal{J}((1-\varepsilon) D+B))
+			$$
+			is a proper subvariety of $Z$ in a neighborhood of $y$.
+		\end{enumerate} 
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
+	\subsection{Peturbation of LC locus}
+	\begin{lemma}	
+		Let $X$ be a nonsingular variety, $x \in X$ a fixed point and $D$ an effective $\mathrm{Q}$-divisor whose support contains $x$. Then there exists an effective $\mathbf{Q}$-divisor $E$ such that
+		$$
+		\mathrm{LC}((D+t E) ; x) \subseteq X
+		$$
+		is irreducible at $x$ for all $0<t \ll 1$. 
+		
+		Moreover if $X$ is projective and $L$ is any ample divisor, then one can take $E \equiv_{\text {num }} p L$ for some $p>0$.
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
 	\section{Proof of the theorem}
-	
+		\subsection{Construct divisor $D_1$}
+		\begin{proof}
+			
+		\end{proof}
+		\subsection{Construct divisor $D_i$ inductively}
+		\begin{proof}
+			
+		\end{proof}
+		\subsection{Finish the prood of the main theorem}
+		\begin{proof}
+			
+		\end{proof}
+		
 	\section{Further remarks}
+	The aim of this section is to introduce some further study of theorem Angehrn and Siu. 
 	
-	
+	\subsection{Remarks about the Fujita conjecture}
+	\subsection{Application in the birational boundedness problem}
+	\subsection{Relation with effective base point free theorem}
 %	
 %	\section{The fiber of the Moishezon morphism is again Moishezon}
 %	

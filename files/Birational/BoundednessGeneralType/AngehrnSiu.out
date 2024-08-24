@@ -1,5 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Statement of the theorem}{}% 2
+\BOOKMARK [1][-]{section.2}{Main results}{}% 2
 \BOOKMARK [1][-]{section.3}{Technical tools}{}% 3
-\BOOKMARK [1][-]{section.4}{Proof of the theorem}{}% 4
-\BOOKMARK [1][-]{section.5}{Further remarks}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Producing multiplier ideal vanishing at given point}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Using divisor with large volume to produce a section with high multiplicity}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Cutting down the LC locus using some divisor with high multiplicity}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Peturbation of LC locus}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Proof of the theorem}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Construct divisor D1}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Construct divisor Di inductively}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Finish the prood of the main theorem}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Further remarks}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Remarks about the Fujita conjecture}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Application in the birational boundedness problem}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.3}{Relation with effective base point free theorem}{section.5}% 15

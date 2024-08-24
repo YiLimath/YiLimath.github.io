@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  24 AUG 2024 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  24 AUG 2024 16:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -960,9 +960,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Empty bibliography on input line 143.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
@@ -971,39 +968,76 @@ This may cause the page layout to be inconsistent, however.
 [1{d:/Tex/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 114
+.
 
-(./AngehrnSiu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+(d:/Tex/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 179.
+
+[3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+ (./AngehrnSiu.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
 Package rerunfilecheck Info: File `AngehrnSiu.out' has not changed.
-(rerunfilecheck)             Checksum: C78D9DE2EB2139652EB19CC4F5BF57AC;261.
+(rerunfilecheck)             Checksum: AB9CC5D3B60B63CB9EADF6167E43014C;1180.
 Package logreq Info: Writing requests to 'AngehrnSiu.run.xml'.
 \openout1 = `AngehrnSiu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24554 strings out of 480608
- 475911 string characters out of 5905572
- 920609 words of memory out of 5000000
- 40010 multiletter control sequences out of 15000+600000
- 539057 words of font info for 52 fonts, out of 8000000 for 9000
+ 24821 strings out of 480608
+ 480907 string characters out of 5905572
+ 924715 words of memory out of 5000000
+ 40242 multiletter control sequences out of 15000+600000
+ 543214 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,11n,86p,825b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,11n,86p,1014b,1307s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:
 /Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/Tex/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Tex/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Tex/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Tex/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Tex/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Tex/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on AngehrnSiu.pdf (1 page, 90847 bytes).
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/Tex/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Tex/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Tex/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Tex/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Tex/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.
+pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on AngehrnSiu.pdf (4 pages, 178844 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
