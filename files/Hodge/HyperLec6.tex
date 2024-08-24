@@ -14,7 +14,7 @@
 	\begin{center}
 		\framebox{
 			\vbox{
-				\hbox to 5.78in { {\bf Moishezon morphism reading seminars} \hfill #2 }
+				\hbox to 5.78in { {\bf Hyperbolicity Course Notes} \hfill #2 }
 				\vspace{4mm}
 				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
 				\vspace{2mm}
@@ -25,11 +25,11 @@
 	\vspace*{4mm}
 }
 
-\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version 0)}}
 \usepackage{amsthm}
 
 \theoremstyle{definition}
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{observation}[theorem]{Observation}
@@ -54,13 +54,13 @@
 \parskip 1.5ex
 %\renewcommand{\baselinestretch}{1.25}
 
-\usepackage[backend=bibtex,style=IEEE,sorting=nty]{biblatex}
+\usepackage[backend=bibtex,style=alphabetic,maxalphanames=4,minalphanames=4,sorting=nty]{biblatex}
 \addbibresource{mybib.bib}
 
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Moishezon morphism reading seminars}
+\lhead{Hodge Theory Lecture Notes}
 \rhead{\thepage}
 %\cfoot{center of the footer!}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -79,13 +79,10 @@
 
 \begin{document}
 	
-	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
+	\lecture{6 --- 24, 08, 2024}{Summer 2024}{}{Yi Li}
 	\section{Overview}
-	In today's lecture we will discuss
-	(1) Flat (p,q) theorem which shows a flat section of Hodge bundle has flat (p,q) component,
-	(2) Rigidity variational Hodge structure (the fundamental group representation uniquely determine the underlining variational Hodge structure),
-	(3) We will prove that the fundamental group representation is big iff the period mapping is generic immersive,
-	(4) Finally we prove that if the fundamental group representation is big and algebraic monodromy is semi-simple then the space is pesudo-Picard hyperbolic and is of general type.
+	We will begin our study of Simpson's theory (sometimes also called non Abelian Hodge theory). 
+	
 	
 %	
 %	\section{The fiber of the Moishezon morphism is again Moishezon}

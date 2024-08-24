@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  24 AUG 2024 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  24 AUG 2024 16:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**HyperLec4.tex
-(./HyperLec4.tex
+**HyperLec5.tex
+(./HyperLec5.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -872,8 +872,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count415
 \l__pdf_internal_box=\box60
 )
-(./HyperLec4.aux)
-\openout1 = `HyperLec4.aux'.
+(./HyperLec5.aux)
+\openout1 = `HyperLec5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
@@ -927,12 +927,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout4 = `HyperLec4-blx.bib'.
+\openout4 = `HyperLec5-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'HyperLec4.bbl' found.
+Package biblatex Info: ... file 'HyperLec5.bbl' found.
 
-(./HyperLec4.bbl)
+(./HyperLec5.bbl)
 Package biblatex Info: Reference section=0 on input line 80.
 Package biblatex Info: Reference segment=0 on input line 80.
 \AtBeginShipoutBox=\box62
@@ -952,18 +952,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 80.
 LaTeX Info: Redefining \pageref on input line 80.
 LaTeX Info: Redefining \nameref on input line 80.
-(./HyperLec4.out) (./HyperLec4.out)
+(./HyperLec5.out) (./HyperLec5.out)
 \@outlinefile=\write5
-\openout5 = `HyperLec4.out'.
+\openout5 = `HyperLec5.out'.
 
 
-Overfull \hbox (12.84952pt too wide) in paragraph at lines 97--97
-[]\OT1/cmr/bx/n/14.4 Geometric in-ter-pre-ta-tion of the Higgs field us-ing Kod
-aira-Spencer
- []
 
-
-LaTeX Warning: Empty bibliography on input line 158.
+LaTeX Warning: Empty bibliography on input line 138.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -973,25 +968,25 @@ This may cause the page layout to be inconsistent, however.
 
 [1{d:/Tex/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
 
-(./HyperLec4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
-Package rerunfilecheck Info: File `HyperLec4.out' has not changed.
-(rerunfilecheck)             Checksum: 694F1984B93037AC8BE0F9C8E7A9BBB4;832.
-Package logreq Info: Writing requests to 'HyperLec4.run.xml'.
-\openout1 = `HyperLec4.run.xml'.
+(./HyperLec5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package rerunfilecheck Info: File `HyperLec5.out' has not changed.
+(rerunfilecheck)             Checksum: A6C779B1E5D4A1436D52AE432451A841;361.
+Package logreq Info: Writing requests to 'HyperLec5.run.xml'.
+\openout1 = `HyperLec5.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24580 strings out of 480608
- 476583 string characters out of 5905572
- 925036 words of memory out of 5000000
- 40043 multiletter control sequences out of 15000+600000
- 533897 words of font info for 29 fonts, out of 8000000 for 9000
+ 24564 strings out of 480608
+ 476472 string characters out of 5905572
+ 922052 words of memory out of 5000000
+ 40039 multiletter control sequences out of 15000+600000
+ 534502 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,11n,86p,883b,747s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:
@@ -999,10 +994,10 @@ Here is how much of TeX's memory you used:
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Tex/texliv
 e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Tex/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on HyperLec4.pdf (2 pages, 70645 bytes).
+Output written on HyperLec5.pdf (1 page, 61882 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 59 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
