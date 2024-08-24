@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  8 JUN 2024 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  24 AUG 2024 14:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -575,7 +575,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'IEEE.dbx' not found.
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count322
@@ -695,21 +695,11 @@ File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count398
 )
-Package biblatex Info: Trying to load bibliography style 'IEEE'...
-Package biblatex Info: ... file 'IEEE.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2020/02/26 v1.3b biblatex bibliography style
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -717,33 +707,22 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count399
 \c@bbx:relatedtotal=\count400
-))))
-Package biblatex Info: Trying to load citation style 'IEEE'...
-Package biblatex Info: ... file 'IEEE.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
-File: ieee.cbx 2020/02/26 v1.3b biblatex citation style
-Package biblatex Info: Trying to load citation style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.cbx' found.
-
-(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count401
-\c@cbx@tempcntb=\count402
+(d:/Tex/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+File: alphabetic.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\cites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -764,12 +743,12 @@ s
 \f@nch@O@olf=\skip84
 \f@nch@O@orf=\skip85
 )
-\@quotelevel=\count403
-\@quotereset=\count404
+\@quotelevel=\count401
+\@quotereset=\count402
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count405
+\l__kernel_color_stack_int=\count403
 \l__pdf_internal_box=\box60
 )
 (./Moishezon4.aux)
@@ -792,16 +771,16 @@ LaTeX Font Info:    ... okay on input line 69.
  ABD: EveryShipout initializing macros
 (d:/Tex/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count406
+\scratchcounter=\count404
 \scratchdimen=\dimen258
 \scratchbox=\box61
-\nofMPsegments=\count407
-\nofMParguments=\count408
+\nofMPsegments=\count405
+\nofMParguments=\count406
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count409
+\MPscratchCnt=\count407
 \MPscratchDim=\dimen259
-\MPnumerator=\count410
-\makeMPintoPDFobject=\count411
+\MPnumerator=\count408
+\makeMPintoPDFobject=\count409
 \everyMPtoPDFconversion=\toks42
 ) (d:/Tex/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -879,13 +858,13 @@ Package logreq Info: Writing requests to 'Moishezon4.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21652 strings out of 480608
- 434192 string characters out of 5905572
- 856913 words of memory out of 5000000
- 37183 multiletter control sequences out of 15000+600000
+ 21576 strings out of 480608
+ 432434 string characters out of 5905572
+ 854473 words of memory out of 5000000
+ 37117 multiletter control sequences out of 15000+600000
  539526 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,86p,884b,1233s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,86p,825b,1299s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:
 /Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/Tex/texl
@@ -902,7 +881,7 @@ sy8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d
 :/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d
 :/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Moishezon4.pdf (5 pages, 190683 bytes).
+Output written on Moishezon4.pdf (5 pages, 191218 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream

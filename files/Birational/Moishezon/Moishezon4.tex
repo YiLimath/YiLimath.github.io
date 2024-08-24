@@ -28,7 +28,7 @@
 \usepackage{amsthm}
 
 \theoremstyle{definition}
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{observation}[theorem]{Observation}
@@ -53,7 +53,7 @@
 \parskip 1.5ex
 %\renewcommand{\baselinestretch}{1.25}
 
-\usepackage[backend=bibtex,style=IEEE,sorting=nty]{biblatex}
+\usepackage[backend=bibtex,style=alphabetic,maxalphanames=4,minalphanames=4,sorting=nty]{biblatex}
 \addbibresource{mybib.bib}
 
 

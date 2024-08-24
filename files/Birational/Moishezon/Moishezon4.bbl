@@ -36,6 +36,7 @@
     \strng{fullhash}{HCDMJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{HM06}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \verb{doi}
@@ -67,6 +68,7 @@
     \strng{fullhash}{KJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{Kol22}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{issn}{1558-8599,1558-8602}
@@ -97,6 +99,7 @@
     \strng{fullhash}{LDSE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{LS77}
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \verb{doi}
@@ -133,6 +136,7 @@
     \strng{fullhash}{RSTIH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{RT22}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{issn}{1093-6106,1945-0036}
