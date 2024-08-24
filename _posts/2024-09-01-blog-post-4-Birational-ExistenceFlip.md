@@ -7,17 +7,20 @@ tags:
   - Flips and flops
 ---
 
-The aim of this series of notes is to summarize the idea in the proof of existence of flips (see the paper [Extension theorems and the existence of flips](https://academic.oup.com/book/6326/chapter-abstract/150033223?redirectedFrom=fulltext), [On the existence of flips](https://arxiv.org/abs/math/0507597)), and also [BCHM II](https://mathscinet.ams.org/mathscinet/article?mr=2601040). 
+The aim of this series of notes is to summarize the idea in the proof of existence of flips (see the paper [Extension theorems and the existence of flips](https://academic.oup.com/book/6326/chapter-abstract/150033223?redirectedFrom=fulltext), [On the existence of flips](https://arxiv.org/abs/math/0507597), and also [BCHM II](https://mathscinet.ams.org/mathscinet/article?mr=2601040)). 
+
 
 The outline of this series of notes is:
 
-0) Part 1: We will give an overview about the problem and show that it's suffics to prove the finite generation of restricted algebra,
+Part 1) We will give an overview about the problem and show that it's suffics to prove the finite generation of restricted algebra,
 
-1) Part 2: We will prove the Hacon Mckernan's extension theorem, which is the technical core of the proof of the main result. The proof can be divided into 2 step. In step 1 we prove the sequzing extra positivity lemma, which allows to lift section after some ample twist. In step 2, we will finish the proof of Hacon Mckernan extension theorem. As a side remark, Hacon Mckernan's extension theorem will be used over and over again in the feature (see [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/posts/2024/08/Shokurov-Rationally-Connectedness/), and [Boundedness of general type](https://yilimath.github.io/posts/2024/08/Boundedness-general-type/), and [Deformation of Fano varieties](https://yilimath.github.io/posts/2024/08/Deformation-Fano/)).
+Part 2) We will prove the Hacon Mckernan's extension theorem, which is the technical core of the proof of the main result. The proof can be divided into 2 step. In step 1 we prove the sequzing extra positivity lemma, which allows to lift section after some ample twist. In step 2, we will finish the proof of Hacon Mckernan extension theorem. As a side remark, Hacon Mckernan's extension theorem will be used over and over again in the feature (see [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/posts/2024/08/Shokurov-Rationally-Connectedness/), and [Boundedness of general type](https://yilimath.github.io/posts/2024/08/Boundedness-general-type/), and [Deformation of Fano varieties](https://yilimath.github.io/posts/2024/08/Deformation-Fano/)).
 
-2) Part 3: We will prove that restricted algebra is a limiting algebra (in higher model), and then finish the proof of the finite generation of limiting algebra. 
+Part 3) We will prove that restricted algebra is a limiting algebra (in higher model), and then finish the proof of the finite generation of limiting algebra. 
 
-It's worth mentioning that Hacon and Mckernan gave 2 approaches to the existence of flip problem: The 1st one use the theorem by Shokurov that a limiting algebra is finite generated if it's saturated and semiample, and trying to check saturated and semiampleness condition. The 2nd version is integrated in the spraling induction of BCHM. In part 3 we prove the restricted algebra is a geometric algebra in lower dimension. Thus we finish the proof by induction hypothsis F(n-1) in BCHM. We will mainly follow the 2nd approach and leave the 1st approach in the supplementary part.
+Hacon and Mckernan gave 2 approaches in the last step: The 1st one use the theorem by Shokurov that a limiting algebra is finite generated if it's saturated and semiample, and trying to check the saturated and semiampleness condition. 
+
+The 2nd version is much simpler, and it's integrated in the spraling induction of BCHM. The result is obvious once we finish the proof of the restricted algebra is a geometric algebra in lower dimension. Since we can then invoke the BCHM F(n-1) induction hyphothsis.
 
 
 For detailed information see my reading notes
