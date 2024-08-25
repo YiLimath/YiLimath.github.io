@@ -82,25 +82,32 @@
 	\lecture{1 --- 25, 08, 2024}{Summer 2024}{}{Yi Li}
 	\section{Overview}
 	
-	This note will present Paun's proof on invariance of plurigenera \cite{PaunSiu}. Paun proved in the paper that 
-	
+	This note will give a comprehensive introduction to Paun's proof on invariance of plurigenera \cite{PaunSiu} and also \cite{DemaillyAG}. The main result in the paper shows a extension theorem for the pluricanonical section twisted with some positive line bundles. As a direct consequence the invariance of plurigenera holds for smooth projective family with general type assumption.
+
 	\subsection{Idea of the proof}
+	As we will see later, the invariance of plurigenera problem can be easily reduce to problem of extension of pluricanonical section $u \in H^0(X_0,mK_{X_0})$. To extend it to $\widetilde{u} \in H^0(X,mK_X)$, by Ohsawa-Takegoshi, it's suffices to find a metric $h_{(m-1)}$ on $(m-1)K_X$ such that the curvature current is semi-positive and most importantly $\int_{X_0} |u|^2_{\omega  \otimes h_{(m-1)}}<+\infty$. The rest part of this subsection will sketch the idea how to construct the metric on the pluricanonical bundle.
 	
+	The idea of Paun is to construct the metric on adjoint bundle $K_X+L$  using section on sequence of line bundles $F_k$, and take limit. (As a side remark we can set $L= (m-1)K_X$ in applications and it will come back the the extension of pluricanonical section problem).
+	
+	We divide the construction process into 2 steps:
+	
+	In step 1, we try to construct the metric on $F_k= k(K_X+L)+A$ by inserting some sufficient ample divisor $A$, assume $A$ is sufficient ample so that it is global generated. What nice about this setting is the tautological metric on $A$ defined using those generators $(u_j)$ will have integrable condition needed in the Ohsawa-Takegoshi extension theorem (recall that the only singularity of the tautological metric appears on the domoninator $\frac{1}{\sum_j |u_j|^2}$, thanks to base point freeness). We then inductively construct metric on $F_k$. Assume by induction we already find a set of global section $(\widetilde{u}_j^{(k)})$  of $F_{k-1}$ with the restriction $u_j^{(k)} = \widetilde{u}^{(k)}_j |_{X_0} = \sigma^k u_j$, we can then define the tautological metric on $F_k = F_{k-1}+K_X+L$ under trivialization as $\frac{|\xi|^2}{\sum_j |\widetilde{u}_j^{(k-1)}|^2} e^{-\varphi_L} dV_\omega$ if we substitute $\xi= u_j$ it will clearly be integrable on $X_0$. Thus by Ohsawa-Takegoshi extension theorem we can find $(\widetilde{u}_j)$ on $F_k$, with restriction $\widetilde{u}_j^{(k)}|_{X_0} = u_j^k$. 
+	
+	In step 2, we try to take roots and limit on the singular Hermitian metric. First, by the induction process given above, we can define a sequence of singular Hermitian metric $\varphi_k$ on $\frac{1}{k}F_k= K_X+L+ \frac{1}{k} A$ (by taking roots). Second, taking $k\to \infty$, there is a hope to find a limiting metric $\varphi$ on the $K_X+L$ satisfies all the nice conditions we want. 
 	\subsection{Some important ideas in the proof}
 	We summarize some essential idea in the proof here: 
+	\section{Preliminaries}
+	\subsection{Construct metric using global sections}
 	
-	\section{A short introduction to Ohsawa-Takegoshi extension theorem}
+	\subsection{Ohsawa-Takegoshi extension theorem}
 	
-	\section{Reduce the invariance of plurigenera problem to extension of pluricanonical form problem}
+	\subsection{Upper semi-continuity theorem}
+	
+	\subsection{Reduce the invariance of plurigenera problem to extension of pluricanonical form problem}
 	
 	\section{Paun's extension theorem of pluricanonical form}
 	
-	\section{Further discussion}
-	
-		\subsection{Comparison with Siu's original proof}
-		
-		\subsection{What one-tower proof means?}
-		
+
 %	
 %	\section{The fiber of the Moishezon morphism is again Moishezon}
 %	

@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{DemaillyAG}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DJP}{%
+         family={Demailly},
+         familyi={D\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Press, Somerville, MA; Higher Education Press, Beijing}%
+    }
+    \strng{namehash}{DJP1}
+    \strng{fullhash}{DJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Dem12}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{isbn}{978-1-57146-234-3}
+    \field{pages}{viii+231}
+    \field{series}{Surveys of Modern Mathematics}
+    \field{title}{Analytic methods in algebraic geometry}
+    \field{volume}{1}
+    \field{year}{2012}
+  \endentry
+
+  \entry{PaunSiu}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={P{\u{a}}un},
+         familyi={P\bibinitperiod},
+         given={Mihai},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Lehigh University}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{P{\u{a}}u07}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{3}
+    \field{pages}{485\bibrangedash 493}
+    \field{title}{Siu’s invariance of plurigenera: a one-tower proof}
+    \field{volume}{76}
+    \field{journaltitle}{Journal of Differential Geometry}
+    \field{year}{2007}
+  \endentry
+\enddatalist
+\endinput

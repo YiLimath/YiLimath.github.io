@@ -11,7 +11,7 @@ The aim of this note is to give an detailed introduction of deformation invarian
 
 Here is the outline of the notes:
 
-(1) We will give an algebraic proof of invariance of plurigenera,
+(1) We will give an algebraic proof of invariance of plurigenera, 
 
 (2) We will give an analytic proof by Paun which simplifies Siu's original proof,
 
@@ -31,7 +31,7 @@ For detailed information see my reading notes
 
 (1) [Algebraic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
 
-(2) [Paun Demailly's proof of invariance of plurigenera](https://yilimath.github.io/files/Deformation/PaunInvariancePluri.pdf) 
+(2) [Paun Demailly's proof of invariance of plurigenera](https://yilimath.github.io/files/Deformation/PaunInvariancePluri.pdf) [update 8.25]
 
 (3) [Takayama's pprof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
 
