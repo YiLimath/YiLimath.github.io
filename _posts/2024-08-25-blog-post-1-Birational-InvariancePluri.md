@@ -31,7 +31,7 @@ For detailed information see my reading notes
 
 (1) [Algebraic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
 
-(2) [Paun Demailly's proof of invariance of plurigenera](https://yilimath.github.io/files/Deformation/PaunInvariancePluri.pdf) [update 8.25]
+(2) [Paun Demailly's proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\InvariancePluri\PaunInvariancePluri.pdf) [update 8.25]
 
 (3) [Takayama's pprof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
 
