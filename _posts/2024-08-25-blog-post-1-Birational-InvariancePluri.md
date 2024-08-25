@@ -21,9 +21,11 @@ Here is the outline of the notes:
 
 (5) We will give an MMP proof on invariance of plurigenera problem due to Kollar,
 
-(6) We will introduce the deformation invariance of general type problem.
+(6) We will introduce the deformation invariance of general type problem,
 
+(7) We will study the plurigenera in a family with (semi-stable) degeneration.
 
+---
 
 For detailed information see my reading notes
 
@@ -43,3 +45,5 @@ For detailed information see my reading notes
 
 (7) [Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Birational/InvariancePluri/DefUniruled.pdf)
 
+
+(8) [Plurigenera in a family with degeneration](https://yilimath.github.io/files/Birational/InvariancePluri/PluriDegeneration.pdf)
