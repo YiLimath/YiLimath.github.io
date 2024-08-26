@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Theorem of Angehrn and Siu'
-date: 2024-08-24
+date: 2024-08-26
 permalink: /posts/2024/08/Theorem-of-Angehrn-and-Siu/
 tags:
   - Birational geometry

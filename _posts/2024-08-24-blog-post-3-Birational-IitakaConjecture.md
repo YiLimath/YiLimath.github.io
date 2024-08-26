@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Iitaka conjecture and related topics'
-date: 2024-08-24
+date: 2024-08-10
 permalink: /posts/2024/08/Iitakta-Conjecture/
 tags:
   - Birational geometry
