@@ -118,7 +118,7 @@
 		
 	\end{proof}
 	\subsection{Using divisor with large volume to produce a section with high multiplicity}
-	\begin{lemma}
+	\begin{lemma}[Divisor with high multiplicity in the linear system with large volume]\label{highmulti}
 		Let $x \in V$ be a smooth point on an irreducible projective variety of dimension $d$, $0<a \in \mathbb{Q}$ and $A$ an ample Cartier divisor on $V$ such that the volume is lowerbound $A^d = \text{Vol}(A)>a^d$. 
 		
 		Then, for any $k \gg 0$, there exists a divisor $A_k \in|k A|$ such that $\operatorname{mult}_x(A)>k a$.
@@ -127,15 +127,10 @@
 		
 	\end{proof}
 	\subsection{Cutting down the LC locus using some divisor with high multiplicity}
-	\begin{lemma}
-		Let $X$ be a smooth variety and $x \in X$ a fixed point. Consider an effective $\mathbf{Q}$-divisor $D$ on $X$ with $c(D ; x)=1$, and suppose that
-		$$
-		Z={ }_{\text {def }} \operatorname{LC}(D ; x)
-		$$
-		is irreducible of dimension $d$ at $x$. 
+	\begin{lemma}[Cutting down the LC locus using divisor with high multiplicity]\label{cutLC}
+		Let $X$ be a smooth variety and $x \in X$ a fixed point. Consider an effective $\mathbf{Q}$-divisor $D$ on $X$ with $c(D ; x)=1$, and suppose that $Z=\operatorname{LC}(D ; x)$ is irreducible of dimension $d$ at $x$. 
 		
-		
-		Fix a general smooth point $y \in Z$, and let $B$ be any effective $\mathbf{Q}$-divisor on $X$, with $Z \nsubseteq \operatorname{Supp} B$. Assume that
+		Fix a general smooth point $y \in Z$, and let $B$ be any effective $\mathbb{Q}$-divisor on $X$, with $Z \nsubseteq \operatorname{Supp} B$. Assume that
 		$$
 		\operatorname{mult}_y\left(Z ; B_Z\right)>d=\operatorname{dim} Z,
 		$$
@@ -150,7 +145,7 @@
 			is non-trivial at $y$.
 			\item If moreover $\mathcal{J}(X, D+B)=\mathcal{J}(X, D)$ away from $Z$, then
 			$$
-			Z^{\prime}={ }_{\text {def }} \operatorname{Zeroes}(\mathcal{J}((1-\varepsilon) D+B))
+			Z^{\prime}= \operatorname{Zeroes}(\mathcal{J}((1-\varepsilon) D+B))
 			$$
 			is a proper subvariety of $Z$ in a neighborhood of $y$.
 		\end{enumerate} 
@@ -177,11 +172,34 @@
 			
 		\end{proof}
 		\subsection{Construct divisor $D_i$ inductively}
+		
+		Let $Z = V(\mathcal{J}(D_1))$ and $d= \dim Z$. We need to inductively find a sequence of divisors $\{D_i\}$, such that $$Z= Z_1 =V(\mathcal{J}(D_1))\supsetneq V(\mathcal{J}(D_2))\supsetneq \ldots,$$We hope to repeat the construction process like $D_1$. The provblem is $x\in Z_1$ needs not to be smooth point of $Z_1$.  
+		
+		The idea to solve this problem is to use Lemma \ref{cutLC}. And we need to find some divisor $B_0$ s.t. 
+		(a) $Z \nsubseteq \operatorname{Supp} B$,
+		(b) $\operatorname{mult}_y\left(Z ; B_Z\right)>d=\operatorname{dim} Z,$ where $B_Z$ denotes the restriction of $B$ to $Z$, and as indicated the multiplicity is computed on $Z$,
+		(c) $\mathcal{J}(X, D+B)=\mathcal{J}(X, D)$ away from $Z$.
+		
+		
 		\begin{proof}
+			We divide the proof into 3 steps:
+			
+			Step 1. (Construction of the limiting divisor $\bar{A}_0$ on $Z$)
+			
+			Step 2. (Lifting the divisors $\bar{A}_t$ onto $X$)
+			
+			Step 3. (Apply the cutting down of LC locus Lemma \ref{cutLC} to $B_0$)
+			
+			
 			
 		\end{proof}
 		\subsection{Finish the prood of the main theorem}
 		\begin{proof}
+			Now we find a $\mathbb{Q}$-effective divisor $D$ such that $$D \equiv \lambda L , \quad \lambda<1$$and the log canonical threshold $\text{LCT}(D,x) = 1$ with $x\in X$ being the isolated point of the log canonical locus. 
+			
+			Consider the following short exact sequence induced by the multiplier ideal sheaf $\mathcal{J}(D)$ $$0 \to \mathcal{J}(D) \to \mathcal{O}_X(K_X+L) \to \mathcal{O}_Z(K_X+L)\to 0,$$where $Z = V(\mathcal{J})$. It will induce $$0\to \ldots\to H^0(X,\mathcal{O}_X(K_X+L)) \to H^0(Z,\mathcal{O}_Z(K_X+L))\to H^1(X,\mathcal{J}(D)\otimes \mathcal{O}_X(K_X+L)) \to  \ldots.$$
+			Since $L$ is sufficient positive and $\lambda<1$, by Nadel vanishing theorem  $H^1(X,\mathcal{J}(D) \otimes \mathcal{O}_X(K_X+L)) = 0$. Thus the section on $Z$ can be lifted to $X$ i.e. $$H^0(X,\mathcal{O}_X(K_X+L)) \twoheadrightarrow H^0(Z,\mathcal{O}_Z(K_X+L)).$$
+			Recall that the log canonical locus $$\text{LC} (D,x) = V(\mathcal{J}(\text{LCT}(D,x)\cdot D))$$since $\text{LCT}(D,x) = 1$ this means $Z$ is precisely the log canonical locus of $D$. By assumption $x$ is the isolated point of the LC locus, the section $s \in H^0(Z,\mathcal{O}_Z(K_X+D))$ can take any value at $x\in X$, in particular $s$ can choose to be a section that does not vanish at $x$. Lift it to $\widetilde{s} \in H^0(X,\mathcal{O}_X(K_X+D))$ gives the section we want.
 			
 		\end{proof}
 		
