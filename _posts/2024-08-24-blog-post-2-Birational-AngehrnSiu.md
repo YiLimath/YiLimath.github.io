@@ -11,4 +11,4 @@ The aim of this note is to prove the theorem of Angehrn and Siu. The theorem gav
 
 This note is organized as follows: In Section 2. we will state the main theorem with some applications. In Section 3. we will summarize the technical tools needed in the proof. In Section 4. we will prove the main results. We end this note by showing some further development after Angehrn and Siu.
 
-For detailed information see my reading notes[Theorem of Angehrn and Siu](https://yilimath.github.io/files/Birational/BoundednessGeneralType/AngehrnSiu.pdf)
+For detailed information see my reading notes [Theorem of Angehrn and Siu](https://yilimath.github.io/files/Birational/BoundednessGeneralType/AngehrnSiu.pdf)
