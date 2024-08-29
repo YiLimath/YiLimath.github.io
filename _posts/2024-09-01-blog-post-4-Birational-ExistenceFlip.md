@@ -26,7 +26,7 @@ For detailed information see my reading notes
 
 (1) [Part I: Overview](https://yilimath.github.io/files/BCHM/ExistenceFlip.pdf),
 
-(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/BCHM/HaconMckernanExtension.pdf),
+(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/BCHM/HaconMckernanExtension.pdf)[update 8.29],
 
 (3) [Part III: Restricted algebra as limiting algebra](https://yilimath.github.io/files/BCHM/RestrictedAlgebra.pdf),
 

@@ -1,0 +1,97 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{HaconKovacsBook}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HCD}{%
+         family={Hacon},
+         familyi={H\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=KSJ}{%
+         family={Kov\'acs},
+         familyi={K\bibinitperiod},
+         given={S\'andor\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Birkh\"auser Verlag, Basel}%
+    }
+    \strng{namehash}{HCDKSJ1}
+    \strng{fullhash}{HCDKSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HK10}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1007/978-3-0346-0290-7
+    \endverb
+    \field{isbn}{978-3-0346-0289-1}
+    \field{pages}{x+208}
+    \field{series}{Oberwolfach Seminars}
+    \field{title}{Classification of higher dimensional algebraic varieties}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-0346-0290-7
+    \endverb
+    \field{volume}{41}
+    \field{year}{2010}
+  \endentry
+
+  \entry{BCHM2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HCD}{%
+         family={Hacon},
+         familyi={H\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={McKernan},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCDMJ1}
+    \strng{fullhash}{HCDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HM10}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1090/S0894-0347-09-00651-1
+    \endverb
+    \field{issn}{0894-0347,1088-6834}
+    \field{number}{2}
+    \field{pages}{469\bibrangedash 490}
+    \field{title}{Existence of minimal models for varieties of log general
+  type. {II}}
+    \verb{url}
+    \verb https://doi.org/10.1090/S0894-0347-09-00651-1
+    \endverb
+    \field{volume}{23}
+    \field{journaltitle}{J. Amer. Math. Soc.}
+    \field{year}{2010}
+  \endentry
+\enddatalist
+\endinput

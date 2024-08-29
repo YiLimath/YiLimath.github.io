@@ -1,0 +1,240 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Existence of Flips Readings Notes} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Note #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\usepackage[backend=bibtex,style=alphabetic,maxalphanames=4,minalphanames=4,sorting=nty]{biblatex}
+\addbibresource{mybib.bib}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Birational Geometry Reading Notes}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{2 --- 06, 06, 2024}{Summer 2024}{}{Yi Li}
+	\section{Overview}
+	
+		The aim of this note is try to prove the Hacon-Mckernan's extension theorem. This theorem will be the technical core of the proof of existence of KLT flips. Let us briefly sketch the idea in the proof of the theorem. We will first prove a techinical lemma which allows to lift section after ample twist (which also appears in the algebraic proof of invariance of plurigenera). To prove this lemma, we first observe that by the Serre vanishing theorem the restricted linear series coinside with the linear series of the restriction divisor when twisting with sufficient ample divisor, . 
+	
+	In the second step, we will going to prove the main theorem of this note. 
+	
+	The major references will be \cite{BCHM2} and \cite{HaconKovacsBook}
+	
+	\section{Statement of the theorem}
+	Hacon-Mckernan's extension theorem says that 
+	\begin{theorem}
+		
+		Let $\pi: X \rightarrow Z$ be a projective morphism (from a smooth quasi-projective variety) to a normal affine variety. 
+		
+		Let $(X, D=S+A+B)$ be a PLT pair of dimension $n$ where $X$ and $S$ are smooth, $D \in \operatorname{Div}_{\mathbb{Q}}(X),\llcorner D\lrcorner=S, A$ is a general ample $\mathbb{Q}$-divisor,
+		
+		\begin{enumerate}
+			\item $\left(S, \Omega=\left.(D-S)\right|_S\right)$ is canonical (terminal), and
+			\item the stable base locus $$\operatorname{supp}S \not \subset \mathbf{B}(K_X+D)$$(3) For any sufficiently divisible $m>0$, let
+			$$
+			F_m=\operatorname{Fix}\left(\left|m\left(K_X+D\right)\right|_S\right) / m
+			\text{ and } F=\lim F_{m_!}$$
+		\end{enumerate}
+		
+		If $0<\epsilon \in \mathbb{Q}$ is such that $\epsilon\left(K_X+D\right)+A$ is ample, $\Phi \in \operatorname{Div}_{\mathbb{Q}}(S)$ and $0<k \in \mathbb{Z}$ such that $k D$ and $k \Phi$ are Cartier, and $$\Omega \wedge \lambda F \leq \Phi \leq \Omega$$where $\lambda=1-\epsilon / k$,
+		
+		Then
+		$$
+		\left|k\left(K_S+\Omega-\Phi\right)\right|+k \Phi \subset\left|k\left(K_X+D\right)\right|_S .
+		$$
+		
+	\end{theorem}
+	Before going further let us make few remarks
+	\begin{remark}[Few remarks about the theorem]~\\
+		\begin{enumerate}
+			\item The first thing is how to understand this theorem? Things become more clear if we can choose $\Phi = 0$. The result says that $|k(K_S+\Omega)| = |k(K_X+D)|_S$, which is what we hope, lifting pluricanonical section. However, we can not expect the result to as nice as we hope. Indeed we have the following example: Let $X$ be the blow-up of $\mathbb{P}^2$ at a point $q, E$ the exceptional divisor, $S$ the strict transform of a line through $q$ and $L_i$ the strict transforms of general lines on $\mathbb{P}^2$. We let $\Delta=S+\frac{2}{3}\left(L_1+L_2+L_3\right)$ so that $\Omega=\left.\frac{2}{3}\left(E+L_1+L_2+L_3\right)\right|_S=\frac{2}{3}\left(p+p_1+p_2+p_3\right)$. For $k=3 l$, we have that $\left|k\left(K_S+\Omega\right)\right|=|2 l p|=\mathbb{P}^{2 l}$ whereas $\left|k\left(K_X+\Delta\right)\right|=|2 l E|$.
+			\item The second thing is to show that assumptions in the theorem is essential. 
+			\item We get divisor $F$ via a limiting process. Since $(m+1)!=(m+1) m!$, we have $F_{(m+1)!} \leq F_{m!}$ and so $\lim F_{m!}=$ $\inf \left\{F_m\right\}$ exists.
+			\item About the analytic proof. The analytic proof is much more stronger. This can be seen already from the Ohsawa-Takegoshi extension theorem, which only requires some positivity weaker than ampleness. If you want to prove some result without ampleness condition, the analytic method may be necessary, as a paid-off the proof will sometimes be more complicated.
+		\end{enumerate}
+	\end{remark}
+	\section{Preliminaries}
+	
+	
+	\subsection{Multiplier ideal sheaves and asymptotic multiplier ideal sheaves}
+	
+
+	\subsection{Linear series}
+	
+	
+	
+	\section{Theorems that allow to lift sections}
+	
+	\subsection{Lifting sections that vanish along the multiplier ideal}
+	By the standard arguement of Nadel vanishing theorem, we can prove the following lemma. The lemma shows that 
+	\begin{lemma}[Lifting sections that vanish along the multiplier ideal]
+		Let $X$ be a smooth quasi-projective variety, $\Delta$ be a reduced divisor with simple normal crossings support and $D \geq 0$ be a $\mathbb{Q}$-Cartier divisor whose support contains no non-klt center of $(X, \Delta)$. Let $\pi: X \rightarrow Z$ be a projective morphism to a normal affine variety $Z$ and $N$ be a Cartier divisor on $X$ such that $N-D$ is ample. Then
+		$$
+		H^i\left(X, \mathscr{J}_{\Delta, D}\left(K_X+\Delta+N\right)\right)=0 \quad \text { for } i>0,
+		$$
+		and if $S$ is a component of $\Delta$, then the homomorphism
+		$$
+		H^0\left(X, \mathscr{J}_{\Delta, D}\left(K_X+\Delta+N\right)\right) \twoheadrightarrow H^0\left(S, \mathscr{J}_{(\Delta-S)|s, D|_S}\left(K_X+\Delta+N\right)\right)
+		$$
+		is surjective.
+	\end{lemma} 
+	The proof is not hard
+	\begin{proof}
+		
+	\end{proof}
+	
+	\subsection{Lifting section with ample twist}
+	As have been mentioned in Section 1. The first step of proving the Hacon Mckernan extension theorem is the following lemma which allows to lift section after sufficient ample twist.
+	\begin{lemma}[Lifting section with ample twist]
+		Let $\pi: X \rightarrow Y$ be a projective morphism from a smooth quasi-projective variety to an affine variety, $\Delta=\sum \delta_i \Delta_i$ be a divisor with simple normal crossings support and rational coefficients $0 \leq \delta_i \leq 1$ and $S$ an irreducible component of $\lfloor\Delta\rfloor$. Let $k>0$ be an integer such that $D=k\left(K_X+\Delta\right)$ is Cartier. 
+		
+		If $\mathbf{B}(D)$ contains no non-klt centers of $(X,\lceil\Delta\rceil)$ and if $A$ is a sufficiently ample Cartier divisor, then for all $m>0$,
+		$$
+		\begin{gathered}
+			\mathscr{J}_{\|m D \mid S\|} \subseteq \mathscr{J}_{([\Delta\rceil-S) \mid s,\|m D+A\|_S} \quad , \\
+			\pi_* \mathscr{J}_{\left\|\left.m D\right|_S\right\|}(m D+A) \subseteq \operatorname{Im}\left(\pi_* \mathscr{O}_X(m D+A) \rightarrow \pi_* \mathscr{O}_S(m D+A)\right)
+		\end{gathered}
+		$$
+		
+	\end{lemma}
+	Let us make few remarks about the lemma:
+	\begin{remark}
+		\begin{enumerate}
+			\item The result of the lemma above says that 
+		\end{enumerate}
+	\end{remark}
+	\begin{proof}
+		
+	\end{proof}
+	\section{Proof of the lifting section with ample twist lemma}
+		
+	\section{Proof of Hacon Mckernan's extension theorem}
+	
+	\section{Applications of Hacon Mckernan extension theorem}
+	In this section, we will summarize all the known applications of Hacon-Mckernan type extension theorem.
+	\subsection{In the existence of KLT flips theorem}
+	
+	\subsection{In the Shokurov rational connectedness conjeture}
+	
+	\subsection{In the deformation of Mori chamber for a family of Fano varieties}
+	
+	\subsection{In the Boundedness of general type problem}
+	
+	
+	
+%	
+%	\section{The fiber of the Moishezon morphism is again Moishezon}
+%	
+%	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
+%	
+%	\end{theorem}
+%	
+%	
+%	\begin{remark}
+%	\cite{Moishezonmorphism} 
+%	\end{remark}
+%	
+%	\begin{proof}
+%		
+%	\end{proof}
+%
+%	\begin{center}
+%		\begin{tikzcd}
+%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+%			\arrow["\cong", from=1-4, to=2-4]
+%			\arrow[from=2-1, to=2-2]
+%			\arrow[from=2-2, to=2-3]
+%			\arrow[from=2-2, to=3-2]
+%			\arrow[from=2-3, to=2-4]
+%			\arrow[from=2-3, to=3-3]
+%			\arrow[from=2-4, to=2-5]
+%			\arrow[from=2-4, to=3-4]
+%			\arrow[from=3-1, to=3-2]
+%			\arrow[from=3-2, to=3-3]
+%			\arrow[from=3-3, to=3-4]
+%			\arrow[from=3-4, to=3-5]
+%			\arrow["\cong", from=3-4, to=4-4]
+%		\end{tikzcd}
+%	\end{center}
+%
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+%		\caption{Comparison between different definitions for Moishezon morphism}
+%		\label{fig:moishezon-morphism-definition}
+%	\end{figure}
+%	
+	\printbibliography	
+	
+\end{document}
