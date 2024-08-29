@@ -24,16 +24,16 @@ The 2nd version is much simpler, and it's integrated in the spraling induction o
 
 For detailed information see my reading notes
 
-(1) [Part I: Overview](https://yilimath.github.io/files/BCHM/ExistenceFlip.pdf),
+(1) [Part I: Overview](https://yilimath.github.io/files/Birational/BCHM/ExistenceFlip.pdf),
 
-(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/BCHM/HaconMckernanExtension.pdf)[update 8.29],
+(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf)[update 8.29],
 
-(3) [Part III: Restricted algebra as limiting algebra](https://yilimath.github.io/files/BCHM/RestrictedAlgebra.pdf),
+(3) [Part III: Restricted algebra as limiting algebra](https://yilimath.github.io/files/Birational/BCHM/RestrictedAlgebra.pdf),
 
-(4) [Part Iv: Hacon-Xu's proof on existence of log canonical flips](https://yilimath.github.io/files/BCHM/ExistenceLCFlip1.pdf),
+(4) [Part Iv: Hacon-Xu's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistenceLCFlip1.pdf),
 
-(5) [Part V: Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/BCHM/ExistenceLCFlip2.pdf),
+(5) [Part V: Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistenceLCFlip2.pdf),
 
-(6) [Supplementary: Hacon Mckernan's alternative proof](https://yilimath.github.io/files/BCHM/ExistenceFlip2.pdf).
+(6) [Supplementary: Hacon Mckernan's alternative proof](https://yilimath.github.io/files/Birational/BCHM/ExistenceFlip2.pdf).
 
 
