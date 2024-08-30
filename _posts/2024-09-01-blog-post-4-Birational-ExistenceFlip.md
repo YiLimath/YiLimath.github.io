@@ -13,11 +13,11 @@ Here is the outline:
 
 Part 1) We will give an overview about the problem and show that it's suffics to prove the finite generation of restricted algebra,
 
-Part 2) We will prove the Hacon Mckernan's extension theorem, which is the technical core of the proof of the main result. The proof can be divided into 2 step. In step 1 we prove the sequzing extra positivity lemma, which allows to lift section after some ample twist. In step 2, we will finish the proof of Hacon Mckernan extension theorem. As a side remark, Hacon Mckernan's extension theorem will be used over and over again in the feature (see [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/posts/2024/08/Shokurov-Rationally-Connectedness/), and [Boundedness of general type](https://yilimath.github.io/posts/2024/08/Boundedness-general-type/), and [Deformation of Fano varieties](https://yilimath.github.io/posts/2024/08/Deformation-Fano/)).
+Part 2) We will prove the Hacon Mckernan's extension theorem, which is the technical core of the proof of the main result. The proof can be divided into 2 step. In step 1 we prove the sequzing extra positivity lemma, which allows to lift section after some ample twist. In step 2, we will finish the proof of Hacon Mckernan extension theorem by ... 
 
-Part 3) We will prove that restricted algebra is a limiting algebra (in higher model), and then finish the proof of the finite generation of limiting algebra. 
+As a side remark, Hacon Mckernan's extension theorem will be used over and over again in the feature (see [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/posts/2024/08/Shokurov-Rationally-Connectedness/), and [Boundedness of general type](https://yilimath.github.io/posts/2024/08/Boundedness-general-type/), and [Deformation of Fano varieties](https://yilimath.github.io/posts/2024/08/Deformation-Fano/)).
 
-Hacon and Mckernan gave 2 approaches in the last step: The 1st one use the theorem by Shokurov that a limiting algebra is finite generated if it's saturated and semiample, and trying to check the saturated and semiampleness condition. 
+Part 3) We will prove that restricted algebra is an limiting algebra (in some higher model), Hacon and Mckernan gave 2 approaches at this point: The 1st one use the theorem by Shokurov that a limiting algebra is finite generated if it's saturated and semiample, and trying to check the saturated and semiampleness condition. 
 
 The 2nd version is much simpler, and it's integrated in the spraling induction of BCHM. The result is obvious once we finish the proof of the restricted algebra is a geometric algebra in lower dimension. Since we can then invoke the BCHM F(n-1) induction hyphothsis.
 
@@ -26,7 +26,7 @@ For detailed information see my reading notes
 
 (1) [Part I: Overview](https://yilimath.github.io/files/Birational/BCHM/ExistenceFlip.pdf),
 
-(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf)[update 8.29],
+(2) [Part II: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 8.29],
 
 (3) [Part III: Restricted algebra as limiting algebra](https://yilimath.github.io/files/Birational/BCHM/RestrictedAlgebra.pdf),
 
