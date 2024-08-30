@@ -9,12 +9,13 @@ tags:
 In this part of note we will introduce Canonical formula.
 
 Here are the outline of the note
+(1) Kawamata's subadjunction formula,
 
-(1) Fujino-Mori canonical bundle formula,
+(2) Fujino-Mori canonical bundle formula,
 
-(2) Ambro's canonical bundle formulas,
+(3) Ambro's canonical bundle formulas,
 
-(3) Generalized canonical bundle formula.
+(4) Generalized canonical bundle formula.
 
 
 
@@ -22,6 +23,8 @@ Here are the outline of the note
 For detailed information see my reading notes 
 
 (0) [Overview canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/OverviewCanonicalBundle.pdf)
+
+(1) [Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf)
 
 (1) [Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
