@@ -18,7 +18,7 @@ Here is the outline of this series of notes:
 
 (3) Part III: Boundedness result on the set of semi-log canonical models with fixed volumed. We will divide the proof into several steps. In step 1, we will establish the birational boundedness of semi-log canonical models. In step 2. ...
 
-(4) Part IV: We will mainly focus on the DCC condition on volume of a log pair (see [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06), [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330) and also [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330)),
+(4) Part IV: We will mainly focus on the DCC condition on volume of a log pair (see [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06), [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330) and also [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06)),
 
 (5) Part V: We will prove the ACC for log canonical threshold. This result can be an easy consequence of boundedness of log canonical models. We will prove it by induction by assuming the boundedness in lower dimension (see [ACC for log canonical thresholds](https://annals.math.princeton.edu/2014/180-2/p03)),
 
