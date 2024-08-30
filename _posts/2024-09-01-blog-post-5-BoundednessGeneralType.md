@@ -11,6 +11,7 @@ tags:
 The aim of this series of notes is to summarize the bounded results for the varieties of general type. 
 
 Here is the outline of this series of notes:
+
 (1) Part I: We will mainly focus on the classical paper by Hacon and Mckernan [Boundedness of pluricanonical maps of varieties of general type](https://link.springer.com/article/10.1007/s00222-006-0504-1), 
 
 (2) Part II: We will mainly focus on the DCC condition on volume of a log pair (see [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06), [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330) and also [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330)),
