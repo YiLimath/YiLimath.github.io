@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Boundedness of Varieties of General Type'
-date: 2024-08-30
+date: 2024-08-31
 permalink: /posts/2024/08/Boundedness-General-Type/
 tags:
   - Birational geometry
@@ -12,13 +12,13 @@ The aim of this series of notes is to summarize the bounded results for the vari
 
 Here is the outline of this series of notes:
 
-(1) Part I: We will mainly focus on the classical paper by Hacon and Mckernan [Boundedness of pluricanonical maps of varieties of general type](https://link.springer.com/article/10.1007/s00222-006-0504-1) and Takayama [Pluricanonical systems on algebraic varieties of general type](https://link.springer.com/article/10.1007/s00222-006-0503-2), the main result of this paper shows that ....
+(1) Part I: We will mainly focus on the classical paper by Hacon and Mckernan [Boundedness of pluricanonical maps of varieties of general type](https://link.springer.com/article/10.1007/s00222-006-0504-1) and Takayama [Pluricanonical systems on algebraic varieties of general type](https://link.springer.com/article/10.1007/s00222-006-0503-2), the main result of this paper shows the effective birationality of Kodaira map for smooth projective varieties of general type. The technical core of the proof is the Hacon-Mckernan extension theorem. Let us briefly sketch the proof....
 
-(2) Part II: Boundedness result on set of all canonical models with fixed dimensions and bounded volumes. And as a corollary we will show that set of volumes of canonical models is indeed a finite set. 
 
-(3) Part III: Boundedness result on the set of semi-log canonical models with fixed volumed. We will divide the proof into several steps. In step 1, we will establish the birational boundedness of semi-log canonical models. In step 2. ...
+(2) Part II: We will introduce the boundedness result on set of log canonical models and semi-log canonical models with fixed dimensions and bounded volumes. We divide the proof into the following steps: 
 
-(4) Part IV: We will mainly focus on the DCC condition on volume of a log pair (see [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06), [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330) and also [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06)),
+
+(4) Part IV: We will mainly focus on the DCC condition on volume of a log pair (see [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06), [Boundedness of moduli of varieties of general type](https://ems.press/journals/jems/articles/15330) and also [On the birational automorphisms of varieties of general type](https://annals.math.princeton.edu/2013/177-3/p06)). Let us first summarize all the knwon results about DCC of volumes. 
 
 (5) Part V: We will prove the ACC for log canonical threshold. This result can be an easy consequence of boundedness of log canonical models. We will prove it by induction assume the boundedness results in lower dimension. (the major reference of this part is [ACC for log canonical thresholds](https://annals.math.princeton.edu/2014/180-2/p03)),
 
