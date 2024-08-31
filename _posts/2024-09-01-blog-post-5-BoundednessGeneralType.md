@@ -24,11 +24,12 @@ Here is the outline of this series of notes:
 
 
 ---
+---
+
 
 For more detailed information, see my lecture notes:
 
 (1) [Part I: Boundedness of pluricanonical map for variety of general type](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)
-
 
 (2) [Part II: Boundedness of canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedCanonicalModel.pdf)
 
