@@ -26,9 +26,9 @@ For the cohomology class version Seshadri criterion, we require additional assum
 ---
 ### Note-2: Chow-Barlet cycle space with applications to openess of projectivity problem
 
-In 2024.9.11 reading seminar, we first complete the proof of Seshadri criterion. We then 
+In 2024.9.11 reading seminar, we first complete the proof of Seshadri criterion. Then we will introduce the main technical tools in the paper, that is approximating Chow-Barlet cycle space using countable many projective morphism. 
 
-
+We then prove the main theorem of this paper. The theorem says that 
 
 ---
 
