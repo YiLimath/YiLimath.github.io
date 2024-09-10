@@ -1,5 +1,5 @@
 ---
-title: 'Moishezon morphism seminar note'
+title: 'Moishezon Morphism Seminar Note'
 date: 2024-9-10
 permalink: /posts/2024/04/Moishezon-Morphism/
 tags:
@@ -7,7 +7,7 @@ tags:
   - Moishezon morphism
 ---
 
-Goal of this reading seminar: We will discuss the rescent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Prof. Kollár in details. 
+The goal of this reading seminar is to discuss the rescent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in details. 
 
 
 ---

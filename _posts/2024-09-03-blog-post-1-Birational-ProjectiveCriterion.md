@@ -13,11 +13,11 @@ The aim of this note is to summarize the projectivity critera in algebraic geome
 ---
 Here is the outline:
 
-(1) [Note-1: Seshadri projectivity criterion]()
+(1) [Note-1: Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
 
-(2) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant]
+(2) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf)
 
-(3) [Note-3: Alternating property of projective locus, openness of projectivity]
+(3) [Note-3: Alternating property of projective locus, openness of projectivity]()
 
 
 ---
