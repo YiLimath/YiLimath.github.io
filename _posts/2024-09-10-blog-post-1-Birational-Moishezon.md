@@ -16,14 +16,14 @@ Goal of this reading seminar: We will discuss the rescent paper [Moishezon morph
 
 (1) [Moishezon morphism Part 1: Overview](https://yilimath.github.io/files/Birational/Moishezon/Overview.pdf),
 
-(2) [Moishezon morphism part 2: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf),
+(2) [Moishezon morphism part 2: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf), 
 
-(3) [Moishezon morphism part 3: Basic properties of Moishezon morphism](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)
+(3) [Moishezon morphism part 3: Basic properties of Moishezon morphism](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
 
-(4) [Moishezon morphism Part 4: Very big locus, general type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf)
+(4) [Moishezon morphism Part 4: Very big locus, general type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf)[update 9.10]
 
 
-(5) [Moishezon morphism Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
+(5) [Moishezon morphism Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)[update 9.10]
 
 
 ---
