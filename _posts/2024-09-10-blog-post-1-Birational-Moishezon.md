@@ -25,6 +25,12 @@ The goal of this reading seminar is to discuss the rescent paper [Moishezon morp
 
 (5) [Moishezon morphism Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)[update 9.10]
 
+(6) [Moishezon morphism Part 6: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
+
+(7) [Moishezon morphism Part 7: Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
+
+
+(8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces]
 
 ---
 ### Note-1: Overview of the paper
@@ -80,4 +86,10 @@ For the detailed information see my lecture notes [Morphism morphism part 5](htt
 
 
 ---
+### Note-6: Algebraic approximation
 
+
+---
+### Note-7: Inversion of adjunction
+
+---

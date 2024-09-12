@@ -10,7 +10,7 @@ tags:
 
 This series of notes will study Kodaira dimension and Iitaka conjecture in details.
 
-Let us first outline the topics that will be discussed in this series of notes
+Let us first outline the topics that will be discussed in this series of notes）
 
 (1) [Note-1: Kodaira map](https://yilimath.github.io/files/Birational/KodairaDim/KodairaMap.pdf),
 
@@ -22,9 +22,14 @@ Let us first outline the topics that will be discussed in this series of notes
 
 (5) [Note-5: subadditive property of Kodaira dimension (easy addition formula)](https://yilimath.github.io/files/Birational/KodairaDim/subadditive.pdf),
 
-
 (6) [Note-6: Positivity of direct image of pluricanonical bundle](https://yilimath.github.io/files/Birational/KodairaDim/DirectImage.pdf)
 
 (7) [Note-7: Iitaka conjecture for general type case](https://yilimath.github.io/files/Birational/KodairaDim/GeneralTypeIitaka.pdf),
 
-() [Note-: Iitaka conjecture over Abelian varieties](https://yilimath.github.io/files/Birational/KodairaDim/IitakaAbelian.pdf)
+(8) [Note-8: Albanese mapping](https://yilimath.github.io/files/Birational/KodairaDim/AlbaneseMapping.pdf),
+
+(9) [Note-9: Iitaka conjecture over Abelian varieties](https://yilimath.github.io/files/Birational/KodairaDim/IitakaAbelian.pdf),
+
+(10) [Note-10: Algebraic Reduction](https://yilimath.github.io/files/Birational/KodairaDim/AlgebraicReduction.pdf), 
+
+(11) [Note-11: Techniques reduce the analytic problems into algebraic](https://yilimath.github.io/files/Birational/KodairaDim/AlgebraicReduction.pdf)
