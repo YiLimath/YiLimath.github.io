@@ -79,7 +79,7 @@
 
 \begin{document}
 	
-	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Scribe: Yi Li}
+	\lecture{4 --- 08, 15, 2024}{Spring 2024}{}{Scribe: Yi Li}
 	\section{Overview}
 	The topics in today's lecture are: 
 	\begin{enumerate}
@@ -91,7 +91,74 @@
 	\end{enumerate}
 
 	\section{The Griffiths transversality theorem}
+	We first introduce the Cartan-Lie formula, which will be used in the differential geometric proof of Griffiths transversality theorem.
 	
+	\begin{theorem}[Cartan-Lie formula, see \cite{Voisin1}, Proposition 9.14]
+	Let $\pi:{X}\to \Delta$ be a smooth family (proper submersion), for any section $\sigma \in R^k f_* (\mathbb{C}) (U)$ there exist a smooth $\Omega \in \mathcal{A}^k(\mathcal{X})$ such that 
+	\begin{enumerate}
+		\item $\Omega|_{X_t}$ is d-closed,
+		\item $\sigma(t)  = [\Omega|_{X_t}]$.
+	\end{enumerate}
+	Moreover $$\nabla_{u} \sigma(0) = [\iota_{v} d \Omega|_{X_0}],$$ where $v$ is a lift of $u$ (such that $\pi_* v = u$)  (e..g we can pick $u = \frac{\partial }{\partial  t}$).
+	
+	\end{theorem}
+	\begin{proof}
+	
+	\end{proof}
+	
+	Now we can prove the Griffith transversality theorem
+	\begin{theorem}[Griffith's Transversality theorem]
+		Let $f:X\to S$ be smooth family of projective (algebraic) variety 
+		(1) (The holomorphicity of the Hodge filtration bundle) The vector spaces $F^pH^k(X_t, \mathbb{C}) = \bigoplus_{r\ge p}{H}^{r,k-r}$ fit together into a holomorphic subbundle $F^p$.
+		(2)(The transversality property) The filtration of holomorphic subbundle satisfies the Griffiths transversality condition
+		$$\nabla : \mathcal{V}^{p,q}\to \mathcal{A}^{1,0}(\mathcal{V}^{p-1,q})\oplus \mathcal{A}^{1}(\mathcal{V}^{p,q})\oplus \mathcal{A}^{0,1}(\mathcal{V}^{p,q-1})$$	
+	\end{theorem}
+	\begin{proof}
+	We will divide the proof into several steps:
+	
+	\textbf{Step 1: Hodge (p,q)-bundle is smooth subbundle of the Hodge bundle}
+	
+	The proof of this part need to use the theorem of Kodaira and Spencer. TODO
+	
+	\textbf{Step 2: Prove $\nabla _{\frac{\partial }{\partial  t}}: \mathcal{V}^{p,q}\to \mathcal{V}^{p,q}\oplus \mathcal{V}^{p-1,q+1}$ }
+	
+	We apply the Cartan-Lie formula so that given a smooth section $\sigma \in \Gamma(\mathcal{V}^{p,q})\subset  \Gamma(R^kf_* (\mathbb{C}))$ we can apply the Cartan-Lie formula, and find some smooth $\Omega \in \mathcal{A}^{k}(X)$ such that
+	
+	(1) $\Omega|_{X_t}$ is d-closed,
+	
+	(2) $[\Omega|_{X_t}] = \sigma(t) \in \mathcal{A}^{p,q}(X_t)$ , and 
+	
+	(3) $\nabla_{\frac{\partial }{\partial t}} \sigma (0 ) =  [\iota_v d \Omega|_{X_0}]$, here $v$ is a lifting of $\frac{\partial }{\partial t}$ says $f_* (v) =  \left(\frac{\partial }{\partial t}\right)$.
+	
+	Since the interior product (contraction satisfies the Libniz rule) so that $$\bar{\partial} (\iota_v \Omega) =  - \iota_v  \bar{\partial}\Omega +  \iota_{ \bar{\partial} v} \Omega$$if we write $$ \nabla _{\frac{\partial  }{\partial t}}  \sigma(0) = [\iota_v d \Omega |_{X_0}] = [\iota_v  (\partial+ \bar{\partial} )\Omega|_{X_0}] =  [\iota_v  \partial \Omega |_{X_0}] + [\bar{\partial} (\iota_v \Omega)|_{X_0} ]-  [\iota_{\bar{\partial} v} \Omega|_{X_0}]  =  [\iota_v \partial \Omega|_{X_0} ] - [\iota_{\bar{\partial} v}\Omega|_{X_0}]$$
+	(Note that we apply the The ddbar lemma, thus $\bar{\partial}(\iota_v \Omega)$ is also $d$-exact)
+	
+	
+	Comparing the type we note that:
+	
+	(a) $[\iota_v  \partial \Omega|_{X_0}] \in \mathcal{A}^{p,q}(X_0)$ (indeed we have $\Omega |_{X_0}\in \mathcal{A}^{p,q}(X_0)$ so that $\partial \Omega|_{X_0} \in \mathcal{A}^{p+1,q}(X_0)$ and therefore by contracting with the holomorphic tangent vector $v$ we get $[\iota_v \partial \Omega|_{X_0}] \in \mathcal{A}^{p,q}(X_0)$),
+	
+	(b) $[\iota_{\bar{\partial} v} \Omega|_{X_0}]\in \mathcal{A}^{p-1,q+1}(X_0)$ (indeed $\bar{\partial} v \in \mathcal{A}^{0,1}(\mathcal{T}_X)$ and contracting it we get $\iota_{\bar{\partial} v}\Omega|_{X_0} \in \mathcal{A}^{p-1,q+1}(X_0)$). 
+	
+	(Note that the der and derbar operator commute with the pull back iff the map is holomorphic we can commute the restriction with the differentiation.)
+	
+	So that $$\nabla _{\frac{\partial }{\partial  t}}: \mathcal{V}^{p,q}\to \mathcal{V}^{p,q}\oplus \mathcal{V}^{p-1,q+1}, \sigma  \mapsto  \nabla_{\frac{\partial }{\partial t}} \sigma$$
+	
+	
+	\textbf{Step 3: Prove $\nabla_{\frac{\partial }{{\partial} \bar{t}}}:\mathcal{V}^{p,q}\to \overline{\mathcal{V}^{p,q}\oplus \mathcal{V}^{p+1,q-1}}$}
+	
+	We claim
+	$$\nabla_{\frac{\partial }{{\partial} \bar{t}}}:\mathcal{V}^{p,q}\to {\mathcal{V}^{p,q}\oplus \mathcal{V}^{p+1,q-1}}$$
+	
+	The proof of this part need to use the parallel of the polarization. Since the polarization $Q$ is $\nabla$-parallel $$dQ(a,\bar{b}) =  Q(\nabla  a ,\bar{b}) + Q(a,\nabla \bar{b})$$
+	eating the vector $\frac{\partial }{\partial t}$ we get $$ dQ(a,\bar{b}) (\frac{\partial }{\partial t}) = \frac{\partial }{\partial t} Q(a,\bar{b})  =  Q(\nabla_{\frac{\partial }{\partial t}} a  ,\bar{b}) + Q(a,\overline{ \nabla_{\frac{\partial }{\partial t}} b})  $$
+	Since $Q(a,\bar{b}) \equiv 0$ for $a \in \mathcal{V}^{p,q}$ and $b \in \mathcal{V}^{r,s}$ unless $(p,q) = (r,s)$, consequently $$ Q\left(\nabla _{\frac{\partial }{\partial t }}a,\bar{b}\right) =  -Q(a, \overline{\nabla _{\frac{\partial }{\partial \bar{t}}}b})$$
+	$$\nabla_{\frac{\partial }{\partial \overline{t}}}b \in \mathcal{V}^{p,q}\oplus { \mathcal{V}^{p+1,q-1}}$$
+	
+	Combine them together thus
+	$$\nabla : \mathcal{V}^{p,q}\to \mathcal{A}^{1,0}(\mathcal{V}^{p-1,q})\oplus \mathcal{A}^{1}(\mathcal{V}^{p,q})\oplus \mathcal{A}^{0,1}(\mathcal{V}^{p,q-1})$$
+	
+	\end{proof}
 	\section{Construction of the Hodge metric and Higgs metric}
 	
 	\section{Geometric interpretation of the Higgs field using Kodaira-Spencer map}

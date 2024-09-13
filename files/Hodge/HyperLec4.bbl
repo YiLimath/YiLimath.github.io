@@ -16,5 +16,39 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{Voisin1}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VC}{%
+         family={Voisin},
+         familyi={V\bibinitperiod},
+         given={Claire},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Soci\'{e}t\'{e} Math\'{e}matique de France, Paris}%
+    }
+    \strng{namehash}{VC1}
+    \strng{fullhash}{VC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Voi02}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1017/CBO9780511615344
+    \endverb
+    \field{isbn}{2-85629-129-5}
+    \field{pages}{viii+595}
+    \field{series}{Cours Sp\'{e}cialis\'{e}s [Specialized Courses]}
+    \field{title}{Th\'{e}orie de {H}odge et g\'{e}om\'{e}trie alg\'{e}brique
+  complexe}
+    \verb{url}
+    \verb https://doi.org/10.1017/CBO9780511615344
+    \endverb
+    \field{volume}{10}
+    \field{year}{2002}
+  \endentry
+\enddatalist
 \endinput
