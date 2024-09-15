@@ -33,3 +33,12 @@ Let us first outline the topics that will be discussed in this series of notesï¼
 (10) [Note-10: Algebraic Reduction](https://yilimath.github.io/files/Birational/KodairaDim/AlgebraicReduction.pdf), 
 
 (11) [Note-11: Techniques reduce the analytic problems into algebraic](https://yilimath.github.io/files/Birational/KodairaDim/AlgebraicReduction.pdf)
+
+
+---
+
+---
+### Note 11: Techniques reduce the analytic problems into algebraic
+
+In this note we will mainly on how to reduce a complex analytic problem into an algebraic problem. The first tool that we will introduce is called algebraic reduction. Which already introduced in [Here](https://yilimath.github.io/files/Birational/KodairaDim/AlgebraicReduction.pdf).  
+
