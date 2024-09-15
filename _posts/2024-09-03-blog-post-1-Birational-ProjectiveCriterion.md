@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Reading Seminar Note: Projectivity criterions'
-date: 2024-09-07
+date: 2024-09-15
 permalink: /posts/2024/09/Projectivity/
 tags:
   - Birational geometry
@@ -15,9 +15,9 @@ Here is the outline:
 
 (1) [Note-1: Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
 
-(2) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf)
+(2) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf) [Update 9.15]
 
-(3) [Note-3: Alternating property of projective locus, openness of projectivity]()
+(3) [Note-3: Alternating property of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
 
 
 ---
@@ -35,10 +35,16 @@ For the cohomology class version Seshadri criterion, we require additional assum
 ---
 ### Note-2: Chow-Barlet cycle space with applications to openess of projectivity problem
 
-In 2024.9.11 reading seminar, we first complete the proof of Seshadri criterion. Then we will introduce the main technical tools in the paper, that is approximating Chow-Barlet cycle space using countable many projective morphism. We then dive into the proof of the main theorem of this paper. The result says that for a proper flat Moishezon morphism, if the special fiber is projective and generic fiber has rational singularity then there exist a Zariski open subset over which the base is stratified into locally closed subset. On each stratum the morphism is projective.
+In 2024.9.11 reading seminar, we first complete the proof of Seshadri criterion that didn't finish last time. Then we will introduce the main technical tools in the paper, that is approximating Chow-Barlet cycle space using countable many projective morphism. Using this technical tool, we try to prove that if a Moishezon morphism with generic fiber haw rational singularity and the central fiber is projective, then the very general fibers near 0 are also projective.
 
-Let us sketch the idea of the proof. We first prove that there exist a Euclidean open neighborhood of 0 over which the very general fibers are projective. Thus by the Baire category theorem, the projective locus is not contained in countable union of nowhere dense subset. By the alternating property 
+Let us briefly sketch the idea of the proof of this theorem. We divide the collection of projective morphisms which used to approximate the Chow-Barlet cycle space into 2 types. The first type contains those projective morphism whose image of base in S is nowhere dense. The second type are the rest. We choose any point s in the complement of the locus of the first type. By properness of the morphism into S, the origin 0 contains in the image also. Thus we can find a holomorphic curve connect both s and 0. Using the upper semi-continuity of the multiplicity function together with that the 2 points in the same component of Chow variety has same numerical property. We can finish the proof.
 
-A remark about flatness assumption. 
 
 ---
+### Note-3: Alternating properties of projective locus and proof of the main theorem
+
+This time we will finish the proof of the main theorem of the paper [Seshadri’s criterion and openness of projectivity](https://link.springer.com/article/10.1007/s12044-022-00680-9), Theorem 2. Before proving the openess of projectivity theorem, we need another result about alternating property of projective locus of a proper (Moishezon) morphism. Combined with the theorem about projectivity of very general fibers last time, the proof of the main theorem is immediate.
+
+
+---
+### 
