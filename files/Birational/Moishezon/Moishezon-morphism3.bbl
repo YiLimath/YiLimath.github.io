@@ -42,6 +42,7 @@
     \strng{fullhash}{CFCJAPT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{CCP08}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \verb{doi}
@@ -78,6 +79,7 @@
     \strng{fullhash}{CBHA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{CH24}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \verb{eprint}
@@ -108,6 +110,7 @@
     \strng{fullhash}{DOHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{DH20}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \verb{eprint}
@@ -132,6 +135,7 @@
     \strng{fullhash}{KJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{Kol22}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{issn}{1558-8599,1558-8602}
@@ -156,6 +160,7 @@
     \strng{fullhash}{VJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelalpha}{Var89}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \verb{doi}

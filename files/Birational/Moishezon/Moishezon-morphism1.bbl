@@ -1,0 +1,105 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Campana}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Campana},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Cam80}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1007/BF01420277
+    \endverb
+    \field{issn}{0025-5831,1432-1807}
+    \field{number}{1}
+    \field{pages}{7\bibrangedash 18}
+    \field{title}{Alg\'ebricit\'e{} et compacit\'e{} dans l'espace des cycles
+  d'un espace analytique complexe}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01420277
+    \endverb
+    \field{volume}{251}
+    \field{journaltitle}{Math. Ann.}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Fujiki}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FA}{%
+         family={Fujiki},
+         familyi={F\bibinitperiod},
+         given={Akira},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FA1}
+    \strng{fullhash}{FA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Fuj82}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{issn}{0027-7630,2152-6842}
+    \field{pages}{189\bibrangedash 211}
+    \field{title}{On the {D}ouady space of a compact complex space in the
+  category {${\cal C}$}}
+    \verb{url}
+    \verb http://projecteuclid.org/euclid.nmj/1118786660
+    \endverb
+    \field{volume}{85}
+    \field{journaltitle}{Nagoya Math. J.}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Moishezonmorphism}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Koll\'{a}r},
+         familyi={K\bibinitperiod},
+         given={J\'{a}nos},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kol22}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{issn}{1558-8599,1558-8602}
+    \field{number}{4}
+    \field{pages}{1661\bibrangedash 1687}
+    \field{title}{Moishezon morphisms}
+    \field{volume}{18}
+    \field{journaltitle}{Pure Appl. Math. Q.}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput

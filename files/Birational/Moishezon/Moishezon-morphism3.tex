@@ -1,4 +1,5 @@
 \documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{latexsym}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
@@ -13,7 +14,7 @@
 	\begin{center}
 		\framebox{
 			\vbox{
-				\hbox to 5.78in { {\bf Moishezon morphism reading seminars} \hfill #2 }
+				\hbox to 5.78in { {\bf Projectivity Criterira Reading Seminars} \hfill #2 }
 				\vspace{4mm}
 				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
 				\vspace{2mm}
@@ -24,7 +25,7 @@
 	\vspace*{4mm}
 }
 
-\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Note #1 (draft version 0)}}
 \usepackage{amsthm}
 
 \theoremstyle{definition}
@@ -35,6 +36,7 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{assumption}[theorem]{Assumption}
 
@@ -52,17 +54,27 @@
 \parskip 1.5ex
 %\renewcommand{\baselinestretch}{1.25}
 
-\usepackage[backend=bibtex,style=IEEE,sorting=nty]{biblatex}
+\usepackage[backend=bibtex,style=alphabetic,maxalphanames=4,minalphanames=4,sorting=nty]{biblatex}
 \addbibresource{mybib.bib}
 
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Moishezon morphism reading seminars}
-\rhead{}
+\lhead{Birational Geometry Reading Seminars}
+\rhead{\thepage}
 %\cfoot{center of the footer!}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
 
 
 \begin{document}
