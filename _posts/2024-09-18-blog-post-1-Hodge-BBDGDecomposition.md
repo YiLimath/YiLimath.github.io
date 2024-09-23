@@ -1,6 +1,6 @@
 ---
 title: 'Hodge theory note: BBDG decomposition theorem'
-date: 2024-09-18
+date: 2024-08-18
 permalink: /posts/2024/09/BBDG-Decomposition/
 tags:
   - Hodge theory
