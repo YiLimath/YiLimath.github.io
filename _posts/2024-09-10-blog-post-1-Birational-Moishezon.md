@@ -14,9 +14,9 @@ The goal of this reading seminar is to discuss the rescent paper [Moishezon morp
 Here is the outline:
 
 
-(1) [Moishezon morphism part 2: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf), 
+(1) [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf), 
 
-(2) [Moishezon morphism part 3: Basic properties of Moishezon morphism (1)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
+(2) [Moishezon morphism part 2: Basic properties of Moishezon morphism (1)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
 
 
 (3) [Moishezon morphism part 3: Basic properties of Moishezon morphism (2)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
@@ -114,5 +114,6 @@ Finally we make a remark that canonical modification may not always exist. For m
 
 ---
 ### Note-7: Inversion of adjunction
+
 
 ---
