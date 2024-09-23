@@ -37,3 +37,6 @@ For more detailed information, see my lecture notes:
 (4) [Part IV: Boundedness of canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedCanonicalModel.pdf)
 
 (5) [Part V: Boundedness of semi-log canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedSLCM.pdf)
+
+
+(6) [Supplement: Effective Matsusaka's big theorem](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BigMatsusaka.pdf)

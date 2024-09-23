@@ -9,10 +9,16 @@ tags:
 
 This series of notes will discuss the topics about partial modification in birational geometry.
 
+
+
 Here is the outline
 
-(1) Canonical modification, terminal modification: 
+(1) [Note-1: Canonical modification and terminal modification, Q-factorialization](): 
 
-(2) DLT modification, and crepant extraction theorems: 
+(2) [Note-2: DLT modification, crepant extraction theorem](): We will show the existence results about the canonical and terminal modification. We will then showing some applications of these partial modifications. 
 
-(3) semi log modification: For non normal varieties, it's not very clear how to resolve the singularity, we 
+(3) [Note-3: Semi log modificaiton](): 
+
+
+----
+----

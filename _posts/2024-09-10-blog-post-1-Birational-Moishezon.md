@@ -1,7 +1,7 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2024-9-10
-permalink: /posts/2024/04/Moishezon-Morphism/
+date: 2024-9-23
+permalink: /posts/2024/09/Moishezon-Morphism/
 tags:
   - Birational geometry
   - Moishezon morphism
@@ -87,6 +87,11 @@ For the detailed information see my lecture notes [Morphism morphism part 5](htt
 
 ---
 ### Note-6: Algebraic approximation
+
+In today's reading seminar(2024.9.25). We will focus on the algebraic approximation technique. We will study the algebraic approximation for Moishezon morphism. But before that, we will first consider the projective morphism to an open disk D. Since the deformation functor and Picard functor are representable in this setting. We can therefore construct a universal family over some base S. By the universality there exist a morphism from the open disk D to S. We restrict our attention on the image of the disk on S. And this will give us the algebraic envelop. For the Moishezon morphism to the open disk D. As usual, we try to reduce the Moishezon problem into projective problem via a bimeromorphic morphism. The idea here 
+
+
+
 
 
 ---
