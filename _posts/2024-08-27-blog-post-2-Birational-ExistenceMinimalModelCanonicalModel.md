@@ -1,7 +1,7 @@
 ---
-title: 'Birational Geometry Note: Around existence of minimal model and canonical model'
-date: 2024-08-10
-permalink: /posts/2024/08/existence-of-minimal-model-canonical-model/
+title: 'Birational Geometry Note: Around the minimal model, good minimal model and canonical model'
+date: 2024-09-23
+permalink: /posts/2024/09/minimal-model-canonical-model/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -19,7 +19,7 @@ Here is the outline:
 
 (4) Part IV: We will study the relation between minimal model and the stable base locus, restricted base locus, augemented base locus (this will be a very interesting topic),
 
-(5) 
+(5) Part V: We will study the minimal model, good minimal model, canonical model in family. 
 
 
 ---
@@ -27,10 +27,9 @@ Here is the outline:
 
 For more detailed information see my reading notes
 
-() [Part I: Existence]
+(1) [Part I: Existence of minimal model, good minimal model, canonical model].
 
 (2) [Part II: Basic properties of good minimal models]()
-
 
 (3) [Part III: Minimal model, good minimal model, canonical model under birational morphism],
 

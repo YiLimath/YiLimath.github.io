@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Around partial modification (canonical, Q-factorial, DLT modification)'
-date: 2024-08-22
+date: 2024-09-23
 permalink: /posts/2024/08/modification/
 tags:
   - Birational geometry
@@ -24,6 +24,9 @@ Here is the outline
 
 ----
 ----
+## Note-1 DLT modification, crepant extraction theorem
+
+We already discussed the DLT modification in the reading seminar on BCHM. In this note we will repeat the proof of the theorem. And discuss more on the generalization and possible applications of the theorem.
 
 
 
@@ -33,9 +36,11 @@ Here is the outline
 
 In this note we will first prove some existence theorem about the Canonical modification and terminal modification, Q-factorialization. The second part of this note will summarize the applications of these partial modifications.
 
-Let us first briefly sketch the idea on how to prove the canonical modification always exist for quasi-projective complex varieties. The main 
+Let us briefly sketch the idea on how to prove the canonical modification always exist for a quasi-projective complex variety X. The idea is simple, we first take a resolution on the variety X. Note that for a birational morphism any divisor is relative big. Thus the BCHM condition holds. We can then find the relative canonical model over X, which will be the canonical modification we want.
 
-
+Let us now briefly sketch on the idea how to generalize the theorem into the Moishezon category (see also []). The idea is to apply the algebraic envelop. 
 
 ---
 ---
+## Note-3 Semi log modificaiton
+

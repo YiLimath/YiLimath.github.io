@@ -19,16 +19,16 @@ Here is the outline:
 (2) [Moishezon morphism part 2: Basic properties of Moishezon morphism (1)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
 
 
-(3) [Moishezon morphism part 3: Basic properties of Moishezon morphism (2)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
+(3) [Moishezon morphism part 2: Basic properties of Moishezon morphism (2)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)[update 9.10]
 
-(4) [Moishezon morphism Part 4: Very big locus, general type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf)[update 9.10]
+(4) [Moishezon morphism Part 3: Very big locus, general type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf)[update 9.10]
 
 
-(5) [Moishezon morphism Part 5: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)[update 9.10]
+(5) [Moishezon morphism Part 4: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)[update 9.10]
 
-(6) [Moishezon morphism Part 6: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
+(6) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf)
 
-(7) [Moishezon morphism Part 7: Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
+(7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf)
 
 
 (8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces]
@@ -42,7 +42,7 @@ We first try to proved some elementary properties of Moishezon spaces.
 
 
 
-For the detailed discussion see my lecture notes: [Moishezon morphism part 2](https://yilimath.github.io/files/Birational/Moishezon/Moishezon-morphism2.pdf)
+For the detailed discussion see my lecture notes: [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf)
 
 
 ---
@@ -68,7 +68,7 @@ This time:
 
 
 
-For the detailed discussion see my lecture notes: [Moishezon morphism part 3](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf)
+For the detailed discussion see my lecture notes: [Moishezon morphism part 3](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf)
 
 
 
@@ -82,7 +82,7 @@ Let us first sketch the idea on how to prove the alternating property of very bi
 
 As for the Moishezon locus, the basic idea already appear in the paper [[RT1]()] and [[RT2]()]. 
 
-For detailed information see my lecture notes [Moishezon part 4](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf)
+For detailed information see my lecture notes [Moishezon part 4](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf)
 
 
 ---
@@ -93,7 +93,7 @@ This week, we will continue our discussion on the paper [Moishezon morphism](htt
 
 Let us briefly sketch the idea of the proof: 
 
-For the detailed information see my lecture notes [Morphism morphism part 5](https://yilimath.github.io/files/Birational/Moishezon/Moishezon5.pdf)
+For the detailed information see my lecture notes [Morphism morphism part 5](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf)
 
 
 ---
@@ -108,7 +108,7 @@ Let us first briefly sketch the idea on how to construct the algebraic envelop? 
 The second part of this note introduce some applications of algebraic approximation technique.  We will first use algebraic envelop to show that MMP works for projective family over a Riemann surface. And the singularities of the minimal model and canonical model are nice. We then use the algebraic approximation techniques showing the existence of canonical modification for Moishezon morphism.
 
 
-Let us briefly sketch the idea on the existence of canonical modification for Moishezon morphism (this part of note will also appear in [Canonical and Terminal modification](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)). We first brrow the result from BCHM that the canonical modification exist for quasi-projective complex variety. Since the algebraic envelop of the Moishezon family is Moishezon, thus it's a Etale cover of some quasi-projective variety. Since canonical modification commute with Etale base change, the canonical modification exist on the algebraic envelop. We then check that the pull back of the canonical modification on the algebraic envelop is indeed the canonical modification of the family that we considered.
+Let us briefly sketch the idea on the existence of canonical modification for Moishezon morphism (this part of note will also appear in [Canonical and Terminal modification](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)). We first brrow the result from BCHM that the canonical modification exist for quasi-projective complex variety. Since the algebraic envelop of the Moishezon family is Moishezon, thus it's a Etale cover of some quasi-projective variety. Since canonical modification commute with Etale base change, the canonical modification exist on the algebraic envelop. We then check that the pull back of the canonical modification on the algebraic envelop is indeed the canonical modification of the family that we considered. (There is a question here)
 
 Finally we make a remark that canonical modification may not always exist. For more applications of canonical modification see my note: [Canonical and Terminal modification](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
 
