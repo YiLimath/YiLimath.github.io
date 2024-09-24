@@ -34,9 +34,11 @@ For more detailed information see my reading notes
 
 (6) [Part VI: Semi-stable MMP]().
 
+
 ---
 ---
 ## Part II Basic properties of minimal model, good minimal models, canonical model
+
 
 
 
