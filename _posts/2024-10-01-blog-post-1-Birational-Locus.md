@@ -8,17 +8,17 @@ tags:
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
-(1) Part I: Exceptional Locus 
+(1) [Part I: Exceptional Locus]().
 
-(2) Part II: Zariski decomposition
+(2) Part II: Base locus, fixed part, mobile part. 
 
-(2) Part III: Base locus, fixed part, mobile part. 
+(2) [Part III: Zariski decomposition](). 
 
 (3) Part IV: Stable base locus, restricted base locus and augmented base locus. In this part, we will summarize some basic properties about these three locus. Here are the topics that will be covered in this part of note: We will study the basic properties of these 3 locus, and the relations between them. We will study these 3 locus in the MMP. 
 
 (4) Part V: Non-KLT locus. NKLT locus is one of the central object in birational geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem, 
 
-(5) Part VI: Nef locus, Kahler Locus. 
+(5) Part VI: non-nef locus, non-Kahler Locus, numerical base locus.
 
 
 ---
@@ -28,15 +28,20 @@ The aim of this series of notes is to summarize the base properties about stable
 In this note, we first study the relations between stable base locus, restricted base locus and augmented base locus. We then prove some basic properties that these locus satisfies. We end this note by studying some applications in the minimal model theory.
 
 
-Here are the possible applications in the minimal model theory:
+We first show some relation between these three locus: In general we have $$\mathbf{B}_{-}(D)\subset \mathbf{B}(D)\subset \mathbf_{+}(D)$$
 
+There are some cases that they coinside. When 
 
+Compared with the stable base locus, what nice about restricted base locus and augmented base locus are they are numerically invariant. 
 
 As for the applications in the minimal model program. We have the following useful results:
 
-(1) The set of exceptional divisors of the minimal model coinside with the restricted base locus of the log canonical divisor. If in addition it's a good minimal model, then it also coinside with the stable base locus. The idea of the proof 
+(1) The set of exceptional divisors of the minimal model coinside with the restricted base locus of the log canonical divisor. If in addition it's a good minimal model, then it also coinside with the stable base locus. 
 
-(2)
+
+Let us briefly sketch the idea of the proof. We first apply the Nakayama's Zariski decomposition, and try to show that the exceptional divisors of the minimal model coinside with the negative part of the Zariski decomposition. The result of the proof is standard, we show that divisorial part of restricted base locus coinside with negative part of the Zariski decomposition. When the divisor is big, restricted base locus is the same as the stable base locus. And thus we complete the proof.
+
+
 
 ----
 ----
