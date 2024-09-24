@@ -11,11 +11,6 @@ This series of notes will summarize recent development around the existence of m
 
 Here is the outline:
 
-(1) Part I: We will summarize all the known results about existence of minimal model, canonical models (most without proof, but only sketch of some important ideas),
-
-(2) Part II: We will summarize some basic properties of good minimal models,
-
-(3) Part III: We will study the minimal model, good minimal model, canonical model and canonical ring under birational morphism (map),
 
 (4) Part IV: We will study the what will be contracted by the MMP. 
 
@@ -29,10 +24,22 @@ For more detailed information see my reading notes
 
 (1) [Part I: Existence of minimal model, good minimal model, canonical model]().
 
-(2) [Part II: Basic properties of minimal model, good minimal models, canonical model]()
+(2) [Part II: Basic properties of minimal model, good minimal models, canonical model]().
 
-(3) [Part III: Minimal model, good minimal model, canonical model under birational morphism],
+(3) [Part III: Minimal model, good minimal model, canonical model under birational morphism]().
 
-(4) [Part IV: What will be contracted by the MMP?](),
+(4) [Part IV: What will be contracted by the MMP?]().
 
 (5) [Part V: Minimal model, good minimal model, canonical model in family]().
+
+(6) [Part VI: Semi-stable MMP]().
+
+---
+---
+## Part II Basic properties of minimal model, good minimal models, canonical model
+
+
+
+---
+---
+
