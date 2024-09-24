@@ -33,5 +33,3 @@ For more detailed information see my reading notes
 
 (3) [Part III: Minimal model, good minimal model, canonical model under birational morphism],
 
-(4) [Part IV: Locus and minimal model]
-

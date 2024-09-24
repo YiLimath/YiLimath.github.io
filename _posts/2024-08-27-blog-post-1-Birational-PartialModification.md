@@ -19,7 +19,7 @@ Here is the outline
 
 (2) [Note-2: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf): 
 
-(3) [Note-3: Semi log modificaiton](): 
+(3) [Note-3: Semi log modificaiton]: 
 
 
 ----
