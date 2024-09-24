@@ -10,15 +10,15 @@ The aim of this series of notes is to summarize the base properties about stable
 
 (1) [Part I: Exceptional Locus]().
 
-(2) Part II: Base locus, fixed part, mobile part. 
+(2) [Part II: Base locus, fixed part, mobile part](). 
 
 (2) [Part III: Zariski decomposition](). 
 
-(3) Part IV: Stable base locus, restricted base locus and augmented base locus. In this part, we will summarize some basic properties about these three locus. Here are the topics that will be covered in this part of note: We will study the basic properties of these 3 locus, and the relations between them. We will study these 3 locus in the MMP. 
+(3) [Part IV: Stable base locus, restricted base locus and augmented base locus](). In this part, we will summarize some basic properties about these three locus. Here are the topics that will be covered in this part of note: We will study the basic properties of these 3 locus, and the relations between them. We will study these 3 locus in the MMP. 
 
-(4) Part V: Non-KLT locus. NKLT locus is one of the central object in birational geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem, 
+(4) [Part V: Non-KLT locus]. NKLT locus is one of the central object in birational geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem, 
 
-(5) Part VI: non-nef locus, non-Kahler Locus, numerical base locus.
+(5) [Part VI: non-nef locus(numerical base locus), non-Kahler Locus]().
 
 
 ---
@@ -28,7 +28,7 @@ The aim of this series of notes is to summarize the base properties about stable
 In this note, we first study the relations between stable base locus, restricted base locus and augmented base locus. We then prove some basic properties that these locus satisfies. We end this note by studying some applications in the minimal model theory.
 
 
-We first show some relation between these three locus: In general we have $$\mathbf{B}_{-}(D)\subset \mathbf{B}(D)\subset \mathbf_{+}(D)$$
+We first show some relation between these three locus: In general we have $\mathbf{B}_{-}(D)\subset \mathbf{B}(D)\subset \mathbf_{+}(D)$
 
 There are some cases that they coinside. When 
 
