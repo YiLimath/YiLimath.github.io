@@ -15,11 +15,12 @@ This series of notes will discuss partial modifications in Birational Geometry.
 Here is the outline
 
 
-(1) [Note-1: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf): We will show the existence results about the canonical and terminal modification. We will then showing some applications of these partial modifications. 
+(1) [Note-1: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf): We will show the existence results about the canonical and terminal modification. We will then summarize some applications of canonical modification and terminal modification. 
+
 
 (2) [Note-2: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf): 
 
-(3) [Note-3: Semi log modificaiton]: 
+(3) [Note-3: Semi log modificaiton](): 
 
 
 ----

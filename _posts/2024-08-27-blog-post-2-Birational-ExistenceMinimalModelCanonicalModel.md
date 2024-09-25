@@ -11,17 +11,6 @@ This series of notes will summarize recent development around the existence of m
 
 Here is the outline:
 
-
-(4) Part IV: We will study the what will be contracted by the MMP. 
-
-(5) Part V: We will study the minimal model, good minimal model, canonical model in family. 
-
-
----
----
-
-For more detailed information see my reading notes
-
 (1) [Part I: Existence of minimal model, good minimal model, canonical model]().
 
 (2) [Part II: Basic properties of minimal model, good minimal models, canonical model]().
