@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Birational Geometry and Complex Geometry, WuHan University, 2023 
+* Ph.D in Birational Geometry, WuHan University, 2023 
 
 
 
