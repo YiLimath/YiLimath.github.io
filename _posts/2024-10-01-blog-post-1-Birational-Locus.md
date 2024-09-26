@@ -21,6 +21,17 @@ The aim of this series of notes is to summarize the base properties about stable
 (5) [Part VI: non-nef locus(numerical base locus), non-Kahler Locus]().
 
 
+
+---
+---
+## Note-1 Exceptional locus
+
+
+---
+---
+## Note-2 Base locus, fixed part, mobile part
+
+
 ---
 ---
 ## Note-3 Stable base locus, restricted base locus and augmented base locus
@@ -47,7 +58,7 @@ Let us briefly sketch the idea of the proof. We first apply the Nakayama's Zaris
 ----
 ## Note-3 Non-KLT locus
 
-NKLT locus is one of the central object in birational geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem.
+NKLT locus is one of the central object in birational geometry. It will be the key to understand the log canonical geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem.
 
 
 ---
