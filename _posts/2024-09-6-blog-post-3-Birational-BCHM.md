@@ -19,16 +19,17 @@ Here is the outline
 (1) [BCHM Part 1: Overview](https://yilimath.github.io/files/Birational/BCHM/BCHM1.pdf),
 
 
-(2) [BCHM Part 2: Consequence of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf),
+(2) [BCHM Part 2: Consequence of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf). [update 10.4]
 
 
-(3) [BCHM Part 3: Proof of BCHM B and BCHM C Special termination and existence of minimal model](https://yilimath.github.io/files/Birational/BCHM/BCHM3.pdf),
 
-(4) [BCHM Part 4: Proof of BCHM D Non vanishing](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf)
+(3) [BCHM Part 3: Proof of BCHM B and BCHM C Special termination and existence of minimal model](https://yilimath.github.io/files/Birational/BCHM/BCHM3.pdf).
 
-(5) [BCHM Part 5: Finiteness of minimal model and Finite generation](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf)
+(4) [BCHM Part 4: Proof of BCHM D Non vanishing](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
-(6) [BCHM Part 6: Alternative approach to BCHM which replace the special finiteness by special termination]()
+(5) [BCHM Part 5: Finiteness of minimal model and Finite generation](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+
+(6) [BCHM Part 6: Alternative approach to BCHM which replace the special finiteness by special termination]().
 
 
 ---
