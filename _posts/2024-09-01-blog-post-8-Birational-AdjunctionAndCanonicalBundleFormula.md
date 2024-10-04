@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Adjunction Theory'
-date: 2024-09-26
+date: 2024-10-4
 permalink: /posts/2024/08/Canonical-bundle-formulas/
 tags:
   - Birational geometry
