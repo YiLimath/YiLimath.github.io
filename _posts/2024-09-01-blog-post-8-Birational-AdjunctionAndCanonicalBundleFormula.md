@@ -6,7 +6,7 @@ tags:
   - Birational geometry
 ---
 
-In this part of note we will introduce adjunction theory in Birational Geometry. We will divide it into 4 parts. The first part is about adjunction formula (with varies type of singularity). The second part is about the inversion of adjunction with different variants. The third part is about subadjunction formula (which is sometimes also called adjunction on the NKLT centers). The last part is about the canonial bundle formulas (which is sometimes also called adjunction on the fibration). A nice summary about it can be found in the paper [Anti-pluricanonical systems
+In this part of note we will introduce adjunction theory in Birational Geometry. We will divide it into 4 parts. The first part is about adjunction formula (with varies type of singularities). The second part is about the inversion of adjunction with different variants. The third part is about subadjunction formula (which is sometimes also called adjunction on the NKLT centers). The last part is about the canonial bundle formulas (which is sometimes also called adjunction on the fibration). A nice summary about it can be found in the paper [Anti-pluricanonical systems
 on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01). Our note will base on this paper. And we try to give a more detailed introduction to the adjunction theory.
 
 
