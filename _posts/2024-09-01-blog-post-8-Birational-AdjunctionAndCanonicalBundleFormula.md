@@ -27,3 +27,17 @@ For detailed information see my reading notes
 (6) [Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
 (7) [Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
+
+
+---
+
+
+---
+
+
+---
+## Note-2 Inversion of adjunction
+---
+
+
+Before going deeper into the the theory of inversion of adjunction. Let us first study the classical version inversion of adjunction (which can be found in [KM96, Theorem 5.50]). The theorem says that for a normal variety with a normal prime divisor $S$. The pair 
