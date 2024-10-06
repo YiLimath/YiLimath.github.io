@@ -40,4 +40,10 @@ For detailed information see my reading notes
 ---
 
 
-Before going deeper into the the theory of inversion of adjunction. Let us first study the classical version inversion of adjunction (which can be found in [KM96, Theorem 5.50]). The theorem says that for a normal variety with a normal prime divisor $S$. The pair 
+Before going deeper into the the theory of inversion of adjunction. Let us first study the classical version inversion of adjunction (which can be found in [KM96, Theorem 5.50]). The theorem says that for a normal variety X with a normal prime divisor S. The pair (X,B+S) is PLT(LC) iff the restriction on S is KLT (LC). 
+
+
+Let us briefly sketch the idea of the proof. 
+
+
+Let us now study the inversion of adjunction for Moishezon space (which appears in [Kol2]). The major difficulity that we will face in the Moishezon setting, will be the minimal model theory over analytic base is not known. 
