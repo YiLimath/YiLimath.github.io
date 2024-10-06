@@ -40,10 +40,17 @@ For detailed information see my reading notes
 ---
 
 
-Before going deeper into the the theory of inversion of adjunction. Let us first study the classical version inversion of adjunction (which can be found in [KM96, Theorem 5.50]). The theorem says that for a normal variety X with a normal prime divisor S. The pair (X,B+S) is PLT(LC) iff the restriction on S is KLT (LC). 
+### Classical version inversion of adjunction
+
+Before going deeper into the the theory of inversion of adjunction. Let us first study the classical version inversion of adjunction (which can be found in [KM96, Theorem 5.50]). The theorem says that for a normal variety X with a normal divisor S. The pair (X,B+S) is PLT(LC) iff the restriction on S is KLT (LC). 
 
 
-Let us briefly sketch the idea of the proof. 
+Let us briefly sketch the idea of the proof. We will divide the proof into several steps:
 
+(1) Easy adjunction theorem: The theorem says that discrepancy inside S can be seen outside. Thus, bad singularity inside S can be detected from outside. If the singularity of (X,B+S) is nice, then the singularity inside S can not be too bad. How to prove this?
+
+(2) Kollár-Shokurov connectedness theorem: 
+
+(3) Proof of the inversion of adjunction: One direction is an immediate consequence of easy adjunction theorem. Only needs to prove the converse direction, which require the Kollár-Shokurov connectedness theorem. The idea is note that S lies over the NKLT center, if there is any exceptional with coefficint than 1 (lies over S). It must be detected by S, using connectedness principle. Now the singularity inside S is nice, thus the singularity near S must also be nice.
 
 Let us now study the inversion of adjunction for Moishezon space (which appears in [Kol2]). The major difficulity that we will face in the Moishezon setting, will be the minimal model theory over analytic base is not known. 
