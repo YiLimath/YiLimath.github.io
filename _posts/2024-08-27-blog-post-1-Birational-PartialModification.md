@@ -10,10 +10,10 @@ tags:
 This series of notes will discuss partial modifications in Birational Geometry. 
 
 
-
 ----
 Here is the outline
 
+(0) [Note-1:Log resolution, discrepancy]()
 
 (1) [Note-1: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf): We will show the existence results about the canonical and terminal modification. We will then summarize some applications of canonical modification and terminal modification. 
 
@@ -39,7 +39,8 @@ In this note we will first prove some existence theorem about the Canonical modi
 
 Let us briefly sketch the idea on how to prove the canonical modification always exist for a quasi-projective complex variety X. The idea is simple, we first take a resolution on the variety X. Note that for a birational morphism any divisor is relative big. Thus the BCHM condition holds. We can then find the relative canonical model over X, which will be the canonical modification we want.
 
-Let us now briefly sketch on the idea how to generalize the theorem into the Moishezon category (see also []). The idea is to apply the algebraic envelop. 
+Let us now briefly sketch on the idea how to generalize the theorem into the Moishezon category (see also ). The idea is to apply the algebraic envelop. 
+
 
 ---
 ---

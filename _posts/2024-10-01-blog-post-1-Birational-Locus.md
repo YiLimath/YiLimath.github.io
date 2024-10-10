@@ -56,13 +56,19 @@ Let us briefly sketch the idea of the proof. We first apply the Nakayama's Zaris
 
 ----
 ----
-## Note-3 Non-KLT locus
+## Note-3 Non-KLT locus Part 1: Kollár-Shokurov connectedness principle
 
-NKLT locus is one of the central object in birational geometry. It will be the key to understand the log canonical geometry. We will study this locus in greate details. Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Shokurov rationally connected theorem.
+NKLT locus is one of the central object in birational geometry. It will be the key to understand the log canonical geometry. Non-KLT locus has fruitful geometric structure. We will study this locus in greate details. 
 
+Here are the topics that will be covered in this part of note: Basic properties of NKLT locus, Kollar-Shokurov connected principal.
+
+
+Kollár-Shokurov connectedness principle has many interesting applications: 
 
 ---
 ---
 ## Note-4 Nef locus, Kahler locus
 
+
+In the end of this note, we will show some applications of the basic properties about nef locus, Kahler locus we deduce above.
 
