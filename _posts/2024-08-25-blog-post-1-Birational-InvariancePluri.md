@@ -9,25 +9,8 @@ tags:
 
 The aim of this note is to give an detailed introduction of deformation invariance of plurigenera problem.
 
-Here is the outline of the notes:
 
-(1) We will give an algebraic proof of invariance of plurigenera, 
-
-(2) We will give an analytic proof by Paun which simplifies Siu's original proof,
-
-(3) We will introduce Takayama's proof of invariance of plurigenera for Moishezon morphism,
-
-(4) We will introduce the deformation invariance of number Kodaira dimension problem,
-
-(5) We will give an MMP proof on invariance of plurigenera problem due to Kollar,
-
-(6) We will introduce the deformation invariance of general type problem,
-
-(7) We will study the plurigenera in a family with (semi-stable) degeneration.
-
----
-
-For detailed information see my reading notes
+Here is the outline
 
 (1) [Algebraic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
 
@@ -47,3 +30,5 @@ For detailed information see my reading notes
 
 
 (8) [Plurigenera in a family with degeneration](https://yilimath.github.io/files/Birational/InvariancePluri/PluriDegeneration.pdf)
+
+(9) [Applications of Siu's invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/ApplicationInvariancePluri.pdf)

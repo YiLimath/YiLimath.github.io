@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Fibration in Birational Geometry'
-date: 2024-10-11
+date: 2024-09-01
 permalink: /posts/2024/09/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
