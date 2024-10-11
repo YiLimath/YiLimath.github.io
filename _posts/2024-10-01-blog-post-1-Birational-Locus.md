@@ -65,6 +65,8 @@ Here are the topics that will be covered in this part of note: Basic properties 
 
 Kollár-Shokurov connectedness principle has many interesting applications: 
 
+(1) In the proof of BCHM version 
+
 ---
 ---
 ## Note-4 Nef locus, Kahler locus

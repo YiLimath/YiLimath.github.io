@@ -61,3 +61,4 @@ Let us now study the inversion of adjunction for Moishezon space (which appears 
 
 
 ### (2) Hacon's generalization of inversion of adjunction
+

@@ -7,7 +7,7 @@ tags:
   - Moishezon morphism
 ---
 
-The goal of this reading seminar is to discuss the rescent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in details. 
+The goal of this reading seminar is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in details. 
 
 
 ---
@@ -31,7 +31,7 @@ Here is the outline:
 (6) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf) [update 9.25]
 
 
-(7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf)
+(7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf) 
 
 
 (8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf) 
@@ -59,8 +59,6 @@ This time we go to Section 3 of the paper. We first try to prove prove the equiv
 Moishezon morphism is defined to be a proper morphism between complex analytic spaces that is bimeromorphic to a projective morphism. Using the Hilbert scheme arguement we can characterize it as a morphism that is bimeromorphic base change from an algebraic family. We can also define it to be a morphism that has a big rank 1 reflexive sheaf (some literatual define the Moishezon morphism to have a big line bundle, we treat professor Kollár's definition as the standard one).
 
 Having stated the definition, we show that important properties that will useful in the later study of this subject.
-
-
 
 
 ---
