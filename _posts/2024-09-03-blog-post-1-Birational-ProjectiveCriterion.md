@@ -7,7 +7,7 @@ tags:
   - Complex Geometry
 ---
 
-The aim of this note is to summarize the projectivity critera in algebraic geometry. Since a morphism is projective iff there exist an relative ample line bundle. Thus it's equivalent to find some ampleness criteria. Here are the major references of this series of notes [SCV 7]() [Kollar 20](), [CH 24](),  
+The aim of this note is to summarize the projectivity critera in algebraic geometry. Since a morphism is projective iff there exist an relative ample line bundle. Thus it's equivalent to find some ampleness criteria. Here are the major references of this series of notes [SCV 7] [Kollar 20], [Fujino 18], [FF 19], [CH 24],  
 
 
 ---
@@ -18,6 +18,8 @@ Here is the outline:
 (2) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf) [Update 9.15]
 
 (3) [Note-3: Alternating properties of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
+
+(4) [Note-4: Semi-positivity theorem of Fujino]() 
 
 
 ---
