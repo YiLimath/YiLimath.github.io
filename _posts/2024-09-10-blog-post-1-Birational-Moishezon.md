@@ -1,7 +1,7 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2024-9-25
-permalink: /posts/2024/09/Moishezon-Morphism/
+date: 2024-10-14
+permalink: /posts/2024/10/Moishezon-Morphism/
 tags:
   - Birational geometry
   - Moishezon morphism
@@ -123,6 +123,19 @@ Finally we make a remark that canonical modification may not always exist. For m
 
 ---
 ### Note-7: Inversion of adjunction
+---
+
+
+
+
+
+---
+### Note-8: How far Moishezon away from projective
+---
+
+This note is further discussion about Moishezon morphism beyond the paper. The question that we want to study in this part of note is to what extend we can generalize the classical birational geometry to the Moishezon case?
+
+We first summarize some basic tools needed in the generalization. The 1st and most useful tool is the Chow type lemma, which birational change the Moishezon morphism to a projective morphism. The 2nd useful tool will be the algebraic approximation by Artin.
 
 
 ---

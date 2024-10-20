@@ -17,4 +17,16 @@ The aim of this series of note is to introduce the fibration in birational geome
 (3) [MRC fibration](), 
 
 
+(4) [LC trivial fibration](), 
+
+
+---
+## Note-1: Iitaka fibration
+
+In this note we will
+
+### Relation with the boundedness of general type
+Recall that we prove 
+
+
 ---

@@ -6,7 +6,8 @@ tags:
   - Birational geometry
 ---
 
-The aim of this note is to give an introduction on the Deformation of uniruled problem.
+The aim of this note is to give an introduction on the Deformation of uniruled problem. 
+
 
 
 For detailed information see my reading notes [Deformation of uniruled varieties](https://yilimath.github.io/files/Birational/DefUniruled.pdf)
