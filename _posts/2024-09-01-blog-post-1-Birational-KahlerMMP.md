@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2024-08-29
-permalink: /posts/2024/08/Kahler-MMP/
+date: 2024-10-30
+permalink: /posts/2024/10/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -24,4 +24,23 @@ Here is the outline:
 
 (4) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)]()
 
-(4) [Supplementary: Mori bend-and break for Moishezon space (by Mckernan)](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(5) [Supplementary 2: Rational curves on Moishezon space](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+
+
+---
+## Supplementary notes-1: Around BDPP
+
+This note will give a brief introduction to the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf). There are 2 major achievement in this paper:
+
+(1) The duality between algebraic pseudo-effective cone and mobile cone of curves on a projective manifold,
+(2) The projective manifold is uniruled iff it's not pseudo-effective.
+
+We will first briefly summarize the idea of the proof, and then discuss the applications of BDPP in deformation theory and minimal model theory.
+
+
+
+
+---
+## Supplementary note-2: Analytic BCHM
+
+This note will give a summary of the paper by Fujino: 
