@@ -103,5 +103,4 @@ Here are some moduli spaces that has boundedness property:
 
 (2) Boundedness of semi-log canonical models (or log canonical models) with fixed volumes and DCC coefficients (see []()), 
 
-(3) Family of Fano manifolds (see ), Fano varieties with fixed volume (see ), 
-
+(3) Family of Fano manifolds (see ), epsilon-LC Fano varieties with fixed volumes(see ),
