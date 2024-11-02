@@ -21,7 +21,7 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 
 (5) [Note-5: On automorphism group](),
 
-(6) [Note-6: Positivity on moduli spaces](),
+(6) [Note-6: Positivities and singularities on moduli spaces](),
 
 (7) [Note-7: Irreducible of moduli spaces](),
 
@@ -99,8 +99,44 @@ The aim of this note is to summarize the known results about Boundedness of modu
 
 Here are some moduli spaces that has boundedness property:
 
-(1) 
+(1) Boundedness of canonical models with fixed volume (or bounded volume). (see []())
 
 (2) Boundedness of semi-log canonical models (or log canonical models) with fixed volumes and DCC coefficients (see []()), 
 
 (3) Family of Fano manifolds (see ), epsilon-LC Fano varieties with fixed volumes(see ),
+
+---
+## Note-: Positivities and singularities on moduli spaces
+
+
+We will briefly introduce the Murphy’s law proposed by Vakil. Vakil shows: Fix any scheme of finite type. There is a moduli space of smooth projective surfaces with very ample canonical divisor which is locally (in the smooth topology) isomorphic to that scheme. In particular: The moduli space has arbitrarily many components: $Z=\operatorname{Spec} \mathbb{Z}[x, y] /\langle(x-y)(x-2 y)(x-3 y) \ldots\rangle$. The moduli space is non-reduced: $Z=\operatorname{Spec} \mathbb{Z}[x] /\left\langle x^n\right\rangle$.
+
+
+
+
+
+---
+## Note-: Moduli space of smooth curves, stable curves
+
+
+We will briefly introduce the construction of the moduli space of smooth curves: The construction use Mumford GIT method. 
+
+The moduli space of stable curves has the following property:
+
+(1) It's reduced and irreducible. In particular, every stable nodal curve can be smoothed,
+
+(2) It's projective; proper and has an ample line bundle,
+
+(3) It has quotient singularities; even better it is globally the quotient of a smooth projective variety,
+
+(4) Every pluricanonical form lifts to a resolution,
+
+(5) The log pair associated to the compactification of the moduli of smooth curves is LC and has ample log canonical divisor,
+
+(6) 
+
+
+---
+## Note Short introduction to KSBA theory
+
+The KSBA construction use MMP and semistable reduction instead of GIT method in the moduli space of stable curves and 
