@@ -47,12 +47,17 @@ The aim of this note is to summarize the known results about properness of modul
 
 
 Here are some moduli functor that satisfies the valuative criterion of properness
+
 (1) Moduli functor of stable variety satisfies the valuative criterion of properness,
+
 (2) 
 
 Here are some moduli spaces that has properness property
+
 (1) 
+
 (2) Connected components of moduli space of stable varieties are proper (Karu, Alexeev, Hacon-McKernan-Xu),
+
 (3) 
 
 
@@ -64,10 +69,12 @@ Here are some moduli spaces that has properness property
 The aim of this note is to summarize the known results about separatedness of moduli spaces and applications of this good moduli property.
 
 Here are some moduli spaces that has separatedness property:
+
 (1) Moduli space of hyperbolic complex structures on a complex manifold,
+
 (2) Moduli space of 
-(2) KSBA moduli (moduli space of projective varieties),
-(3) 
+
+(3) KSBA moduli (moduli space of projective varieties),
 
 Here are 
 
@@ -75,9 +82,13 @@ Here are
 ## Note-3: Projectivity
 
 Here are some moduli spaces that has separatedness property:
+
 (1) Moduli space of hyperbolic complex structures on a complex manifold,
+
 (2) Deligne–Mumford moduli space of stable curves (a nice reference can be found here [Projectivity of the moduli of curves](https://chngr.github.io/assets/mgbar.pdf)),
+
 (3) Connected components of moduli space of stable varieties (Fujino, Kovacs-Patakfalvi),
+
 (4) 
 
 
