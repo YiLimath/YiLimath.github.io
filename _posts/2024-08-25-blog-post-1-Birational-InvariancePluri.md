@@ -10,13 +10,15 @@ tags:
 The aim of this note is to give an detailed introduction of deformation invariance of plurigenera problem.
 
 
-Here is the outline
+We first introduce the major technical tools that will be used in the proof of invariance of plurigenera. And finally we will compare different tools .
+
+
 
 (1) [Algebraic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
 
 (2) [Paun Demailly's proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\InvariancePluri\PaunInvariancePluri.pdf) [update 8.25]
 
-(3) [Takayama's pprof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
+(3) [Takayama's proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
 
 (4) [Kollar's proof of invariance of plurigenera using MMP](https://yilimath.github.io/files/Birational/InvariancePluri/KollarDefPluri.pdf)
 
@@ -32,3 +34,7 @@ Here is the outline
 (8) [Plurigenera in a family with degeneration](https://yilimath.github.io/files/Birational/InvariancePluri/PluriDegeneration.pdf)
 
 (9) [Applications of Siu's invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/ApplicationInvariancePluri.pdf)
+
+
+
+---

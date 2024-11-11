@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2024-10-30
-permalink: /posts/2024/10/Kahler-MMP/
+date: 2024-11-11
+permalink: /posts/2024/11/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -22,25 +22,40 @@ Here is the outline:
 
 (3) [Note-3 Constraction theorem for Kahler 3-fold without deformation theoretic analysis (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
 
+(4) [Note-4 Kahler 4-fold MMP](),
+
+(5) [Note-5 Canonical bundle formulas and subadjunction],
+
+(6) 
+
 (4) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)]()
 
-(5) [Supplementary 2: Rational curves on Moishezon space](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(5) [Supplementary 2: Rational curves on Moishezon space, Kahler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+
+(6) [Supplementary 3: Positivities in codimension 1](),
+
+() [Supplementary 4: BBDP](),
+
+
 
 
 ---
-## Supplementary notes-1: Around BDPP
+## Supplementary 3: Around BDPP
 
 This note will give a brief introduction to the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf). There are 2 major achievement in this paper:
 
 (1) The duality between algebraic pseudo-effective cone and mobile cone of curves on a projective manifold,
 (2) The projective manifold is uniruled iff it's not pseudo-effective.
 
-We will first briefly summarize the idea of the proof, and then discuss the applications of BDPP in deformation theory and minimal model theory.
+We will first briefly summarize the idea of the proof, and then focus on the applications of BDPP in deformation theory and minimal model theory.
 
-
+The duality between algebraic pseudo-effective cone and mobile cone of curves is based on the so called tran
 
 
 ---
-## Supplementary note-2: Analytic BCHM
+## Supplementary 2: Analytic BCHM
 
 This note will give a summary of the paper by Fujino: 
+
+
+---

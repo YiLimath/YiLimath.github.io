@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Reading Seminar: BCHM'
-date: 2024-10-04
-permalink: /posts/2024/10/BCHM/
+date: 2024-11-05
+permalink: /posts/2024/11/BCHM/
 tags:
   - Birational geometry
 ---
@@ -21,13 +21,17 @@ Here is the outline
 
 (2) [BCHM Part 2: Consequence of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf). [update 10.4]
 
+(3) [BCHM Part 3: Existence of pl-flips]()
 
+(4) 
 
 (3) [BCHM Part 3: Proof of BCHM B and BCHM C Special termination and existence of minimal model](https://yilimath.github.io/files/Birational/BCHM/BCHM3.pdf).
 
-(4) [BCHM Part 4: Proof of BCHM D Non vanishing](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+(4) [BCHM Part 4: Around BCHM D Non vanishing](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
 (5) [BCHM Part 5: Finiteness of minimal model and Finite generation](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+
+(6) [BCHM Part : Around BCHM F Finite generation of canonical ring, Cox ring]
 
 (6) [BCHM Part 6: Alternative approach to BCHM which replace the special finiteness by special termination]().
 
@@ -65,3 +69,7 @@ We summarize the consequences that we will prove during the lecture:
 (8) Inversion of adjunction.
 
 (9) A projectivity criterion: a proper Moishezon morphism
+
+
+
+----

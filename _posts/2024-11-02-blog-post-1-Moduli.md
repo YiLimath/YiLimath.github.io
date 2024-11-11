@@ -9,27 +9,27 @@ tags:
 
 We will focus on the Proporties of Moduli spaces in this part of notes. 
 
-(0) [Note-0: Represetability of moduli spaces](),
+(0) [Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf),
 
-(1) [Note-1: Properness of moduli spaces](),
+(1) [Note-1: Properness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf),
 
-(2) [Note-2: Separatedness of moduli spaces](),
+(2) [Note-2: Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/SeparatModuli.pdf),
 
-(3) [Note-3: Projectivity of moduli spaces](),
+(3) [Note-3: Projectivity of moduli spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf),
 
-(4) [Note-4: Boundedness of moduli spaces](),
+(4) [Note-4: Boundedness of moduli spaces](https://yilimath.github.io/files/Moduli/BoundednessModuli.pdf),
 
-(5) [Note-5: On automorphism group](),
+(5) [Note-5: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf),
 
-(6) [Note-6: Positivities and singularities on moduli spaces](),
+(6) [Note-6: Positivities and singularities on moduli spaces](https://yilimath.github.io/files/Moduli/PositiveModuli.pdf),
 
-(7) [Note-7: Irreducible of moduli spaces](),
+(7) [Note-7: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
 
-(8) [Note-8: Moduli space of smooth curves, stable curves](),
+(8) [Note-8: Moduli space of smooth curves, stable curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf),
 
-(9) [Note-9: Moduli space of Abelian varieties](),
+(9) [Note-9: Moduli space of Abelian varieties](https://yilimath.github.io/files/Moduli/ModuliAbelian.pdf),
 
-(10) [Note-10: Moduli space of K3 surfaces](),
+(10) [Note-10: Moduli space of K3 surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf),
 
 ---
 ## Note-0: Coarser moduli, representability
@@ -139,4 +139,5 @@ The moduli space of stable curves has the following property:
 ---
 ## Note Short introduction to KSBA theory
 
-The KSBA construction use MMP and semistable reduction instead of GIT method in the moduli space of stable curves and 
+The KSBA construction use MMP and semistable reduction instead of GIT method in the moduli space of stable curves and Hodge theory method in the moduli space of .
+
