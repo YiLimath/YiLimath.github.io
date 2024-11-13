@@ -25,6 +25,8 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 
 (7) [Note-7: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
 
+(8) [Note-8: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf)
+
 (8) [Note-8: Moduli space of smooth curves, stable curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf),
 
 (9) [Note-9: Moduli space of Abelian varieties](https://yilimath.github.io/files/Moduli/ModuliAbelian.pdf),
@@ -72,11 +74,15 @@ Here are some moduli spaces that has separatedness property:
 
 (1) Moduli space of hyperbolic complex structures on a complex manifold,
 
-(2) Moduli space of 
+(2) Moduli functor of polarized varities with log terminal singularities and nef canonical class (see e.g. [Remarks on minimal models of degenerations](http://sebastien.boucksom.perso.math.cnrs.fr/notes/Remarks_minimal_models.pdf)),
 
-(3) KSBA moduli (moduli space of projective varieties),
+(3) KSBA moduli (moduli space of projective varieties of general type),
 
-Here are 
+Here are some applications of seperateness properties in moduli theory:
+
+(1) We can prove for a smooth family of complex manifolds, if there are uncountable hyperbolic fibers that isomorphic to S then all the fibers are hyperbolic and isomorphic to S,
+
+(2) 
 
 ---
 ## Note-3: Projectivity
@@ -133,7 +139,21 @@ The moduli space of stable curves has the following property:
 
 (5) The log pair associated to the compactification of the moduli of smooth curves is LC and has ample log canonical divisor,
 
-(6) 
+
+---
+## Note-: On the birational automorphism group and automorphism group
+
+
+Here are some objects that has finite automorphism groups:
+
+(1) Automorphism group of complex hyperbolic structure,
+
+(2) ,
+
+(3) ,
+
+(4) ,
+
 
 
 ---
