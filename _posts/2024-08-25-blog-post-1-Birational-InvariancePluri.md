@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Deformation Invariance Of Plurigenera Problem and related topics'
-date: 2024-08-25
-permalink: /posts/2024/08/Invariance-of-Plurigenera/
+date: 2024-11-19
+permalink: /posts/2024/11/Invariance-of-Plurigenera/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -11,7 +11,6 @@ The aim of this note is to give an detailed introduction of deformation invarian
 
 
 We first introduce the major technical tools that will be used in the proof of invariance of plurigenera. And finally we will compare different tools .
-
 
 
 (1) [Algebraic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
@@ -36,5 +35,30 @@ We first introduce the major technical tools that will be used in the proof of i
 (9) [Applications of Siu's invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/ApplicationInvariancePluri.pdf)
 
 
+---
+## Note- Algebraic proof of invariance of plurigenera
+
 
 ---
+## Note- Paun-Demailly's approach
+
+---
+
+
+---
+## Note- Berndtsson, Paun's idea on extension of pluricanonical sections
+
+
+---
+## Note- Tusji's approach to extension of pluricanonical sections
+
+
+---
+## Note- 
+
+
+---
+## Note- How to extend the plurcanonical sections?
+
+In this note we will study the question on how to extend the pluricanonical sections? We will summarize the standard methods that being used in the l
+

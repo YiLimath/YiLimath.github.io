@@ -119,8 +119,6 @@ We will briefly introduce the Murphy’s law proposed by Vakil. Vakil shows: Fix
 
 
 
-
-
 ---
 ## Note-: Moduli space of smooth curves, stable curves
 
@@ -154,6 +152,16 @@ Here are some objects that has finite automorphism groups:
 
 (4) ,
 
+
+
+---
+## Note-： K-stability of moduli spaces
+
+Here are some moduli spaces that satisfy the K-stability condition:
+
+(1) Polarized varieties with KLT singularity and nef canonical class ([The Calabi conjecture and K-stability]()).
+
+(2) Calabi Yau ([The Calabi conjecture and K-stability](https://academic.oup.com/imrn/article/2012/10/2272/849227))
 
 
 ---

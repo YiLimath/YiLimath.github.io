@@ -22,19 +22,26 @@ Here is the outline:
 
 (3) [Note-3 Constraction theorem for Kahler 3-fold without deformation theoretic analysis (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
 
-(4) [Note-4 Kahler 4-fold MMP](),
+(4) [Note-4 Extension of contraction morphism](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf)
 
-(5) [Note-5 Canonical bundle formulas and subadjunction],
+(5) [Note- Kahler 4-fold MMP](),
 
-(6) 
+(6) [Note- Canonical bundle formulas and subadjunction],
 
-(4) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)]()
+(7) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)]()
 
-(5) [Supplementary 2: Rational curves on Moishezon space, Kahler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(8) [Supplementary 2: Rational curves on Moishezon space, Kahler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
 
-(6) [Supplementary 3: Positivities in codimension 1](),
+(9) [Supplementary 3: Positivities in codimension 1](),
 
-() [Supplementary 4: BBDP](),
+(10) [Supplementary 4: BBDP](),
+
+
+---
+## Note-4 Extension of contraction morphism
+
+This note will study the extension problem for contraction morphism. The most difficult part of Kahler MMP is the construction of contraction morphism. The extension of contraction morphism says if we have contraction on the central fiber, then we also have the contraction for the relative MMP. 
+
 
 
 
