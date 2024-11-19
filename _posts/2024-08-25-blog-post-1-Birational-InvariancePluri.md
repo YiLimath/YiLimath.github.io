@@ -62,3 +62,8 @@ We first introduce the major technical tools that will be used in the proof of i
 
 In this note we will study the question on how to extend the pluricanonical sections? We will summarize the standard methods that being used in the l
 
+
+---
+## Supplementary- Around the injectivity theorems
+
+In this note we will summarize the injectivity type theorems with the proofs. 
