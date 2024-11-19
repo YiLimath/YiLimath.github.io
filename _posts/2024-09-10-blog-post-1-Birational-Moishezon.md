@@ -1,7 +1,7 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2024-10-14
-permalink: /posts/2024/10/Moishezon-Morphism/
+date: 2024-11-19
+permalink: /posts/2024/11/Moishezon-Morphism/
 tags:
   - Birational geometry
   - Moishezon morphism
@@ -10,7 +10,7 @@ tags:
 The goal of this reading seminar is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in details. 
 
 
----
+
 ---
 Here is the outline:
 
@@ -128,9 +128,8 @@ Finally we make a remark that canonical modification may not always exist. For m
 
 
 
-
 ---
-### Note-8: How far Moishezon away from projective
+### Note-8: How far Moishezon away from projective?
 ---
 
 This note is further discussion about Moishezon morphism beyond the paper. The question that we want to study in this part of note is to what extend we can generalize the classical birational geometry to the Moishezon case?
@@ -139,3 +138,4 @@ We first summarize some basic tools needed in the generalization. The 1st and mo
 
 
 ---
+
