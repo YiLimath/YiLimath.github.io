@@ -34,7 +34,7 @@ Here is the outline of this series of notes
 
 (9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
 
-(10) [Supplementary: Vanishing of cohomology and direct image condition](),
+(10) [Supplementary: Vanishing of higher cohomology and direct image conditions in deformation theory](),
 
 ---
 ## Note-0 An overview of deformation theory
@@ -107,5 +107,7 @@ In this note we will briefly introduce the deformation of morphism theory, with 
 
 
 ---
-## Supplementary: Vanishing of 
+## Supplementary: Vanishing of higher cohomology condition in deformation theory
 ---
+In this note we will summarize the implication of vanishing of cohomology condition in deformation theory. 
+
