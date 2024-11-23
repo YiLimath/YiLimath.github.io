@@ -67,3 +67,6 @@ In this note we will study the question on how to extend the pluricanonical sect
 ## Supplementary- Around the injectivity theorems
 
 In this note we will summarize the injectivity type theorems with the proofs. 
+
+---
+
