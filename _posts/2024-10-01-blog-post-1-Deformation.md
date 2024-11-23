@@ -32,6 +32,9 @@ Here is the outline of this series of notes
 
 (8) [Supplementary: ddbar Lemma](),
 
+(9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
+
+(10) [Supplementary: Vanishing of cohomology and direct image condition](),
 
 ---
 ## Note-0 An overview of deformation theory
@@ -97,5 +100,12 @@ In this note we will briefly introduce the deformation of morphism theory, with 
 
 
 ---
-## 
+## Supplementary: E1-degeneration of Hodge to deRham spectral sequence
+---
+
+
+
+
+---
+## Supplementary: Vanishing of 
 ---
