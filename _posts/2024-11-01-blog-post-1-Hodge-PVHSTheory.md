@@ -3,9 +3,10 @@ title: 'Hodge theory Note: Polarized variational Hodge Theory and Mixed variatio
 date: 2024-11-01
 permalink: /posts/2024/11/PMVHS/
 tags:
-  - PVHS
+  - Hodge theory
 ---
 
+In this note we will give a systematic presentation of the classical theory of polarized variation Hodge structure and Hodge theory for degeneration.
 
 
 ---
@@ -137,4 +138,10 @@ For detailed information see my reading notes
 ## Note- Hodge theory and deformation theory
 ---
 
+
+
+
+---
+## Note- Semi-positivity theorem and canonical bundle formula
+---
 
