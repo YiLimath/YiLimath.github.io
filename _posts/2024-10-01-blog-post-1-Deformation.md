@@ -34,13 +34,15 @@ Here is the outline of this series of notes
 
 (9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
 
-(10) [Supplementary: Vanishing of higher cohomology and direct image conditions in deformation theory](),
+
 
 ---
 ## Note-0 An overview of deformation theory
 
 
 How the theory looks like? 
+
+
 
 
 ---
@@ -50,16 +52,29 @@ How the theory looks like?
 In this part of notes we will prove the following theorems
 
 
-
 (1) We first study the tangent space of Hilbert scheme and some smoothness criteria,
 
 (2) We then study some commutative algebra and give a local flatness criterion with application for affine deformation problem,
 
-(3) We show the correspondence between 1st order deformation of subscheme with the global section of the normal sheaf, as a direct consequence we prove that tangent space of the Hilbert scheme is isomorphic to the global section of the normal sheaf.
+### Correspondence theorems in 1st order deformation (Kodaira-Spencer correspondence)
+
+In this section, we will give a complete summary of correspondence theorems in the deformation theory. 
 
 ---
 ## Note-2 Higher order infinitesimal deformation and obstruction theory
 ---
+
+
+### Kodaira-Spencer-Nirenberg theorem
+
+
+
+### Smoothness and Obstruction
+
+
+### Obstruction theory
+
+The general picture is deformation is unobstructed locally (on affine or Stein subset), however when trying to glue them together, the condition for the data to be compactible will cause some problem. And this will impose some vanishing condition in the 2nd cohomology group.
 
 
 
@@ -103,11 +118,4 @@ In this note we will briefly introduce the deformation of morphism theory, with 
 ## Supplementary: E1-degeneration of Hodge to deRham spectral sequence
 ---
 
-
-
-
----
-## Supplementary: Vanishing of higher cohomology condition in deformation theory
----
-In this note we will summarize the implication of vanishing of cohomology condition in deformation theory. 
-
+See more detailed discussion in 

@@ -1,7 +1,7 @@
 ---
 title: 'Hodge theory Note: Polarized variational Hodge Theory and Mixed variational Hodge theory'
-date: 2024-11-01
-permalink: /posts/2024/11/PMVHS/
+date: 2024-11-26
+permalink: /posts/2024/11/PVHS-and-MVHS/
 tags:
   - Hodge theory
 ---
@@ -33,6 +33,11 @@ Here is the outline of the notes:
 (2) We will give an differential geometric proof of Griffiths transversality theorem.
 
 
+### Proof of Griffiths transversality
+
+
+
+### Kodaira Spencer map coming from Higgs field
 
 
 
@@ -54,6 +59,9 @@ The aim of this note is to introduce Deligne's canonical extension and meromorph
 
 
 For detailed information see my reading notes (coming before) [Deligne's canonical extension theorem](https://yilimath.github.io/files/Hodge/DelignesCanonicalExtension.pdf)
+
+
+
 
 ---
 ## Note- Monodromy Theorem
@@ -128,9 +136,6 @@ For detailed information see my reading notes
 (2) [Esnault-Viehweg's approach to E1-degeneration](https://yilimath.github.io/files/Hodge/EsnaultViehweg.pdf)
 
 (3) ...
-
-
-
 
 
 
