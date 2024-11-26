@@ -9,6 +9,34 @@ tags:
 In this note we will give a systematic presentation of the classical theory of polarized variation Hodge structure and Hodge theory for degeneration.
 
 
+
+Here is the outline of this series of notes:
+
+(1) [Existence of Mixed Hodge structure](),
+
+(2) [Gauss-Manin connection and Griffiths transversality condition](),
+
+(3) [Deligne's canonical extension](),
+
+(4) [Griffith curvature formula with positivities](),
+
+() [Semi-positivity theorem and canonical bundle formula](),
+
+() [Kollar's package theorem](),
+
+(4) [Monodromy Theorem](),
+
+(6) [Ahlfors Lemma and Simpson's basic estimate](),
+
+(5) [Existence of Limiting mixed Hodge structure](),
+
+(7) 
+
+() [Degeneration of spectral sequence in Hodge theory](),
+
+() [Hodge theory and deformation theory](),
+
+
 ---
 ## Note- Existence of Mixed Hodge structure
 ---
@@ -38,6 +66,9 @@ Here is the outline of the notes:
 
 
 ### Kodaira Spencer map coming from Higgs field
+
+
+### Higgs feild as the second fundamental form of the subbundle
 
 
 
