@@ -72,13 +72,29 @@ The main object in the canonical bundle formula is LC/KLT trivial fibration or L
 We will show that the log canonical divisor on the total space can be written as pull back of canonical divisor plus the discreminant and moduli divisors. The discreminant divisor measure singularity of the degenerate fiber while the moduli divisor measure the variation of the generic fiber. 
 
 There are 2 central properties we will study about the discreminant and moduli divisor:
-(1) The positivity on the moduli divisor (we will see this part can be hoped to be the pull back of some positive divisor from the moduli space of the fibers), the major tool to study the positivity is the variational Hodge theory (the major results already be discussed in my previous note []()) we will briefly review them also in this note,
+(1) The positivity on the moduli divisor (we will see this part can be hoped to be the pull back of some positive divisor from the moduli space of the fibers), the major tool to study the positivity is the variational Hodge theory (the major results already be discussed in my previous note [Hodge theory notes](https://yilimath.github.io/posts/2024/11/PVHS-and-MVHS/)) we will briefly review them also in this note,
+
 (2) The singularity on the discreminant divisor (as well as adjunction theory implies by this part).
 
+
+### Basic properties of canonical bundle formulas
 Here are more concete results we will prove in this note
 (1) The KLT fibration with Kodaira dimension 0 will induce a KLT trivial fibration structure,
+
 (2) The moduli and discreminant divisor are birational invariant, and they define b-divisors,
+
 (3) The LC/KLT trivial fibration under generic finite base change is still LC/KLT trivial fibration,
+
 (4) Existence of Ambro's model (under base change), such that the moduli divisor is big and nef which descents as a b-divisor,
+
 (5) The inversion of adjunction formula for the LC trivial fibration, which shows that singularity of the total space can be determined by the discreminant divisor,
+
 (6) 
+
+### Applications of canonical bundle formulas
+
+
+
+
+
+----
