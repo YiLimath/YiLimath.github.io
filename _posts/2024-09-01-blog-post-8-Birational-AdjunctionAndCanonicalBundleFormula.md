@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Adjunction Theory'
-date: 2024-10-4
-permalink: /posts/2024/08/Canonical-bundle-formulas/
+date: 2024-11-27
+permalink: /posts/2024/11/Adjunction-Theory/
 tags:
   - Birational geometry
 ---
@@ -22,13 +22,13 @@ For detailed information see my reading notes
 
 () [Hacon-Mckernan-Xu's subadjunction type theorem]()
 
-(4) [Overview canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/OverviewCanonicalBundle.pdf)
+(6) [Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
 (5) [Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-(6) [Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
-
 (7) [Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
+
+(8) [Canonical bundle formula for generalized Kahler pairs](),
 
 
 ---
@@ -62,3 +62,6 @@ Let us now study the inversion of adjunction for Moishezon space (which appears 
 
 ### (2) Hacon's generalization of inversion of adjunction
 
+
+
+----

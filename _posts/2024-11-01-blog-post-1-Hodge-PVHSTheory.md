@@ -1,5 +1,5 @@
 ---
-title: 'Hodge theory Note: Polarized variational Hodge Theory and Mixed variational Hodge theory'
+title: 'Hodge theory Note: Polarized variational Hodge structure and mixed variational Hodge sturcture'
 date: 2024-11-26
 permalink: /posts/2024/11/PVHS-and-MVHS/
 tags:
