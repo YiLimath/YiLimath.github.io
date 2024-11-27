@@ -72,7 +72,8 @@ The main object in the canonical bundle formula is LC/KLT trivial fibration or L
 We will show that the log canonical divisor on the total space can be written as pull back of canonical divisor plus the discreminant and moduli divisors. The discreminant divisor measure singularity of the degenerate fiber while the moduli divisor measure the variation of the generic fiber. 
 
 There are 2 central properties we will study about the discreminant and moduli divisor:
-(1) The positivity on the moduli divisor (we will see this part can be hoped to be the pull back of some positive divisor from the moduli space of the fibers), the major tool to study the positivity is the variational Hodge theory (the major results already be discussed in my previous note [Hodge theory notes](https://yilimath.github.io/posts/2024/11/PVHS-and-MVHS/)) we will briefly review them also in this note,
+
+(1) The positivity on the moduli divisor (we will see this part can be hoped to be the pull back of some positive divisor from the moduli space of the fibers), the major tool to study the positivity is the variational Hodge theory (the major results already be discussed in my previous note [Hodge theory notes](https://yilimath.github.io/posts/2024/11/PVHS-and-MVHS/), in particular the semi-positivity theorems) we will briefly review them also in this note,
 
 (2) The singularity on the discreminant divisor (as well as adjunction theory implies by this part).
 
@@ -93,8 +94,20 @@ Here are more concete results we will prove in this note
 
 ### Applications of canonical bundle formulas
 
+We will show the following applications of canonical bundle formula
 
+(1) In the effective Iitaka fibration conjecture,
+
+(2) Reduce the canonical ring to the pair with general type condition,
+
+(3) When the log canonical divisor is numerical trivial then so it will be Q-linear equivalent trivial,
+
+(4) 
 
 
 
 ----
+## Note- Canonical bundle formula for generanlized Kahler pairs
+
+In this note, we will summarize the paper []()
+
