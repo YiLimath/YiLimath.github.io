@@ -109,5 +109,5 @@ We will show the following applications of canonical bundle formula
 ----
 ## Note- Canonical bundle formula for generanlized Kahler pairs
 
-In this note, we will summarize the paper []()
+In this note, we will summarize the paper [On the Canonical Bundle Formula and Adjunction for Generalized Kaehler Pairs](https://arxiv.org/abs/2404.12007).
 
