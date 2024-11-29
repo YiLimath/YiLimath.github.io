@@ -70,7 +70,7 @@ Here is the outline of the notes:
 ### Proof of Griffiths transversality
 
 
-### Formal introduction to Griffiths transversality
+### Formal introduction to Griffiths transversality and Griffith curvature formula
 
 In this part of note, we will give a formal introduction to Griffiths transversality, by Sabbah and Schnell [Degenerating complex variations of Hodge structure in dimension one](https://www.math.stonybrook.edu/~cschnell/pdf/papers/VHS-disk.pdf). (My personal comment: This formal introduction may be benefit for DGLA framework. I am not sure yet.)
 
@@ -192,7 +192,7 @@ In this section, we will give a biref introduction to the proof of unobstructed 
 
 
 ---
-## Note
+## Note- Hode theory and Mirror symmetry
 ---
 
 

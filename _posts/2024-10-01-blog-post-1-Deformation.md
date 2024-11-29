@@ -1,6 +1,6 @@
 ---
 title: 'Deformation Theory Note: Deformation of algebraic scheme and complex spaces'
-date: 2024-11-11
+date: 2024-11-29
 permalink: /posts/2024/11/Deformation-of-Scheme/
 tags:
   - Deformation theory
@@ -26,18 +26,18 @@ Here is the outline of this series of notes
 
 (7) [Note-7: Bogomolov-Tian-Todorov theorem](), 
 
-(8) [Note-8: Differential graded Lie algebra (DGLA) and ]
+(8) [Note-8: Differential graded Lie algebra (DGLA) and differential graded Batalin-Vilkovisk algebra (dgBVA)]()
 
 
 (8) [Note-8: Deformation of morphism with applications](),
 
-
+()  [Note : Obstruction for existence of moduli](),
 
 (8) [Supplementary: ddbar Lemma](),
 
 (9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
 
-
+() 
 
 ---
 ## Note-0 An overview of deformation theory
