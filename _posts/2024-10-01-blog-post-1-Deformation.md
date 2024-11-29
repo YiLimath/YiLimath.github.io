@@ -26,6 +26,9 @@ Here is the outline of this series of notes
 
 (7) [Note-7: Bogomolov-Tian-Todorov theorem](), 
 
+(8) [Note-8: Differential graded Lie algebra (DGLA) and ]
+
+
 (8) [Note-8: Deformation of morphism with applications](),
 
 
@@ -57,6 +60,7 @@ In this part of notes we will prove the following theorems
 (2) We then study some commutative algebra and give a local flatness criterion with application for affine deformation problem,
 
 ### Correspondence theorems in 1st order deformation (Kodaira-Spencer correspondence)
+
 
 In this section, we will give a complete summary of correspondence theorems in the deformation theory. 
 
@@ -101,6 +105,16 @@ The general picture is deformation is unobstructed locally (on affine or Stein s
 
 
 ---
+## Note- DGLA
+---
+
+---
+## Note- 
+---
+
+
+
+---
 ## Note- Deformation of morphism
 ---
 
@@ -119,3 +133,9 @@ In this note we will briefly introduce the deformation of morphism theory, with 
 ---
 
 See more detailed discussion in 
+
+
+
+---
+
+---

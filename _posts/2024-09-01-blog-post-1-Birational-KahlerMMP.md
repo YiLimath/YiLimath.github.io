@@ -38,6 +38,12 @@ Here is the outline:
 
 
 ---
+## Note Overview for Kahler minimal model program
+
+(1) In [HP16], they proved existence of minimal model for Kahler 3-folds, assuming the boundary divisor B=0 and the variety has terminal singularity. Similar to the standard procedure of 
+(2) In []
+
+---
 ## Note-4 Extension of contraction morphism
 
 This note will study the extension problem for contraction morphism. The most difficult part of Kahler MMP is the construction of contraction morphism. The extension of contraction morphism says if we have contraction on the central fiber, then we also have the contraction for the relative MMP. 

@@ -1,6 +1,6 @@
 ---
 title: 'Hodge theory Note: Polarized variational Hodge structure and mixed variational Hodge sturcture'
-date: 2024-11-26
+date: 2024-11-29
 permalink: /posts/2024/11/PVHS-and-MVHS/
 tags:
   - Hodge theory
@@ -36,6 +36,12 @@ Here is the outline of this series of notes:
 
 () [Hodge theory and deformation theory](),
 
+() [Hodge theory and Mirror symmetry](),
+
+() [Supplementary: Differential Calculus on the vector bundle], 
+
+
+
 
 ---
 ## Note- Existence of Mixed Hodge structure
@@ -62,6 +68,11 @@ Here is the outline of the notes:
 
 
 ### Proof of Griffiths transversality
+
+
+### Formal introduction to Griffiths transversality
+
+In this part of note, we will give a formal introduction to Griffiths transversality, by Schell and . (My personal comment: This formal introduction may be benefit for DGLA framework. I am not sure yet.)
 
 
 
@@ -179,5 +190,11 @@ For detailed information see my reading notes
 
 ---
 ## Note- Semi-positivity theorem and canonical bundle formula
+---
+
+
+
+---
+Supplementary: Differential Calculus on vector bundle
 ---
 
