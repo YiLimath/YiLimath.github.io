@@ -72,7 +72,7 @@ Here is the outline of the notes:
 
 ### Formal introduction to Griffiths transversality
 
-In this part of note, we will give a formal introduction to Griffiths transversality, by Schell and . (My personal comment: This formal introduction may be benefit for DGLA framework. I am not sure yet.)
+In this part of note, we will give a formal introduction to Griffiths transversality, by Sabbah and Schnell [Degenerating complex variations of Hodge structure in dimension one](https://www.math.stonybrook.edu/~cschnell/pdf/papers/VHS-disk.pdf). (My personal comment: This formal introduction may be benefit for DGLA framework. I am not sure yet.)
 
 
 
