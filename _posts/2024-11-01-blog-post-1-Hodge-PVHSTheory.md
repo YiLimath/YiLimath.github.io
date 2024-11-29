@@ -185,7 +185,15 @@ For detailed information see my reading notes
 ## Note- Hodge theory and deformation theory
 ---
 
+### Unobstructed of the deformation of projective log Calabi-Yau pairs using mixed Hodge theory
 
+In this section, we will give a biref introduction to the proof of unobstructed of the deformation of projective log Calabi-Yau pairs using mixed Hodge theory. This part of note can be viewed as a explianation of Katzarkov, Kontsevich, Pantev [Hodge theoretic aspects of mirror symmetry](https://arxiv.org/pdf/0806.0107).
+
+
+
+---
+## Note
+---
 
 
 ---
