@@ -139,7 +139,6 @@ For detailed information see my reading notes [Existence of limiting mixed Hodge
 
 The aim of this note is to summarize Ahlfors lemma, and its applications in Hodge theory.
 
-
 For detailed information see my reading notes (coming before) [Ahlfors lemma with applications](https://yilimath.github.io/files/Hodge/AhlforsLemma.pdf)
 
 
@@ -200,7 +199,11 @@ In this section, we will give a biref introduction to the proof of unobstructed 
 ## Note- Semi-positivity theorem and canonical bundle formula
 ---
 
-
+We will summarize the possible applications of semi-positivity theorems
+(1) Xiao's slope inequality,
+(2) Kawamata's canonical bundle formula,
+(3) Projectivity criterion for moduli space of stable varieties,
+(4) 
 
 ---
 Supplementary: Differential Calculus on vector bundle
