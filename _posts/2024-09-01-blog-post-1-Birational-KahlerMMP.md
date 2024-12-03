@@ -26,7 +26,7 @@ Here is the outline:
 
 (5) [Note- Kahler 4-fold MMP](),
 
-(6) [Note- Canonical bundle formulas and subadjunction],
+(6) [Note- Canonical bundle formulas and subadjunction](),
 
 (7) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)]()
 

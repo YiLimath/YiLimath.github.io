@@ -33,13 +33,17 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 
 (10) [Note-10: Moduli space of K3 surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf),
 
+
 ---
 ## Note-0: Coarser moduli, representability
 
 Here are some moduli spaces that has properness property
+
 (1) 
+
 (2) The moduli functor of stable varieties has a coarse moduli
 space that is locally of finite type,
+
 (3) 
 
 
@@ -72,11 +76,12 @@ The aim of this note is to summarize the known results about separatedness of mo
 
 Here are some moduli spaces that has separatedness property:
 
-(1) Moduli space of hyperbolic complex structures on a complex manifold,
+(1) Moduli space of hyperbolic complex structures on a complex manifold, due the finiteness of automorphism group. 
 
 (2) Moduli functor of polarized varities with log terminal singularities and nef canonical class (see e.g. [Remarks on minimal models of degenerations](http://sebastien.boucksom.perso.math.cnrs.fr/notes/Remarks_minimal_models.pdf)),
 
-(3) KSBA moduli (moduli space of projective varieties of general type),
+(3) KSBA moduli (moduli space of projective varieties of general type), where the seperateness due to the finiteness of the automorphism group .
+
 
 Here are some applications of seperateness properties in moduli theory:
 

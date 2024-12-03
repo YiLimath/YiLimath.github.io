@@ -22,7 +22,7 @@ Here is the outline of this series of notes
 (5) [Note-5: A basic introduction to Hilbert scheme, Doaudy space, Chow varieties and Barlet-cycle space](https://yilimath.github.io/files/Deformation/HilbertScheme.pdf).
 
 
-(6) [Note-6: Ran's T1 Lifting theorem with applications],
+(6) [Note-6: Ran's T1 Lifting theorem with applications](),
 
 (7) [Note-7: Bogomolov-Tian-Todorov theorem](), 
 
@@ -37,7 +37,6 @@ Here is the outline of this series of notes
 
 (9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
 
-() 
 
 ---
 ## Note-0 An overview of deformation theory

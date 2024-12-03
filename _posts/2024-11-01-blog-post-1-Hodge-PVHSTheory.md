@@ -38,7 +38,7 @@ Here is the outline of this series of notes:
 
 () [Hodge theory and Mirror symmetry](),
 
-() [Supplementary: Differential Calculus on the vector bundle], 
+() [Supplementary: Differential Calculus on the vector bundle](), 
 
 
 
