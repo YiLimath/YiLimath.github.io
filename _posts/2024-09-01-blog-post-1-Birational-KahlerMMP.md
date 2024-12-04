@@ -40,24 +40,50 @@ Here is the outline:
 ## Note-1 Overview for Kaehler minimal model program
 ---
 
-(1) In [HP16], they proved existence of minimal model for Kahler 3-folds, assuming the boundary divisor B=0 and the variety has terminal singularity. Similar to the standard procedure of 
-(2) In []
+(1) In [HP16], they proved existence of minimal model for Kahler 3-folds, assuming the boundary divisor B=0 and the variety has terminal singularity. Similar to the standard procedure of . And [HP].
+(2) In [DH24], 
+(3) In [HDP24], 
+(5) 
+
+
+---
+## Note-1 Finite generation of canonical ring for Kaehler varieties
+---
+
+
 
 ---
 ## Note-2 Extension of contraction morphism
+---
 
 This note will study the extension problem for contraction morphism. The most difficult part of Kahler MMP is the construction of contraction morphism. The extension of contraction morphism says if we have contraction on the central fiber, then we also have the contraction for the relative MMP. 
 
-We will prove
+Fujiki's blowing down theorem will be the main tool that we use in the construction of the extension of contraction. We will package the Fujiki blowing theorem in [DH24, Theorem 1.1 and Theorem 5.8] which are more suitable for the Kaehler minimal model program. 
+
+The idea of the proof is as follows. 
 
 
 ---
 ## Note-3 Contraction morphism in the Kahler 3-fold MMP
 ---
 
-In this note, we will study the contraction morphism for Kahler 3-fold MMP. 
+In this note, we will study the contraction morphism for Kahler 3-fold MMP. The existence of contraction morphism is one of the most difficult part of the Kahler minimal model program. 
 
-The existence of contraction morphism is one of the most difficult part of the Kahler minimal model program. We will first deveop a collection of theorems which allow us to construct contraction morphism given a nef and big class. 
+
+### Flipping contraction under strong Q-factorial assumption
+
+The proof of this part can be found in [DH24, Theorem 6.2]. The basic idea is proving it by induction on dimension, if we can find some contraction morphism for the Kaehler surface, we then try to use result in [Note-2 Extension of contraction morphism](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf). Extend it to a contraction morphism on the Kahler 3-fold. 
+
+
+
+### Divisorial contraction under strong Q-factorial assumption
+
+The proof of this part can be found in [DH24, Theorem 6.9]. 
+
+
+### Constraction without Q-factorial assumption
+
+The proof of this part can be found in [DH24, Theorem 1.2]. The idea is: Without Q-factorial assumption, we need to first take a small Q-factorial modification. On the Q-factorial model, the MMP is well established. The MMP on the Q-factorial model will terminate at some minimal model. The minimal model will induce a contraction morphism ([DH24, Lemma 6.16]). And by the rigidity lemma, we can find a contraction morphism on the original non-Q-factorial variety.
 
 
 
@@ -71,13 +97,14 @@ This note will give a brief introduction to the classical paper: [BDPP](http://s
 
 We will first briefly summarize the idea of the proof, and then focus on the applications of BDPP in deformation theory and minimal model theory.
 
-The duality between algebraic pseudo-effective cone and mobile cone of curves is based on the so called tran
+
 
 
 ---
 ## Supplementary 2: Analytic BCHM
 
-This note will give a summary of the paper by Fujino: 
+This note will give a summary of the paper by Fujino. We will omit the preliminary part of the paper, and dive into the center part of the paper. 
+
 
 
 ---
