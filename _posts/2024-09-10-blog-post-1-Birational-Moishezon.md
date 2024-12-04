@@ -1,7 +1,7 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2024-11-19
-permalink: /posts/2024/11/Moishezon-Morphism/
+date: 2024-12-04
+permalink: /posts/2024/12/Moishezon-Morphism/
 tags:
   - Birational geometry
   - Moishezon morphism
@@ -14,6 +14,7 @@ The goal of this reading seminar is to discuss the recent paper [Moishezon morph
 ---
 Here is the outline:
 
+(0) [Brief summary slides (used for my PhD dessertation exam)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4], 
 
 (1) [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [update 9.25]
 
@@ -34,7 +35,11 @@ Here is the outline:
 (7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf) 
 
 
-(8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf) 
+(8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf)
+
+(9) [Openess of projectivity for Moisezhon morphism](),
+
+(10) [Minimal model program in the Moishezon category](),
 
 
 ---
@@ -139,3 +144,4 @@ We first summarize some basic tools needed in the generalization. The 1st and mo
 
 ---
 
+---
