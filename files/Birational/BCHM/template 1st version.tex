@@ -29,7 +29,7 @@
 \usepackage{amsthm}
 
 \theoremstyle{definition}
-\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{observation}[theorem]{Observation}
@@ -54,13 +54,12 @@
 \parskip 1.5ex
 %\renewcommand{\baselinestretch}{1.25}
 
-\usepackage[backend=bibtex,style=alphabetic,maxalphanames=4,minalphanames=4,sorting=nty]{biblatex}
-\addbibresource{mybib.bib}
+%\usepackage{biblatex}
 
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Birational Geometry Reading Notes}
+\lhead{Moishezon morphism reading seminars}
 \rhead{\thepage}
 %\cfoot{center of the footer!}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -79,54 +78,53 @@
 
 \begin{document}
 	
-	\lecture{2 --- 29, 08, 2024}{Summer 2024}{}{Yi Li}
+	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
 	\section{Overview}
+	
+	\section{The fiber of the Moishezon morphism is again Moishezon}
+	
+	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
+	
+	\end{theorem}
+	
+	
+	\begin{remark}
+	\cite{Moishezonmorphism} 
+	\end{remark}
+	
+	\begin{proof}
+		
+	\end{proof}
 
+	\begin{center}
+		\begin{tikzcd}
+			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+			\arrow["\cong", from=1-4, to=2-4]
+			\arrow[from=2-1, to=2-2]
+			\arrow[from=2-2, to=2-3]
+			\arrow[from=2-2, to=3-2]
+			\arrow[from=2-3, to=2-4]
+			\arrow[from=2-3, to=3-3]
+			\arrow[from=2-4, to=2-5]
+			\arrow[from=2-4, to=3-4]
+			\arrow[from=3-1, to=3-2]
+			\arrow[from=3-2, to=3-3]
+			\arrow[from=3-3, to=3-4]
+			\arrow[from=3-4, to=3-5]
+			\arrow["\cong", from=3-4, to=4-4]
+		\end{tikzcd}
+	\end{center}
 
-%	\section{The fiber of the Moishezon morphism is again Moishezon}
-%	
-%	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
-%	
-%	\end{theorem}
-%	
-%	
-%	\begin{remark}
-%	\cite{Moishezonmorphism} 
-%	\end{remark}
-%	
-%	\begin{proof}
-%		
-%	\end{proof}
-%
-%	\begin{center}
-%		\begin{tikzcd}
-%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
-%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
-%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
-%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
-%			\arrow["\cong", from=1-4, to=2-4]
-%			\arrow[from=2-1, to=2-2]
-%			\arrow[from=2-2, to=2-3]
-%			\arrow[from=2-2, to=3-2]
-%			\arrow[from=2-3, to=2-4]
-%			\arrow[from=2-3, to=3-3]
-%			\arrow[from=2-4, to=2-5]
-%			\arrow[from=2-4, to=3-4]
-%			\arrow[from=3-1, to=3-2]
-%			\arrow[from=3-2, to=3-3]
-%			\arrow[from=3-3, to=3-4]
-%			\arrow[from=3-4, to=3-5]
-%			\arrow["\cong", from=3-4, to=4-4]
-%		\end{tikzcd}
-%	\end{center}
-%
 %	\begin{figure}[H]
 %		\centering
 %		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
 %		\caption{Comparison between different definitions for Moishezon morphism}
 %		\label{fig:moishezon-morphism-definition}
 %	\end{figure}
-%	
-	\printbibliography	
-	
+	In \cite{Shokurov}.
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
 \end{document}

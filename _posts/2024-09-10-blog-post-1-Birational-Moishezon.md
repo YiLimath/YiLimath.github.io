@@ -27,7 +27,7 @@ Here is the outline:
 
 (5) [Moishezon morphism Part 4: Flat Moishezon morphism is fiberwise bimeromorphic to a projective morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf) [update 9.10]
 
-(6) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf) [update 9.25]
+(6) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf) [update 12.4]
 
 (7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf) 
 
