@@ -14,13 +14,11 @@ The goal of this reading seminar is to discuss the recent paper [Moishezon morph
 ---
 Here is the outline:
 
-(0) [Brief summary slides (used for my PhD dessertation exam)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4], 
+(0) [Brief summary slides (used for my PhD Dissertation Proposal Examination)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 
-(1) [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [update 9.25]
-
+(1) [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [update 12.4]
 
 (2) [Moishezon morphism part 2: Basic properties of Moishezon morphism (1)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.25]
-
 
 (3) [Moishezon morphism part 2: Basic properties of Moishezon morphism (2)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.10]
 
@@ -31,9 +29,7 @@ Here is the outline:
 
 (6) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf) [update 9.25]
 
-
 (7) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf) 
-
 
 (8) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf)
 
