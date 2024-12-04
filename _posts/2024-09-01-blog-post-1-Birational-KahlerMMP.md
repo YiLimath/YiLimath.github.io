@@ -36,6 +36,8 @@ Here is the outline:
 (10) [Supplementary 4: BBDP](),
 
 
+(11) [Supplementary : Projectivity for Kaehler morphism](),
+
 ---
 ## Note-1 Overview for Kaehler minimal model program
 ---
@@ -108,3 +110,8 @@ This note will give a summary of the paper by Fujino. We will omit the prelimina
 
 
 ---
+## Note-1: Projectivity criteria for Kahler morphism
+---
+
+
+This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). 
