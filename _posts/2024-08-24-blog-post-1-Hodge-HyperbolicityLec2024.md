@@ -1,13 +1,13 @@
 ---
 title: 'Lecture notes on Hyperbolicity, fundamental groups and Green-Girffiths-Lang conjecture Augest 2024'
 date: 2024-09-13
-permalink: /posts/2024/09/Hyperbolicity-Lecture/
+permalink: /posts/2024/12/Hyperbolicity-Lecture/
 tags:
   - Hodge theory
   - Complex analytic geometry
 ---
 
-These series of notes summarize the lectures from the short course in Augest 2024 at Kunming. 
+These series of notes summarize the short course taught by Prof. Ya Deng in Augest 2024 at Kunming. 
 
 
 Here are the topics that will be discussed in this series of lectures:
@@ -34,8 +34,11 @@ For detailed information see my notes:
 
 (6) [Lec-5 Non Abelian Hodge theory in archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec7.pdf)
 
+(7) []
+
+
 (7) [Lec-6 Non Abelian Hodge theory in non-archimedean setting](https://yilimath.github.io/files/Hodge/HyperLec8.pdf) [Omit]
 
 
-(9) [Supplementary-1 Non Abelian Hodge theory in noncompact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf) 
+(9) [Supplementary-1 Non Abelian Hodge theory in noncompact case](https://yilimath.github.io/files/Hodge/HyperLec10.pdf) [Omit]
 

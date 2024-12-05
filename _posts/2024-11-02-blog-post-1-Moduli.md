@@ -21,11 +21,15 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 
 (5) [Note-5: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf),
 
-(6) [Note-6: Positivities and singularities on moduli spaces](https://yilimath.github.io/files/Moduli/PositiveModuli.pdf),
+(6) [Note-6: Singularities on moduli spaces](https://yilimath.github.io/files/Moduli/PositiveModuli.pdf),
 
 (7) [Note-7: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
 
-(8) [Note-8: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf)
+(8) [Note-8: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf),
+
+(9) [Note-9: Hyperbolicity, positivity on moduli spaces](),
+
+(10) [Note-10: Rigidity problems](),
 
 (8) [Note-8: Moduli space of smooth curves, stable curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf),
 
@@ -161,6 +165,7 @@ Here are some objects that has finite automorphism groups:
 
 ---
 ## Note-： K-stability of moduli spaces
+---
 
 Here are some moduli spaces that satisfy the K-stability condition:
 
@@ -169,8 +174,19 @@ Here are some moduli spaces that satisfy the K-stability condition:
 (2) Calabi Yau ([The Calabi conjecture and K-stability](https://academic.oup.com/imrn/article/2012/10/2272/849227))
 
 
+
+---
+## Note-: Hyperbolicity and positivity properties on moduli spaces
+---
+
+Here are several moduli spaces share the hyperbolicity properties:
+
+(1) We will apply ,
+
+(2) ,
+
 ---
 ## Note Short introduction to KSBA theory
-
+---
 The KSBA construction use MMP and semistable reduction instead of GIT method in the moduli space of stable curves and Hodge theory method in the moduli space of .
 
