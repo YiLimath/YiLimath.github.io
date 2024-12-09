@@ -35,12 +35,18 @@ Recall that we prove
 
 ---
 
+---
+## Note- 
+---
+
 
 ---
 ## Note-3: MRC fibration
 ---
 
 In this part of notes, we will systematically study the MRC fibration. We will first introduce some basic properties about MRC fibrations, and then give a introduction about the recent research question around the MRC fibration.
+
+Let us first briefly sketch the idea of the proof of existence of MRC fibration. The idea is given a very general point, the rational curve passing through this point is free, given the general point on the free rational curve. There exist a free rational curve passing through that point. Thus we find 2 free rational curve. By the weak gluing lemma, we find a smooth surface. Repeat it over and over again, we find the a rationally connected subvariety Z passing through this very general points, which is maximal in the sense we discussed in my note. We then apply the fundamental theorem of fibration, so that there exist a fibration whose base is projective (compact Kahler) if the variety is projective (or compact Kahler). This will gives the MRC fibration.
 
 
 

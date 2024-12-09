@@ -191,7 +191,13 @@ In this section, we will give a biref introduction to the proof of unobstructed 
 
 
 ---
-## Note- Hode theory and Mirror symmetry
+## Note- Hodge theory and Mirror symmetry
+---
+
+
+
+---
+## Note- Hodge theory and dynamical system
 ---
 
 
