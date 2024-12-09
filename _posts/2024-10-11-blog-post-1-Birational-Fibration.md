@@ -54,6 +54,8 @@ In this part of notes, we will systematically study the MRC fibration. We will f
 ## Note-5: Gamma reduction
 ---
 
+Gamma reduction will be a crucial tool to study the fundamental group of a variety. 
+
 
 ---
 ## Note-6: Pesudo-effective reduction
