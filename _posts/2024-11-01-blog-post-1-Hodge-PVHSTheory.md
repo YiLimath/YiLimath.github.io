@@ -200,7 +200,7 @@ In this section, we will give a biref introduction to the proof of unobstructed 
 ---
 
 We will summarize the possible applications of semi-positivity theorems
-(1) Xiao's slope inequality,
+(1) Xiao's slope inequality, and it's generalization to stable family (see [Slope inequality for KSB-stable and K-stable families](https://arxiv.org/pdf/2107.09553))
 (2) Kawamata's canonical bundle formula,
 (3) Projectivity criterion for moduli space of stable varieties,
 (4) 

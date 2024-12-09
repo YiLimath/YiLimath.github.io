@@ -190,3 +190,10 @@ Here are several moduli spaces share the hyperbolicity properties:
 ---
 The KSBA construction use MMP and semistable reduction instead of GIT method in the moduli space of stable curves and Hodge theory method in the moduli space of .
 
+
+
+---
+## Note On the minimal model program for moduli space of curves
+---
+
+Major references: [On the first steps of the minimal model program for the moduli space of stable pointed curves](https://arxiv.org/abs/1808.00231), 
