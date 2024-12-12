@@ -1,12 +1,13 @@
 ---
-title: 'Birational Geometry Note: Fibration in Birational Geometry'
+title: 'Birational Geometry Note: Fibration in Algebraic Geometry'
 date: 2024-12-01
 permalink: /posts/2024/12/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
 ---
 
-The aim of this series of note is to introduce the fibration in birational geometry (classification theory of complex algebraic/analytic varieties). 
+The aim of this series of note is to introduce the fibration in Algebraic geometry (classification theory of complex algebraic/analytic varieties). Fibration is the most powerful tool for the classification of varieties and in this notes we will major focus on the possible applications of the fibrations in the classification results.
+
 
 (1) [Iitaka fibration](),
 
@@ -22,7 +23,7 @@ The aim of this series of note is to introduce the fibration in birational geome
 
 (6) [Nef reduction](),
 
-
+(7) [Classification theorems for projective manifolds, compact Kahler manifolds](),
 
 ---
 ## Note-1: Iitaka fibration
@@ -49,6 +50,10 @@ In this part of notes, we will systematically study the MRC fibration. We will f
 Let us first briefly sketch the idea of the proof of existence of MRC fibration. The idea is given a very general point, the rational curve passing through this point is free, given the general point on the free rational curve. There exist a free rational curve passing through that point. Thus we find 2 free rational curve. By the weak gluing lemma, we find a smooth surface. Repeat it over and over again, we find the a rationally connected subvariety Z passing through this very general points, which is maximal in the sense we discussed in my note. We then apply the fundamental theorem of fibration, so that there exist a fibration whose base is projective (compact Kahler) if the variety is projective (or compact Kahler). This will gives the MRC fibration.
 
 
+### Classification theorem for compact Kahler manifold
+
+MRC fibration is a useful tools in the classification for projective as well as compact Kahler manifolds. Our next goal is try to study the classification theorem for compact Kahler manifolds with .
+
 
 ----
 ## Note-4: Albanese fibration
@@ -71,4 +76,12 @@ Gamma reduction will be a crucial tool to study the fundamental group of a varie
 ---
 ## Note-7: Nef reduction
 ---
+
+
+
+---
+## Note- Classification theorems for the compact Kahler manifolds and projective manifolds
+---
+
+In the last part of the notes, we will summarize the recent progress on the classificaiton results of compact Kahler manifolds or projective manifolds using .
 
