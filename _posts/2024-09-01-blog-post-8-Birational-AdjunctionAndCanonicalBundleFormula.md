@@ -104,6 +104,10 @@ We will show the following applications of canonical bundle formula
 
 (4) 
 
+### Why semi-stable reduction?
+
+Semi-stable reduction is important in the canonical bundle formula theory. As semi-stable reduction gives geometric justification for good Hodge theoretic behavior. After alternation, the family has unipotent monodromy! 
+
 
 
 ----

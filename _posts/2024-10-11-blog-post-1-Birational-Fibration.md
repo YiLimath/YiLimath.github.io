@@ -6,7 +6,7 @@ tags:
   - Birational geometry
 ---
 
-The aim of this series of note is to introduce the fibration in Algebraic geometry (classification theory of complex algebraic/analytic varieties). Fibration is the most powerful tool for the classification of varieties and in this notes we will major focus on the possible applications of the fibrations in the classification results.
+The aim of this series of note is to introduce the fibration in Algebraic geometry (classification theory of complex algebraic/analytic varieties). Fibration is the most powerful tool for the classification of varieties and fibration structure is very suitable for the induction process. In this notes we will major focus on the possible applications of the fibrations in the classification results.
 
 
 (1) [Iitaka fibration](),
@@ -17,13 +17,25 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 (3) [MRC fibration](), 
 
-(4) [Gamma reduction](),
+(4) [Gamma reduction, Shafarovich map](),
+
+(5) [Core fibration, Bogomolov line bundle and Campana special variety](),
 
 (5) [Pseudo-effective reduction](),
 
 (6) [Nef reduction](),
 
+(7) [Toric Fibration](),
+
+(8) [Fano Fibration](),
+
+(9) [Calabi-Yau Fibration](),
+
 (7) [Classification theorems for projective manifolds, compact Kahler manifolds](),
+
+(8) [Supplement: How to use Harder-Narasimhan filtration](),
+
+
 
 ---
 ## Note-1: Iitaka fibration
@@ -85,3 +97,7 @@ Gamma reduction will be a crucial tool to study the fundamental group of a varie
 
 In the last part of the notes, we will summarize the recent progress on the classificaiton results of compact Kahler manifolds or projective manifolds using .
 
+
+---
+
+---
