@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Notes: Around Moduli theory'
-date: 2024-12-09
+date: 2024-12-01
 permalink: /posts/2024/12/Moduli/
 tags:
   - Moduli Theory
