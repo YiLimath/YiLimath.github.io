@@ -30,9 +30,11 @@ Here is the outline of this series of notes:
 
 (5) [Existence of Limiting mixed Hodge structure](),
 
-(7) 
+(7) [Delinge-Mostow rigidity theorem](),
 
 () [Degeneration of spectral sequence in Hodge theory](),
+
+() [Shafarovich program](),
 
 () [Hodge theory and deformation theory](),
 
@@ -109,11 +111,14 @@ For detailed information see my reading notes (coming before) [Deligne's canonic
 ## Note- Monodromy Theorem
 ---
 
-In this note we will prove the local and global monodromy theorem. We will prove the local monodromy is quasi-unipotent while the global monodromy is semi-simple. We will prove the 
+In this note we will prove the local and global monodromy theorem. We will prove the local monodromy of a semi-stable family is quasi-unipotent while the global monodromy is semi-simple. 
 
+
+To be more precise, given a C-PVHS we can prove the monodromy 
 
 
 Here is the outline of the notes
+
 (1) [Local Monodromy theorem](https://yilimath.github.io/files/Hodge/LocalMonodromy.pdf),
 
 (2) [Semi-simplicity of the global monodromy],
