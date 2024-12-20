@@ -196,4 +196,4 @@ The KSBA construction use MMP and semistable reduction instead of GIT method in 
 ## Note On the minimal model program for moduli space of curves
 ---
 
-Major references: [On the first steps of the minimal model program for the moduli space of stable pointed curves](https://arxiv.org/abs/1808.00231), 
+Major references: [On the first steps of the minimal model program for the moduli space of stable pointed curves](https://arxiv.org/abs/1808.00231)
