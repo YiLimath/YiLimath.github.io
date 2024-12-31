@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2024-12-04
+date: 2024-12-31
 permalink: /posts/2024/12/Kahler-MMP/
 tags:
   - Birational geometry
@@ -37,6 +37,8 @@ Here is the outline:
 
 
 (11) [Supplementary : Projectivity for Kaehler morphism](),
+
+
 
 ---
 ## Note-1 Overview for Kaehler minimal model program
