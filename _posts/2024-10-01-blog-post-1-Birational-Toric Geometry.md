@@ -23,6 +23,23 @@ This series of note will give a brief introduction to the toric minimal model pr
 
 
 ---
+## Note-2: Line bundle and positivies
+---
+
+### (0) Moment polyhedral and line bundle
+
+
+
+### (1) Nefness (semi-ampleness) criterion
+
+We showed that a line bundle L is nef iff it's semi-ample and it can be characterize using the momemt polytope associated to the line bundle.
+
+### (2) Ampleness, very ampleness critera
+
+
+
+
+---
 ## Note-3: Birational modification and semi-stable reduction in the toric geometry
 ---
 
