@@ -40,6 +40,7 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 
 ---
 ## Note-0: Coarser moduli, representability
+---
 
 Here are some moduli spaces that has properness property
 
@@ -53,6 +54,8 @@ space that is locally of finite type,
 
 ---
 ## Note-1: Properness of moduli spaces
+---
+
 The aim of this note is to summarize the known results about properness of moduli spaces and applications of this good moduli property.
 
 
@@ -75,6 +78,7 @@ Here are some moduli spaces that has properness property
 
 ---
 ## Note-2: Separatedness of moduli spaces
+---
 
 The aim of this note is to summarize the known results about separatedness of moduli spaces and applications of this good moduli property.
 
@@ -95,6 +99,7 @@ Here are some applications of seperateness properties in moduli theory:
 
 ---
 ## Note-3: Projectivity
+---
 
 Here are some moduli spaces that has separatedness property:
 
@@ -107,8 +112,18 @@ Here are some moduli spaces that has separatedness property:
 (4) 
 
 
+
+---
+## Note- : Irreducibility of moduli space
+---
+
+The geometric meaning of irreducibility of moduli space is that the deformation type, numerical invariant, birational invariant etc unchange on the component.
+
+
+
 ---
 ## Note-4: Boundedness of moduli spaces
+---
 
 The aim of this note is to summarize the known results about Boundedness of moduli spaces and applications of this good moduli property.
 
