@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2024-12-31
-permalink: /posts/2024/12/Kahler-MMP/
+date: 2025-01-10
+permalink: /posts/2025/01/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
