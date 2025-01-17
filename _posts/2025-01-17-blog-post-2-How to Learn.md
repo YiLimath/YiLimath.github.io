@@ -12,7 +12,7 @@ This time I will dicuss something about some techniques that can be used for Eff
 
 
 
-## The Understanding Hierarchy
+## 1. The Understanding Hierarchy
 
 To ultimate goal of learning something is to have good understanding about the subject that you want to learn. And you may also hope to apply knowledge that you learn in the real world practice. However, this is not a simple task. The following understanding Hierarchy (developed by Bloom in 1956 and revised by Anderson 2000) will be a useful test rule for good learning. 
 
@@ -28,7 +28,7 @@ To ultimate goal of learning something is to have good understanding about the s
 
 
 
-## Outline First
+## 2. Outline First
 
 
 ## Retrivial the knowledge
