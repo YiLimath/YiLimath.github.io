@@ -22,7 +22,8 @@ The first thing that you should identify is which Project you want to implement:
 (2) 
 
 
-## Which context is suitable for the use of Efficient Project?
+## Which contexts are suitable for the use of the Efficient Project?
+
 
 
 
