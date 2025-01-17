@@ -15,7 +15,7 @@ In this note we will focus on How to implement an Efficient Project? The strateg
 
 ## Type of Projects
 
-The first thing that we should identify is which Project you want to implement:
+The first thing that you should identify is which Project you want to implement:
 
 (1) Efficient Project: Efficient Project is ...
 
