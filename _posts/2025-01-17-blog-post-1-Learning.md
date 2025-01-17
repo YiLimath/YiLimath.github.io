@@ -13,7 +13,7 @@ This time I will dicuss something about Project management. I will tell you How 
 
 
 
-## Type of Projects
+## Type of the Projects
 
 The first thing that you should identify is which Project you want to implement:
 
