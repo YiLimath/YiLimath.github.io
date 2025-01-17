@@ -14,8 +14,6 @@ This time I will dicuss something about Project management. In this note we will
 In this note we will focus on How to implement an Efficient Project? The strategies, toolkits that will be used in an Efficient Project. (For more dicussion about Why we should use Efficient Project, please refer to the books linked above.)
 
 
-
-
 ## Recogonize the Type of the Project?
 
 
@@ -23,5 +21,4 @@ In this note we will focus on How to implement an Efficient Project? The strateg
 
 
 ## Toolkits to keep the Efficient Project under control
-
 
