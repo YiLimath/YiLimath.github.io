@@ -28,10 +28,28 @@ To ultimate goal of learning something is to have good understanding about the s
 
 
 ---
-## 2. Outline First
+## A Pipeline for Efficient Learning
+
+Based on the Understanding Hierarchy we introduced in Section 1. We can build the following pipeline to increase the understanding about a subject stage by stage. 
+
+### Round 1: Outline First
 
 
-## Retrivial the knowledge
+
+## Round 2: Identify the main idea, main results, write down anything needs to be practice
+
+The aim of this round is to increase the understanding (2nd Level) about the subject that you are trying to study. In the same time, sharpen your knief and focus on the most important part of the subject.
+
+
+
+
+## Round 3: 
+
+
+## Round 4: 
+
+
+## Writing down: Retrivial the knowledge
 
 As the experiments by psychologists Jeffrey Karpicke and Janell Blunt indicate, between taking notes and remembering them, drawing concept maps, and keeping the book shut to try to remember its contents, the last strategy outperforms the others. In this Section, we try to introduce how to implement the knowledge retrivial technique.
 
