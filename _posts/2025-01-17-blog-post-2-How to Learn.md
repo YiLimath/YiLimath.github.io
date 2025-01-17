@@ -43,13 +43,13 @@ The aim of this round is to increase the understanding (2nd Level) about the sub
 
 
 
-## Round 3: 
+### Round 3: 
 
 
-## Round 4: 
+### Round 4: 
 
 
-## Writing down: Retrivial the knowledge
+### Write everything down-Retrivial the knowledge
 
 As the experiments by psychologists Jeffrey Karpicke and Janell Blunt indicate, between taking notes and remembering them, drawing concept maps, and keeping the book shut to try to remember its contents, the last strategy outperforms the others. In this Section, we try to introduce how to implement the knowledge retrivial technique.
 
