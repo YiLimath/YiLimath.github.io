@@ -13,8 +13,17 @@ This time I will dicuss something about Project management. In this note we will
 
 In this note we will focus on How to implement an Efficient Project? The strategies, toolkits that will be used in an Efficient Project. (For more dicussion about Why we should use Efficient Project, please refer to the books linked above.)
 
+## Type of Projects
 
-## Recogonize the Type of the Project?
+The first thing that we should identify is which Project you want to implement:
+
+(1) Efficient Project: Efficient Project is ...
+
+(2) 
+
+
+## Which context is suitable for the use of Efficient Project?
+
 
 
 ## Three Questions to ask at beginning: Why? What? How?
