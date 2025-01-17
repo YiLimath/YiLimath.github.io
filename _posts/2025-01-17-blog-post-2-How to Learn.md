@@ -33,6 +33,5 @@ To ultimate goal of learning something is to have good understanding about the s
 
 ## Retrivial the knowledge
 
-As the expr
+As the experiments by psychologists Jeffrey Karpicke and Janell Blunt indicate, between taking notes and remembering them, drawing concept maps, and keeping the book shut to try to remember its contents, the last strategy outperforms the others. In this Section, we try to introduce how to implement the knowledge retrivial technique.
 
-As Here are some methods that help you retrive the knowledge.
