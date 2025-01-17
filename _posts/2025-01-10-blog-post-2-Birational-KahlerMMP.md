@@ -16,38 +16,43 @@ Here is the outline:
 
 (1) [Note-1 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf),
 
-(2) [Note-2 Extension of contraction morphism](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
+(2) [Note-2 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
 
-(3) [Note-3 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
+(3) [Note-3 Cone theorem for Kahler MMP](),
 
-(4) [Note-3 Constraction theorem for Kahler 3-fold without deformation theoretic analysis (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
+(4) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
 
+(5) [Note-5 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
 
-(5) [Note- Kaehler 4-fold MMP](),
+(6) [Note-6 Kaehler 4-fold MMP](),
 
-(6) [Note- Canonical bundle formulas and subadjunction](),
+(7) [Note-7 Finite generation problem in Kahler MMP](),
 
-(7) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
+(8) [Note-8 Termination problem in Kahler MMP](),
 
-(8) [Supplementary 2: Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(9) [Note-9 Base point free conjecture in Kahler MMP](),
 
-(9) [Supplementary 3: Positivities in codimension 1](),
+(10) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
 
-(10) [Supplementary 4: BBDP](),
+(11) [Note-11 Projectivity for Kaehler morphism](),
 
+(12) [Note-12 Canonical bundle formulas and subadjunction with applications the Kahler MMP](),
 
-(11) [Supplementary : Projectivity for Kaehler morphism](),
+(13) [Note-13 How to use divisorial Zariski decomposition?](),
 
+(14) [Note-14 How to use generalized pair in the Kahler setting?](),
 
+(15) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
+
+(16) [Supplementary 2: Positivities in codimension 1](),
+
+(17) [Supplementary 3: BBDP and beyond](),
+
+(18) [Supplementary 4: Transendental Volume](),
 
 ---
 ## Note-1 Overview for Kaehler minimal model program
 ---
-
-(1) In [HP16], they proved existence of minimal model for Kahler 3-folds, assuming the boundary divisor B=0 and the variety has terminal singularity. Similar to the standard procedure of . And [HP].
-(2) In [DH24], 
-(3) In [HDP24], 
-(5) 
 
 
 ---
@@ -115,5 +120,5 @@ This note will give a summary of the paper by Fujino. We will omit the prelimina
 ## Note-1: Projectivity criteria for Kahler morphism
 ---
 
+This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). And some projective morphism occurs in the Kahler minimal model program.
 
-This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). 
