@@ -20,5 +20,5 @@ In this note we will focus on How to implement an Efficient Project? The strateg
 ## Three Questions to ask at beginning: Why? What? How?
 
 
-## Toolkits to keep the Efficient Project under control
+## Toolkits to keep the Project under control
 
