@@ -36,7 +36,7 @@ Based on the Understanding Hierarchy we introduced in Section 1. We can build th
 
 
 
-## Round 2: Identify the main idea, main results, write down anything needs to be practice
+### Round 2: Identify the main idea, main results, write down anything needs to be practice
 
 The aim of this round is to increase the understanding (2nd Level) about the subject that you are trying to study. In the same time, sharpen your knief and focus on the most important part of the subject.
 
