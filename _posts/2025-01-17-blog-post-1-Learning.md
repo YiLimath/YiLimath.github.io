@@ -12,5 +12,8 @@ This time I will dicuss something about Project management. In this note we will
 
 
 
-## Step 1. 3 Questions to ask at beginning: Why? What? How?
+## Step 1. Three Questions to ask at beginning: Why? What? How?
 
+
+
+## Step 2. 
