@@ -7,7 +7,7 @@ tags:
   - Complex analytic geometry
 ---
 
-The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following 3 major difficuilties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem and cone theorem: Since Kahler manifold with big line bundle is automatic projective, thus big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, this approach is not very clear under Kaerhler setting.
+The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following three major difficulties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem and cone theorem: Since Kahler manifold with a big line bundle is automatic projective, thus a big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, and this approach is not very clear under Kaehler setting.
 
 
 Here is the outline:
@@ -63,7 +63,7 @@ Here is the outline:
 ## Note-2 Extension of contraction morphism
 ---
 
-This note will study the extension problem for contraction morphism. The most difficult part of Kahler MMP is the construction of contraction morphism. The extension of contraction morphism says if we have contraction on the central fiber, then we also have the contraction for the relative MMP. 
+This note will study the extension problem for the contraction morphism. The most difficult part of Kahler MMP is the construction of contraction morphism. The extension of contraction morphism says that if we have contraction on the central fiber, then we also have contraction for the relative MMP. 
 
 Fujiki's blowing down theorem will be the main tool that we use in the construction of the extension of contraction. We will package the Fujiki blowing theorem in [DH24, Theorem 1.1 and Theorem 5.8] which are more suitable for the Kaehler minimal model program. 
 
@@ -74,7 +74,7 @@ The idea of the proof is as follows.
 ## Note-3 Contraction morphism in the Kahler 3-fold MMP
 ---
 
-In this note, we will study the contraction morphism for Kahler 3-fold MMP. The existence of contraction morphism is one of the most difficult part of the Kahler minimal model program. 
+In this note, we study the contraction morphism for Kahler 3-fold MMP. The existence of contraction morphism is one of the most difficult parts of the Kahler minimal model program. 
 
 
 ### Flipping contraction under strong Q-factorial assumption
@@ -83,26 +83,26 @@ The proof of this part can be found in [DH24, Theorem 6.2]. The basic idea is pr
 
 
 
-### Divisorial contraction under strong Q-factorial assumption
+### Divisorial contraction under the strong Q-factorial assumption
 
 The proof of this part can be found in [DH24, Theorem 6.9]. 
 
 
 ### Constraction without Q-factorial assumption
 
-The proof of this part can be found in [DH24, Theorem 1.2]. The idea is: Without Q-factorial assumption, we need to first take a small Q-factorial modification. On the Q-factorial model, the MMP is well established. The MMP on the Q-factorial model will terminate at some minimal model. The minimal model will induce a contraction morphism ([DH24, Lemma 6.16]). And by the rigidity lemma, we can find a contraction morphism on the original non-Q-factorial variety.
+The proof of this part can be found in [DH24, Theorem 1.2]. The idea is as follows Without Q-factorial assumption, we need to first take a small Q-factorial modification. On the Q-factorial model, the MMP is well established. The MMP on the Q-factorial model will terminate at some minimal model. The minimal model will induce a contraction morphism ([DH24, Lemma 6.16]). And by the rigidity lemma, we can find a contraction morphism on the original non-Q-factorial variety.
 
 
 
 ---
 ## Supplementary 3: Around BDPP
 
-This note will give a brief introduction to the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf). There are 2 major achievement in this paper:
+This note will give a brief introduction to the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf). There are 2 major achievements in this paper:
 
 (1) The duality between algebraic pseudo-effective cone and mobile cone of curves on a projective manifold,
-(2) The projective manifold is uniruled iff it's not pseudo-effective.
+(2) The projective manifold is uniruled iff it is not pseudo-effective.
 
-We will first briefly summarize the idea of the proof, and then focus on the applications of BDPP in deformation theory and minimal model theory.
+We will first briefly summarize the idea of the proof, then focus on the applications of BDPP in deformation theory and minimal model theory.
 
 
 
@@ -115,8 +115,7 @@ This note will give a summary of the paper by Fujino. We will omit the prelimina
 
 
 ---
-## Note-1: Projectivity criteria for Kahler morphism
+## Note-1: Projectivity criteria for the Kahler morphism
 ---
 
-This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). And some projective morphism occurs in the Kahler minimal model program.
-
+This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). 
