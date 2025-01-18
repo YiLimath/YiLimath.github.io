@@ -1,15 +1,13 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2025-01-10
+date: 2025-01-18
 permalink: /posts/2025/01/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
 ---
 
-The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following 3 major difficuilties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem: Since Kahler manifold with big line bundle is automatic projective, thus big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, this approach is not very clear under Kaerhler setting.
-
-For Kahler 3 fold, the minimal model program is well established (see [Minimal models for Kahler 3-fold](https://link.springer.com/article/10.1007/s00222-015-0592-x), and [Bimeromorphic geometry of Kahler threeholds](https://math.univ-cotedazur.fr/~hoering/articles/a30-kaehler-survey.pdf), and [The log minimal model program for Kahler 3-folds](https://arxiv.org/pdf/2009.05924v4)). Höring and Peternell's idea is to construct the contraction morphism in Kaehler MMP via nef reduction map, and the theory depends on the deformation theoretic analysis of negative extremal ray. They divde the problem into 3 cases based on the rigidity of the generator of that negative extremal ray. 
+The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following 3 major difficuilties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem and cone theorem: Since Kahler manifold with big line bundle is automatic projective, thus big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, this approach is not very clear under Kaerhler setting.
 
 
 Here is the outline:
