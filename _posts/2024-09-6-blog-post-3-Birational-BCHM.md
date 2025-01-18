@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Reading Seminar: BCHM'
-date: 2024-01-17
+date: 2025-01-17
 permalink: /posts/2025/01/BCHM/
 tags:
   - Birational geometry
