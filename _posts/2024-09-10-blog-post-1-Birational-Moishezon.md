@@ -45,7 +45,7 @@ Here is the outline:
 
 
 ---
-### Note-1: Basic properties of Moishezon varieties
+### Note-1: Basic properties of the Moishezon varieties
 ---
 
 In this note, we try to prove some elementary properties about Moishezon varieties. A Moishezon variety is defined to be a complex analytic variety that is bimeromorphic to a projective variety. It has several equivalent characterization: (1) Moishezon variety is complex analytic variety that has algebraic dimension equal to the geometric dimension (intuitively this means that Moishezon variety has plenty of subvarieties), (2) Moishezon variety is complex analytic variety that equipped with a big line bundle (big line bundle can be viewed as a birational counter part of ample line bundle).
@@ -69,7 +69,7 @@ Having stated the definition, we show that important properties that will useful
 
 
 ---
-### Note-3: Basic Properties of Moishezon morphism (2)
+### Note-3: Basic Properties of the Moishezon morphism (2)
 Today we will continue our discussion on the paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns). Last time, we proved that a Moishezon manifold admits a (strong) Hodge decomposition. We also showed that a Kähler Moishezon space with 1-rational singularity is automatically projective, and finally, we gave three different definitions for Moishezon morphism and proved that they are equivalent. 
 
 
