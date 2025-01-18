@@ -1,14 +1,14 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2024-12-04
-permalink: /posts/2024/12/Moishezon-Morphism/
+date: 2025-1-18
+permalink: /posts/2025/01/Moishezon-Morphism/
 tags:
   - Birational geometry
   - Moishezon morphism
 ---
 
-The purpose of this reading seminar is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in detail. 
 
+The purpose of this reading seminar is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in detail. 
 
 
 ---
