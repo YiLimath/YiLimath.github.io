@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Rationality Problems in Birational Geometry'
-date: 2025-01-10
-permalink: /posts/2025/01/Rationality-Problems/
+date: 2023-01-01
+permalink: /posts/2023/01/Rationality-Problems/
 tags:
   - Birational geometry
 ---
