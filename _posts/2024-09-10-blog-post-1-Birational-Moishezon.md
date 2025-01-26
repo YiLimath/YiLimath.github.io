@@ -31,17 +31,17 @@ Here is the outline:
 (7) [Note-3: Alternating properties of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
 
 
-(8) [Moishezon morphism Part 4: Fiberwise bimeromorphic morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf) [update 9.10]
+(8) [Moishezon morphism Part 4: Fiberwise bimeromorphic morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf), [update 9.10]
 
-(9) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf) [update 12.4]
+(9) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [update 12.4]
 
-(10) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf) 
+(10) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf),
 
-(11) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf)
+(11) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf),
 
 (12) [Minimal model program in the Moishezon category](),
 
-
+(13) 
 
 
 ---
