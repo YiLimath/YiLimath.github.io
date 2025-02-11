@@ -41,8 +41,8 @@ This time we will . We will show the logtic independent relation between differe
 
 
 ----
-
 ## Part 2: Consequences of BCHM
+---
 
 We will continue our discussion on the paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf). 
 
@@ -67,6 +67,16 @@ We summarize the consequences that we will prove during the lecture:
 
 (9) A projectivity criterion: a proper Moishezon morphism
 
+
+
+----
+## Note-7: Non-vanishing Conjecture
+----
+As Professor Kawamata says in his book (translated by Professor Chen Jiang.) [Algebraic Varieties: Minimal Models and Finite Generation](https://www.amazon.com/Algebraic-Varieties-Generation-Cambridge-Mathematics-ebook/dp/B0CW1BCS7J/ref=sr_1_1?crid=1511UB4M5JV9Z&dib=eyJ2IjoiMSJ9.ZC9_Ex0OWqO7D4WpEB3nrQ.PC0ohE-R0Gh6-MF9GtPU6As6szfH0LaO_TBoS6MX-E0&dib_tag=se&keywords=Finite+generation+minimal+model+%5C&qid=1739273152&sprefix=finite+generation+minimal+model+%2Caps%2C316&sr=8-1):
+
+> The content of the non-vanishing theorem is to show the weak effectivity (numerically equivalent to an effective divisor) assuming the pseudo-effectivity. At the first glance the difference between effectivity and pseudo-effectivity seems small. But in fact this difference is the root of difficulty and fun in the minimal model theory. It asserts that some nature of mathematics is condensed in the boundary of the cone of big divisors. The base point free theorem is also a statement of this type. - Kawamata.
+
+We see that non-vanishing conjecture is the central problem in Birational Geometry. In this note, we will give a detail introduction of this conjecture, and prove under BCHM condition the non-vanishing conjecture holds.
 
 
 ----
