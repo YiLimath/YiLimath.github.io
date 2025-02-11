@@ -1,13 +1,13 @@
 ---
 title: 'Birational Geometry Reading Seminar: BCHM'
-date: 2025-01-17
-permalink: /posts/2025/01/BCHM/
+date: 2025-02-11
+permalink: /posts/2025/02/BCHM/
 tags:
   - Birational geometry
 ---
 
 
-This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. After that we will also summarize the known results after BCHM. One of the induction steps (say finite generation implies existence of pl flips）was already done in our previous note see [Existence of flips](https://yilimath.github.io/posts/2024/08/Existence-of-flips/). 
+This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem. Note that one of the induction steps (say finite generation implies existence of pl flips）was already done in our previous note see [Existence of flips](https://yilimath.github.io/posts/2024/08/Existence-of-flips/). 
 
 
 
@@ -16,30 +16,27 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 Here is the outline
 
-(1) [BCHM Part 1: Overview](https://yilimath.github.io/files/Birational/BCHM/BCHM1.pdf),
+(1) [BCHM Part 1: Ingredient of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM1.pdf),
 
+(2) [BCHM Part 2: Applications of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf),
 
-(2) [BCHM Part 2: Consequence of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf). [update 10.4]
+(3) [BCHM Part 3: Existence of pl-flips](https://yilimath.github.io/posts/2024/08/Existence-of-flips/),
 
-(3) [BCHM Part 3: Existence of pl-flips]()
+(4) [BCHM Part 4: Special Termination Problem](),
 
-(4) 
+(5) [BCHM Part 5: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
-(3) [BCHM Part 3: Proof of BCHM B and BCHM C Special termination and existence of minimal model](https://yilimath.github.io/files/Birational/BCHM/BCHM3.pdf).
+(6) [BCHM Part 6: Existence of minimal model](),
 
-(4) [BCHM Part 4: Around BCHM D Non vanishing](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+(7) [BCHM Part 7: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
-(5) [BCHM Part 5: Finiteness of minimal model and Finite generation](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
-
-(6) [BCHM Part : Around BCHM F Finite generation of canonical ring, Cox ring]
-
-(6) [BCHM Part 6: Alternative approach to BCHM which replace the special finiteness by special termination]().
+(8) [BCHM Part 8: Finite generation of canonical ring, Cox ring](),
 
 
 ---
-## Part 1: Overview 
+## Part 1: Ingredient of BCHM 
 
-This time we will list the main results of this paper. We will show the logtic independent relation between different theorems in the paper. We will also briefly sketch some recent progress after BCHM.
+This time we will . We will show the logtic independent relation between different theorems in the paper. We will also briefly sketch some recent progress after BCHM.
 
 
 

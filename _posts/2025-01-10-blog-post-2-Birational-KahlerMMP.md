@@ -16,21 +16,21 @@ Here is the outline:
 
 (2) [Note-2 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
 
-(3) [Note-3 Cone theorem for Kahler MMP](),
+(3) [Note-3 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
 
-(4) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
+(4) [Note-4 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
 
-(5) [Note-5 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
+(5) [Note-5 Kaehler 4-fold MMP](),
 
-(6) [Note-6 Kaehler 4-fold MMP](),
+(6) [Note-6 Finite generation problem in Kahler MMP](),
 
-(7) [Note-7 Finite generation problem in Kahler MMP](),
+(7) [Note-7 Termination problem in Kahler MMP](),
 
-(8) [Note-8 Termination problem in Kahler MMP](),
+(8) [Note-8 Base point free conjecture in Kahler MMP](),
 
-(9) [Note-9 Base point free conjecture in Kahler MMP](),
+(9) [Note-9 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
 
-(10) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(10) [Note-10 Cone theorem for Kahler MMP](),
 
 (11) [Note-11 Projectivity for Kaehler morphism](),
 
@@ -47,6 +47,11 @@ Here is the outline:
 (17) [Supplementary 3: BBDP and beyond](),
 
 (18) [Supplementary 4: Transendental Volume](),
+
+(19) [Supplementary 5: minimal model program for Kahler generalized pairs](),
+
+(20) [Abundance for Kahler varieties](),
+
 
 ---
 ## Note-1 Overview for Kaehler minimal model program
@@ -93,6 +98,18 @@ The proof of this part can be found in [DH24, Theorem 6.9].
 The proof of this part can be found in [DH24, Theorem 1.2]. The idea is as follows Without Q-factorial assumption, we need to first take a small Q-factorial modification. On the Q-factorial model, the MMP is well established. The MMP on the Q-factorial model will terminate at some minimal model. The minimal model will induce a contraction morphism ([DH24, Lemma 6.16]). And by the rigidity lemma, we can find a contraction morphism on the original non-Q-factorial variety.
 
 
+---
+## Note-9 Rational curves on Kahler variety
+---
+
+In this note we will try to prove the theorem of Cao and Horing, which shows that under BDPP conjecture, if the 
+
+
+---
+## Note-10 Cone theorem in Kahler MMP
+---
+
+
 
 ---
 ## Supplementary 3: Around BDPP
@@ -102,8 +119,11 @@ This note will give a brief introduction to the classical paper: [BDPP](http://s
 (1) The duality between algebraic pseudo-effective cone and mobile cone of curves on a projective manifold,
 (2) The projective manifold is uniruled iff it is not pseudo-effective.
 
-We will first briefly summarize the idea of the proof, then focus on the applications of BDPP in deformation theory and minimal model theory.
+We then study the recent paper by Wenhao Ou [https://arxiv.org/abs/2501.18088](https://arxiv.org/abs/2501.18088), who complete the proof of the BDPP conjecture for compact Kahler manifolds. 
 
+
+
+We will first briefly summarize the idea of the proof, then focus on the applications of BDPP in deformation theory and minimal model theory.
 
 
 
@@ -115,7 +135,10 @@ This note will give a summary of the paper by Fujino. We will omit the prelimina
 
 
 ---
-## Note-1: Projectivity criteria for the Kahler morphism
+## Note : Projectivity criteria for the Kahler morphism
 ---
 
 This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). 
+
+
+
