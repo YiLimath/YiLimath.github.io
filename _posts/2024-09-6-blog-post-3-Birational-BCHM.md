@@ -32,6 +32,9 @@ Here is the outline
 
 (8) [BCHM Part 8: Finite generation of canonical ring, Cox ring](),
 
+(9) [BCHM Supplement: Polyhedron decomposition results](),
+
+
 
 ---
 ## Part 1: Ingredient of BCHM 
@@ -75,6 +78,11 @@ We summarize the consequences that we will prove during the lecture:
 As Professor Kawamata says in his book [Algebraic Varieties: Minimal Models and Finite Generation (translated by Professor Chen Jiang)](https://www.amazon.com/Algebraic-Varieties-Generation-Cambridge-Mathematics-ebook/dp/B0CW1BCS7J/ref=sr_1_1?crid=1511UB4M5JV9Z&dib=eyJ2IjoiMSJ9.ZC9_Ex0OWqO7D4WpEB3nrQ.PC0ohE-R0Gh6-MF9GtPU6As6szfH0LaO_TBoS6MX-E0&dib_tag=se&keywords=Finite+generation+minimal+model+%5C&qid=1739273152&sprefix=finite+generation+minimal+model+%2Caps%2C316&sr=8-1):
 
 > The content of the non-vanishing theorem is to show the weak effectivity (numerically equivalent to an effective divisor) assuming the pseudo-effectivity. At the first glance the difference between effectivity and pseudo-effectivity seems small. But in fact this difference is the root of difficulty and fun in the minimal model theory. It asserts that some nature of mathematics is condensed in the boundary of the cone of big divisors. The base point free theorem is also a statement of this type. - Kawamata.
+
+And also 
+
+>  if one wants to try to prove the existence of minimal models without the BCHM condition, proving the non-vanishing theorem is a key point. - Kwamata.
+
 
 We see that non-vanishing conjecture is the central problem in Birational Geometry. In this note, we will give a detail introduction of this conjecture, and prove under BCHM condition the non-vanishing conjecture holds.
 
