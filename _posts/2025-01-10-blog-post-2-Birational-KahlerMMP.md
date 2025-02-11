@@ -111,6 +111,7 @@ In this note we will try to prove the theorem of Cao and Horing, which shows tha
 
 
 
+
 ---
 ## Supplementary 3: Around BDPP
 
@@ -120,7 +121,6 @@ This note will give a brief introduction to the classical paper: [BDPP](http://s
 (2) The projective manifold is uniruled iff it is not pseudo-effective.
 
 We then study the recent paper by Wenhao Ou [https://arxiv.org/abs/2501.18088](https://arxiv.org/abs/2501.18088), who complete the proof of the BDPP conjecture for compact Kahler manifolds. 
-
 
 
 We will first briefly summarize the idea of the proof, then focus on the applications of BDPP in deformation theory and minimal model theory.
@@ -139,6 +139,4 @@ This note will give a summary of the paper by Fujino. We will omit the prelimina
 ---
 
 This time we will study the paper [Projectivity criteria for Kahler morphism](https://arxiv.org/abs/2404.13927). 
-
-
 
