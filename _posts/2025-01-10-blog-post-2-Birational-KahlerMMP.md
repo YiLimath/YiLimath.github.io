@@ -40,11 +40,13 @@ Here is the outline:
 
 (14) [Note-14 How to use generalized pair in the Kahler setting?](),
 
+(15) [Note-15 Properties of uniruled Kahler manifold](),
+
 (15) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
 
 (16) [Supplementary 2: Positivities in codimension 1](),
 
-(17) [Supplementary 3: BBDP and beyond](),
+(17) [Supplementary 3: BBDP and beyond]((https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf))[update 2.17],
 
 (18) [Supplementary 4: Transendental Volume](),
 
@@ -115,15 +117,12 @@ In this note we will try to prove the theorem of Cao and Horing, which shows tha
 ---
 ## Supplementary 3: Around BDPP
 
-This note will give a brief introduction to the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf). There are 2 major achievements in this paper:
+This note will study the classical paper: [BDPP](http://sebastien.boucksom.perso.math.cnrs.fr/publis/BDPP.pdf)and recent result of Ou [https://arxiv.org/abs/2501.18088](https://arxiv.org/abs/2501.18088). Here are the topic will be covered in this note.
 
 (1) The duality between algebraic pseudo-effective cone and mobile cone of curves on a projective manifold,
 (2) The projective manifold is uniruled iff it is not pseudo-effective.
-
-We then study the recent paper by Wenhao Ou [https://arxiv.org/abs/2501.18088](https://arxiv.org/abs/2501.18088), who complete the proof of the BDPP conjecture for compact Kahler manifolds. 
-
-
-We will first briefly summarize the idea of the proof, then focus on the applications of BDPP in deformation theory and minimal model theory.
+(3) Ou's proof of BDPP conjecture for compact Kahler manifold
+(4) Applications of duality of cones and BDPP theorem/conjecture.
 
 
 

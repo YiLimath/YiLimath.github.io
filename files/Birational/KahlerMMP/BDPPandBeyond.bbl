@@ -1,0 +1,29 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{BDPP13}
+
+\bibitem[BDPP13]{BDPP}
+S\'{e}bastien Boucksom, Jean-Pierre Demailly, Mihai P\u{a}un, and Thomas
+  Peternell, \emph{The pseudo-effective cone of a compact {K}\"{a}hler manifold
+  and varieties of negative {K}odaira dimension}, J. Algebraic Geom.
+  \textbf{22} (2013), no.~2, 201--248.
+
+\bibitem[MM86]{MM86}
+Yoichi Miyaoka and Shigefumi Mori, \emph{A numerical criterion for
+  uniruledness}, Ann. of Math. (2) \textbf{124} (1986), no.~1, 65--69.
+
+\bibitem[Ou25]{Ou}
+Wenhao Ou, \emph{A characterization of uniruled compact k\"ahler manifolds},
+  2025.
+
+\bibitem[WN19]{David19}
+David Witt~Nystr\"om, \emph{Duality between the pseudoeffective and the movable
+  cone on a projective manifold}, J. Amer. Math. Soc. \textbf{32} (2019),
+  no.~3, 675--689, With an appendix by S\'ebastien Boucksom.
+
+\end{thebibliography}

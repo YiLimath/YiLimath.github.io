@@ -1,0 +1,162 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf BDPP reading notes} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (version 0.0)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{K\"ahler MMP reading seminars}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{Supplement 3 --- 17, 02, 2025}{Spring 2025}{}{Yi Li}
+	\section{Overview}
+	This aim of this note is to introduce the BDPP theorem for projective \cite{BDPP} and Kahler manifold \cite{Ou}. Varies applications of the BDPP theorem are shown. 
+	
+	\section{Transcendentla cone}
+	On a compact K\"ahler manifold, there may not have plently of divisors. To make sense varies positivities, it is necessary to introduce the transcendentla cones. 
+	\section{Duality between varies cones}
+	The following theorem shows the duality between pseudo-effective cone and movable cone on the projective manifold.
+	\begin{theorem}
+		Let $X$ be a projective manifold, then the pseudo-effective cone is dual to the cone of movable curves $$\mathcal{E} = \overline{\text{Mov}(X)}^\vee.$$In other words, a divisor is pseudo-effective iff it has non-negative intersection with any movable curves.    \end{theorem}
+	\begin{remark}
+		David \cite{David19} proved ... 
+	\end{remark}
+	
+	\section{Characterization of the projective uniruled manifold}
+	
+	The projective uniruled manifold is characterized by the pseudo-effectiveness of the canonical bundle.
+	\begin{theorem}[{\cite[Corollary 0.3]{BDPP}}]
+		Let $X$ be a projective manifold. Then $X$ is uniruled iff $K_X$ is not pseudo-effectiveness.
+	\end{theorem}
+	\begin{remark}
+		One direction of the proof is easy, and can be adopted to the K\"ahler manifold. The converse direction (say $K_X$ is not pseudo-effective) implies uniruled of $X$ is non-trivial, which requires the Mori bend and break technique and the duality between pseudo-effective cone and movable cone.
+	\end{remark}
+	\begin{remark}
+		Miyaoka and Mori \cite{MM86} proved that a projective manifold is uniruled iff there exist an open subset over which there exist a $K_X$-negative curve passing through it. For more discussion about Miyaokao-Mori theorem (and varies properties of uniruled manifold) see my Note 15.
+	\end{remark}
+	
+	
+	We can generalize the BDPP theorem to the singular case.
+	\begin{theorem}
+		Let $(X,B)$ be a $\mathbb{Q}$-factorial log pair. If $K_X+B$ is not pseudo-effective, then $X$ is uniruled.
+	\end{theorem}
+	\begin{remark}
+		Rational curves on singular space is tricky. See more discussion on my notes note-9 Rational curves on Moishezon space, Kaehler varieties.
+	\end{remark}
+	\begin{proof}
+		Taking the log resolution $$f:X'\to X, $$such that $f^*(K_X+B) =  K_{X'}+B'$. Since being uniruled is birational invariant, if $X$ is not uniruled, then so it is $X'$. Then by the BDPP theorem we just proved, $K_{X'}$ is pseudo-effective, thus $K_X$ is pseudo-effective. Since $B$ is effective, $K_X+B$ is pseudo-effective. 
+	\end{proof}
+	\section{Proof of BDPP conjecture for K\"ahler manifold}
+	Recently, \cite{Ou} proved the BDPP conjecture for the compact K\"ahler manifold. In this section, we will briefly introduce the result that he proved.
+	
+	\subsection{Algebraic integrability criteria under K\"ahler setting}
+	\subsection{Proof of BDPP conjecture for compact K\"ahler manifold}
+	
+	\section{Varies applications}
+	\subsection{Applications of duality of pseudo-effective cone and cone of movable curves}
+	
+	\subsection{Producing rational curves using BDPP conjecture}
+	
+	\subsection{Cone theorem using BDPP conjecture}
+	
+	%	\begin{center}
+		%		\begin{tikzcd}
+			%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+			%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+			%			\arrow["\cong", from=1-4, to=2-4]
+			%			\arrow[from=2-1, to=2-2]
+			%			\arrow[from=2-2, to=2-3]
+			%			\arrow[from=2-2, to=3-2]
+			%			\arrow[from=2-3, to=2-4]
+			%			\arrow[from=2-3, to=3-3]
+			%			\arrow[from=2-4, to=2-5]
+			%			\arrow[from=2-4, to=3-4]
+			%			\arrow[from=3-1, to=3-2]
+			%			\arrow[from=3-2, to=3-3]
+			%			\arrow[from=3-3, to=3-4]
+			%			\arrow[from=3-4, to=3-5]
+			%			\arrow["\cong", from=3-4, to=4-4]
+			%		\end{tikzcd}
+		%	\end{center}
+	
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
+\end{document}
