@@ -46,7 +46,7 @@ Here is the outline:
 
 (16) [Supplementary 2: Positivities in codimension 1](),
 
-(17) [Supplementary 3: BBDP and beyond]((https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf))[update 2.17],
+(17) [Supplementary 3: BBDP and beyond](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf) [update 2.17],
 
 (18) [Supplementary 4: Transendental Volume](),
 
