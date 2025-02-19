@@ -95,6 +95,21 @@
 	\section{Characterization of the projective uniruled manifold}
 	
 	The projective uniruled manifold is characterized by the pseudo-effectiveness of the canonical bundle.
+	\begin{lemma}
+		Given a movable curve $C$, there exist a covering family $\bigcup_{t\in S}C_t$ contains $C$, which covers a dense open subset of $X$. To be more precise, we can find a diagram 
+		\begin{center}
+			\begin{tikzcd}[ampersand replacement=\&]
+				{\mathcal{C}} \& X \\
+				S
+				\arrow["\phi", from=1-1, to=1-2]
+				\arrow["f"', from=1-1, to=2-1]
+			\end{tikzcd}
+		\end{center}
+		with $f$ a fibration, with fibers $C_t$ and $\phi$ is dominant generic finite morphism, with $\{C_t\}_{t\in S}$ lies the same numerical class.
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
 	\begin{theorem}[{\cite[Corollary 0.3]{BDPP}}]
 		Let $X$ be a projective manifold. Then $X$ is uniruled iff $K_X$ is not pseudo-effectiveness.
 	\end{theorem}
@@ -104,7 +119,10 @@
 	\begin{remark}
 		Miyaoka and Mori \cite{MM86} proved that a projective manifold is uniruled iff there exist an open subset over which there exist a $K_X$-negative curve passing through it. For more discussion about Miyaokao-Mori theorem (and varies properties of uniruled manifold) see my Note 15.
 	\end{remark}
-	
+	\begin{proof}
+		It's sufficient to prove that if $K_X$ is not pseudo-effective, then $X$ is uniruled. By duality of pseudo-effective cone and movable cone, we know that there exists a movable curve such that $$K_X \cdot C <0.$$
+		We need to produce a covering family of $K_X$-negative irreducible curves using the movable curve $C$. 
+	\end{proof}
 	
 	We can generalize the BDPP theorem to the singular case.
 	\begin{theorem}
@@ -116,10 +134,20 @@
 	\begin{proof}
 		Taking the log resolution $$f:X'\to X, $$such that $f^*(K_X+B) =  K_{X'}+B'$. Since being uniruled is birational invariant, if $X$ is not uniruled, then so it is $X'$. Then by the BDPP theorem we just proved, $K_{X'}$ is pseudo-effective, thus $K_X$ is pseudo-effective. Since $B$ is effective, $K_X+B$ is pseudo-effective. 
 	\end{proof}
+	We can characterize the uniruled variety using subsheaf of tangent sheaf
+	\begin{theorem}
+		Let $X$ be a projective manifold, $\mathscr{F}\subset T_X$ be a coherent subsheaf such that $\det{\mathscr{F}^*}\subset T_X$ is not pseudo-effective, then $X$ is uniruled.
+	\end{theorem}
+	\begin{proof}
+		
+	\end{proof}
+	
 	\section{Proof of BDPP conjecture for K\"ahler manifold}
 	Recently, \cite{Ou} proved the BDPP conjecture for the compact K\"ahler manifold. In this section, we will briefly introduce the result that he proved.
 	
 	\subsection{Algebraic integrability criteria under K\"ahler setting}
+	
+	\subsection{Pseudo-effectiveness of the adjoint class}
 	\subsection{Proof of BDPP conjecture for compact K\"ahler manifold}
 	
 	\section{Varies applications}

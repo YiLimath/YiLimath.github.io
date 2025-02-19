@@ -14,39 +14,41 @@ Here is the outline:
 
 (1) [Note-1 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf),
 
-(2) [Note-2 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
+(2) [Note-2 Positivities in the Kahler minimal model program](),
 
-(3) [Note-3 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
+(2) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
 
-(4) [Note-4 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
+(3) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
 
-(5) [Note-5 Kaehler 4-fold MMP](),
+(4) [Note-5 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
 
-(6) [Note-6 Finite generation problem in Kahler MMP](),
+(5) [Note-6 Kaehler 4-fold MMP](),
 
-(7) [Note-7 Termination problem in Kahler MMP](),
+(6) [Note-7 Finite generation problem in Kahler MMP](),
 
-(8) [Note-8 Base point free conjecture in Kahler MMP](),
+(7) [Note-8 Termination problem in Kahler MMP](),
 
-(9) [Note-9 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/MoriBendBreakMoishezon.pdf)
+(8) [Note-9 Base point free conjecture in Kahler MMP](),
 
-(10) [Note-10 Cone theorem for Kahler MMP](),
+(9) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [update 2.19]
 
-(11) [Note-11 Projectivity for Kaehler morphism](),
+(10) [Note-11 Cone theorem for Kahler MMP](),
 
-(12) [Note-12 Canonical bundle formulas and subadjunction with applications the Kahler MMP](),
+(11) [Note-12 Projectivity for Kaehler morphism](),
 
-(13) [Note-13 How to use divisorial Zariski decomposition?](),
+(12) [Note-13 Canonical bundle formulas and subadjunction with applications the Kahler MMP](),
 
-(14) [Note-14 How to use generalized pair in the Kahler setting?](),
+(13) [Note-14 How to use divisorial Zariski decomposition?](),
 
-(15) [Note-15 Properties of uniruled Kahler manifold](),
+(14) [Note-15 How to use generalized pair in the Kahler setting?](),
+
+(15) [Note-16 Properties of uniruled Kahler manifold](),
 
 (15) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
 
 (16) [Supplementary 2: Positivities in codimension 1](),
 
-(17) [Supplementary 3: BBDP and beyond](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf) [update 2.17],
+(17) [Supplementary 3: BBDP and beyond](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf) [update 2.19],
 
 (18) [Supplementary 4: Transendental Volume](),
 

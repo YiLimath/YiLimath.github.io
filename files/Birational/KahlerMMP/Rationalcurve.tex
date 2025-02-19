@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Rational curves on analytic space reading note} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{K\"ahler MMP reading seminars}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{9 --- 02, 18, 2025}{Spring 2025}{}{Yi Li}
+	\section{Overview}
+	In this note, we will study the rational curves on Moishezon space and K\"ahler space. The major references of this note are \cite{CH20} and \cite{HP16}.
+	\section{H\"oring-Peternell's approach of Mori bend and break for K\"ahler 3-fold}
+	In this section, we will briefly summarize the idea of H\"oring-Peternell on Mori bend and break for K\"ahler 3-fold \cite{HP16}.
+	\begin{theorem}
+		Let $X$ be a normal $\mathbb{Q}$-factorial compact K\"ahler 3-fold with terminal singularity, with $K_X$ being pseudo-effective.
+		\begin{enumerate}
+			\item If $C$ is a curve with large anti-canonical degree, then it can break into $$[C] = [C_1]+ [C_2]$$
+			\item Let $\overline{\text{NE}(X)}$ has a $K_X$-negative extremal ray $\mathbb{R}_+[\Gamma]$, such that the representative $\Gamma$ is not very rigid. Then we can find a representable $C\in \mathbb{R}_+ [\Gamma]$ such that $\dim_C\text{Chow}(X) >0$, and $\mathbb{R}_+[\Gamma]$ contains ratioal curves. \end{enumerate}
+		
+	\end{theorem}
+	\begin{remark}
+		Let us first briefly sketch the idea of the proof: The general idea is if the anti-canonical degree is large, then the curve $C$ is deformable i.e. $\dim_C\text{Chow}(X)>0$.
+		
+		We then prove that the deformation of the curve contains in a component $S_i$ of negative par of Zariski decomposition $N(K_X)$. (Note that the surface $S_i$ has $K_{S_i}$ not pseudo-effective, thus it is a uniruled surface)
+		
+		Therefore, we reduce the problem onto the surface $S_i$. We try to prove that $K_{S_i}$-negative curve on the uniruled surface breaks and produce a rational curve.
+	\end{remark}\begin{proof}
+		
+	\end{proof}
+	
+	
+	\section{Cao-H\"oring's approach produce rational curve for K\"ahler manifold}
+	\subsection{Pseudo effectiveness of the relative adjoint class}
+	The major technical tools that will be used in the proof of the Cao-H\"oring's theorem is the following pseudo-effectiveness theorem. 
+	
+	\begin{theorem}
+		
+	\end{theorem}
+	\begin{remark}
+		
+	\end{remark}
+	
+	\subsection{Cao-H\"oring's main theorem}
+	Now we can prove the main theorem of the \cite{CH20}.
+	
+	
+	
+	
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
+\end{document}
