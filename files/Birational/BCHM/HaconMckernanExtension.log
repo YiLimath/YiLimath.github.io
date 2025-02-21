@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  29 AUG 2024 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  21 FEB 2025 10:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -935,33 +935,33 @@ LaTeX Info: Redefining \nameref on input line 80.
 \@outlinefile=\write5
 \openout5 = `HaconMckernanExtension.out'.
 
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 95
-.
+
+(./HaconMckernanExtension.toc
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 9.
+
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 95
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
+
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (d:/Tex/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+))
+\tf@toc=\write6
+\openout6 = `HaconMckernanExtension.toc'.
 
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -971,28 +971,32 @@ This may cause the page layout to be inconsistent, however.
 
 [1{d:/Tex/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+[2] [3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (./HaconMckernanExtension.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package rerunfilecheck Info: File `HaconMckernanExtension.out' has not changed.
 
-(rerunfilecheck)             Checksum: E069B1FA29DB337E0F5137DA4B7C3E72;1222.
+(rerunfilecheck)             Checksum: AFE6F4A83591E8C4CAA7D5122733BCBB;1152.
 Package logreq Info: Writing requests to 'HaconMckernanExtension.run.xml'.
 \openout1 = `HaconMckernanExtension.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24805 strings out of 480608
- 480831 string characters out of 5905572
- 924787 words of memory out of 5000000
- 40230 multiletter control sequences out of 15000+600000
+ 24809 strings out of 480608
+ 480911 string characters out of 5905572
+ 925773 words of memory out of 5000000
+ 40231 multiletter control sequences out of 15000+600000
  540752 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,11n,86p,954b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,11n,86p,941b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:
 /Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/Tex/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/Tex/texl
@@ -1010,10 +1014,10 @@ fb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d
 :/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d
 :/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d
 :/Tex/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on HaconMckernanExtension.pdf (4 pages, 199544 bytes).
+Output written on HaconMckernanExtension.pdf (4 pages, 203009 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 201 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

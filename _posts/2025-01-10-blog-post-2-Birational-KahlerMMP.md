@@ -9,6 +9,9 @@ tags:
 
 The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following three major difficulties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem and cone theorem: Since Kahler manifold with a big line bundle is automatic projective, thus a big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, and this approach is not very clear under Kaehler setting.
 
+In general, we want to study: How far are natural geometric or sheaftheoretic constructions on compact Kähler manifolds in general from being determined by similar constructions on projective? Further structural results could provide a general machine for reducing certain questions about Kähler manifolds to the algebraic setting. 
+
+
 
 Here is the outline:
 
@@ -52,9 +55,13 @@ Here is the outline:
 
 (18) [Supplementary 4: Transendental Volume](),
 
-(19) [Supplementary 5: minimal model program for Kahler generalized pairs](),
+(19) [Supplementary 5: Tools can be used to reduce the Kahler problem to projective problem](),
+
+(20) [Supplementary 6: Projectivity question How far Kahler structure away from the projective structure?](),
 
 (20) [Abundance for Kahler varieties](),
+
+
 
 
 ---

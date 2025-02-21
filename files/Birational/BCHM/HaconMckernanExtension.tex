@@ -14,7 +14,7 @@
 	\begin{center}
 		\framebox{
 			\vbox{
-				\hbox to 5.78in { {\bf Existence of Flips Readings Notes} \hfill #2 }
+				\hbox to 5.78in { {\bf BCHM Readings Notes} \hfill #2 }
 				\vspace{4mm}
 				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
 				\vspace{2mm}
@@ -80,15 +80,18 @@
 \begin{document}
 	
 	\lecture{2 --- 29, 08, 2024}{Summer 2024}{}{Yi Li}
+	
+	\tableofcontents
+	
 	\section{Overview}
 	
-		The aim of this note is try to prove the Hacon-Mckernan's extension theorem. This theorem will be the technical core of the proof of existence of KLT flips. Let us briefly sketch the idea in the proof of the theorem. We will first prove a techinical lemma which allows to lift section after ample twist (which also appears in the algebraic proof of invariance of plurigenera). To prove this lemma, we first observe that by the Serre vanishing theorem the restricted linear series coinside with the linear series of the restriction divisor when twisted with sufficient ample divisor, . 
+	The aim of this note is try to prove the Hacon-Mckernan's extension theorem. This theorem will be the technical core of the proof of existence of KLT flips. Let us briefly sketch the idea in the proof of the theorem. We will first prove a techinical lemma which allows to lift section after ample twist (which also appears in the algebraic proof of invariance of plurigenera). To prove this lemma, we first observe that by the Serre vanishing theorem the restricted linear series coinside with the linear series of the restriction divisor when twisted with sufficient ample divisor, . 
 	
 	In the second step, we will going to prove the main theorem of this note. 
 	
 	The major references will be \cite{BCHM2} and \cite{HaconKovacsBook}
 	
-	\section{Statement of the theorem}
+	\section{Hacon Mckernan extension theorem}
 	Hacon-Mckernan's extension theorem says that 
 	\begin{theorem}
 		
@@ -121,15 +124,6 @@
 			\item About the analytic proof. The analytic proof is much more stronger. This can be seen already from the Ohsawa-Takegoshi extension theorem, which only requires some positivity weaker than ampleness. If you want to prove some result without ampleness condition, the analytic method may be necessary, as a paid-off the proof will sometimes be more complicated.
 		\end{enumerate}
 	\end{remark}
-	\section{Preliminaries}
-	
-	
-	\subsection{Multiplier ideal sheaves and asymptotic multiplier ideal sheaves}
-	
-
-	\subsection{Linear series}
-	
-	
 	
 	\section{Theorems that allow to lift sections}
 	
@@ -174,12 +168,23 @@
 	\begin{proof}
 		
 	\end{proof}
-	\section{Proof of the lifting section with ample twist lemma}
-		
-	\section{Proof of Hacon Mckernan's extension theorem}
+	
+	\section{DeFernex-Hacon extension theorem}
+	In this section we try to prove the DeFernex-Hacon extension theorem.
+	
+	\subsection{Restriction of minimal model program}
+	We will prove the following result about the restriction of MMP step.
+	
+	\subsection{Proof of DeFernex-Hacon extension}
+	
+	
+	\section{Demailly-Hacon-Paun DLT extension theorem}
+	
+	
 	
 	\section{Applications of Hacon Mckernan extension theorem}
 	In this section, we will summarize all the known applications of Hacon-Mckernan type extension theorem.
+	
 	\subsection{In the existence of KLT flips theorem}
 	
 	\subsection{In the Shokurov rational connectedness conjeture}
@@ -190,51 +195,51 @@
 	
 	
 	
-%	
-%	\section{The fiber of the Moishezon morphism is again Moishezon}
-%	
-%	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
-%	
-%	\end{theorem}
-%	
-%	
-%	\begin{remark}
-%	\cite{Moishezonmorphism} 
-%	\end{remark}
-%	
-%	\begin{proof}
-%		
-%	\end{proof}
-%
-%	\begin{center}
-%		\begin{tikzcd}
-%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
-%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
-%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
-%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
-%			\arrow["\cong", from=1-4, to=2-4]
-%			\arrow[from=2-1, to=2-2]
-%			\arrow[from=2-2, to=2-3]
-%			\arrow[from=2-2, to=3-2]
-%			\arrow[from=2-3, to=2-4]
-%			\arrow[from=2-3, to=3-3]
-%			\arrow[from=2-4, to=2-5]
-%			\arrow[from=2-4, to=3-4]
-%			\arrow[from=3-1, to=3-2]
-%			\arrow[from=3-2, to=3-3]
-%			\arrow[from=3-3, to=3-4]
-%			\arrow[from=3-4, to=3-5]
-%			\arrow["\cong", from=3-4, to=4-4]
-%		\end{tikzcd}
-%	\end{center}
-%
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
-%		\caption{Comparison between different definitions for Moishezon morphism}
-%		\label{fig:moishezon-morphism-definition}
-%	\end{figure}
-%	
+	%	
+	%	\section{The fiber of the Moishezon morphism is again Moishezon}
+	%	
+	%	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
+		%	
+		%	\end{theorem}
+	%	
+	%	
+	%	\begin{remark}
+		%	\cite{Moishezonmorphism} 
+		%	\end{remark}
+	%	
+	%	\begin{proof}
+		%		
+		%	\end{proof}
+	%
+	%	\begin{center}
+		%		\begin{tikzcd}
+			%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+			%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+			%			\arrow["\cong", from=1-4, to=2-4]
+			%			\arrow[from=2-1, to=2-2]
+			%			\arrow[from=2-2, to=2-3]
+			%			\arrow[from=2-2, to=3-2]
+			%			\arrow[from=2-3, to=2-4]
+			%			\arrow[from=2-3, to=3-3]
+			%			\arrow[from=2-4, to=2-5]
+			%			\arrow[from=2-4, to=3-4]
+			%			\arrow[from=3-1, to=3-2]
+			%			\arrow[from=3-2, to=3-3]
+			%			\arrow[from=3-3, to=3-4]
+			%			\arrow[from=3-4, to=3-5]
+			%			\arrow["\cong", from=3-4, to=4-4]
+			%		\end{tikzcd}
+		%	\end{center}
+	%
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	%	
 	\printbibliography	
 	
 \end{document}
