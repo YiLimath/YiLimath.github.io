@@ -20,19 +20,29 @@ Here is the outline
 
 (2) [BCHM Part 2: Applications of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHM2.pdf),
 
-(3) [BCHM Part 3: Existence of pl-flips](https://yilimath.github.io/posts/2024/08/Existence-of-flips/),
+(3) [BCHM Part 4: Special Termination Problem](),
 
-(4) [BCHM Part 4: Special Termination Problem](),
+(4) [BCHM Part 5: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
-(5) [BCHM Part 5: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+(5) [BCHM Part 6: Existence of minimal model](),
 
-(6) [BCHM Part 6: Existence of minimal model](),
+(6) [BCHM Part 7: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
 
-(7) [BCHM Part 7: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/BCHM4.pdf).
+(7) [BCHM Part 8: Finite generation of canonical ring, Cox ring](),
 
-(8) [BCHM Part 8: Finite generation of canonical ring, Cox ring](),
+(8) [BCHM Part : Existence of flip problem overview](https://yilimath.github.io/files/Birational/BCHM/ExistenceFlip.pdf),
 
-(9) [BCHM Supplement: Polyhedron decomposition results](),
+(10) [BCHM Part 9: Fundamental exact sequence in BCHM]()
+
+(2) [Part 10: Hacon Mckernan extension theorem and variants](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 8.29],
+
+(6) [BCHM Part: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistenceFlip2.pdf), 
+
+(3) [Part 11: Restricted algebra as limiting algebra](https://yilimath.github.io/files/Birational/BCHM/RestrictedAlgebra.pdf),
+(8) [BCHM Supplement 1: Polyhedron decomposition results](),
+
+(4) [BCHM Supplement 2: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistenceLCFlip1.pdf),
+
 
 
 
@@ -88,3 +98,22 @@ We see that non-vanishing conjecture is the central problem in Birational Geomet
 
 
 ----
+## Note-3 Existence of flips
+---
+
+The aim of this series of notes is to summarize the idea in the proof of existence of flips (see the paper [Extension theorems and the existence of flips](https://academic.oup.com/book/6326/chapter-abstract/150033223?redirectedFrom=fulltext), [On the existence of flips](https://arxiv.org/abs/math/0507597), and also [BCHM II](https://mathscinet.ams.org/mathscinet/article?mr=2601040) and more recent results by Hacon-Xu, Birkar [Existence of log canonical closures](https://link.springer.com/article/10.1007/s00222-012-0409-0) and [Existence of log canonical flips](https://mathscinet.ams.org/mathscinet/article?mr=2929730)). 
+
+Here is the outline: 
+
+Part 1) We will give an overview about the problem and show that it's suffics to prove the finite generation of restricted algebra,
+
+Part 2) We will prove the Hacon Mckernan's extension theorem, which is the technical core of the proof of the main result. The proof can be divided into 2 step. In step 1 we prove the sequzing extra positivity lemma, which allows to lift section after some ample twist. In step 2, we will finish the proof of Hacon Mckernan extension theorem by ... 
+
+As a side remark, Hacon Mckernan's extension theorem will be used over and over again in the feature (see [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/posts/2024/08/Shokurov-Rationally-Connectedness/), and [Boundedness of general type](https://yilimath.github.io/posts/2024/08/Boundedness-general-type/), and [Deformation of Fano varieties](https://yilimath.github.io/posts/2024/08/Deformation-Fano/)).
+
+Part 3) We will prove that restricted algebra is an limiting algebra (in some higher model), Hacon and Mckernan gave 2 approaches at this point: The 1st one use the theorem by Shokurov that a limiting algebra is finite generated if it's saturated and semiample, and trying to check the saturated and semiampleness condition. 
+
+The 2nd version is much simpler, and it's integrated in the spraling induction of BCHM. The result is obvious once we finish the proof of the restricted algebra is a geometric algebra in lower dimension. Since we can then invoke the BCHM F(n-1) induction hyphothsis.
+
+
+

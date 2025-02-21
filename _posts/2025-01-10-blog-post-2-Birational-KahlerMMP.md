@@ -16,7 +16,7 @@ Here is the outline:
 
 (2) [Note-2 Positivities in the Kahler minimal model program](),
 
-(2) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/ExtensionContraction.pdf),
+(2) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
 
 (3) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
 
@@ -48,7 +48,7 @@ Here is the outline:
 
 (16) [Supplementary 2: Positivities in codimension 1](),
 
-(17) [Supplementary 3: BBDP and beyond](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf) [update 2.19],
+(17) [Supplementary 3: BBDP and beyond](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPandBeyond.pdf) [update 2.21],
 
 (18) [Supplementary 4: Transendental Volume](),
 

@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{epsfig}
+
 \usepackage{graphicx}
 \usepackage{float}
 \newcommand{\handout}[5]{
@@ -86,16 +87,33 @@
 	On a compact K\"ahler manifold, there may not have plently of divisors. To make sense varies positivities, it is necessary to introduce the transcendentla cones. 
 	\section{Duality between varies cones}
 	The following theorem shows the duality between pseudo-effective cone and movable cone on the projective manifold.
+	\begin{lemma}\label{movcurve}
+		Let $X$ be a projective manifold. Let $\gamma \in N_1(X)$ be a movable class. Then given any prime divisor $E$, there exist a representative $\gamma_E$ such that $\gamma_E$ intersect $E$ properly and $\gamma \equiv \gamma_E$.
+	\end{lemma}
+	\begin{remark}
+		I am not pretty sure, if the result is also true for K\"ahler manifold?
+	\end{remark}
+	\begin{proof}
+		
+	\end{proof}
 	\begin{theorem}
 		Let $X$ be a projective manifold, then the pseudo-effective cone is dual to the cone of movable curves $$\mathcal{E} = \overline{\text{Mov}(X)}^\vee.$$In other words, a divisor is pseudo-effective iff it has non-negative intersection with any movable curves.    \end{theorem}
 	\begin{remark}
 		David \cite{David19} proved ... 
 	\end{remark}
-	
+	\begin{proof}
+		Let $C$ be a movable curve, By Lemma \ref{movcurve}, we can choose some $C'$ such that $C \equiv C'$ and $C'$ meets the given pseudo-effective divisor properly. Hence $$\mathcal{E} \subset \overline{\text{Mov}(X)}^\vee.$$
+		
+		Conversely, if the inclusion is strict then there exist some  $$\xi \in \partial(\mathcal{E}(X)), \quad \xi \in \operatorname{int}\left(\overline{\operatorname{Mov}}(X)^*\right) .$$We want to deduce contradition. Since $X$ is projective, we can find some ample divisor $H$ such that $\xi - \epsilon H$ still in the movable cone. So that $$
+		\frac{(\xi \cdot C)}{(H \cdot C)} \geq \varepsilon
+		, \quad \forall \ C \in \overline{\text{Mov}(X)}.$$
+		On the other hand we can apply Fujita approximation to the class $\xi+ t H$ for the ample $H$. And gets $$\mu_t :X_t \to X$$such that $$\mu_t^* (\xi + t H) = A_t + E_t$$choose $C  = \mu_*  A_t^{n-1}$, then apply the Asymptotic orthogonality of Fujita approximation to $\xi \cdot C$ and Teissier-Hovanskii inequality to deduce an upper bound $$\delta_t \ge \frac{\xi \cdot C}{ H \cdot C} \ge \epsilon$$with $\delta_t \to 0$ when $t\to 0$ (here $\delta_t$ is a constant depend on the volume of $A_t$, since $\text{vol}(\xi) = 0$ by Fujita approximation $\text{vol}(A_t) \to 0$ when $t\to 0$).
+		
+	\end{proof}
 	\section{Characterization of the projective uniruled manifold}
 	
 	The projective uniruled manifold is characterized by the pseudo-effectiveness of the canonical bundle.
-	\begin{lemma}
+	\begin{lemma}\label{Coveringfamily}
 		Given a movable curve $C$, there exist a covering family $\bigcup_{t\in S}C_t$ contains $C$, which covers a dense open subset of $X$. To be more precise, we can find a diagram 
 		\begin{center}
 			\begin{tikzcd}[ampersand replacement=\&]
@@ -121,7 +139,7 @@
 	\end{remark}
 	\begin{proof}
 		It's sufficient to prove that if $K_X$ is not pseudo-effective, then $X$ is uniruled. By duality of pseudo-effective cone and movable cone, we know that there exists a movable curve such that $$K_X \cdot C <0.$$
-		We need to produce a covering family of $K_X$-negative irreducible curves using the movable curve $C$. 
+		By Lemma \ref{Coveringfamily}, we can produce a covering family of $K_X$-negative irreducible curves using the movable curve $C$. 
 	\end{proof}
 	
 	We can generalize the BDPP theorem to the singular case.
@@ -148,6 +166,10 @@
 	\subsection{Algebraic integrability criteria under K\"ahler setting}
 	
 	\subsection{Pseudo-effectiveness of the adjoint class}
+	
+	
+	\subsection{Relative Albanese reduction}
+	
 	\subsection{Proof of BDPP conjecture for compact K\"ahler manifold}
 	
 	\section{Varies applications}
