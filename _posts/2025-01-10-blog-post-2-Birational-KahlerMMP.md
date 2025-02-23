@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2025-02-17
+date: 2025-02-22
 permalink: /posts/2025/02/Kahler-MMP/
 tags:
   - Birational geometry
@@ -19,19 +19,21 @@ Here is the outline:
 
 (2) [Note-2 Positivities in the Kahler minimal model program](),
 
-(2) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
+(3) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
 
-(3) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
+(4) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
 
-(4) [Note-5 Constraction theorem for Kahler 3-fold using MMP method (by Das and Hacon)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionDasHacon.pdf),
+(5) [Note-5 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/Kahlerdivisorialcont.pdf),
 
-(5) [Note-6 Kaehler 4-fold MMP](),
+(6) [Note-6 Flipping contraction for Kahler 3-fold MMP](),
 
-(6) [Note-7 Finite generation problem in Kahler MMP](),
+(7) [Note-6 Kaehler 4-fold MMP](),
 
-(7) [Note-8 Termination problem in Kahler MMP](),
+(8) [Note-8 Finite generation problem in Kahler MMP](),
 
-(8) [Note-9 Base point free conjecture in Kahler MMP](),
+(9) [Note-9 Termination problem in Kahler MMP](),
+
+(10) [Note-10 Base point free conjecture in Kahler MMP](),
 
 (9) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [update 2.19]
 
