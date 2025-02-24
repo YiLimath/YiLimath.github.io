@@ -1,5 +1,5 @@
 ---
-title: 'Deformation Theory Note: Deformation of algebraic scheme and complex spaces'
+title: 'Deformation Theory Note'
 date: 2024-11-29
 permalink: /posts/2024/11/Deformation-of-Scheme/
 tags:
@@ -36,4 +36,8 @@ Here is the outline of this series of notes
 (8) [Supplementary: ddbar Lemma](),
 
 (9) [Supplementary: E1-degeneration of Hodge to deRham spectral sequence](),
+
+
+
+----
 
