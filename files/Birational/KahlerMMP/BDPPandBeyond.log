@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  21 FEB 2025 08:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  25 FEB 2025 09:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -714,19 +714,19 @@ This may cause the page layout to be inconsistent, however.
 [1{d:/Tex/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2]
-(./BDPPandBeyond.bbl [3]) [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
+[3] (./BDPPandBeyond.bbl) [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./BDPPandBeyond.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `BDPPandBeyond.out' has not changed.
 (rerunfilecheck)             Checksum: AA1A19F6FC7F32090C8C5D5561B6114C;1065.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 17992 strings out of 480608
- 349162 string characters out of 5905572
+ 17995 strings out of 480608
+ 349198 string characters out of 5905572
  590663 words of memory out of 5000000
  33474 multiletter control sequences out of 15000+600000
  539662 words of font info for 54 fonts, out of 8000000 for 9000
@@ -746,10 +746,10 @@ fonts/cm/cmsy8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pf
 b>
-Output written on BDPPandBeyond.pdf (4 pages, 160242 bytes).
+Output written on BDPPandBeyond.pdf (4 pages, 160902 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
