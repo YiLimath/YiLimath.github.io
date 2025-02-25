@@ -7,7 +7,8 @@ tags:
 ---
 
 
-This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem. Note that one of the induction steps (say finite generation implies existence of pl flips）was already done in our previous note see [Existence of flips](https://yilimath.github.io/posts/2024/08/Existence-of-flips/). 
+This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem. 
+
 
 
 
