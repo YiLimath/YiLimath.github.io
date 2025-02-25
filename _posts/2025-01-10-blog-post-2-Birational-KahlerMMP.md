@@ -21,9 +21,7 @@ Here is the outline:
 
 (3) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
 
-(4) [Note-4 Contraction theorem for Kaehler 3-fold using deformation theoretic analysis (by Campana, Höring and Peternell)](https://yilimath.github.io/files/Birational/KahlerMMP/ContractionNefReduction.pdf),
-
-(5) [Note-5 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/Kahlerdivisorialcont.pdf),
+(4) [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 2.25]
 
 (6) [Note-6 Flipping contraction for Kahler 3-fold MMP](),
 

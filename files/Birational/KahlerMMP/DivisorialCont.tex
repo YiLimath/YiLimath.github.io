@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Divisorial contraction in K\"ahler MMP reading notes} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{K\"ahler MMP reading seminars}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{4 --- 25, 02, 2025}{Spring 2025}{}{Yi Li}
+	\tableofcontents
+	\section{Overview}
+	
+	\section{Das-Hacon's approach to divisorial contraction for K\"ahler 3-fold MMP}
+	In this section, we will prove the following theorem.
+	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{DHdivisorial}
+		Let $(X,B)$ be a strong $\mathbb{Q}$-factorial K\"ahler 3-fold KLT pair. With the following condition holds
+		\begin{enumerate}
+			\item $K_X+B $ is pseudo-effective
+			\item $\alpha = [K_X+B + \beta]$ is nef and big class such that $\beta$ is K\"ahler,
+			\item The negative extremal ray $R = \overline{\text{NA}}(X) \cap \alpha^\perp$ is divisorial.
+		\end{enumerate}
+		Then there exists an $\alpha$-trivial divisorial contraction $$f:X\to Z,$$such that there exist some K\"ahler form $\alpha_Z$ on $Z$ such that $\phi^* (\alpha_Z) = \alpha$.
+	\end{theorem}
+	Before going to the proof let us briefly sketch the idea. We first try to prove that the null locus $\text{Null}(\alpha)$ is the Moishezon surface whose smooth model is projective uniruled. We then take a DLT modification $$\varphi:(X',\Delta')\to (X,\Delta)$$ of the pair $(X,\Delta = B+(1-b)S)$ (note that this pair $(X,\Delta)$ differs from the original pair $(X,B)$ and it is not a KLT pair). 
+	
+	We show that the DLT modification $\varphi$ preserve the geometry outside the null locus $\text{Null}(\alpha)$. We then run the relative K\"ahler MMP for $(X',\Delta')$ over $(X,\Delta)$, which becomes the core of the proof. Since it's K\"ahler 3-fold MMP, the termination is known. So that it's possible to produce positivity (say $K_{X^m} + \Delta^m$ is nef over $(X,\Delta)$) by the termination theorem. 
+	
+	We need to control the divisors being contracted in the MMP. 
+	
+	
+	So that the induced bimeromorphic map $f:X\dashrightarrow X^m$ is a morphism, and this is the divisorial contraction we want. 
+	
+	In the final step, we will show that the base point freeness holds for the divisorial contraction, say $\alpha$ as pull back of some K\"ahler form $\alpha_Z$ down stairs. 
+	
+	\subsection{The null locus is a Moishezon surface whose smooth model is projective uniruled}
+	In this subsection, we will proof the following lemma.
+	\begin{lemma}
+		In the same setting as Theorem \ref{DHdivisorial}. The null locus $\text{Null}(\alpha)$ is a irreducible Moishezon surface, whose smooth model is projective uniruled. Such that the curves in the negative extremal ray $R$ covers the surface $S$ with $$R \cdot S <0.$$
+	\end{lemma}
+	\begin{remark}
+		Let us breifly sketch the idea. The class $\alpha|_S, \alpha|_{S^\nu}, \alpha|_{S'}$ play important role in this lemma (for simplicity let us assume for now that $S$ is a smooth surface). The idea is to try to use that if a smooth surface is not pseudo-effective, then it's uniruled projective surface. The non-pseudo-effectiveness comes from some intersection number analysis. To be more precise, we will use that $S = \text{Null}(\alpha)$, so that volume $\text{vol}(\alpha|_S)  = (\alpha|_S)^2= 0$ (by definition of null locus). In particular, the restriction $\alpha|_S$ can not be a big class. On the other hand, we can apply adjunction to $$\alpha|_S  = (K_X+B+\beta)|_S.$$
+		If the coefficient of $S$ in $B$ is 1, then everything is nice and we get $$\alpha|_S = (K_X+B ' + S + \beta)|_S = K_S+ B'|_S + \beta|_S.$$Since $B'|_S\ge 0$ and $\beta|_S$ Kahler, this will imply that $K_S$ can not be pseudo-effective. 
+		
+		However, the coefficient of $S$ in $B$ is not 1, so that we need to take some scaling, 
+		
+		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbb{R}$-curve on the surface). 
+		
+		Finally, we need to prove that $R\cdot S<0$. To do this, Batyrev cone theorem for mobile curve is applied. 
+	\end{remark}
+	\begin{proof}
+		
+	\end{proof}
+	
+	\subsection{Take DLT modification}
+	
+	\subsection{Run the relative MMP}
+	
+	\subsection{Control the set of divisors being contracted}
+	
+	\subsection{Proof the base pointness}
+	
+	
+	\section{H\"oring-Peternell's approach for K\"ahler 3-fold MMP}
+	
+	
+	
+	%	\begin{center}
+		%		\begin{tikzcd}
+			%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
+			%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
+			%			\arrow["\cong", from=1-4, to=2-4]
+			%			\arrow[from=2-1, to=2-2]
+			%			\arrow[from=2-2, to=2-3]
+			%			\arrow[from=2-2, to=3-2]
+			%			\arrow[from=2-3, to=2-4]
+			%			\arrow[from=2-3, to=3-3]
+			%			\arrow[from=2-4, to=2-5]
+			%			\arrow[from=2-4, to=3-4]
+			%			\arrow[from=3-1, to=3-2]
+			%			\arrow[from=3-2, to=3-3]
+			%			\arrow[from=3-3, to=3-4]
+			%			\arrow[from=3-4, to=3-5]
+			%			\arrow["\cong", from=3-4, to=4-4]
+			%		\end{tikzcd}
+		%	\end{center}
+	
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
+\end{document}
