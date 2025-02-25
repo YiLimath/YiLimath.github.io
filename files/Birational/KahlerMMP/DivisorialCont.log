@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  25 FEB 2025 08:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.23)  25 FEB 2025 13:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -723,8 +723,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
  (./DivisorialCont.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
-Package rerunfilecheck Info: File `DivisorialCont.out' has not changed.
-(rerunfilecheck)             Checksum: 3E9056484302B5C21562971B6BC23071;672.
+
+
+Package rerunfilecheck Warning: File `DivisorialCont.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DivisorialCont.out':
+(rerunfilecheck)             Before: 7F83A0F04F9D0276CAAC20A55B736537;677
+(rerunfilecheck)             After:  B0B406946E87ECC8410B5C2E2ABCE6B8;680.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
@@ -749,7 +756,7 @@ onts/cm/cmsy8.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb><d:/Tex/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on DivisorialCont.pdf (3 pages, 152470 bytes).
+Output written on DivisorialCont.pdf (3 pages, 152489 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
