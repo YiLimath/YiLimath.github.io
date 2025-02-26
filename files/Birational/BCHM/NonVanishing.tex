@@ -80,51 +80,40 @@
 	
 	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
 	\section{Overview}
+	The aim of this note is to introduce the non-vanishing conjecture. We will prove the classical Shokurov non-vanishing theorem. We then try to prove the BCHM non-vanishing, which says that if the non-vanishing holds in dimension $(n-1)$ and special finiteness and existence of minimal conjecture hold in dimension $n$ then the non-vanishing conjecture also true in dimension $n$. Note that by the spriling induction, this will implies the non-vanishing theorem under BCHM conditions. After that we will introduce some recent progress on non-vanishing conjecture.
+	\section{Shokurov non vanishing theorem}
 	
-	\section{The fiber of the Moishezon morphism is again Moishezon}
-	
-	\begin{theorem}[The fiber of the Moishezon morphism is again Moishezon, see \cite{Moishezonmorphism}, Corollary 16]\label{Moishezon-morphism}
-	
+	\section{BCHM version nonvanishing theorem}
+	We will prove the following theorem in this section.
+	\begin{theorem}\label{BCHMnonvanishing}
+		Assume non-vanishing conjecture in dimension $n-1$, special finiteness in dimension $n$ and existence of minimal model in dimension $n$. Then the non-vanishing conjecture is also true in dimension $n$.
 	\end{theorem}
+	Before proving the theorem, let us introduce several technical lemmas.
 	
+	\begin{lemma}[Deformation of effectiveness]
+		
+	\end{lemma}
 	
-	\begin{remark}
-	\cite{Moishezonmorphism} 
-	\end{remark}
+	\begin{lemma}[Local uniqueness of canonical models]
+		
+	\end{lemma}
 	
-	\begin{proof}
+	\begin{lemma}[Improve that pair when positive part of Zariski decomposition is non-zero]
+		
+	\end{lemma}
+	
+	Now we can prove the BCHM non-vanishing theorem.
+	\begin{proof}[Proof of Theorem \ref{BCHMnonvanishing}]
 		
 	\end{proof}
-
-	\begin{center}
-		\begin{tikzcd}
-			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
-			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
-			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
-			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
-			\arrow["\cong", from=1-4, to=2-4]
-			\arrow[from=2-1, to=2-2]
-			\arrow[from=2-2, to=2-3]
-			\arrow[from=2-2, to=3-2]
-			\arrow[from=2-3, to=2-4]
-			\arrow[from=2-3, to=3-3]
-			\arrow[from=2-4, to=2-5]
-			\arrow[from=2-4, to=3-4]
-			\arrow[from=3-1, to=3-2]
-			\arrow[from=3-2, to=3-3]
-			\arrow[from=3-3, to=3-4]
-			\arrow[from=3-4, to=3-5]
-			\arrow["\cong", from=3-4, to=4-4]
-		\end{tikzcd}
-	\end{center}
-
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
-%		\caption{Comparison between different definitions for Moishezon morphism}
-%		\label{fig:moishezon-morphism-definition}
-%	\end{figure}
-	In \cite{Shokurov}.
+	
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	
 	\bibliographystyle{amsalpha}
 	\bibliography{mybib.bib}
 \end{document}
