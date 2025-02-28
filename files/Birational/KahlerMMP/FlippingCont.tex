@@ -85,7 +85,7 @@
 	\section{Das-Hacon's approach to divisorial contraction for K\"ahler 3-fold MMP}
 	In this section, we will prove the following theorem.
 	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{DHdivisorial}
-		Let $(X,B)$ be a strong $\mathbf{Q}$-factorial K\"ahler 3-fold KLT pair. With the following condition holds
+		Let $(X,B)$ be a strong $\mathbb{Q}$-factorial K\"ahler 3-fold KLT pair. With the following condition holds
 		\begin{enumerate}
 			\item $K_X+B $ is pseudo-effective
 			\item $\alpha = [K_X+B + \beta]$ is nef and big class such that $\beta$ is K\"ahler,
@@ -115,9 +115,9 @@
 		
 		However, the coefficient of $S$ in $B$ is not 1, so that we need to take some scaling, 
 		
-		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbf{R}$-curve on the surface). 
+		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbb{R}$-curve on the surface). 
 		
-		Finally, we need to prove that $R\cdot S<0$. To do this, Batyrev cone theorem for mobile curve is applied. So that $\alpha|_S =  C_{\epsilon}+ \sum a_j H_j$. We try to prove that there exist a movable curve $H_j$ in the component such that $\alpha \cdot H_j = 0$. 
+		Finally, we need to prove that $R\cdot S<0$. To do this, Batyrev cone theorem for mobile curve is applied. 
 	\end{remark}
 	\begin{proof}
 		
@@ -129,39 +129,8 @@
 	
 	\subsection{Control the set of divisors being contracted}
 	
-	\subsection{Proof of the base pointness}
-	To prove the base point freeness result, we need the following lemma, the first one says that image of pull back of Bott-Chern is those classes that curves being contracted are trivial on it (assume the singularity is nice and ).
-	\begin{lemma}\label{pullBC}
-		Let $f:X\to Y$ be a morphism between normal compact complex spaces with rational singularity. If in addition one of the following two conditions hold,
-		\begin{enumerate}
-			\item $f$ is a proper bimeromorphic morphism between Fujiki varieties,
-			\item $f$ is surjective, there exist some boundary divisor $B$ such that $(X,B)$ is KLT. Moreover $(K_X+B)$ is $f$-big and nef.
-		\end{enumerate}
-		Then the pull back $$f^* : H^{1,1}_{\rm{BC}}(Y) \to H^{1,1}_{\rm{BC}}(X),$$is injective, and the image $${\rm{im}}(f^*) = \{\alpha \in H^{1,1}_{\rm}(Y)\mid \alpha \cdot C = 0,\  \forall\ C\in N_1(X/Z)\}.$$
-	\end{lemma}
-	Thus if the contraction morphism $f:X\to Z$ is $\alpha$-trivial, then there exists some $\alpha_Z \in H^{1,1}_{\rm{BC}}(Z)$ with $f^* \alpha_Z = \alpha$.
+	\subsection{Proof of the base point freeness}
 	
-	
-	\begin{remark}
-		Before proving the lemma, let us compare this result with the projective contraction theorem. Recall that in the projective setting, if $D$ is a Cartier divisor supporting some negative extremal ray $R$, then $D$ comes from the pull back (i.e. $D\in \text{im}(f^* : \text{NS}(Y) \to \text{NS}(X))$). The proof requires the base point free theorem to show that $mD$ is base point free. Thus, $mD$ is the pull back of Serre twisted line bundle via map associated to $mD$. Finally, using rigidty lemma to show that the Kodaira map coincides with the contraction $f:X\to Z$. Thus the divisor $mD$ is also pull back via $f:X\to Z$.
-		
-		On the other hand, the transcendental case is relatively easier. Since ... 
-	\end{remark}
-	\begin{proof}
-		
-	\end{proof}
-	To check $\alpha_Z$ is K\"ahler, we need the following (singular version) Demailly-P\u{a}un K\"ahlerness criterion. 
-	\begin{lemma}\label{DPcriterion}
-		Let $X$ be a compact normal complex variety. Let $\{\alpha\}\in H^{1,1}_{\text{BC}}(X)$ be a big and nef class. Then $\{\alpha\}$ is K\"ahler iff for any positive dimensional subvariety (or reduced analytic subset) $W$, the following holds true $$\int_W  (\alpha|_W)^{\dim W}>0.$$
-	\end{lemma}
-	
-	\begin{proof}
-		
-	\end{proof}
-	Now we can prove the base freeness for the divisorial contraction $f:X\to Z$, using Lemma \ref{pullBC} and Lemma \ref{DPcriterion}
-	\begin{proof}[Proof of base point freeness]
-		
-	\end{proof}
 	
 	\section{H\"oring-Peternell's approach for K\"ahler 3-fold MMP}
 	
@@ -170,8 +139,8 @@
 	%	\begin{center}
 		%		\begin{tikzcd}
 			%			&&& {H^0(\mathcal{X},R^2\pi_*\mathcal{O}_{\mathcal{X}})} \\
-			%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbf{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
-			%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbf{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
+			%			{} & {H^1(\mathcal{X},\mathcal{O}_{\mathcal{X}}^*)} & {H^2(\mathcal{X},\mathbb{Z})} & {H^2(\mathcal{X},\mathcal{O}_{\mathcal{X}})} & {} \\
+			%			{} & {H^1(X_s,\mathcal{O}_{X_s}^*)} & {H^2(X_s,\mathbb{Z})} & {H^2(X_s,\mathcal{O}_{X_s})} & {} \\
 			%			&&& {R^2\pi_*\mathcal{O}_{\mathcal{X}}(s)}
 			%			\arrow["\cong", from=1-4, to=2-4]
 			%			\arrow[from=2-1, to=2-2]
