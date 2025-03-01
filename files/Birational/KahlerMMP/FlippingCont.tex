@@ -14,7 +14,7 @@
 	\begin{center}
 		\framebox{
 			\vbox{
-				\hbox to 5.78in { {\bf Divisorial contraction in K\"ahler MMP reading notes} \hfill #2 }
+				\hbox to 5.78in { {\bf Flipping contraction in K\"ahler MMP reading notes} \hfill #2 }
 				\vspace{4mm}
 				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
 				\vspace{2mm}
@@ -82,57 +82,50 @@
 	\tableofcontents
 	\section{Overview}
 	
-	\section{Das-Hacon's approach to divisorial contraction for K\"ahler 3-fold MMP}
+	\section{Das-Hacon's approach to flipping contraction for K\"ahler 3-fold MMP}
 	In this section, we will prove the following theorem.
 	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{DHdivisorial}
 		Let $(X,B)$ be a strong $\mathbb{Q}$-factorial K\"ahler 3-fold KLT pair. With the following condition holds
 		\begin{enumerate}
 			\item $K_X+B $ is pseudo-effective
 			\item $\alpha = [K_X+B + \beta]$ is nef and big class such that $\beta$ is K\"ahler,
-			\item The negative extremal ray $R = \overline{\text{NA}}(X) \cap \alpha^\perp$ is divisorial.
+			\item The negative extremal ray $R = \overline{\text{NA}}(X) \cap \alpha^\perp$ is flipping type.
 		\end{enumerate}
-		Then there exists an $\alpha$-trivial divisorial contraction $$f:X\to Z,$$such that there exist some K\"ahler form $\alpha_Z$ on $Z$ such that $\phi^* (\alpha_Z) = \alpha$.
+		Then there exists an $\alpha$-trivial flipping contraction $$f:X\to Z,$$such that there exist some K\"ahler form $\alpha_Z$ on $Z$ such that $\phi^* (\alpha_Z) = \alpha$. And the flip exist.
 	\end{theorem}
-	Before going to the proof let us briefly sketch the idea. We first try to prove that the null locus $\text{Null}(\alpha)$ is the Moishezon surface whose smooth model is projective uniruled. We then take a DLT modification $$\varphi:(X',\Delta')\to (X,\Delta)$$ of the pair $(X,\Delta = B+(1-b)S)$ (note that this pair $(X,\Delta)$ differs from the original pair $(X,B)$ and it is not a KLT pair). 
-	
-	We show that the DLT modification $\varphi$ preserve the geometry outside the null locus $\text{Null}(\alpha)$. We then run the relative K\"ahler MMP for $(X',\Delta')$ over $(X,\Delta)$, which becomes the core of the proof. Since it's K\"ahler 3-fold MMP, the termination is known. So that it's possible to produce positivity (say $K_{X^m} + \Delta^m$ is nef over $(X,\Delta)$) by the termination theorem. 
-	
-	We need to control the divisors being contracted in the MMP. 
-	
-	
-	So that the induced bimeromorphic map $f:X\dashrightarrow X^m$ is a morphism, and this is the divisorial contraction we want. 
-	
-	In the final step, we will show that the base point freeness holds for the divisorial contraction, say $\alpha$ as pull back of some K\"ahler form $\alpha_Z$ down stairs. 
-	
-	\subsection{The null locus is a Moishezon surface whose smooth model is projective uniruled}
-	In this subsection, we will proof the following lemma.
-	\begin{lemma}
-		In the same setting as Theorem \ref{DHdivisorial}. The null locus $\text{Null}(\alpha)$ is a irreducible Moishezon surface, whose smooth model is projective uniruled. Such that the curves in the negative extremal ray $R$ covers the surface $S$ with $$R \cdot S <0.$$
-	\end{lemma}
 	\begin{remark}
-		Let us breifly sketch the idea. The class $\alpha|_S, \alpha|_{S^\nu}, \alpha|_{S'}$ play important role in this lemma (for simplicity let us assume for now that $S$ is a smooth surface). The idea is to try to use that if a smooth surface is not pseudo-effective, then it's uniruled projective surface. The non-pseudo-effectiveness comes from some intersection number analysis. To be more precise, we will use that $S = \text{Null}(\alpha)$, so that volume $\text{vol}(\alpha|_S)  = (\alpha|_S)^2= 0$ (by definition of null locus). In particular, the restriction $\alpha|_S$ can not be a big class. On the other hand, we can apply adjunction to $$\alpha|_S  = (K_X+B+\beta)|_S.$$
-		If the coefficient of $S$ in $B$ is 1, then everything is nice and we get $$\alpha|_S = (K_X+B ' + S + \beta)|_S = K_S+ B'|_S + \beta|_S.$$Since $B'|_S\ge 0$ and $\beta|_S$ Kahler, this will imply that $K_S$ can not be pseudo-effective. 
-		
-		However, the coefficient of $S$ in $B$ is not 1, so that we need to take some scaling, 
-		
-		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbb{R}$-curve on the surface). 
-		
-		Finally, we need to prove that $R\cdot S<0$. To do this, Batyrev cone theorem for mobile curve is applied. 
+		Before proving the theorem, let us briefly sketch the idea of the proof. 
 	\end{remark}
-	\begin{proof}
-		
-	\end{proof}
+	%\subsection{The null locus is a Moishezon surface whose smooth model is projective uniruled}
+	\subsection{Apply the DLT modification}
+	\subsection{Find a negative extremal ray on one of the component $S' \subset \lfloor{\Delta'}\rfloor$}
+	\subsection{Apply the PLT contraction theorem}
+	In this step, we try to extend to contraction from $S'\to T'$ to $X'\to Z'$. 
 	
-	\subsection{Take DLT modification}
+	\subsection{Prove the contraction morphism $X'\to Z'$ is divisorial or flipping contraction}
+	We try to prove the contraction we just contructed is a divisorial or flipping contraction, thus it's an MMP step.
 	
-	\subsection{Run the relative MMP}
+	\subsection{Control the MMP}
+	Similar to the divisorial contraction case, the MMP we just contructed has some good properties, we will show that 
+	\subsection{Find the contraction $f:X\to Z$}
+	In this step, we take the normalization on the graph of the map $\psi:X\dashrightarrow X^+$. Let $\eta:=\alpha+\delta\left(K_X+B\right)$, we try to show that $$E = p^*\eta - q^* \eta^+,$$satisfies the condition that $-E|_E$ is ample. So that we can apply the Grauert contraction theorem, and get a contraction $g:W\to Z$. 
 	
-	\subsection{Control the set of divisors being contracted}
+	We then try to show that this contraction will induce $f:X\to Z$ and $f^+ : X^+ \to Z$ as the diagram below shows. 
+	\begin{center}
+		\begin{tikzcd}[ampersand replacement=\&] {X'} \&\& {X^+} \\ X \&\& W \\ \&\&\& Z \arrow["\phi", dashed, from=1-1, to=1-3] \arrow["\nu"', from=1-1, to=2-1] \arrow["{f^+}", from=1-3, to=3-4] \arrow["\psi"{description}, dashed, from=2-1, to=1-3] \arrow["f"', from=2-1, to=3-4] \arrow["q", from=2-3, to=1-3] \arrow["p"{description}, from=2-3, to=2-1] \arrow["g"{description}, from=2-3, to=3-4] \end{tikzcd}
+	\end{center}
 	
-	\subsection{Proof of the base point freeness}
+	We then show that $f:X\to Z$ will contract every curves in the negative extremal ray $R$ and it's a $(K_X+B)$-negative contraction.
 	
 	
-	\section{H\"oring-Peternell's approach for K\"ahler 3-fold MMP}
+	\subsection{Prove base point freeness}
+	Just as what we did in the divisorial contraction case, we try to use that fact that proper bimeromorphic morphism $f:X\to Z$ between K\"ahler varieties with rational singularity satisfies the condition $$\text{im}(f^*) = \{\alpha \in H^{1,1}_{\rm{BC}}(X)\mid \alpha \cdot C = 0 ,\ \forall\ C\in N_1(X/Z)\}.$$Then apply singular version Demailly-P\u{a}un Kahlerness criterion to the big and nef class $\alpha_Z$.
+	
+	
+	\subsection{Prove the existence of flips in any dimension}
+	
+	
+	\section{H\"oring-Peternell's approach for flipping contraction}
 	
 	
 	

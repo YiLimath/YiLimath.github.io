@@ -1,0 +1,14 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{DH24}
+
+\bibitem[DH24]{DH24}
+Omprokash Das and Christopher Hacon, \emph{On the minimal model program for
+  k\"ahler 3-folds}, 2024.
+
+\end{thebibliography}
