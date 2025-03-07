@@ -35,3 +35,5 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 (8) [Supplement: How to use Harder-Narasimhan filtration](),
 
+(9) [Supplement: Applications of Leray Spectral sequence in fibration problem](),
+
