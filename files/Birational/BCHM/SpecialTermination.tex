@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Special termination, special finiteness reading note} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{BCHM reading notes}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{4 --- 06, 06, 2024}{Spring 2024}{}{Yi Li}
+	\tableofcontents
+	\section{Overview}
+	The aim of this note is try to prove \cite[Lemma 4.4]{BCHM}, which says global finiteness in dimension $(n-1)$ implies special finiteness in dimension $n$. And \cite[Lemma 5.6]{BCHM} which shows special finiteness and existence of pl-flips in dimension $n$ implies existence of minimal model in dimension $n$. 
+	
+	\section{Global finiteness in dimension $n-1$ implies special finiteness in dimension $n$}
+	In this section, we will prove the following result.
+	
+	\begin{theorem}
+		
+	\end{theorem}
+	Let us first briefly sketch out the idea of the proof. We try to show that the MMP will terminate in some neighborhood of the divisor $S = \lfloor{\Delta}\rfloor$. The basic idea is that we try to use the adjunction technique, showing that the restriction terminates at $S$. An important step here is to try to show that the restriction of the weak log canonical model on $S$ is still a log canonical model. Then we try to show that as long as the singularity is controlled, termination also happens in some neighborhood of $S$.
+	
+	\subsection{Restriction of log canononical model on boundary divisor}
+	We try to prove the restriction of the weak log canonical model on $S$ is still a weak log canonical model. 
+	\begin{lemma}
+		Let $(X,\Delta = S+A+B)$ be a log smooth pair (over $U$), such that $S = \lfloor{\Delta}\rfloor$, $B\ge 0$ and $A$ is general ample effective $\mathbb{Q}$-divisor. Assume that $(S, (\Delta -S)|_S)$ is terminal. Let $\phi:X \dashrightarrow Y$ be the weak log canonical model $(X,\Delta)$ over $U$, which does not contract $S$, with $T = \phi_* S$. The induce induced birational map $\tau: S \dashrightarrow T$ is weak log canonical model for $(S,\Xi)$ for some divisor $A |_S \le  \Xi  \le \Theta = (\Delta -S)|_S$.
+		
+		Moreover, if we write $$(K_Y + \phi_* \Delta)|_T =  K_T +\Psi,$$then $\tau_* \Xi = \Psi$.
+		
+	\end{lemma}
+	Let us briefly sketch out the idea of the proof. 
+	
+	\begin{proof}
+	\end{proof}
+	\subsection{Local uniqueness of canonical models near $S$ when singularity on $S$ being controlled}
+	It's well known that log canonical model for a pair $(X,\Delta)$ is unique. If we varying the boundary $\Delta_i$ (with  $S=\left\llcorner\Delta_i\right\lrcorner$), we still have local uniqueness of canonical model around $S$, when singularities are controlled. 
+	\begin{lemma}
+		Let $(X,\Delta_i)$ (with $i =1 ,2$) be projective PLT pair over $U$, with  $S=\left\llcorner\Delta_i\right\lrcorner$.  Let $$\phi_i : X \to Y_i,$$be log canonical model of $(X,\Delta_i)$ over $U$ which does not contract $S$. Let $\tau_i: S \dashrightarrow T_i$ be the restriction of $\phi_i$ on $S$ and $(K_{Y_i}+ T_i)|_{T_i}= K_{T_i}+ \Phi_i$. If the following condition holds 
+		\begin{itemize}
+			\item $\chi: Y_1 \dashrightarrow Y_2$ is small,
+			\item The restriction $\sigma: T_1 \dashrightarrow T_2$ is isomorphism,
+			\item The coefficients $\sigma^* \Psi_2  = \Psi_1$ and, for every component $B$ of the support of $\left(\Delta_2-S\right)$, we have $
+			\left.\left(\phi_{1 *} B\right)\right|_{T_1}=\sigma^*\left(\left.\left(\phi_{2 *} B\right)\right|_{T_2}\right),
+			$.
+		\end{itemize}
+		\begin{center}
+			\begin{tikzcd}[ampersand replacement=\&] \& X \\ {Y_1} \&\& {Y_2} \\ {T_1} \&\& {T_2} \arrow["{\phi_1}"', dashed, from=1-2, to=2-1] \arrow["{\phi_2}", dashed, from=1-2, to=2-3] \arrow["\chi", dashed, from=2-1, to=2-3] \arrow[hook, from=3-1, to=2-1] \arrow["\sigma", dashed, from=3-1, to=3-3] \arrow[hook, from=3-3, to=2-3] \end{tikzcd}
+		\end{center}
+		Then the induced birational map $Y_1 \dashrightarrow Y_2$ is isomorphism on some neighborhood of $S$ (or say neighborhood of $T_1$ and $T_2$). 
+	\end{lemma}
+	
+	\subsection{Proof of the theorem}
+	
+	
+	
+	
+	%	\begin{figure}[H]
+		%		\centering
+		%		\includegraphics[width=0.85\linewidth]{"Moishezon morphism definition"}
+		%		\caption{Comparison between different definitions for Moishezon morphism}
+		%		\label{fig:moishezon-morphism-definition}
+		%	\end{figure}
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
+\end{document}

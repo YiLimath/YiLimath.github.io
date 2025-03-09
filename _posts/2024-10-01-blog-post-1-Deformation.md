@@ -23,4 +23,3 @@ Here is the outline of this series of notes
 
 
 (6) [Supplement: dbar method and Ran's T1 lifting theorem with applications](),
-

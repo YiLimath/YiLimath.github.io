@@ -49,7 +49,7 @@ Here is the outline for Part II. Hacon-Mckernan extension and variants
 Here is the outline for Part III Finiteness and Termination problems 
 
 
-(1) [Termination Note-1: Special finiteness](),
+(1) [Termination Note-1: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf), [Update 3.9]
 
 (2) [Termination Note-2: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf).
 
