@@ -1,5 +1,5 @@
 ---
-title: 'Birational Geometry Note: Fibration in Algebraic Geometry'
+title: 'Birational Geometry Note: Fibration and Foliation in Algebraic Geometry'
 date: 2024-12-01
 permalink: /posts/2024/12/Fibration-in-Birational-Geometry/
 tags:
@@ -35,5 +35,4 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 (8) [Supplement: How to use Harder-Narasimhan filtration](),
 
-(9) [Supplement: Applications of Leray Spectral sequence in fibration problem](),
-
+(9) [Supplement: Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf),

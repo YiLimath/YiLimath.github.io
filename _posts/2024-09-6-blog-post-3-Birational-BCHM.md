@@ -42,11 +42,19 @@ Here is the outline for Part II. Hacon-Mckernan extension and variants
 (3) [Extension Problem Note-3: Demailly-Hacon-Paun DLT extension](),
 
 
+---
 
+Here is the outline for Part III. Existence of minimal model, existence of good minimal model
+
+(1) [Existence of minimal model Note-1: BCHM theorem C existence of minimal model for effective pair](),
+
+(2) [Existence of minimal model Note-2: DHP theorem ](),
+
+(3) 
 
 ----
 
-Here is the outline for Part III Finiteness and Termination problems 
+Here is the outline for Part IV. Finiteness and Termination problems 
 
 
 (1) [Termination Note-1: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf), [Update 3.9]
@@ -56,15 +64,16 @@ Here is the outline for Part III Finiteness and Termination problems
 
 ---
 
-Here is the outline for Part IV Finite generation of Cox Ring
+Here is the outline for Part V. Finite generation of Cox Ring
 
 (1) [Finite Generation Note-1: Finite generation of canonical ring, Cox ring](),
 
 
 ---
 
-Here is the outline for Part III. Non-vanishing and abundance
+Here is the outline for Part VI. Non-vanishing and abundance
 
 (1) [NonVanishing Note-1: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf) [Update 2.21]
 
 ---
+

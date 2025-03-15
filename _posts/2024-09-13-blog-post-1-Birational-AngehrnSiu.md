@@ -7,8 +7,7 @@ tags:
   - Complex analytic geometry
 ---
 
-The aim of this not is try to summarize the important idea in the proof of Fujita conjecture. 
-
+The aim of this note is to try to summarize the important idea in the proof of the Fujita conjecture.
 
 
 ## Note-1 Theorem of Angehrn and Siu
