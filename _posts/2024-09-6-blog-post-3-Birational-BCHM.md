@@ -50,7 +50,6 @@ Here is the outline for Part III. Existence of minimal model, existence of good 
 
 (2) [Existence of minimal model Note-2: DHP theorem ](),
 
-(3) 
 
 ----
 
@@ -77,3 +76,35 @@ Here is the outline for Part VI. Non-vanishing and abundance
 
 ---
 
+Here is the outline for Part V. Minimal model, good minimal model and canonical model.
+
+
+(1) [Part I: Existence of minimal model, good minimal model, canonical model]().
+
+(2) [Part II: Basic properties of minimal model, good minimal models, canonical model]().
+
+(3) [Part III: Minimal model, good minimal model, canonical model under birational morphism]().
+
+(4) [Part IV: What will be contracted by the MMP?]().
+
+(5) [Part V: Minimal model, good minimal model, canonical model in family]().
+
+(6) [Part VI: Semi-stable MMP]().
+
+
+
+----
+
+Here is the outline of Part VI partial modification
+
+(0) [Note-1:Log resolution, discrepancy]()
+
+(1) [Note-1: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf).
+
+
+(2) [Note-2: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf),
+
+(3) [Note-3: Semi log modificaiton](),
+
+
+---
