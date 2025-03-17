@@ -9,6 +9,11 @@ tags:
 
 We will focus on the Proporties of Moduli spaces in this part of notes. 
 
+The general philosophy of moduli theory is: 
+> By studying the moduli over a geometric object, we can completely determine the geometry of the object. Birational geometry fit into this guiding principal really well, the guiding principal of birational geometry is the geometry of a variety is determined by the curves and divisors on that variety.
+
+
+
 (0) [Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf),
 
 (1) [Note-1: Properness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf),
@@ -38,3 +43,4 @@ We will focus on the Proporties of Moduli spaces in this part of notes.
 (10) [Note-10: Moduli space of K3 surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf),
 
 
+---
