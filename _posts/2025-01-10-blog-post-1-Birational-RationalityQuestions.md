@@ -21,31 +21,3 @@ Here is the outline of the notes
 
 (5) [Note-5: On Shokurov rationality conjecture](),
 
-
-
----
-## Note-3: Deformation of uniruled varieties
----
-
-The aim of this note is to give an introduction on the Deformation of uniruled problem. 
-
-
-
-For detailed information see my reading notes [Deformation of uniruled varieties](https://yilimath.github.io/files/Birational/DefUniruled.pdf)
-
-
-
-
----
-## Note-4: Rationally connectedness of Fano variety
----
-
-
-
----
-## Note-5: On Shokurov rationality conjecture
----
-The aim of this note is to give an introduction on the Shokurov rationally connectedness conjecture
-
-For detailed information see my reading notes [Shokurov Rationally Connectedness conjecture](https://yilimath.github.io/files/Birational/ShokurovRationallyConnect.pdf)
-
