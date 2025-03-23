@@ -6,10 +6,9 @@ tags:
   - Birational geometry
 ---
 
-In this part of note we will introduce adjunction theory in Birational Geometry. Among the techniques in birational geometry, adjunction theory is one of the most
-powerful tools. It allows to relate the geometry, and in particular the singularities,
-of the ambient variety with the one of appropriate subvarieites. This note is organized as follows. The first part is about adjunction formula (with varies type of singularities). The second part is about the inversion of adjunction with different variants. The third part is about subadjunction formula (which is sometimes also called adjunction on the NKLT centers). The last part is about the canonial bundle formulas (which is sometimes also called adjunction on the fibration). A nice summary about it can be found in the paper [Anti-pluricanonical systems
-on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01). Our note will base on this paper. And we try to give a more detailed introduction to the adjunction theory.
+The aim of this note is to introduce adjunction theory in birational geometry. Among the various techniques in birational geometry, adjunction theory is one of the most powerful tools. It allows us to relate the geometry—particularly the singularities—of the ambient variety to those of appropriate subvarieties.
+
+A useful summary can be found in [Anti-pluricanonical systems on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01)). Our note is based on this paper, and we aim to provide a more detailed introduction to adjunction theory.
 
 
 For detailed information see my reading notes 
@@ -30,11 +29,4 @@ For detailed information see my reading notes
 
 (8) [Canonical bundle formula for generalized Kahler pairs](),
 
-
----
-## Note-1 Adjunction formulas
----
-
-### Easy adjunction theorem
-The theorem says that discrepancy inside S can be seen outside. Thus, bad singularity inside S can be detected from outside. If the singularity of (X,B+S) is nice, then the singularity inside S can not be too bad. How to prove this? Well 
 

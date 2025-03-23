@@ -8,7 +8,7 @@ tags:
 ---
 
 We will focus on the Proporties of Moduli spaces in this part of notes. The general philosophy of moduli theory is: 
-> The moduli over a geometric object completely determine the object. Birational geometry fits into this guiding principle very well, as one important idea is that the geometry of a variety is determined by the curves and divisors on that variety.
+> The moduli over a geometric object completely determine the object. Birational geometry fits into this guiding principle very well, as one important idea (in birational geometry) is that the geometry of a variety is determined by the curves and divisors on that variety.
 
 
 
