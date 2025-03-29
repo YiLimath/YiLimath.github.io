@@ -39,6 +39,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{proofidea}[theorem]{PROOF IDEA}
 
 % 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
 \topmargin 0pt
@@ -81,7 +82,7 @@
 	\lecture{4 --- 25, 02, 2025}{Spring 2025}{}{Yi Li}
 	\tableofcontents
 	\section{Overview}
-	
+	The aim of this note is to summarize the construction of contraction morphism for K\"ahler 3 folds.
 	\section{Das-Hacon's approach to divisorial contraction for K\"ahler 3-fold MMP}
 	In this section, we will prove the following theorem.
 	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{DHdivisorial}
@@ -117,19 +118,120 @@
 		We restrict the class on the surface $S$. If $S_i \ne S$ for all $i$, then $$\alpha|_S = \epsilon \omega|_S + \sum c_i (S_i \cap S) + P|_S.$$The right hand side is big, which contradict to the fact $S$ is null locus of $\alpha$. Thus there exists some component say $S_1 = S$. We try to make the coefficient of $S$ in $\alpha$ is 1. So that we take the \textbf{scaling} that $$(1 + \frac{1-b}{c_1})\alpha|_S= (K_X+B +\beta + \frac{1-b}{s_1}(\sum s_i S_i+ P))|_S.$$
 		Note that in this case, the coefficient of $S$ in $\alpha$ is 1. So that we can apply the adjunction $$(K_X+B' + \beta + S + \sum_{j\ge 2} s_j S_j + P)|_S = K_S+B'_S + \beta|_S + \sum_{j \ge 2} s_jS_j \cap S+ P|_S,$$which will imply that $K_S$ is not pseudo-effective. And by the classification theorem of complex surfaces, we know that $S$ is uniruled (and projective as $S$ is assumed to be smooth). 
 		
-		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class $\alpha|_S$ can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbf{R}$-curve on the surface). 
+		What nice on the projective uniruled surface is that the (0,2)-Hodge number is 0, so that the Bott-Chern class $\alpha|_S$ can be realized as a $\mathbf{R}$-divisor (which is also a $\mathbf{R}$-curve on the surface). On the other hand since $\alpha|_{S'}$ is a nef class, this will consequently define a movable curve, thus we can apply the Beytev cone theorem, and write $$\alpha|_{S'} = C_{\epsilon }+ \sum  c_i M_i$$
+		with $M_i$ being a finite set of movable curves. Since $M_i$ movable, if we can prove that there exist some $M_i$ that is $\alpha'$-trivial. Then we find a $\alpha'$-trivial covering family of $S$. 
+		
+		
 		
 		Finally, we need to prove that $R\cdot S<0$. To do this, Batyrev cone theorem for movable curve is applied. So that $\alpha|_S =  C_{\epsilon}+ \sum a_j H_j$. We try to prove that there exist a movable curve $H_k$ in the component such that $\alpha \cdot H_k = 0$ and it generates the negative extremal ray $R$. So that apply it to the Zariski decomposition of $\alpha -\epsilon \omega = s_1 S + \sum_{j\ge 2} s_j S_j + P $, we get $$s_1H_i \cdot S = (\alpha -\epsilon \omega)\cdot H_k - (\sum s_j S_j \cdot H_k + P|_S \cdot H_k)<0,$$ using that $\omega$ is K\"ahler, $H_k$ meets $S_j$ properly, and $P|_S$ is pseudo-effective and thus intersection with movable curve is non-negative. 
 	\end{remark}
 	\begin{proof}
+		We know give a complete proof based on the idea above. Since we assume that $R$ is divisorial, thus the null locus $\text{Null}(\alpha)$ by definition is a surface, it may have multiple components, pick one of the component $S \subset \text{Null}(\alpha)$. Since $\alpha$ is big and nef, thus if $\epsilon$ sufficient small, then $\alpha - \epsilon \omega$ is still big. Take the Zariski decomposition of the the class $$\alpha - \epsilon \omega = P + \sum s_i S_i.$$We claim that the component $S$ is actually some irreducible component of the Zariski decomposition. The proof idea is very similar to the Horing-Peternell. We restrict the Zariski decomposition on the surface $S$. If we assume that $S \ne S_i$ for any $i$. Then the restriction becomes $$(\alpha- \epsilon \omega)|_S = P|_S + \sum s_i 
+		S_i \cap S,$$since $P$ is modified nef, the restriction on a irreducible divisor becomes nef. On the other hand,  since $s_j \ge 0$ this means the RHS is a pseudo-effective divisor. Since $\epsilon >0$ this means that $$\alpha|_S = \epsilon \omega|_S + P|_S + \sum s_i S_i \cap S$$ which is a big divisor. 
 		
+		On the other hand, since we assume that $S \subset \text{Null}(\alpha)$, which means that the volume $$\int_S (\alpha|_S )^2 =0$$(as by definition the null locus $$\text{Null}(\alpha) = \bigcup _{V\subset X, \int (\alpha|_V)^{\dim V} = 0} V $$,
+		
+		Therefore $\alpha$ is not big. Which gives the contradiction. 
+		
+		
+		Now we can apply the adjunction, let $b =\text{mult}_S(B)$ and therefore $$S = \frac{1}{s}(\alpha - \epsilon \omega 
+		-P- \sum_{j\ge 2} s_j S_j),$$therefore if we if we scale $\alpha$ with $1 + \frac{1-b}{s}$ then the coefficient of $S$ will becomes 1. And we consider the $$(1+ \frac{1-b}{s} )\alpha|_S = (K_X+B +\beta + \frac{1-b}{s} (\epsilon \omega + P + sS + \sum s_j S_j))|_S = (K_X + B' + S + \beta + c' \omega + \sum_{j\ge 2} s_j S_j)|_S  $$ then it will implies that $K_XS$ is not pseudo-effective, for otherwise. the restriction of $\alpha|_S$ will be a big class. 
+		
+		Therefore, by the classification result of surfaces, we know that $S$ is a uniruled surface, such that the plurigenera will vanish. In particular, it's a smooth projective uniruled surface. 
+		
+		Our next goal is to prove that the surface $S$ is covered by the $\alpha$-trivial rational curves. The idea is try to find a movable curve $M_i$ on $S'$ that is $\alpha$-trivial. Then since push forward of movable curve under birational morphism is still movalbe. And by the projection formula, this will define a movable curve downstairs. 
 	\end{proof}
 	
-	\subsection{Take DLT modification}
+	\subsection{Take minimal DLT modification}
+	The idea is try to add the null locus $S$ into the NKLT part of the boundary divisor $(X, B+ (1-b)S)$ with $b = \text{mult}_B(S)$.
+	\begin{lemma}\label{DLTmod}
+		There exist a projective resolution $\mu:X' \to X$ such that
+		\begin{enumerate}
+			\item $(X',\Delta')$ is a $\mathbb{Q}$-factorial DLT pair, with $\Delta' = \mu^{-1}_* (\Delta)+ \text{Ex}(\mu)$,
+			\item $K_{X'}+\Delta'$ is nef over $X$, and $\mu^* (K_{X}+\Delta) - (K_{X'}+ \Delta')\ge 0$,
+			\item The following relation holds $$K_{X'}+ \Delta'= \mu^* (K_X+B) + (1-b) \mu^{-1}_* S + \sum a_j E_j,$$then $a_j >0$ for all $j$. 
+		\end{enumerate}
+	\end{lemma}
+	\begin{remark}
+		One may ask why we need to take a DLT modification? There are several reasons. 
+		
+		First, we will apply the Das-Hacon PLT contraction theorem in the later step, which needs some control on the singularity. 
+		
+		Second, we need to control the place being contracted (which is the core of the proof). 
+	\end{remark}
+	We first take $b = \text{mult}_S (B)$ and define a new divisor $\Delta = B + (1-b)S$, we then take the log resolution so that $$\mu: X' \to X$$with $$\Delta ' = \mu^{-1}_* (\Delta) + \text{Ex}(\mu).$$Since log smooth pair with SNC divisor is DLT, under the log resolution, we have a Q-factorial DLT pair.
 	
+	So that we can run the analytic BCHM, which will terminate $$\widetilde{X}\dashrightarrow X',$$ such that $K_{X'} + \Delta '$ is relative nef over $X$. Therefore we have $$\mu^* (K_X+\Delta )- (K_{X'}+\Delta ')\ge 0$$by negativity lemma. 
+	
+	On the other hand, we have $(X,B)$ being a KLT pair.
+	\begin{proof}
+		
+	\end{proof}
 	\subsection{Run the relative MMP}
+	The core of the proof of Theorem \ref{DHdivisorial} lies in the existence of a relative MMP in this section.
 	
+	\begin{theorem}
+		Let $(X',\Delta')$ be the output of the Lemma \ref{DLTmod}. We can run the $(K_{X'}+\Delta')$-MMP $$(X',\Delta') \dashrightarrow (X^{1},\Delta^{1})\dashrightarrow  \cdots  \dashrightarrow (X^m ,\Delta^m),$$ such that the following conditions hold
+		\begin{enumerate}
+			\item the birational contraction $\phi^i:X \dashrightarrow X^{i}$ is $\alpha'$-trivial,
+			\item $\phi^i$ is isomorphism over $U$, and $\left\lfloor\Delta^i\right\rfloor = \text{supp}(\Theta^i)$,
+			\item $K_{X^{i}}+ \Delta^{i}\equiv_{\alpha^i}\Theta^i$ such that the NKLT locus $\left\lfloor\Delta^i\right\rfloor \subset W^i:= X^i - X^i_U$, 
+			\item The MMP terminate at the pair $(X^m,\Delta^m)$ such that any prime divisor $S_i$ in the $\lfloor{\Delta^m}\rfloor$ is 
+		\end{enumerate}
+	\end{theorem}
+	As usual, let us briefly sketch out the idea of the proof first. 
+	\begin{proof}
+		
+	\end{proof}
 	\subsection{Control the set of divisors being contracted}
+	What is interesting in the MMP process above is that we can have some control of the divisors being contracted. 
+	
+	We first apply the nef reduction on the normalization of the surface $S^\nu \to S$. Denote it $\nu: S^\nu \to T$, then given a component $P \subset \mu^* S$, it's easy to see that 
+	
+	We claim
+	\begin{proposition}
+		\begin{itemize}
+			\item If $n(\alpha|_{S^\nu}) = 0$, then the MMP $\phi^m:X' \dashrightarrow X^m$ will contract $\mu^*S$ and no other divisors
+			\item If $n(\alpha|_{S^\nu}) = 1$, then the MMP $\phi^m: X' \dashrightarrow X^m$ will contract $S'$ and those components $E$ in $S' + \sum E_i$ such that $n(\alpha|_{E}) =1$.
+		\end{itemize}
+	\end{proposition}
+	
+	\begin{remark}
+		In particular, we can prove that when descend to $f: X \dashrightarrow X^m$,
+		\begin{itemize}
+			\item If $n(\alpha|_{S^\nu}) = 0$, then 
+			\item If $n(\alpha|_{S^\nu}) = 1$, 
+		\end{itemize}
+	\end{remark}
+	Since we have shown that $\lfloor{\Delta^m}\rfloor = 0$, the next proposition shows that the MMP $X' \dashrightarrow X^m$ actually descends to a morphism $f:X\to Z$. 
+	
+	\begin{proposition}
+		The induced bimeromorphic map $f:X \to Z: =X^m $ is actually a morphism.
+	\end{proposition}
+	\begin{proofidea}
+		The idea is simple, take the resolution of the graph of the bimeromorphic map $f: X \dashrightarrow X^m$, with $p:W\to X$ and $q:W\to X^m$. So that by rigidty lemma, if all the $p$-exceptional curve is also $q$-exceptional, then the bimeromorphic map is actually a morphism. 
+		
+		We prove this by contradiction, if there exist some curve $C \subset W$ such that $p_* (C) = 0$ but $q_* (C) \ne 0$, we pick a K\"ahler class $\omega^m$ on $X^m$. If we can prove that $q^* (\omega^m)$ is the pull back, say $$p^*(\omega + rS) = q^* \omega^m.$$ 
+		
+		Then this will deduce the contradiction, as $$0<q_*(C) \cdot \omega^m  = p^*(\omega+ rS) \cdot C = 0.$$
+		
+		To see this, apply that $N^1(W/X)$ is generated by some $p$-exceptional divisors $E_1, ... , E_k$. Thus the divisor $$q^* \omega ^m  + \sum c_i E_i \equiv_X 0,$$and therefore there exist some $\omega \in H^{1,1}_{\rm{BC}}(X)$ such that $$q^* \omega^m + \sum c_i E_i = p^* \omega.$$ 
+		
+		Note that $S \cdot R < 0$, there exist some $r\in \mathbb{R}$ such that $(\omega + rS)\cdot R = 0$. We claim $$Q = \sum c_i E_i + r p^* S =0$$ which complete the proof of the proposition. To do this, we will use the negativity lemma. We try to show
+		
+		(1) The $Q$ is $q$-exceptional. Since we know that $\Theta^m = 0$, therefore all the $\mu$-exceptional part being contracted by $X' \dashrightarrow X^m$. And consequently, the birational map $X^m \dashrightarrow X$ is small. In particular, the map $f:X \dashrightarrow Z$ does not extract any divisor (so that any $p$-exceptional \textbf{divisor} is also $q$-exceptional \textbf{divisor}). In particular we know that the first terms $\sum c_i E_i$ is $q$-exceptional. On the other hand, since $f: X \dashrightarrow Z$ contract $S$ (i.e. $f_* S = 0$), so that the second term $p^*S$ satisfies $$f_* S = q_* (p^* S) = 0,$$i.e. the second term is also $q$-exceptional.
+		
+		(2) The $Q + q^* \omega^m$ is $q$-numerical trivial. That is for any $q$-exceptional curve $C$, we have $$(Q+ q^* \omega^m )\cdot C = 0.$$
+		
+		This is clear, since by definition $Q+ q^* \omega ^m  = p^* (\omega + r S)$ and therefore: if $C$ is also $p$-exceptional, then the intersection $(*)$ clearly holds. If $C$ is not $p$-exceptional (i.e. $p_*(C) \ne 0$). Since $$\alpha \cdot p_* (C) = C \cdot p^*(\alpha) = C \cdot q^*(\alpha^m) = 0.$$
+		(I am not pretty sure at this step, maybe $C \cdot p^*(\alpha) = 0$ use the $\alpha$ trivial of the contraction).
+		
+		Therefore this will imply that $$(\omega + rS) \cdot p_* C = 0.$$
+		
+		As a consequence, $$p^*(\omega + rS) \cdot C = (q^*(\omega^m)+ Q) \cdot C = 0.$$which is what we want.
+		
+		
+	\end{proofidea}
 	
 	\subsection{Proof of the base pointness}
 	To prove the base point freeness result, we need the following lemma, the first one says that image of pull back of Bott-Chern is those classes that curves being contracted are trivial on it (assume the singularity is nice and ).
@@ -162,11 +264,71 @@
 	\end{proof}
 	Now we can prove the base freeness for the divisorial contraction $f:X\to Z$, using Lemma \ref{pullBC} and Lemma \ref{DPcriterion}
 	\begin{proof}[Proof of base point freeness]
+		Compared with the flipping contraction case, this case is a bit harder. The reason is, for flipping contraction, the flipping curve being contracted to points, and thus there is no positive dimensional subvariety contains in it. In the divisoral contraction case, we need to consider two scenario, 
+		
+		\textbf{Case 1.} When the positive dimensional subvariety $W '\subset f(S)$. We need to use the condition that curve $C$ not being contracted must have positive intersection with $\alpha$. Since we proved that $S$ is irreducible. Thus only needs to consider that $W'= f(S)$ and it's a irreducible curve. Therefore, we may find some curve $W\subset S$ upstairs dominating $W'$. 
+		
+		Now use the condition that the curve $W'$ not being contracted by $f$, it means $$W' \cdot \alpha >0.$$
+		And therefore, the Kahlerness of $\alpha_Z$ is proved in this case.
+		
+		\textbf{Case 2.} When the positive dimensional subvariety $W'\not \subset f(S)$. In this case, we can consider the strict transform of $W'$ under $f$. And by the projection formula, we have $$\alpha_Z^{\dim W'}\cdot W' = (f^* \alpha_Z )^{\dim W}\cdot W =  \alpha ^{\dim W} \cdot \dim W >0,$$
+		the positive due to $W$ does contains in the null locus. 
 		
 	\end{proof}
 	
 	\section{H\"oring-Peternell's approach for K\"ahler 3-fold MMP}
+	In this section, we will introduce H\"oring-Peternell's approach in \cite{HP16}. In the paper, they proved that 
+	\begin{theorem}
+		Let $X$ be a compact normal $\mathbb{Q}$-factorial K\"ahler 3-fold with terminal singularity. 
+		
+		Let $R\subset 
+		\overline{\text{NA}(X)}$ be a divisorial type extremal ray. Then the divisorial contraction $f:X\to Z$ exist, moreover the divisroial contraction will preserve the K\"ahlerness condition such that there exists some K\"ahler class $\alpha_Z$ such that $$\alpha = f^* \alpha_Z.$$
+	\end{theorem}
+	For simplicity, we denote that following condition as condition $(*)$.
+	\begin{definition}[(Condition $(*)$)]
+		Let $X$ be a compact normal $\mathbb{Q}$-factorial K\"ahler 3-fold with terminal singularity. 
+	\end{definition}
 	
+	
+	\subsection{Existence of supporting nef class $\alpha$}
+	We first prove that for a negative extremal ray $\alpha$, there always exist some supporting nef class.
+	
+	\begin{lemma}
+		Let $X$ be K\"ahler 3-fold satisfy the condition $(*)$, let $R\subset \overline{\text{NA}}(X)$ be a negative extremal ray. Then there exist a nef class $\alpha \in H^{1,1}_{\text{BC}}(X)$ such that $$R =  \alpha^\perp \cap \overline{\text{NA}}(X),$$moreover the class $\alpha$ is positive on the $$\overline{\text{NA}}(X)_{K_X \ge 0}+  \sum_{i\ne i_0}\mathbb{R}_+ [\Gamma_i].$$
+	\end{lemma}
+	\begin{proof}
+		
+	\end{proof}
+	
+	\subsection{The irreducible surface $S$ being contracted}
+	thus we find a surface that $\text{Null}(\alpha) = S$, we may take the normalization in $\hat{S}$ (in order to apply the nef reduction).
+	
+	\subsection{Case 1. When the nef dimension $n(\alpha) = 1$}
+	
+	Recall that the nef dimension is always less than the geometric dimension. So that $n(\nu^*\alpha)\le 2$. We need to show that $n(\nu^*\alpha) =2$ cannot happen. This is because for the surface case if the nef dimension is $2$, then for all but countable many curves on $S$ satisfies $\alpha \cdot C >0$. On the other hand, we know that $S$ as null locus of $\alpha$,
+	
+	
+	The original proof of \cite{HP16} contains some error. However, H\"oring fix the error in his note \cite{HoringDivisorial} later. 
+	
+	
+	We first try to prove that the general fiber of nef reduction map is $\mathbb{P}^1$. To be more precise
+	\begin{theorem}
+		
+	\end{theorem}
+	
+	\subsection{Case 2. When the nef dimension $n(\alpha) = 0$}
+	
+	In this section, we prove the existence of divisorial contraction when nef dimension is 0. Before proving it, let us first briefly sketch out  the idea. We try to apply the Grauert contraction theorem to a point (see \cite[Lemma 4.3]{DH24}). The point is try to show that the for the surface spaned 
+	\subsection{Prove the contraction preserve the Kahlerness condition}
+	We finally prove that Kahlerness condition is preserved when contracting the divisorial negative extremal ray in the generalized Mori cone. The tool that we need is the following 
+	\begin{lemma}
+		
+	\end{lemma}
+	
+	\subsection{H\"oring-Peternell's approach to the Mori fibre space case}
+	
+	
+	Combined with the flipping contraction case appear in another my note. This will give a complete contraction theorem for K\"ahler 3-folds.
 	
 	
 	%	\begin{center}
