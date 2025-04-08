@@ -23,7 +23,7 @@ Here is the outline:
 
 (4) [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
 
-(6) [Note-6 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf), [Update 3.1]
+(6) [Note-6 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf), [Update 4.9]
 
 (7) [Note-6 Kaehler 4-fold MMP](),
 

@@ -40,6 +40,8 @@
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{assumption}[theorem]{Assumption}
 
+\newtheorem{proofidea}[theorem]{PROOF IDEA}
+
 % 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
 \topmargin 0pt
 \advance \topmargin by -\headheight
@@ -79,34 +81,201 @@
 \begin{document}
 	
 	\lecture{4 --- 25, 02, 2025}{Spring 2025}{}{Yi Li}
+	
 	\tableofcontents
+	
 	\section{Overview}
+	The aim of this note
 	
 	\section{Das-Hacon's approach to flipping contraction for K\"ahler 3-fold MMP}
 	In this section, we will prove the following theorem.
-	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{DHdivisorial}
+	\begin{theorem}[{\cite[Theorem 6.9]{DH24}}]\label{flippingcont}
 		Let $(X,B)$ be a strong $\mathbb{Q}$-factorial K\"ahler 3-fold KLT pair. With the following condition holds
 		\begin{enumerate}
 			\item $K_X+B $ is pseudo-effective
 			\item $\alpha = [K_X+B + \beta]$ is nef and big class such that $\beta$ is K\"ahler,
-			\item The negative extremal ray $R = \overline{\text{NA}}(X) \cap \alpha^\perp$ is flipping type.
+			\item The negative extremal ray $R = \overline{\text{NA}}(X) \cap \alpha^\perp$ is flipping type. (that is $\dim \text{Null}(\alpha) < n-1$)
 		\end{enumerate}
 		Then there exists an $\alpha$-trivial flipping contraction $$f:X\to Z,$$such that there exist some K\"ahler form $\alpha_Z$ on $Z$ such that $\phi^* (\alpha_Z) = \alpha$. And the flip exist.
 	\end{theorem}
+	
 	\begin{remark}
-		Before proving the theorem, let us briefly sketch the idea of the proof. 
+		Before proving the theorem, let us briefly sketch the idea of the proof. By definition, the null locus has high codiemsnion, therefore $\alpha$ as a big and nef class is actually modified K\"ahler. Using Fujita approximation type modification, we will find some $$\nu: X' \to X,$$such that $$\alpha ' = \nu^* (\alpha ) = \omega ' + G',$$for some $G'\ge 0$ and $\text{supp}(G') = \text{Ex}(\nu) = \lfloor{\Delta'}\rfloor$. Our next goal is try to construct a $\alpha'$-trivial \textcolor{orange}{$(K_{X'}+\Delta' +  t\omega' + a \alpha')$-MMP:} $$X' \dashrightarrow X^1  \dashrightarrow ... \dashrightarrow X^+,$$
+		satisfying the following properties:
+		
+		(1) The MMP terminate at a place such that for all $0<t\le \epsilon$, there exist some $a(t) \gg 0$ with $$K_{X^+} + \Delta^++ t \omega^+ + a(t) \alpha^+,$$
+		is nef,
+		
+		(2) The MMP descend to a small bimeromorphic map $\psi: X \dashrightarrow X^+$,
+		
+		(3) The small bimeromorphic map $\psi: X \dashrightarrow X^m$ is isomorphism on $U = X - \text{Null}(\alpha)$.\\
+		
+		Our next goal is taking the normalization of the graph of the bimeromorphic map $\psi : X \dashrightarrow X^+$, and trying to prove $$\text{Ex}(p) = \text{Ex}(q) = E,$$ and that $-E |_{\text{supp}(E)}$is ample. Therefore by Fujiki blowing down, we can contract the expectional, and therefore by rigidity lemma it will induce two morphisms $$f: X \to Z,\quad f^+ : X^+ \to Z.$$
+		And finally we try to show the base point freeness. 
+		
 	\end{remark}
+	
+	
 	%\subsection{The null locus is a Moishezon surface whose smooth model is projective uniruled}
 	\subsection{Apply the DLT modification}
+	Differ from the divisorial contraction, we can not insert the null locus as divisor into the boundary. Instead, we resolve the modified K\"ahler class onto the higher model $\nu:X '\to X$, and some effective divisor $G'$ out, such that it record all the exceptional information $\text{supp}(G') = \text{Ex}(\nu)$. To be more precise, we have the following proposition.
+	
+	\begin{lemma}
+		Let $(X,B)$ be an strong $\mathbb{Q}$-factorial compact normal KLT pair. satisfies condition (1)-(3) in the Theorem \ref{flippingcont}. Then there exists a modification $$\nu: X' \to X,$$ with $\Delta' = \nu^{-1}_* (B) + \text{Ex}(\nu)$ such that the following condition holds,
+		
+		(1) $(X',\Delta')$ is a DLT pair, and $X'$ is strong $\mathbb{Q}$-factorial variety,
+		
+		(2) The pull back class $$\alpha' = \nu (\alpha) = \omega' + G',$$such that $G' \ge 0$ and $\text{supp}(G') = \text{Ex}(\nu) = \left\lfloor\Delta^{\prime}\right\rfloor$, 
+		
+		(3) The class $\omega'$ is K\"ahler and $\alpha ' $ is nef,
+		
+		(4) There exist some $a>0$ and $t>0$ such that $K_{X'} + \Delta ' + t \omega' + a \alpha'$ is K\"ahler.
+		
+		(5) Under the log resolution $$K_{X'} + \Delta ' = \nu^* (K_X+B) + E,$$with $E$ being effective and $\text{supp}(E) = \text{Ex}(\nu)$. 
+		
+	\end{lemma}
+	
+	The idea is simple, since $\dim \text{Null}(\alpha) = 1$ the non-Kahler locus contains no divisor. And therefore $\alpha$ is actually a modified K\"ahler class, we can take some modification so that $$\alpha ' = \nu^* (\alpha) = \omega' + G'.$$
+	We will discussion more on how to find such  modification in the proof below. Since $\omega'$ is Kahler, given any $a>0$, we can always find some $t \gg 0$ such that $K_{X'}+ \Delta' + t \omega' + a \alpha '$ is nef. 
+	
 	\subsection{Find a negative extremal ray on one of the component $S' \subset \lfloor{\Delta'}\rfloor$}
-	\subsection{Apply the PLT contraction theorem}
-	In this step, we try to extend to contraction from $S'\to T'$ to $X'\to Z'$. 
+	Let $S' \subset \lfloor{\Delta'}\rfloor$, we define the $$\tau_{S'} = \inf\{s\ge 0 \mid  K_{S'}+ \Delta ' + s \omega' + a \alpha' \text{ is nef for }s>0\}.$$
 	
-	\subsection{Prove the contraction morphism $X'\to Z'$ is divisorial or flipping contraction}
-	We try to prove the contraction we just contructed is a divisorial or flipping contraction, thus it's an MMP step.
+	Before proving the theorem, let us first briefly discuss what infimum means? By definition of infimum, the following two conditions are satisfied: 
 	
-	\subsection{Control the MMP}
-	Similar to the divisorial contraction case, the MMP we just contructed has some good properties, we will show that 
+	(1) If $t' < \tau_{S'}$, then for any $a'>0$, the $K_{S'} + \Delta_{S'} + t'\omega' + a' \alpha'$ is not nef, 
+	
+	(2) For any $t' >\tau _{S'}$, there exist some $\tau_{S'}\le t''< t'$ such that $K_{S'}+ \Delta_{S'} + t''\omega' + a (t') \alpha'$ is nef. 
+	
+	These two conditions for infimum will be important in the proposition below.
+	\begin{proposition}\label{nefonS}
+		Let $\tau_{S'}>0$, then there exists a $(K_{S'}+ \Delta_{S'})$-negative extremal ray $R$, such that $$(K_{S'}+ \Delta_{S'}+ \tau_{S'} \omega_{S'})\cdot R = \alpha_{S'}\cdot R = 0,$$
+		and for any $a'\gg 0$, the $K_{S'}+ \Delta_{S'} + \tau_{S'} \omega_{S'} + a' \alpha_{S'}$ is nef.
+	\end{proposition}
+	\begin{proofidea}
+		The idea is the apply the cone theorem on the surface $S'$. The geometry picture looks as follows
+		
+		
+		we first apply the cone theorem on $S'$, so that for $\tau_{S'}>0$, the generalized Mori cone decompose into $$\overline{\text{NA}}(S') = \overline{\text{NA}}(S')_{K_{S'}+ \Delta_{S'} + \frac{\tau_{S'}}{2} \omega_{S'}} + \sum _{i =1}^r  \mathbb{R}_+ [\Sigma_i]$$then we define try to find the extremal place for the $\alpha'$-supporting class say $\sigma_{S'}$.
+		
+		We first define the set of negative extremal ray lies on the $\alpha'$-supporting class $$I = \{i \mid \alpha_{S'} \cdot \Sigma_i =  0 \} $$
+		Here $$\sigma_{S'} = \min \{s\ge \frac{\tau_{S'}}{2}\mid (K_{S'}+\Delta_{S'} + s \omega_{S'})\cdot \Sigma_i \ge 0, \quad \Sigma _i  \in I\}$$(By finiteness in the cone theorem, the minimal is attainable). Note that since $\alpha'$ is nef, this in particular will imply that $$(K_{S'}+ \Delta_{S'}+ \sigma_{S'} \omega_{S'} + a' \alpha') \cdot \Sigma_i  \ge 0  ,\quad \forall\ 1\le i\le r$$
+		
+		Easy to see by definition that $\sigma_{S'} \le \tau_{S'}$ (by definition of infimum $\tau_{S'}$), only need to show that $\tau_{S'} = \sigma_{S'}$. Then easy to see from the picture above, that there exist some negative extremal ray $R$ such that $$(K_{S'}+ \Delta_{S' }+ (\tau_{S'}/2) \cdot  \omega _{S'}) \cdot R = 0 = (K_{S'} + \Delta_{S'} + \tau_{S'}  \omega_{S'})\cdot R = \alpha'_{S'} \cdot R$$which is precisely what we want. 
+		
+		Only needs to show that $\sigma_{S'} = \tau_{S'}$. We will prove it by contradiction. If $\sigma_{S'}< \tau_{S'}$, we try to show that 
+		
+		(1) $K_{S'}+ \Delta_{S'}+ \sigma_{S'}\omega_{S'}+ a' \alpha_{S'}$ is non-negative on $\sum_{i=1}^k \mathbb{R}_+ [\Sigma_i]$ for $a'\gg 0$,
+		
+		(2) $K_{S'} + \Delta_{S'} + (\tau_{S'} - \epsilon)\omega_{S'} + a' \alpha_{S'}$ is non-negative on the part $\overline{\text{NA}}(S')_{K_{S'}+ \Delta_{S'} + \frac{\tau_{S'}}{2} \omega_{S'}}$.
+		
+		Combined these two, immediate implies the nefness of $K_{S'}+ \Delta_{S'} + \tau_{S'} \omega _{S'} + a' \alpha_{S'}$ for $a' \gg 0$.
+		
+		
+	\end{proofidea}
+	\begin{proof}
+		
+		We first prove that $\sigma_{S'}\le \tau_{S'}$. For otherwise by definition of nef threshold $\tau_{S'}$, there exist some $\tau_{S'}\le t'<\sigma_{S'}$ such that for some $a'$ we have $$K_{S'}+ \Delta_{S'} + t' \omega_{S'}+ a' \alpha'$$is nef. In particular, we have $$(K_{S'}+ \Delta_{S'} + t' \omega_{S'}) \cdot \Sigma_i  \ge 0 ,\quad \forall i \in I$$
+		In particular, this means that $$\sigma_{S'} \le t ' < \sigma_{S'}$$a contradiction. Therefore $\sigma_{S'} \le \tau_{S'}$.
+		
+		We then prove $K_{S'} + \Delta_{S'} + (\tau_{S'} - \epsilon)\omega_{S'} + a' \alpha_{S'}$ is non-negative on the part $\overline{\text{NA}}(S')_{K_{S'}+ \Delta_{S'} + \frac{\tau_{S'}}{2} \omega_{S'}}$ using some convex combination argument. Let $$\eta_{x,y} = K_{S'} + \Delta_{S'} + x \omega_{S'} +  y\alpha_{'},$$
+		note that by our previous discussion, $\eta_{t,a}$ is nef. 
+		
+		Since we can express $$\eta_{\tau_{S'}- \epsilon,a'} = A\eta_{s,t}+ B\eta_{\frac{\tau_{S'}}{2},0} + C\alpha_{S'},$$ for some $A
+		,B,C >0$ when $a' \gg 0$. 
+		
+		This immdediatly implies that $\eta_{\tau_{S'}/2-\epsilon, a'}$ is non-negative on $\overline{\text{NA}}(S')_{K_{S'}+ \Delta_{S'} + \frac{\tau_{S'}}{2} \omega_{S'}}$. 
+		
+		On the other hand, we know that $(K_{S'} + \Delta_{S'} + \sigma_{S'} \omega_{S'} + a' \alpha_{S'})\cdot \Sigma_i \ge 0 ,\quad \forall 1\le i\le k$ when $a' \gg 0$.
+		
+		Therefore if $\sigma_{S'}< \tau_{S'}$ we will get contradiction. The only possible case, therefore is $\tau_{S'} = \sigma_{S'}$, which clearly implies the result. 
+		
+	\end{proof}
+	Let $\tau =  \max_{S' }\tau_{S'}$, we claim 
+	\begin{proposition}
+		If $\tau >0$, then there exists some $a'\gg 0$, we have $K_{X'} + \Delta '+\tau \omega ' + a' \alpha'$ is nef.
+	\end{proposition}
+	
+	\begin{remark}
+		Why this result is interesting? Since it relates the nef threshold for $S'$ with the nef threshold for the ambient space. We will apply some convex combination trick in the proof. 
+	\end{remark}
+	\begin{proofidea}
+		We will prove it by contradiction. If for all fixed $a'\gg0 $, the $K_{X'}+ \Delta ' + \tau \omega ' + a' \alpha'$ is not nef. Then (by characterization theorem of nefness) there exists some subvariety $Z'$ such that the restriction $(K_{X'}+ \Delta ' + \tau \omega' + a' \alpha )|_{Z}$ is not pseff. 
+		
+		Now we claim that the subvariety $Z'$ lies in some component $S' \subset \text{Ex}(\nu)$. Indeed we try to show that $Z' \subset \text{supp }G'$. 
+		
+		We try to show that $\tau_{S'}>0$ for that $S'$ contains $Z'$. For otherwise, this will contradict to the fact that $\tau>0$, using the infimum of $\tau_{S'}$.
+	\end{proofidea}
+	
+	\begin{proof}
+		We prove it by contradiction, if for all $a' \gg 0$, that $K_{X'} + \Delta' + \tau \omega' + a' \alpha '$ is not nef. We choose $a'$ as follows:
+		
+		(1) First for those $S' \subset \text{supp}(\Delta')$, with $\tau_{S'}$, there exist some $a_{S'}$ such that $a'\ge a_{S'}$ then $K_{S'}+\Delta_{S'} + \tau_{S'} \omega_{S'} + $
+		
+		(2) For those $\tau_{S'} =0$, since $\tau>0$, there exist some $a_{S', \tau}$ such that $a'\ge a_{S',\tau}$ then $K_{S'}+ \Delta_{S'} + \tau \omega$
+		
+		We choose $a'  \ge \max \{a_{S',\tau}, a_{S'}\}$. Then for any such $a'$, we have $K_{X'} + \Delta' + \tau \omega ' + a' \alpha'$ is not nef. Therefore, there exist some $Z' \subset X$ such that $$(K_{X'}+ \Delta ' + a' \alpha ' + \tau \omega')|_{Z},$$
+		is not pseff. 
+		
+		Since $\alpha' = \omega ' + G'$, we have $$K_{X'}+ \Delta' + a' \alpha ' + \tau \omega '  = (K_{X'} + \Delta ' + t\omega'+ (a'-t+\tau)\alpha ') + (t- \tau)G',$$
+		note that for $a' \gg 0$, the 1st term on the RHS is nef, therefore the only possible case is $Z' \subset \text{supp}(G')$. Hence, there exist some component $S'\subset \text{supp}(G')$ such that $K_{S'} + \Delta_{S'} + \tau \omega_{S'} + a' \alpha_{S'}$ is not nef. 
+		
+		We finish the proof by contradiction:
+		
+		(Case 1) $\tau_{S'}=0$, then by definition of nef threshold, the given $\tau>0$, there exist some $a' \ge a'' \gg 0$ such that $$K_{S'}+ \Delta_{S'} + \tau \omega_{S'}  + a'' \alpha_{S'}$$is nef. Therefore gets the contradiction.
+		
+		(Case 2) $\tau_{S'}>0$, in this case, by Proposition \ref{nefonS}, we know that $$K_{S'}+ \Delta_{S'} + \tau_{S'} \omega _{S'} + a' \alpha '$$is nef for some sufficient larget $a'$. Since $\tau \ge \tau_{S'}$, this is also true for $K_{S'}+ \Delta_{S'} + \tau \omega _{S'} + a' \alpha '$, and gets the contradiction.
+		
+		Therefore, by Proposition \ref{nefonS}, we have $$K_{S'} + \Delta_{S'} + \tau_{S'} \omega_{S'} + a' \alpha_{S'}$$ is nef. Since $\tau \ge \tau_{S'}$, this will imply that $K_{S'}+ \Delta_{S'} + \tau \omega_{S'} + a' \alpha_{S'}$ is nef. Contradiction again. 
+	\end{proof}
+	
+	\subsection{Run the MMP $\phi:X' \dashrightarrow X^+$}
+	
+	
+	Next, we try to extend to the contraction from $S'\to T'$ to $X'\to Z'$.
+	
+	\begin{theorem}
+		There exists a sequence of MMP $$(X',\Delta' )\dashrightarrow (X^1, \Delta ^1 )\dashrightarrow \cdots \dashrightarrow (X^+ ,\Delta ^+),$$such that when terminates $\tau_{X^+} = 0$.
+	\end{theorem}
+	\begin{proofidea}
+		The idea is not hard, we try to apply the PLT contraction theorem. By Proposition \ref{nefonS}, if $\tau>0$, then we can find some negative extremal ray on some surfaces $S'$, we can apply usual trick to replace the surface to some new $S'$ such that $S' \cdot R <0$.  
+		
+		and the extremal contraction $S'\to T'$, then under certain condition we can extend the contraction onto $X'$. To achieve this, we need to check the following conditions hold:
+		
+		(1) The pair $(X', (1-\epsilon)(\Delta' - S')+ S' + \omega')$ is PLT pair,
+		
+		(2) Kahlerness of $-(K_{X'}+(1-\epsilon)(\Delta' - S)+ S' )|_{S'} $ over $T$, since intersection $(K_{X'} + \Delta')\cdot R_i <0$.
+		
+		(3) ampleness $-S'|_{S'}$ over $T'$. (Since $S'\cdot R <0$). 
+		
+	\end{proofidea}
+	\begin{proof}
+		We prove it by induction on the steps of the MMP. Assume that we already run the MMP to i-th step $$(X',\Delta ') \dashrightarrow (X^1, \Delta^1)\dashrightarrow \cdots \dashrightarrow (X^i, \Delta^i).$$
+		If $\tau_{X_i} = 0$, then we are done. Otherwise, by definition of $\tau_{X_i}$, there exist some components $S^i \subset \lfloor{\Delta^i}\rfloor$, such that $\tau_{S'} >$. By Proposition \ref{nefonS}, there exists some negative extremal ray $R_i\in \overline{\text{NA}}(S')$ such that $$(K_{S'}+ \Delta_{S'} + \tau_{S'} \omega_{S'}) \cdot R_i = \alpha_{S'}\cdot R_i  = 0.$$ 
+		We try to replace $S^i$ by $\bar{S}^i$ such that $R_i$ is $K_{\bar{S}^i} + \Delta_{\bar{S}^i}$-negative and $\bar{S}^i \cdot R_i  <0$. (The similar arguement appears also in the divisorial contraction case). Since $\alpha'  \cdot \Sigma_i  = (\omega' + G')\cdot \Sigma_i= 0$ this means that $G' \cdot \Sigma_i <0$ and therefore $\Sigma_i \subset \bar{S}^i \subset \text{Supp} (G')$. Note that $F = \alpha_{\bar{S}'}\cap \overline{\text{NA}}(\bar{S}')$ is negative extremal face. And $\Sigma \in F$. Therefore there exist a set of extremal ray of $F$ span $\Sigma_i$. And therefore exists some extremal ray $$\bar{\Sigma}_i\cdot \bar{S}'<0,\  \alpha' \cdot \bar{\Sigma}_i =0\implies (K_{\bar{S}'}+\Delta_{\bar{S}'})\cdot \bar{\Sigma}_i <0$$
+		
+		Therefore it follows that $-(K_{\bar{S'}}+ \Delta_{\bar{S}'})$ is ample and $-\bar{S}|_{\bar{S}'}$ is ample. And we can apply the PLT contraction theorem. 
+		
+		
+		
+	\end{proof}
+	
+	The following properties hold for the MMP above
+	\begin{proposition}~\\
+		(1) There exist some $\epsilon>0$, for all $0\le t < \epsilon$, $K_{X^+ }+\Delta^+ + t \omega^+ +  a(t) \alpha^+$ is nef for some $a(t)$.
+		
+		(2) The MMP step is proper over $U = X - \text{Null}(\alpha)$, that is in the following diagram $\nu_i$ is proper morphism over $U$, and the i-th step of the MMP is $\nu_i$-vertical,
+		
+		(3) The induced bimeromorphic map $\psi : X^+ \dashrightarrow X$ is small, and it's isomorphism over $U$. 
+		
+	\end{proposition}
+	
+	\begin{proof}
+		
+		
+		Now we prove (3). The idea is to use the Zariski decomposition. We want to show that $$N_{\sigma}(K_{X'} +\Delta ' + a \alpha' + \epsilon \omega ' ) = \text{Ex}(\nu),$$Since we have shown that the MMP will terminate at some 
+	\end{proof}
+	
 	\subsection{Find the contraction $f:X\to Z$}
 	In this step, we take the normalization on the graph of the map $\psi:X\dashrightarrow X^+$. Let $\eta:=\alpha+\delta\left(K_X+B\right)$, we try to show that $$E = p^*\eta - q^* \eta^+,$$satisfies the condition that $-E|_E$ is ample. So that we can apply the Grauert contraction theorem, and get a contraction $g:W\to Z$. 
 	
@@ -118,12 +287,15 @@
 	We then show that $f:X\to Z$ will contract every curves in the negative extremal ray $R$ and it's a $(K_X+B)$-negative contraction.
 	
 	
-	\subsection{Prove base point freeness}
-	Just as what we did in the divisorial contraction case, we try to use that fact that proper bimeromorphic morphism $f:X\to Z$ between K\"ahler varieties with rational singularity satisfies the condition $$\text{im}(f^*) = \{\alpha \in H^{1,1}_{\rm{BC}}(X)\mid \alpha \cdot C = 0 ,\ \forall\ C\in N_1(X/Z)\}.$$Then apply singular version Demailly-P\u{a}un Kahlerness criterion to the big and nef class $\alpha_Z$.
-	
+	\subsection{Prove the base point freeness}
+	Just as what we did in the divisorial contraction case, we try to use that fact that proper bimeromorphic morphism $f:X\to Z$ between K\"ahler varieties with rational singularity satisfies the condition $$\text{im}(f^*) = \{\alpha \in H^{1,1}_{\rm{BC}}(X)\mid \alpha \cdot C = 0 ,\ \forall\ C\in N_1(X/Z)\}.$$Then apply singular version Demailly-P\u{a}un K\"ahlerness criterion to the big and nef class $\alpha_Z$.
 	
 	\subsection{Prove the existence of flips in any dimension}
+	We finally prove that flip exist in any dimension. 
 	
+	\begin{theorem}
+		Let $f: X\to Z$ be a flipping contraction, then 
+	\end{theorem}
 	
 	\section{H\"oring-Peternell's approach for flipping contraction}
 	
