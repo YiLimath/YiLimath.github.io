@@ -19,9 +19,11 @@ Here is the outline:
 
 (2) [Note-2 Positivities in the Kahler minimal model program](),
 
-(3) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem, Kollar-Mori's extesion of contraction](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
+(3) [Note-3 Fujiki's blowing down theorem, Grauert's Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 2.21],
 
-(4) [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
+(4) [Note-4 Kollar-Mori's extension of contraction morphism](https://yilimath.github.io/files/Birational/KahlerMMP/KMCont.pdf) [Update 4.30],
+
+(5) [Note-5 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
 
 (6) [Note-6 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf), [Update 4.9]
 
@@ -46,6 +48,7 @@ Here is the outline:
 (14) [Note-15 How to use generalized pair in the Kahler setting?](),
 
 (15) [Note-16 Properties of uniruled Kahler manifold](),
+
 
 (15) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
 
