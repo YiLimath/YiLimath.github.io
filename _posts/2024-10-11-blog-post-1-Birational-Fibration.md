@@ -21,18 +21,24 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 (5) [Core fibration, Bogomolov line bundle and Campana special variety](),
 
-(5) [Pseudo-effective reduction](),
+(6) [Pseudo-effective reduction](),
 
-(6) [Nef reduction](),
+(7) [Nef reduction](),
 
-(7) [Toric Fibration](),
+(8) [Toric Fibration](),
 
-(8) [Fano Fibration](),
+(9) [Abelian fibration](),
 
-(9) [Calabi-Yau Fibration](),
+(10) [Elliptic fibration](),
 
-(7) [Classification theorems for projective manifolds, compact Kahler manifolds](),
+(11) [Fano Fibration](),
 
-(8) [Supplement: How to use Harder-Narasimhan filtration](),
+(12) [Calabi-Yau Fibration](),
 
-(9) [Supplement: Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf),
+(13) [Classification theorems for projective manifolds, compact Kahler manifolds](),
+
+(14) [Supplement: How to use Harder-Narasimhan filtration](),
+
+(15) [Supplement: Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf),
+
+(16) [Supplement: Resolving the indetermancy locus of the meromorphic fibration]()
