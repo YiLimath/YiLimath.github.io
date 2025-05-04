@@ -52,7 +52,7 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 
 (17) [Note-18: A brief introduction to Fourier Mukai transform](),
 
-(18) [Note-19: A brief introduction to Geometric Lanlands](),
+(18) [Note-19: A brief introduction to Geometric Langlands](),
 
 ---
 
