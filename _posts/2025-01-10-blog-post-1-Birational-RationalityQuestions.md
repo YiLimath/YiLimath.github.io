@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Rationality Problems in Birational Geometry'
-date: 2023-01-01
-permalink: /posts/2023/01/Rationality-Problems/
+date: 2025-01-01
+permalink: /posts/2025/01/Rationality-Problems/
 tags:
   - Birational geometry
 ---
@@ -17,7 +17,12 @@ Here is the outline of the notes
 
 (3) [Note-3: Deformation of uniruled varieties](),
 
-(4) [Note-4: Smooth Fano variety is rationally connected](),
+(4) [Note-4: Rationally connectedness of Fano varieties](),
 
-(5) [Note-5: On Shokurov rationality conjecture](),
+(5) [Note-5: GHS theorem for rational connected varieties](),
 
+(6) [Note-6: Smooth of chain of rational curves](),
+
+(7) [Note-7: On Shokurov rationality conjecture](),
+
+(8) [Note-8: Sarkisov program](),
