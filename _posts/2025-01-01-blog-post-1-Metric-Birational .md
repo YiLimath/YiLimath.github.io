@@ -9,6 +9,8 @@ tags:
 
 In this series of notes we will summarize some standard metric methods which will be useful in birational geometry.
 
+(0) [The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry](),
+
 (1) [The theorem of Angehrn and Siu](),
 
 (2) [Siu's invariance of plurigenera analytic proof](),
