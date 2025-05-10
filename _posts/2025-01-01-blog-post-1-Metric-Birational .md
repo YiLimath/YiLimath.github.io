@@ -7,4 +7,11 @@ tags:
   - Complex Geometry
 ---
 
+In this series of notes we will summarize some standard metric methods which will be useful in birational geometry.
+
+(1) [The theorem of Angehrn and Siu](),
+
+(2) [Siu's invariance of plurigenera analytic proof](),
+
+(3) [Birational boundedness for varieties of general type](),
 

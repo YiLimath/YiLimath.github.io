@@ -8,8 +8,7 @@ tags:
 
 The aim of this note is try to summarize the rationality problems in birational geometry. 
 
-Here is the outline of the notes
-
+Here is the outline of the notes: 
 
 (1) [Note-1: Mori theory on rational curves](),
 
