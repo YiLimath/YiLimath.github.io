@@ -13,7 +13,7 @@ developed, consciousness won’t qualify for study as physics. This is reason en
 Yes, this topic do not have well established theory current. And we walk the edge of a slippery slope, so one should be very careful about the dangerous of going into pseudo-sciennce. But on the other hand it's an interesting subject (People like me typically can not resist such couriosity).
 
 
-(0) [Open box and interference experiments, Quantum Enigma, Robot and Consciousness](),
+(0) [Quantum experiments, Robot and Consciousness](),
 
 (1) [Mind-brain relationship in classical physics](),
 
