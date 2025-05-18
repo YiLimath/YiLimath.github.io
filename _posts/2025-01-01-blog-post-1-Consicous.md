@@ -6,7 +6,7 @@ tags:
   - Consciousness
 ---
 
-The aim of this note is to study the consciousness from the perspective of mathematical physics. Before going into this topic, I quote a sentence from the book *Quantum Enigma*: 
+The aim of this note is to study the consciousness from the perspective of mathematics, physics and computation. Before going into this topic, I quote a sentence from the book *Quantum Enigma*: 
 > Anything not successfully treatable with a well-specified and testable model is rather quickly defined out of physics. When we focus on consciousness in chapter 16, we offer no such model. There is none. Until one is
 developed, consciousness won’t qualify for study as physics. This is reason enough for not studying consciousness in physics departments, but it hardly explains the emotion that talking of our discipline’s encounter with consciousness can arouse....
 
