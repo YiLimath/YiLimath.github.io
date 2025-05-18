@@ -19,5 +19,9 @@ Yes, this topic do not have well established theory current. And we walk the edg
 
 (2) [Mind-brain relationship in quantum physics](),
 
-(3) [Free will](),
+(3) [Reading notes: The Ghost in the Quantum Turing Machine by Scott Aaronson](),
+
+(4) [Free will and freedom](),
+
+(5) [Conscious and](),
 
