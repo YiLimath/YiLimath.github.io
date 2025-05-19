@@ -16,7 +16,7 @@ Yes, this topic do not have well established theory current. And we walk the edg
 
 (0) [Quantum experiments, Robot and Consciousness](),
 
-(1) [Mind-brain relationship in classical and quantum physics]()
+(1) [Mind-Matter Duality and relation with Langlands duality??]()
 
 (2) [Free will and freedom](),
 
