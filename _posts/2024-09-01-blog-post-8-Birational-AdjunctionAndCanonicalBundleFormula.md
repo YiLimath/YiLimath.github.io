@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Adjunction Theory'
-date: 2024-11-27
-permalink: /posts/2024/11/Adjunction-Theory/
+date: 2025-05-23
+permalink: /posts/2025/05/Adjunction-Theory/
 tags:
   - Birational geometry
 ---
@@ -13,20 +13,19 @@ A useful summary can be found in [Anti-pluricanonical systems on Fano varieties,
 
 For detailed information see my reading notes 
 
-(1) [Adjunction Formulas]().
+(1) [Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf).
 
-(2) [Inversion of Adjunction](). 
+(2) [Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf). 
 
 (3) [Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf)
 
-() [Hacon-Mckernan-Xu's subadjunction type theorem]()
+(4) [Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf)
 
-(6) [Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
+(5) [Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
-(5) [Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
+(6) [Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
 (7) [Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
 
-(8) [Canonical bundle formula for generalized Kahler pairs](),
-
+(8) [Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf),
 

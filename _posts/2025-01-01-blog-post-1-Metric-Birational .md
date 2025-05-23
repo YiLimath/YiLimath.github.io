@@ -15,6 +15,8 @@ In this series of notes we will summarize some standard metric methods which wil
 
 (2) [Siu's invariance of plurigenera analytic proof](),
 
-(3) [Birational boundedness for varieties of general type](),
+(3) [Bergman metric and positivity](),
 
-(4) [Supercanonical metric and abundance conjecture](),
+(4) [Birational boundedness for varieties of general type](),
+
+(5) [Supercanonical metric and abundance conjecture](),
