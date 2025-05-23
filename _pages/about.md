@@ -7,4 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a second-year graduate student at Wuhan University. My research interests lie in Birational Geometry, with Hodge theory as a hobby. I enjoy studying topics related to the (Kähler) Minimal Model Program, as well as boundedness and moduli problems. I maintain this website to keep track of the topics I study and, most importantly, to document my discoveries along my research journey. (I will also try to explain the secrets and insights behind the topics we discuss.)
+I am a second-year graduate student at Wuhan University under the supervision of [Sheng Rao](https://jszy.whu.edu.cn/raosheng/en/index/427596/list/index.htm) and [Christopher Hacon](https://www.math.utah.edu/~hacon/). My research interests lie in **Birational Geometry and Hodge theory**. I maintain this website to keep track of the topics I study and, most importantly, to document my discoveries along my research journey. (I will also try to explain the secrets and insights behind the topics we discuss.)
+
+
+## Research Interest
+
+Currently I mainly work on: 
+
+(1) The Kähler minimal model program, with applications to deformation problems;
+
+(2) The boundedness problem in birational geometry and the moduli aspects of birational geometry.
