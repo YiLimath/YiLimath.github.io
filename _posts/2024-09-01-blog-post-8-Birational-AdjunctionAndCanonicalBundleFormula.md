@@ -29,5 +29,5 @@ For detailed information see my reading notes
 
 (8) [Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf),
 
-(9) [Summary of applications of canonical bundle formula](),
+(9) [Applications of canonical bundle formula](),
 
