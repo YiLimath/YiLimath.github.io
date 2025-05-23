@@ -16,4 +16,6 @@ Currently I mainly work on:
 
 (1) The Kähler minimal model program, with applications to deformation problems;
 
-(2) The boundedness problem in birational geometry and the moduli aspects of birational geometry.
+(2) The boundedness problem in birational geometry and the moduli aspects of birational geometry;
+
+(3) I am also studying topics related to the geometric Langlands program and mirror symmetry.
