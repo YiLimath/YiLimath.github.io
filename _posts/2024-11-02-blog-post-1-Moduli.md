@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Notes: Around Moduli theory'
-date: 2024-12-01
-permalink: /posts/2024/12/Moduli/
+date: 2025-05-23
+permalink: /posts/2025/05/Moduli/
 tags:
   - Moduli Theory
   - Birational Geometry
@@ -11,6 +11,11 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 > The moduli over a geometric object completely determine the object. Birational geometry fits into this guiding principle very well, as one important idea (in birational geometry) is that the geometry of a variety is determined by the curves and divisors on that variety.
 
 
+(1) [Construction of Teichmuller space and Teichmuller theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf), [Update 5.22]
+
+(2) [Moduli spaces for surfaces of general type](),
+
+(3) []
 
 (0) [Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf),
 
@@ -53,8 +58,6 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 (17) [Note-18: A brief introduction to Fourier Mukai transform](),
 
 (18) [Note-19: A brief introduction to Geometric Langlands](),
-
-(19) [Note-20: Construction of Teichmuller space and Teichmuller theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf), [Update 5.22]
 
 
 

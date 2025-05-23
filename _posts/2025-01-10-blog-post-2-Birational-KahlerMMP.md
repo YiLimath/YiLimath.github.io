@@ -35,9 +35,9 @@ Here is the outline:
 
 (10) [Note-10 Base point free conjecture in Kahler MMP](),
 
-(11) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [update 2.19]
+(11) [Note-10 Rational curves on Moishezon space, Kaehler varieties](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [update 5.23]
 
-(12) [Note-11 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [Update 3.4],
+(12) [Note-11 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [Update 5.23],
 
 (13) [Note-12 Projectivity for Kaehler morphism](),
 
@@ -48,7 +48,6 @@ Here is the outline:
 (16) [Note-15 How to use generalized pair in the Kahler setting?](),
 
 (17) [Note-16 Properties of uniruled Kahler manifold](),
-
 
 (18) [Supplementary 1: BCHM for projective morphism between complex analytic space (by Fujino)](),
 
