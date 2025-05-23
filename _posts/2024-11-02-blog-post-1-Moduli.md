@@ -15,7 +15,7 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 
 (2) [Moduli spaces for surfaces of general type](),
 
-(3) []
+(3) [Singularities on moduli spaces](https://yilimath.github.io/files/Moduli/PositiveModuli.pdf),
 
 (0) [Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf),
 
@@ -33,7 +33,6 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 
 (5) [Note-7: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf),
 
-(6) [Note-8: Singularities on moduli spaces](https://yilimath.github.io/files/Moduli/PositiveModuli.pdf),
 
 (7) [Note-9: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
 
