@@ -18,4 +18,4 @@ Currently I mainly work on:
 
 (2) The boundedness problem in birational geometry and the moduli aspects of birational geometry;
 
-(3) I am also studying topics related to the geometric Langlands program and mirror symmetry.
+(3) I am also studying topics related to the geometric Langlands program and mirror symmetry (in mathematical physics).
