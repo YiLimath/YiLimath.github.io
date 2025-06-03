@@ -29,14 +29,15 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 
 [Note-6: Boundedness of moduli spaces](https://yilimath.github.io/files/Moduli/BoundednessModuli.pdf),
 
-[Note-7: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf),
+[Note-7: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
 
-[Note-8: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf),
+[Note-8: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf),
 
-[Note-9: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf),
+[Note-9: Positivity on moduli spaces](),
 
-[Note-10: Positivity on moduli spaces](),
+[Note-10: Singularity on moduli spaces](),
 
+[Note-11: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf),
 
 
 ---
@@ -55,13 +56,17 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 ----
 ## Part II. Hodge theory and moduli
 
-[1. Betti Moduli, deRham moduli and Dolbeault moduli](),
+[0. Gauss Mannin connection, Griffith transversality and Griffith curvature formula](),
 
-[2. Moduli space of K3 surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf),
+[1. Local Torelli, Global Torelli](),
 
-[3. Moduli space of Abelian varieties (ppav)]()
+[2. Betti Moduli, deRham moduli and Dolbeault moduli](),
 
-[4. Calabi-Yau moduli]()
+[3. Moduli space of K3 surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf),
+
+[4. Moduli space of Abelian varieties (ppav)]()
+
+[5. Calabi-Yau moduli and hyperbolicity]()
 
 
 ----
