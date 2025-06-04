@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\handout}[5]{
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{
+				\hbox to 5.78in { {\bf Kawamata's canonical bundle formula} \hfill #2 }
+				\vspace{4mm}
+				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
+				\vspace{2mm}
+				\hbox to 5.78in { {\em #3 \hfill #4} }
+			}
+		}
+	\end{center}
+	\vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Note #1 (draft version)}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proofidea}[theorem]{PROOF IDEA}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Adjunction Theory Reading Notes}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+
+\begin{document}
+	
+	\lecture{3 --- 04, 06, 2025}{Summer 2025}{}{Yi Li}
+	
+	The aim of this note is to introduce the Kawamata's canonical bundle formula with varies applications. 
+	
+	The major goal is to prove the following result.
+	
+	\begin{theorem}[{\cite{Kollar07}}]
+		Let $f:X\to Y$ be a dominant morphism between normal projective varieties. Let $(X,B)$ be a log pair, with generic fiber $F$, $\Sigma \subset Y$ be a reduced divisor such that the following conditions hold:
+		
+		(1) $K_X+B\sim_{\mathbb{Q},f} 0$,
+		
+		(2) $p_g^+(X,B) = \text{rk}{\left( f_* \mathcal{O}_X {\left( \lceil{ \mathbf{A}(X,\Delta)}\rceil\right)}\right)} =1$ with $\mathbf{A}(X,B)$ be the descrepancy b-divisors,
+		
+		(3) $f$ has SLC fibers in codimension 1 on $Y - \Sigma$
+		
+		Then there exist a nef b-divisor $M_Y$ such that $$f^*(K_Y+B_Y + M_Y)  \sim_\mathbb{Q} K_X+B,$$where $B_Y$ is the discriminant divisor.
+	\end{theorem}
+	
+	
+	\tableofcontents
+	
+	\section{Proof of the Kawamata's canonical bundle formula}
+	The aim of this section is to prove the Kawamata's canonical bundle formula.
+	
+	\subsection{Kawamata semi-positivity theorem}
+	We first prove the following Kawamata semipositivity theorem using some Hodge theoretical method. As a side remark, there are two general approaches to produce positivity in complex algebraic geometry, one is the Hodge theoretical method (which relies on the Griffiths curvature formula) and another one is the Bergeman kernel metric method. This note focuses on the Hodge theoretical approach. 
+	
+	\begin{proposition}[{\cite[Theorem 5]{Kawa81}}]\label{semipositiveThm}
+		Let $f: X \rightarrow Y$ be an algebraic fiber space which satisfies the following conditions:
+		
+		(i) There is a Zariski open dense subset $Y_0$ of $Y$ such that $D=_{\operatorname{def}} Y-$ $Y_0$ is a divisor of normal crossing on $Y$.
+		
+		(ii) Put $X_0=f^{-1}\left(Y_0\right)$ and $f_0=\left.f\right|_{x_0}$. Then $f_0$ is smooth.
+		
+		(iii) The local monodromies of $R^n f_{0,*} \mathbb{C}_{X_0}$ around $D$ are unipotent, where $n=\operatorname{dim} X-\operatorname{dim} Y$.
+		
+		Then $f_* \omega_{X / Y}$ is a locally free sheaf and semipositive (in the numerical sense), where $\omega_{X / Y}$ denotes the relative canonical sheaf.
+		
+	\end{proposition}
+	\subsection{Proof of the main theorem}
+	Before proving the result, let us briefly sketch out the idea. 
+	
+	\begin{proofidea}
+		The technical core of the proof is Kawamata's semipositivity theorem Proposition \ref{semipositiveThm}. We first try to reduce the problem into the "semistable" family so that the monodromy of the local system $R^p f_*\mathbb{V}_j$ is unipotent (which is needed in the semipositivity theorem). Then we will apply the Kawamata's cyclic covering trick, so that the direct image of the canonical sheaf becomes$$\left(\pi_X\right)_* \omega_{X^{\prime}}=\sum_{i=0}^{m-1} \mathcal{O}_X\left(K_X+i\left(f^* M_Y-K_{X / Y}-D-E+G\right)-\lfloor i \Delta / m\rfloor\right),$$for some axillary divisors $E,G,\Delta$. And it is easy to see that $\mathcal{O}_X\left(f^*\left(K_Y+L\right)+G-E\right)$ is a direct summand of $\left(\pi_X\right)_* \omega_{X^{\prime}}\left(D^{\prime}\right)$. Apply the projection formula $$
+		L \otimes f_*\left(\mathcal{O}_X(G-E)\right) \cong f_* \mathcal{O}_X\left(f^* L+G-E\right)
+		$$
+		is a direct summand of $\left(f^{\prime}\right)_* \omega_{X^{\prime} / Y}\left(D^{\prime}\right)$.
+		
+		And now apply Proposition \ref{semipositiveThm}, so that the direct summand $L\otimes f_* (\mathcal{O}_X(G-E))$ is also locally free and numerical semipositive (nef vector bundle). And finally we try to show that the axillary term $f_* \mathcal{O}_X(G-E)$ does not have any contribution as $f_* \mathcal{O}_X(G-E) = \mathcal{O}_Y$. 
+	\end{proofidea}
+	
+	
+	\section{Applications of Kawamata's canoncial bundle formula}
+	\subsection{Kawamata's subadjunction formula}
+	
+	\bibliographystyle{amsalpha}
+	\bibliography{mybib.bib}
+	
+\end{document}

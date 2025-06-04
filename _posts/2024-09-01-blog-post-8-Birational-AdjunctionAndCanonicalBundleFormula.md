@@ -15,19 +15,21 @@ For detailed information see my reading notes
 
 [1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf).
 
-[2. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf). 
+[2. Kawamata's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
 
-[3. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf)
+[3. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
-[4. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf)
+[4. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-[5. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
+[5. Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
 
-[6. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
+[6. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf),
 
-[7. Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
+[7. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
 
-[8. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf),
+[8. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf)
 
-[9. Applications of canonical bundle formula](),
+[9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf). 
+
+[10. Applications of canonical bundle formula](),
 
