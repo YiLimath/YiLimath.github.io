@@ -39,7 +39,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{assumption}[theorem]{Assumption}
-
+\newtheorem{proofidea}[theorem]{PROOF IDEA}
 % 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
 \topmargin 0pt
 \advance \topmargin by -\headheight
@@ -78,8 +78,187 @@
 
 \begin{document}
 	
-	\lecture{4 --- 06, 06, 2024}{Summer 2025}{}{Yi Li}
-
+	\lecture{6 --- 04, 06, 2025}{Summer 2025}{}{Yi Li}
+	\tableofcontents
+	%\section{Cao-H\"oring's Subadjunction}
+	%\subsection{Cao-H\"oring's subadjunction for KLT trivial fibration}
+	
+	\section{Hacon-Paun's canonical bundle formula, 1st version}
+	The goal of this section is to prove the following result
+	\begin{theorem}[{\cite[Theorem 5.2]{HP24}}]
+		Let $f:S\to W$ be a surjective map between compact K\"ahler manifolds. Let $B = \sum d_iP_i$ be a $\mathbb{Q}$-divisor,
+		
+		(1) $P ,Q$ are reduced divisor downstairs such that $f^{-1}(Q) \subset P$ such that $f(P^v)  = Q$ and $f$ restrict on $P^h$ is relative SNC on complement of $Q$,
+		
+		(2,a) $(S,B)$ is a subKLT pair,
+		
+		(3,b) The canonical map $$\mathcal{O}_W\to f_* \mathcal{O}_S(\lceil -B\rceil ),$$is surjective on generic point of $W$, (so that it implies rank 1 condition).
+		
+		(4,c) $f^*(\gamma ) =  K_S+B+\beta$, where $\beta$ has some smooth positive representative $\theta$,
+		
+		(5,*) For any point $z_0 \in S$ and $w_0=f\left(z_0\right) \in W$ there exist local coordinates $w_0 = f(z_0)$, such that coordinate satisfies $$t_i \circ f   = \prod x_{j}^{k_{ij}},$$with $k_{ij}\ge 0$ and $k_{ij} \ne  0 $ for at most one $i$ for each $j$. 
+		
+		Then we have $\{\gamma \} = K_W+B_W+\beta_W$ such that $\beta_W$ is nef class. 
+		
+	\end{theorem}
+	\begin{remark}[Comparison with Cao-H\"oring's subadjunction]
+		The proof is very similar to Cao-H\"oring's proof. The major difference is that here we get a explicit expression instead of subadjunction in the sense of intersection number. The technical core is also the construction of the fiberwise m-Bergeman metric. 
+	\end{remark}
+	\begin{remark}
+		About the axillary condition $(*)$. 
+	\end{remark}
+	\begin{proofidea}
+		Let us briefly sketch the idea of the proof first, we will divide the proof into 4 parts, the first shows existence of the positive current in the adjoint class if certain non-vanishing condition holds. Then the divide the problem into 3 steps:
+		
+		(1) Step 1. To show that moduli b-(1,1)-current $\beta_W$ is nef, we can assume $B_W$ is 0, and check that the assumptions in the theorem does not change,
+		
+		(2) Step 2. We use the fiberwise Bergeman metric method, find some positive current $\Theta$ in the class $K_{S/W} + B + \beta$, such that $$\Theta \ge [-B].$$
+		
+		(3) Step 3. We apply the Takayama's estimate, trying to show that Lelong number of the current $T:  = \Theta - [-B]$ is 0 at every point. So that $\beta_W$ is nef. 
+		
+	\end{proofidea}
+	
+	\subsection{Finding a positive current in the adjoint class when non-vanishing condition holds}
+	The core of the proof is the following proposition.
+	\begin{proposition}[{\cite[Theorem 6.2]{HP24}}]
+		Let $X\to Y$ be a fibration between compact K\"ahler manifolds.
+		
+		Let $D= \sum a_i D_i$ be a SNC divisor (with coefficient $0<a_i <1$) and $L$ be a $\mathbb{Q}$-line bundle. 
+		
+		Let $\alpha ,\gamma$ be two real (1,1) class on $X$ and $Y$, such that $\alpha$ contains a smooth positive representative, we denote the smooth reprensentative of $\gamma$ as $\gamma$. If the following conditions hold
+		
+		(1) $f^* \alpha - \gamma  = c_1 (K_{X/Y}+D-L)$,
+		
+		(2) There exist some multiple of the $mL$ such that $H^0(X_y, mL|_{X_y}) \ne 0$ on generic fiber $y\in Y$.
+		
+		Then we can find a positive current $$\Theta \in c_1(K_{X/Y} + D + \alpha)$$
+	\end{proposition}
+	\begin{proofidea}
+		The idea is to construct the fiberwise Bergeman metric locally on each Stein base. And showing that they coinside on the overlap. To be more precise, we first define the rational (1,1)-class $$\mu = \gamma - f^* \alpha,$$so that there exist some metric $h$ on $K_{X/Y}+D-L$ such that the curvature metric $\Theta_h  = \mu$. We then modifed the metric locally so that $\Theta_{h_i} = \theta$. And the associated $(F_i, h_i)$.
+		
+		We then apply the well established fiberwise Bergeman metric method, since the relative metric on the 
+	\end{proofidea}
+	
+	Another lemma needed in the proof is the following.
+	
+	
+	
+	
+	
+	\begin{lemma}[{\cite[Lemma 7.1]{HP24}}]
+		Let $p: X \rightarrow Y$ be a proper, surjective holomorphic map, where $X$ is a $(n+m)$-dimensional Kähler manifold and $Y$ is the unit disk in $\mathbb{C}^m$. We denote by $Y_0 \subset Y$ the set of regular values of $p$. Consider a $\mathbb{Q}$-line bundle $\left(L, h_L\right)$ on the total space $X$, endowed with a metric $h_L$ eventually singular, but whose curvature is semi-positive. 
+		
+		Let $s \in H^0\left(X, k\left(K_X+L\right)\right)$ be a pluricanonical form with values in $k L$, where $k$ is a positive, sufficiently divisible integer so that $k L$ is a line bundle. 
+		
+		For each $y \in Y_0$ let $s_y \in H^0\left(X_y, k\left(K_{X_y}+L_y\right)\right)$ be the induced form on $X_y$, in the sense that
+		$$
+		\left.s\right|_{X_y}=s_y \wedge p^{\star}(d t)^{\otimes k}
+		$$
+		In this setting we show that the following holds true.
+		
+		We assume moreover that there exists a section $\sigma$ of a line bundle $\Lambda$ such that the quotient $\frac{s}{\sigma}$ is a holomorphic section of $k\left(K_X+L\right)-\Lambda$. There exists a positive constant $C_0>0$ independent of $s$ such that the inequality
+		
+		$$
+		\int_{X_y}\left|s_y\right|^{\frac{2}{k}} e^{-\varphi_L} \geq C_0 \sup _{X_y}\left|\frac{S}{\sigma}\right|^{\frac{2}{k}}
+		$$
+		
+		holds for any $y \in Y_0$ such that $|y|<\frac{1}{2}$. 
+	\end{lemma}
+	
+	We also need the following nefness criterion due to Demailly.
+	
+	
+	\begin{proposition}
+		Let $\alpha \in H_{\partial \bar{\partial}}^{1,1}(X, \mathbf{R})$ be a pseudo-effective class. $\alpha$ is nef iff $\nu(\alpha, x)=0$ for every $x \in X$.
+	\end{proposition}
+	\subsubsection{Step 1. Simplification of the problem}
+	In the first step we try to simplify the problem so that $B_W = 0$. To do assume we have $$f^*(K_W+B_W + \beta_W) = K_{S}+B+ \beta,$$we then define the new pair $(S, B -f^*B_W)$, we check that condition above does not change. 
+	
+	
+	(1) The subKLT condition, TODO
+	
+	Since subKLT condition we decompose $B = \Xi + [-B]$ such that $$\boxed{K_{S/W}+ \Xi  + \beta  \simeq f^*(\beta_W) + [-B]}$$
+	
+	\subsubsection{Step 2. Find closed positive current $\Theta  \in c_1(K_{S/W}+ B +\beta)$}
+	We can apply the Lemma \ref{nonvanishingpseff} to our setting, and let  $X:=S, Y:=W, \alpha:=\beta, \gamma:=\beta_W, L:=\mathcal{O}_S(\lceil-B\rceil)$ and finally $D:=\Xi$. 
+	
+	
+	Then check the following holds
+	
+	
+	(1) $\beta$ contains some smooth representative (this holds by assumption),
+	
+	(2) The class below coinside $$f^* \gamma  - \alpha  = f^* \beta_W  - \beta   = c_1(K_{S/W} +\Xi  - \lceil{-B}\rceil) =  c_1(K_{X/Y}+D -L)$$(by previous step), 
+	
+	(3) Main non-vanishing condition: for sufficient big and divisible $m$, we have $$H^0(S_w,\mathcal{O}_S(\lceil{-mB}\rceil)|_{S^w})\ne 0,\quad \text{over general fibers }S_w$$this is true since by subKLT condition, we have $\lceil{-B}\rceil\ge 0$ so that on the general fiber clearly have the non-vanishing.
+	
+	So that we find a Q-line bundle $F$ such that $$K_{S/W}+ \Xi $$
+	
+	So that there exist a positive current $\Theta$, whose restriction on the general fiber is given by $$u \in H^0(S_w ,\mathcal{O}_S(m \lceil{-B}\rceil))$$
+	
+	The hard part is to prove 
+	
+	Under the setting 
+	
+	(1) $f^* \gamma  - \alpha  = f^* \beta_W  - \beta   = c_1(K_{S/W} +\Xi  - \lceil{-B}\rceil) =  c_1(K_{X/Y}+D -L)$,
+	
+	(2) $X:=S, Y:=W, \alpha:=\beta, \gamma:=\beta_W, L:=\mathcal{O}_S(\lceil-B\rceil)$ and finally $D:=\Xi$,
+	
+	(3) $$\Theta \in c_1(K_{S/W}+B+ \beta)$$
+	
+	
+	The inequality
+	$$
+	\Theta \geq\lceil-B\rceil \ge 0
+	$$
+	holds in the sense of currents on $S$, where the RHS is interpreted as current of integration on the divisor $\lceil-B\rceil$.
+	
+	The idea is to prove that the relative weight $\varphi_{S/W}\le  C + \log |s_{[-B]}|^2$.
+	
+	\subsubsection{Step 3. Prove the Lelong number $\Theta - \lceil -B \rceil $ is 0}
+	
+	We need the following Takayama's estimate.
+	
+	
+	We first define the function $F(w)$: 
+	
+	we first choose local coordinate such that $t_0  =f (z_0)$, and let $\psi$ be the function satisfies $$\omega^n \wedge f^{\star}(\sqrt{-1} d t \wedge d \bar{t})=e^\psi \sqrt{-1} d z \wedge d \bar{z}$$
+	
+	which will induce a metric $e^{-\psi}$ on $K_{S/W}$ and we choose another smooth metric $\psi_0$ on $K_{S/W}$. We then have $$F(w) =  \int e^{-\psi_f - \phi_B} \omega^n$$
+	with $e^{-\phi_B} = \log |s_B|^2$.
+	
+	
+	Then Takayama's estimate says that 
+	
+	\begin{proposition}
+		(1) The divisor $B_W=0$ is zero,
+		(2) given any point $z_0 \in S$ and $w_0=f\left(z_0\right) \in W$ there exist local coordinates $\left(x_1, \ldots, x_{n+m}\right)$ on $S$ centred at $z_0$ and $\left(t_1, \ldots, t_m\right)$ on $W$ centred at $w_0$ such that $t_i \circ f=\prod x_j^{k_{i j}}$ where the $k_{i j}$ are non-negative integers such that $k_{i j} \neq 0$ for at most one $i$ for each index $j$.
+		
+		Then for any point $w_0 \in W$ the following inequality holds
+		$$
+		F(w) \leq C \prod_j \log \frac{1}{\left|w_j\right|}
+		$$
+		where $C>0$ is a positive constant and $w$ are coordinates centred at any $w_0$.
+	\end{proposition}
+	
+	We then claim the followin estimate holds $$\boxed{e^{\varphi_{S / W}(z)} \geq \frac{\left|s_{\lceil-B\rceil}\right|^2}{\int_{S_w}\left|s_{\lceil-B\rceil, w}\right|^2 e^{-\varphi_{\Xi}-\varphi_F}} ,\quad \left|s_{\lceil-B\rceil, w}\right|^2 e^{-\varphi_{\Xi}-\varphi_F} \leq\left. C e^{-\psi_f-\phi_B} \omega^n\right|_{S_w}}$$
+	So that combine these two we get $$\boxed{e^{\varphi_T(z)} \geq \frac{C}{F(w)},\quad e^{\varphi_T (z)} \ge \frac{1}{\prod \log \frac{1}{|w_j|}}}$$
+	
+	Finally, apply the Lelong number estimate $$\nu(T,z_0) \le C\liminf \varphi_T /\log |z-z_0| =0$$
+	
+	\section{Hacon-P\u{a}un's KLT descend theorem}
+	In this section, we try to prove the following KLT desend theorem for projective contraction morphism between normal compact K\"ahler varieties.
+	
+	\begin{theorem}[{\cite[Theorem 2.3]{HP24}}]
+		Let $(X, B+\boldsymbol{\beta})$ be a generalized klt (lc) pair, $f: X \rightarrow Z$ a surjective projective morphism of normal compact Kähler varieties with connected fibers, such that $K_X+B+\boldsymbol{\beta}_X=f^* \gamma$ for some $\bar{\partial}, \partial$ closed current $\gamma$ on $Z$. 
+		
+		Then $\left(Z, B_Z+\boldsymbol{\beta}^Z\right)$ is a generalized klt (lc) pair, i.e.
+		
+		(1) $\boldsymbol{\beta}^Z$ is b-nef, that is $\boldsymbol{\beta}^Z$ descend to some model $Z^{\prime}$ so that $\boldsymbol{\beta}_{Z^{\prime}}^Z$ is nef, and
+		
+		(2) $\left(Z^{\prime}, \mathbf{B}_{Z^{\prime}}^Z\right)$ is sub-klt (sub-lc).
+	\end{theorem}
+	
 	\bibliographystyle{amsalpha}
 	\bibliography{mybib.bib}
 \end{document}
