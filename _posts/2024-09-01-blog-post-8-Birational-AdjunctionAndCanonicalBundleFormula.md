@@ -21,7 +21,7 @@ For detailed information see my reading notes
 
 [4. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-[5. Generalized canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
+[5. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
 
 [6. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf),
 
