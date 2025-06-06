@@ -21,13 +21,13 @@ For detailed information see my reading notes
 
 [4. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-[5. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf)
+[5. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
 
 [6. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
 
 [7. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
 
-[8. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf)
+[8. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
 [9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf). 
 
