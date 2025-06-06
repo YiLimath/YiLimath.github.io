@@ -86,11 +86,11 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 ## Part V. Geometric Langlands and Mirror symmetry
 
 
-(1) [1. Wall crossing in birational geometry](),
+[1. Wall crossing in birational geometry](),
 
-(2) [2. A brief introduction to D-module](),
+[2. A brief introduction to D-module](),
 
-(3) [3. A brief introduction to Fourier Mukai transform](),
+[3. A brief introduction to Fourier Mukai transform](),
 
-(4) [4. A brief introduction to Geometric Langlands](),
+[4. A brief introduction to Geometric Langlands](),
 
