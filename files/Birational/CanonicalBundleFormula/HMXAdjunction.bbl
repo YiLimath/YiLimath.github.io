@@ -1,0 +1,19 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{HMX14}
+
+\bibitem[Bir19]{BAB}
+Caucher Birkar, \emph{Anti-pluricanonical systems on fano varieties}, Annals of
+  Mathematics \textbf{190} (2019), no.~2, 345--463.
+
+\bibitem[HMX14]{ACC}
+Christopher~D. Hacon, James McKernan, and Chenyang Xu, \emph{A{CC} for log
+  canonical thresholds}, Ann. of Math. (2) \textbf{180} (2014), no.~2,
+  523--571. \MR{3224718}
+
+\end{thebibliography}

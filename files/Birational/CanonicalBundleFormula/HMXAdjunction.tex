@@ -14,7 +14,7 @@
 	\begin{center}
 		\framebox{
 			\vbox{
-				\hbox to 5.78in { {\bf Canonical bundle formula under Kahler setting} \hfill #2 }
+				\hbox to 5.78in { {\bf Hacon-Mckernan-Xu's canonical bundle formula} \hfill #2 }
 				\vspace{4mm}
 				\hbox to 5.78in { {\Large \hfill #5  \hfill} }
 				\vspace{2mm}
@@ -35,6 +35,7 @@
 \newtheorem{observation}[theorem]{Observation}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{definition}[theorem]{Definition}
+\newtheorem{proofidea}[theorem]{PROOF IDEA}
 \newtheorem{claim}[theorem]{Claim}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{fact}[theorem]{Fact}
@@ -59,7 +60,7 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Adjunction Thoery Reading Notes}
+\lhead{Adjunction Theory Reading Notes}
 \rhead{\thepage}
 %\cfoot{center of the footer!}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -78,8 +79,51 @@
 
 \begin{document}
 	
-	\lecture{4 --- 06, 06, 2024}{Summer 2025}{}{Yi Li}
+	\lecture{8 --- 06, 06, 2025}{Summer 2025}{}{Yi Li}
+	The aim of this note is to prove the following Hacon-Mckernan-Xu's subadjunction theorem and show varies applications. The major references are \cite{BAB} and \cite{ACC}.
+	
+	
+	
+	\begin{theorem}[{\cite[Theorem 4.2]{ACC}}]~Assume the following condition holds:\\
+		(1) Let $(X, B)$ be a projective klt pair; 
+		
+		(2) $G \subset X$ is a subvariety with normalisation $F$, (we want to do subadjunction on this $F$),
+		
+		(3) $X$ is $\mathbb{Q}$-factorial near the generic point of $G$,
+		
+		(4) $\Delta \geq 0$ is an $\mathbb{R}$-Cartier divisor on $X$; and $(X, B+\Delta)$ is lc near the generic point of $G$, (the LC condition allow us to find some DLT model near $G$),
+		
+		(5) there is a unique non-klt place of this pair whose centre is $G$. 
+		
+		(6) Let $d \in \mathbb{N}$, and let $\Phi$ be a subset of $[0,1]$ that contains 1, and $\operatorname{dim} X=d$ and $B \in \Phi$. 
+		
+		We then use MMP arguement (see more detail below) find some DLT model $\psi: Y \to X,$ such that there exists unique component $S$ with coefficient 1, and a contraction $h:S\to F$. We then apply the canonical bundle formula $$K_S+\Xi_S \sim_{\mathbb{R}}h^*(K_F+\Theta_F +P_F),$$where $\Xi_S$ is some axillary boundary divisor (which will be contruced below) and $\Theta_F$ is the discriminant divisor and $P_F$ is the moduli divisor in the canonical bundle formula. 
+		
+		Then Hacon-Mckernan-Xu subadjunction theorem says that:
+		
+		(a) (coefficient control on discriminant part) The coefficient of the discriminant divisor $\Theta_F$ belong to
+		$
+		\Psi:=\left\{a \mid 1-a \in \operatorname{LCT}_{d-1}(D(\Phi))\right\} \cup\{1\}
+		$, thus only depends on $B$ not $\Delta$.
+		
+		(b) (positivity on moduli part) $P_F$ is pseudo-effective. 
+	\end{theorem}
+	
+	\tableofcontents
+	
+	
+	\section{Proof of Hacon-Mckernan-Xu's subadjunction}
+	\subsection{Step 0. Construction of the DLT model}
+	
+	\subsection{Step 1. Construction of the axillary divisor $\Xi_S$}
+	
+	\subsection{Step 2. Proof of the coefficient of discriminant part $\Theta_F$ lies in the DCC set $\Psi$}
+	
+	\subsection{Step 3. Proof of the pseudo-effectiveness of the moduli part $P_F$}
+	
+	\section{Applications of Hacon-Mckernan-Xu's subadjunction}
 	
 	\bibliographystyle{amsalpha}
 	\bibliography{mybib.bib}
+	
 \end{document}
