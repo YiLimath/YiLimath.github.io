@@ -72,6 +72,10 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 ----
 ## Part III. KSBA moduli
 
+[1. Kollar's condition](),
+
+[2. Flat family of divisors, Mumford divisor](),
+
 
 
 ----
@@ -82,13 +86,11 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 ## Part V. Geometric Langlands and Mirror symmetry
 
 
-(15) [Note-17: Wall crossing in birational geometry](),
+(1) [1. Wall crossing in birational geometry](),
 
-(16) [Note-18: A brief introduction to D-module](),
+(2) [2. A brief introduction to D-module](),
 
-(17) [Note-18: A brief introduction to Fourier Mukai transform](),
+(3) [3. A brief introduction to Fourier Mukai transform](),
 
-(18) [Note-19: A brief introduction to Geometric Langlands](),
-
----
+(4) [4. A brief introduction to Geometric Langlands](),
 
