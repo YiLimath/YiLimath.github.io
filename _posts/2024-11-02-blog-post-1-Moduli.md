@@ -72,10 +72,17 @@ We will focus on the Proporties of Moduli spaces in this part of notes. The gene
 ----
 ## Part III. KSBA moduli
 
-[1. Kollar's condition](),
+[1. Relative canonical sheaf, Kollar's package theorem]()
 
-[2. Flat family of divisors, Mumford divisor](),
+[2. Stable family, locally stable family, KSB morphism with basic propeties]()
 
+[3. Base change properties, flatness criterion, Kollar's condition]()
+
+[4. DuBois singularity and CM condition]()
+
+[5. Family of divisors, flatness condition, Mumford divisors](),
+
+[6. Moduli of stable varieties](),
 
 
 ----
