@@ -14,34 +14,29 @@ The purpose of this reading seminar is to discuss the recent paper [Moishezon mo
 ---
 Here is the outline:
 
-(0) [Brief summary slides (used for my PhD Dissertation Proposal Examination)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
+[1. Summary Slide (for my PhD Dissertation Proposal Examination)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 
-(1) [Moishezon morphism part 1: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [TODO]
+[2. Moishezon morphism: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [TODO]
 
-(2) [Moishezon morphism part 2: Basic properties of Moishezon morphism (1)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.25]
+[3. Moishezon morphism: Basic properties of Moishezon morphism](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.25]
 
-(3) [Moishezon morphism part 2: Basic properties of Moishezon morphism (2)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.10]
+[4. Moishezon morphism: General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf) [update 9.10]
 
-(4) [Moishezon morphism Part 3: General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf) [update 9.10]
+[5. Moishezon morphism: Fiberwise bimeromorphic morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf), [update 9.10]
 
-(5) [Note-1: Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
+[6. Moishezon morphism: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [update 12.4]
 
-(6) [Note-2: Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf) [Update 9.15]
+[7. Moishezon morphism: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf),
 
-(7) [Note-3: Alternating properties of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
+[8. Moishezon morphism: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf),
 
+[9. Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
 
-(8) [Moishezon morphism Part 4: Fiberwise bimeromorphic morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf), [update 9.10]
+[10. Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf) [Update 9.15]
 
-(9) [Moishezon morphism Part 5: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [update 12.4]
+[11. Alternating properties of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
 
-(10) [Moishezon morphism Part 6: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf),
-
-(11) [Moishezon morphism Part 8: Rational curves on Moishezon spaces](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf),
-
-(12) [Minimal model program in the Moishezon category](),
-
-(13) 
+[12. Minimal model program in the Moishezon category](),
 
 
 ---
