@@ -27,3 +27,5 @@ Here is the outline of the notes:
 [8. Sarkisov program](),
 
 [9. Stable rationality and decomposition of diagonal](),
+
+[10. Cubic hypersurfaces](),
