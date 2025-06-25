@@ -32,17 +32,16 @@ And finally we can show the boundedness result about canonical models. The idea 
 
 For more detailed information, see my lecture notes:
 
-(1) [Part I: Boundedness of pluricanonical map for variety of general type](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)
+[Note-1: Boundedness of pluricanonical map for variety of general type](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)
 
-(2) [Part II: DCC condition of volume](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)
+[Note-2: DCC condition of volume](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)
 
-(3) [Part III: ACC of log canonical threshold](https://yilimath.github.io/files/Birational/BoundednessGeneralType/ACCLCT.pdf)
+[Note-3: ACC of log canonical threshold](https://yilimath.github.io/files/Birational/BoundednessGeneralType/ACCLCT.pdf)
 
-(4) [Part IV: ACC of log canonical threshold for generalised pairs]().
+[Note-4: ACC of log canonical threshold for generalised pairs]().
 
-(4) [Part IV: Boundedness of canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedCanonicalModel.pdf)
+[Note-5: Boundedness of canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedCanonicalModel.pdf)
 
-(5) [Part V: Boundedness of semi-log canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedSLCM.pdf)
+[Note-6: Boundedness of semi-log canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedSLCM.pdf)
 
-(6) [Part VI: Boundedness and pseudo-effective threshold](),
-
+[Note-7: Boundedness and pseudo-effective threshold](),
