@@ -9,16 +9,16 @@ tags:
 
 In this series of notes we will summarize some standard metric methods which will be useful in birational geometry.
 
-(0) [The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry](),
+[1. The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry](),
 
-(1) [The theorem of Angehrn and Siu](),
+[2. The theorem of Angehrn and Siu](),
 
-(2) [Siu's invariance of plurigenera analytic proof](),
+[3. Siu's invariance of plurigenera analytic proof](),
 
-(3) [Limiting metric arguement in birational geometry](),
+[4. Limiting metric arguement in birational geometry](),
 
-(3) [Bergman metric, positivity and canonical bundle formula](),
+[5. Bergman metric, positivity and canonical bundle formula](),
 
-(4) [Birational boundedness for varieties of general type](),
+[6. Birational boundedness for varieties of general type](),
 
-(5) [Supercanonical metric and abundance conjecture](),
+[7. Supercanonical metric and abundance conjecture](),
