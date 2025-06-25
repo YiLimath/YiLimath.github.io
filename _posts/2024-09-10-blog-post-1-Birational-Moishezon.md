@@ -16,7 +16,7 @@ Here is the outline:
 
 [1. Summary Slide (for my PhD Dissertation Proposal Examination)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 
-[2. Moishezon morphism: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/MoishezonVar.pdf) [TODO]
+[2. Moishezon morphism: Basic properties of Moishezon varieties](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 6.20]
 
 [3. Moishezon morphism: Basic properties of Moishezon morphism](https://yilimath.github.io/files/Birational/Moishezon/MoishezonMorphism.pdf) [update 9.25]
 
@@ -24,7 +24,7 @@ Here is the outline:
 
 [5. Moishezon morphism: Fiberwise bimeromorphic morphism](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf), [update 9.10]
 
-[6. Moishezon morphism: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [update 12.4]
+[6. Moishezon morphism: Algebraic approximation](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), 
 
 [7. Moishezon morphism: Inversion of adjunction](https://yilimath.github.io/files/Birational/BCHM/InverAdjunc.pdf),
 
