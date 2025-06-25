@@ -15,7 +15,9 @@ In this series of notes we will summarize some standard metric methods which wil
 
 (2) [Siu's invariance of plurigenera analytic proof](),
 
-(3) [Bergman metric and positivity](),
+(3) [Limiting metric arguement in birational geometry](),
+
+(3) [Bergman metric, positivity and canonical bundle formula](),
 
 (4) [Birational boundedness for varieties of general type](),
 
