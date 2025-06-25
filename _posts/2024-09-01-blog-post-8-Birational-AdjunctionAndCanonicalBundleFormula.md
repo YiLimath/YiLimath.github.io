@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Adjunction Theory'
-date: 2025-05-23
+date: 2025-06-01
 permalink: /posts/2025/05/Adjunction-Theory/
 tags:
   - Birational geometry
@@ -29,5 +29,5 @@ For detailed information see my reading notes
 
 [8. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
-[9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf). 
+[9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
 

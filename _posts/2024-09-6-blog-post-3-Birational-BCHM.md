@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Reading Seminar: BCHM'
-date: 2025-02-11
+date: 2025-05-01
 permalink: /posts/2025/02/BCHM/
 tags:
   - Birational geometry
@@ -11,118 +11,100 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 
 
-
 ---
 
-Here is the outline of Part I. BCHM introduction
+## Part I. Extension theorems and existence of flips
 
-(1) [BCHM Note-1: Ingredient of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHMOverview.pdf),
+[Note-1: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
-(2) [BCHM Note-2: Applications of BCHM](https://yilimath.github.io/files/Birational/BCHM/BCHMApp.pdf),
+[Note-2: deFernex-Hacon extension theorem]()
 
-(3) [BCHM Note-3: Applications of BCHM to deformation problems](),
+[Note-3: Demailly-Hacon-Paun DLT extension]()
 
-(4) [BCHM Note-8: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf), 
+[Note-4: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
 
-(5) [BCHM Supplement 1: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf),
-
-
-(6) [BCHM Supplement 2: Polyhedron decomposition results](),
+[Note-5: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
 
 ---
 
-Here is the outline for Part II. Hacon-Mckernan extension and variants
+## Part II. Existence of minimal model, good minimal model, canonical model
 
+[Note-1: BCHM theorem C existence of minimal model for effective pair]()
 
-(1) [Extension Problem Note-1: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21],
+[Note-2: Demailly-Hacon-Paun's existence of good minimal model theorem]()
 
-(2) [Extension Problem Note-2: deFernex-Hacon extension theorem](),
+[Note-3: Basic properties of minimal model, good minimal models, canonical model]()
 
-(3) [Extension Problem Note-3: Demailly-Hacon-Paun DLT extension](),
+[Note-4: Behavior of minimal model, good minimal model, canonical model under birational modification]()
 
+[Note-5: Minimal model, good minimal model, canonical model in family]()
 
----
-
-Here is the outline for Part III. Existence of minimal model, existence of good minimal model
-
-(1) [Existence of minimal model Note-1: BCHM theorem C existence of minimal model for effective pair](),
-
-(2) [Existence of minimal model Note-2: DHP theorem ](),
+[Part-6: Semi-stable MMP]()
 
 
 ----
 
-Here is the outline for Part IV. Finiteness and Termination problems 
+## Part III. Finiteness of minimal model and Termination problems 
 
+[Note-1: Polyhedron decomposition results]()
 
-(1) [Termination Note-1: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf), [Update 3.9]
+[Note-2: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
-(2) [Termination Note-2: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf).
-
-
----
-
-Here is the outline for Part V. Finite generation of Cox Ring
-
-(1) [Finite Generation Note-1: Finite generation of canonical ring, Cox ring](),
+[Note-3: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
 
 
 ---
 
-Here is the outline for Part VI. Non-vanishing and abundance
+## Part IV. Finite generation of Cox Ring
 
-(1) [NonVanishing Note-1: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf) [Update 2.21]
+[Finite Generation Note-1: Finite generation of canonical ring, Cox ring]()
 
----
-
-Here is the outline for Part V. Minimal model, good minimal model and canonical model.
-
-
-(1) [Part I: Existence of minimal model, good minimal model, canonical model]().
-
-(2) [Part II: Basic properties of minimal model, good minimal models, canonical model]().
-
-(3) [Part III: Minimal model, good minimal model, canonical model under birational morphism]().
-
-(4) [Part IV: What will be contracted by the MMP?]().
-
-(5) [Part V: Minimal model, good minimal model, canonical model in family]().
-
-(6) [Part VI: Semi-stable MMP]().
-
-
-
-----
-
-Here is the outline of Part VI partial modification
-
-(0) [Note-1:Log resolution, discrepancy]()
-
-(1) [Note-1: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf).
-
-
-(2) [Note-2: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf),
-
-(3) [Note-3: Semi log modificaiton](),
 
 
 ---
 
-Here is the outline of Part V Locus in birational geometry
+## Part V. partial modification
+
+[Note-1: Log resolution, discrepancy]()
+ 
+[Note-2: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf)
+
+[Note-3: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
+
+[Note-4: Semi log modificaiton]()
+
+
+---
+
+## Part VI. Locus in birational geometry
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
-(1) [Part I: Exceptional Locus]().
+[Note-1: Exceptional Locus]()
 
-(2) [Part II: Base locus, fixed part, mobile part](). 
+[Note-2: Base locus]()
 
-(2) [Part III: Zariski decomposition](). 
+[Note-3: Zariski decomposition]()
 
-(3) [Part IV: Stable base locus, restricted base locus and augmented base locus](). 
+[Note-4: Stable base locus, restricted base locus and augmented base locus]()
 
-(4) [Part V: Non-KLT locus](). 
+[Note-5: Non-KLT locus]()
 
-(5) [Part VI: non-nef locus(numerical base locus), non-Kahler Locus]().
+[Note-6: non-nef locus(numerical base locus), non-Kahler Locus]()
 
 
+----
+## Part VII. Application of BCHM
+
+[Note-1: Application of BCHM for deformation problems]()
+
+
+
+---
+
+## Part V. Non-vanishing and abundance
+
+[Note-1: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf)
+
+----

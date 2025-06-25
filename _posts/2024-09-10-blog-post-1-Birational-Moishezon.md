@@ -1,6 +1,6 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2025-1-18
+date: 2025-06-01
 permalink: /posts/2025/01/Moishezon-Morphism/
 tags:
   - Birational geometry
