@@ -6,9 +6,9 @@ tags:
   - Birational geometry
 ---
 
-The aim of this note is to introduce adjunction theory in birational geometry. Among the various techniques in birational geometry, adjunction theory is one of the most powerful tools. It allows us to relate the geometry—particularly the singularities—of the ambient variety to those of appropriate subvarieties.
+The aim of this note is to introduce adjunction theory in birational geometry. Among the various techniques in birational geometry, adjunction theory is one of the most powerful tools. It allows us to relate the geometry — particularly the singularities — of an ambient variety to those of suitable subvarieties.
 
-A useful summary can be found in [Anti-pluricanonical systems on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01)). Our note is based on this paper, and we aim to provide a more detailed introduction to adjunction theory.
+A useful summary can be found in [Anti-pluricanonical systems on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01)). This note is based on that paper, and our goal is to provide a more detailed introduction to adjunction theory.
 
 
 For detailed information see my reading notes 
