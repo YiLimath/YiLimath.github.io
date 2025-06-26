@@ -1,13 +1,14 @@
 ---
-title: 'Birational Geometry Reading Seminar: BCHM'
+title: 'Birational Geometry Reading Notes: BCHM'
 date: 2025-05-01
 permalink: /posts/2025/02/BCHM/
 tags:
   - Birational geometry
+  - BCHM
 ---
 
 
-This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem. 
+This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem etc. 
 
 
 
@@ -105,6 +106,8 @@ The aim of this series of notes is to summarize the base properties about stable
 
 ## Part V. Non-vanishing and abundance
 
-[Note-1: Around Non vanishing conjecture](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf)
+[Note-1: Non-vanishing conjecture when exists many differential](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf)
+
+
 
 ----

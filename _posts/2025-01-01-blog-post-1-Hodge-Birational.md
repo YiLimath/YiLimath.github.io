@@ -1,5 +1,5 @@
 ---
-title: 'Hodge Theory in Birational Geometry'
+title: 'Birational Geometry Notes: Hodge Theory in Birational Geometry'
 date: 2025-01-01
 permalink: /posts/2025/01/Hodge-Theory/
 tags:
