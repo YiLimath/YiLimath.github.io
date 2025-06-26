@@ -8,7 +8,6 @@ tags:
 ---
 
 In this part of the notes, we will focus on the properties of moduli spaces. The guiding philosophy behind moduli theory is that 
-
 > The moduli of a geometric object completely determine the object itself. In birational geometry, one of the central theme is that the geometry of a variety is largely governed by the curves and divisors it contains.
 
 
@@ -95,9 +94,9 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 ## Part V. Geometric Langlands and Mirror symmetry
 
 
-[2. A brief introduction to D-module]()
+[1. A brief introduction to D-module]()
 
-[3. A brief introduction to Fourier Mukai transform]()
+[2. A brief introduction to Fourier Mukai transform]()
 
-[4. A brief introduction to Geometric Langlands]()
+[3. A brief introduction to Geometric Langlands]()
 

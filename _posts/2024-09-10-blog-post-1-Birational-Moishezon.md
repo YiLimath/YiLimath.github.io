@@ -18,13 +18,13 @@ Here is the outline:
 
 [2. Basic properties of Moishezon varieties and Moishezon morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 6.20]
 
-[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/GeneralTypeLocus.pdf) [update 9.10]
+[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moisheon3.pdf) [update 9.10]
 
-[4. Fiberwise bimeromorphic morphism, fiberwise MMP](https://yilimath.github.io/files/Birational/Moishezon/FiberWiseBirational.pdf), [update 9.10]
+[4. Fiberwise bimeromorphic morphism, fiberwise MMP](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
 
 [5. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [TODO]
 
-[6. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/BCHM/RationalCurveMoishezon.pdf), [TODO]
+[6. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/BCHM/Moishezon5.pdf), [TODO]
 
 [7. Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
 
