@@ -22,11 +22,11 @@ Here is the outline:
 
 [4. Fiberwise bimeromorphic map](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
 
-[5. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [TODO]
+[5. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf), [TODO]
 
-[6. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/BCHM/Moishezon5.pdf), [TODO]
+[6. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/Moishezon/Moishezon5.pdf), [TODO]
 
-[7. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
+[7. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon6.pdf)
 
 [8. Minimal model program in the Moishezon category](),
 
