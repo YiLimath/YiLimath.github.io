@@ -18,7 +18,7 @@ Here is the outline:
 
 [2. Basic properties of Moishezon varieties and Moishezon morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 6.20]
 
-[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moisheon3.pdf) [update 9.10]
+[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 9.10]
 
 [4. Fiberwise bimeromorphic morphism, fiberwise MMP](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
 
