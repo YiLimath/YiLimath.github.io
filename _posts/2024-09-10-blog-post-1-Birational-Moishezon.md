@@ -20,7 +20,7 @@ Here is the outline:
 
 [3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 9.10]
 
-[4. Fiberwise bimeromorphic morphism, fiberwise MMP](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
+[4. Fiberwise bimeromorphic map](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
 
 [5. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/AlgebraicApproximation.pdf), [TODO]
 
