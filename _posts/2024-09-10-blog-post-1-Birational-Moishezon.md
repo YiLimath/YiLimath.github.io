@@ -26,12 +26,8 @@ Here is the outline:
 
 [6. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/BCHM/Moishezon5.pdf), [TODO]
 
-[7. Seshadri projectivity criterion](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
+[7. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/SeshadriCriterion.pdf)
 
-[8. Chow-Barlet cycle space and lower-semi continuity of Seshadri constant](https://yilimath.github.io/files/Birational/Moishezon/lscSeshadriConstant.pdf) [Update 9.15]
-
-[9. Alternating properties of projective locus, openness of projectivity](https://yilimath.github.io/files/Birational/Moishezon/OpenesssProj.pdf) [Update 9.15]
-
-[10. Minimal model program in the Moishezon category](),
+[8. Minimal model program in the Moishezon category](),
 
 ---
