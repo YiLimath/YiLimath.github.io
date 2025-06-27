@@ -18,9 +18,10 @@ Here is the outline:
 
 [2. Basic properties of Moishezon varieties and Moishezon morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 6.20]
 
-[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 9.10]
+[3. Fiberwise bimeromorphic map](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
 
-[4. Fiberwise bimeromorphic map](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 6.26]
+[4. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 9.10]
+
 
 [5. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf), [TODO]
 
