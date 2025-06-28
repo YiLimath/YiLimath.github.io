@@ -22,7 +22,7 @@ Here is the outline:
 
 [4. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 6.28]
 
-[5. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon6.pdf) [update 6.30]
+[5. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf) [update 6.30]
 
 [6. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf), [TODO]
 
