@@ -18,4 +18,4 @@ Currently I mainly work on:
 
 (2) The boundedness problem in birational geometry and the moduli aspects of birational geometry;
 
-(3) The machine aid birational geometry.
+(3) The intellegent system aided mathematics (I feel this is a very promising direction).
