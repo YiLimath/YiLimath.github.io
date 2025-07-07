@@ -8,7 +8,7 @@ tags:
 ---
 
 
-The purpose of this reading seminar is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in detail. Let us first briefly answer the question WHY Moishezon?
+The purpose of this series of notes is to discuss the recent paper [Moishezon morphism](https://www.intlpress.com/site/pub/pages/journals/items/pamq/content/vols/0018/0004/a011/index.php?mode=ns) by Professor Kollár in detail. Let us first briefly answer the question WHY Moishezon?
 > First, Moishezon spaces have more functorial behavior (compared with projective varieties), as we
 will see in my notes. Secondly, from almost any projective variety we can construct a Moishezon
 space via bimeromorphic modification, making Moishezon spaces versatile in birational geometry.
