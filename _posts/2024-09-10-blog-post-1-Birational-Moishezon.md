@@ -19,9 +19,6 @@ introduced, we could enjoy the classical ones even more. To me, non-projective c
 (perhaps meaning Moishezon spaces) seem like modern paintings."
 
 
-If you are curious about what modern painting in birational geometry looks like, let us dive into fancynating world of Moishezon spaces and Moishezon morphisms.
-
----
 Here is the outline:
 
 [1. Basic properties of Moishezon varieties and Moishezon morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 7.4]
