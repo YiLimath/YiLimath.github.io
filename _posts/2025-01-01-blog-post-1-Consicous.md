@@ -7,5 +7,4 @@ tags:
   - Birational Geometry
 ---
 
-The aim of this note is try to answer the relation between causal inference and birational geometry. 
-
+The aim of this note is try to answer the relation between causal inference and birational geometry.
