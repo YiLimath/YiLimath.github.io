@@ -87,7 +87,14 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ----
-## Part IV. Rigidity problems
+## Part IV. Viehweg-Zuo Theory
+
+
+----
+## Part V. Shafarevich Conjecture and deformation rigidty
+
+
+
 
 
 ---
