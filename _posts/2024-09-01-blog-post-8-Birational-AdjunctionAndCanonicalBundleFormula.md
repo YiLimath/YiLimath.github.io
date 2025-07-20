@@ -32,3 +32,5 @@ For detailed information see my reading notes
 
 [9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
 
+[10. Applications of cyclic covering trick]()
+
