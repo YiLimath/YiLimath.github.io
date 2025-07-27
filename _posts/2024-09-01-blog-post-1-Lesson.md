@@ -20,5 +20,5 @@ Based on this definition, I disagree with the concept of interdisciplinary resea
 
 (4) Mathematics alone cannot solve every problem in the world. History shows that while math provided the foundation for classical mechanics, electromagnetism, and quantum theory, this does not mean it is the sole driving force behind scientific progress. Unfortunately, as a mathematics student, I must point out: if you are fascinated by this narrative, you'd better studying physics (or eigineering) instead of math. 
 
-However, I should clearfy the misconception, this does not means math is not valuable (see (2)), what I want to stress is the "narrative" above is wrong. 
+However, I should clarify the misconception, this does not means math is not valuable (see (2)), what I want to stress is the "narrative" above is wrong. 
 
