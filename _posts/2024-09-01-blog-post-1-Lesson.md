@@ -12,19 +12,18 @@ tags:
 
 ----
 
+## 摘要
 
-(1) First, What is math? Mathematics is an activity centered on solving mathematical problems or building mathematical theories. Therefore, if you say, "I want to build a theory about physics or AI," those tasks do not fit my definition of mathematics. I don’t believe mathematicians can accomplish such tasks—constructing the theory of a specific field is the job of experts in that field.
+本文先摘要一些重要的思想, 并在接下来的章节进行系统的剖析与阐述。
 
-Based on this definition, I disagree with the concept of interdisciplinary research. While I acknowledge that people from different fields should communicate—sharing methodologies, research approaches, or even discovering connections between disciplines—I doubt whether this truly constitutes a meaningful **scientific connection**. I am more and more convinced that interdisciplinary research is misguided.
+(1) 数学研究最有价值的是现象的发现, 以及数学结构的发现。 相比于纯粹的逻辑推演, 现代数学引入现象的观念是非常必要的。另一个重要的观念是要区分什么是**trivial**的什么是**highly nontrivial**的, 能够解决non-trivial问题的数学通常是深刻的。
 
-(2) Second, a fancy research topic does not equal to a valuable one (young people should learn to modify their instincts). Most research topics may seem boring but are far more valuable than fancy ones.
+(2) 老子道德经第16章:"复命曰常, 知常曰明": 数学研究需要做寻根的工作, 寻找在历史演变过程没有发生变化的东西, 以及在不同的问题中反复出现的模式。 这些思想对数学研究是非常有价值的东西。 所以研究做明白的一个重要的标准是找到问题的根, 正所谓 欲流之远者, 必浚其源泉。求木之长者, 必固其根本。
 
-(3) Learning mathematics is about understanding proofs. If you read an entire book but cannot prove the theorems yourself, you haven’t truly completed the reading.
+(3) 老子道德经第63章: "味无味": 数学研究问题有时候是很枯燥无味的, 但是有些枯燥无味的东西可能符合天道的。另一层面, 能够发现无趣的东西的研究价值和潜藏的趣味是非常有眼光的。
 
+(4) 老子道德经第63章: "图难于其易, 为大于其细, 是以圣人终不为大, 故能成其大": 庞大的数学问题需要从细节开始入手, 比如一篇文章证明了一个定理, 那么就从这个定理的证明开始阅读。一个困难的数学问题, 从自己能解决的部分开始。
 
-(4) Mathematical research should focus on the new **phenonmenon**, new **math structure** that appears. One should have the ability to distinct **trivial** part and **non-trivial** part of the proof. So we should ask ourself repeatly: why the theorem is non-trivial?
+(5) 庄子齐物论: "以指喻指之非指, 不若以非指喻指之非指也": 数学问题本身不等于概念, 概念其实是"虚假"的东西。正确的数学研究应尽力避免引入过多数学概念, 而是关注问题本身。 同理数学学习应避免从概念开始(正如前文所说, 概念是虚假没有意义的)。
 
-(5) I prefer doing math while do not ask "How to apply it (in the real world)?".
-
-(6) Mathematic is **not about concept**, although people require to learn certain amount of knowledge to speak about something clearly. 
-
+(6) 庄子逍遥游: "所用之异": 数学的用处千差万别, 有时候微小的现象发现, 工具发现可以带来极大的用处。不可轻视无用的数学。
