@@ -1,12 +1,16 @@
 ---
-title: 'What Should Avoid When Doing Mathematics'
+title: '数学之道'
 date: 2023-01-01
-permalink: /posts/2023/01/methodology/
+permalink: /posts/2023/01/Dao/
 tags:
 - Methodology
 ---
 
-The following lesson that learnt when doing mathematics.
+
+本文是基于道德经以及庄子启发, 所发现了一套系统的依赖于道家思想的数学研究方法论(methodology)。 
+
+
+----
 
 
 (1) First, What is math? Mathematics is an activity centered on solving mathematical problems or building mathematical theories. Therefore, if you say, "I want to build a theory about physics or AI," those tasks do not fit my definition of mathematics. I don’t believe mathematicians can accomplish such tasks—constructing the theory of a specific field is the job of experts in that field.
@@ -20,5 +24,7 @@ Based on this definition, I disagree with the concept of interdisciplinary resea
 
 (4) Mathematical research should focus on the new **phenonmenon**, new **math structure** that appears. One should have the ability to distinct **trivial** part and **non-trivial** part of the proof. So we should ask ourself repeatly: why the theorem is non-trivial?
 
+(5) I prefer doing math while do not ask "How to apply it (in the real world)?".
 
-And finally, I gradually understand Mathematics alone cannot solve every problem in the world. 
+(6) Mathematic is **not about concept**, although people require to learn certain amount of knowledge to speak about something clearly. 
+
