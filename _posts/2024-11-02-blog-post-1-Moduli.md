@@ -13,7 +13,7 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ---
-## Part 0. Basic properties of moduli
+## Part A. Basic properties of moduli
 
 [Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf)
 
@@ -41,8 +41,9 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [Note-12: Application of Hilbert scheme, Chow variety in Birational geometry](https://yilimath.github.io/files/Deformation/HilbertScheme.pdf)
 
+
 ---
-## Part I. Moduli of curves and surfaces
+## Part B. Moduli of curves and surfaces
 
 [1. Construction of Teichmuller space and Teichmuller theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf)
 
@@ -52,10 +53,8 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [4. Semi-stable reduction]()
 
-
-
-----
-## Part II. Hodge theory and moduli
+---
+## Part C. Hodge theory and moduli
 
 [0. Gauss Mannin connection, Griffith transversality and Griffith curvature formula]()
 
@@ -70,8 +69,21 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 [5. Calabi-Yau moduli and hyperbolicity]()
 
 
+
 ----
-## Part III. KSBA moduli
+## Part D. Theory of Hilbert scheme and Chow schemes
+
+
+---
+## Part E. Moduli techniques in birational geometry
+
+
+---
+
+
+
+----
+## Part F. KSBA moduli
 
 [1. Relative canonical sheaf, Kollar's package theorem]()
 
@@ -87,18 +99,13 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ----
-## Part IV. Viehweg-Zuo Theory
-
-
-----
-## Part V. Shafarevich Conjecture and deformation rigidty
-
+## Part G. Viehweg-Zuo Theory, Shafarevich Conjecture and deformation rigidty
 
 
 
 
 ---
-## Part V. Geometric Langlands and Mirror symmetry
+## Part H. Geometric Langlands and Mirror symmetry
 
 
 [1. A brief introduction to D-module]()
