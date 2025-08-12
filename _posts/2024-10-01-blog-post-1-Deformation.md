@@ -6,6 +6,9 @@ tags:
   - Deformation theory
 ---
 
+The aim of this series of notes is to give a brief introduction to the basics of deformation theory, and then to focus on its applications to certain problems in birational geometry.
+
+
 ---
 ## Part I. Basic knowledge on deformation theory
 
@@ -13,9 +16,11 @@ tags:
 
 [Note-2: Obstruction Theory]()
 
-[Note-3: Maurer Cartan equation]()
+[Note-3: ]()
 
+[Note-3: Maurer-Cartan equation, DGLA]()
 
+[Note-4: L-infty Algebra]()
 
 [Note-5: Bogomolov-Tian-Todorov Theorem, ddbar method and Ran's T1 lifting theorem with applications]()
 
@@ -27,7 +32,7 @@ tags:
 
 [Note-2: Deformation of (rational) curves in complex space]()
 
-[Note-3: Deformation of morphism]()
+[Note-3: Deformation of morphisms]()
 
 
 
@@ -35,9 +40,9 @@ tags:
 ## Part III. Invariance of plurigenera problems
 
 
-[Note-1 Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Birational/InvariancePluri/Levine.pdf)
+[Note-1 Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Birational/InvariancePluri/Levine.pdf) [update 8.12]
 
-[Note-2 Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Birational/InvariancePluri/DefUniruled.pdf)
+[Note-2 Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Birational/InvariancePluri/DefUniruled.pdf) [update 8.12]
 
 [Note-3 Algebraic proof of invariance of plurigenera with general type assumption](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
 
