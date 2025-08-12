@@ -13,17 +13,19 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ---
-## Part A. Basic properties of moduli
+## Part A. Basic Conecpt in Moduli Theory
 
-[Note-0: Represetability of moduli spaces](https://yilimath.github.io/files/Moduli/RepresentableModuli.pdf)
+[Note-1: A brief introduction to Stack](https://yilimath.github.io/files/Moduli/Stack.pdf)
 
-[Note-1: A brief introduction to Site, stack]()
+[Note-2: A brief introduction to Artin Stack and Deligne-Mumford Stack](https://yilimath.github.io/files/Moduli/DMStack.pdf), 
 
-[Note-2: A brief introduction to Deligne-Mumford stack and algebraic space](), 
+[Note-3: A brief introduction to Algebraic Spaces](https://yilimath.github.io/files/Moduli/AlgSpace.pdf)
 
-[Note-3: Properness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
 
-[Note-4: Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/SeparatModuli.pdf)
+---
+## Part B. Basic Properties in Moduli Theory
+
+[Note-4: Properness and Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
 
 [Note-5: Projectivity of moduli spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf)
 
@@ -38,8 +40,6 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 [Note-10: Singularity on moduli spaces]()
 
 [Note-11: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf)
-
-[Note-12: Application of Hilbert scheme, Chow variety in Birational geometry](https://yilimath.github.io/files/Deformation/HilbertScheme.pdf)
 
 
 ---
@@ -75,10 +75,16 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ---
-## Part E. Moduli techniques in birational geometry
+## Part E. Moduli techniques in birational geometry and deformation problems
 
 
----
+[1. Hilbert scheme technique in birational geometry]()
+
+
+[2. Applications of Chow variety in boundedness problems]()
+
+[3. Applications of Barlet-Chow cycle space in some analytic deformation problems]()
+
 
 
 
