@@ -23,9 +23,11 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ---
-## Part B. Basic Properties in Moduli Theory
+## Part B. Geometry of Moduli
 
-[Note-4: Properness and Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
+[Note-1: Dimension and Tangent Space of Moduli](https://yilimath.github.io/files/Moduli/TangentSpace.pdf)
+
+[Note-2: Properness and Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
 
 [Note-5: Projectivity of moduli spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf)
 
@@ -72,6 +74,7 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 ----
 ## Part D. Theory of Hilbert scheme and Chow schemes
+
 
 
 ---
