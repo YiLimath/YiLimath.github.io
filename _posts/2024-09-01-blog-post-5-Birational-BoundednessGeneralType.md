@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Boundedness of Varieties of General Type'
-date: 2025-04-01
-permalink: /posts/2024/08/Boundedness-General-Type/
+date: 2025-08-13
+permalink: /posts/2025/08/Boundedness-General-Type/
 tags:
   - Birational geometry
   - Boundedness
