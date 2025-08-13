@@ -55,5 +55,3 @@ We will introduce the boundedness result on set of log canonical models and semi
 
 [Note-6: Boundedness of semi-log canonical models](https://yilimath.github.io/files/Birational/BoundednessGeneralType/BoundedSLCM.pdf)
 
-
-----
