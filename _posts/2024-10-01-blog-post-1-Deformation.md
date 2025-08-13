@@ -35,7 +35,6 @@ The aim of this series of notes is to give a brief introduction to the basics of
 [Note-3: Deformation of morphisms]()
 
 
-
 ---
 ## Part III. Invariance of plurigenera problems
 
@@ -57,3 +56,11 @@ The aim of this series of notes is to give a brief introduction to the basics of
 [Note-7 Cao-Paun's approach to invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/CaoPaunInvariancePluri.pdf)
 
 [Note-8 Applications of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/ApplicationInvariancePluri.pdf)
+
+---
+## Part IV. Deformation of Positivities in Birational Geometry
+
+[Note-1: Hacon-Mckernan-Xu's family with good minimal model](),
+
+[Note-2: deFernex-Hacon variation of cones in family](),
+
