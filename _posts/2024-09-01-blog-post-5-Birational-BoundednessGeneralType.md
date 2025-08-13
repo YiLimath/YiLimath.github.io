@@ -29,9 +29,10 @@ The aim of this series of notes is to summarize the bounded results for the vari
 ---
 ## Part III. Abundance in Families
 
-[Note-1: Family of varieties with good minimal model]()
 
-[Note-2: Existence of log canonical closure]()
+[Note-1: On log canonical closure]()
+
+[Note-2: Abundance in Family]()
 
 
 ---
