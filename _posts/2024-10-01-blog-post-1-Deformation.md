@@ -14,7 +14,7 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 [Note-1: Kodaira-Spencer map, Kodaira-Spencer correspondence](),
 
-[Note-2: Obstruction Theory]()
+[Note-2: A brief introduction to Obstruction Theory]()
 
 [Note-3: ]()
 
@@ -39,11 +39,14 @@ The aim of this series of notes is to give a brief introduction to the basics of
 ## Part III. Invariance of plurigenera problems
 
 
-[Note-1 Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Birational/InvariancePluri/Levine.pdf) [update 8.12]
+[Note-1 Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Deformation/Levine.pdf) [update 8.12]
 
-[Note-2 Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Birational/InvariancePluri/DefUniruled.pdf) [update 8.12]
+[Note-2 Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Deformation/DefUniruled.pdf) [update 8.12]
 
-[Note-3 Algebraic proof of invariance of plurigenera with general type assumption](https://yilimath.github.io/files/Birational/InvariancePluri/AlgebraicDefPluri.pdf)
+[Note-3 Nakayama's invariance of plurigenera results](https://yilimath.github.io/files/Deformation/NakaPluri.pdf) [update 8.15]
+
+
+[Note-3 Algebraic proof of invariance of plurigenera with general type assumption](https://yilimath.github.io/files/Deformation/AlgebraicDefPluri.pdf)
 
 [Note-3 Paun-Demailly's analytic proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\InvariancePluri\PaunInvariancePluri.pdf) [update 8.25]
 
