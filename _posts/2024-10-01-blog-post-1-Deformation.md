@@ -16,8 +16,6 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 [Note-2: A brief introduction to Obstruction Theory]()
 
-[Note-3: ]()
-
 [Note-3: Maurer-Cartan equation, DGLA]()
 
 [Note-4: L-infty Algebra]()
