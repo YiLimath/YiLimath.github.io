@@ -10,30 +10,6 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 
 ---
-## Part I. Basic knowledge on deformation theory
-
-[Note-1: Kodaira-Spencer map, Kodaira-Spencer correspondence](),
-
-[Note-2: A brief introduction to Obstruction Theory]()
-
-[Note-3: Maurer-Cartan equation, DGLA]()
-
-[Note-4: L-infty Algebra]()
-
-[Note-5: Bogomolov-Tian-Todorov Theorem, ddbar method and Ran's T1 lifting theorem with applications]()
-
-
----
-## Part II. Deformation of (birational) morphism
-
-[Note-1: Blow up in deformation theory]()
-
-[Note-2: Deformation of (rational) curves in complex space]()
-
-[Note-3: Deformation of morphisms]()
-
-
----
 ## Part III. Invariance of plurigenera problems
 
 
@@ -64,4 +40,29 @@ The aim of this series of notes is to give a brief introduction to the basics of
 [Note-1: Hacon-Mckernan-Xu's family with good minimal model](),
 
 [Note-2: deFernex-Hacon variation of cones in family](),
+
+
+
+---
+## Part I. Basic knowledge on deformation theory
+
+[Note-1: Kodaira-Spencer map, Kodaira-Spencer correspondence](),
+
+[Note-2: A brief introduction to Obstruction Theory]()
+
+[Note-3: Maurer-Cartan equation, DGLA]()
+
+[Note-4: L-infty Algebra]()
+
+[Note-5: Bogomolov-Tian-Todorov Theorem, ddbar method and Ran's T1 lifting theorem with applications]()
+
+
+---
+## Part II. Deformation of (birational) morphism
+
+[Note-1: Blow up in deformation theory]()
+
+[Note-2: Deformation of (rational) curves in complex space]()
+
+[Note-3: Deformation of morphisms]()
 
