@@ -31,10 +31,10 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 ## Part II. Singularity of Fibrations
 
 
+
 ## Part III. Positivities of Fibrations
 
 [The Iitaka conjecture](),
-
 
 [Classification theorems for projective manifolds, compact Kahler manifolds](),
 
