@@ -59,11 +59,13 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part IV. Finite generation of Cox Ring
+## Part IV. Finite generation Problems
 
 [Finite Generation Note-1: Finite generation of canonical ring, Cox ring]()
 
+[Finite Generation Note-2: Finite generation and Abundance]()
 
+[Finite Generation Note-3: ]
 
 ---
 
