@@ -16,6 +16,8 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ## Part I. Extension theorems and existence of flips
 
+[Note-1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf)
+
 [Note-1: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
 [Note-2: deFernex-Hacon extension theorem]()
@@ -78,7 +80,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part VI. Locus in birational geometry
+## Part VI. Locus in birational geometry and Hodge Theory
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
@@ -93,6 +95,11 @@ The aim of this series of notes is to summarize the base properties about stable
 [Note-5: Non-KLT locus]()
 
 [Note-6: non-nef locus(numerical base locus), non-Kahler Locus]()
+
+[Note-7: Recent developments on the distribution of Hodge Locus]()
+
+[Note-8: Andre-Oort conjecture]()
+
 
 
 ----
