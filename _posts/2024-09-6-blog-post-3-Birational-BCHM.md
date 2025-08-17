@@ -16,7 +16,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ## Part I. Extension theorems and existence of flips
 
-[Note-1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf)
+[Note-1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
 
 [Note-1: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
