@@ -19,6 +19,8 @@ The aim of this series of notes is to summarize the bounded results for the vari
 ---
 ## Part II. ACC Phenonmenon and Behavior of volumes
 
+[Note-1: Hacon-Mckernan-Xu's log invariance of plurigenera](https://yilimath.github.io/files/Deformation/LogInvariancePluri.pdf)
+
 [Note-1: ACC of log canonical threshold](https://yilimath.github.io/files/Birational/BoundednessGeneralType/ACCLCT.pdf)
 
 [Note-2: DCC of volume](https://yilimath.github.io/files/Birational/BoundednessGeneralType/DCCVolume.pdf)

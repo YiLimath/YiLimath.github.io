@@ -19,10 +19,12 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 [Note-3 Nakayama's invariance of plurigenera results](https://yilimath.github.io/files/Deformation/NakaPluri.pdf) [update 8.15]
 
-
 [Note-3 Algebraic proof of invariance of plurigenera with general type assumption](https://yilimath.github.io/files/Deformation/AlgebraicDefPluri.pdf)
 
 [Note-3 Paun-Demailly's analytic proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\InvariancePluri\PaunInvariancePluri.pdf) [update 8.25]
+
+[Note-4 Hacon-Mckernan-Xu's log invariance of plurigenera](https://yilimath.github.io/files/Deformation/LogInvariancePluri.pdf) 
+
 
 [Note-4 Takayama's proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
 

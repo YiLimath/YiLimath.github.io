@@ -38,16 +38,21 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 [Classification theorems for projective manifolds, compact Kahler manifolds](),
 
+[Nef reduction](),
+
+[Pseudo-effective reduction](),
 
 
 
-(6) [Pseudo-effective reduction](),
+## Part IV. Hodge Theory and Fibrations
 
-(7) [Nef reduction](),
+[Note-1: Abelian fibrations and BBDG decomposition](),
+
+
+
 
 (8) [Toric Fibration](),
 
-(9) [Abelian fibration](),
 
 (10) [Elliptic fibration](),
 
