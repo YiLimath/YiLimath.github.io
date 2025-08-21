@@ -39,13 +39,19 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [Note-9: Positivity on moduli spaces]()
 
-[Note-10: Singularity on moduli spaces]()
-
 [Note-11: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf)
 
 
+----
+## Part C. Singularity of moduli
+
+[Note-1: Singularity on moduli spaces]()
+
+
+
+
 ---
-## Part B. Moduli of curves and surfaces
+## Part D. Moduli of curves and surfaces
 
 [1. Construction of Teichmuller space and Teichmuller theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf)
 
@@ -53,10 +59,12 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [3. Moduli spaces for surfaces of general type]()
 
-[4. Semi-stable reduction]()
+[4. Moduli spaces for surfaces in P3]()
+
+[5. Semi-stable reduction]()
 
 ---
-## Part C. Hodge theory and moduli
+## Part E. Hodge theory and moduli
 
 [0. Gauss Mannin connection, Griffith transversality and Griffith curvature formula]()
 
@@ -73,12 +81,12 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ----
-## Part D. Theory of Hilbert scheme and Chow schemes
+## Part F. Theory of Hilbert scheme and Chow schemes
 
 
 
 ---
-## Part E. Moduli techniques in birational geometry and deformation problems
+## Part G. Moduli techniques in birational geometry and deformation problems
 
 
 [1. Hilbert scheme technique in birational geometry]()
@@ -92,7 +100,7 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ----
-## Part F. KSBA moduli
+## Part H. KSBA moduli
 
 [1. Relative canonical sheaf, Kollar's package theorem]()
 
@@ -108,13 +116,13 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 ----
-## Part G. Viehweg-Zuo Theory, Shafarevich Conjecture and deformation rigidty
+## Part K. Viehweg-Zuo Theory, Shafarevich Conjecture and deformation rigidty
 
 
 
 
 ---
-## Part H. Geometric Langlands and Mirror symmetry
+## Part J. Geometric Langlands and Mirror symmetry
 
 
 [1. A brief introduction to D-module]()
