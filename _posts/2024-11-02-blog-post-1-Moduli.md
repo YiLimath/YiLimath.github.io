@@ -27,19 +27,17 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [Note-1: Dimension and Tangent Space of Moduli](https://yilimath.github.io/files/Moduli/TangentSpace.pdf)
 
-[Note-2: Properness and Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
+[Note-2: Boundedness of moduli spaces](https://yilimath.github.io/files/Moduli/BoundednessModuli.pdf)
 
-[Note-5: Projectivity of moduli spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf)
+[Note-3: Properness and Separatedness of moduli spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
 
-[Note-6: Boundedness of moduli spaces](https://yilimath.github.io/files/Moduli/BoundednessModuli.pdf)
+[Note-4: Projectivity and positivity on moduli spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf) [update 8.24]
 
-[Note-7: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf)
+[Note-5: Irreducible of moduli spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf)
 
-[Note-8: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf)
+[Note-6: K-stability of moduli spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf)
 
-[Note-9: Positivity on moduli spaces]()
-
-[Note-11: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf)
+[Note-7: On automorphism group](https://yilimath.github.io/files/Moduli/AutGroup.pdf)
 
 
 ----
@@ -49,13 +47,12 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 
 
-
 ---
 ## Part D. Moduli of curves and surfaces
 
 [1. Construction of Teichmuller space and Teichmuller theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf)
 
-[2. Moduli space of smooth curves, stable curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf)
+[2. Moduli space of smooth curves, stable curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf) [update 8.24]
 
 [3. Moduli spaces for surfaces of general type]()
 
