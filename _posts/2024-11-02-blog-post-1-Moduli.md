@@ -111,6 +111,11 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [6. Moduli of stable varieties]()
 
+---
+## Part I. Theory of K-moduli of Fano varieties
+
+
+
 
 ----
 ## Part K. Viehweg-Zuo Theory, Shafarevich Conjecture and deformation rigidty
