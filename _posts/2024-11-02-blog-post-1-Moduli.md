@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Notes: Around Moduli theory'
-date: 2025-07-01
-permalink: /posts/2025/07/Moduli/
+date: 2025-09-01
+permalink: /posts/2025/09/Moduli/
 tags:
   - Moduli Theory
   - Birational Geometry
