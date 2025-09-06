@@ -6,7 +6,8 @@ tags:
   - Birational geometry
 ---
 
-The aim of this series of note is to introduce the fibration in Algebraic geometry (classification theory of complex algebraic/analytic varieties). Fibration is the most powerful tool for the classification of varieties and fibration structure is very suitable for the induction process. In this notes we will major focus on the possible applications of the fibrations in the classification results.
+The aim of this series of note is to introduce the fibration in Algebraic geometry (classification theory of complex algebraic/analytic varieties). Fibration is the most powerful tool for the classification of varieties and fibration structure is very suitable for the induction process. In this notes we will major focus on the possible applications of the fibrations in the classification results. Fibration is central in Algebraic Geometry. 
+> In algebraic geometry (birational geometry), we understand variety using fibration. 
 
 
 ## Part I. A brief introduction to fibrations
