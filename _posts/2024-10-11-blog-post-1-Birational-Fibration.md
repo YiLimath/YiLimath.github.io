@@ -10,7 +10,8 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 > In algebraic geometry (birational geometry), we understand variety using fibration. 
 
 
-## Part I. A brief introduction to fibrations
+## Part I. A brief introduction to fibrations in Algebraic Geometry
+
 
 [1. Iitaka Fibrations]()
 
@@ -29,9 +30,12 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 [Supplement: Resolving the indetermancy locus of the meromorphic fibration]()
 
 
+----
 ## Part II. Singularity of Fibrations
 
 
+
+----
 
 ## Part III. Positivities of Fibrations
 
@@ -45,12 +49,18 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 
 
+## Part III. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
+
+
+
+
 ## Part IV. Hodge Theory and Fibrations
 
 [Note-1: Abelian fibrations and BBDG decomposition](),
 
 
 
+----
 
 (8) [Toric Fibration](),
 
