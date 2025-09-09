@@ -12,6 +12,8 @@ The aim of this note is to introduce adjunction theory in birational geometry. A
 A useful summary can be found in [Anti-pluricanonical systems on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01)). This note is based on that paper, and our goal is to provide a more detailed introduction to adjunction theory.
 
 
+## Part I. Canonical Bundle Formula
+
 For detailed information see my reading notes 
 
 [1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf).
@@ -33,4 +35,8 @@ For detailed information see my reading notes
 [9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
 
 [10. Applications of cyclic covering trick]()
+
+
+---
+## Part II. On Positivity of Direct Image
 
