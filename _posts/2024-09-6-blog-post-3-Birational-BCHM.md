@@ -108,7 +108,9 @@ The aim of this series of notes is to summarize the base properties about stable
 ----
 ## Part VII. Application of BCHM
 
-[Note-1: Application of BCHM for deformation problems]()
+[Note-1: Deformation of Singularities]()
+
+[Note-2: Deformation of positivities]()
 
 
 
