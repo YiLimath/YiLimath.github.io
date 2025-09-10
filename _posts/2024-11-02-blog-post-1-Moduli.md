@@ -88,7 +88,6 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [1. Hilbert scheme technique in birational geometry]()
 
-
 [2. Applications of Chow variety in boundedness problems]()
 
 [3. Applications of Barlet-Chow cycle space in some analytic deformation problems]()
@@ -113,6 +112,15 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 ---
 ## Part I. Theory of K-moduli of Fano varieties
+
+
+
+---
+## Part J. Moduli of Abelian varieties and K3 surfaces
+
+In this part, we will discuss more on moduli of Abelian varieties and K3 surfaces. 
+
+
 
 
 
