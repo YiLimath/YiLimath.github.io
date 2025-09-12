@@ -16,34 +16,33 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ## Part I. Extension theorems and existence of flips
 
-[Note-1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
+[Note-I.1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
 
-[Note-1: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
+[Note-I.2: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
-[Note-2: deFernex-Hacon extension theorem]()
+[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
 
-[Note-3: Demailly-Hacon-Paun DLT extension]()
-
-[Note-4: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
-
-[Note-5: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+[Note-I.4: Demailly-Hacon-Paun DLT extension](https://yilimath.github.io/files/Birational/BCHM/DLTExtension.pdf)
 
 
 ---
 
-## Part II. Existence of minimal model, good minimal model, canonical model
+## Part II. Existence of flip, minimal model, good minimal model, canonical model
 
-[Note-1: BCHM theorem C existence of minimal model for effective pair]()
+[Note-II.1: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
 
-[Note-2: Demailly-Hacon-Paun's existence of good minimal model theorem]()
+[Note-II.2: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
-[Note-3: Basic properties of minimal model, good minimal models, canonical model]()
 
-[Note-4: Behavior of minimal model, good minimal model, canonical model under birational modification]()
+[Note-II.3: BCHM theorem C existence of minimal model for effective pair]()
 
-[Note-5: Minimal model, good minimal model, canonical model in family]()
+[Note-II.4: Demailly-Hacon-Paun's existence of good minimal model theorem]()
 
-[Part-6: Semi-stable MMP]()
+[Note-II.5: Basic properties of minimal model, good minimal models, canonical model]()
+
+[Note-II.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
+
+[Note-II.7: Minimal model, good minimal model, canonical model in family]()
 
 
 ----

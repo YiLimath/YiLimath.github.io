@@ -35,6 +35,14 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [4. Hacon-Paun's metric method for canonical bundle formula]()
 
+---
+## Applications of positivities of direct images
+
+
+
+---
+## Covering tricks
+
 
 
 ---
