@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Reading Notes: BCHM'
-date: 2025-05-01
-permalink: /posts/2025/02/BCHM/
+date: 2025-09-12
+permalink: /posts/2025/09/BCHM/
 tags:
   - Birational geometry
   - BCHM
