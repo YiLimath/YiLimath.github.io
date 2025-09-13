@@ -41,7 +41,9 @@ In this series of notes we will summarize some standard metric methods which wil
 
 
 ---
-## Covering tricks
+## Covering tricks of Kawamata, Viehweg
+
+
 
 
 
