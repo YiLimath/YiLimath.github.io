@@ -1,7 +1,7 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2025-09-10
-permalink: /posts/2025/10/Metric-Method/
+date: 2025-09-15
+permalink: /posts/2025/09/Metric-Method/
 tags:
   - Birational geometry
   - Complex Geometry
@@ -31,7 +31,7 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [2. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
 
-[3. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves]()
+[3. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 9.15]
 
 [4. Hacon-Paun's metric method for canonical bundle formula]()
 
@@ -41,7 +41,7 @@ In this series of notes we will summarize some standard metric methods which wil
 
 
 ---
-## Covering tricks of Kawamata, Viehweg
+## Covering Tricks of Kawamata, Viehweg
 
 
 
