@@ -31,7 +31,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.1: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
 
-[Note-II.2: Hacon-Xu's and Birkar's proof on existence of log canonical flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+[Note-II.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf) [upd 9.18]
 
 
 [Note-II.3: BCHM theorem C existence of minimal model for effective pair]()
