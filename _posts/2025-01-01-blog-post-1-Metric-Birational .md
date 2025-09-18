@@ -24,6 +24,7 @@ In this series of notes we will summarize some standard metric methods which wil
 
 
 
+
 ---
 ## Analytic Methods for Positivities of Direct image and Canonical Bundle Formulas
 
@@ -34,6 +35,7 @@ In this series of notes we will summarize some standard metric methods which wil
 [3. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 9.15]
 
 [4. Hacon-Paun's metric method for canonical bundle formula]()
+
 
 ---
 ## Applications of positivities of direct images
@@ -55,6 +57,8 @@ In this series of notes we will summarize some standard metric methods which wil
 ## Metric Methods in Abundance Conjecture
 
 [1. Supercanonical metric and abundance conjecture]()
+
+[2. Siu and Paun's analytic proof of finite generation of canonical ring and Shokurov's non-vanishing]()
 
 
 ---
