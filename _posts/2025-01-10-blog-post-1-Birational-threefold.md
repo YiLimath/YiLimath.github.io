@@ -8,6 +8,3 @@ tags:
 
 The aim of this series of note is to introduce the birational geometry for surfaces and threefolds, which will be helpful for deepening the understanding of birational geometry. 
 
-
-
-

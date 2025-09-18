@@ -38,6 +38,10 @@ In this series of notes we will summarize some standard metric methods which wil
 ---
 ## Applications of positivities of direct images
 
+[1. Kollar's approach to Projectivity of moduli]()
+
+[2. Positivity of direct image in Iitaka conjecture]()
+
 
 
 ---
