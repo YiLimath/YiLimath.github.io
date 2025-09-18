@@ -58,7 +58,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part IV. Finite generation Problems
+## Part IV. Finite Generation Problems
 
 [Finite Generation Note-1: Finite generation of canonical ring, Cox ring]()
 
@@ -69,7 +69,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part V. partial modification
+## Part V. Partial Modification
 
 [Note-1: Log resolution, discrepancy]()
  
@@ -82,7 +82,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part VI. Locus in birational geometry and Hodge Theory
+## Part VI. Locus in Birational Geometry
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
@@ -100,8 +100,6 @@ The aim of this series of notes is to summarize the base properties about stable
 
 [Note-7: Recent developments on the distribution of Hodge Locus]()
 
-[Note-8: Andre-Oort conjecture]()
-
 
 
 ----
@@ -116,8 +114,6 @@ The aim of this series of notes is to summarize the base properties about stable
 ---
 
 ## Part V. Non-vanishing and abundance
-
-[Note-1: Non-vanishing conjecture when exists many differential](https://yilimath.github.io/files/Birational/BCHM/NonVanishing.pdf)
 
 
 

@@ -55,9 +55,7 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 [Note-3: Maurer-Cartan equation, DGLA]()
 
-[Note-4: L-infty Algebra]()
-
-[Note-5: Bogomolov-Tian-Todorov Theorem, ddbar method and Ran's T1 lifting theorem with applications]()
+[Note-4: Bogomolov-Tian-Todorov Theorem, ddbar method and Ran's T1 lifting theorem with applications]()
 
 
 ---
