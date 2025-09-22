@@ -15,6 +15,8 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications in birational geometry. 
 
 
+[I.0 General Machine to construct Fibrations]()
+
 [I.1. Iitaka Fibrations with applications]()
 
 [I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 9.22]
