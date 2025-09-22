@@ -8,3 +8,12 @@ tags:
 
 The aim of this series of note is to introduce the birational geometry for surfaces and threefolds, which will be helpful for deepening the understanding of birational geometry. 
 
+
+---
+## Part I. Birational Geometry of Surfaces
+
+[I.1. Proof of classification theorem for surfaces]()
+
+
+
+---

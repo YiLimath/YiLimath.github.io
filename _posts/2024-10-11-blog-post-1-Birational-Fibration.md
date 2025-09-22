@@ -19,7 +19,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 9.22]
 
-[I.3. MRC Fibrations with applications]()
+[I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
 
 [I.4. Gamma reduction, Shafarovich map with applications]()
 
@@ -28,6 +28,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 [I.6. How to use Harder-Narasimhan filtration]()
 
 [I.7. Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
+
 
 ----
 ## Part II. Singularity of Fibrations
@@ -47,6 +48,8 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 ---
 ## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
+
+In this part of notes I will summarize .
 
 
 
