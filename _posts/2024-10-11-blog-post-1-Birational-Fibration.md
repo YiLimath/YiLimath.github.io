@@ -17,13 +17,13 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [I.1. Iitaka Fibrations with applications]()
 
-[I.2. Albanese map](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 9.22]
+[I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 9.22]
 
-[I.3. MRC Fibrations]()
+[I.3. MRC Fibrations with applications]()
 
-[I.4. Gamma reduction, Shafarovich map]()
+[I.4. Gamma reduction, Shafarovich map with applications]()
 
-[I.5. Core fibration, Bogomolov line bundle and Campana special variety]()
+[I.5. Core fibration, Bogomolov line bundle and Campana special variety with applications]()
 
 [I.6. How to use Harder-Narasimhan filtration]()
 
