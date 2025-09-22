@@ -26,7 +26,7 @@ Birational Invariance plays a central role in the study of rationality problems.
 
 [Note I.5 Hodge atom]()
 
-
+[Note I.6 Study of Birational Automorphism]()
 
 ---
 ## Part II. Geometry of Rational Curves
