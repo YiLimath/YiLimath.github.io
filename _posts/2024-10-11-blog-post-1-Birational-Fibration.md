@@ -12,7 +12,7 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 ## Part I. Fibrations in Algebraic Geometry
 
-This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications of those fibrations in birational geometry. 
+This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications in birational geometry. 
 
 
 [I.1. Iitaka Fibrations with applications]()
