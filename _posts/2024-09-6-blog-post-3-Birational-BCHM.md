@@ -11,7 +11,6 @@ tags:
 This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem etc. 
 
 
-
 ---
 
 ## Part I. Extension theorems and existence of flips
@@ -22,7 +21,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
 
-[Note-I.4: Demailly-Hacon-Paun DLT extension](https://yilimath.github.io/files/Birational/BCHM/DLTExtension.pdf)
+[Note-I.4: Demailly-Hacon-Paun DLT extension](https://yilimath.github.io/files/Birational/BCHM/DLTExtension.pdf) 
 
 
 ---
@@ -31,8 +30,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.1: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
 
-[Note-II.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf) [upd 9.18]
-
+[Note-II.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
 [Note-II.3: BCHM theorem C existence of minimal model for effective pair]()
 
