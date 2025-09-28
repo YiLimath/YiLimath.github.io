@@ -14,12 +14,11 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf),
 
-[Note-1 Transendental Volume (for big cohomology class)](),
+[Note-1 Transendental Volume (for big cohomology class)](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf),
 
-[Note-2 Positivities in the Kahler minimal model program](),
+[Note-2 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf),
 
 [Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [Update 9.28],
-
 
 [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
 
