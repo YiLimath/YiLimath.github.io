@@ -18,7 +18,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-2 Positivities in the Kahler minimal model program](),
 
-[Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contraction.pdf) [Update 9.28],
+[Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [Update 9.28],
 
 
 [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
