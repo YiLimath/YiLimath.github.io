@@ -12,19 +12,21 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 > In general, we aim to study the following question: To what extent are natural geometric or sheaf-theoretic constructions on compact Kähler manifolds determined by analogous constructions in the projective setting? Further structural results could provide a general framework for reducing certain questions about Kähler manifolds to the algebraic setting.
 
 
-[Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf),
+[Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 9.29]
 
 [Note-1 Transendental Volume (for big cohomology class)](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf),
 
-[Note-2 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf),
+[Note-2 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf)
 
-[Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [Update 9.28],
+[Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [Update 9.28]
 
 [Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf), [Update 3.30]
 
 [Note-5 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf), [Update 4.9]
 
-[Note-6 Kaehler 4-fold MMP](),
+[Note-6 Kaehler 4-fold MMP]()
+
+[Note-7 Das-Hacon's transcendental MMP for projective varieties]()
 
 [Note-7 Finite generation problem in Kahler MMP](),
 
@@ -50,5 +52,4 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-18: Abundance for Kahler varieties](),
 
-[Supplement: Tools can be used to reduce the Kahler problem to projective problem](),
-
+[Supplement: Tools can be used to reduce the Kahler problem to projective problem]().
