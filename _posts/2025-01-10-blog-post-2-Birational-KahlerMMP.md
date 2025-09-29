@@ -1,6 +1,6 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2025-09-28
+date: 2025-09-29
 permalink: /posts/2025/09/Kahler-MMP/
 tags:
   - Birational geometry
