@@ -52,4 +52,5 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-18: Abundance for Kahler varieties](),
 
-[Supplement: Tools can be used to reduce the Kahler problem to projective problem]().
+[Supplement: Tools can be used to reduce the Kahler problem to projective problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) [upd 9.30]
+
