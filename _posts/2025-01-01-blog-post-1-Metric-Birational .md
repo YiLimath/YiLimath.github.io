@@ -28,13 +28,11 @@ In this series of notes we will summarize some standard metric methods which wil
 ---
 ## Analytic Methods for Positivities of Direct image and Canonical Bundle Formulas
 
-[1. Bergman metric, positivity and canonical bundle formula]()
+[1. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
 
-[2. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
+[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 9.15]
 
-[3. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 9.15]
-
-[4. Hacon-Paun's metric method for canonical bundle formula]()
+[3. Hacon-Paun's metric method for canonical bundle formula]()
 
 
 ---
