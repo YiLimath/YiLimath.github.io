@@ -15,11 +15,11 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 ---
 ## Part A. Basic Conecpt in Moduli Theory
 
-[Note-1: A brief introduction to Stack](https://yilimath.github.io/files/Moduli/Stack.pdf)
+[Note-1: A brief introduction to Stack](https://yilimath.github.io/files/Moduli/Stack.pdf) [upd 10.1]
 
-[Note-2: A brief introduction to Artin Stack and Deligne-Mumford Stack](https://yilimath.github.io/files/Moduli/DMStack.pdf), 
+[Note-2: A brief introduction to Artin Stack and Deligne-Mumford Stack](https://yilimath.github.io/files/Moduli/DMStack.pdf) [upd 10.1]
 
-[Note-3: A brief introduction to Algebraic Spaces](https://yilimath.github.io/files/Moduli/AlgSpace.pdf)
+[Note-3: A brief introduction to Algebraic Spaces](https://yilimath.github.io/files/Moduli/AlgSpace.pdf) [upd 10.1]
 
 
 ---
