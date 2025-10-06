@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Note: Kahler minimal model program'
-date: 2025-09-29
-permalink: /posts/2025/09/Kahler-MMP/
+date: 2025-10-06
+permalink: /posts/2025/10/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -12,7 +12,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 > In general, we aim to study the following question: To what extent are natural geometric or sheaf-theoretic constructions on compact Kähler manifolds determined by analogous constructions in the projective setting? Further structural results could provide a general framework for reducing certain questions about Kähler manifolds to the algebraic setting.
 
 
-[Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 9.29]
+[Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.6]
 
 [Note-1 Transendental Volume (for big cohomology class)](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf),
 

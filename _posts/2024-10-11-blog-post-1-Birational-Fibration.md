@@ -1,7 +1,7 @@
 ---
 title: 'Fibration and Foliation in Algebraic Geometry'
-date: 2025-09-22
-permalink: /posts/2025/09/Fibration-in-Birational-Geometry/
+date: 2025-10-06
+permalink: /posts/2025/10/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
 ---
@@ -19,7 +19,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [I.1. Iitaka Fibrations with applications]()
 
-[I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 9.22]
+[I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.6]
 
 [I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
 
