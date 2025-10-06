@@ -1,7 +1,7 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2025-09-15
-permalink: /posts/2025/09/Metric-Method/
+date: 2025-10-06
+permalink: /posts/2025/10/Metric-Method/
 tags:
   - Birational geometry
   - Complex Geometry
@@ -15,6 +15,7 @@ In this series of notes we will summarize some standard metric methods which wil
 [1. The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry]()
 
 
+
 ---
 ## Metric Methods in Invariance of Plurigenera
 
@@ -23,14 +24,12 @@ In this series of notes we will summarize some standard metric methods which wil
 [2. Limiting metric arguement in birational geometry]()
 
 
-
-
 ---
 ## Analytic Methods for Positivities of Direct image and Canonical Bundle Formulas
 
 [1. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
 
-[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 9.15]
+[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.6]
 
 [3. Hacon-Paun's metric method for canonical bundle formula]()
 
@@ -43,10 +42,8 @@ In this series of notes we will summarize some standard metric methods which wil
 [2. Positivity of direct image in Iitaka conjecture]()
 
 
-
 ---
 ## Covering Tricks of Kawamata, Viehweg
-
 
 
 
@@ -66,4 +63,4 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [2. Birational boundedness for varieties of general type]()
 
----
+
