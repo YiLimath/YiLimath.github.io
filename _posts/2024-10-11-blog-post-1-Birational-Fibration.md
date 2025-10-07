@@ -42,8 +42,6 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [The Iitaka conjecture]()
 
-[Classification theorems for projective manifolds, compact Kahler manifolds]()
-
 [Nef reduction]()
 
 [Pseudo-effective reduction]()
