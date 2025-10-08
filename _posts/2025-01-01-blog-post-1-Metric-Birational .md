@@ -1,6 +1,6 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2025-10-06
+date: 2025-10-08
 permalink: /posts/2025/10/Metric-Method/
 tags:
   - Birational geometry
@@ -12,14 +12,14 @@ In this series of notes we will summarize some standard metric methods which wil
 
 ## Ohsawa-Takegoshi extension theorem with variants
 
-[1. The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry]()
+[1. The Ohsawa–Takegoshi extension theorem and why it's uesful in birational geometry](https://yilimath.github.io/files/Birational/MetricMethod/OTExtension.pdf) [upd 10.8]
 
 
 
 ---
 ## Metric Methods in Invariance of Plurigenera
 
-[1. Siu's invariance of plurigenera analytic proof]()
+[1. Siu's invariance of plurigenera analytic proof](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
 
 [2. Limiting metric arguement in birational geometry]()
 
