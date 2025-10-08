@@ -11,3 +11,7 @@ Birational Geometry of varieties with maximal Albanese dimension is well underst
 
 [1. Existence of good minimal models and abundance for varieties with maximal Albanese dimension]()
 
+[2. Existence of good minimal models under the Kahler setting]()
+
+[3. Theorem of Jiang-Lahoz-Tirabassi: Explicit Effective birationality of Kodaira map when variety is of general type with maximal Albanese dimension]()
+

@@ -100,7 +100,7 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [1. Relative canonical sheaf, Kollar's package theorem]()
 
-[2. Stable family, locally stable family, KSB morphism with basic propeties]()
+[2. Stable family, locally stable family, KSB morphism]()
 
 [3. Base change properties, flatness criterion, Kollar's condition]()
 
@@ -119,9 +119,6 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 ## Part J. Moduli of Abelian varieties and K3 surfaces
 
 In this part, we will discuss more on moduli of Abelian varieties and K3 surfaces. 
-
-
-
 
 
 
