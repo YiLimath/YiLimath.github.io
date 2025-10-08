@@ -126,7 +126,7 @@ In this part, we will discuss more on moduli of Abelian varieties and K3 surface
 
 
 ----
-## Part K. Viehweg-Zuo Theory, Shafarevich Conjecture and deformation rigidty
+## Part K. Shafarevich Conjecture and deformation rigidty
 
 
 
