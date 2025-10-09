@@ -15,21 +15,21 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications in birational geometry. 
 
 
-[I.0 General Machine to construct Fibrations]()
+[Note-I.0 General Machine to construct Fibrations]()
 
-[I.1. Iitaka Fibrations with applications]()
+[Note-I.1. Iitaka Fibrations with applications]()
 
-[I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.6]
+[Note-I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.6]
 
-[I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
+[Note-I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
 
-[I.4. Gamma reduction, Shafarovich map with applications]()
+[Note-I.4. Gamma reduction, Shafarovich map with applications]()
 
-[I.5. Core fibration, Bogomolov line bundle and Campana special variety with applications]()
+[Note-I.5. Core fibration, Bogomolov line bundle and Campana special variety with applications]()
 
-[I.6. How to use Harder-Narasimhan filtration]()
+[Note-I.6. How to use Harder-Narasimhan filtration]()
 
-[I.7. Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
+[Note-I.7. Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
 
 
 ----
@@ -40,16 +40,17 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 ## Part III. Positivities of Fibrations
 
 
-[The Iitaka conjecture]()
+[Note-III.1. The Iitaka conjecture]()
 
-[Nef reduction]()
+[Note-III.2. Nef reduction]()
 
-[Pseudo-effective reduction]()
+[Note-III.3. Pseudo-effective reduction]()
 
 ---
 ## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
 
-In this part of notes I will summarize .
+In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. 
+
 
 
 
@@ -57,20 +58,22 @@ In this part of notes I will summarize .
 ---
 ## Part V. Hodge Theory and Fibrations
 
-[Note-IV.1: Abelian fibrations and BBDG decomposition]()
+[Note-V.1: Abelian fibrations and BBDG decomposition]()
+
+
 
 
 ---
 ## Part VI. Fibration with specific varieties
 
 
-[VI.1. Toric Fibrations]()
+[Note-VI.1. Toric Fibrations]()
 
-[VI.2 Elliptic fibrations]()
+[Note-VI.2 Elliptic fibrations]()
 
-[VI.3 Calabi-Yau Fibrations]()
+[Note-VI.3 Calabi-Yau Fibrations]()
 
-[VI.4 Abelian Fibrations]()
+[Note-VI.4 Abelian Fibrations]()
 
 
 ---
