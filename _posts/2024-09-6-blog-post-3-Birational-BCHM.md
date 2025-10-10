@@ -98,17 +98,15 @@ The aim of this series of notes is to summarize the base properties about stable
 
 [Note-1: Exceptional Locus]()
 
-[Note-2: Base locus]()
+[Note-2: Zariski decomposition]()
 
-[Note-3: Zariski decomposition]()
+[Note-3: Base locus, Stable base locus, Restricted base locus and Augmented base locus]()
 
-[Note-4: Stable base locus, restricted base locus and augmented base locus]()
+[Note-4: Geometry of non-klt locus]()
 
-[Note-5: non-klt locus]()
+[Note-5: non-nef locus(numerical base locus), non-Kahler Locus]()
 
-[Note-6: non-nef locus(numerical base locus), non-Kahler Locus]()
-
-[Note-7: Recent developments on the distribution of Hodge Locus]()
+[Note-6: Recent developments on the distribution of Hodge Locus]()
 
 
 
