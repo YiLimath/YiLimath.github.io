@@ -1,6 +1,6 @@
 ---
 title: 'Fibration and Foliation in Algebraic Geometry'
-date: 2025-10-06
+date: 2025-10-10
 permalink: /posts/2025/10/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
