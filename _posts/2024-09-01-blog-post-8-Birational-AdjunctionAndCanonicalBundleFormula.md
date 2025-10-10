@@ -36,7 +36,3 @@ For detailed information see my reading notes
 
 [10. Applications of cyclic covering trick]()
 
-
----
-## Part II. On Positivity of Direct Image
-
