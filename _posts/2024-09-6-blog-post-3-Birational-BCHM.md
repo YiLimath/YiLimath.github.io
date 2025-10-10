@@ -11,6 +11,8 @@ tags:
 This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem etc. 
 
 
+
+
 ---
 
 ## Part I. Extension theorems and existence of flips
@@ -21,31 +23,39 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
 
-[Note-I.4: Demailly-Hacon-Paun DLT extension](https://yilimath.github.io/files/Birational/BCHM/DLTExtension.pdf) 
+[Note-I.4: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf) 
+
+---
+## Part II. Base Point Freeeness and Variants
+
+[Note-II.1 Classical Base point free theorem for klt and dlt pairs]()
+
+
 
 
 ---
 
 ## Part II. Existence of flip, minimal model, good minimal model, canonical model
 
-[Note-II.1: Hacon Mckernan's proof of existence of KLT flip](https://yilimath.github.io/files/Birational/BCHM/ExistKLTFlip.pdf)
+[Note-III.1: Hacon Mckernan's proof of existence of klt flip](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
 
-[Note-II.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+[Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
-[Note-II.3: BCHM theorem C existence of minimal model for effective pair]()
+[Note-III.3: BCHM theorem C existence of minimal model for effective pair]()
 
-[Note-II.4: Demailly-Hacon-Paun's existence of good minimal model theorem]()
+[Note-III.4: Demailly-Hacon-Paun's existence of good minimal model theorem]()
 
-[Note-II.5: Basic properties of minimal model, good minimal models, canonical model]()
+[Note-III.5: Basic properties of minimal model, good minimal models, canonical model]()
 
-[Note-II.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
+[Note-III.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
 
-[Note-II.7: Minimal model, good minimal model, canonical model in family]()
+[Note-III.7: Minimal model, good minimal model, canonical model in family]()
+
 
 
 ----
 
-## Part III. Finiteness of minimal model and Termination problems 
+## Part IV. Finiteness of minimal model and Termination problems 
 
 [Note-1: Polyhedron decomposition results]()
 
@@ -56,7 +66,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part IV. Finite Generation Problems
+## Part V. Finite Generation Problems
 
 [Finite Generation Note-1: Finite generation of canonical ring, Cox ring]()
 
@@ -67,11 +77,11 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part V. Partial Modification
+## Part VI. Partial Modification
 
 [Note-1: Log resolution, discrepancy]()
  
-[Note-2: DLT modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/DLTModification.pdf)
+[Note-2: dlt modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
 
 [Note-3: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
 
@@ -80,7 +90,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part VI. Locus in Birational Geometry
+## Part VII. Locus in Birational Geometry
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
@@ -92,7 +102,7 @@ The aim of this series of notes is to summarize the base properties about stable
 
 [Note-4: Stable base locus, restricted base locus and augmented base locus]()
 
-[Note-5: Non-KLT locus]()
+[Note-5: non-klt locus]()
 
 [Note-6: non-nef locus(numerical base locus), non-Kahler Locus]()
 
@@ -101,7 +111,7 @@ The aim of this series of notes is to summarize the base properties about stable
 
 
 ----
-## Part VII. Application of BCHM
+## Part VIII. Application of BCHM
 
 [Note-1: Deformation of Singularities]()
 
@@ -111,7 +121,7 @@ The aim of this series of notes is to summarize the base properties about stable
 
 ---
 
-## Part V. Non-vanishing and abundance
+## Part X. Non-vanishing and abundance
 
 
 
