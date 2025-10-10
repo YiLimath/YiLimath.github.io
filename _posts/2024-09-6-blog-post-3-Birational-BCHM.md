@@ -30,6 +30,8 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.1 Classical Base point free theorem for klt and dlt pairs]()
 
+[Note-II.2 Fujino's varieties generalization of base point free theorems]()
+
 
 
 
