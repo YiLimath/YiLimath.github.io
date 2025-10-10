@@ -37,13 +37,13 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ---
 
-## Part II. Existence of flip, minimal model, good minimal model, canonical model
+## Part III. Existence of flip, minimal model, good minimal model, canonical model
 
 [Note-III.1: Hacon Mckernan's proof of existence of klt flip](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
 
 [Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
-[Note-III.3: BCHM theorem C existence of minimal model for effective pair]()
+[Note-III.3: Existence of minimal models (BCHM C and beyond)]()
 
 [Note-III.4: Demailly-Hacon-Paun's existence of good minimal model theorem]()
 
@@ -107,7 +107,7 @@ The aim of this series of notes is to summarize the base properties about stable
 [Note-5: non-nef locus(numerical base locus), non-Kahler Locus]()
 
 [Note-6: Recent developments on the distribution of Hodge Locus]()
-
+ 
 
 
 ----
