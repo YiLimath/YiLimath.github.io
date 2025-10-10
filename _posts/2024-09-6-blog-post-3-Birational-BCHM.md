@@ -30,8 +30,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.1 Classical Base point free theorem for klt and dlt pairs]()
 
-[Note-II.2 Fujino's varieties generalization of base point free theorems]()
-
+[Note-II.2 Fujino's some generalizations of base point free theorems]()
 
 
 
@@ -41,18 +40,17 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-III.1: Hacon Mckernan's proof of existence of klt flip](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
 
-[Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+[Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips (with some generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
 [Note-III.3: Existence of minimal models (BCHM C and beyond)]()
 
-[Note-III.4: Demailly-Hacon-Paun's existence of good minimal model theorem]()
+[Note-III.4: Dxistence of good minimal model theorem (DHP and beyond)]()
 
 [Note-III.5: Basic properties of minimal model, good minimal models, canonical model]()
 
 [Note-III.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
 
 [Note-III.7: Minimal model, good minimal model, canonical model in family]()
-
 
 
 ----
