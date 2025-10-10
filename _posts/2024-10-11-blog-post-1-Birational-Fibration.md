@@ -19,7 +19,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [Note-I.1. Iitaka Fibrations with applications]()
 
-[Note-I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.6]
+[Note-I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
 [Note-I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
 
@@ -49,7 +49,9 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 ---
 ## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
 
-In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. 
+In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. The major references of this part of notes is [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649). 
+
+
 
 
 
