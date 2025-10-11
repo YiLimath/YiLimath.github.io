@@ -13,9 +13,9 @@ The aim of this series of notes is to give a brief introduction to the basics of
 ## Part III. Invariance of plurigenera problems
 
 
-[Note-1 Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Deformation/Levine.pdf) [update 8.12]
+[Note-1  Levine's deformation theoretical method to invariance of plurigenera problem](https://yilimath.github.io/files/Deformation/Levine.pdf) [update 8.12]
 
-[Note-2 Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Deformation/DefUniruled.pdf) [update 8.12]
+[Note-2  Levine and Fujiki's approach to Deformation invariance of uniruled varieties](https://yilimath.github.io/files/Deformation/DefUniruled.pdf) [update 8.12]
 
 [Note-3 Nakayama's invariance of plurigenera results](https://yilimath.github.io/files/Deformation/NakaPluri.pdf) [update 8.15]
 
