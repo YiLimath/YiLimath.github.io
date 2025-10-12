@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year graduate student at Wuhan University under the supervision of [Sheng Rao](https://jszy.whu.edu.cn/raosheng/en/index/427596/list/index.htm) and [Christopher D. Hacon](https://www.math.utah.edu/~hacon/). My research interests lie in **Birational Geometry and Hodge theory**. I maintain this website to keep track of the topics I study and, most importantly, to document my discoveries along my research journey. 
+I am a third-year graduate student at Wuhan University. My research interests lie in **Birational Geometry and Hodge theory**. I maintain this website to keep track of the topics I study and, most importantly, to document my discoveries along my research journey. 
 
 
 ## Research Interest
