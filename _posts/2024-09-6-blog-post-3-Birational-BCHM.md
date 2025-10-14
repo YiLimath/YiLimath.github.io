@@ -12,7 +12,6 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 
 
-
 ---
 
 ## Part I. Extension theorems and existence of flips
@@ -50,7 +49,8 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-III.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
 
-[Note-III.7: Minimal model, good minimal model, canonical model in family]()
+[Note-III.7: Minimal model, good minimal model, canonical model in Family](https://yilimath.github.io/files/Birational/BCHM/MMPinFamily.pdf) [upd 10.13]
+
 
 
 ----
