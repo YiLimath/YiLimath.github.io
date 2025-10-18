@@ -62,8 +62,10 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 ----
 ## Part II. My PhD Thesis on Kahler minimal model program
 
-[My PhD Thesis: The Kähler Minimal Model Program and Its Applications to Deformation Problems]()
+[My PhD Dissertation Defense Slides: The Kähler Minimal Model Program and Its Applications to Deformation Problems]()
 
-[My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论中的应用]()
+[My PhD Thesis: The Kähler Minimal Model Program and Its Applications to Deformation Problems]() [working in progress]
+
+[My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论中的应用]() [working in progress]
 
 ---
