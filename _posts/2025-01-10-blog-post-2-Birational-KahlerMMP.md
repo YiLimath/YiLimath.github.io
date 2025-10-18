@@ -12,6 +12,9 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 > In general, we aim to study the following question: To what extent are natural geometric or sheaf-theoretic constructions on compact Kähler manifolds determined by analogous constructions in the projective setting? Further structural results could provide a general framework for reducing certain questions about Kähler manifolds to the algebraic setting.
 
 
+---
+## Part-I. Reading Notes on the Kahler minimal model program
+
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
 [Note-1 Transendental Volume (for big cohomology class)](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
@@ -56,3 +59,10 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) [upd 9.30]
 
+----
+## Part II. My PhD Thesis on Kahler minimal model program
+
+[Supplement: My PhD Thesis on Kahler minimal model programs with applications to Deformation Problems]()
+
+
+---
