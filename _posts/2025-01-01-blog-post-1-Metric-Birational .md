@@ -1,6 +1,6 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2025-10-12
+date: 2025-10-18
 permalink: /posts/2025/10/Metric-Method/
 tags:
   - Birational geometry
@@ -19,7 +19,7 @@ In this series of notes we will summarize some standard metric methods which wil
 ---
 ## Metric Methods in Invariance of Plurigenera
 
-[1. Siu's invariance of plurigenera analytic proof](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
+[1. Paun's analytic proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
 
 [2. Limiting metric arguement in birational geometry]()
 
@@ -29,7 +29,7 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [1. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
 
-[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.12]
+[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.18]
 
 [3. Hacon-Paun's metric method for canonical bundle formula]()
 
