@@ -21,7 +21,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [Note-I.2. Albanese map with applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
-[Note-I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf)
+[Note-I.3. MRC Fibrations with applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf) [upd 10.19]
 
 [Note-I.4. Gamma reduction, Shafarovich map with applications]()
 
