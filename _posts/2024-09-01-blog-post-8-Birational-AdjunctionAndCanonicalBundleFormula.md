@@ -16,26 +16,27 @@ A useful summary can be found in [Anti-pluricanonical systems on Fano varieties,
 
 For detailed information see my reading notes 
 
-[1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf).
+[1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf)
 
-[2. Kawamata's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
+[2. The Restriction of Divisor and Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
 
-[3. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
+[3. Kawamata's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
 
-[4. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
+[4. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
-[5. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
+[5. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-[6. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
+[6. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
 
-[7. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
+[7. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
 
-[8. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
+[8. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
 
-[9. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
+[9. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
+[10. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
 
-[10. o-minimality approach to b-semiampleness conjecture]()
+[11. o-minimality approach to b-semiampleness conjecture]()
 
 ---
 ## Part II. Applications of Canonical Bundle Formulas
