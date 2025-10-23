@@ -24,6 +24,7 @@ The aim of this series of note is to introduce the birational geometry for surfa
 ---
 ## Part III. Log Calabi-Yau Surfaces
 
+[1. Totaro's proof of Kawamata-Morrison cone conjecture for Calabi-Yau surfaces]()
 
 
 
@@ -32,6 +33,12 @@ The aim of this series of note is to introduce the birational geometry for surfa
 
 
 
+
 ---
 ## Part V. Geometry of Calabi-Yau threefolds
 
+[1. Boundedness of elliptic Calabi-Yau threefolds]()
+
+
+
+---

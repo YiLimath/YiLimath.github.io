@@ -39,6 +39,8 @@ For detailed information see my reading notes
 [11. o-minimality approach to b-semiampleness conjecture]()
 
 ---
-## Part II. Applications of Canonical Bundle Formulas
+## Part II. Applications of Canonical Bundle Formulas and Subadjunctions
 
+
+[1. Applications of Canonical Bundle Formula to thee Finite Generation Problems]()
 
