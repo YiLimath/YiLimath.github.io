@@ -29,7 +29,7 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [1. Paun-Takayama's construction of singular Hermitian metric on direct image of relative canonical sheaf]()
 
-[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.18]
+[2. Hacon-Popa-Schnell's construction of singular Hermitian metric on direct image of relative (pluri)canonical sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
 
 [3. Hacon-Paun's metric method for canonical bundle formula]()
 
@@ -39,7 +39,9 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [1. Kollar's approach to Projectivity of moduli]()
 
-[2. Positivity of direct image in Iitaka conjecture]()
+[2. Kawamata's proof of Iitaka conjecture when the base is of general type](https://yilimath.github.io/files/Birational/MetricMethod/KawamataIitaka.pdf)
+
+
 
 
 ---
