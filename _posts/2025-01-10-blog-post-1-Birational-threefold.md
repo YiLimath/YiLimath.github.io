@@ -16,29 +16,41 @@ The aim of this series of note is to introduce the birational geometry for surfa
 
 
 
+
 ---
 ## Part II. Family of Surfaces, and Moduli of Surfaces
 
 
 
----
-## Part III. Log Calabi-Yau Surfaces
-
-[1. Totaro's proof of Kawamata-Morrison cone conjecture for Calabi-Yau surfaces]()
-
-
 
 ---
-## Part IV. Fano threefolds
+## Part III. K3 Surfaces
 
+[III.1. Complex K3 surfaces v.s. Projective K3 surfaces]()
+
+[III.2 Rational Curves on K3 surfaces]()
 
 
 
 ---
-## Part V. Geometry of Calabi-Yau threefolds
+## Part IV. Log Calabi-Yau Surfaces
 
-[1. Boundedness of elliptic Calabi-Yau threefolds]()
+[IV.1. Totaro's proof of Kawamata-Morrison cone conjecture for Calabi-Yau surfaces]()
 
 
 
 ---
+## Part V. Fano threefolds
+
+[VI.1. ]
+
+
+---
+## Part VI. Geometry of Calabi-Yau threefolds
+
+[VI.1. Boundedness of elliptic Calabi-Yau threefolds]()
+
+
+
+---
+
