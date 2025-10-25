@@ -16,10 +16,6 @@ A useful summary can be found in [Anti-pluricanonical systems on Fano varieties,
 
 For detailed information see my reading notes 
 
-[1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf)
-
-[2. The Restriction of Divisor and Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
-
 [3. Kawamata's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
 
 [4. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
@@ -30,13 +26,26 @@ For detailed information see my reading notes
 
 [7. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
 
-[8. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
+[8. o-minimality approach to b-semiampleness conjecture]()
 
-[9. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
-[10. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
+----
+## Part II. Subadjunction Theorems
 
-[11. o-minimality approach to b-semiampleness conjecture]()
+[1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf)
+
+[2. The Restriction of Divisor and Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
+
+[3. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
+
+[4. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
+
+
+----
+## Part III. Inversion of Adjunction
+
+[1. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
+
 
 ---
 ## Part II. Applications of Canonical Bundle Formulas and Subadjunctions
