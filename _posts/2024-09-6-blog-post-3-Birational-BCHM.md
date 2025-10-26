@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Reading Notes: BCHM'
-date: 2025-09-12
-permalink: /posts/2025/09/BCHM/
+date: 2025-10-26
+permalink: /posts/2025/10/BCHM/
 tags:
   - Birational geometry
   - BCHM
@@ -41,15 +41,28 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips (with some generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
-[Note-III.3: Existence of minimal models (BCHM C and beyond)]()
+[Note-III.3: Existence of minimal models (BCHM C and related)]()
 
-[Note-III.4: Dxistence of good minimal model theorem (DHP and beyond)]()
+[Note-III.4: Dxistence of good minimal model theorem (DHP and related)]()
 
 [Note-III.5: Basic properties of minimal model, good minimal models, canonical model]()
 
 [Note-III.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
 
-[Note-III.7: Minimal model, good minimal model, canonical model in Family](https://yilimath.github.io/files/Birational/BCHM/MMPinFamily.pdf) [upd 10.13]
+
+----
+## Part IV. Minimal model, good minimal model, canonical model, abundance in Family
+
+
+[Note-IV.1: A brief survey on Minimal models, good minimal models, canonical models, abundance in Families](https://yilimath.github.io/files/Birational/BCHM/MMPinFamilySurvey.pdf) [upd 10.13]
+
+[Note-IV.2: Existence of good minimal on the closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
+
+[Note-IV.3: Deformation openness of existence of good minimal model](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
+
+[Note-IV.4: Restriction of MMP on the central fiber]()
+
+[Note-IV.5: Extension of MMP from the central fiber]()
 
 
 
