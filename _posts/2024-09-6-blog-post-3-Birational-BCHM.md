@@ -42,7 +42,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-III.3: Existence of minimal models (BCHM C and related)]()
 
-[Note-III.4: Dxistence of good minimal model theorem (DHP and related)]()
+[Note-III.4: Dxistence of good minimal models (DHP and related)]()
 
 [Note-III.5: Basic properties of minimal model, good minimal models, canonical model]()
 
@@ -67,7 +67,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ----
 
-## Part IV. Finiteness of minimal model and Termination problems 
+## Part V. Finiteness of minimal model and Termination problems 
 
 [Note-V.1: Polyhedron decomposition results]()
 
@@ -129,7 +129,6 @@ The aim of this series of notes is to summarize the base properties about stable
 
 
 ---
-
 ## Part X. Non-vanishing and abundance
 
 
