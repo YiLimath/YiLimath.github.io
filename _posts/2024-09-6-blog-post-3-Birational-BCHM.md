@@ -11,10 +11,9 @@ tags:
 This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem etc. 
 
 
-
 ---
 
-## Part I. Extension theorems and existence of flips
+## Part I. Extension Theorems
 
 [Note-I.1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
 
@@ -70,27 +69,27 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ## Part IV. Finiteness of minimal model and Termination problems 
 
-[Note-1: Polyhedron decomposition results]()
+[Note-V.1: Polyhedron decomposition results]()
 
-[Note-2: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
+[Note-V.2: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
-[Note-3: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
-
-
----
-
-## Part V. Finite Generation Problems
-
-[Finite Generation Note-1: Finite generation of canonical ring, Cox ring]()
-
-[Finite Generation Note-2: Demailly-Hacon-Paun's analytic proof of finite generation]()
-
-[Finite Generation Note-3: Finite generation and Abundance]()
+[Note-V.3: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
 
 
 ---
 
-## Part VI. Partial Modification
+## Part VI. Finite Generation Problems
+
+[Finite Generation Note-VI.1: Finite generation of canonical ring, Cox ring]()
+
+[Finite Generation Note-VI.2: Demailly-Hacon-Paun's analytic proof of finite generation]()
+
+[Finite Generation Note-VI.3: Finite generation and Abundance]()
+
+
+---
+
+## Part VII. Partial Modification
 
 [Note-1: Log resolution, discrepancy]()
  
@@ -102,8 +101,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 
 ---
-
-## Part VII. Locus in Birational Geometry
+## Part VIII. Locus in Birational Geometry
 
 The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
 
