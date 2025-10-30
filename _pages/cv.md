@@ -13,6 +13,7 @@ Education
 ======
 * Ph.D in Birational Geometry, WuHan University, 2023 
 
+* Bachelor’s and Master’s degrees in Artificial Intelligence and Automation, Huazhong University of Science and Technology, 2015
 
 
 Publications
