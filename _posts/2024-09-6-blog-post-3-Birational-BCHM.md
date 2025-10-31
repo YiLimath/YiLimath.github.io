@@ -21,6 +21,8 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
 
+[Note-I.4: The Obstruction Divisor]() 
+
 [Note-I.4: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf) 
 
 ---
@@ -30,6 +32,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.2 Fujino's some generalizations of base point free theorems]()
 
+[Note-II.3 Positivities in Family and Base point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamily.pdf)
 
 
 ---
