@@ -21,9 +21,9 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
 
-[Note-I.4: The Obstruction Divisor]() 
+[Note-I.4: The Obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
 
-[Note-I.4: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf) 
+[Note-I.5: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf) 
 
 ---
 ## Part II. Base Point Freeeness and Variants
