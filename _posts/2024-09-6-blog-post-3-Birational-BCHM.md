@@ -119,17 +119,6 @@ The aim of this series of notes is to summarize the base properties about stable
 [Note-5: non-nef locus(numerical base locus), non-Kahler Locus]()
 
 [Note-6: Recent developments on the distribution of Hodge Locus]()
- 
-
-
-----
-## Part VIII. Application of BCHM
-
-[Note-1: Deformation of Singularities]()
-
-[Note-2: Deformation of positivities]()
-
-
 
 ---
 ## Part X. Non-vanishing and abundance
