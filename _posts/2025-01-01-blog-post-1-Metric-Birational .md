@@ -55,7 +55,9 @@ In this series of notes we will summarize some standard metric methods which wil
 
 [1. Supercanonical metric and abundance conjecture]()
 
-[2. Siu and Paun's analytic proof of finite generation of canonical ring and Shokurov's non-vanishing]()
+[2. Metric with minimal singularity]()
+
+[3. Siu and Paun's analytic proof of finite generation of canonical ring and Shokurov's non-vanishing]()
 
 
 ---
