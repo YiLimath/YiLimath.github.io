@@ -23,7 +23,9 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.4: The Obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
 
-[Note-I.5: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf) 
+[Note-I.5: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
+
+
 
 ---
 ## Part II. Base Point Freeeness and Variants
@@ -62,10 +64,11 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-IV.3: Deformation openness of existence of good minimal model](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
 
-[Note-IV.4: Restriction of MMP on the central fiber]()
+[Note-IV.4: Relative MMP, Fiberwise MMP and Absolute MMP]()
 
-[Note-IV.5: Extension of MMP from the central fiber]()
+[Note-IV.5: Restriction of MMP on the central fiber]()
 
+[Note-IV.6: Extension of MMP from the central fiber]()
 
 
 ----
@@ -123,6 +126,3 @@ The aim of this series of notes is to summarize the base properties about stable
 ---
 ## Part X. Non-vanishing and abundance
 
-
-
-----
