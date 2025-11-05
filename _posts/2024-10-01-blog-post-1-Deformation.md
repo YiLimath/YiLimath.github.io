@@ -20,31 +20,35 @@ The aim of this series of notes is to give a brief introduction to the basics of
 
 [Note-I.4 Algebraic proof of invariance of plurigenera with general type assumption](https://yilimath.github.io/files/Deformation/AlgebraicDefPluri.pdf)
 
-[Note-I.5 Paun-Demailly's analytic proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\InvariancePluri\PaunInvariancePluri.pdf) [update 8.25]
+[Note-I.5 Paun-Demailly's analytic proof of invariance of plurigenera](https://yilimath.github.io/files\Birational\Deformation\PaunInvariancePluri.pdf) [update 8.25]
 
 [Note-I.6 Hacon-Mckernan-Xu's log invariance of plurigenera and volumes](https://yilimath.github.io/files/Deformation/LogInvariancePluri.pdf) 
 
-[Note-I.7 Takayama's proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/TakayamaDefPluri.pdf)
+[Note-I.7 Takayama's proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/Deformation/TakayamaDefPluri.pdf)
 
-[Note-I.8 Kollar's MMP proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/KollarDefPluri.pdf)
+[Note-I.8 Kollar's MMP proof of invariance of plurigenera](https://yilimath.github.io/files/Birational/Deformation/KollarDefPluri.pdf)
 
-[Note-I.9 Deformation invariance of numerical Kodaira dimension of Nakayama](https://yilimath.github.io/files/Birational/InvariancePluri/DefNumericalKod.pdf)
+[Note-I.9 Deformation invariance of numerical Kodaira dimension of Nakayama](https://yilimath.github.io/files/Birational/Deformation/DefNumericalKod.pdf)
 
-[Note-I.10 Cao-Paun's approach to invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/CaoPaunInvariancePluri.pdf)
+[Note-I.10 Cao-Paun's approach to invariance of plurigenera](https://yilimath.github.io/files/Birational/Deformation/CaoPaunInvariancePluri.pdf)
 
 [Note-I.11 Siu's analytic proof of invariance of plurigenera (without general type condition)]()
 
-[Note-I.11 Applications of invariance of plurigenera](https://yilimath.github.io/files/Birational/InvariancePluri/ApplicationInvariancePluri.pdf)
+[Note-I.11 Applications of invariance of plurigenera](https://yilimath.github.io/files/Birational/Deformation/ApplicationInvariancePluri.pdf)
 
 
 ---
 ## Part II. Deformation of Positivities in Birational Geometry
 
-[Note-II.1: deFernex-Hacon variation of cones in family]()
+[Nite-II.1: Picard Group, Numerical Group in Families]()
 
-[Note-II.2: Deformation bahavior of pseudo-effectiveness]()
+[Note-II.2: deFernex--Hacon variation of cones in Families]()
 
-[Note-II.3: Deformation of nefness in family]()
+[Note-II.3: Deformation bahavior of pseudo-effectiveness]()
+
+[Note-II.4: Deformation of nefness in family]()
+
+[Note-II.5: Deformation of numerical trivial condition]()
 
 
 

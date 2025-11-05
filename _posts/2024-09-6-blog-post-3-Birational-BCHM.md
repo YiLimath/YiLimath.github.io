@@ -19,7 +19,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.2: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
-[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 9.12]
+[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 11.5]
 
 [Note-I.4: The Obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
 
