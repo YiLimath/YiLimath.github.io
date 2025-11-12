@@ -15,11 +15,12 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 ---
 ## Part A. Basic Conecpt in Moduli Theory
 
-[Note-1: A brief introduction to Stack](https://yilimath.github.io/files/Moduli/Stack.pdf) [upd 10.1]
+[Note-A.1: A brief introduction to Stack](https://yilimath.github.io/files/Moduli/Stack.pdf) [upd 10.1]
 
-[Note-2: A brief introduction to Artin Stack and Deligne-Mumford Stack](https://yilimath.github.io/files/Moduli/DMStack.pdf) [upd 10.1]
+[Note-A.2: A brief introduction to Artin Stack and Deligne-Mumford Stack](https://yilimath.github.io/files/Moduli/DMStack.pdf) [upd 10.1]
 
-[Note-3: A brief introduction to Algebraic Spaces](https://yilimath.github.io/files/Moduli/AlgSpace.pdf) [upd 10.1]
+[Note-A.3: A brief introduction to Algebraic Spaces](https://yilimath.github.io/files/Moduli/AlgSpace.pdf) [upd 10.1]
+
 
 
 ---
@@ -90,8 +91,7 @@ In this part of the notes, we will focus on the properties of moduli spaces. The
 
 [2. Applications of Chow variety in boundedness problems]()
 
-[3. Applications of Barlet-Chow cycle space in some analytic deformation problems]()
-
+[3. Applications of Douday Space/Barlet Chow cycle space in analytic deformation problems]()
 
 
 

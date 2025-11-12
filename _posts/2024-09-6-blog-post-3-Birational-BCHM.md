@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Reading Notes: BCHM'
-date: 2025-10-26
-permalink: /posts/2025/10/BCHM/
+date: 2025-11-12
+permalink: /posts/2025/11/BCHM/
 tags:
   - Birational geometry
   - BCHM
@@ -19,13 +19,11 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.2: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
-[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 11.5]
+[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 11.12]
 
 [Note-I.4: The Obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
 
 [Note-I.5: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
-
-
 
 ---
 ## Part II. Base Point Freeeness and Variants
@@ -34,7 +32,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-II.2 Fujino's some generalizations of base point free theorems]()
 
-[Note-II.3 Positivities in Family and Base point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamily.pdf)
+[Note-II.3 Positivities in Families and Base point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
 
 
 ---
@@ -62,9 +60,9 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-IV.2: Existence of good minimal on the closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
 
-[Note-IV.3: Deformation openness of existence of good minimal model](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
+[Note-IV.3: Existence of good minimal model in families](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
 
-[Note-IV.4: Relative MMP, Fiberwise MMP and Absolute MMP]()
+[Note-IV.4: Relative MMP, fiberwise MMP and absolute MMP]()
 
 [Note-IV.5: Restriction of MMP on the central fiber]()
 
@@ -76,6 +74,8 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 ## Part V. Finiteness of minimal model and Termination problems 
 
 [Note-V.1: Polyhedron decomposition results]()
+
+[Note-V.2: MMP with scaling]()
 
 [Note-V.2: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
@@ -122,6 +122,7 @@ The aim of this series of notes is to summarize the base properties about stable
 [Note-5: non-nef locus(numerical base locus), non-Kahler Locus]()
 
 [Note-6: Recent developments on the distribution of Hodge Locus]()
+
 
 ---
 ## Part X. Non-vanishing and abundance
