@@ -66,7 +66,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-IV.5: Restriction of MMP on the central fiber]()
 
-[Note-IV.6: Extension of MMP from the central fiber]()
+[Note-IV.6: Extension of MMP from the central fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf)
 
 
 ----
@@ -127,3 +127,6 @@ The aim of this series of notes is to summarize the base properties about stable
 ---
 ## Part X. Non-vanishing and abundance
 
+
+
+---
