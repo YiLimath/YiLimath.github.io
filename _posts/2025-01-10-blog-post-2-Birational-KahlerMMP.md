@@ -17,48 +17,45 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
-[Note-1 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
+[Note-1 Boucksom's divisorial Zariski decomposition]()
 
-[Note-2 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+[Note-2 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
 
-[Note-3 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
+[Note-3 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
-[Note-4 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf) [upd 3.30]
+[Note-4 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
-[Note-5 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf) [upd 4.9]
+[Note-5 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf) [upd 3.30]
 
-[Note-6 Kaehler 4-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
+[Note-6 Flipping contraction for Kahler 3-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf) [upd 4.9]
 
-[Note-7 Das--Hacon's transcendental MMP for projective varieties](https://yilimath.github.io/files/Birational/KahlerMMP/TransMMP.pdf)
+[Note-7 Kaehler 4-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
 
-[Note-8 Finite generation problem in Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
+[Note-8 Das--Hacon's transcendental MMP for projective varieties](https://yilimath.github.io/files/Birational/KahlerMMP/TransMMP.pdf)
 
-[Note-9 Termination problem in Kahler MMP]()
+[Note-9 Finite generation problem in Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
 
-[Note-10 Transcendental Base point free Conjecture](),
+[Note-10 Termination problem in Kahler MMP]()
 
+[Note-11 Transcendental Base point free Conjecture](),
 
-[Note-11 BDPP theorem for projective manifolds]()
+[Note-12 BDPP theorem for projective manifolds]()
 
-[Note-12 Ou's proof of BDPP theorem for compact Kahler manifolds]()
+[Note-13 Ou's proof of BDPP theorem for compact Kahler manifolds]()
 
-[Note-13 Cao--Horing's Producing rational curves on compact Kahler manifold](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-14 Cao--Horing's Producing rational curves on compact Kahler manifold](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-14 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 5.23]
+[Note-15 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 5.23]
 
-[Note-15 Existence of minimal model, good minimal models in the Kahler setting]()
+[Note-16 Existence of minimal model, good minimal models in the Kahler setting]()
 
-[Note-16 Canonical bundle formulas and subadjunction with applications in Kahler MMP]()
+[Note-17 Canonical bundle formulas and subadjunction with applications in Kahler MMP]()
 
-[Note-17 How to use divisorial Zariski decomposition?]()
+[Note-18 Properties of uniruled Kahler manifold]()
 
-[Note-18 How to use generalized pair in the Kahler setting?]()
+[Note-19: BCHM for projective morphism between complex analytic spaces by Fujino and Das--Hacon--Paun]()
 
-[Note-19 Properties of uniruled Kahler manifold]()
-
-[Note-20: BCHM for projective morphism between complex analytic spaces by Fujino and Das--Hacon--Paun]()
-
-[Note-21: Abundance for Kahler Pairs]()
+[Note-20: Abundance for Kahler Pairs]()
 
 [Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) [upd 9.30]
 
