@@ -21,7 +21,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 11.12]
 
-[Note-I.4: The Obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
+[Note-I.4: The obstruction Divisor](https://yilimath.github.io/files/Birational/BCHM/ObstructionDivisor.pdf) 
 
 [Note-I.5: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
 
@@ -98,12 +98,14 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 ## Part VII. Partial Modification
 
 [Note-1: Log resolution, discrepancy]()
+
+[Note-2: Crepant extraction with applications]()
  
-[Note-2: dlt modification, crepant extraction theorem](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
+[Note-3: dlt modification with applications](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
 
-[Note-3: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
+[Note-4: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
 
-[Note-4: Semi log modificaiton]()
+[Note-5: Semi log modificaiton]()
 
 
 ---
@@ -126,6 +128,8 @@ The aim of this series of notes is to summarize the base properties about stable
 
 ---
 ## Part X. Non-vanishing and abundance
+
+[Note-X.1. Miyaoka's proof of abundance for threefolds]()
 
 
 
