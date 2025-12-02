@@ -17,11 +17,11 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
-[Note-1 Boucksom's divisorial Zariski decomposition]()
+[Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
-[Note-2 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
+[Note-2 Boucksom's divisorial Zariski decomposition]()
 
-[Note-3 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+[Note-3 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
 
 [Note-4 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
