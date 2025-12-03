@@ -66,7 +66,7 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-IV.5: Restriction of MMP on the central fiber]()
 
-[Note-IV.6: Extension of MMP from the central fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf)
+[Note-IV.6: Extension of MMP from the central fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf) [update 12.3]
 
 
 ----
