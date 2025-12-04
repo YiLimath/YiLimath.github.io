@@ -12,7 +12,9 @@ The aim of this series of note is to introduce the fibration in Algebraic geomet
 
 ## Part I. Fibrations in Algebraic Geometry
 
-This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications in birational geometry. 
+This part of notes is based on the [Fibrations in algebraic geometry and applications](https://smf.emath.fr/publications/fibrations-en-geometrie-algebrique-et-applications) by Professor Voisin, what's new is we will add more applications in birational geometry. The general idea is
+
+> We try to construct fibrations for which the fibers are instead simpler than the total space, reducing in principle the study to phenomena on the base.
 
 
 [Note-I.0 General Machine to construct Fibrations]()
@@ -27,9 +29,7 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [Note-I.5. Core fibration, Bogomolov line bundle and Campana special variety with applications]()
 
-[Note-I.6. How to use Harder-Narasimhan filtration]()
-
-[Note-I.7. Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
+[Note-I.6. Applications of Leray Spectral sequence in fibration problem](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
 
 
 ----
@@ -40,11 +40,6 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 ## Part III. Positivities of Fibrations
 
 
-[Note-III.1. The Iitaka conjecture]()
-
-[Note-III.2. Nef reduction]()
-
-[Note-III.3. Pseudo-effective reduction]()
 
 ---
 ## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
@@ -52,7 +47,11 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. The major references of this part of notes is [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649). 
 
 
+[Note-IV.1 Criterion for Fibrations to be locally trivial]()
 
+[Note-IV.1 Structure theorem for projective manifolds with nef anti-canonical bundle]()
+
+[Note-IV.2 Structure theorem for klt projective varieties with nef anti-canonical bundle]()
 
 
 
