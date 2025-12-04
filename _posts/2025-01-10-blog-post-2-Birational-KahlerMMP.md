@@ -1,7 +1,7 @@
 ---
 title: 'My PhD Thesis Project: Kahler minimal model program'
-date: 2025-10-18
-permalink: /posts/2025/10/Kahler-MMP/
+date: 2025-12-03
+permalink: /posts/2025/12/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -18,6 +18,8 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
 [Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+
+[Note-2 Lelong number and quasi-psh functions]()
 
 [Note-2 Boucksom's divisorial Zariski decomposition]()
 
@@ -39,9 +41,9 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-11 Transcendental Base point free Conjecture](),
 
-[Note-12 BDPP theorem for projective manifolds]()
+[Note-12 BDPP theorem for projective manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPProj.pdf) [update 12.2]
 
-[Note-13 Ou's proof of BDPP theorem for compact Kahler manifolds]()
+[Note-13 Ou's proof of BDPP theorem for compact Kahler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPKahler.pdf) [update 12.2]
 
 [Note-14 Cao--Horing's Producing rational curves on compact Kahler manifold](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
@@ -57,7 +59,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-20: Abundance for Kahler Pairs]()
 
-[Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) [upd 9.30]
+[Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) 
 
 
 ----

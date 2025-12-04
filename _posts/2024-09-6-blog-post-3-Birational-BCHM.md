@@ -77,9 +77,9 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 [Note-V.2: MMP with scaling]()
 
-[Note-V.2: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
+[Note-V.3: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
-[Note-V.3: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
+[Note-V.4: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
 
 
 ---

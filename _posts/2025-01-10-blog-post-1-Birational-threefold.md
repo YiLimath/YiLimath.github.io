@@ -16,7 +16,6 @@ The aim of this series of note is to introduce the birational geometry for surfa
 
 
 
-
 ---
 ## Part II. Family of Surfaces, and Moduli of Surfaces
 
@@ -42,7 +41,6 @@ The aim of this series of note is to introduce the birational geometry for surfa
 ---
 ## Part V. Fano threefolds
 
-[VI.1. ]
 
 
 ---
