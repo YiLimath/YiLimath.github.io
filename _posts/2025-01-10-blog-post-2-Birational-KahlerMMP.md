@@ -21,11 +21,13 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-2 Lelong number and quasi-psh functions]()
 
-[Note-2 Boucksom's divisorial Zariski decomposition]()
+[Note-3 Transcendental Volume function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
 
-[Note-3 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
+[Note-4 Boucksom's divisorial Zariski decomposition]()
 
-[Note-4 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
+[Note-5 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
+
+[Note-6 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
 [Note-5 Divisorial constraction for Kahler 3-fold](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf) [upd 3.30]
 
