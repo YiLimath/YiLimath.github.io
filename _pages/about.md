@@ -14,9 +14,8 @@ I am a third-year graduate student at Wuhan University under the supervision of 
 
 Currently I mainly work on: 
 
-(1) The Kähler minimal model program, with applications to deformation problems;
+(1) The Kähler minimal model program with applications to deformation problems;
 
-(2) The boundedness problem in birational geometry and the moduli aspects of birational geometry;
+(2) I also study the structure of Kähler Calabi-Yau varieties and varieties with nef anti-canonical divisors;
 
-(3) I also study the structure of Kahler Calabi-Yau varieties. 
-
+(3) The boundedness problem in birational geometry and the moduli aspects of birational geometry;
