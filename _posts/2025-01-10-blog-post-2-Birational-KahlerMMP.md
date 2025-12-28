@@ -1,6 +1,6 @@
 ---
 title: 'My PhD Thesis Project: Kahler minimal model program'
-date: 2025-12-03
+date: 2025-12-28
 permalink: /posts/2025/12/Kahler-MMP/
 tags:
   - Birational geometry
@@ -16,6 +16,8 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 ## Part-I. Reading Notes on the Kahler minimal model program
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
+
+[Note-1 Bott-Chern class and Bott-Chern complexity]()
 
 [Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
@@ -49,7 +51,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-14 Cao--Horing's Producing rational curves on compact Kahler manifold](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-15 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 5.23]
+[Note-15 Cone theorem for Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
 [Note-16 Existence of minimal model, good minimal models in the Kahler setting]()
 
@@ -60,6 +62,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 [Note-19: BCHM for projective morphism between complex analytic spaces by Fujino and Das--Hacon--Paun]()
 
 [Note-20: Abundance for Kahler Pairs]()
+
 
 [Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) 
 

@@ -40,6 +40,12 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 ## Part III. Positivities of Fibrations
 
 
+---
+## Part IV. Foliation and Fibration
+
+[Note-IV.1 Camapana-Paun's algeraic criterion of foliation and Cao-Paun's generalization]()
+
+
 
 ---
 ## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
