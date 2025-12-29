@@ -51,7 +51,9 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 [Note-IV.3 Proof of Bolgomolov-Beauville-Yau decomposition (projective klt pair)]()
 
-[Note-IV.4 Proof of Bolgomolov-Beauville-Yau decomposition (Kahler klt pair)]()
+[Note-IV.4 Algebraic approximation for Kahler Calabi-Yau]()
+
+[Note-IV.5 Proof of Bolgomolov-Beauville-Yau decomposition (Kahler klt pair)]()
 
 
 
