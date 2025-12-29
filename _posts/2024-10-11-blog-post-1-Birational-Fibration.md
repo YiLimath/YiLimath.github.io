@@ -1,7 +1,7 @@
 ---
 title: 'Fibration and Foliation in Algebraic Geometry'
-date: 2025-10-10
-permalink: /posts/2025/10/Fibration-in-Birational-Geometry/
+date: 2025-12-28
+permalink: /posts/2025/12/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
 ---
@@ -33,17 +33,26 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 
 ----
-## Part II. Singularity of Fibrations
-
-
-----
-## Part III. Positivities of Fibrations
+## Part II. Singularity and Positivities of Fibrations
 
 
 ---
-## Part IV. Foliation and Fibration
+## Part III. Foliation in algebraic geometry
 
-[Note-IV.1 Camapana-Paun's algeraic criterion of foliation and Cao-Paun's generalization]()
+[Note-III.1 Camapana-Paun's algeraic criterion of foliation and Cao-Paun's generalization]()
+
+
+---
+## Part IV. Bolgomolov-Beauville-Yau Decomposition theorem
+
+[Note-IV.1 Locally trivality of the Albanese fibration]()
+
+[Note-IV.2 Splitting of the tangent sheaf]()
+
+[Note-IV.3 Proof of Bolgomolov-Beauville-Yau decomposition (projective klt pair)]()
+
+[Note-IV.4 Proof of Bolgomolov-Beauville-Yau decomposition (Kahler klt pair)]()
+
 
 
 
