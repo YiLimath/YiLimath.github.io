@@ -17,7 +17,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
-[Note-1 Bott-Chern class and Bott-Chern complexity]()
+[Note-1 Bott-Chern class]()
 
 [Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
