@@ -13,7 +13,9 @@ Education
 ======
 * Ph.D in Birational Geometry, WuHan University, 2023 
 
-* Bachelor’s and Master’s degrees in Artificial Intelligence and Automation, Huazhong University of Science and Technology, 2015
+* Master's degreee in Artificial Intelligence and Automation, Huazhong University of Science and Technology, 2019
+
+* Bachelor’s degrees in Artificial Intelligence and Automation (Science and Engineering Interdisciplinary Innovation Experimental Class), Huazhong University of Science and Technology, 2015
 
 
 Publications
@@ -35,3 +37,9 @@ Teaching
   {% endfor %}</ul>
   
 
+Honors, Grants and Awards
+======
+
+2016 National College Mathematics Competition First Prize (Hubei Division)
+
+2022 First Prize in the Qualifying Examination for Riemannian Geometry (Huazhong University of Science and Technology)
