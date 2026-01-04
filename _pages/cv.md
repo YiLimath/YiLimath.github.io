@@ -17,6 +17,15 @@ Education
 
 * Bachelor’s degrees in Artificial Intelligence and Automation (Science and Engineering Interdisciplinary Innovation Experimental Class), Huazhong University of Science and Technology, 2015
 
+Research Interests
+=======
+
+* Kahler minimal model program
+
+* Structure of Kahler Calabi-Yau varieties and varieties with nef anti-canonical divisor
+
+* Boundedness and moduli aspect of birational geometry
+
 
 Publications
 ======
