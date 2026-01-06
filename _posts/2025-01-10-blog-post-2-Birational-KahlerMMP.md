@@ -17,17 +17,17 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
-[Note-1 Bott-Chern class]()
+[Note-1 Bott-Chern class](https://yilimath.github.io/files/Birational/KahlerMMP/BottChernClass.pdf)
 
 [Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
-[Note-2 Lelong number and quasi-psh functions]()
+[Note-2 Lelong number and quasi-psh functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf)
 
 [Note-3 Transcendental volume function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
 
-[Note-4 Boucksom's divisorial Zariski decomposition]()
+[Note-4 Boucksom's divisorial Zariski decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf)
 
-[Note-5 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/Volumes.pdf) 
+[Note-5 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf) 
 
 [Note-6 Analytic contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
@@ -41,9 +41,9 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-9 Finite generation problem under the Kahler setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
 
-[Note-10 Termination problems in Kahler MMP]()
+[Note-10 Termination problems in Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Termination.pdf)
 
-[Note-11 Transcendental base point free conjecture](),
+[Note-11 Transcendental base point free conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf),
 
 [Note-12 BDPP theorem for projective manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPProj.pdf) [update 12.2]
 
