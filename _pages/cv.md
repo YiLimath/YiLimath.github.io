@@ -7,6 +7,10 @@ redirect_from:
   - /resume
 ---
 
+
+[(My CV)](https://yilimath.github.io/files/CV.pdf)
+
+
 {% include base_path %}
 
 Education
@@ -14,6 +18,7 @@ Education
 * Ph.D in Birational Geometry, WuHan University, 2023 
 
 * Bachelor’s and Master's degrees in Artificial Intelligence and Automation (Science and Engineering Interdisciplinary Innovation Experimental Class), Huazhong University of Science and Technology, 2015
+
 
 Research Interests
 =======
