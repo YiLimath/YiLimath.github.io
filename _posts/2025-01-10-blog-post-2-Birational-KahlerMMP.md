@@ -15,59 +15,59 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 ---
 ## Part-I. Reading Notes on the Kahler minimal model program
 
-[Note-0 Overview of Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
+[Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
-[Note-1 Bott-Chern class](https://yilimath.github.io/files/Birational/KahlerMMP/BottChernClass.pdf)
+[Note-1 The Bott-Chern classes](https://yilimath.github.io/files/Birational/KahlerMMP/BottChernClass.pdf)
 
-[Note-1 Positivities in the Kahler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+[Note-2 Positivities in the Kähler minimal model program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
-[Note-2 Lelong number and quasi-psh functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf)
+[Note-3 Lelong number and quasi-psh functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf)
 
-[Note-3 Transcendental volume function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
+[Note-4 Transcendental volume function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
 
-[Note-4 Boucksom's divisorial Zariski decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf)
+[Note-5 Boucksom's divisorial Zariski decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf)
 
-[Note-5 Generalized Kahler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf) 
+[Note-6 Generalized Kähler pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf) 
 
-[Note-6 Analytic contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
+[Note-7 Analytic contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
-[Note-5 Divisorial contractions for Kahler threefolds](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf) [upd 3.30]
+[Note-8 Divisorial contractions for Kähler threefolds](https://yilimath.github.io/files/Birational/KahlerMMP/DivisorialCont.pdf) [upd 3.30]
 
-[Note-6 Flipping contractions for Kahler threefolds](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf) [upd 4.9]
+[Note-9 Flipping contractions for Kähler threefolds](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf) [upd 4.9]
 
-[Note-7 Kaehler 4-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
+[Note-10 On the Kähler 4-fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
 
-[Note-8 Das-Hacon's transcendental MMP for projective varieties](https://yilimath.github.io/files/Birational/KahlerMMP/TransMMP.pdf)
+[Note-11 Das-Hacon's transcendental MMP for projective varieties](https://yilimath.github.io/files/Birational/KahlerMMP/TransMMP.pdf)
 
-[Note-9 Finite generation problem under the Kahler setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
+[Note-12 Finite generation problem under the Kähler setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
 
-[Note-10 Termination problems in Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Termination.pdf)
+[Note-13 Termination problems in Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Termination.pdf)
 
-[Note-11 Transcendental base point free conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf),
+[Note-14 Transcendental base point free conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf),
 
-[Note-12 BDPP theorem for projective manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPProj.pdf) [update 12.2]
+[Note-15 BDPP theorem for projective manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPProj.pdf) [update 12.2]
 
-[Note-13 Ou's proof of BDPP theorem for compact Kahler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPKahler.pdf) [update 12.2]
+[Note-16 Ou's proof of BDPP theorem for compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPKahler.pdf) [update 12.2]
 
-[Note-14 Cao--Horing's Producing rational curves on compact Kahler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-17 Cao--Horing's Producing rational curves on compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-15 Cone theorem for the Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
+[Note-18 Cone theorem for the Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
-[Note-16 Existence of minimal model, good minimal models in the Kahler setting]()
+[Note-19 Existence of minimal model, good minimal models in the Kähler setting]()
 
-[Note-17 Canonical bundle formulas and subadjunction with applications in the Kahler MMP]()
+[Note-20 Canonical bundle formulas and subadjunction with applications in the Kähler MMP]()
 
-[Note-18 Properties of uniruled Kahler manifolds]()
+[Note-21 Properties of uniruled Kähler manifolds]()
 
-[Note-19: BCHM for projective morphism between complex analytic spaces]()
+[Note-22: BCHM for projective morphism between complex analytic spaces]()
 
-[Note-20: Abundance for Kahler threefolds]()
+[Note-23: Abundance for Kähler threefolds]()
 
-[Supplement: Tools can be used to reduce Kahler problems to projective problems](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) 
+[Supplement: Tools can be used to reduce a Kähler problem to a projective problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) 
 
 
 ----
-## Part II. My PhD Thesis on Kahler minimal model program
+## Part II. My PhD Thesis on Kähler minimal model program
 
 [My PhD Dissertation Defense Slides: The Kähler Minimal Model Program and Its Applications to Deformation Problems](https://yilimath.github.io/files/Birational/KahlerMMP/DefenseSlide.pdf)
 
