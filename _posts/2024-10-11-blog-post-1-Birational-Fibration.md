@@ -36,24 +36,26 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 ## Part II. Singularity and Positivities of Fibrations
 
 
+
 ---
 ## Part III. Foliation in algebraic geometry
 
 [Note-III.1 Camapana-Paun's algeraic criterion of foliation and Cao-Paun's generalization]()
 
 
+
 ---
-## Part IV. Bolgomolov-Beauville-Yau Decomposition theorem
+## Part IV. Beauville-Bolgomolov-Yau Decomposition
 
 [Note-IV.1 Locally trivality of the Albanese fibration]()
 
 [Note-IV.2 Splitting of the tangent sheaf]()
 
-[Note-IV.3 Proof of Bolgomolov-Beauville-Yau decomposition (projective klt pair)]()
+[Note-IV.3 Proof of Beauville-Bolgomolov-Yau decomposition (projective klt pair)]()
 
 [Note-IV.4 Algebraic approximation for Kahler Calabi-Yau]()
 
-[Note-IV.5 Proof of Bolgomolov-Beauville-Yau decomposition (Kahler klt pair)]()
+[Note-IV.5 Proof of Beauville-Bolgomolov-Yau decomposition (Kahler klt pair)]()
 
 
 
