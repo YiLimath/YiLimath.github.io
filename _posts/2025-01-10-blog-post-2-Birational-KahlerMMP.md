@@ -1,5 +1,5 @@
 ---
-title: 'My PhD Thesis Project: Kahler minimal model program'
+title: 'My PhD Thesis Project: Kähler minimal model program'
 date: 2025-12-28
 permalink: /posts/2025/12/Kahler-MMP/
 tags:
@@ -7,13 +7,13 @@ tags:
   - Complex analytic geometry
 ---
 
-The aim of this note is to introduce the minimal model program for Kahler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kahler minimal model program will have the following three major difficulties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kahler varieties, (2) The base point free theorem and cone theorem: Since Kahler manifold with a big line bundle is automatic projective, thus a big line bundle does not make sense on (non-projective) Kahler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, and this approach is not very clear under Kaehler setting.
+The aim of this note is to introduce the minimal model program for Kähler varieties. Compared with the well-known minimal model program for projective varieties, the theory of Kähler minimal model program will have the following three major difficulties: (1) Mori bend-and-break technique: Mori bend and break is not known for Kähler varieties, (2) The base point free theorem and cone theorem: Since Kähler manifold with a big line bundle is automatic projective, thus a big line bundle does not make sense on (non-projective) Kähler manifold, (3) Contraction theorem: In the classical MMP, we require the base point free theorem to produce some semi-ampleness divisor. This semi-ample divisor will induce the negative contraction morphism, and this approach is not very clear under Kaehler setting.
 
 > In general, we aim to study the following question: To what extent are natural geometric or sheaf-theoretic constructions on compact Kähler manifolds determined by analogous constructions in the projective setting? Further structural results could provide a general framework for reducing certain questions about Kähler manifolds to the algebraic setting.
 
 
 ---
-## Part-I. Reading Notes on the Kahler minimal model program
+## Part-I. Reading Notes on the Kähler minimal model program
 
 [Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
 
@@ -51,7 +51,7 @@ The aim of this note is to introduce the minimal model program for Kahler variet
 
 [Note-17 Cao--Horing's Producing rational curves on compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-18 Cone theorem for the Kahler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
+[Note-18 Cone theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
 [Note-19 Existence of minimal model, good minimal models in the Kähler setting]()
 
