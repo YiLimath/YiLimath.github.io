@@ -45,23 +45,19 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 [Note-14 Transcendental base point free conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf),
 
-[Note-15 BDPP theorem for projective manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPProj.pdf) [update 12.2]
+[Note-15 Cao--Horing's Producing rational curves on compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-16 Ou's proof of BDPP theorem for compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/BDPPKahler.pdf) [update 12.2]
+[Note-16 Cone theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
-[Note-17 Cao--Horing's Producing rational curves on compact Kähler manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-17 Existence of minimal model, good minimal models in the Kähler setting]()
 
-[Note-18 Cone theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
+[Note-18 Canonical bundle formulas and subadjunction with applications in the Kähler MMP]()
 
-[Note-19 Existence of minimal model, good minimal models in the Kähler setting]()
+[Note-19 Properties of uniruled Kähler manifolds]()
 
-[Note-20 Canonical bundle formulas and subadjunction with applications in the Kähler MMP]()
+[Note-20: BCHM for projective morphism between complex analytic spaces]()
 
-[Note-21 Properties of uniruled Kähler manifolds]()
-
-[Note-22: BCHM for projective morphism between complex analytic spaces]()
-
-[Note-23: Abundance for Kähler threefolds]()
+[Note-21: Abundance for Kähler threefolds]()
 
 [Supplement: Tools can be used to reduce a Kähler problem to a projective problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf) 
 
