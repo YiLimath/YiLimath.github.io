@@ -13,10 +13,10 @@ the (relative) minimal model program for Kähler threefolds, we verify the defor
 invariance of volumes of adjoint classes and plurigenera for smooth families of Kähler
 threefolds, thereby confirming Siu’s invariance of plurigenera conjecture in dimension
 three.'
-date: 2025-11-01
+date: 2026-02-01
 aurthors: 'Christopher D. Hacon, Yi Li, and Sheng Rao'
 venue: 'arxiv'
-paperurl: 'non'
+paperurl: 'http://arxiv.org/abs/2602.04158'
 
 ---
 
