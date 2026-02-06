@@ -55,3 +55,6 @@ Honors, Grants and Awards
 2016 National College Mathematics Competition First Prize (Hubei Division)
 
 2022 First Prize in the Qualifying Examination for Riemannian Geometry (Huazhong University of Science and Technology)
+
+2025 Third Prize, Voice of Luojia Teaching Competition (Wuhan University)
+
