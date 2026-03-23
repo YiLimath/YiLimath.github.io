@@ -30,13 +30,13 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 [Note-1 Positivity in the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
-[Note-2 Lelong Numbers and Quasi-psh Functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf)
+[Note-2 Lelong Numbers and Quasi-psh Functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf) [TODO]
 
-[Note-3 Transcendental Volume Function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
+[Note-3 Transcendental Volume Function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf) [TODO]
 
-[Note-4 Boucksom's Divisorial Zariski Decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf)
+[Note-4 Boucksom's Divisorial Zariski Decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf) [TODO]
 
-[Note-5 Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf) 
+[Note-5 Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf)  [TODO]
 
 [Note-6 Analytic Contractibility Theorem](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
@@ -44,29 +44,27 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 [Note-8 Flipping Contractions for Kähler Threefolds](https://yilimath.github.io/files/Birational/KahlerMMP/FlippingCont.pdf) [upd 4.9]
 
-[Note-9 On the Kähler 4-Fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
+[Note-9 On the Kähler 4-Fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf) [TODO]
 
-[Note-10 Das–Hacon's Transcendental MMP for Projective Varieties](https://yilimath.github.io/files/Birational/KahlerMMP/TransMMP.pdf)
+[Note-10 Finite Generation Problem in the Kähler Setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf) [TODO]
 
-[Note-11 Finite Generation Problem in the Kähler Setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf)
+[Note-11 Termination Problems in the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Termination.pdf)
 
-[Note-12 Termination Problems in the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Termination.pdf)
+[Note-12 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf)
 
-[Note-13 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf)
+[Note-13 Cao–Höring: Producing Rational Curves on Compact Kähler Manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
-[Note-14 Cao–Höring: Producing Rational Curves on Compact Kähler Manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-14 Cone Theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
-[Note-15 Cone Theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
+[Note-15 Existence of Minimal Models and Good Minimal Models in the Kähler Setting]()
 
-[Note-16 Existence of Minimal Models and Good Minimal Models in the Kähler Setting]()
+[Note-16 Canonical Bundle Formulas and Subadjunction with Applications in the Kähler MMP]()
 
-[Note-17 Canonical Bundle Formulas and Subadjunction with Applications in the Kähler MMP]()
+[Note-17 Properties of Uniruled Kähler Manifolds]()
 
-[Note-18 Properties of Uniruled Kähler Manifolds]()
+[Note-18: BCHM for Projective Morphisms Between Complex Analytic Spaces]()
 
-[Note-19: BCHM for Projective Morphisms Between Complex Analytic Spaces]()
-
-[Note-20: Abundance for Kähler Threefolds]()
+[Note-19: Abundance for Kähler Threefolds]()
 
 [Supplement: Tools That Can Be Used to Reduce a Kähler Problem to a Projective Problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf)
 
