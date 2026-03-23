@@ -61,7 +61,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 ---
 ## Part V. Structure Theorems for Projective Manifolds/Kähler Manifolds with Positive Tangent/Cotangent Bundles
 
-In this part of the notes, I summarize classification results for projective/Kähler manifolds with positive tangent/cotangent bundles. The main references for this part are [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649), [CCM21](), [Wang22]().
+In this part of the notes, I summarize classification results for projective/Kähler manifolds with positive tangent/cotangent bundles. The main references for this part are [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649), [CCM21](https://content.algebraicgeometry.nl/2021-4/2021-4-013.pdf), [Wang22](https://link.springer.com/article/10.1007/s00208-021-02275-7), [MW25](https://link.springer.com/article/10.1007/s00208-024-02934-5), [MW25](https://ems.press/journals/jems/articles/14299169), [MWWZ25](https://arxiv.org/pdf/2506.23218).
 
 
 [Note-IV.1 Numerical Flatness Criteria]()
