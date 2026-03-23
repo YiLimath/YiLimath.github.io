@@ -1,6 +1,6 @@
 ---
 title: 'Moishezon Morphism Seminar Note'
-date: 2025-07-01
+date: 2026-01-01
 permalink: /posts/2025/07/Moishezon-Morphism/
 tags:
   - Birational geometry
@@ -30,10 +30,8 @@ Here is the outline:
 
 [6. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf), [TODO]
 
-[7. Minimal model program in the Moishezon category]() [TODO]
+[Summary Slide](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 
-
-[Summary Slide (for my PhD Dissertation Proposal Examination)](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
-
+[Merged: Notes on Moishezon Morphisms](https://yilimath.github.io/files/Birational/Moishezon/Merged.pdf)
 
 ---

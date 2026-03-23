@@ -66,11 +66,13 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. The major references of this part of notes is [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649). 
 
 
-[Note-IV.1 Criterion for Fibrations to be locally trivial]()
+[Note-IV.1 Numerical Flatness critera]()
 
-[Note-IV.1 Structure theorem for projective manifolds with nef anti-canonical bundle]()
+[Note-IV.2 Critera for Fibrations to be locally trivial]()
 
-[Note-IV.2 Structure theorem for klt projective varieties with nef anti-canonical bundle]()
+[Note-IV.3 Splitting of tangent sheaf]()
+
+[Note-IV.4 Structure theorem for klt projective varieties with nef anti-canonical bundle]()
 
 
 
