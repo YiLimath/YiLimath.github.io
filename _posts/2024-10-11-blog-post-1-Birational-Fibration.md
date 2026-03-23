@@ -61,9 +61,9 @@ This part of notes is based on the [Fibrations in algebraic geometry and applica
 
 
 ---
-## Part IV. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
+## Part V. Structure theorems for projective manifold/Kahler manifold with positive tangent/cotangent bundles
 
-In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. The major references of this part of notes is [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649). 
+In this part of notes I will summarize the classification results for projective/Kahler manifolds with positive tangent/cotangent bundles. The major references of this part of notes is [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649), [CCM21](), [Wang22](), .
 
 
 [Note-IV.1 Numerical Flatness critera]()
@@ -75,27 +75,7 @@ In this part of notes I will summarize the classification results for projective
 [Note-IV.4 Structure theorem for klt projective varieties with nef anti-canonical bundle]()
 
 
-
-
 ---
 ## Part V. Hodge Theory and Fibrations
 
 [Note-V.1: Abelian fibrations and BBDG decomposition]()
-
-
-
-
----
-## Part VI. Fibration with specific varieties
-
-
-[Note-VI.1. Toric Fibrations]()
-
-[Note-VI.2 Elliptic fibrations]()
-
-[Note-VI.3 Calabi-Yau Fibrations]()
-
-[Note-VI.4 Abelian Fibrations]()
-
-
----
