@@ -7,26 +7,26 @@ tags:
   - Adjunction-Theory
 ---
 
-The aim of this note is to introduce adjunction theory in birational geometry. Among the various techniques in birational geometry, adjunction theory is one of the most powerful tools. It allows us to relate the geometry — particularly the singularities — of an ambient variety to those of suitable subvarieties.
+The aim of this note is to introduce adjunction theory in birational geometry. Among the various techniques in birational geometry, adjunction theory is one of the most powerful tools. It allows us to relate the geometry—particularly the singularities—of an ambient variety to those of suitable subvarieties.
 
-A useful summary can be found in [Anti-pluricanonical systems on Fano varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01)). This note is based on that paper, and our goal is to provide a more detailed introduction to adjunction theory.
+A useful summary can be found in [Anti-pluricanonical Systems on Fano Varieties, Chapter 3](https://annals.math.princeton.edu/2019/190-2/p01). This note is based on that paper, and our goal is to provide a more detailed introduction to adjunction theory.
 
 
 ## Part I. Canonical Bundle Formula
 
-For detailed information see my reading notes 
+For detailed information, see my reading notes:
 
-[3. Kawamata's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
+[3. Kawamata's Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
 
-[4. Ambro's canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
+[4. Ambro's Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
 
-[5. Fujino-Mori canonical bundle formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
+[5. Fujino–Mori Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
 
-[6. Generalized canonical bundle formula of Birkar-Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
+[6. Generalized Canonical Bundle Formula of Birkar–Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
 
-[7. Canonical bundle formula for generalized Kahler pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
+[7. Canonical Bundle Formula for Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
 
-[8. o-minimality approach to b-semiampleness conjecture]()
+[8. o-minimality Approach to the b-semiampleness Conjecture]()
 
 
 ----
@@ -34,11 +34,11 @@ For detailed information see my reading notes
 
 [1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf)
 
-[2. The Restriction of Divisor and Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
+[2. The Restriction of Divisors and the Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
 
-[3. Kawamata's subadjunction formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
+[3. Kawamata's Subadjunction Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
 
-[4. Hacon-Mckernan-Xu's subadjunction type theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
+[4. Hacon–McKernan–Xu's Subadjunction-Type Theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
 
 ----
@@ -48,8 +48,6 @@ For detailed information see my reading notes
 
 
 ---
-## Part II. Applications of Canonical Bundle Formulas and Subadjunctions
+## Part IV. Applications of Canonical Bundle Formulas and Subadjunction
 
-
-[1. Applications of Canonical Bundle Formula to thee Finite Generation Problems]()
-
+[1. Applications of the Canonical Bundle Formula to Finite Generation Problems]()

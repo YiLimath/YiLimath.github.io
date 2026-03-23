@@ -18,19 +18,19 @@ moduli theory. Another compelling reason to consider the Moishezon category is t
 
 Here is the outline:
 
-[1. Basic properties of Moishezon varieties and Moishezon morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 7.4]
+[1. Basic Properties of Moishezon Varieties and Moishezon Morphisms](https://yilimath.github.io/files/Birational/Moishezon/Moishezon1.pdf) [update 7.4]
 
-[2. Fiberwise bimeromorphic map](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf), [update 7.4]
+[2. Fiberwise Bimeromorphic Maps](https://yilimath.github.io/files/Birational/Moishezon/Moishezon2.pdf) [update 7.4]
 
-[3. General type locus and Moishezon locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 7.4]
+[3. General Type Locus and Moishezon Locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon3.pdf) [update 7.4]
 
-[4. Projectivity critera, projective locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf) [update 7.4]
+[4. Projectivity Criteria and Projective Locus](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf) [update 7.4]
 
-[5. Rational curves on Moishezon spaces, Mori bend and break for Moishezon variety](https://yilimath.github.io/files/Birational/Moishezon/Moishezon5.pdf), [update 7.4]
+[5. Rational Curves on Moishezon Spaces, Mori Bend-and-Break for Moishezon Varieties](https://yilimath.github.io/files/Birational/Moishezon/Moishezon5.pdf) [update 7.4]
 
-[6. Algebraic approximation and Inversion of adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf), [TODO]
+[6. Algebraic Approximation and Inversion of Adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf) [TODO]
 
-[Summary Slide](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
+[Summary Slides](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 
 [Merged: Notes on Moishezon Morphisms](https://yilimath.github.io/files/Birational/Moishezon/Merged.pdf)
 

@@ -8,74 +8,74 @@ tags:
 ---
 
 
-This aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in details. We will try to finish the proof of the main theorem and summarize some interesting applications of BCHM. We will not strictly follow the structure of the original paper, instead we will divide the paper into several topics discussion, including: Existence of flip, existence of minimal model, termination problem, non-vanishing conjecture and finite generation problem etc. 
+The aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in detail. We aim to complete the proof of the main theorem and summarize some important applications of BCHM. We do not strictly follow the structure of the original paper; instead, we divide the material into several thematic topics, including the existence of flips, existence of minimal models, termination problems, the non-vanishing conjecture, and the finite generation problem.
 
 
 ---
 
 ## Part I. Extension Theorems
 
-[Note-I.1: Nakayama's extension theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
+[Note-I.1: Nakayama's Extension Theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
 
-[Note-I.2: Hacon Mckernan extension theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
+[Note-I.2: Hacon–McKernan Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
 
-[Note-I.3: deFernex-Hacon extension theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [updage 11.12]
+[Note-I.3: de Fernex–Hacon Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [update 11.12]
 
-[Note-I.4: Demailly-Hacon-Paun dlt extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
-
----
-## Part II. Base Point Freeeness and Variants
-
-[Note-II.1 Classical Base point free theorem for klt and dlt pairs]()
-
-[Note-II.2 Fujino's some generalizations of base point free theorems]()
-
-[Note-II.3 Positivities in Families and Base point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
-
+[Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
 
 ---
+## Part II. Base Point Freeness and Variants
 
-## Part III. Existence of flip, minimal model, good minimal model, canonical model
+[Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs]()
 
-[Note-III.1: Hacon Mckernan's proof of existence of klt flip](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
+[Note-II.2 Fujino's Generalizations of Base Point Free Theorems]()
 
-[Note-III.2: Hacon-Xu's and Birkar's proof on existence of LC flips (with some generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+[Note-II.3 Positivity in Families and Base Point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
 
-[Note-III.3: Existence of minimal models (BCHM C and related)]()
 
-[Note-III.4: Dxistence of good minimal models (DHP and related)]()
+---
 
-[Note-III.5: Basic properties of minimal model, good minimal models, canonical model]()
+## Part III. Existence of Flips, Minimal Models, Good Minimal Models, and Canonical Models
 
-[Note-III.6: Behavior of minimal model, good minimal model, canonical model under birational modification]()
+[Note-III.1: Hacon–McKernan's Proof of Existence of klt Flips](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
+
+[Note-III.2: Hacon–Xu and Birkar's Proof of the Existence of lc Flips (with Generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+
+[Note-III.3: Existence of Minimal Models (BCHM C and Related Results)]()
+
+[Note-III.4: Existence of Good Minimal Models (DHP and Related Results)]()
+
+[Note-III.5: Basic Properties of Minimal Models, Good Minimal Models, and Canonical Models]()
+
+[Note-III.6: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Birational Modifications]()
 
 
 ----
-## Part IV. Minimal model, good minimal model, canonical model, abundance in Family
+## Part IV. Minimal Models, Good Minimal Models, Canonical Models, and Abundance in Families
 
 
-[Note-IV.1: A brief survey on Minimal models, good minimal models, canonical models, abundance in Families](https://yilimath.github.io/files/Birational/BCHM/MMPinFamilySurvey.pdf) [upd 10.13]
+[Note-IV.1: A Brief Survey on Minimal Models, Good Minimal Models, Canonical Models, and Abundance in Families](https://yilimath.github.io/files/Birational/BCHM/MMPinFamilySurvey.pdf) [update 10.13]
 
-[Note-IV.2: Existence of good minimal on the closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
+[Note-IV.2: Existence of Good Minimal Models on the Closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
 
-[Note-IV.3: Existence of good minimal model in families](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
+[Note-IV.3: Existence of Good Minimal Models in Families](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
 
-[Note-IV.4: Relative MMP, fiberwise MMP and absolute MMP]()
+[Note-IV.4: Relative MMP, Fiberwise MMP, and Absolute MMP]()
 
-[Note-IV.5: Restriction of MMP on the central fiber]()
+[Note-IV.5: Restriction of the MMP to the Central Fiber]()
 
-[Note-IV.6: Extension of MMP from the central fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf) [update 12.3]
+[Note-IV.6: Extension of the MMP from the Central Fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf) [update 12.3]
 
 
 ----
 
-## Part V. Finiteness of minimal model and Termination problems 
+## Part V. Finiteness of Minimal Models and Termination Problems 
 
-[Note-V.1: Polyhedron decomposition results]()
+[Note-V.1: Polyhedral Decomposition Results]()
 
-[Note-V.2: MMP with scaling]()
+[Note-V.2: MMP with Scaling]()
 
-[Note-V.3: Special finiteness](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
+[Note-V.3: Special Termination](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
 [Note-V.4: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
 
@@ -84,51 +84,50 @@ This aim of this series of notes is to study the classical paper [BCHM](https://
 
 ## Part VI. Finite Generation Problems
 
-[Finite Generation Note-VI.1: Finite generation of canonical ring, Cox ring]()
+[Finite Generation Note-VI.1: Finite Generation of the Canonical Ring and Cox Ring]()
 
-[Finite Generation Note-VI.2: Demailly-Hacon-Paun's analytic proof of finite generation]()
+[Finite Generation Note-VI.2: Demailly–Hacon–Păun's Analytic Proof of Finite Generation]()
 
-[Finite Generation Note-VI.3: Finite generation and Abundance]()
+[Finite Generation Note-VI.3: Finite Generation and Abundance]()
 
 
 ---
 
-## Part VII. Partial Modification
+## Part VII. Partial Modifications
 
-[Note-1: Log resolution, discrepancy]()
+[Note-1: Log Resolution and Discrepancy]()
 
-[Note-2: Crepant extraction with applications]()
+[Note-2: Crepant Extraction with Applications]()
  
-[Note-3: dlt modification with applications](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
+[Note-3: dlt Modification with Applications](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
 
-[Note-4: Canonical modification and terminal modification, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
+[Note-4: Canonical and Terminal Modifications, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
 
-[Note-5: Semi log modificaiton]()
+[Note-5: Semi-log Modification]()
 
 
 ---
-## Part VIII. Locus in Birational Geometry
+## Part VIII. Loci in Birational Geometry
 
-The aim of this series of notes is to summarize the base properties about stable base locus, augmented base locus, restricted base locus which will be used over and over again in birational geometry.
+The aim of this series of notes is to summarize the basic properties of the stable base locus, augmented base locus, and restricted base locus, which are used repeatedly in birational geometry.
 
 [Note-1: Exceptional Locus]()
 
-[Note-2: Zariski decomposition]()
+[Note-2: Zariski Decomposition]()
 
-[Note-3: Base locus, Stable base locus, Restricted base locus and Augmented base locus]()
+[Note-3: Base Locus, Stable Base Locus, Restricted Base Locus, and Augmented Base Locus]()
 
-[Note-4: Geometry of non-klt locus]()
+[Note-4: Geometry of the Non-klt Locus]()
 
-[Note-5: non-nef locus(numerical base locus), non-Kahler Locus]()
+[Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus]()
 
-[Note-6: Recent developments on the distribution of Hodge Locus]()
+[Note-6: Recent Developments on the Distribution of the Hodge Locus]()
 
 
 ---
-## Part X. Non-vanishing and abundance
+## Part X. Non-vanishing and Abundance
 
-[Note-X.1. Miyaoka's proof of abundance for threefolds]()
-
+[Note-X.1: Miyaoka's Proof of Abundance for Threefolds]()
 
 
 ---
