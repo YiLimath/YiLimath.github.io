@@ -59,18 +59,24 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 
 ---
-## Part V. Structure Theorems for Projective Manifolds/Kähler Manifolds with Positive Tangent/Cotangent Bundles
+## Part V. Structure Theorems for Projective varieties/Kähler varieties with nef anti-canonical bundle
 
 In this part of the notes, I summarize classification results for projective/Kähler manifolds with positive tangent/cotangent bundles. The main references for this part are [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649), [CCM21](https://content.algebraicgeometry.nl/2021-4/2021-4-013.pdf), [Wang22](https://link.springer.com/article/10.1007/s00208-021-02275-7), [MW25](https://link.springer.com/article/10.1007/s00208-024-02934-5), [MW25](https://ems.press/journals/jems/articles/14299169), [MWWZ25](https://arxiv.org/pdf/2506.23218).
 
 
-[Note-IV.1 Numerical Flatness Criteria]()
+[Note-IV.0 Overview](https://yilimath.github.io/files/Birational/Fibration/OverviewNefAnticanonical.pdf)
 
-[Note-IV.2 Criteria for Fibrations to Be Locally Trivial]()
+[Note-IV.1 Numerical Flatness Criteria](https://yilimath.github.io/files/Birational/Fibration/NumericalFlatness.pdf)
 
-[Note-IV.3 Splitting of the Tangent Sheaf]()
+[Note-IV.2 Weakly positive curved of the direct images](https://yilimath.github.io/files/Birational/Fibration/WeaklyPositiveCurvedDirectImage.pdf)
 
-[Note-IV.4 Structure Theorem for klt Projective Varieties with Nef Anti-Canonical Bundle]()
+[Note-IV.3 Criteria for Fibrations to Be Locally Trivial]()
+
+[Note-IV.4 Splitting of the Tangent Sheaf]()
+
+[Note-IV.5 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle]()
+
+[Note-IV.6 Structure Theorem for klt Kahler Varieties with Nef Anti-canonical Bundle]()
 
 
 ---
