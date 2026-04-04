@@ -1,7 +1,7 @@
 ---
 title: 'Fibration and Foliation in Algebraic Geometry'
-date: 2025-12-28
-permalink: /posts/2025/12/Fibration-in-Birational-Geometry/
+date: 2025-04-04
+permalink: /posts/2026/04/Fibration-in-Birational-Geometry/
 tags:
   - Birational geometry
 ---
@@ -18,7 +18,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.0 General Machine to Construct Fibrations]()
 
-[Note-I.1 Iitaka Fibrations with Applications]()
+[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) 
 
 [Note-I.2 Albanese Map with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
@@ -64,19 +64,21 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 In this part of the notes, I summarize classification results for projective/Kähler manifolds with positive tangent/cotangent bundles. The main references for this part are [DPS 94](https://mathscinet.ams.org/mathscinet/article?mr=1257325), [DPS 01](https://mathscinet.ams.org/mathscinet/article?mr=1875649), [CCM21](https://content.algebraicgeometry.nl/2021-4/2021-4-013.pdf), [Wang22](https://link.springer.com/article/10.1007/s00208-021-02275-7), [MW25](https://link.springer.com/article/10.1007/s00208-024-02934-5), [MW25](https://ems.press/journals/jems/articles/14299169), [MWWZ25](https://arxiv.org/pdf/2506.23218).
 
 
-[Note-IV.0 Overview](https://yilimath.github.io/files/Birational/Fibration/OverviewNefAnticanonical.pdf)
+[Note-IV.0 Overview](https://yilimath.github.io/files/Birational/Fibration/OverviewNefAnticanonical.pdf) [4.3]
 
 [Note-IV.1 Numerical Flatness Criteria](https://yilimath.github.io/files/Birational/Fibration/NumericalFlatness.pdf)
 
-[Note-IV.2 Weakly positive curved of the direct images](https://yilimath.github.io/files/Birational/Fibration/WeaklyPositiveCurvedDirectImage.pdf)
+[Note-IV.2 Positivities of the direct images](https://yilimath.github.io/files/Birational/Fibration/WeaklyPositiveCurvedDirectImage.pdf) [4.4]
+
+[Note-IV.3 Birational Geometry of the MRC/Albanese fibration](https://yilimath.github.io/files/Birational/Fibration/BirationalMRC.pdf)
 
 [Note-IV.3 Criteria for Fibrations to Be Locally Trivial]()
 
-[Note-IV.4 Splitting of the Tangent Sheaf]()
+[Note-IV.4 Splitting of the Tangent Sheaf](https://yilimath.github.io/files/Birational/Fibration/SplitTangent2.pdf)
 
 [Note-IV.5 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle]()
 
-[Note-IV.6 Structure Theorem for klt Kahler Varieties with Nef Anti-canonical Bundle]()
+[Note-IV.6 Structure Theorem for klt Kahler Varieties with Nef Anti-canonical Bundle](https://yilimath.github.io/files/Birational/Fibration/StructureNefAntiCanonical.pdf)
 
 
 ---

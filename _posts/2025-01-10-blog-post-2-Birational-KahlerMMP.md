@@ -1,7 +1,7 @@
 ---
 title: 'My PhD Thesis Project: Kähler minimal model program'
-date: 2026-03-01
-permalink: /posts/2026/03/Kahler-MMP/
+date: 2026-04-04
+permalink: /posts/2026/04/Kahler-MMP/
 tags:
   - Birational geometry
   - Complex analytic geometry
@@ -26,7 +26,7 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 ---
 ## Part-II. Reading Notes on the Kähler minimal model program
-[Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 10.9]
+[Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 4.4]
 
 [Note-1 Positivity in the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
