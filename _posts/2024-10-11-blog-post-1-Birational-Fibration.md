@@ -46,6 +46,8 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 ---
 ## Part IV. Beauville–Bogomolov–Yau Decomposition
 
+In this part of the notes, I will summarize some recent devol
+
 [Note-IV.1 Local Triviality of the Albanese Fibration]()
 
 [Note-IV.2 Splitting of the Tangent Sheaf]()
@@ -79,6 +81,15 @@ In this part of the notes, I summarize classification results for projective/Kä
 [Note-IV.5 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle]()
 
 [Note-IV.6 Structure Theorem for klt Kahler Varieties with Nef Anti-canonical Bundle](https://yilimath.github.io/files/Birational/Fibration/StructureNefAntiCanonical.pdf)
+
+[Note-IV.7 On Hacon-Mckernan Question](https://yilimath.github.io/files/Birational/Fibration/HaconMckernanQuestion.pdf)
+
+
+
+----
+## Part VI. On Iitaka conjecture
+
+
 
 
 ---
