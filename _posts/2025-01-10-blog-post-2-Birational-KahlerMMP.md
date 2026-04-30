@@ -52,7 +52,7 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 [Note-12 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf)
 
-[Note-13 Cao–Höring: Producing Rational Curves on Compact Kähler Manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-13 Rational Curves on Compact Kähler Manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
 
 [Note-14 Cone Theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
 
