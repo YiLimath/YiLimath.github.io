@@ -1,7 +1,7 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2025-10-18
-permalink: /posts/2025/10/Metric-Method/
+date: 2026-05-01
+permalink: /posts/2026/05/Metric-Method/
 tags:
   - Birational geometry
   - Complex Geometry
@@ -11,54 +11,56 @@ tags:
 In this series of notes, we summarize several standard metric methods that are useful in birational geometry.
 
 
-## I. Ohsawa–Takegoshi Extension Theorem and Variants
+## I. Ohsawa–Takegoshi Extension Theorem
 
-[The Ohsawa–Takegoshi Extension Theorem and Why It Is Useful in Birational Geometry](https://yilimath.github.io/files/Birational/MetricMethod/OTExtension.pdf) [upd 10.8]
+[I.1. The Ohsawa–Takegoshi Extension Theorem and Why It Is Useful in Birational Geometry](https://yilimath.github.io/files/Birational/MetricMethod/OTExtension.pdf) [upd 10.8]
 
 
 
 ---
-## II. Invariance of Plurigenera with applications
+## II. Invariance of Plurigenera and extension problem
 
-[Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
+[II.1. Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
+
+[II.2. Demailly-Hacon-Paun's Proof of DLT Extension Theorem]()
+
 
 
 
 ---
 ## III. Positivity of Direct Images with applications
 
-[1. Păun–Takayama's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves]()
+[III.1. Păun–Takayama's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves]()
 
-[2. Hacon–Popa–Schnell's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
+[III.2. Hacon–Popa–Schnell's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
 
-[3. Hacon–Păun's Metric Method for the Canonical Bundle Formula]()
+[III.3. Kollár's Approach to Projectivity of Moduli]()
 
-
-[1. Kollár's Approach to Projectivity of Moduli]()
-
-[2. Kawamata's Proof of the Iitaka Conjecture When the Base Is of General Type](https://yilimath.github.io/files/Birational/MetricMethod/KawamataIitaka.pdf)
+[III.4. Kawamata's Proof of the Iitaka Conjecture When the Base Is of General Type](https://yilimath.github.io/files/Birational/MetricMethod/KawamataIitaka.pdf)
 
 ---
 ## IV. Metric methods in the canonical bundle formulas
 
+[IV.1. Hacon–Păun's Metric Method for the Canonical Bundle Formula]()
 
 
 ---
 ## V. Metric Methods in Boundedness Problems
 
-[1. The Theorem of Angehrn and Siu]()
+[V.1. The Theorem of Angehrn and Siu]()
 
-[2. Birational Boundedness for Varieties of General Type]()
+[V.2. Birational Boundedness for Varieties of General Type]()
 
 
 
 ---
 ## VI. Metric Methods in the Abundance Conjecture
 
-[1. Supercanonical Metrics and the Abundance Conjecture]()
+[VI.1. Supercanonical Metrics and the Abundance Conjecture]()
 
-[2. Metrics with Minimal Singularities]()
+[VI.2. Metrics with Minimal Singularities]()
 
-[3. Siu and Păun's Analytic Proof of Finite Generation of the Canonical Ring and Shokurov's Non-vanishing]()
+[VI.3. Siu and Păun's Analytic Proof of Finite Generation of the Canonical Ring and Shokurov's Non-vanishing]()
 
 
+----

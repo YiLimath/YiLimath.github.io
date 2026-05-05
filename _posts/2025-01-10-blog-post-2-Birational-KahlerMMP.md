@@ -68,4 +68,3 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 
 [Supplement: Tools That Can Be Used to Reduce a Kähler Problem to a Projective Problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf)
 
-----
