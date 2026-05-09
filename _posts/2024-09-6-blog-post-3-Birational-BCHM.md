@@ -24,13 +24,15 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 [Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
 
 ---
-## Part II. Base Point Freeness and Variants
+## Part II. Classical MMP Theory
 
 [Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs]()
 
-[Note-II.2 Fujino's Generalizations of Base Point Free Theorems]()
+[Note-II.2 Positivity in Families and Base Point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
 
-[Note-II.3 Positivity in Families and Base Point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
+[Note-II.3 Cone and contraction theorems]()
+
+[Note-II.4 Mori's bend and break]()
 
 
 ---
