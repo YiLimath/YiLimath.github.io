@@ -17,13 +17,13 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 ## Part I. Loci in Birational Geometry
 
 
-[Note-1: Exceptional Locus]()
+[Note-1: Exceptional Locus and Birational Modifications]()
 
 [Note-2: A brief introduction to Zariski Decomposition]()
 
 [Note-3: Base Locus, Stable Base Locus, Diminished Base Locus, and Augmented Base Locus]()
 
-[Note-4: Geometry of the Non-klt Locus]()
+[Note-4: KLT, LC singularities and Geometry of the Non-klt Locus]()
 
 [Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus]()
 
@@ -74,6 +74,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-III.6: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Birational Modifications]()
 
+[Note-III.7: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Perturbation]()
 
 ----
 ## Part V. Minimal Models, Good Minimal Models in Families
