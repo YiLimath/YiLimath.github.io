@@ -11,9 +11,27 @@ tags:
 The aim of this series of notes is to study the classical paper [BCHM](https://www.ams.org/journals/jams/2010-23-02/S0894-0347-09-00649-3/S0894-0347-09-00649-3.pdf) in detail. We aim to complete the proof of the main theorem and summarize some important applications of BCHM. We do not strictly follow the structure of the original paper; instead, we divide the material into several thematic topics, including the existence of flips, existence of minimal models, termination problems, the non-vanishing conjecture, and the finite generation problem.
 
 
+
+
+---
+## Part I. Loci in Birational Geometry
+
+Let us begin our discussion from varies important locus in birational geometry:
+
+[Note-1: Exceptional Locus]()
+
+[Note-2: A brief introduction to Zariski Decomposition]()
+
+[Note-3: Base Locus, Stable Base Locus, Diminished Base Locus, and Augmented Base Locus]()
+
+[Note-4: Geometry of the Non-klt Locus]()
+
+[Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus]()
+
+
 ---
 
-## Part I. Extension Theorems
+## Part II. Extension Theorems
 
 [Note-I.1: Nakayama's Extension Theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
 
@@ -24,7 +42,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 [Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
 
 ---
-## Part II. Classical MMP Theory
+## Part III. Classical MMP Theory
 
 [Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs]()
 
@@ -37,7 +55,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ---
 
-## Part III. Existence of Flips, Minimal Models, Good Minimal Models, and Canonical Models
+## Part IV. Existence of Flips, Minimal Models, Good Minimal Models, and Canonical Models
 
 [Note-III.1: Hacon–McKernan's Proof of Existence of klt Flips](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
 
@@ -53,14 +71,12 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 
 ----
-## Part IV. Minimal Models, Good Minimal Models, Canonical Models, and Abundance in Families
+## Part V. Minimal Models, Good Minimal Models in Families
 
 
-[Note-IV.1: A Brief Survey on Minimal Models, Good Minimal Models, Canonical Models, and Abundance in Families](https://yilimath.github.io/files/Birational/BCHM/MMPinFamilySurvey.pdf) [update 10.13]
+[Note-IV.1: Good Minimal Models in Families](https://yilimath.github.io/files/Birational/BCHM/MMPinFamilySurvey.pdf) [update 10.13]
 
 [Note-IV.2: Existence of Good Minimal Models on the Closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
-
-[Note-IV.3: Existence of Good Minimal Models in Families](https://yilimath.github.io/files/Birational/BCHM/goodmmOpenness.pdf)
 
 [Note-IV.4: Relative MMP, Fiberwise MMP, and Absolute MMP]()
 
@@ -71,7 +87,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ----
 
-## Part V. Finiteness of Minimal Models and Termination Problems 
+## Part VI. Finiteness of Minimal Models and Termination Problems 
 
 [Note-V.1: Polyhedral Decomposition Results]()
 
@@ -84,7 +100,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ---
 
-## Part VI. Finite Generation Problems
+## Part VII. Finite Generation Problems
 
 [Finite Generation Note-VI.1: Finite Generation of the Canonical Ring and Cox Ring]()
 
@@ -95,7 +111,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ---
 
-## Part VII. Partial Modifications
+## Part VIII. Partial Modifications
 
 [Note-1: Log Resolution and Discrepancy]()
 
@@ -107,23 +123,6 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-5: Semi-log Modification]()
 
-
----
-## Part VIII. Loci in Birational Geometry
-
-The aim of this series of notes is to summarize the basic properties of the stable base locus, augmented base locus, and restricted base locus, which are used repeatedly in birational geometry.
-
-[Note-1: Exceptional Locus]()
-
-[Note-2: Zariski Decomposition]()
-
-[Note-3: Base Locus, Stable Base Locus, Restricted Base Locus, and Augmented Base Locus]()
-
-[Note-4: Geometry of the Non-klt Locus]()
-
-[Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus]()
-
-[Note-6: Recent Developments on the Distribution of the Hodge Locus]()
 
 
 ---
