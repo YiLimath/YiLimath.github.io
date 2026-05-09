@@ -1,7 +1,7 @@
 ---
 title: 'Birational Geometry Reading Notes: BCHM'
-date: 2025-11-12
-permalink: /posts/2025/11/BCHM/
+date: 2026-05-09
+permalink: /posts/2026/05/BCHM/
 tags:
   - Birational geometry
   - BCHM
@@ -16,7 +16,6 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 ---
 ## Part I. Loci in Birational Geometry
 
-Let us begin our discussion from varies important locus in birational geometry:
 
 [Note-1: Exceptional Locus]()
 
@@ -30,19 +29,8 @@ Let us begin our discussion from varies important locus in birational geometry:
 
 
 ---
+## Part II. Classical MMP Theory
 
-## Part II. Extension Theorems
-
-[Note-I.1: Nakayama's Extension Theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
-
-[Note-I.2: Hacon–McKernan Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
-
-[Note-I.3: de Fernex–Hacon Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [update 11.12]
-
-[Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
-
----
-## Part III. Classical MMP Theory
 
 [Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs]()
 
@@ -53,9 +41,26 @@ Let us begin our discussion from varies important locus in birational geometry:
 [Note-II.4 Mori's bend and break]()
 
 
+
+---
+
+## Part III. Extension Theorems
+
+
+[Note-I.1: Nakayama's Extension Theorems](https://yilimath.github.io/files/Birational/BCHM/NakayamaExtension.pdf) [update 8.17]
+
+[Note-I.2: Hacon–McKernan Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/HaconMckernanExtension.pdf) [update 2.21]
+
+[Note-I.3: de Fernex–Hacon Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [update 11.12]
+
+[Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
+
+
 ---
 
 ## Part IV. Existence of Flips, Minimal Models, Good Minimal Models, and Canonical Models
+
+
 
 [Note-III.1: Hacon–McKernan's Proof of Existence of klt Flips](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
 
