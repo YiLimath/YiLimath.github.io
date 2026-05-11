@@ -20,11 +20,9 @@ In this series of notes, we summarize several standard metric methods that are u
 ---
 ## II. Invariance of Plurigenera and extension problem
 
-[II.1. Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf)
+[II.1. Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf) [upd 5.11]
 
 [II.2. Demailly-Hacon-Paun's Proof of DLT Extension Theorem]()
-
-
 
 
 ---
@@ -34,9 +32,8 @@ In this series of notes, we summarize several standard metric methods that are u
 
 [III.2. Hacon–Popa–Schnell's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
 
-[III.3. Kollár's Approach to Projectivity of Moduli]()
+[III.3. Applications of positivity of direct images]()
 
-[III.4. Kawamata's Proof of the Iitaka Conjecture When the Base Is of General Type](https://yilimath.github.io/files/Birational/MetricMethod/KawamataIitaka.pdf)
 
 ---
 ## IV. Metric methods in the canonical bundle formulas
