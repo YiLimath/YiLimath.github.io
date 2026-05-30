@@ -24,11 +24,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.3 MRC Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf) [upd 10.19]
 
-[Note-I.4 Gamma Reduction, Shafarevich Map with Applications]()
-
-[Note-I.5 Core Fibration, Bogomolov Line Bundle, and Campana Special Variety with Applications]()
-
-[Note-I.6 Applications of the Leray Spectral Sequence in Fibration Problems](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
+[Note-I.4 Applications of the Leray Spectral Sequence in Fibration Problems](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
 
 
 ----
