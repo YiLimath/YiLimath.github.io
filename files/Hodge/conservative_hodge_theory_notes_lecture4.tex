@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{float}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf Hodge Theory Course Notes} \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{Lecture #1}}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+%\usepackage{biblatex}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\lhead{Moishezon morphism reading seminars}
+\rhead{\thepage}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\newcommand\PP{{\mathbb{P}}}
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=Blue,
+	filecolor=YellowOrange,
+	citecolor = WildStrawberry,      
+	urlcolor=cyan,
+}
+
+\begin{document}\large
+\lecture{4 --- 2026-06-11}{Summer 2026}{Prof. Kang Zuo}{Scribe: Yi Li}
+
+We will continue the discussion of the example of the Legendre family of elliptic curves $$\{y^2 = x(x-1)(x-\lambda)\} \to \PP^1\setminus \{0,1, \infty\}.$$
+We will see that all the ideas come from this example. 
+%Today, we will prove the biholomorphicity of the map $$\tau: \mathbb{P}^1\setminus \{0,1, \infty\} \to \mathscr{H}/\rho(\pi_1(\mathbb{P}^1 \setminus \{0,1, \infty\}))$$using Hodge theory without involving the elliptic functions. Later on, we will use moduli theory to recover this result. And using two different approach to prove that $\rho(\pi_1(\mathbb{P}^1 \setminus \{0,1, \infty\}))$ is actually $\Gamma(2)$. 
+Recall that last time, we showed the Legendre family $$\{y^2 = x(x-1)(x-\lambda)\} \to \mathbb{P}^1 \setminus \{0,1, \infty\}$$has the compactification over $\mathbb{P}^1$ which turns out to have three singular fibers $\{0,1,\infty\}$, with semistable fiber at $\{0,\infty\}$ and non-reduced fiber over $\{1\}$. To simplify the situation, we can take a semistable reduction, via the double cover $\mathbb{P}^1 \setminus \{0,+1,-1, \infty\} \to \mathbb{P}^1 \setminus \{0,1, \infty\}$, and let us denote $S = \{0,+1,-1,\infty\}$, and hence we have the following commutative diagram 
+\begin{center}
+    \begin{tikzcd}
+	{E_{\delta}} & E \\
+	{\mathbb{P}^1 \setminus S} & {\mathbb{P}^1 \setminus \{0,1, \infty\}}
+	\arrow[ from=1-1, to=1-2]
+	\arrow["g"', from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}
+\end{center}
+The family $g$ has a semistable compactification $\bar{E}_{\delta} \to \mathbb{P}^1$ with singular fiber over $S$ and denote the indeterminacy locus of $\bar{g}$ as $\Delta \subset \bar{E}_{\delta}$. It is worth mentioning that we can also work with non semistable family, but we need to deal with the parabolic structure, and doing semistable reduction is merely for simplicity. 
+
+\section{Local system and Hodge bundle on $\mathbb{P}^1 \setminus S$}
+Consider the local system $$\mathbb{V}_{\PP^1} =  R^1g_* \mathbb{Q}_{\bar{E}_{\delta}\setminus \Delta},$$
+we can define the deRham bundle using this local system  $$\mathcal{V}_{\PP^1\setminus S}  = (\mathbb{V}_{\PP^1\setminus S} \otimes \mathcal{O}_{\PP^1 \setminus S}, \nabla^{GM}),$$where the Gauss--Manin connection is globally defined since the transition function for local system are constant functions. This flat holomorphic bundle admits a Hodge filtration bundle $$\bigcup_{t\in \PP^1 \setminus S} \mathbb{C} \frac{dx}{\sqrt{x(x-1)(x-t^2)}} \subset \mathcal{V}_{\PP^1 \setminus S},$$which is a holomorphic sub line bundle.
+
+
+Recall that we defined the period map as 
+
+$\tau(t) = \mathbb{C} \frac{dx}{\sqrt{x(x-1)(x-t^2)}} \subset \mathcal{V}_{\PP^1 \setminus S}$. 
+
+\section{Deligne's canonical extension over punctured disk}
+To do algebraic geometry, we need to take a compactification, even in log geometry. We now introduce Deligne's canonical extension. 
+
+
+Let $\Delta$ be the unit disk. Let $\mathbb{L}$ be a local system on $\Delta^*$. As usual we can define the deRham bundle $(\mathcal{L} = \mathbb{L}\otimes \mathcal{O}_{\Delta^*}, \nabla^{GM})$, we try to find the canonical extension of this de Rham bundle over $\Delta$. 
+
+
+To do this, we define $$M = \log T,$$
+where $T_{\gamma}$ is the local monodromy of $\mathbb{L}$ around loop $\gamma \in \pi_1(C\setminus S ,\{*\})$. Here the local monodromy operator $T\in \text{Aut}(\mathbb{L}|_{\{*\}})$ is defined as follows: let $\ell \in \mathbb{L}|_{*}$ be a vector on $\mathbb{L}|_{*}$ then we can do parallel transport (analytic continuation) around the loop $\gamma$, and come back to $T (\ell)$. One crucial point we need to mention is that $\log T_{\gamma}$ is not well-defined: it is multivalued and requires a branch cut. However when local monodromy is unipotent, then $$\log T=(T-I)-\frac{(T-I)^2}{2}+\frac{(T-I)^3}{3}-\cdots,$$
+is actually finite sum and no branch cut is involved. For Deligne’s canonical extension, one fixes this ambiguity by choosing the eigenvalues of the residue in a specified interval. 
+
+We define the residue operator to be $R = -\frac{1}{2\pi i} M$ We then collect all the section of the form $$\tilde{\ell} : =  e^{R\log z}\cdot \ell,$$
+note that $\ell$ is multivalued flat section, while $\tilde{\ell}$ is single-valued but not necessarily flat. To the single-valued of $\tilde{\ell}$, assume that we loop around $0$ then we have $$\log z \mapsto \log z+2 \pi i$$and $$\ell \mapsto e^{-2 \pi i R} \ell,$$so combining them together, we see that it is single-valued!
+
+We can now define the Deligne's canonical extension, let $\bar{\mathcal{L}}$ be the sheaf generated by  all the above sections which gives an extension of the deRham bundle $(\mathcal{L},\nabla)$. The connection of the extension has logarithmic pole, let us compute it $$d\left(e^{R \log z} \ell\right)=d\left(e^{R \log z}\right) \ell+e^{R \log z} d \ell .$$
+for a flat section $\ell$ we have second term is 0 and hence $$d\left(e^{R \log z} \ell\right)=R e^{R \log z} \ell \frac{d z}{z},$$that is $$d \tilde{\ell}=R \frac{d z}{z} \tilde{\ell},$$and hence we have the logarithmic pole. 
+
+
+%Finally let us mention that Deligne's canonical extension also true for higher dimensional base: 
+
+% \begin{theorem}
+
+% \end{theorem}
+
+\section{Extension of Hodge bundle}
+The crucial point is the extension of the Hodge filtration bundles $F^p\mathcal{V}$, which is highly nontrivial. Let $C$ be a compact Riemann surface, let $S \subset C$ be a finite set of points, and let $\mathbb{L}$ be a local system on $C \setminus S$. Consider the de Rham bundle $$(\mathcal{L},\nabla)=\bigl(\mathbb{L}\otimes_{\mathbb C}\mathcal{O}_{C\setminus S},\nabla\bigr)$$
+together with its Hodge filtration subbundles $F^p\mathcal{L}$, defined on $C\setminus S$. A priori, the extension of these Hodge bundles across $S$ need not be algebraic; in principle, it could be a transcendental object. The point is that Schmid's nilpotent orbit theorem shows that these extended Hodge bundles are in fact well-behaved algebraic objects. Simpson's Hermitian--Yang--Mills approach gives a different and more conceptual perspective: in that framework, Schmid's nilpotent orbit theorem can be viewed essentially as a metric estimate (cf. Simpson's paper on harmonic maps on non-compact curves).
+
+
+Let us talk about Schmid's nilpotent orbit theorem. First we have the period map $\PP^1 \setminus\{0,1,\infty\} \to \mathscr{H}/ \Gamma(2)$, and we can pick a punctured disk $\Delta^* \subset \PP^1 \setminus \{0,1, \infty\}$, then we have the induced map $$\Delta^* \to \mathscr{H}/\rho(\pi_1(\Delta^*))$$
+
+And hence we have the commutative diagram
+\begin{center}
+\begin{tikzcd}
+	{\mathscr{H}} & {D = \mathscr{H}} \\
+	{\Delta^*} & {D/\Gamma}
+	\arrow["{\pi_1(\Delta^*)}", from=1-1, to=1-1, loop, in=145, out=215, distance=10mm]
+	\arrow["{\tilde{\tau}}", from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow["\gamma", from=1-2, to=1-2, loop, in=325, out=35, distance=10mm]
+	\arrow[from=1-2, to=2-2]
+	\arrow["\tau"', from=2-1, to=2-2]
+\end{tikzcd}
+\end{center}
+where the period domain $D$ happens to be the upper half space. Here the universal cover $\mathscr{H} \to \Delta^*$ carries a natural $\pi_1(\Delta^*)$ action while the period domain $D$ carries a monodromy action $\Gamma$. Note that the central fiber is semistable, so that the monodromy action is unipotent, in general this is quasi-unipotent (see Borel's monodromy theorem). We have the equivariant relation $$\tilde{\tau}(z+1) = \gamma \cdot \tilde{\tau}(z).$$
+We then define $$\widetilde {\psi}:\mathscr{H} \to \check{D}, \quad z \mapsto \exp(- zN) \tilde{\tau}(z),$$here $N = \log \gamma = (\gamma-I)-\frac{(\gamma-I)^2}{2}+\ldots+(-1) l \frac{(\gamma-I)^l}{l}$ (which is called normalization operator), note that the target is the compact dual $\check{D} = \mathbb{P}^1$ of the period domain $D = \mathscr{H}$ since multiplying $\exp(- zN)$ may break the polarization. Then one can check $$\tilde{\psi}(z+1) = \tilde{\psi}(z).$$
+Indeed
+$$
+\begin{aligned}
+\widetilde{\psi}(z+1) & =\exp (-(z+1) N) \widetilde{\tau}(z+1) \\
+& =\exp (-(z+1) N) \gamma \widetilde{\tau}(z) \\
+& =\exp (-(z+1) N) \exp (N) \widetilde{\tau}(z)
+\end{aligned}
+$$
+Since $N$ commutes with itself, we have
+$$
+\exp (-(z+1) N) \exp (N)=\exp (-z N-N) \exp (N)=\exp (-z N) .
+$$
+Hence it descends to $$\psi(z): \Delta^* \to \check{D} = \mathbb{P}^1,$$
+
+Schmid's nilpotent orbit theorem tells us the asymptotic behavior of this period map: 
+
+\begin{theorem}[Nilpotent orbit theorem]
+
+$\psi$ is continuous, and holomorphic over $\Delta^*$, and $a = \psi(0) \in \PP^1$, which extends to a holomorphic mapping $$\psi(z): \Delta \to \PP^1.$$Moreover, consider the nilpotent orbit $O(z) = \exp(z N)\cdot a$ for $z\in \mathscr{H}$, there exists a real constant $C>0$ such that
+
+(a) For $\text{Im}(z) \ge C$ we have $O(z) \in D = \mathscr{H}$, 
+
+(b) given $\epsilon >0$, then $$d(O(z),\tilde{\tau}(z))\le A(\epsilon) \exp( - 2\pi (1-\epsilon)\text{Im} z),$$for $\text{Im}(z)\ge C$, for some constant $A(\epsilon)>0$. Here $d(\cdot ,\cdot)$ denotes the natural invariant metric on the period domain $D$ called Hodge metric. 
+\end{theorem}
+
+
+Now we come back to our problem, we want to show the extension of the Hodge filtration bundle is algebraic. Note that when $t\in \Delta^* $ goes to $0$, then $z \in\mathscr{H}$ on the universal cover has $\text{Im}(z) \to +\infty$. 
+The principal part of singularity of $\tau(t) = E^{1,0}_t \subset \mathcal{V}_t$ the Hodge line bundle determined by $\tau$, is $\exp(\frac{1}{2\pi i} M \log t)$ and $\tau(t)$, with nilpotent correction $N(t)$ is algebraic in $\bar{\mathcal{V}}|_{\Delta}$. Thus there exists an extension of $E^{1,0}_{\Delta} \subset \mathcal{V}|_{\Delta}$. 
+
+
+\section{Extension of Higgs bundle}
+Now we consider the extension of Higgs bundle. Finally, we want to prove derivative of the period map is an isomorphism.
+
+Now we have the extension of Hodge bundle $E_{\PP^1}^{1,0} \subset \mathcal{V}_{\PP^1}$  with the holomorphic quotient $\mathcal{V}/E_{\PP^1}^{1,0} = E^{0,1}_{\PP^1}$. And we have the logarithmic Higgs field $$\theta: E^{1,0}_{\PP^1} \to E^{0,1}_{\PP^1} \otimes \Omega^1_{\PP^1}(\log S)$$such that $(E^{0,1})^\vee = E^{1,0}$. We will show that
+
+(1) $\theta \ne 0$ (recall that we proved before that $\tau(t)$ is not constant, we will see this implies that $\theta \ne 0$),
+
+(2) $\deg E^{1,0}>0 $ (this is an easy consequence of Yang-Mills-Higgs metric or Griffiths curvature formula).
+
+A side remark, this is closely related to the derivative of the period mapping. This is a general fact that Hodge theory is related to the period mapping via Higgs field $\theta$. Higgs bundle is much more useful than vector bundle, as when $\theta \ne 0 $ we can connect topology and geometry. When doing algebraic geometric problem we typically require $\theta \ne 0$. 
+
+\subsection{Higgs field, Kodaira-Spencer map and derivative of period mapping}
+We show that $\theta = d\tau$ that is Higgs field is actually the derivative of the period mapping. 
+
+
+First consider the Higgs field $$\theta : E^{1,0} \to E^{0,1} \otimes \Omega^1_{\PP^1}(\log S),$$and we can contract $\theta$ with a. On the other hand, we have the derivative of the period mapping $$d \tau : T(\PP^1 \setminus S) \cong T_{\PP^1}(\log S) \to TD = T(\mathscr{H}/\Gamma(2)) \subset \text{Hom}(E^{1,0},E^{0,1}),$$up to dual we see that $\theta =  d \tau$. This is a general phenomenon, that we will give a rigorous proof later.
+
+
+
+\subsection{Proof of (1)+(2) implies isomorphism of derivative of period mapping}
+Let us first see why (1) and (2) above imply that the derivative of the period mapping is isomorphism. Note that since all the line bundle on $\PP^1$ are of the form $\mathcal{O}(d)$, if we write $$\Omega_{\PP^1}^1(\log S) = \omega_{\PP^1}\otimes \mathcal{O}_{\PP^1}(S) = \mathcal{O}_{\PP^1}(-2+4) = \mathcal{O}_{\PP^1}(2). $$
+We then assume that $L= E^{1,0}_{\PP^1} =\mathcal{O}_{\PP^1}(d)$ and hence $\deg E^{1,0} = d$. Then the Higgs field $\theta$ is equivalent to a section $$\theta \in H^0(\PP^1, O_{\PP^1}(2-2d)).$$By assumption, we have $\theta \ne 0$ and therefore $$2-2d \ge 0.$$On the other hand, we have $\deg E^{1,0} = d\ge 1$ and then the only possible choice is $d = 1$ and hence $$\theta : \mathcal{O}_{\PP^1}(1) \to \mathcal{O}_{\PP^1}(1)$$
+This map has to be an isomorphism as $0\ne \theta \in \text{Hom}(\mathcal{O}(1) , \mathcal{O}(1)) \cong H^0(\PP^1 , \mathcal{O}_{\PP^1}) = \mathbb{C}$ and hence $\theta = \lambda \text{Id}$ for $\lambda\ne 0$. And hence the derivative of the period domain has to be isomorphism. 
+
+
+\subsection{Proof of (1) and (2)}
+Now let us prove (1) and (2) holds. First, for (1), we already showed that $\theta = d\tau$ and we know that $\tau$ is not constant, and hence this implies that $\theta \ne 0$. 
+
+Next we show that $\deg E^{1,0} >0$. We have $$\theta = d \tau : T_{\PP^1}(-\log S) \to (E^{1,0})^\vee \otimes E^{0,1} = (E^{0,1})^{\otimes 2},$$We have $$(E^{0,1}, 0 )\hookrightarrow (E^{1,0}\oplus E^{0,1},\theta)$$is subHiggs bundle (This is subHiggs bundle because $\theta\left(E^{0,1}\right)=0 \subset E^{0,1} \otimes \Omega_{\mathbb{P}^1}^1(\log S) $). 
+
+The key point is $(E^{1,0}\oplus E^{0,1},\theta)$ admits Hodge metric and hence it's polystable with vanishing first Chern class (by Kobayashi--Hitchin correspondence for Higgs bundle)! And hence $$\deg (E^{0,1}\oplus E^{1,0}) =0 $$And hence  by stability condition we have $\deg E^{0,1} \le \deg (E^{0,1}\oplus E^{1,0})/\text{rk}(E^{0,1}\oplus E^{1,0}) = 0$. 
+
+
+We then show it cannot be zero. When $\deg E^{0,1}=0$, by stability condition, this implies that we have a splitting $$(E, \theta) \simeq\left(E^{0,1}, 0\right) \oplus\left(Q, \theta_Q\right),$$
+with $Q=E / E^{0,1} \simeq E^{1,0}$, by nilpotency of the induced Higgs field, we have $\theta_Q = 0$. (Indeed this is a general fact that rank-one Higgs bundle with nilpotent Higgs field has zero Higgs field). Hence we have the splitting $$(E^{1,0}, 0 ),(E^{0,1},0)$$and hence we deduce that $\theta = 0$ but $\theta = d\tau = 0$, but $\tau$ is not constant a contradiction. 
+
+Next time, we will recover this result using moduli theory. And show that $\rho (\pi_1(\PP^1 \setminus \{0,1,\infty\})) =\Gamma(2)$. 
+
+
+% -----------------------------------------------------------------------------
+% Suggestions for further revision:
+% (1) You may want to state explicitly whether the local monodromy convention is
+%     T=\exp(M) or T=\exp(-2\pi i R). This affects signs in the definition of R.
+% (2) In the nilpotent orbit theorem, it is useful to distinguish the universal
+%     covering coordinate z \in \mathscr H from the disk coordinate t=e^{2\pi i z}.
+% (3) In the Higgs-bundle argument, the equality case \deg E^{0,1}=0 uses
+%     polystability, not merely semistability. This is worth emphasizing in a
+%     written version.
+% -----------------------------------------------------------------------------
+
+\end{document}
