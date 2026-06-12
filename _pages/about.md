@@ -1,21 +1,20 @@
 ---
 permalink: /
-title: "About me"
+title: "About"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a third-year graduate student at Wuhan University under the supervision of [Sheng Rao](https://scholar.google.com/citations?user=mKrV7coAAAAJ&hl=zh-CN) and [Christopher D. Hacon](https://www.math.utah.edu/~hacon/). My research interests lie in **Birational Geometry and Moduli theory**. I maintain this website to keep track of the topics I study and, most importantly, to document my discoveries along my research journey. 
+I am a third-year PhD student at Wuhan University, supervised by [Sheng Rao](https://scholar.google.com/citations?user=mKrV7coAAAAJ&hl=zh-CN) and [Christopher D. Hacon](https://www.math.utah.edu/~hacon/). My research interests lie in **birational geometry** and **moduli theory**.
 
+I use this website to collect research notes, organize the topics I am studying, and record some of the ideas and discoveries that appear along the way.
 
-## Research Interest
+## Research Interests
 
-Currently I mainly work on: 
+Currently, I mainly work on:
 
-(1) Kähler minimal model program and its applications to deformation problems;
-
-(2) Structure of Kähler Calabi--Yau varieties and varieties with nef anticanonical divisors;
-
-(3) Boundedness and moduli aspects of birational geometry.
+- Kähler minimal model program and its applications to deformation problems;
+- Structure of Kähler Calabi--Yau varieties and varieties with nef anticanonical divisors;
+- Boundedness and moduli aspects of birational geometry.
