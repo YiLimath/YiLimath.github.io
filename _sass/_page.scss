@@ -399,3 +399,41 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.page__related {
+  .grid__wrapper {
+    display: block;
+  }
+
+  .related__item {
+    margin: 0;
+    padding: 0.75em 0;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .archive__item-title {
+      margin: 0;
+      font-size: $type-size-5;
+      line-height: 1.35;
+      border-bottom: 0;
+
+      a {
+        color: $link-color;
+
+        &:hover {
+          color: $link-color-hover;
+        }
+      }
+    }
+
+    .page__date,
+    .page__meta {
+      margin: 0.25em 0 0;
+      font-size: $type-size-6;
+      color: mix(#fff, $text-color, 25%);
+    }
+  }
+}
