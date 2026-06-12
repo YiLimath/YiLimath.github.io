@@ -1,60 +1,114 @@
 ---
 layout: archive
-title: ""
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-
-[(My CV)](https://yilimath.github.io/files/CV.pdf)
-
-
 {% include base_path %}
 
-Education
-======
-* Ph.D in Birational Geometry, WuHan University, 2023 
+<div class="cv-page" markdown="1">
 
-* Bachelor’s and Master's degrees in Artificial Intelligence and Automation (Science and Engineering Interdisciplinary Innovation Experimental Class), Huazhong University of Science and Technology, 2015
+<div class="cv-hero" markdown="1">
 
+# Li Yi
 
-Research Interests
-=======
+Third-year PhD student at Wuhan University, working in birational geometry and moduli theory.
 
-* Kahler minimal model program
+<a class="btn cv-download" href="{{ base_path }}/files/CV.pdf">Download full CV (PDF)</a>
 
-* Structure of Kahler Calabi-Yau varieties and varieties with nef anti-canonical divisor
+</div>
 
-* Boundedness and moduli aspect of birational geometry
+<section class="cv-section" markdown="1">
 
+## Education
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks and Travel
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<div class="cv-timeline">
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2023–present</div>
+    <div class="cv-timeline__body">
+      <strong>Ph.D. in Birational Geometry</strong><br>
+      Wuhan University
+    </div>
+  </div>
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2015</div>
+    <div class="cv-timeline__body">
+      <strong>Bachelor's and Master's degrees in Artificial Intelligence and Automation</strong><br>
+      Science and Engineering Interdisciplinary Innovation Experimental Class, Huazhong University of Science and Technology
+    </div>
+  </div>
+</div>
 
-Honors, Grants and Awards
-======
+</section>
 
-2016 National College Mathematics Competition First Prize (Hubei Division)
+<section class="cv-section" markdown="1">
 
-2022 First Prize in the Qualifying Examination for Riemannian Geometry (Huazhong University of Science and Technology)
+## Research Interests
 
-2025 Third Prize, Voice of Luojia Teaching Competition (Wuhan University)
+- Kähler minimal model program;
+- Structure of Kähler Calabi–Yau varieties and varieties with nef anticanonical divisors;
+- Boundedness and moduli aspects of birational geometry.
 
+</section>
+
+<section class="cv-section cv-section--entries" markdown="1">
+
+## Publications
+
+<div class="cv-entry-list">
+{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</div>
+
+</section>
+
+<section class="cv-section cv-section--entries" markdown="1">
+
+## Talks and Travel
+
+<div class="cv-entry-list">
+{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}
+</div>
+
+</section>
+
+<section class="cv-section cv-section--entries" markdown="1">
+
+## Teaching
+
+<div class="cv-entry-list">
+{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</div>
+
+</section>
+
+<section class="cv-section" markdown="1">
+
+## Honors, Grants and Awards
+
+<div class="cv-timeline">
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2025</div>
+    <div class="cv-timeline__body">Third Prize, Voice of Luojia Teaching Competition, Wuhan University</div>
+  </div>
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2022</div>
+    <div class="cv-timeline__body">First Prize in the Qualifying Examination for Riemannian Geometry, Huazhong University of Science and Technology</div>
+  </div>
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2016</div>
+    <div class="cv-timeline__body">First Prize, National College Mathematics Competition, Hubei Division</div>
+  </div>
+</div>
+
+</section>
+
+</div>
