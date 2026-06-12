@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,8 +12,6 @@ redirect_from:
 <div class="cv-page" markdown="1">
 
 <div class="cv-hero" markdown="1">
-
-# Li Yi
 
 Third-year PhD student at Wuhan University, working in birational geometry and moduli theory.
 
