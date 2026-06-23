@@ -18,11 +18,16 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.0 General Machine to Construct Fibrations]()
 
-[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) 
+[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) 
 
 [Note-I.2 Albanese Map with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
 [Note-I.3 MRC Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf) [upd 10.19]
+
+[Note-I.4 Nef reduction with Applications]()
+
+[Note-I.5 Algebraic reduction with Applications]()
+
 
 [Note-I.4 Applications of the Leray Spectral Sequence in Fibration Problems](https://yilimath.github.io/files/Birational/Fibration/LeraySS.pdf)
 
