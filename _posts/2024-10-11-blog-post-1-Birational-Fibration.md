@@ -18,7 +18,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.0 General Machine to Construct Fibrations]()
 
-[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) [upd 7.4]
+[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) [upd 7.5]
 
 [Note-I.2 Albanese Map with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
