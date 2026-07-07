@@ -91,9 +91,3 @@ In this part of the notes, I summarize classification results for projective/Kä
 ## Part VI. On Iitaka conjecture
 
 
-
-
----
-## Part V. Hodge Theory and Fibrations
-
-[Note-V.1 Abelian Fibrations and BBDG Decomposition]()
