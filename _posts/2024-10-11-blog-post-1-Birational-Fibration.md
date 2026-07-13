@@ -35,11 +35,11 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 ## Part II. Fibrations from the Minimal Model Program
 
 
-[Note-II.1 Cone and Contraction Theorems: Fibrations as Outputs of the MMP]()
+[Note-II.1 Fano type morphism as Outputs of the MMP]()
 
-[Note-II.2 Fano Fibrations (Mori Fiber Spaces): Conic Bundles, del Pezzo Fibrations, and Rationality Problems]()
+[Note-II.2 Fano Fibrations (Mori Fiber Spaces)]()
 
-[Note-II.3 Calabi–Yau Fibrations II: The Canonical Bundle Formula for klt-Trivial Fibrations (Fujino–Mori, Ambro), Discriminant and Moduli Parts]()
+[Note-II.3 Calabi–Yau Fibrations]()
 
 [Note-II.4 Canonical bundle formulas]()
 
