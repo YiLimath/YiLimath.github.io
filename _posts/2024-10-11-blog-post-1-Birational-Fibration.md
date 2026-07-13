@@ -20,11 +20,11 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.0 Why Fibrations? Classification of Surfaces and the General Machine]()
 
-[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) [upd 7.5]
+[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/iitaka.pdf) [upd 7.5]
 
 [Note-I.2 Albanese Map with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
-[Note-I.3 MRC Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/MRCFibration.pdf) [upd 10.19]
+[Note-I.3 MRC Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/MRC.pdf) [upd 10.19]
 
 [Note-I.4 Nef Reduction with Applications]()
 
