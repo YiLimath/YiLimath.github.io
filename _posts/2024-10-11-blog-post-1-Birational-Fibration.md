@@ -10,7 +10,7 @@ The aim of this series of notes is to introduce fibrations in algebraic geometry
 
 > In algebraic geometry (birational geometry), we understand varieties using fibrations.
 
-The guiding philosophy of the series: every variety is built, via fibrations, out of three types of building blocks — **Fano varieties** (the $\kappa = -\infty$ direction, appearing as fibers of Mori fiber spaces), **Calabi–Yau varieties** ($\kappa = 0$, appearing as fibers of the Iitaka fibration), and **varieties of general type**. Part I constructs the canonical fibrations attached to any variety; Part II studies the fibrations produced by the minimal model program; the later parts develop the positivity theory of fibrations and apply the whole machinery to structure theorems. Foliations enter as "infinitesimal fibrations": they are the natural language when an honest fibration does not exist yet.
+
 
 ## Part I. Canonical Fibrations in Algebraic Geometry
 
@@ -20,7 +20,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.0 Why Fibrations? Classification of Surfaces and the General Machine]()
 
-[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/iitaka.pdf) [upd 7.5]
+[Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) [upd 7.5]
 
 [Note-I.2 Albanese Map with Applications](https://yilimath.github.io/files/Birational/Fibration/Albanese.pdf) [upd 10.10]
 
