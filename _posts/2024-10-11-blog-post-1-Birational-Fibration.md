@@ -18,7 +18,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 > We try to construct fibrations for which the fibers are simpler than the total space, reducing in principle the study to phenomena on the base.
 
-[Note-I.0 Why Fibrations? Classification of Surfaces and the General Machine]()
+[Note-I.0 The General Machine for fibration]()
 
 [Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/iitaka.pdf) [upd 7.5]
 
