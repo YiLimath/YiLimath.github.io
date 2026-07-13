@@ -34,7 +34,6 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 ----
 ## Part II. Fibrations from the Minimal Model Program
 
-The canonical fibrations of Part I are constructed from intrinsic invariants (pluricanonical systems, one-forms, rational curves). The minimal model program produces fibrations of a different origin: extremal contractions of fiber type. Running the MMP, every variety with $\kappa = -\infty$ (conjecturally) ends in a **Mori fiber space**, whose fibers are Fano; every variety with $0 \leq \kappa < \dim X$ carries (after passing to a minimal model) a **Calabi–Yau fibration**, its Iitaka fibration. This part studies these two classes of fibrations and the canonical bundle formula that governs them.
 
 [Note-II.1 Cone and Contraction Theorems: Fibrations as Outputs of the MMP]()
 
