@@ -28,7 +28,7 @@ The aim of this note is to introduce the minimal model program for Kähler varie
 ## Part-II. Reading Notes on the Kähler minimal model program
 [Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 4.4]
 
-[Note-1 Positivity in the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+[Note-1 Positivities and cones in the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
 [Note-2 Lelong Numbers and Quasi-psh Functions](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf) [TODO]
 

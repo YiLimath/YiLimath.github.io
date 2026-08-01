@@ -17,7 +17,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 ## Part I. Loci in Birational Geometry
 
 
-[Note-1: Exceptional Locus and Birational Modifications]()
+[Note-1: Exceptional Locus and indetermancy locus]()
 
 [Note-2: A brief introduction to Zariski Decomposition]()
 
@@ -129,6 +129,13 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-5: Semi-log Modification]()
 
+
+---
+## Part VIII. Analytic bchm
+
+[Note-1: Cone theorem for analytic varieties]()
+
+[Note-2: From algebraic bchm to analytic bchm]()
 
 
 ---
