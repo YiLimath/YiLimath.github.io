@@ -6,10 +6,7 @@ tags:
   - Agent System
 ---
 
-The aim of this note is to give a brief introduction to the design patterns used in building agent systems. By an *agent system* I mean a program in which a language model is placed inside a loop: it is given a goal, a set of tools it may call, and some working memory, and it decides for itself which tool to call next until the goal is met. The interesting engineering question is not "which model is best" but rather: **what should be in the model's context at each step, and who decides what happens next — the model, or the program around it?** Almost every design pattern below is an answer to one of these two questions.
-
-We divide the note into two parts: (1) the common design patterns for agent systems, and (2) a case study of the agent system I built for my own mathematical research.
-
+The aim of this note is to give a brief introduction to the design patterns used in building agent systems. We divide the note into two parts: (1) the common design patterns for agent systems, and (2) a case study of the agent system I built for my own mathematical research.
 > An agent system is a way of trading determinism for flexibility. The design patterns are the tools for buying back as much determinism as the task requires.
 
 ---
