@@ -1,7 +1,7 @@
 ---
 title: 'Agent System Design Pattern'
-date: 2026-04-04
-permalink: /posts/2026/01/Agent-System/
+date: 2026-08-01
+permalink: /posts/2026/08/Agent-System/
 tags:
   - Agent System
 ---
