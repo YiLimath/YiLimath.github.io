@@ -55,7 +55,7 @@ $sidebar-link-max-width     : 250px;
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
+$gray                       : #6b7480;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
@@ -68,11 +68,11 @@ $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+$primary-color              : #2b3a4a; // slate — masthead links, buttons, blockquote rule
+$success-color              : #4f8a5b;
+$warning-color              : #b8860b;
+$danger-color               : #a4413d;
+$info-color                 : #3d7b95;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -102,7 +102,7 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : #5b4b8a;
+$link-color                 : #1f3a5f; // Oxford blue
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
