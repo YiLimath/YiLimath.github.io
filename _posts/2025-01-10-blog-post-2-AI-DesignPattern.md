@@ -13,7 +13,15 @@ The aim of this note is to give a brief introduction to the design patterns used
 
 ## Part I. Common Design Patterns
 
-[I.0 Terminology]
+[I.0 Terminology and commonly used building blocks]()
+
+[I.1 Perception pattern]()
+
+[I.2 Inference pattern]()
+
+[I.3 Action pattern]()
+
+[I.4 Cooperation pattern]
 
 [I.1 Prompt chaining pattern]
 
