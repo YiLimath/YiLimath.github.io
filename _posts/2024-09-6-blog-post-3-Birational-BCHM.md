@@ -53,7 +53,7 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-I.3: de Fernex–Hacon Extension Theorem](https://yilimath.github.io/files/Birational/BCHM/deFernexHaconExtension.pdf) [update 11.12]
 
-[Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/dltExtension.pdf)
+[Note-I.4: Demailly–Hacon–Păun dlt Extension](https://yilimath.github.io/files/Birational/BCHM/DLTExtension.pdf)
 
 
 ---
