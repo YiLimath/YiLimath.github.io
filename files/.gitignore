@@ -1,0 +1,18 @@
+# LaTeX build artifacts — files/ serves PDFs, not build output.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*-blx.bib
