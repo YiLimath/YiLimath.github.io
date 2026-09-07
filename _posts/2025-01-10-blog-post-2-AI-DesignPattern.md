@@ -12,6 +12,10 @@ The aim of this series is to give a research-oriented introduction to design pat
 
 An agent system trades determinism for flexibility. A design pattern is a reusable way to buy back determinism at the boundary where the task requires it. Each page therefore describes the recurring problem, intent, structure, stable interface, variable implementation, trade-offs, failure modes, and an example.
 
+![Architecture of a mathematical research agent system](/images/agent-system/math-research-agent-architecture.svg)
+
+*Architecture figure: research workflows are coordinated by an agent layer and share an external mathematical vault, while the researcher retains control of priorities, review, and final judgment.*
+
 ## Part I. Foundations
 
 1. [Terminology and atomic building blocks](/posts/2026/08/agent-system/foundations/)

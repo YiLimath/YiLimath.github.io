@@ -8,6 +8,13 @@ tags:
 
 The case study describes an agent system built to support mathematical research over an Obsidian vault of roughly 11,600 notes.
 
+![Architecture of a mathematical research agent system](/images/agent-system/math-research-agent-architecture.svg)
+
+The architecture separates research workflows from orchestration, external memory,
+and human judgment. This separation is the main design-pattern lesson: each
+boundary can be tested or replaced without treating the language model as the
+whole system.
+
 ## System requirements
 
 - Preserve source material and distinguish it from generated summaries.
