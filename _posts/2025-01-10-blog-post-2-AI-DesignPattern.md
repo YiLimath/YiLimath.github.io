@@ -5,6 +5,7 @@ permalink: /posts/2026/08/Agent-System/
 tags:
   - Agent System
 classes: agent-system-hub
+full_page_reading: true
 ---
 
 The aim of this series is to give a research-oriented introduction to design patterns for agent systems. The pages are independent, but they share one question:

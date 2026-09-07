@@ -130,6 +130,27 @@
   }
 }
 
+/* Give the course a focused, full-width reading canvas without changing the
+ * site's normal two-column layout on other pages. */
+#main.reading-mode {
+  max-width: 1440px;
+
+  @include breakpoint($large) {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  > .page.agent-system-page,
+  > .page.agent-system-hub {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .agent-system-page,
   .agent-system-hub {

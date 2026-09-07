@@ -4,6 +4,7 @@ permalink: /posts/2026/08/agent-system/prompt-chaining/
 tags:
   - Agent System
 classes: agent-system-page
+full_page_reading: true
 ---
 
 ## Problem

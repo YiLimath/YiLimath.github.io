@@ -4,6 +4,7 @@ permalink: /posts/2026/08/agent-system/foundations/
 tags:
   - Agent System
 classes: agent-system-page
+full_page_reading: true
 ---
 
 This page fixes the vocabulary used by the rest of the course. The books use

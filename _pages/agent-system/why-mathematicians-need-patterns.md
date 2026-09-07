@@ -5,6 +5,7 @@ tags:
   - Agent System
   - Mathematics
 classes: agent-system-page
+full_page_reading: true
 ---
 
 Mathematical research is a composition of activities: reading, retrieving,

@@ -5,6 +5,7 @@ tags:
   - Agent System
   - Mathematics
 classes: agent-system-page
+full_page_reading: true
 ---
 
 This case study uses two real codebases. **Rethlas** is the smaller proof-search
