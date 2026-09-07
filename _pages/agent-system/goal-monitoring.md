@@ -5,28 +5,34 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Keep an agent directed toward a meaningful objective while preventing runaway execution.
+Autonomous execution can drift from the user's objective, spend resources on
+low-value actions, or continue after meaningful progress has stopped.
 
-## Outline
+## Intent and structure
 
-1. Convert a vague ambition into an observable goal and a small set of milestones.
-2. Prioritize actions by mathematical value, urgency, dependency, cost, and uncertainty reduction.
-3. Monitor progress through artifacts rather than conversational confidence.
-4. Define termination conditions:
-   - goal achieved;
-   - budget exhausted;
-   - no progress after bounded attempts;
-   - quality threshold reached;
-   - human interruption.
-5. Distinguish semantic completion from verified completion.
-6. Example: daily research scheduling and proof-checking queues.
+`goal → milestones → prioritized action → progress check → continue, redirect, or stop`
 
-## Design question
+A goal needs a success criterion, scope, budget, priority, dependencies, and
+termination policy. Monitor artifacts and state transitions rather than
+conversational confidence.
 
-What evidence justifies continuing, changing direction, escalating, or stopping?
+## Termination conditions
 
-## Suggested figure
+Stop when the goal is achieved, a quality threshold is met, the budget is
+exhausted, no progress occurs after bounded attempts, or a human interrupts.
+Distinguish semantic completion (“the agent says done”) from verified completion
+(“the required artifact passed its checks”).
 
-`17-goal-monitoring.svg` in the Agent design pattern illustration folder.
+## Forces and failure modes
+
+Aggressive stopping saves cost but can miss a solution; permissive stopping can
+run indefinitely. Make the stopping decision observable and allow escalation or
+replanning when the goal changes.
+
+## Figure
+
+![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)
+
+*Figure: goals become operational through priorities, bounded actions, progress checks, and termination.*

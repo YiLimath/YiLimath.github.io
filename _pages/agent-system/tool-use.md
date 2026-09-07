@@ -5,22 +5,43 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Expose external capabilities through a stable action–observation interface,
-including deterministic mathematical computation.
+Language generation is not the right mechanism for deterministic operations,
+external state, or exact computation. The agent needs a controlled way to act
+and to receive an observation.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: language generation is not the right mechanism for deterministic operations or external state.
-2. Structure: `agent → tool schema → capability → observation → agent`.
-3. Stable interface: tool name, schema, arguments, return value, permissions, and error behavior.
-4. Variable implementation: web service, database, calculator, proof assistant, code runner, or vault operation.
-5. Code execution: use computation to test examples, evaluate expressions, or search a finite space; keep code and outputs as inspectable artifacts.
-6. Strength: delegates deterministic operations to appropriate tools and makes observations available for verification.
-7. Risks: unsafe actions, brittle schemas, side effects, and unvalidated observations.
-8. Example: retrieve a theorem note, run a symbolic or Lean check, then return a structured report with provenance.
+`agent → tool schema → capability → observation → agent`
 
-## Suggested figure
+Function calling, MCP-style tool protocols, HTTP services, databases, code
+runners, and proof assistants are implementations of this boundary. The stable
+part is the tool name, input schema, permissions, return schema, and error
+behavior.
 
-`06-tool-use.svg` in the Agent design pattern illustration folder.
+## Code execution
+
+Use code for exact arithmetic, symbolic experiments, finite searches, plots, or
+formal proof checking. Keep the program, environment, and output as inspectable
+artifacts. A successful execution is evidence about the computation, not
+automatically a proof of the surrounding theorem.
+
+## Safety and reliability
+
+Use least privilege, validate arguments, control side effects, set timeouts,
+make writes idempotent where possible, and distinguish a tool error from a
+negative mathematical result. An observation must be checked before it changes
+the next state.
+
+## Example
+
+The Rethlas generation agent exposes theorem search and proof verification as
+explicit tools; Danus adds a role-gated gateway so different agents see
+different capabilities.
+
+## Figure
+
+![Tool use and code execution](/images/agent-system/06-tool-use.svg)
+
+*Figure: the agent acts through typed tool interfaces and receives explicit observations.*

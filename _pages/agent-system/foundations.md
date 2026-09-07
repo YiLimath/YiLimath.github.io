@@ -1,28 +1,49 @@
 ---
-title: "Agent Systems: Terminology and Building Blocks"
+title: "Agent Systems: Terminology and Atomic Building Blocks"
 permalink: /posts/2026/08/agent-system/foundations/
 tags:
   - Agent System
 ---
 
-This page defines the objects used throughout the series. The reference books use
-slightly different vocabularies, so the series separates the mathematical idea
-of a reusable pattern from any particular framework.
+This page fixes the vocabulary used by the rest of the course. The books use
+different names for similar components, but the design question is the same:
+which boundary should remain stable when the model or implementation changes?
 
-## Outline
+## The basic objects
 
-1. Define *model*, *agent*, *prompt*, *context*, *state*, *tool*, *memory*, *evaluator*, and *human checkpoint*.
-2. Distinguish a model from an agent system: a model produces an output; an agent system manages a loop, state, tools, and evaluation.
-3. Introduce the atomic unit used by later pages: a typed input, a bounded context, an inference step, an action, an observation, and an updated state.
-4. Introduce the basic contract:
-   `input → context → inference → action → observation → updated state`.
-5. Explain the design-pattern vocabulary: recurring problem, stable interface, variable implementation, forces, trade-offs, and failure modes.
-6. Explain why structured outputs, dependency injection, and small interfaces make components replaceable and testable.
+- A **model** maps a prompt and context to a candidate output.
+- An **agent** adds a loop, state, tools, and a policy for choosing the next
+  action.
+- **Context** is the bounded information supplied to one inference step.
+- **State** is the information that persists between steps.
+- A **tool** is an external capability with a callable interface and an
+  observation returned to the agent.
+- **Memory** stores selected past information for later retrieval.
+- An **evaluator** tests an artifact or a trajectory against a criterion.
+- A **checkpoint** transfers responsibility to a human or another component.
 
-## Design question
+## Pattern anatomy
 
-What should remain stable when the model, tool, prompt, retriever, or memory implementation changes?
+For every pattern, identify the recurring problem, intent, participants, stable
+interface, variable implementation, forces, failure modes, and composition with
+other patterns. This prevents a framework feature from being mistaken for a
+design principle.
 
-## Suggested figure
+## Atomic contract
 
-`01-building-blocks.svg` in the Agent design pattern illustration folder.
+`input → context → inference → action → observation → state update`
+
+The contract is deliberately small. Structured artifacts, tool schemas,
+messages, state records, and evaluation reports are more important than a
+particular model name.
+
+## Design test
+
+If replacing the model requires rewriting every downstream component, the system
+has exposed an implementation instead of an interface.
+
+## Figure
+
+![Agent system building blocks](/images/agent-system/01-building-blocks.svg)
+
+*Figure: the basic objects and interfaces used throughout the series.*

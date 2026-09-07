@@ -5,20 +5,39 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Separate generation from critique and revision.
+A first draft can be fluent, incomplete, or subtly inconsistent. Asking for a
+single answer does not create an independent quality check.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: the first output is treated as final without an explicit quality check.
-2. Structure: `draft → evaluator → accept or revise`.
-3. Stable interface: evaluation criteria and revision instructions.
-4. Variable implementation: generator, critic, and stopping rule.
-5. Strength: makes quality criteria explicit.
-6. Risks: shared blind spots, endless revision, and evaluation against the wrong metric.
-7. Example: review a generated theorem digest for missing hypotheses and unsupported claims.
+`draft → critique → targeted revision → re-evaluation`
 
-## Suggested figure
+The critic may be another model, a deterministic test, a tool, a proof checker,
+or a human. Good reflection names the violated criterion and returns repairable
+feedback rather than merely a numerical score.
 
-`05-reflection.svg` in the Agent design pattern illustration folder.
+## Separation of roles
+
+The generator should optimize for proposing a useful candidate; the critic
+should inspect it against explicit requirements. Using the same prompt and
+context for both can preserve the same blind spot, so independence matters.
+
+## Mathematical example
+
+A proof critique checks definitions, hypotheses, quantifiers, theorem
+applications, and hidden existence claims. The revised proof should preserve the
+original claim while recording which gap was addressed.
+
+## Forces and failure modes
+
+Reflection catches local defects but adds latency and may lead to endless
+rewriting. Limit revision rounds, retain the rejected draft, and stop when a
+defined quality threshold or human checkpoint is reached.
+
+## Figure
+
+![Reflection pattern](/images/agent-system/05-reflection.svg)
+
+*Figure: a draft is evaluated and revised before it is passed onward.*

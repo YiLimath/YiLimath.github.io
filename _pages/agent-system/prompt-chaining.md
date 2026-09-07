@@ -5,20 +5,42 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Replace one vague prompt with a sequence of explicit, testable transformations.
+A single prompt must often perform incompatible jobs: interpret an input,
+extract structure, reason, verify, and format a deliverable. The result is hard
+to inspect and difficult to repair.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: one prompt mixes extraction, reasoning, transformation, and presentation.
-2. Structure: `input → extract → transform → reason → compose`.
-3. Stable interface: each stage consumes a defined input and returns a defined output.
-4. Variable implementation: the prompt, model, or tool used inside a stage.
-5. Strength: inspectable intermediate results and local error handling.
-6. Risks: latency, cost, and error propagation.
-7. Example: paper → metadata → outline → theorem notes → proof notes.
+Prompt chaining divides the task into ordered stages:
 
-## Suggested figure
+`input → extraction → transformation → checking → presentation`
 
-`02-prompt-chaining.svg` in the Agent design pattern illustration folder.
+Each stage has a narrower responsibility and passes an intermediate artifact to
+the next stage. The chain can use one model or different models.
+
+## Stable interface
+
+The interface is the intermediate artifact: its schema, required fields,
+provenance, and error status. Natural-language instructions are implementation
+details around that contract.
+
+## When it helps
+
+Use chaining when stages have clear dependencies, when intermediate errors need
+to be localized, or when different stages require different models or tools. A
+mathematical example is `paper → metadata → theorem statement → proof skeleton
+→ checked exposition`.
+
+## Forces and failure modes
+
+Chaining improves observability and revision, but adds latency and can propagate
+an early extraction error through every later stage. Validate high-value
+artifacts before continuing; formatting success is not mathematical correctness.
+
+## Figure
+
+![Prompt chaining workflow](/images/agent-system/02-prompt-chaining.svg)
+
+*Figure: specialized stages pass structured artifacts forward.*

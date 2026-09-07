@@ -1,24 +1,45 @@
 ---
-title: "Agent Systems: Memory-Management Pattern"
+title: "Agent Systems: Memory Management Pattern"
 permalink: /posts/2026/08/agent-system/memory-management/
 tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Preserve useful state without placing the whole history in every context.
+Context windows are bounded, while tasks and histories are not. Copying every
+past message into every step increases noise, cost, and the chance of retrieving
+an obsolete instruction.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: context windows are bounded, while tasks and histories are not.
-2. Structure: `experience → select → store → retrieve → current context`.
-3. Stable interface: memory item, metadata, retrieval query, and provenance.
-4. Variable implementation: summary, vector search, linked notes, database, or file system.
-5. Strength: continuity and bounded context size.
-6. Risks: stale summaries, irrelevant retrieval, false links, and context overload.
-7. Example: an Obsidian vault as long-term external memory for mathematical research.
+`experience → select → store → retrieve → current context`
 
-## Suggested figure
+The books distinguish short-term working context from long-term memory and from
+external knowledge retrieval. A memory item needs content, scope, metadata,
+provenance, and a retrieval policy.
 
-`09-memory-management.svg` in the Agent design pattern illustration folder.
+## Memory operations
+
+Write only information that may be useful later; retrieve by the current task;
+compress or summarize under a stated policy; and expire or revise stale items.
+Memory should preserve failed paths when those failures prevent repeated work.
+
+## Mathematical design
+
+Separate definitions and verified results from conjectures, heuristics, and
+scratch reasoning. A retrieved lemma must still be checked against the current
+hypotheses. Memory improves continuity; it is not a correctness certificate.
+
+## Forces and failure modes
+
+More memory improves recall but increases context pollution and retrieval bias.
+Use scopes, provenance, ranking, limits, and explicit invalidation. Test whether
+the system performs better with a memory item rather than assuming persistence
+is always helpful.
+
+## Figure
+
+![Memory management pattern](/images/agent-system/09-memory-management.svg)
+
+*Figure: bounded working context is written to and recovered from longer-term memory.*

@@ -5,20 +5,40 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Insert human judgment where the cost of an autonomous error is high or authority matters.
+Some decisions are high impact, ambiguous, irreversible, or not captured by an
+automated evaluator. Full autonomy would hide responsibility rather than remove
+the decision.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: some decisions require responsibility, domain judgment, or explicit consent.
-2. Structure: `proposal → review → approve, revise, or reject`.
-3. Stable interface: evidence shown to the reviewer and the effect of each decision.
-4. Variable implementation: notification, review form, conversation, or approval queue.
-5. Strength: combines machine flexibility with human accountability.
-6. Risks: bottlenecks, unclear authority, and approval fatigue.
-7. Example: the researcher reviews a proposed schedule or a proof-checking report.
+`agent work → checkpoint → human review or correction → resume, revise, or stop`
 
-## Suggested figure
+A checkpoint should present the artifact, evidence, uncertainty, available
+choices, and consequences. “Human approval” is not useful if the reviewer cannot
+see what is being approved.
 
-`11-human-in-loop.svg` in the Agent design pattern illustration folder.
+## Where to place checkpoints
+
+Use them before irreversible tool actions, after ambiguous routing, when a
+quality evaluator disagrees, when the budget or stopping condition is reached,
+or when a result is ready for publication. Routine low-risk work can remain
+automated.
+
+## Forces and failure modes
+
+Human review improves accountability and handles open-ended judgment, but it
+adds latency and can become a rubber stamp. Escalate selectively, explain why,
+record the decision, and make resumption idempotent.
+
+## Mathematical example
+
+The system may propose a proof direction or a literature connection, while the
+mathematician decides whether it is relevant, novel, or worth pursuing.
+
+## Figure
+
+![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)
+
+*Figure: the system pauses at an explicit checkpoint when human judgment is required.*

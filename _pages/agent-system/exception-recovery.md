@@ -5,28 +5,39 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Make failure visible and return the system to a safe, useful state.
+Tools fail, retrieval returns nothing, output violates a schema, services time
+out, and plans become invalid. Treating every failure as another prompt hides
+the actual state of the system.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: tools fail, retrieval returns nothing, a model produces malformed output, or a plan becomes invalid.
-2. Classify failures: transient, structural, semantic, permission-related, and mathematical uncertainty.
-3. Recovery actions:
-   - retry with bounded attempts;
-   - repair or reformat an artifact;
-   - fall back to a simpler method;
-   - checkpoint and resume;
-   - escalate to a human;
-   - stop with an explicit incomplete result.
-4. Preserve the failed artifact and error context for diagnosis.
-5. Never convert an unresolved mathematical gap into a successful-looking summary.
+`action → classify failure → retry / repair / fallback / escalate / stop`
 
-## Design question
+Classify failures as transient, structural, semantic, permission-related, or
+mathematical uncertainty. The category determines the recovery policy.
 
-After failure, what information must be preserved so that the next attempt does not repeat the same mistake?
+## Recovery contract
 
-## Suggested figure
+Preserve the failed artifact, error, inputs, attempt count, and checkpoint. Retry
+only when the operation is safe and bounded. Repair malformed structure without
+silently changing content. Fall back to a simpler method only when its quality
+limits are explicit.
 
-`16-exception-recovery.svg` in the Agent design pattern illustration folder.
+## Mathematical rule
+
+An unresolved gap is a valid terminal state. Never convert it into a successful-
+looking summary merely because a later generation step is fluent.
+
+## Forces and failure modes
+
+Recovery improves availability but can amplify side effects, duplicate work, or
+loop forever. Use idempotence, exponential backoff where appropriate, retry
+limits, circuit breakers, and human escalation.
+
+## Figure
+
+![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)
+
+*Figure: failures are classified and routed to bounded retry, repair, fallback, escalation, or safe stop.*

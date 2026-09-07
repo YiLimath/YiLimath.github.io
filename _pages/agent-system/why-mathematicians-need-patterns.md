@@ -6,27 +6,37 @@ tags:
   - Mathematics
 ---
 
-## Central claim
+Mathematical research is a composition of activities: reading, retrieving,
+constructing examples, forming conjectures, searching for proofs, checking
+claims, and writing exposition. An agent becomes useful when each recurring
+activity has an explicit boundary.
 
-Mathematical research is not one task. It is a composition of reading, retrieval, example construction, conjecture formation, proof search, computation, exposition, and review. An agent design pattern gives each recurring activity a stable boundary.
+## Translation of design principles
 
-## Outline
+- **Decomposition** becomes lemmas, proof obligations, or independent searches.
+- **Abstraction** becomes definitions, contracts, and representations that hide
+  irrelevant implementation details.
+- **Composition** becomes a proof or research workflow whose artifacts can be
+  passed from one stage to the next.
+- **Encapsulation** keeps a tool, model, or retrieval method replaceable.
+- **Validation** uses tests, counterexamples, proof assistants, source checks,
+  or human review.
 
-1. Map software design principles to mathematical practice:
-   - decomposition → lemmas and subtasks;
-   - abstraction → definitions and interfaces;
-   - composition → proof and research workflows;
-   - encapsulation → hiding implementation details behind statements;
-   - validation → proof checking and counterexample search.
-2. Explain the difference between a solver loop and a research loop.
-3. Show how patterns reduce cognitive load without replacing mathematical judgment.
-4. State the risks of over-automation: false confidence, context pollution, untraceable claims, and premature abstraction.
-5. Introduce the research-specific quality criteria: correctness, relevance, provenance, reproducibility, inspectability, and failure detectability.
+## Solver loop versus research loop
 
-## Research loop
+A solver loop aims at an answer. A research loop must also preserve failed paths,
+expose uncertainty, compare alternatives, and decide whether a result is worth
+developing. Design patterns help with this organization; they do not turn a
+plausible language-model explanation into a proof.
 
-`question → examples → conjecture → counterexample search → lemma decomposition → proof attempt → verification → exposition`
+## Quality criteria
 
-## Design question
+For mathematical work, correctness is necessary but not sufficient. Relevance,
+provenance, reproducibility, inspectability, and failure detectability are also
+architectural requirements.
 
-Which parts of this loop can be delegated, and which parts require the mathematician's judgment?
+## Figure
+
+![Design patterns translated into mathematical research](/images/agent-system/24-mathematics-design-patterns.svg)
+
+*Figure: decomposition, abstraction, composition, and validation turn recurring research activities into explicit artifacts.*

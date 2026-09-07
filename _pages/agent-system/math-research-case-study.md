@@ -1,70 +1,107 @@
 ---
-title: "Case Study: A Mathematical Research Agent System"
+title: "Case Study: Danus and Rethlas"
 permalink: /posts/2026/08/agent-system/math-research-case-study/
 tags:
   - Agent System
-  - Birational Geometry
+  - Mathematics
 ---
 
-The case study describes an agent system built to support mathematical research over an Obsidian vault of roughly 11,600 notes.
+This case study uses two real codebases. **Rethlas** is the smaller proof-search
+system: a generation agent reads a mathematical problem and drafts a proof
+blueprint, while a verification agent checks the blueprint through a local HTTP
+service. **Danus** builds a long-running, strategy-steered worker system on top
+of that generation–verification core.
 
-![Architecture of a mathematical research agent system](/images/agent-system/math-research-agent-architecture.svg)
+![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)
 
-The architecture separates research workflows from orchestration, external memory,
-and human judgment. This separation is the main design-pattern lesson: each
-boundary can be tested or replaced without treating the language model as the
-whole system.
+The architecture is a code-based case study. Its purpose is to show how the
+patterns from the reference books appear as concrete modules and interfaces.
 
-## System requirements
+## Rethlas: the two-agent core
 
-- Preserve source material and distinguish it from generated summaries.
-- Expose uncertainty rather than silently inventing mathematical facts.
-- Keep the researcher in control of priorities and final judgments.
-- Keep dates, task status, note links, theorem statements, and proof artifacts reproducible.
-- Make every stage evaluable, recoverable, and bounded by a clear termination condition.
+The Rethlas repository separates proof generation from proof verification.
 
-## Workflows
+1. A problem is stored as Markdown under the generation agent's data directory.
+2. The generation agent uses explicit tools for theorem search, memory, branch
+   state, and proof verification.
+3. It produces a Markdown proof blueprint rather than treating a fluent answer
+   as a finished proof.
+4. The verification service exposes `/verify`; it starts a fresh verification
+   agent and expects a structured JSON verdict.
+5. A rejected blueprint returns repair hints; the generation agent revises and
+   submits again.
+6. A successful run produces `blueprint_verified.md`.
 
-### Daily research scheduling
+![Rethlas and Danus verified-proof loop](/images/agent-system/23-research-loop.svg)
 
-- **Goal:** convert recent work and priorities into a manageable daily assignment.
-- **Patterns:** plan-and-execute, memory management, human-in-the-loop.
-- **Pipeline:** recent work → candidate tasks → prioritized plan → human adjustment → daily sheet → end-of-day evaluation.
+This is a direct instance of the books' reflection, tool-use, exception-recovery,
+structured-output, and human-or-machine evaluation patterns.
 
-### Paper encoding and note construction
+## Danus: extending the core
 
-- **Goal:** turn a paper into structured notes without losing theorem statements or raw proofs.
-- **Patterns:** prompt chaining, structured output, tool use, memory management, reflection, exception recovery.
-- **Pipeline:** paper → metadata → outline → theorem notes → proof notes → verification and revision, with checkpoints after each artifact.
+Danus adds the system architecture needed for multiple problems, workers, and
+long-running operation:
 
-### Mathematical proof checking
+- **Orchestration:** the main agent and the `danus` CLI create projects, assign
+  tasks, start workers, inspect status, and stop execution. The orchestrator
+  coordinates work; it is not the correctness authority.
+- **Strategy:** an elaboration is prepared, a strategy consultation is run, and
+  the resulting `master_guidance` steers the next worker round.
+- **Execution:** detached workers run rounds, each using the inherited Rethlas
+  proving skills. Multiple workers provide parallel exploration.
+- **Verification:** a cold-start verifier judges submitted statements and
+  proofs. The verdict is strict: a result is correct only when there are no
+  critical errors and no gaps.
+- **Truth and memory:** worker-local memory, project-global memory, and a
+  content-addressed fact graph have different roles. Only verifier-accepted
+  facts enter the fact graph.
+- **Gateway:** the role-gated MCP gateway controls the tool surface. Workers can
+  submit facts; the main agent cannot call `fact_submit`; the verifier is
+  read-only.
+- **Outputs:** isolated authoring agents render verified material into a paper or
+  a human progress summary.
+- **Operations:** theorem search, observability, loopback services, configuration,
+  and recovery scripts support the runtime without becoming sources of truth.
 
-- **Goal:** check a written argument against definitions, hypotheses, and known results.
-- **Patterns:** router, knowledge retrieval, tool use, reasoning, reflection, evaluation, human-in-the-loop.
-- **Pipeline:** proof claim → identify dependencies → retrieve notes → check steps → classify gaps → report evidence → human decision.
+## Pattern mapping
 
-### Research-loop controls
+| Book pattern | Concrete realization in Danus/Rethlas |
+|---|---|
+| Prompt chaining | staged problem reading, proof drafting, verification, and repair |
+| Routing and planning | main-agent task assignment and strategy guidance |
+| Parallelization | detached worker swarm exploring different proof directions |
+| Reflection | verifier feedback and generation-agent repair loop |
+| Tool use | MCP tools, theorem search, and the `/verify` HTTP interface |
+| Structured output | proof Markdown, verification JSON, memory channels, and fact records |
+| Memory management | worker-local logs, global findings, and verified facts |
+| Multi-agent cooperation | operator, main agent, workers, verifier, and isolated authoring agents |
+| Exception recovery | retry, repair hints, persisted rounds, and explicit failure states |
+| Evaluation and guardrails | strict verdict schema, role permissions, and the fact write-gate |
+| Resource-aware operation | configurable workers, models, transports, service timeouts, and detached execution |
 
-- **Goal monitoring:** state the current mathematical question and the condition for stopping or escalating.
-- **Evaluation:** test retrieval quality, citation fidelity, proof-step validity, and usefulness of the final note.
-- **Guardrails:** preserve quotations as source artifacts, separate conjecture from theorem, and require provenance for nontrivial claims.
-- **Resource awareness:** use cheap retrieval and local computation before expensive broad search or long multi-agent deliberation.
+## Design lessons
 
-## Redesign log
+1. The most important pattern is the **correctness boundary**: generation may be
+   broad and exploratory, but truth is introduced only through verification.
+2. The **interface boundary** matters more than the agent's label. MCP tool
+   schemas, the `/verify` request, the verification JSON, and fact identifiers
+   make components replaceable.
+3. The **workflow/autonomy distinction** is visible in the architecture. Rethlas
+   is a bounded two-agent loop; Danus adds autonomous workers but keeps them
+   inside explicit round, memory, permission, and termination controls.
+4. The system demonstrates why design patterns are useful for mathematical
+   software: they separate search, judgment, storage, and publication so that
+   each can be inspected independently.
 
-For at least two failures, record:
+## Scope and limits
 
-1. original design;
-2. observed failure;
-3. diagnosis of the violated interface;
-4. revised pattern;
-5. evidence that the revision helped.
+This page documents the architecture visible in the Danus and Rethlas source
+trees. It does not claim that the system automatically proves arbitrary
+mathematics. A verified artifact is a result accepted by the system's verifier
+contract; mathematical interpretation and research significance remain separate
+questions.
 
-## Final lesson
+## Figure
 
-The vault is not merely a context window. It is an external memory and source of truth. The agent patterns make operations around that source of truth repeatable, inspectable, and revisable.
-
-## Suggested figure
-
-`12-math-research-case-study.svg` gives the system overview; `23-research-loop.svg`
-shows the research-specific loop in more detail.
+*The two diagrams above are the architecture and control-flow views of the same
+case study.*

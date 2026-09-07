@@ -5,39 +5,59 @@ tags:
   - Agent System
 ---
 
-This series is based primarily on four reference books in the Life and Readings
-vault. They are complementary rather than interchangeable: one gives a broad
-agent-pattern catalogue, one concentrates on multi-agent architecture, one
-breaks generative-AI systems into fine-grained patterns, and one treats
-production system design.
+This course is organized from four complementary books in the Life and Readings
+vault. The pages are a synthesis and application of their ideas, not a
+framework-specific API manual.
 
-## Reference roles
+## Four viewpoints
 
-### Antonio Gulli, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems*
+### Antonio Gulli — *Agentic Design Patterns*
 
-Use this book for the broad pattern catalogue: chaining, routing, parallelization, reflection, tools, planning, memory, learning, recovery, human-in-the-loop, retrieval, reasoning, evaluation, safety, prioritization, and exploration.
+This is the broad catalogue: prompt chaining, routing, parallelization,
+reflection, tool use, planning, multi-agent systems, memory, learning,
+exception recovery, human-in-the-loop, retrieval, reasoning, safety, evaluation,
+prioritization, and exploration.
 
-### Victor Dibia, *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents*
+### Victor Dibia — *Designing Multi-Agent Systems*
 
-Use this book for the architectural distinction between explicit workflows and autonomous orchestration. Its important additions are computational graphs, checkpointing, termination, structured output, middleware, observability, trajectory evaluation, protocols, and human delegation.
+This book supplies the workflow architecture: explicit computational graphs,
+autonomous orchestration, sequential/conditional/parallel workflows, handoffs,
+round-robin interaction, task termination, human delegation, structured output,
+tools, memory, middleware, observability, checkpointing, persistence, and
+trajectory evaluation.
 
-### Valliappa Lakshmanan and Hannes Hapke, *Generative AI Design Patterns*
+### Valliappa Lakshmanan and Hannes Hapke — *Generative AI Design Patterns*
 
-Use this book for fine-grained application patterns: structured generation, RAG stages, deep search, reasoning, reflection, dependency injection, tool calling, code execution, multi-agent collaboration, caching, long-term memory, degradation testing, self-check, and guardrails.
+This book gives finer-grained application patterns: constrained generation,
+RAG stages, deep search, reasoning, reflection, dependency injection, tool
+calling, code execution, multi-agent collaboration, caching, long-term memory,
+self-check, reformatting, and guardrails.
 
-### Sampriti Mitra, *System Design for the LLM Era*
+### Sampriti Mitra — *System Design for the LLM Era*
 
-Use this book for production constraints: gateways, circuit breakers, fallbacks, synchronous versus asynchronous processing, caching, data models, golden datasets, evaluation, observability, security, latency, and cost.
+This book adds production architecture: gateways, circuit breakers, tiered
+fallbacks, synchronous versus asynchronous processing, prompt compression,
+hybrid retrieval, function calling, golden datasets, evaluation, observability,
+security, caching, latency, and cost.
 
-## Mathematical translation
+## Course organization
 
-The books are written for general AI systems. This series translates their patterns into mathematical artifacts: definitions, theorem statements, proof steps, dependencies, examples, counterexamples, citations, and review decisions.
+The books are translated into five design questions:
 
-The translation is deliberately not a claim that a language-model workflow is a
-mathematical proof. The books supply architectural vocabulary; mathematical
-validity still comes from definitions, hypotheses, formal or computational
-checks, source verification, and the researcher's judgment.
+1. **Control flow:** how does work decompose, branch, route, and terminate?
+2. **Knowledge and reasoning:** how is context selected and a candidate checked?
+3. **Coordination:** how do agents, tools, and humans exchange responsibility?
+4. **Reliability:** how are state, failure, evaluation, safety, and resources
+   controlled?
+5. **Architecture:** which stable interfaces allow components to be replaced?
 
-## Selection principle
+## Reading rule
 
-Do not use every pattern at once. Choose the smallest combination that makes the mathematical uncertainty visible and the important steps verifiable.
+Do not use every pattern at once. Choose the smallest composition that makes the
+important uncertainty observable and the important steps verifiable.
+
+## Figure
+
+![Book-informed agent pattern taxonomy](/images/agent-system/25-book-pattern-taxonomy.svg)
+
+*Figure: the four books contribute complementary architectural, application, orchestration, and production viewpoints.*

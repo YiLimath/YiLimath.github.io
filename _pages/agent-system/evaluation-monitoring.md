@@ -6,34 +6,35 @@ tags:
   - Mathematics
 ---
 
-## Intent
+## Problem
 
-Measure whether the system is performing the intended task, not merely producing fluent output.
+Fluent output is a weak proxy for task success. A system can produce attractive
+answers while retrieving irrelevant evidence, taking excessive steps, or
+silently violating a constraint.
 
-## Outline
+## Evaluation layers
 
-1. Evaluation-driven development: define success before optimizing the workflow.
-2. Build a representative evaluation set containing ordinary cases, edge cases, and known failures.
-3. Evaluate both final answers and trajectories:
-   - retrieved sources;
-   - tool calls;
-   - intermediate artifacts;
-   - failed attempts;
-   - stopping decisions.
-4. Mathematical metrics:
-   - correctness;
-   - hypothesis preservation;
-   - citation and provenance accuracy;
-   - proof-checker acceptance;
-   - useful-gap detection;
-   - human time saved.
-5. Use deterministic tests where possible and human or model judges only where necessary.
-6. Monitor drift, cost, latency, and recurring failure modes after deployment.
+1. **Artifact evaluation:** correctness, completeness, format, and provenance.
+2. **Trajectory evaluation:** tool calls, intermediate artifacts, retries,
+   latency, cost, and stopping decisions.
+3. **System evaluation:** reliability, safety, user usefulness, and behavior
+   under degraded models, missing tools, or empty retrieval.
 
-## Design question
+## Mathematical metrics
 
-Can the evaluation distinguish a correct proof, a plausible proof with a gap, and an irrelevant answer?
+Test hypothesis preservation, citation accuracy, proof-checker acceptance,
+counterexample detection, useful-gap detection, and reproducibility. Use
+deterministic tests where possible; use model judges or humans for criteria that
+cannot be formalized, and record their uncertainty.
 
-## Suggested figure
+## Evaluation-driven development
 
-`18-evaluation-monitoring.svg` in the Agent design pattern illustration folder.
+Build a golden set containing ordinary cases, edge cases, and known failures
+before optimizing prompts or architecture. Monitor drift after deployment and
+turn recurring failures into regression tests.
+
+## Figure
+
+![Evaluation and monitoring](/images/agent-system/18-evaluation-monitoring.svg)
+
+*Figure: evaluators inspect both the final artifact and the trajectory that produced it.*

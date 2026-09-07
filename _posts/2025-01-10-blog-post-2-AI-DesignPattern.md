@@ -12,9 +12,9 @@ The aim of this series is to give a research-oriented introduction to design pat
 
 An agent system trades determinism for flexibility. A design pattern is a reusable way to buy back determinism at the boundary where the task requires it. Each page therefore describes the recurring problem, intent, structure, stable interface, variable implementation, trade-offs, failure modes, and an example.
 
-![Architecture of a mathematical research agent system](/images/agent-system/math-research-agent-architecture.svg)
+![General reference architecture for an agent system](/images/agent-system/00-agent-system-architecture.svg)
 
-*Architecture figure: research workflows are coordinated by an agent layer and share an external mathematical vault, while the researcher retains control of priorities, review, and final judgment.*
+*Architecture figure: a general agent system separates user goals, orchestration, reasoning, knowledge, action, evaluation, and guardrails.*
 
 ## Part I. Foundations
 
@@ -54,11 +54,12 @@ An agent system trades determinism for flexibility. A design pattern is a reusab
 22. [Evaluation and monitoring](/posts/2026/08/agent-system/evaluation-monitoring/)
 23. [Resource-aware optimization](/posts/2026/08/agent-system/resource-aware-optimization/)
 24. [Guardrails and safety](/posts/2026/08/agent-system/guardrails-safety/)
-25. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
+25. [Production architecture](/posts/2026/08/agent-system/production-architecture/)
+26. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
 
 ## Part VI. Case study
 
-26. [A mathematical research agent system](/posts/2026/08/agent-system/math-research-case-study/)
-27. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
+27. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
+28. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
 
-The case study concerns daily research scheduling, paper encoding, and mathematical proof checking over an Obsidian vault. It identifies which patterns each component instantiates, where the system needs formal or deterministic checks, and where human mathematical judgment must remain in control.
+The case study uses the real Danus and Rethlas codebases. It identifies which patterns appear in their orchestration, worker, verification, memory, gateway, and authoring components.

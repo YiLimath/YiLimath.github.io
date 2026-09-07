@@ -5,20 +5,39 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Select the smallest capable specialist for each request.
+One general agent is rarely the best implementation for every task class. A
+retrieval question, a code execution request, and a proof critique need
+different tools, prompts, or levels of reasoning.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: a single agent receives tasks with different tools, formats, or standards of evidence.
-2. Structure: `request → classifier → specialist → common response`.
-3. Stable interface: the request and response contract.
-4. Variable implementation: the classifier and specialist selected for the request.
-5. Strength: separates classification from execution.
-6. Risks: misclassification, routing drift, and policy complexity.
-7. Example: route a proof-checking task to retrieval, calculation, or exposition support.
+`request → classify → specialized path → common output`
 
-## Suggested figure
+The router may be a deterministic rule, a small classifier, or a model-based
+decision. The downstream paths should converge on a common result schema.
 
-`03-router.svg` in the Agent design pattern illustration folder.
+## Stable interface
+
+Make the routing label, confidence or rationale, selected capability, and
+fallback behavior explicit. The router must not silently discard a request it
+cannot classify.
+
+## Mathematical example
+
+A research assistant can route a request to definition lookup, theorem search,
+example construction, proof checking, or exposition. The output should state
+which route was used and what evidence supports it.
+
+## Forces and failure modes
+
+Routing reduces prompt complexity and allows specialization, but misclassification
+can be worse than using a general path. Use an abstain or human-escalation path,
+monitor route distributions, and test boundary cases.
+
+## Figure
+
+![Router pattern](/images/agent-system/03-router.svg)
+
+*Figure: a routing decision sends different task classes to specialized paths.*

@@ -6,27 +6,41 @@ tags:
   - Mathematics
 ---
 
-## Intent
+## Problem
 
-Turn search into an iterative process of query refinement, reading, comparison, and synthesis.
+The first query is usually underspecified and retrieves only the obvious
+material. A broad question needs controlled decomposition and repeated evidence
+collection.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: the first query is ambiguous or retrieves only the obvious literature.
-2. Structure: `query → search → inspect results → refine query → search again → synthesize`.
-3. Require a search log: query, source, relevance judgment, extracted claim, and unresolved question.
-4. For mathematics, distinguish:
-   - a theorem that directly applies;
-   - a theorem with mismatched hypotheses;
-   - a nearby technique;
-   - an open gap.
-5. Define stopping rules: coverage reached, repeated results, time budget, or human judgment.
-6. Risks: search loops without progress, confirmation bias, and confusing citation count with mathematical relevance.
+`question → subquestions → search branches → inspect sources → refine → synthesize`
 
-## Design question
+Each branch should record its query, selected source, relevance judgment,
+extracted claim, and unresolved question. The synthesis step must distinguish
+direct support, nearby technique, contradiction, and open gap.
 
-What new information did the latest search add, and which uncertainty remains unresolved?
+## Relation to ordinary retrieval
 
-## Suggested figure
+Basic retrieval answers one context-selection problem. Deep search adds a
+research policy: decide what to search next based on what the last search taught
+the system. It therefore composes retrieval, reflection, routing, and a stopping
+rule.
 
-`15-deep-search.svg` in the Agent design pattern illustration folder.
+## Mathematical stopping rules
+
+Stop when the requested coverage is reached, new searches repeat known results,
+the time or query budget is exhausted, or a human decides that the remaining
+uncertainty is the actual research problem.
+
+## Failure modes
+
+Search can become a loop, confirmation bias can narrow the branches too early,
+and citation count can be mistaken for mathematical relevance. Keep a search log
+and preserve negative results.
+
+## Figure
+
+![Deep search workflow](/images/agent-system/15-deep-search.svg)
+
+*Figure: a broad question is decomposed into evidence-producing search branches.*

@@ -5,20 +5,39 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Solve independent subproblems concurrently and aggregate the results.
+Some tasks contain independent branches, but a sequential agent wastes latency
+and may become anchored to its first idea.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: one task contains independent work that need not wait for the other branches.
-2. Structure: `input → fan-out → independent agents → aggregate → output`.
-3. Stable interface: the subproblem specification and aggregation format.
-4. Variable implementation: the number and type of parallel workers.
-5. Strength: lower wall-clock time and broader coverage.
-6. Risks: duplicated work, inconsistent assumptions, and difficult aggregation.
-7. State when parallelization is inappropriate: dependent steps or shared mutable state.
+`shared input → independent branches → aggregation → evaluation`
 
-## Suggested figure
+Branches may use different prompts, models, representations, or search
+directions. The aggregator compares outputs instead of merely concatenating
+them.
 
-`04-parallelization.svg` in the Agent design pattern illustration folder.
+## Mathematical example
+
+For a difficult conjecture, one branch can search for counterexamples, another
+can try a direct proof, and another can look for a reduction to a known result.
+Each branch should return assumptions, claims, evidence, and unresolved gaps.
+
+## Forces and failure modes
+
+Parallelization improves coverage and latency when work is independent, but it
+increases cost, duplicate work, and aggregation difficulty. Shared mutable state
+can create race conditions; use immutable artifacts or explicit ownership. The
+aggregator needs a quality rule, not just a majority vote.
+
+## Design test
+
+Would the branches still be correct if they were run in a different order or on
+different machines?
+
+## Figure
+
+![Parallelization pattern](/images/agent-system/04-parallelization.svg)
+
+*Figure: independent branches run concurrently and are combined by an aggregation step.*

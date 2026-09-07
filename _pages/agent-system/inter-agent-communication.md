@@ -5,25 +5,38 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Allow agents to exchange tasks, evidence, artifacts, and status without relying on an implicit shared conversation.
+Agents have different context, assumptions, tools, and lifetimes. An implicit
+shared conversation does not provide a reliable coordination contract.
 
-## Outline
+## Message contract
 
-1. Recurring problem: multiple agents may have different context, assumptions, and responsibilities.
-2. Stable message contract: sender, recipient, task identifier, artifact, provenance, status, and requested action.
-3. Separate communication from orchestration:
-   - orchestration decides who acts next;
-   - communication specifies what is transferred.
-4. Mathematical messages should carry assumptions and unresolved obligations, not only conclusions.
-5. Discuss protocols as interfaces between independent components, including agent-to-agent and tool protocols.
-6. Risks: inconsistent state, duplicated work, hidden assumptions, and message histories that grow without bound.
+`sender · recipient · task id · artifact · provenance · status · requested action`
 
-## Design question
+Mathematical messages should carry hypotheses, dependencies, uncertainty, and
+unresolved obligations, not only conclusions. Version or identify artifacts so
+that a later message cannot silently refer to changed content.
 
-Could another agent reconstruct the claim, its assumptions, and its next action from the message alone?
+## Protocol versus orchestration
 
-## Suggested figure
+Orchestration decides who acts next and when the task ends. A protocol specifies
+what is transferred between components. Tool protocols such as MCP and agent-
+to-agent protocols are useful because they make the seam explicit.
 
-`21-inter-agent-communication.svg` in the Agent design pattern illustration folder.
+## Forces and failure modes
+
+Protocols support independent deployment and replacement, but add serialization,
+schema evolution, and failure handling. Guard against inconsistent state,
+duplicated work, unbounded message histories, and messages that omit assumptions.
+
+## Design test
+
+Could a new agent reconstruct the claim, its assumptions, evidence, and next
+action from the message alone?
+
+## Figure
+
+![Inter-agent communication and protocols](/images/agent-system/21-inter-agent-communication.svg)
+
+*Figure: independent agents coordinate through explicit task, evidence, status, and error messages.*

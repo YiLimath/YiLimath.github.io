@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#23364d"/></marker><style>
+.title{font:700 34px Arial,sans-serif;fill:#17283c}.sub{font:400 18px Arial,sans-serif;fill:#5b6b7c}.h{font:700 22px Arial,sans-serif;fill:#17283c}.t{font:600 18px Arial,sans-serif;fill:#17283c}.s{font:400 16px Arial,sans-serif;fill:#405268}.box{fill:#fff;stroke:#9eb0c2;stroke-width:2}.line{stroke:#23364d;stroke-width:3;fill:none;marker-end:url(#a)}.dash{stroke:#70859a;stroke-width:2.5;stroke-dasharray:9 8;fill:none;marker-end:url(#a)}
+</style></defs>
+<rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="title">Agent System: Core Control Loop</text><text x="80" y="110" class="sub">A reusable architecture for trading determinism for flexibility</text>
+<rect x="80" y="180" width="190" height="100" rx="10" class="box"/><text x="175" y="220" text-anchor="middle" class="h">Environment</text><text x="175" y="251" text-anchor="middle" class="s">task, data, user</text>
+<rect x="365" y="180" width="250" height="100" rx="10" fill="#e6f1fb" stroke="#3985c6" stroke-width="3"/><text x="490" y="220" text-anchor="middle" class="h">Perception</text><text x="490" y="251" text-anchor="middle" class="s">observe · filter · interpret</text>
+<rect x="700" y="180" width="250" height="100" rx="10" fill="#eee8fb" stroke="#7355aa" stroke-width="3"/><text x="825" y="220" text-anchor="middle" class="h">Inference</text><text x="825" y="251" text-anchor="middle" class="s">reason · plan · decide</text>
+<rect x="1035" y="180" width="250" height="100" rx="10" fill="#e6f4f1" stroke="#219487" stroke-width="3"/><text x="1160" y="220" text-anchor="middle" class="h">Action</text><text x="1160" y="251" text-anchor="middle" class="s">use tools · interact · modify</text>
+<rect x="1370" y="180" width="170" height="100" rx="10" class="box"/><text x="1455" y="220" text-anchor="middle" class="h">Outcome</text><text x="1455" y="251" text-anchor="middle" class="s">new state</text>
+<path d="M270 230 H355" class="line"/><path d="M615 230 H690" class="line"/><path d="M950 230 H1025" class="line"/><path d="M1285 230 H1360" class="line"/>
+<path d="M1455 300 V570 H490 V300" class="dash"/>
+<rect x="365" y="570" width="250" height="100" rx="10" fill="#eef5ff" stroke="#3985c6" stroke-width="2"/><text x="490" y="610" text-anchor="middle" class="h">Memory</text><text x="490" y="641" text-anchor="middle" class="s">store · retrieve · update</text>
+<path d="M490 570 V290" class="dash"/>
+<rect x="1035" y="570" width="250" height="100" rx="10" fill="#fff4e8" stroke="#d98c2b" stroke-width="2"/><text x="1160" y="610" text-anchor="middle" class="h">Human checkpoint</text><text x="1160" y="641" text-anchor="middle" class="s">review · approve · revise</text>
+<path d="M1160 570 V290" class="dash"/>
+<rect x="80" y="760" width="1440" height="70" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><circle cx="120" cy="795" r="9" fill="#3985c6"/><text x="140" y="801" class="s">control flow</text><circle cx="330" cy="795" r="9" fill="#70859a"/><text x="350" y="801" class="s">state / feedback</text><circle cx="590" cy="795" r="9" fill="#d98c2b"/><text x="610" y="801" class="s">human intervention</text><text x="1000" y="801" class="s">Design question: what changes, and what remains stable?</text>
+</svg>

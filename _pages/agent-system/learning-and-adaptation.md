@@ -1,24 +1,38 @@
 ---
-title: "Agent Systems: Learning and Adaptation Pattern"
+title: "Agent Systems: Learning and Adaptation"
 permalink: /posts/2026/08/agent-system/learning-and-adaptation/
 tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Use evaluated experience to improve future behavior without changing the task interface.
+An agent that repeats the same failed strategy wastes resources. Yet changing
+the policy after every outcome can cause instability and erase useful behavior.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: repeated tasks reveal systematic errors or opportunities for improvement.
-2. Structure: `task traces → evaluation → policy or prompt update → future tasks`.
-3. Stable interface: task input and output contract.
-4. Variable implementation: prompt, policy, memory, routing rule, or model.
-5. Strength: the system improves from repeated use.
-6. Risks: metric gaming, feedback loops, and propagation of bad memories.
-7. Guardrail: never optimize a metric without checking what the metric omits.
+`trajectory → evaluate → extract lesson → update policy or memory → test again`
 
-## Suggested figure
+Adaptation can modify prompts, routing rules, retrieval indexes, tool selection,
+memory, or a model. Keep the learned artifact separate from the run that
+produced it and make its scope explicit.
 
-`10-learning-adaptation.svg` in the Agent design pattern illustration folder.
+## What counts as a lesson?
+
+A useful lesson identifies the task condition, the attempted action, the result,
+and the evidence that a different action is preferable. A failed proof attempt
+may suggest a new decomposition; it does not establish that the alternative is
+correct.
+
+## Forces and failure modes
+
+Adaptation improves performance on recurring tasks but risks overfitting,
+catastrophic forgetting, and self-reinforcing errors. Use held-out evaluation
+cases, rollback, versioned policies, and human approval for high-impact changes.
+
+## Figure
+
+![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)
+
+*Figure: evaluated experience changes a policy, prompt, memory, or routing decision.*

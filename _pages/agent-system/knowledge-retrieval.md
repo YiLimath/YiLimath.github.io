@@ -6,28 +6,42 @@ tags:
   - Mathematics
 ---
 
-## Intent
+## Problem
 
-Retrieve relevant knowledge from a large corpus and preserve where each item came from.
+Context is bounded, while a technical corpus is large. Internal model memory is
+not a reliable source for domain-specific or source-sensitive claims.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: a model's context is bounded and its internal knowledge is not a reliable source of current or domain-specific facts.
-2. Structure: `corpus → index → retrieve → rerank or postprocess → grounded generation`.
-3. Distinguish lexical search, semantic search, metadata filtering, graph retrieval, and hybrid retrieval.
-4. Mathematical retrieval targets:
-   - definitions and notation;
-   - lemmas and theorem statements;
-   - proof dependencies;
-   - examples and counterexamples;
-   - source locations and citation status.
-5. Trustworthy generation: every important claim should carry provenance and uncertainty.
-6. Risks: retrieval of a related but inapplicable theorem, stale notes, duplicated statements, and citation drift.
+`corpus → index → retrieve → rerank/postprocess → grounded generation`
 
-## Design question
+The retrieval pattern includes more than a vector database. Lexical search,
+semantic indexing, metadata filters, hybrid retrieval, graph traversal, and
+node postprocessing solve different parts of the problem.
 
-Can the researcher trace every important claim back to a source and verify that its hypotheses match?
+## Mathematical retrieval
 
-## Suggested figure
+Retrieve definitions and notation before theorems; retrieve theorem statements
+with hypotheses; retrieve proof dependencies, examples, counterexamples, and
+source locations. A related theorem with mismatched hypotheses is a dangerous
+retrieval success, not a correct answer.
 
-`14-knowledge-retrieval.svg` in the Agent design pattern illustration folder.
+## Provenance contract
+
+Every important generated claim should point to a source record and preserve the
+retrieval query, location, and applicability judgment. Separate source text,
+interpretation, and new inference. Do not silently merge duplicate or stale
+statements.
+
+## Forces and failure modes
+
+Retrieval improves grounding but can introduce irrelevant context, ranking bias,
+and citation drift. Evaluate recall and precision separately, cap context,
+rerank for applicability, and allow the system to say that no adequate source
+was found.
+
+## Figure
+
+![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)
+
+*Figure: retrieval selects evidence from a corpus before grounded generation.*

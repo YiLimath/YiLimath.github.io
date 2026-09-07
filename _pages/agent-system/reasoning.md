@@ -6,28 +6,40 @@ tags:
   - Mathematics
 ---
 
-## Intent
+## Problem
 
-Choose a reasoning procedure and change representation when the current one obscures the structure of the problem.
+Some tasks fail because the chosen representation hides the next obstruction,
+not because the model needs a longer response.
 
-## Outline
+## Intent and structure
 
-1. Separate reasoning traces from proof certificates.
-2. Compare methods:
-   - linear decomposition for routine derivations;
-   - multiple candidate paths for difficult search;
-   - program-aided reasoning for exact computation;
-   - abstraction before detailed calculation;
-   - analogy and example generation for discovery.
-3. Mathematical representation changes:
-   - prose → definitions and claims;
-   - geometric picture → diagram or invariant;
-   - conjecture → testable examples;
-   - proof idea → lemmas and dependencies;
-   - symbolic expression → computer algebra or formal code.
-4. Add a verifier or stopping rule to prevent unbounded reasoning.
-5. Risks: plausible but invalid steps, search-tree explosion, and confusing verbosity with rigor.
+`current representation → transform or decompose → candidate reasoning → check`
 
-## Design question
+The system may use linear decomposition, multiple candidate paths, program-aided
+reasoning, abstraction, analogy, or example generation. The output should be an
+artifact or proof obligation, not an unbounded private monologue.
 
-Which representation makes the next mathematical obstruction visible?
+## Mathematical representation changes
+
+- prose → definitions, claims, and hypotheses;
+- geometric picture → invariant, diagram, or coordinate model;
+- conjecture → examples and counterexample tests;
+- proof idea → lemmas and dependency graph;
+- symbolic expression → computer algebra or formal code.
+
+## Forces and failure modes
+
+More search can improve coverage but increases cost and distracts from the
+obstruction. Tree-style exploration can explode; linear reasoning can miss a
+branch. Use a budget, a verifier, and a criterion for changing representation.
+
+## Design test
+
+Which representation makes the next mathematical obstruction visible, and what
+independent check can reject the resulting candidate?
+
+## Figure
+
+![Reasoning and representation change](/images/agent-system/05-reflection.svg)
+
+*Figure: a candidate representation is transformed, evaluated, and revised.*

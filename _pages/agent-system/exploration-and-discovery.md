@@ -5,32 +5,40 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Search a large or uncertain space while preserving diversity, evidence, and a
-clear stopping rule.
+A single greedy line of reasoning can miss useful cases, counterexamples, or
+alternative proof strategies. Open-ended exploration can also spend resources
+without producing new information.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: a single greedy line of reasoning can miss useful cases,
-   counterexamples, or alternative proof strategies.
-2. Structure: `seed → branch or mutate → test → retain evidence → select or stop`.
-3. Mathematical uses: generate conjectures, search examples, compare proof
-   strategies, and explore neighboring definitions.
-4. Stable interface: candidate representation, test procedure, evidence record,
-   scoring rule, and termination condition.
-5. Variable implementation: breadth-first search, beam search, evolutionary
-   proposals, tree-of-thought exploration, or a human-guided notebook.
-6. Strength: makes discovery systematic without pretending that exploration is
-   proof.
-7. Risks: combinatorial explosion, repeated candidates, biased scoring, and
-   confusing plausible evidence with a theorem.
+`seed → branch or mutate → test → retain evidence → select or stop`
+
+The candidate representation, test procedure, scoring rule, and termination
+condition must be explicit. Exploration is a search procedure; it is not itself
+proof.
+
+## Mathematical uses
+
+Use the pattern to generate conjectures, search examples, compare proof
+strategies, or explore neighboring definitions. Candidate records should retain
+the assumptions tested, the computation or argument used, and the reason for
+retaining or discarding the candidate.
+
+## Forces and failure modes
+
+Breadth improves discovery but creates combinatorial growth, duplicate
+candidates, and selection bias. Beam limits, diversity criteria, counterexample
+tests, budgets, and human review keep the process meaningful.
 
 ## Design question
 
-Which candidates should be expanded, which should be discarded, and what
-evidence is sufficient to stop exploring?
+What new evidence justifies expanding the search, and what evidence justifies
+stopping it?
 
-## Suggested figure
+## Figure
 
-`22-exploration-discovery.svg` in the Agent design pattern illustration folder.
+![Exploration and discovery workflow](/images/agent-system/22-exploration-discovery.svg)
+
+*Figure: candidate branches are tested, recorded, and selected under a budget and stopping rule.*

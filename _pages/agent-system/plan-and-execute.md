@@ -5,20 +5,39 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Turn a long-horizon goal into steps with explicit checkpoints.
+Long-horizon tasks fail when the agent treats the whole objective as one
+undifferentiated generation step. Dependencies and progress become invisible.
 
-## Outline
+## Intent and structure
 
-1. Recurring problem: a long task is too large to execute as one undifferentiated action.
-2. Structure: `goal → plan → execute steps → verify → revise plan`.
-3. Stable interface: goal, step status, and verification result.
-4. Variable implementation: the planner and the executor for each step.
-5. Strength: makes dependencies and progress visible.
-6. Risks: stale plans, premature commitment, and false progress.
-7. Example: daily research scheduling from recent work to a human-adjusted daily assignment.
+`goal → plan → execute step → checkpoint → revise or continue`
 
-## Suggested figure
+The planner decomposes the goal; the executor performs one bounded step; an
+evaluator decides whether the plan remains valid. Planning and execution may use
+different models or systems.
 
-`08-plan.svg` in the Agent design pattern illustration folder.
+## Stable interface
+
+Each step needs an identifier, preconditions, expected artifact, status, and
+verification result. A plan is not evidence of progress until its artifacts
+exist and have been checked.
+
+## Mathematical example
+
+A proof search plan might separate notation, prerequisite lemmas, candidate
+constructions, and final assembly. If a prerequisite fails, revise the plan
+instead of continuing to execute obsolete steps.
+
+## Forces and failure modes
+
+Planning improves coordination and resumability, but plans can be stale,
+overly detailed, or prematurely committed. Persist checkpoints, permit
+replanning, and define a stopping rule before expensive execution.
+
+## Figure
+
+![Plan and execute pattern](/images/agent-system/08-plan.svg)
+
+*Figure: planning separates high-level decomposition from execution and revision.*

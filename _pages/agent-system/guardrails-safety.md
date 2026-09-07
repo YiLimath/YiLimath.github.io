@@ -5,27 +5,33 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Constrain inputs, outputs, context, and actions so that the system remains within its authority and quality requirements.
+An agent can receive malicious or ambiguous input, retrieve untrusted context,
+call an overpowered tool, or produce an unsafe and unjustified output. A single
+system prompt is not a sufficient control boundary.
 
-## Outline
+## Four boundaries
 
-1. Guard the input: reject irrelevant, malicious, or underspecified requests.
-2. Guard the context: preserve source boundaries, permissions, and provenance.
-3. Guard the output: validate schema, citations, hypotheses, and forbidden claims.
-4. Guard tools: use least privilege, explicit approval, sandboxing, and audit logs.
-5. Mathematical safety rules:
-   - label conjectures as conjectures;
-   - distinguish a search result from a verified theorem;
-   - preserve unresolved gaps;
-   - never silently alter a hypothesis.
-6. Explain that guardrails reduce risk but do not establish mathematical truth by themselves.
+1. **Input:** scope, validate, sanitize, and reject irrelevant requests.
+2. **Context:** enforce source boundaries, permissions, provenance, and limits.
+3. **Action:** use least privilege, approvals, sandboxing, and audit logs.
+4. **Output:** validate schema, citations, claims, uncertainty, and policy.
 
-## Design question
+## Mathematical safety
 
-What is the worst plausible failure, and which boundary can detect it before it causes harm?
+Label conjectures as conjectures; distinguish search results from verified
+theorems; preserve unresolved gaps; and never silently alter a hypothesis. A
+guardrail reduces risk but does not establish mathematical truth.
 
-## Suggested figure
+## Forces and failure modes
 
-`20-guardrails-safety.svg` in the Agent design pattern illustration folder.
+Strict controls can block useful work; weak controls can make failures invisible.
+Design an explicit escalation path, test adversarial and edge cases, and make
+blocked actions observable so that safety does not become silent failure.
+
+## Figure
+
+![Guardrails and safety](/images/agent-system/20-guardrails-safety.svg)
+
+*Figure: input, context, action, and output boundaries constrain the agent and provide escalation paths.*

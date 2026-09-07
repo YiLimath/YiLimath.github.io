@@ -5,27 +5,35 @@ tags:
   - Agent System
 ---
 
-## Intent
+## Problem
 
-Allocate models, tools, context, time, and parallel workers according to the value and difficulty of the task.
+Agent systems consume model calls, context, retrieval, tools, worker slots, and
+time. Maximizing answer quality without measuring cost and latency is not a
+production design.
 
-## Outline
+## Intent and structure
 
-1. Identify the resource triangle: quality, latency, and cost.
-2. Match the method to the task:
-   - deterministic code for exact computation;
-   - small models for classification or formatting;
-   - stronger models for difficult synthesis;
-   - asynchronous processing for long-running work.
-3. Reduce waste with caching, context pruning, batching, and early termination.
-4. Use degradation testing to understand what happens when model quality, retrieval quality, or tool availability decreases.
-5. Mathematical example: do not spend an expensive research pass on a task that can be answered by a verified local theorem lookup.
-6. Risks: optimizing cost before correctness and allowing resource constraints to hide uncertainty.
+`task difficulty and value → resource policy → method selection → measured result`
 
-## Design question
+The main trade-off is among quality, latency, and cost, with reliability and
+reproducibility as additional constraints.
 
-What is the cheapest method that preserves the required level of mathematical reliability?
+## Practical policies
 
-## Suggested figure
+- Use deterministic code for exact computation.
+- Use small models for classification, extraction, or formatting.
+- Reserve stronger reasoning or deep search for high-value uncertainty.
+- Reduce repeated work with caching, context pruning, batching, and early stop.
+- Use asynchronous execution for long-running work and checkpoints for resume.
 
-`19-resource-aware-optimization.svg` in the Agent design pattern illustration folder.
+## Degradation testing
+
+Measure what happens when model quality, retrieval quality, or tool availability
+decreases. A graceful fallback should expose lower confidence or reduced scope,
+not silently claim the original quality.
+
+## Figure
+
+![Resource-aware optimization](/images/agent-system/19-resource-aware-optimization.svg)
+
+*Figure: a policy routes work among cheap, targeted, deferred, and stopped execution paths.*
