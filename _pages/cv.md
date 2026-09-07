@@ -13,7 +13,7 @@ redirect_from:
 
 <div class="cv-hero" markdown="1">
 
-Final-year PhD candidate at Wuhan University, working in birational and complex geometry.
+Final-year PhD candidate at Wuhan University, working in birational geometry.
 
 <a class="btn cv-download" href="{{ base_path }}/files/CV.pdf">Download full CV (PDF)</a>
 
