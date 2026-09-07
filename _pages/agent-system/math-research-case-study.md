@@ -14,6 +14,7 @@ The case study describes an agent system built to support mathematical research 
 - Expose uncertainty rather than silently inventing mathematical facts.
 - Keep the researcher in control of priorities and final judgments.
 - Keep dates, task status, note links, theorem statements, and proof artifacts reproducible.
+- Make every stage evaluable, recoverable, and bounded by a clear termination condition.
 
 ## Workflows
 
@@ -21,19 +22,26 @@ The case study describes an agent system built to support mathematical research 
 
 - **Goal:** convert recent work and priorities into a manageable daily assignment.
 - **Patterns:** plan-and-execute, memory management, human-in-the-loop.
-- **Pipeline:** recent work → candidate tasks → prioritized plan → human adjustment → daily sheet.
+- **Pipeline:** recent work → candidate tasks → prioritized plan → human adjustment → daily sheet → end-of-day evaluation.
 
 ### Paper encoding and note construction
 
 - **Goal:** turn a paper into structured notes without losing theorem statements or raw proofs.
-- **Patterns:** prompt chaining, tool use, memory management, reflection.
-- **Pipeline:** paper → metadata → outline → theorem notes → proof notes → verification and revision.
+- **Patterns:** prompt chaining, structured output, tool use, memory management, reflection, exception recovery.
+- **Pipeline:** paper → metadata → outline → theorem notes → proof notes → verification and revision, with checkpoints after each artifact.
 
 ### Mathematical proof checking
 
 - **Goal:** check a written argument against definitions, hypotheses, and known results.
-- **Patterns:** router, tool use, reflection, human-in-the-loop.
-- **Pipeline:** proof claim → identify dependencies → retrieve notes → check steps → report gaps → human decision.
+- **Patterns:** router, knowledge retrieval, tool use, reasoning, reflection, evaluation, human-in-the-loop.
+- **Pipeline:** proof claim → identify dependencies → retrieve notes → check steps → classify gaps → report evidence → human decision.
+
+### Research-loop controls
+
+- **Goal monitoring:** state the current mathematical question and the condition for stopping or escalating.
+- **Evaluation:** test retrieval quality, citation fidelity, proof-step validity, and usefulness of the final note.
+- **Guardrails:** preserve quotations as source artifacts, separate conjecture from theorem, and require provenance for nontrivial claims.
+- **Resource awareness:** use cheap retrieval and local computation before expensive broad search or long multi-agent deliberation.
 
 ## Redesign log
 
@@ -51,4 +59,5 @@ The vault is not merely a context window. It is an external memory and source of
 
 ## Suggested figure
 
-`12-math-research-case-study.svg` in the Agent design pattern illustration folder.
+`12-math-research-case-study.svg` gives the system overview; `23-research-loop.svg`
+shows the research-specific loop in more detail.
