@@ -6,51 +6,43 @@ tags:
   - Agent System
 ---
 
-The aim of this note is to give a brief introduction to the design patterns used in building agent systems. We divide the note into two parts: (1) the common design patterns for agent systems, and (2) a case study of the agent system I built for my own mathematical research.
+The aim of this note is to give a brief introduction to the design patterns used in building agent systems. The material is divided into independent pages so that each pattern can be read on its own and later combined with the others.
+
 > An agent system is a way of trading determinism for flexibility. The design patterns are the tools for buying back as much determinism as the task requires.
 
----
+The organizing question is:
 
-## Part I. Common Design Patterns
+> Where does the system need flexibility, and where does it need a stable, testable interface?
 
-I.0 Terminology and commonly used building blocks *(in preparation)*
+Each page uses the same template: recurring problem, intent, structure, stable interface, variable implementation, forces, trade-offs, failure modes, and example.
 
-I.1 Perception pattern *(in preparation)*
+## Part I. Foundations
 
-I.2 Inference pattern *(in preparation)*
+1. [Terminology and building blocks](/posts/2026/08/agent-system/foundations/)
+2. [The core agent loop](/posts/2026/08/agent-system/core-loop/)
 
-I.3 Action pattern *(in preparation)*
+## Part II. Control-flow patterns
 
-[I.4 Cooperation pattern]
+3. [Prompt chaining](/posts/2026/08/agent-system/prompt-chaining/)
+4. [Router](/posts/2026/08/agent-system/router/)
+5. [Parallelization](/posts/2026/08/agent-system/parallelization/)
+6. [Plan and execute](/posts/2026/08/agent-system/plan-and-execute/)
 
-[I.1 Prompt chaining pattern]
+## Part III. Reliability and boundary patterns
 
-[I.2 Router pattern]
+7. [Reflection](/posts/2026/08/agent-system/reflection/)
+8. [Tool use](/posts/2026/08/agent-system/tool-use/)
+9. [Memory management](/posts/2026/08/agent-system/memory-management/)
+10. [Human in the loop](/posts/2026/08/agent-system/human-in-the-loop/)
 
-[I.3 Parallelization pattern]
+## Part IV. Cooperation and adaptation
 
-[I.4 Reflection pattern] 
+11. [Multiple-agent cooperation](/posts/2026/08/agent-system/multiple-agent-cooperation/)
+12. [Learning and adaptation](/posts/2026/08/agent-system/learning-and-adaptation/)
+13. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
 
-[I.5 Tool use pattern]
+## Part V. Case study
 
-[I.6 Multiple agent cooperation pattern]
+14. [A mathematical research agent system](/posts/2026/08/agent-system/math-research-case-study/)
 
-[I.7 Plan pattern]
-
-[I.8 Memory management pattern]
-
-[I.9 Learning and adapdation pattern]
-
-[I.10 Human in the loop pattern]
-
-
-
----
-
-## Part II. Agent Systems in Examples
-
-In the second part of this note I case study the design of a concrete agent system: the one I built to support my own work in birational geometry. It runs over an Obsidian vault of roughly 11,600 mathematical notes, and it exists to do three things — keep my daily research schedule, turn papers into structured notes, and check mathematics I have written.
-
-I will describe each component and identify which pattern from Part I it instantiates, including the places where I chose a pattern badly and had to change it.
-
-
+The case study describes a system that supports daily research scheduling, paper encoding, and mathematical proof checking over an Obsidian vault. It identifies which pattern each component instantiates, including the places where a design had to be revised.
