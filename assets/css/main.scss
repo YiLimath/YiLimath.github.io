@@ -49,7 +49,8 @@
 .agent-system-page,
 .agent-system-hub {
   .page__inner-wrap {
-    max-width: 1360px;
+    width: 100%;
+    max-width: none;
     margin-right: auto;
     margin-left: auto;
   }
@@ -125,7 +126,7 @@
   }
 
   .page__title {
-    max-width: 62rem;
+    max-width: none;
     line-height: 1.15;
   }
 }
@@ -133,11 +134,15 @@
 /* Give the course a focused, full-width reading canvas without changing the
  * site's normal two-column layout on other pages. */
 #main.reading-mode {
-  max-width: 1440px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
 
   @include breakpoint($large) {
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 3vw;
+    padding-left: 3vw;
   }
 
   > .page.agent-system-page,
@@ -148,6 +153,10 @@
       margin-right: 0;
       margin-left: 0;
     }
+  }
+
+  .page__content img[src*="/images/agent-system/"] {
+    max-width: none;
   }
 }
 
