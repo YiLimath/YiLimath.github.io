@@ -49,15 +49,15 @@
 .agent-system-page,
 .agent-system-hub {
   .page__inner-wrap {
-    max-width: 1180px;
+    max-width: 1360px;
     margin-right: auto;
     margin-left: auto;
   }
 
   .page__content {
     color: #263746;
-    font-size: 1.08rem;
-    line-height: 1.75;
+    font-size: 1.17rem;
+    line-height: 1.8;
 
     > p,
     > ul,
@@ -73,7 +73,7 @@
 
     > h2 {
       margin-top: 2.6em;
-      font-size: 1.45em;
+      font-size: 1.52em;
       line-height: 1.25;
     }
 
@@ -101,7 +101,7 @@
     img[src*="/images/agent-system/"] {
       display: block;
       width: 100%;
-      max-width: 1080px;
+      max-width: 1240px;
       height: auto;
       margin-right: auto;
       margin-left: auto;
@@ -120,7 +120,7 @@
     }
 
     code {
-      font-size: 0.88em;
+      font-size: 0.92em;
     }
   }
 
@@ -134,8 +134,8 @@
   .agent-system-page,
   .agent-system-hub {
     .page__content {
-      font-size: 1rem;
-      line-height: 1.68;
+      font-size: 1.05rem;
+      line-height: 1.72;
 
       > p:has(> img[src*="/images/agent-system/"]) {
         margin: 1.7rem -0.25rem 2.1rem;
