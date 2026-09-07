@@ -26,7 +26,7 @@ For detailed information, see my reading notes:
 
 [7. Canonical Bundle Formula for Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
 
-[8. o-minimality Approach to the b-semiampleness Conjecture]()
+8. o-minimality Approach to the b-semiampleness Conjecture *(in preparation)*
 
 
 ----
@@ -50,4 +50,4 @@ For detailed information, see my reading notes:
 ---
 ## Part IV. Applications of Canonical Bundle Formulas and Subadjunction
 
-[1. Applications of the Canonical Bundle Formula to Finite Generation Problems]()
+1. Applications of the Canonical Bundle Formula to Finite Generation Problems *(in preparation)*

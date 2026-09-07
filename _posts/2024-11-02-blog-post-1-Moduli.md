@@ -44,7 +44,7 @@ In this part of the notes, we focus on the properties of moduli spaces. The guid
 ----
 ## Part C. Singularities of Moduli
 
-[Note-1: Singularities on Moduli Spaces]()
+Note-1: Singularities on Moduli Spaces *(in preparation)*
 
 
 
@@ -55,26 +55,26 @@ In this part of the notes, we focus on the properties of moduli spaces. The guid
 
 [2. Moduli Space of Smooth Curves and Stable Curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf) [update 8.24]
 
-[3. Moduli Spaces for Surfaces of General Type]()
+3. Moduli Spaces for Surfaces of General Type *(in preparation)*
 
-[4. Moduli Spaces for Surfaces in $\mathbb{P}^3$]()
+4. Moduli Spaces for Surfaces in $\mathbb{P}^3$ *(in preparation)*
 
-[5. Semi-stable Reduction]()
+5. Semi-stable Reduction *(in preparation)*
 
 ---
 ## Part E. Hodge Theory and Moduli
 
-[0. Gauss–Manin Connection, Griffiths Transversality, and Griffiths Curvature Formula]()
+0. Gauss–Manin Connection, Griffiths Transversality, and Griffiths Curvature Formula *(in preparation)*
 
-[1. Local Torelli and Global Torelli]()
+1. Local Torelli and Global Torelli *(in preparation)*
 
-[2. Betti Moduli, de Rham Moduli, and Dolbeault Moduli]()
+2. Betti Moduli, de Rham Moduli, and Dolbeault Moduli *(in preparation)*
 
 [3. Moduli Space of K3 Surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf)
 
-[4. Moduli Space of Abelian Varieties (ppav)]()
+4. Moduli Space of Abelian Varieties (ppav) *(in preparation)*
 
-[5. Calabi–Yau Moduli and Hyperbolicity]()
+5. Calabi–Yau Moduli and Hyperbolicity *(in preparation)*
 
 
 
@@ -87,28 +87,28 @@ In this part of the notes, we focus on the properties of moduli spaces. The guid
 ## Part G. Moduli Techniques in Birational Geometry and Deformation Problems
 
 
-[1. Hilbert Scheme Techniques in Birational Geometry]()
+1. Hilbert Scheme Techniques in Birational Geometry *(in preparation)*
 
-[2. Applications of Chow Varieties in Boundedness Problems]()
+2. Applications of Chow Varieties in Boundedness Problems *(in preparation)*
 
-[3. Applications of Douady Space/Barlet Chow Cycle Space in Analytic Deformation Problems]()
+3. Applications of Douady Space/Barlet Chow Cycle Space in Analytic Deformation Problems *(in preparation)*
 
 
 
 ----
 ## Part H. KSBA Moduli
 
-[1. Relative Canonical Sheaf, Kollár's Package Theorem]()
+1. Relative Canonical Sheaf, Kollár's Package Theorem *(in preparation)*
 
-[2. Stable Families, Locally Stable Families, KSBA Morphisms]()
+2. Stable Families, Locally Stable Families, KSBA Morphisms *(in preparation)*
 
-[3. Base Change Properties, Flatness Criteria, Kollár's Condition]()
+3. Base Change Properties, Flatness Criteria, Kollár's Condition *(in preparation)*
 
-[4. Du Bois Singularities and CM Condition]()
+4. Du Bois Singularities and CM Condition *(in preparation)*
 
-[5. Families of Divisors, Flatness Conditions, Mumford Divisors]()
+5. Families of Divisors, Flatness Conditions, Mumford Divisors *(in preparation)*
 
-[6. Moduli of Stable Varieties]()
+6. Moduli of Stable Varieties *(in preparation)*
 
 ---
 ## Part I. Theory of K-moduli of Fano Varieties
@@ -131,8 +131,8 @@ In this part, we discuss further aspects of moduli of Abelian varieties and K3 s
 ## Part J. Geometric Langlands and Mirror Symmetry
 
 
-[1. A Brief Introduction to D-modules]()
+1. A Brief Introduction to D-modules *(in preparation)*
 
 [2. A Brief Introduction to Fourier–Mukai Transform](https://yilimath.github.io/files/Moduli/FourierMukai.pdf)
 
-[3. A Brief Introduction to Geometric Langlands]()
+3. A Brief Introduction to Geometric Langlands *(in preparation)*

@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Li Yi's Homepage"
+title                    : "Yi Li"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Yi Li"
+description              : &description "Yi Li — PhD candidate at Wuhan University working in birational and complex geometry, on the Kähler minimal model program and its applications to deformation problems."
 url                      : https://YiLimath.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "YiLimath/YiLimath.github.io"
@@ -22,9 +22,9 @@ repository               : "YiLimath/YiLimath.github.io"
 author:
   # Biographic information
   avatar           : "234.png"
-  name             : "Li Yi"
-  pronouns         : # example: "she/her"  
-  bio              : "Third-year PhD student in birational geometry"
+  name             : "Yi Li"
+  pronouns         : # example: "she/her"
+  bio              : "PhD candidate in birational and complex geometry"
   employer         : "Wuhan University"
   uri              : # URL
   email            : "yilimath2024@gmail.com"

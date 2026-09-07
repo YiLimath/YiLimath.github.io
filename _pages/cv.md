@@ -13,7 +13,7 @@ redirect_from:
 
 <div class="cv-hero" markdown="1">
 
-Third-year PhD student at Wuhan University, working in birational geometry and moduli theory.
+Final-year PhD candidate at Wuhan University, working in birational and complex geometry.
 
 <a class="btn cv-download" href="{{ base_path }}/files/CV.pdf">Download full CV (PDF)</a>
 
@@ -25,16 +25,24 @@ Third-year PhD student at Wuhan University, working in birational geometry and m
 
 <div class="cv-timeline">
   <div class="cv-timeline__item">
-    <div class="cv-timeline__year">2023–present</div>
+    <div class="cv-timeline__year">2023–2026</div>
     <div class="cv-timeline__body">
-      <strong>Ph.D. in Birational Geometry</strong><br>
-      Wuhan University
+      <strong>Ph.D. in Pure Mathematics</strong><br>
+      Wuhan University. Advisors: Sheng Rao and Christopher D. Hacon.<br>
+      Expected December 2026.
     </div>
   </div>
   <div class="cv-timeline__item">
-    <div class="cv-timeline__year">2015</div>
+    <div class="cv-timeline__year">2019–2022</div>
     <div class="cv-timeline__body">
-      <strong>Bachelor's and Master's degrees in Artificial Intelligence and Automation</strong><br>
+      <strong>M.Eng. in Artificial Intelligence and Automation</strong><br>
+      Huazhong University of Science and Technology
+    </div>
+  </div>
+  <div class="cv-timeline__item">
+    <div class="cv-timeline__year">2015–2019</div>
+    <div class="cv-timeline__body">
+      <strong>B.Eng. in Artificial Intelligence and Automation</strong><br>
       Science and Engineering Interdisciplinary Innovation Experimental Class, Huazhong University of Science and Technology
     </div>
   </div>
@@ -93,10 +101,6 @@ Third-year PhD student at Wuhan University, working in birational geometry and m
 ## Honors, Grants and Awards
 
 <div class="cv-timeline">
-  <div class="cv-timeline__item">
-    <div class="cv-timeline__year">2025</div>
-    <div class="cv-timeline__body">Third Prize, Voice of Luojia Teaching Competition, Wuhan University</div>
-  </div>
   <div class="cv-timeline__item">
     <div class="cv-timeline__year">2022</div>
     <div class="cv-timeline__body">First Prize in the Qualifying Examination for Riemannian Geometry, Huazhong University of Science and Technology</div>

@@ -1,24 +1,17 @@
 ---
-title: "Birational Geometry 2026 Spring"
+title: "Birational Geometry, Spring 2026"
 collection: teaching
 type: "Lecturer"
-venue: "BiliBili"
-date: 2025-02-17
-location: "WuHan, China"
+venue: "Online lecture course (Bilibili)"
+date: 2026-01-01
+location: "Wuhan, China"
 permalink: /teaching/2026-Spring-Birational-Geometry
 ---
 
-I will teach the Birational Geometry on Bilibili.
+A public lecture course on birational geometry, recorded and released online.
 
-
-Here is the outline of this course:
-
-[Lec 1. Q-divisors and R-divisors](https://www.bilibili.com/video/BV1zjcyzVE6u/?share_source=copy_web&vd_source=b43fdb8cb2aab37f4e68e02387d9512c)
-
-[Lec 2. Rational maps and birational maps](https://www.bilibili.com/video/BV1v5wyzBEwG/?share_source=copy_web&vd_source=b43fdb8cb2aab37f4e68e02387d9512c)
-
-[Lec 3. Linear system and Iitaka-Kodaira dimension]()
-
-[Lec 4. Canonical Divisors]()
-
-[Lec 5. Cone of curves and cone of divisors]()
+1. [Divisors: $\mathbb{Q}$-divisors and $\mathbb{R}$-divisors](https://www.bilibili.com/video/BV1zjcyzVE6u/)
+2. [Rational maps and birational maps](https://www.bilibili.com/video/BV1v5wyzBEwG/)
+3. Linear systems and the Iitaka–Kodaira dimension
+4. Canonical divisors
+5. Cones of curves and cones of divisors

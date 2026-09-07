@@ -18,7 +18,7 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 > We try to construct fibrations for which the fibers are simpler than the total space, reducing in principle the study to phenomena on the base.
 
-[Note-I.0 The General Machine for fibration]()
+Note-I.0 The General Machine for fibration *(in preparation)*
 
 [Note-I.1 Iitaka Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/Iitaka.pdf) [upd 7.5]
 
@@ -26,30 +26,30 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 [Note-I.3 MRC Fibrations with Applications](https://yilimath.github.io/files/Birational/Fibration/MRC.pdf) [upd 10.19]
 
-[Note-I.4 Nef Reduction with Applications]()
+Note-I.4 Nef Reduction with Applications *(in preparation)*
 
-[Note-I.5 Algebraic Reduction with Applications]()
+Note-I.5 Algebraic Reduction with Applications *(in preparation)*
 
 
 ----
 ## Part II. Fibrations from the Minimal Model Program
 
 
-[Note-II.1 Fano type morphism as Outputs of the MMP]()
+Note-II.1 Fano type morphism as Outputs of the MMP *(in preparation)*
 
-[Note-II.2 Fano Fibrations (Mori Fiber Spaces)]()
+Note-II.2 Fano Fibrations (Mori Fiber Spaces) *(in preparation)*
 
-[Note-II.3 Calabi–Yau Fibrations]()
+Note-II.3 Calabi–Yau Fibrations *(in preparation)*
 
-[Note-II.4 Canonical bundle formulas]()
+Note-II.4 Canonical bundle formulas *(in preparation)*
 
 
 ---
 ## Part III. Foliation in Algebraic Geometry
 
-[Note-IV.1 Campana–Păun's Algebraic Criterion for Foliations and Cao–Păun's Generalization]()
+Note-IV.1 Campana–Păun's Algebraic Criterion for Foliations and Cao–Păun's Generalization *(in preparation)*
 
-[Note-IV.2 Algebraically Integrable Foliations: From Foliations to Fibrations]()
+Note-IV.2 Algebraically Integrable Foliations: From Foliations to Fibrations *(in preparation)*
 
 
 ---
@@ -57,15 +57,15 @@ This part of the notes is based on [Fibrations in Algebraic Geometry and Applica
 
 In this part of the notes, I summarize recent developments on the Beauville–Bogomolov decomposition for singular (klt) Calabi–Yau varieties, in both the projective and the Kähler settings. The major reference of my note is [Beauville-Bogomolov decomposition for klt varieties](https://arxiv.org/abs/2509.10053) by Henri Guenancia.
 
-[Note-V.1 Local Triviality of the Albanese Fibration]()
+Note-V.1 Local Triviality of the Albanese Fibration *(in preparation)*
 
-[Note-V.2 Splitting of the Tangent Sheaf]()
+Note-V.2 Splitting of the Tangent Sheaf *(in preparation)*
 
-[Note-V.3 Proof of the Beauville–Bogomolov–Yau Decomposition (Projective klt Pair)]()
+Note-V.3 Proof of the Beauville–Bogomolov–Yau Decomposition (Projective klt Pair) *(in preparation)*
 
-[Note-V.4 Algebraic Approximation for Kähler Calabi–Yau Manifolds]()
+Note-V.4 Algebraic Approximation for Kähler Calabi–Yau Manifolds *(in preparation)*
 
-[Note-V.5 Proof of the Beauville–Bogomolov–Yau Decomposition (Kähler klt Pair)]()
+Note-V.5 Proof of the Beauville–Bogomolov–Yau Decomposition (Kähler klt Pair) *(in preparation)*
 
 
 ---
@@ -81,11 +81,11 @@ In this part of the notes, I summarize classification results for projective/Kä
 
 [Note-VI.3 Birational Geometry of the MRC/Albanese Fibration](https://yilimath.github.io/files/Birational/Fibration/BirationalMRC.pdf)
 
-[Note-VI.4 Criteria for Fibrations to Be Locally Trivial]()
+Note-VI.4 Criteria for Fibrations to Be Locally Trivial *(in preparation)*
 
 [Note-VI.5 Splitting of the Tangent Sheaf](https://yilimath.github.io/files/Birational/Fibration/SplitTangent2.pdf)
 
-[Note-VI.6 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle]()
+Note-VI.6 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle *(in preparation)*
 
 [Note-VI.7 Structure Theorem for klt Kähler Varieties with Nef Anti-canonical Bundle](https://yilimath.github.io/files/Birational/Fibration/StructureNefAntiCanonical.pdf)
 

@@ -17,28 +17,28 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 ## Part I. Loci in Birational Geometry
 
 
-[Note-1: Exceptional Locus and indetermancy locus]()
+Note-1: Exceptional Locus and indetermancy locus *(in preparation)*
 
-[Note-2: A brief introduction to Zariski Decomposition]()
+Note-2: A brief introduction to Zariski Decomposition *(in preparation)*
 
-[Note-3: Base Locus, Stable Base Locus, Diminished Base Locus, and Augmented Base Locus]()
+Note-3: Base Locus, Stable Base Locus, Diminished Base Locus, and Augmented Base Locus *(in preparation)*
 
-[Note-4: KLT, LC singularities and Geometry of the Non-klt Locus]()
+Note-4: KLT, LC singularities and Geometry of the Non-klt Locus *(in preparation)*
 
-[Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus]()
+Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus *(in preparation)*
 
 
 ---
 ## Part II. Classical MMP Theory
 
 
-[Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs]()
+Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs *(in preparation)*
 
 [Note-II.2 Positivity in Families and Base Point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
 
-[Note-II.3 Cone and contraction theorems]()
+Note-II.3 Cone and contraction theorems *(in preparation)*
 
-[Note-II.4 Mori's bend and break]()
+Note-II.4 Mori's bend and break *(in preparation)*
 
 
 
@@ -66,15 +66,15 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-III.2: Hacon–Xu and Birkar's Proof of the Existence of lc Flips (with Generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
 
-[Note-III.3: Existence of Minimal Models (BCHM C and Related Results)]()
+Note-III.3: Existence of Minimal Models (BCHM C and Related Results) *(in preparation)*
 
-[Note-III.4: Existence of Good Minimal Models (DHP and Related Results)]()
+Note-III.4: Existence of Good Minimal Models (DHP and Related Results) *(in preparation)*
 
-[Note-III.5: Basic Properties of Minimal Models, Good Minimal Models, and Canonical Models]()
+Note-III.5: Basic Properties of Minimal Models, Good Minimal Models, and Canonical Models *(in preparation)*
 
-[Note-III.6: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Birational Modifications]()
+Note-III.6: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Birational Modifications *(in preparation)*
 
-[Note-III.7: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Perturbation]()
+Note-III.7: Behavior of Minimal Models, Good Minimal Models, and Canonical Models under Perturbation *(in preparation)*
 
 ----
 ## Part V. Minimal Models, Good Minimal Models in Families
@@ -84,9 +84,9 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 [Note-IV.2: Existence of Good Minimal Models on the Closure](https://yilimath.github.io/files/Birational/BCHM/goodmmClosure.pdf)
 
-[Note-IV.4: Relative MMP, Fiberwise MMP, and Absolute MMP]()
+Note-IV.4: Relative MMP, Fiberwise MMP, and Absolute MMP *(in preparation)*
 
-[Note-IV.5: Restriction of the MMP to the Central Fiber]()
+Note-IV.5: Restriction of the MMP to the Central Fiber *(in preparation)*
 
 [Note-IV.6: Extension of the MMP from the Central Fiber](https://yilimath.github.io/files/Birational/BCHM/ExtensionMMP.pdf) [update 12.3]
 
@@ -95,9 +95,9 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ## Part VI. Finiteness of Minimal Models and Termination Problems 
 
-[Note-V.1: Polyhedral Decomposition Results]()
+Note-V.1: Polyhedral Decomposition Results *(in preparation)*
 
-[Note-V.2: MMP with Scaling]()
+Note-V.2: MMP with Scaling *(in preparation)*
 
 [Note-V.3: Special Termination](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
@@ -108,40 +108,40 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 
 ## Part VII. Finite Generation Problems
 
-[Finite Generation Note-VI.1: Finite Generation of the Canonical Ring and Cox Ring]()
+Finite Generation Note-VI.1: Finite Generation of the Canonical Ring and Cox Ring *(in preparation)*
 
-[Finite Generation Note-VI.2: Demailly–Hacon–Păun's Analytic Proof of Finite Generation]()
+Finite Generation Note-VI.2: Demailly–Hacon–Păun's Analytic Proof of Finite Generation *(in preparation)*
 
-[Finite Generation Note-VI.3: Finite Generation and Abundance]()
+Finite Generation Note-VI.3: Finite Generation and Abundance *(in preparation)*
 
 
 ---
 
 ## Part VIII. Partial Modifications
 
-[Note-1: Log Resolution and Discrepancy]()
+Note-1: Log Resolution and Discrepancy *(in preparation)*
 
-[Note-2: Crepant Extraction with Applications]()
+Note-2: Crepant Extraction with Applications *(in preparation)*
  
 [Note-3: dlt Modification with Applications](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
 
 [Note-4: Canonical and Terminal Modifications, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
 
-[Note-5: Semi-log Modification]()
+Note-5: Semi-log Modification *(in preparation)*
 
 
 ---
 ## Part VIII. Analytic bchm
 
-[Note-1: Cone theorem for analytic varieties]()
+Note-1: Cone theorem for analytic varieties *(in preparation)*
 
-[Note-2: From algebraic bchm to analytic bchm]()
+Note-2: From algebraic bchm to analytic bchm *(in preparation)*
 
 
 ---
 ## Part X. Non-vanishing and Abundance
 
-[Note-X.1: Miyaoka's Proof of Abundance for Threefolds]()
+Note-X.1: Miyaoka's Proof of Abundance for Threefolds *(in preparation)*
 
 
 ---
