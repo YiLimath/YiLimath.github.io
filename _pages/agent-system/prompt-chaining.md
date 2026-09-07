@@ -3,6 +3,7 @@ title: "Agent Systems: Prompt Chaining Pattern"
 permalink: /posts/2026/08/agent-system/prompt-chaining/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

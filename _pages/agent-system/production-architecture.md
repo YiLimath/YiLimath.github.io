@@ -3,6 +3,7 @@ title: "Agent Systems: Production Architecture"
 permalink: /posts/2026/08/agent-system/production-architecture/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

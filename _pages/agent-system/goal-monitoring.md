@@ -3,6 +3,7 @@ title: "Agent Systems: Goal Setting, Prioritization, and Termination"
 permalink: /posts/2026/08/agent-system/goal-monitoring/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

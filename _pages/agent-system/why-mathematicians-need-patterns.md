@@ -4,6 +4,7 @@ permalink: /posts/2026/08/agent-system/why-mathematicians-need-patterns/
 tags:
   - Agent System
   - Mathematics
+classes: agent-system-page
 ---
 
 Mathematical research is a composition of activities: reading, retrieving,

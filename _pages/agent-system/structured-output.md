@@ -3,6 +3,7 @@ title: "Agent Systems: Structured Output and Dependency Injection"
 permalink: /posts/2026/08/agent-system/structured-output/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

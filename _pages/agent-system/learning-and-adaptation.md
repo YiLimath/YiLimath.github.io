@@ -3,6 +3,7 @@ title: "Agent Systems: Learning and Adaptation"
 permalink: /posts/2026/08/agent-system/learning-and-adaptation/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

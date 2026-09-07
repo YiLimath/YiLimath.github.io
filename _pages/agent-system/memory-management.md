@@ -3,6 +3,7 @@ title: "Agent Systems: Memory Management Pattern"
 permalink: /posts/2026/08/agent-system/memory-management/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

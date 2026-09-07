@@ -3,6 +3,7 @@ title: "Agent Systems: Plan-and-Execute Pattern"
 permalink: /posts/2026/08/agent-system/plan-and-execute/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

@@ -3,6 +3,7 @@ title: "Agent Systems: Terminology and Atomic Building Blocks"
 permalink: /posts/2026/08/agent-system/foundations/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 This page fixes the vocabulary used by the rest of the course. The books use

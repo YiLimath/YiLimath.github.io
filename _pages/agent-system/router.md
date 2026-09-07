@@ -3,6 +3,7 @@ title: "Agent Systems: Router Pattern"
 permalink: /posts/2026/08/agent-system/router/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

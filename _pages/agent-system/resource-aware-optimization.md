@@ -3,6 +3,7 @@ title: "Agent Systems: Resource-Aware Optimization"
 permalink: /posts/2026/08/agent-system/resource-aware-optimization/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

@@ -39,3 +39,113 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/*
+ * Agent design-pattern course pages
+ *
+ * The diagrams are deliberately wider than the reading column, while the
+ * prose remains narrow enough for comfortable line lengths.
+ */
+.agent-system-page,
+.agent-system-hub {
+  .page__inner-wrap {
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .page__content {
+    color: #263746;
+    font-size: 1.08rem;
+    line-height: 1.75;
+
+    > p,
+    > ul,
+    > ol,
+    > dl,
+    > blockquote,
+    > h2,
+    > h3,
+    > h4,
+    > pre {
+      max-width: 48rem;
+    }
+
+    > h2 {
+      margin-top: 2.6em;
+      font-size: 1.45em;
+      line-height: 1.25;
+    }
+
+    > h3 {
+      margin-top: 2em;
+      font-size: 1.15em;
+      line-height: 1.3;
+    }
+
+    > p:has(> img[src*="/images/agent-system/"]) {
+      max-width: none;
+      margin: 2.4rem 0 2.6rem;
+    }
+
+    > p:has(> img[src*="/images/agent-system/"]) + p {
+      max-width: 62rem;
+      margin: -1.7rem auto 2.8rem;
+      color: #667789;
+      font-family: $caption-font-family;
+      font-size: 0.88em;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    img[src*="/images/agent-system/"] {
+      display: block;
+      width: 100%;
+      max-width: 1080px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0.45rem;
+      background: #fff;
+      border: 1px solid #d8e0e8;
+      border-radius: 6px;
+      box-shadow: 0 3px 14px rgba(35, 54, 77, 0.08);
+    }
+
+    table {
+      display: block;
+      max-width: 62rem;
+      overflow-x: auto;
+      font-size: 0.94em;
+    }
+
+    code {
+      font-size: 0.88em;
+    }
+  }
+
+  .page__title {
+    max-width: 62rem;
+    line-height: 1.15;
+  }
+}
+
+@media (max-width: 768px) {
+  .agent-system-page,
+  .agent-system-hub {
+    .page__content {
+      font-size: 1rem;
+      line-height: 1.68;
+
+      > p:has(> img[src*="/images/agent-system/"]) {
+        margin: 1.7rem -0.25rem 2.1rem;
+      }
+
+      img[src*="/images/agent-system/"] {
+        width: 100%;
+        padding: 0.2rem;
+        border-radius: 4px;
+      }
+    }
+  }
+}

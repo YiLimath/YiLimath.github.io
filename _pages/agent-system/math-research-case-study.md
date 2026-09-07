@@ -4,6 +4,7 @@ permalink: /posts/2026/08/agent-system/math-research-case-study/
 tags:
   - Agent System
   - Mathematics
+classes: agent-system-page
 ---
 
 This case study uses two real codebases. **Rethlas** is the smaller proof-search

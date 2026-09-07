@@ -3,6 +3,7 @@ title: "Agent Systems: The Core Loop"
 permalink: /posts/2026/08/agent-system/core-loop/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 The core loop is the common denominator behind workflow agents and autonomous

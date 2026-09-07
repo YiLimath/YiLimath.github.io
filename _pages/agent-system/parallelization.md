@@ -3,6 +3,7 @@ title: "Agent Systems: Parallelization Pattern"
 permalink: /posts/2026/08/agent-system/parallelization/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

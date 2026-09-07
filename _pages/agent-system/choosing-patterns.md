@@ -3,6 +3,7 @@ title: "Agent Systems: Choosing and Composing Patterns"
 permalink: /posts/2026/08/agent-system/choosing-patterns/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Start with the task shape

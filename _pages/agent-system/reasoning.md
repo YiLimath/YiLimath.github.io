@@ -4,6 +4,7 @@ permalink: /posts/2026/08/agent-system/reasoning/
 tags:
   - Agent System
   - Mathematics
+classes: agent-system-page
 ---
 
 ## Problem

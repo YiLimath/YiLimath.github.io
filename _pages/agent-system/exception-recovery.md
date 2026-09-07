@@ -3,6 +3,7 @@ title: "Agent Systems: Exception Handling and Recovery"
 permalink: /posts/2026/08/agent-system/exception-recovery/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

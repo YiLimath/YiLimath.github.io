@@ -3,6 +3,7 @@ title: "Agent Systems: Tool Use and Code Execution"
 permalink: /posts/2026/08/agent-system/tool-use/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

@@ -3,6 +3,7 @@ title: "Agent Systems: Guardrails and Safety"
 permalink: /posts/2026/08/agent-system/guardrails-safety/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

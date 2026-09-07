@@ -3,6 +3,7 @@ title: "Agent Systems: Inter-Agent Communication and Protocols"
 permalink: /posts/2026/08/agent-system/inter-agent-communication/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

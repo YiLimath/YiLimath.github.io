@@ -3,6 +3,7 @@ title: "Agent Systems: Reference Books and the Pattern Taxonomy"
 permalink: /posts/2026/08/agent-system/reference-map/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 This course is organized from four complementary books in the Life and Readings

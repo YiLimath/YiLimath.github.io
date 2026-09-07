@@ -3,6 +3,7 @@ title: "Agent Systems: Multiple-Agent Cooperation"
 permalink: /posts/2026/08/agent-system/multiple-agent-cooperation/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

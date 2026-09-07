@@ -3,6 +3,7 @@ title: "Agent Systems: Exploration and Discovery"
 permalink: /posts/2026/08/agent-system/exploration-and-discovery/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

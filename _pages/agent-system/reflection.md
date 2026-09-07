@@ -3,6 +3,7 @@ title: "Agent Systems: Reflection Pattern"
 permalink: /posts/2026/08/agent-system/reflection/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem

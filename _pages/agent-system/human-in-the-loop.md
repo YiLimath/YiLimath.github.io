@@ -3,6 +3,7 @@ title: "Agent Systems: Human-in-the-Loop Pattern"
 permalink: /posts/2026/08/agent-system/human-in-the-loop/
 tags:
   - Agent System
+classes: agent-system-page
 ---
 
 ## Problem
