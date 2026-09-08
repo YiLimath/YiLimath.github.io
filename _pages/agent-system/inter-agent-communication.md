@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Inter-agent communication and protocols](/images/agent-system/21-inter-agent-communication.svg)
+
+*Figure: independent agents coordinate through explicit task, evidence, status, and error messages.*
+
 ## Problem
 
 Agents have different context, assumptions, tools, and lifetimes. An implicit
@@ -51,9 +57,3 @@ Communication (A2A),” and Dibia, *Designing Multi-Agent Systems*, Chapter 12,
 “Protocols for Distributed Agents.” The [MCP specification](https://modelcontextprotocol.io/specification)
 is a primary protocol reference for standardized access to tools and data; it
 is complementary to agent-to-agent messaging.
-
-## Figure
-
-![Inter-agent communication and protocols](/images/agent-system/21-inter-agent-communication.svg)
-
-*Figure: independent agents coordinate through explicit task, evidence, status, and error messages.*

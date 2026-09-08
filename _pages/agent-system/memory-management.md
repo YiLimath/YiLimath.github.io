@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Memory management pattern](/images/agent-system/09-memory-management.svg)
+
+*Figure: bounded working context is written to and recovered from longer-term memory.*
+
 ## Problem
 
 Context windows are bounded, while tasks and histories are not. Copying every
@@ -53,9 +59,3 @@ The pattern is Gulli, *Agentic Design Patterns*, Chapter 8, and Dibia,
 *Designing Multi-Agent Systems*, Chapter 4, Sections 4.7 and 4.8. Long-term
 memory and context management are also treated as application patterns by
 Lakshmanan and Hapke in *Generative AI Design Patterns*, Chapter 8.
-
-## Figure
-
-![Memory management pattern](/images/agent-system/09-memory-management.svg)
-
-*Figure: bounded working context is written to and recovered from longer-term memory.*

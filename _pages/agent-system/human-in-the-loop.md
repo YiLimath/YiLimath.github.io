@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)
+
+*Figure: the system pauses at an explicit checkpoint when human judgment is required.*
+
 ## Problem
 
 Some decisions are high impact, ambiguous, irreversible, or not captured by an
@@ -52,9 +58,3 @@ This follows Gulli, *Agentic Design Patterns*, Chapter 13, and Dibia,
 *Designing Multi-Agent Systems*, Chapter 4, Section 4.13, “Adding Humans in the
 Loop.” For a current engineering discussion of human control, transparency, and
 agent risk, see Anthropic's [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents).
-
-## Figure
-
-![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)
-
-*Figure: the system pauses at an explicit checkpoint when human judgment is required.*

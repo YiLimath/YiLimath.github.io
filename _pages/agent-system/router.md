@@ -7,6 +7,13 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Router pattern](/images/agent-system/03-router.svg)
+
+*Figure: an abstract routing decision selects one interchangeable handler while
+preserving a common result contract.*
+
 ## Problem
 
 One general agent is rarely the best implementation for every task class. A
@@ -54,10 +61,3 @@ The pattern is Gulli, *Agentic Design Patterns*, Chapter 2. It is also treated
 as a routing workflow in Anthropic's [engineering guide](https://www.anthropic.com/engineering/building-effective-agents)
 and as model routing, tiered orchestration, and intent routing in Mitra, *System
 Design for the LLM Era*, Chapters 2 and 6.
-
-## Figure
-
-![Router pattern](/images/agent-system/03-router.svg)
-
-*Figure: an abstract routing decision selects one interchangeable handler while
-preserving a common result contract.*

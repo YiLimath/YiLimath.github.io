@@ -7,6 +7,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)
+
+*Figure: course architecture redraw. Online traces feed an offline adaptation
+plane; only a candidate that passes held-out evaluation enters the versioned
+policy registry.*
+
 ## Problem
 
 An agent that repeats the same failed strategy wastes resources. Yet changing
@@ -46,11 +54,3 @@ This page follows Antonio Gulli, [*Agentic Design Patterns*](https://link.spring
 Adaptation.” The online/offline separation, rollback, and fixed-evaluation
 requirements are course engineering safeguards, not a claim that online
 learning is automatically safe.
-
-## Figure
-
-![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)
-
-*Figure: course architecture redraw. Online traces feed an offline adaptation
-plane; only a candidate that passes held-out evaluation enters the versioned
-policy registry.*

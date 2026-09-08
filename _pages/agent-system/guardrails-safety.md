@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Guardrails and safety](/images/agent-system/20-guardrails-safety.svg)
+
+*Figure: input, context, action, and output boundaries constrain the agent and provide escalation paths.*
+
 ## Problem
 
 An agent can receive malicious or ambiguous input, retrieve untrusted context,
@@ -47,9 +53,3 @@ Patterns*, Chapter 9, including Self-Check and Guardrails. Anthropic's
 [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
 provides a current engineering discussion of human control, security, and
 prompt-injection risk.
-
-## Figure
-
-![Guardrails and safety](/images/agent-system/20-guardrails-safety.svg)
-
-*Figure: input, context, action, and output boundaries constrain the agent and provide escalation paths.*

@@ -8,6 +8,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)
+
+*Figure: a course architecture for changing representations when the current
+view hides the next useful inference. Read it left to right; the dashed loop
+means that a failed check triggers revision rather than a more confident claim.*
+
 ## Problem
 
 Some tasks fail because the chosen representation hides the next obstruction,
@@ -53,9 +61,3 @@ This page synthesizes Gulli, *Agentic Design Patterns*, Chapter 17, with the
 reasoning and representation patterns in Lakshmanan and Hapke, *Generative AI
 Design Patterns*, Chapter 5. ReAct provides a primary example of interleaving
 reasoning with information-gathering actions: [paper](https://arxiv.org/abs/2210.03629).
-
-## Figure
-
-![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)
-
-*Figure: a candidate representation is transformed, evaluated, and revised.*

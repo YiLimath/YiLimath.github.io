@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Resource-aware optimization](/images/agent-system/19-resource-aware-optimization.svg)
+
+*Figure: a policy routes work among cheap, targeted, deferred, and stopped execution paths.*
+
 ## Problem
 
 Agent systems consume model calls, context, retrieval, tools, worker slots, and
@@ -47,9 +53,3 @@ This is Gulli, *Agentic Design Patterns*, Chapter 16, “Resource-Aware
 Optimization,” combined with Mitra, *System Design for the LLM Era*, Chapter 2,
 which treats latency, cost, model routing, and dynamic traffic control as
 architectural concerns.
-
-## Figure
-
-![Resource-aware optimization](/images/agent-system/19-resource-aware-optimization.svg)
-
-*Figure: a policy routes work among cheap, targeted, deferred, and stopped execution paths.*

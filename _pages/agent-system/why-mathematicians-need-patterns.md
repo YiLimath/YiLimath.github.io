@@ -8,6 +8,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Design patterns translated into mathematical research](/images/agent-system/24-mathematics-design-patterns.svg)
+
+*Figure: decomposition, abstraction, composition, and validation turn recurring research activities into explicit artifacts.*
+
 Mathematical research is a composition of activities: reading, retrieving,
 constructing examples, forming conjectures, searching for proofs, checking
 claims, and writing exposition. An agent becomes useful when each recurring
@@ -43,9 +49,3 @@ This translation is a course synthesis of Gulli's pattern catalogue and
 Dibia's treatment of task decomposition, workflow architecture, evaluation, and
 responsible AI. The [reference map](/posts/2026/08/agent-system/reference-map/)
 identifies the corresponding book chapters and supporting research sources.
-
-## Figure
-
-![Design patterns translated into mathematical research](/images/agent-system/24-mathematics-design-patterns.svg)
-
-*Figure: decomposition, abstraction, composition, and validation turn recurring research activities into explicit artifacts.*

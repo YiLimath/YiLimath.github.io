@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Prompt chaining workflow](/images/agent-system/02-prompt-chaining.svg)
+
+*Figure: specialized stages pass structured artifacts forward.*
+
 ## Problem
 
 A single prompt must often perform incompatible jobs: interpret an input,
@@ -54,9 +60,3 @@ This pattern follows Gulli, *Agentic Design Patterns*, Chapter 1, and Dibia,
 *Designing Multi-Agent Systems*, the explicit workflow treatment in Chapters 2
 and 6. Anthropic gives an independent engineering description of prompt
 chaining and its intermediate gates in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents).
-
-## Figure
-
-![Prompt chaining workflow](/images/agent-system/02-prompt-chaining.svg)
-
-*Figure: specialized stages pass structured artifacts forward.*

@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)
+
+*Figure: goals become operational through priorities, bounded actions, progress checks, and termination.*
+
 ## Problem
 
 Autonomous execution can drift from the user's objective, spend resources on
@@ -46,9 +52,3 @@ The source pattern is Gulli, *Agentic Design Patterns*, Chapter 11, “Goal
 Setting and Monitoring.” Dibia's orchestrator loop and task-management
 treatment appears in *Designing Multi-Agent Systems*, Chapters 2 and 7; the
 task and progress ledgers are also explicit in the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
-
-## Figure
-
-![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)
-
-*Figure: goals become operational through priorities, bounded actions, progress checks, and termination.*

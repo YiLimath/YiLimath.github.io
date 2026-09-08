@@ -8,6 +8,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Evaluation and monitoring](/images/agent-system/18-evaluation-monitoring.svg)
+
+*Figure: evaluators inspect both the final artifact and the trajectory that produced it.*
+
 ## Problem
 
 Fluent output is a weak proxy for task success. A system can produce attractive
@@ -49,9 +55,3 @@ and Monitoring,” and Dibia, *Designing Multi-Agent Systems*, Chapter 10,
 “Evaluating Multi-Agent Systems.” Dibia's emphasis on trajectory evaluation is
 especially relevant when the final answer alone hides a failed intermediate
 step.
-
-## Figure
-
-![Evaluation and monitoring](/images/agent-system/18-evaluation-monitoring.svg)
-
-*Figure: evaluators inspect both the final artifact and the trajectory that produced it.*

@@ -7,6 +7,16 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Book-informed agent pattern taxonomy](/images/agent-system/25-book-pattern-taxonomy.svg)
+
+*Figure: a source-to-course crosswalk for control flow, knowledge and reasoning,
+coordination, and reliability/operations.*
+
+For task-level application architectures, see [Real-world architecture
+templates](/posts/2026/08/agent-system/real-world-applications/).
+
 This course is organized from four complementary books in the Life and Readings
 vault. The pages are a synthesis and application of their ideas, not a
 framework-specific API manual.
@@ -91,13 +101,3 @@ The matrix below is a crosswalk, not a claim that each book owns one category.
 Read across a row to see how the books complement one design dimension; read
 down a column to see the emphasis of one book. The right-hand column is the
 course synthesis built from those overlapping contributions.
-
-## Figure
-
-![Book-informed agent pattern taxonomy](/images/agent-system/25-book-pattern-taxonomy.svg)
-
-*Figure: a source-to-course crosswalk for control flow, knowledge and reasoning,
-coordination, and reliability/operations.*
-
-For task-level application architectures, see [Real-world architecture
-templates](/posts/2026/08/agent-system/real-world-applications/).

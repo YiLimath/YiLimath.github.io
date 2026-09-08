@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Parallelization pattern](/images/agent-system/04-parallelization.svg)
+
+*Figure: independent branches run concurrently and are combined by an aggregation step.*
+
 ## Problem
 
 Some tasks contain independent branches, but a sequential agent wastes latency
@@ -51,9 +57,3 @@ This is Gulli, *Agentic Design Patterns*, Chapter 3, combined with Dibia,
 *Designing Multi-Agent Systems*, Chapters 2 and 6. Anthropic distinguishes
 sectioning and voting forms of the pattern in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
 and warns that shared mutable state requires an explicit conflict policy.
-
-## Figure
-
-![Parallelization pattern](/images/agent-system/04-parallelization.svg)
-
-*Figure: independent branches run concurrently and are combined by an aggregation step.*

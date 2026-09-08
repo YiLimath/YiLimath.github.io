@@ -8,6 +8,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Deep search workflow](/images/agent-system/15-deep-search.svg)
+
+*Figure: a teaching redraw of the Deep Search control structure. Retrieval,
+generation, and thinking are separate stages; the two decisions make budget
+and evidence coverage explicit; reflection produces the next subqueries.*
+
 ## Problem
 
 The first query is usually underspecified and retrieves only the obvious
@@ -55,14 +63,6 @@ Design Patterns*, Pattern 12, Figure 4-14, with the original-diagram link given
 below. The research-oriented comparison is Shao et al.'s [STORM paper](https://aclanthology.org/2024.naacl-long.347/),
 which makes perspective discovery, grounded conversations, and outline
 curation explicit.
-
-## Figure
-
-![Deep search workflow](/images/agent-system/15-deep-search.svg)
-
-*Figure: a teaching redraw of the Deep Search control structure. Retrieval,
-generation, and thinking are separate stages; the two decisions make budget
-and evidence coverage explicit; reflection produces the next subqueries.*
 
 ## Reference diagrams
 

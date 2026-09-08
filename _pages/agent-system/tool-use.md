@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Tool use and code execution](/images/agent-system/06-tool-use.svg)
+
+*Figure: the agent acts through typed tool interfaces and receives explicit observations.*
+
 ## Problem
 
 Language generation is not the right mechanism for deterministic operations,
@@ -55,9 +61,3 @@ The tool-use pattern is Gulli, *Agentic Design Patterns*, Chapter 5, and
 Lakshmanan and Hapke, *Generative AI Design Patterns*, the Tool Calling pattern
 in Chapter 7. The reasoning/action interface is exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
 standardized access to external data and tools is specified by the [MCP specification](https://modelcontextprotocol.io/specification).
-
-## Figure
-
-![Tool use and code execution](/images/agent-system/06-tool-use.svg)
-
-*Figure: the agent acts through typed tool interfaces and receives explicit observations.*

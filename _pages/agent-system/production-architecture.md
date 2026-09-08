@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)
+
+*Figure: gateways, caching, fallbacks, and evaluation surround the agent core.*
+
 ## Problem
 
 An agent prototype may work in a notebook but fail under load, provider errors,
@@ -57,12 +63,6 @@ The production patterns follow Mitra, *System Design for the LLM Era*, Chapters
 evaluation, and security. Dibia's Chapters 10–13 provide complementary
 references for trajectory evaluation, optimization, distributed protocols, and
 responsible deployment.
-
-## Figure
-
-![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)
-
-*Figure: gateways, caching, fallbacks, and evaluation surround the agent core.*
 
 ## Reference architecture
 

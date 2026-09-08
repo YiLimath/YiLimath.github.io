@@ -8,6 +8,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)
+
+*Figure: course architecture redraw. Query-time grounding is separated from
+index-time ingestion, with hybrid indexes, access metadata, reranking,
+provenance, freshness feedback, and a bounded context builder.*
+
 ## Problem
 
 Context is bounded, while a technical corpus is large. Internal model memory is
@@ -54,11 +62,3 @@ requirements before generation.
 The RAG treatment follows Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 14, and
 Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/), Chapter 3, including the RAG pattern. The foundational retrieval-plus-generation formulation is
 Lewis et al., [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
-
-## Figure
-
-![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)
-
-*Figure: course architecture redraw. Query-time grounding is separated from
-index-time ingestion, with hybrid indexes, access metadata, reranking,
-provenance, freshness feedback, and a bounded context builder.*

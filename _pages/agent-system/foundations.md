@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Agent system building blocks](/images/agent-system/01-building-blocks.svg)
+
+*Figure: the basic objects and interfaces used throughout the series.*
+
 This page fixes the vocabulary used by the rest of the course. The books use
 different names for similar components, but the design question is the same:
 which boundary should remain stable when the model or implementation changes?
@@ -51,12 +57,6 @@ request becomes bounded context, the model proposes an action, a tool returns
 an observation, and an evaluator or policy decides whether state may change.
 The building blocks are useful because each boundary can be logged and tested
 independently.
-
-## Figure
-
-![Agent system building blocks](/images/agent-system/01-building-blocks.svg)
-
-*Figure: the basic objects and interfaces used throughout the series.*
 
 ## Reference diagrams and sources
 

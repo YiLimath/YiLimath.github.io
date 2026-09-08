@@ -7,6 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figures
+
+![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
+
+*Figure: the context view shows the agent system as one unit and labels its
+external relationships.*
+
+![Agent system container view](/images/agent-system/28-agent-system-container.svg)
+
+*Figure: the container view expands the boundary into replaceable
+responsibilities and labels the interfaces between them.*
+
 ## Start with the task shape
 
 Place the task on the workflow–autonomy spectrum: fixed workflow, bounded loop,
@@ -71,15 +83,3 @@ The selection principle follows Dibia, *Designing Multi-Agent Systems*, Chapter
 2, Sections 2.1–2.4, and Anthropic's [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents),
 which recommends simple composable workflows before adding autonomous
 complexity.
-
-## Figures
-
-![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
-
-*Figure: the context view shows the agent system as one unit and labels its
-external relationships.*
-
-![Agent system container view](/images/agent-system/28-agent-system-container.svg)
-
-*Figure: the container view expands the boundary into replaceable
-responsibilities and labels the interfaces between them.*

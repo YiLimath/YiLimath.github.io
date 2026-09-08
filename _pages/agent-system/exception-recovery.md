@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)
+
+*Figure: failures are classified and routed to bounded retry, repair, fallback, escalation, or safe stop.*
+
 ## Problem
 
 Tools fail, retrieval returns nothing, output violates a schema, services time
@@ -51,9 +57,3 @@ The pattern is Gulli, *Agentic Design Patterns*, Chapter 12, “Exception
 Handling and Recovery.” The production consequences of retries, fallbacks, and
 failure isolation are developed in Mitra, *System Design for the LLM Era*,
 Chapter 2, including the circuit-breaker and tiered-fallback patterns.
-
-## Figure
-
-![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)
-
-*Figure: failures are classified and routed to bounded retry, repair, fallback, escalation, or safe stop.*

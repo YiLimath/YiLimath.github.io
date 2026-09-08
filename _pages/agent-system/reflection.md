@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Reflection pattern](/images/agent-system/05-reflection.svg)
+
+*Figure: a draft is evaluated and revised before it is passed onward.*
+
 ## Problem
 
 A first draft can be fluent, incomplete, or subtly inconsistent. Asking for a
@@ -50,9 +56,3 @@ retain the rejected version for audit.
 The source pattern is Gulli, *Agentic Design Patterns*, Chapter 4, and
 Lakshmanan and Hapke, *Generative AI Design Patterns*, Pattern 18. The
 feedback-and-refinement loop is studied directly in Madaan et al., [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651).
-
-## Figure
-
-![Reflection pattern](/images/agent-system/05-reflection.svg)
-
-*Figure: a draft is evaluated and revised before it is passed onward.*

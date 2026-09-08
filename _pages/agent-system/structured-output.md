@@ -7,6 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figure
+
+![Structured output pattern](/images/agent-system/13-structured-output.svg)
+
+*Figure: a schema boundary makes intermediate artifacts parseable without claiming that they are true.*
+
 ## Problem
 
 Free-form language is ambiguous at a workflow boundary. A downstream component
@@ -54,9 +60,3 @@ Chapter 4, Section 4.5, “Enabling Structured Output,” together with
 Lakshmanan and Hapke, *Generative AI Design Patterns*, the constrained
 generation patterns in Chapters 1 and 2. The page treats schema validity and
 truth as separate checks, as required by both sources.
-
-## Figure
-
-![Structured output pattern](/images/agent-system/13-structured-output.svg)
-
-*Figure: a schema boundary makes intermediate artifacts parseable without claiming that they are true.*
