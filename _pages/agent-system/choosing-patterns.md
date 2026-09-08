@@ -65,6 +65,13 @@ unreviewed result. Select the smallest composition that exposes that failure,
 then add parallel workers, memory, or reflection only when the workflow needs
 their contract.
 
+## Reference basis
+
+The selection principle follows Dibia, *Designing Multi-Agent Systems*, Chapter
+2, Sections 2.1–2.4, and Anthropic's [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents),
+which recommends simple composable workflows before adding autonomous
+complexity.
+
 ## Figures
 
 ![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)

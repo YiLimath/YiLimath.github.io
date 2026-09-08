@@ -47,6 +47,14 @@ record containing decision, evidence, uncertainty, and next action. The parser
 can reject malformed records before they reach a policy engine, while a valid
 record still remains subject to semantic review.
 
+## Reference basis
+
+The interface-first treatment follows Dibia, *Designing Multi-Agent Systems*,
+Chapter 4, Section 4.5, “Enabling Structured Output,” together with
+Lakshmanan and Hapke, *Generative AI Design Patterns*, the constrained
+generation patterns in Chapters 1 and 2. The page treats schema validity and
+truth as separate checks, as required by both sources.
+
 ## Figure
 
 ![Structured output pattern](/images/agent-system/13-structured-output.svg)

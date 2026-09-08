@@ -45,6 +45,12 @@ independent checker compares it with explicit requirements. The checker should
 return localized repair instructions, so the workflow can revise one defect and
 retain the rejected version for audit.
 
+## Reference basis
+
+The source pattern is Gulli, *Agentic Design Patterns*, Chapter 4, and
+Lakshmanan and Hapke, *Generative AI Design Patterns*, Pattern 18. The
+feedback-and-refinement loop is studied directly in Madaan et al., [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651).
+
 ## Figure
 
 ![Reflection pattern](/images/agent-system/05-reflection.svg)

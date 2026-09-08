@@ -49,6 +49,13 @@ return a claim with its source location, rather than answer from model memory.
 The retrieval boundary can enforce access control, freshness, and citation
 requirements before generation.
 
+## Reference basis
+
+The RAG treatment follows Gulli, *Agentic Design Patterns*, Chapter 14, and
+Lakshmanan and Hapke, *Generative AI Design Patterns*, Chapter 3, including the
+RAG pattern. The foundational retrieval-plus-generation formulation is
+Lewis et al., [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
+
 ## Figure
 
 ![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)

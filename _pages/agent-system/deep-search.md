@@ -48,6 +48,14 @@ decompose the question, query several source types, maintain an evidence ledger,
 and launch follow-up searches when coverage is weak. The final report is useful
 because its claims and stopping condition remain inspectable.
 
+## Reference basis
+
+The figure and control logic are tied to Lakshmanan and Hapke, *Generative AI
+Design Patterns*, Pattern 12, Figure 4-14, with the original-diagram link given
+below. The research-oriented comparison is Shao et al.'s [STORM paper](https://aclanthology.org/2024.naacl-long.347/),
+which makes perspective discovery, grounded conversations, and outline
+curation explicit.
+
 ## Figure
 
 ![Deep search workflow](/images/agent-system/15-deep-search.svg)

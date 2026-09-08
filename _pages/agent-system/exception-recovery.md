@@ -45,6 +45,13 @@ the failure before retrying. A bounded retry, an idempotent replay, a fallback,
 or a human escalation is safer than sending the same action again until the
 context window or budget is exhausted.
 
+## Reference basis
+
+The pattern is Gulli, *Agentic Design Patterns*, Chapter 12, “Exception
+Handling and Recovery.” The production consequences of retries, fallbacks, and
+failure isolation are developed in Mitra, *System Design for the LLM Era*,
+Chapter 2, including the circuit-breaker and tiered-fallback patterns.
+
 ## Figure
 
 ![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)

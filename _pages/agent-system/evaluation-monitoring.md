@@ -42,6 +42,14 @@ that produced it: source coverage, schema validity, latency, cost, and policy
 violations. A score without a retained artifact does not tell an engineer what
 to repair.
 
+## Reference basis
+
+The pattern follows Gulli, *Agentic Design Patterns*, Chapter 19, “Evaluation
+and Monitoring,” and Dibia, *Designing Multi-Agent Systems*, Chapter 10,
+“Evaluating Multi-Agent Systems.” Dibia's emphasis on trajectory evaluation is
+especially relevant when the final answer alone hides a failed intermediate
+step.
+
 ## Figure
 
 ![Evaluation and monitoring](/images/agent-system/18-evaluation-monitoring.svg)

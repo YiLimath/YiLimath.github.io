@@ -45,6 +45,13 @@ repositories, logs, or source collections at the same time. Aggregation is safe
 only after each branch returns a typed result with provenance and an explicit
 failure status.
 
+## Reference basis
+
+This is Gulli, *Agentic Design Patterns*, Chapter 3, combined with Dibia,
+*Designing Multi-Agent Systems*, Chapters 2 and 6. Anthropic distinguishes
+sectioning and voting forms of the pattern in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+and warns that shared mutable state requires an explicit conflict policy.
+
 ## Figure
 
 ![Parallelization pattern](/images/agent-system/04-parallelization.svg)

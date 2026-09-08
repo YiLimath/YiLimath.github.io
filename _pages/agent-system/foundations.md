@@ -60,9 +60,11 @@ independently.
 
 ## Reference diagrams and sources
 
-This figure is an original teaching redraw: it synthesizes the vocabulary of
-the four course books rather than reproducing one of their illustrations. Its
-main loop can be compared with Figure 1 of Yao et al., *ReAct: Synergizing
+The vocabulary is anchored in Gulli, *Agentic Design Patterns*, the introduction
+and Chapter 1, and Dibia, *Designing Multi-Agent Systems*, Chapter 4. This figure
+is an original teaching redraw: it synthesizes the vocabulary of the four
+course books rather than reproducing one of their illustrations. Its main loop
+can be compared with Figure 1 of Yao et al., *ReAct: Synergizing
 Reasoning and Acting in Language Models*, where reasoning steps and external
 actions are interleaved through observations: [paper](https://arxiv.org/abs/2210.03629)
 and [Google Research overview](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/).

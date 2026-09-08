@@ -45,6 +45,13 @@ remediation planning to separate specialists. A coordinator merges their typed
 artifacts and sends only the agreed incident state to the operator; specialists
 do not need to share hidden conversational context.
 
+## Reference basis
+
+The pattern follows Gulli, *Agentic Design Patterns*, Chapter 7, and Dibia,
+*Designing Multi-Agent Systems*, Chapters 2 and 7. Published system examples
+include AutoGen's [multi-agent conversation paper](https://arxiv.org/abs/2308.08155)
+and Microsoft's [Magentic-One report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
+
 ## Figure
 
 ![Multiple-agent cooperation](/images/agent-system/07-multi-agent-cooperation.svg)

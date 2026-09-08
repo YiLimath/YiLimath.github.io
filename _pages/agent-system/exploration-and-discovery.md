@@ -46,6 +46,12 @@ be explored in parallel and tested against examples or counterexamples. The
 system should preserve discarded branches and apply a budgeted selection rule,
 so novelty does not replace evidence.
 
+## Reference basis
+
+The source pattern is Gulli, *Agentic Design Patterns*, Chapter 21. For a
+research workflow that makes perspective discovery, source gathering, and
+outline curation concrete, compare the [STORM paper](https://aclanthology.org/2024.naacl-long.347/).
+
 ## Figure
 
 ![Exploration and discovery workflow](/images/agent-system/22-exploration-discovery.svg)

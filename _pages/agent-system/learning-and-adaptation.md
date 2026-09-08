@@ -40,6 +40,12 @@ validated and evaluated against a fixed test set. Versioned prompts, routing
 policies, and memories let the team roll back a change that improves one queue
 while damaging another.
 
+## Reference basis
+
+This page follows Gulli, *Agentic Design Patterns*, Chapter 9, “Learning and
+Adaptation.” The rollback and fixed-evaluation requirements are course
+engineering safeguards, not a claim that online learning is automatically safe.
+
 ## Figure
 
 ![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)

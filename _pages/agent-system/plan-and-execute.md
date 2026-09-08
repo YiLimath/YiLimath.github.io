@@ -45,6 +45,14 @@ steps in a sandbox, run tests, and send the diff for review. The plan is useful
 because the system can resume or repair one failed step without repeating the
 whole task blindly.
 
+## Reference basis
+
+The planning pattern is Gulli, *Agentic Design Patterns*, Chapter 6. Dibia
+discusses explicit and implicit planning in *Designing Multi-Agent Systems*,
+Chapter 5, and persistent workflow execution in Chapter 6. A published
+architecture with planning, progress ledgers, and re-planning is documented in
+the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
+
 ## Figure
 
 ![Plan and execute pattern](/images/agent-system/08-plan.svg)

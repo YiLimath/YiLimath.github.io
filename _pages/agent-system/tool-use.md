@@ -49,6 +49,13 @@ ticket. Typed tool schemas, permission checks, timeouts, and explicit
 observations turn those side effects into a controlled workflow rather than an
 unreviewable conversation.
 
+## Reference basis
+
+The tool-use pattern is Gulli, *Agentic Design Patterns*, Chapter 5, and
+Lakshmanan and Hapke, *Generative AI Design Patterns*, the Tool Calling pattern
+in Chapter 7. The reasoning/action interface is exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
+standardized access to external data and tools is specified by the [MCP specification](https://modelcontextprotocol.io/specification).
+
 ## Figure
 
 ![Tool use and code execution](/images/agent-system/06-tool-use.svg)

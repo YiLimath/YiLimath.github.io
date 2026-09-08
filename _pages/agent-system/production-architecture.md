@@ -50,6 +50,14 @@ request identity; the runtime owns task state; and the evaluator owns quality
 signals. Keeping those responsibilities separate makes provider failures,
 prompt changes, and partial tool outages observable in production.
 
+## Reference basis
+
+The production patterns follow Mitra, *System Design for the LLM Era*, Chapters
+2–6, especially gateways, circuit breakers, asynchronous processing, caching,
+evaluation, and security. Dibia's Chapters 10–13 provide complementary
+references for trajectory evaluation, optimization, distributed protocols, and
+responsible deployment.
+
 ## Figure
 
 ![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)

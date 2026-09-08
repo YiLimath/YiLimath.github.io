@@ -39,6 +39,15 @@ context, action, and output controls. Permissions, validation, redaction,
 sandboxing, and human approval should sit at explicit boundaries around the
 capability, not only inside a system prompt.
 
+## Reference basis
+
+The source pattern is Gulli, *Agentic Design Patterns*, Chapter 18,
+“Guardrails/Safety Patterns,” and Lakshmanan and Hapke, *Generative AI Design
+Patterns*, Chapter 9, including Self-Check and Guardrails. Anthropic's
+[Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
+provides a current engineering discussion of human control, security, and
+prompt-injection risk.
+
 ## Figure
 
 ![Guardrails and safety](/images/agent-system/20-guardrails-safety.svg)

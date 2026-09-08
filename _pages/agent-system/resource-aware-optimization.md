@@ -41,6 +41,13 @@ reserve stronger reasoning for ambiguous cases, and defer work that is not
 urgent. The policy must expose quality limits and escalation behavior so cost
 savings do not silently change the service promise.
 
+## Reference basis
+
+This is Gulli, *Agentic Design Patterns*, Chapter 16, “Resource-Aware
+Optimization,” combined with Mitra, *System Design for the LLM Era*, Chapter 2,
+which treats latency, cost, model routing, and dynamic traffic control as
+architectural concerns.
+
 ## Figure
 
 ![Resource-aware optimization](/images/agent-system/19-resource-aware-optimization.svg)

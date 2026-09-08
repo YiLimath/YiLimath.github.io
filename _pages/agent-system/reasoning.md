@@ -47,6 +47,13 @@ dependency graph, and a set of competing hypotheses. Representation change is
 valuable when one view hides a dependency; each proposed explanation still
 needs tests or evidence before it is accepted.
 
+## Reference basis
+
+This page synthesizes Gulli, *Agentic Design Patterns*, Chapter 17, with the
+reasoning and representation patterns in Lakshmanan and Hapke, *Generative AI
+Design Patterns*, Chapter 5. ReAct provides a primary example of interleaving
+reasoning with information-gathering actions: [paper](https://arxiv.org/abs/2210.03629).
+
 ## Figure
 
 ![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)

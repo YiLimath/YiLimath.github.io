@@ -46,6 +46,13 @@ need an explicit approval checkpoint. The agent should present the proposed
 action, evidence, uncertainty, and reversible alternatives, then resume from a
 durable checkpoint after the human accepts or rejects it.
 
+## Reference basis
+
+This follows Gulli, *Agentic Design Patterns*, Chapter 13, and Dibia,
+*Designing Multi-Agent Systems*, Chapter 4, Section 4.13, “Adding Humans in the
+Loop.” For a current engineering discussion of human control, transparency, and
+agent risk, see Anthropic's [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents).
+
 ## Figure
 
 ![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)

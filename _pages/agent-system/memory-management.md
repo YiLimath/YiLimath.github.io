@@ -47,6 +47,13 @@ have different retention and access rules. A memory policy should decide what
 to write, how to retrieve it, how to expire it, and how to correct a stale
 record; storing every message is not a design.
 
+## Reference basis
+
+The pattern is Gulli, *Agentic Design Patterns*, Chapter 8, and Dibia,
+*Designing Multi-Agent Systems*, Chapter 4, Sections 4.7 and 4.8. Long-term
+memory and context management are also treated as application patterns by
+Lakshmanan and Hapke in *Generative AI Design Patterns*, Chapter 8.
+
 ## Figure
 
 ![Memory management pattern](/images/agent-system/09-memory-management.svg)

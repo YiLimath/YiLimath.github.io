@@ -40,6 +40,13 @@ dependencies, budget, and termination criteria. Monitoring can distinguish real
 progress from repeated tool calls and stop or escalate when the goal becomes
 infeasible.
 
+## Reference basis
+
+The source pattern is Gulli, *Agentic Design Patterns*, Chapter 11, “Goal
+Setting and Monitoring.” Dibia's orchestrator loop and task-management
+treatment appears in *Designing Multi-Agent Systems*, Chapters 2 and 7; the
+task and progress ledgers are also explicit in the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
+
 ## Figure
 
 ![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)
