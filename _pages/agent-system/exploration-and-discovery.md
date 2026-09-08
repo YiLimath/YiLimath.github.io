@@ -48,12 +48,17 @@ so novelty does not replace evidence.
 
 ## Reference basis
 
-The source pattern is Gulli, *Agentic Design Patterns*, Chapter 21. For a
-research workflow that makes perspective discovery, source gathering, and
-outline curation concrete, compare the [STORM paper](https://aclanthology.org/2024.naacl-long.347/).
+The source pattern is Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 21. The
+six-role decomposition in the figure follows the published description of
+Google Research's [AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Generation,
+Reflection, Ranking, Evolution, Proximity, and Meta-review coordinated by a
+Supervisor. For a research workflow that makes perspective discovery, source
+gathering, and outline curation concrete, compare the [STORM paper](https://aclanthology.org/2024.naacl-long.347/).
 
 ## Figure
 
 ![Exploration and discovery workflow](/images/agent-system/22-exploration-discovery.svg)
 
-*Figure: candidate branches are tested, recorded, and selected under a budget and stopping rule.*
+*Figure: course redraw of the pattern. The architecture makes the candidate
+frontier, worker roles, evidence ledger, and termination gate explicit; it is
+not a reproduction of the book's conceptual visual summary.*

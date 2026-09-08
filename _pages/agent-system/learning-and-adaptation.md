@@ -42,12 +42,15 @@ while damaging another.
 
 ## Reference basis
 
-This page follows Gulli, *Agentic Design Patterns*, Chapter 9, “Learning and
-Adaptation.” The rollback and fixed-evaluation requirements are course
-engineering safeguards, not a claim that online learning is automatically safe.
+This page follows Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 9, “Learning and
+Adaptation.” The online/offline separation, rollback, and fixed-evaluation
+requirements are course engineering safeguards, not a claim that online
+learning is automatically safe.
 
 ## Figure
 
 ![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)
 
-*Figure: evaluated experience changes a policy, prompt, memory, or routing decision.*
+*Figure: course architecture redraw. Online traces feed an offline adaptation
+plane; only a candidate that passes held-out evaluation enters the versioned
+policy registry.*

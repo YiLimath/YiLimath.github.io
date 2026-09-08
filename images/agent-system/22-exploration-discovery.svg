@@ -1,1 +1,157 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial;fill:#17283c}.u{font:400 18px Arial;fill:#5b6b7c}.h{font:700 22px Arial;fill:#17283c}.s{font:400 16px Arial;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.d{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="t">Exploration and Discovery</text><text x="80" y="110" class="u">Search alternatives while preserving diversity, tests, and evidence</text><rect x="110" y="360" width="230" height="105" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="225" y="403" text-anchor="middle" class="h">Input</text><text x="225" y="433" text-anchor="middle" class="s">initial state</text><path d="M340 412H480" class="l"/><polygon points="480,412 471,407.5 471,416.5" class="al"/><rect x="480" y="360" width="250" height="105" rx="10" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="605" y="403" text-anchor="middle" class="h">Branch / mutate</text><text x="605" y="433" text-anchor="middle" class="s">alternative candidates</text><path d="M730 412H850" class="l"/><polygon points="850,412 841,407.5 841,416.5" class="al"/><rect x="850" y="190" width="245" height="95" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="972" y="230" text-anchor="middle" class="h">Candidate A</text><text x="972" y="260" text-anchor="middle" class="s">test and record</text><rect x="850" y="360" width="245" height="95" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="972" y="400" text-anchor="middle" class="h">Candidate B</text><text x="972" y="430" text-anchor="middle" class="s">test and record</text><rect x="850" y="530" width="245" height="95" rx="10" fill="#fceceb" stroke="#c65b5b" class="b"/><text x="972" y="570" text-anchor="middle" class="h">Candidate C</text><text x="972" y="600" text-anchor="middle" class="s">test and record</text><path d="M730 412H800V237H840" class="l"/><polygon points="840,237 831,232.5 831,241.5" class="al"/><path d="M730 412H840" class="l"/><polygon points="840,412 831,407.5 831,416.5" class="al"/><path d="M730 412H800V577H840" class="l"/><polygon points="840,577 831,572.5 831,581.5" class="al"/><path d="M1095 237H1240V412" class="l"/><polygon points="1240,412 1235.5,403 1244.5,403" class="al"/><path d="M1095 412H1240" class="l"/><polygon points="1240,412 1231,407.5 1231,416.5" class="al"/><path d="M1095 577H1240V412H1370" class="l"/><polygon points="1370,412 1361,407.5 1361,416.5" class="al"/><rect x="1370" y="360" width="180" height="105" rx="10" fill="#fff" stroke="#3985c6" class="b"/><text x="1460" y="403" text-anchor="middle" class="h">Select / stop</text><text x="1460" y="433" text-anchor="middle" class="s">evidence + rule</text><path d="M1460 465V690H225V465" class="d"/><polygon points="225,465 220.5,474 229.5,474" class="ad"/><text x="800" y="735" text-anchor="middle" class="s">Exploration produces candidates; validation or human judgment decides what survives.</text><rect x="390" y="765" width="820" height="55" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="800" text-anchor="middle" class="s">Use a budget, duplicate control, scoring rule, and termination condition.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+<defs>
+<style>
+.title{font:700 38px Arial,sans-serif;fill:#17283c}.subtitle{font:400 20px Arial,sans-serif;fill:#50657a}.label{font:700 17px Arial,sans-serif;fill:#476176;letter-spacing:1px}.heading{font:700 23px Arial,sans-serif;fill:#17283c}.body{font:400 17px Arial,sans-serif;fill:#405268}.small{font:400 15px Arial,sans-serif;fill:#536b80}.tiny{font:700 13px Arial,sans-serif;fill:#5a7082;letter-spacing:.7px}.number{font:700 15px Arial,sans-serif;fill:#fff}.boundary{fill:#fbfcfe;stroke:#b8c7d5;stroke-width:2}.card{stroke-width:3}.flow{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.feedback{stroke:#735fbd;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.evidence{stroke:#219487;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.guide{stroke:#a9b8c6;stroke-width:2;stroke-dasharray:5 7;fill:none}.panel{fill:#f5f8fb;stroke:#c5d1dc;stroke-width:2}.agent{fill:#fff;stroke:#6e83a0;stroke-width:2}
+</style>
+</defs>
+
+<rect width="1800" height="1250" fill="#f7f9fc"/>
+<text x="70" y="75" class="title">Exploration and Discovery</text>
+<text x="70" y="112" class="subtitle">An open-ended search architecture for generating, testing, comparing, and evolving candidate hypotheses</text>
+
+<!-- legend -->
+<g transform="translate(1220,62)">
+<line x1="0" y1="0" x2="42" y2="0" class="flow"/><polygon points="42,0 33,-4.5 33,4.5" fill="#23364d"/>
+<text x="55" y="6" class="small">control flow</text>
+<line x1="160" y1="0" x2="202" y2="0" class="evidence"/><polygon points="202,0 193,-4.5 193,4.5" fill="#219487"/>
+<text x="215" y="6" class="small">evidence flow</text>
+<line x1="335" y1="0" x2="377" y2="0" class="feedback"/><polygon points="377,0 368,-4.5 368,4.5" fill="#735fbd"/>
+<text x="390" y="6" class="small">feedback loop</text>
+</g>
+
+<!-- external actor -->
+<rect x="55" y="255" width="255" height="135" rx="12" fill="#e6f1fb" stroke="#3985c6" class="card"/>
+<text x="182" y="298" text-anchor="middle" class="heading">Scientist / user</text>
+<text x="182" y="329" text-anchor="middle" class="body">research goal</text>
+<text x="182" y="355" text-anchor="middle" class="small">constraints · priors · feedback</text>
+
+<!-- system boundary -->
+<rect x="350" y="165" width="1395" height="950" rx="18" class="boundary"/>
+<text x="385" y="200" class="label">EXPLORATION SYSTEM</text>
+
+<!-- control plane -->
+<rect x="405" y="235" width="300" height="125" rx="12" fill="#fff4e8" stroke="#d98c2b" class="card"/>
+<circle cx="435" cy="267" r="15" fill="#d98c2b"/><text x="435" y="272" text-anchor="middle" class="number">1</text>
+<text x="465" y="273" class="heading">Supervisor</text>
+<text x="435" y="307" class="body">parse goal and assign roles</text>
+<text x="435" y="334" class="small">policy · concurrency · provenance</text>
+
+<rect x="760" y="235" width="300" height="125" rx="12" fill="#fff8e8" stroke="#d2a329" class="card"/>
+<circle cx="790" cy="267" r="15" fill="#d2a329"/><text x="790" y="272" text-anchor="middle" class="number">2</text>
+<text x="820" y="273" class="heading">Async task queue</text>
+<text x="790" y="307" class="body">dispatch independent jobs</text>
+<text x="790" y="334" class="small">retry · priority · resource budget</text>
+
+<rect x="1115" y="235" width="300" height="125" rx="12" fill="#edf3fb" stroke="#527ea8" class="card"/>
+<circle cx="1145" cy="267" r="15" fill="#527ea8"/><text x="1145" y="272" text-anchor="middle" class="number">3</text>
+<text x="1175" y="273" class="heading">Search controller</text>
+<text x="1145" y="307" class="body">budget and stop policy</text>
+<text x="1145" y="334" class="small">beam width · novelty · time limit</text>
+
+<rect x="1470" y="235" width="225" height="125" rx="12" fill="#fff" stroke="#3985c6" class="card"/>
+<text x="1582" y="273" text-anchor="middle" class="heading">Output contract</text>
+<text x="1582" y="307" text-anchor="middle" class="body">ranked hypotheses</text>
+<text x="1582" y="334" text-anchor="middle" class="small">claims + evidence + limits</text>
+
+<!-- top control arrows -->
+<path d="M310 322H405" class="flow"/><polygon points="405,322 396,317.5 396,326.5" fill="#23364d"/>
+<path d="M705 297H760" class="flow"/><polygon points="760,297 751,292.5 751,301.5" fill="#23364d"/>
+<path d="M1060 297H1115" class="flow"/><polygon points="1115,297 1106,292.5 1106,301.5" fill="#23364d"/>
+<path d="M1180 360V390H1000V410" class="flow"/><polygon points="1000,410 995.5,401 1004.5,401" fill="#23364d"/>
+<text x="1015" y="382" class="tiny">dispatch policy</text>
+
+<!-- state store -->
+<rect x="405" y="445" width="300" height="265" rx="12" fill="#e9f5f1" stroke="#219487" class="card"/>
+<text x="555" y="487" text-anchor="middle" class="heading">Candidate frontier</text>
+<text x="555" y="515" text-anchor="middle" class="small">durable search state</text>
+<line x1="435" y1="540" x2="675" y2="540" stroke="#a9cfc8" stroke-width="2"/>
+<text x="435" y="575" class="body">hypothesis + assumptions</text>
+<text x="435" y="610" class="body">score + uncertainty</text>
+<text x="435" y="645" class="body">lineage + duplicate key</text>
+<text x="435" y="680" class="body">evidence + test status</text>
+
+<!-- worker pool -->
+<rect x="760" y="410" width="655" height="340" rx="14" class="panel"/>
+<text x="790" y="445" class="label">SPECIALIZED WORKER POOL</text>
+<text x="1385" y="445" text-anchor="end" class="small">parallel roles over a shared frontier</text>
+
+<!-- agent cards -->
+<rect x="790" y="475" width="280" height="76" rx="9" class="agent"/>
+<circle cx="815" cy="500" r="13" fill="#3985c6"/><text x="815" y="505" text-anchor="middle" class="number">G</text>
+<text x="842" y="504" class="heading">Generation</text><text x="842" y="530" class="small">generate new hypotheses</text>
+
+<rect x="1100" y="475" width="280" height="76" rx="9" class="agent"/>
+<circle cx="1125" cy="500" r="13" fill="#c65b5b"/><text x="1125" y="505" text-anchor="middle" class="number">R</text>
+<text x="1152" y="504" class="heading">Reflection</text><text x="1152" y="530" class="small">correctness · novelty · safety review</text>
+
+<rect x="790" y="575" width="280" height="76" rx="9" class="agent"/>
+<circle cx="815" cy="600" r="13" fill="#735fbd"/><text x="815" y="605" text-anchor="middle" class="number">P</text>
+<text x="842" y="604" class="heading">Proximity</text><text x="842" y="630" class="small">cluster and deduplicate ideas</text>
+
+<rect x="1100" y="575" width="280" height="76" rx="9" class="agent"/>
+<circle cx="1125" cy="600" r="13" fill="#d2a329"/><text x="1125" y="605" text-anchor="middle" class="number">K</text>
+<text x="1152" y="604" class="heading">Ranking</text><text x="1152" y="630" class="small">tournament comparison</text>
+
+<rect x="790" y="675" width="280" height="52" rx="9" class="agent"/>
+<text x="815" y="707" class="heading">Evolution</text><text x="965" y="707" class="small">refine winners</text>
+
+<rect x="1100" y="675" width="280" height="52" rx="9" class="agent"/>
+<text x="1125" y="707" class="heading">Meta-review</text><text x="1270" y="707" class="small">synthesize feedback</text>
+
+<!-- worker pool arrows: explicit, orthogonal, no marker definitions -->
+<path d="M705 495H790" class="evidence"/><polygon points="790,495 781,490.5 781,499.5" fill="#219487"/>
+<text x="725" y="482" class="tiny">seed</text>
+<path d="M1070 513H1100" class="flow"/><polygon points="1100,513 1091,508.5 1091,517.5" fill="#23364d"/>
+<path d="M1240 551V575" class="flow"/><polygon points="1240,575 1235.5,566 1244.5,566" fill="#23364d"/>
+<path d="M1240 651V660H930V675" class="flow"/><polygon points="930,675 925.5,666 934.5,666" fill="#23364d"/>
+<path d="M930 727V780H720V660H705" class="feedback"/><polygon points="705,660 714,655.5 714,664.5" fill="#735fbd"/>
+<path d="M1380 701H1435V380H1265V360" class="feedback"/><polygon points="1265,360 1260.5,369 1269.5,369" fill="#735fbd"/>
+
+<!-- evidence and validation plane -->
+<rect x="405" y="820" width="1010" height="215" rx="14" class="panel"/>
+<text x="435" y="855" class="label">GROUNDING AND VALIDATION PLANE</text>
+
+<rect x="435" y="885" width="235" height="105" rx="10" fill="#f3effc" stroke="#735fbd" class="card"/>
+<text x="552" y="922" text-anchor="middle" class="heading">Knowledge sources</text>
+<text x="552" y="952" text-anchor="middle" class="small">literature · web · databases</text>
+<text x="552" y="975" text-anchor="middle" class="small">specialist models</text>
+
+<rect x="720" y="885" width="235" height="105" rx="10" fill="#fff4e8" stroke="#d98c2b" class="card"/>
+<text x="837" y="922" text-anchor="middle" class="heading">Test harness</text>
+<text x="837" y="952" text-anchor="middle" class="small">counterexamples · simulation</text>
+<text x="837" y="975" text-anchor="middle" class="small">experiments · safety checks</text>
+
+<rect x="1005" y="885" width="235" height="105" rx="10" fill="#e9f5f1" stroke="#219487" class="card"/>
+<text x="1122" y="922" text-anchor="middle" class="heading">Evidence ledger</text>
+<text x="1122" y="952" text-anchor="middle" class="small">claim ↔ source ↔ result</text>
+<text x="1122" y="975" text-anchor="middle" class="small">positive and negative findings</text>
+
+<rect x="1290" y="885" width="235" height="105" rx="10" fill="#edf3fb" stroke="#527ea8" class="card"/>
+<text x="1407" y="922" text-anchor="middle" class="heading">Scientist gate</text>
+<text x="1407" y="952" text-anchor="middle" class="small">accept · redirect · request test</text>
+<text x="1407" y="975" text-anchor="middle" class="small">human judgment for discovery</text>
+
+<!-- evidence plane arrows -->
+<path d="M670 937H720" class="evidence"/><polygon points="720,937 711,932.5 711,941.5" fill="#219487"/>
+<path d="M955 937H1005" class="evidence"/><polygon points="1005,937 996,932.5 996,941.5" fill="#219487"/>
+<path d="M1240 937H1290" class="evidence"/><polygon points="1290,937 1281,932.5 1281,941.5" fill="#219487"/>
+<path d="M1122 885V727" class="evidence"/><polygon points="1122,727 1117.5,736 1126.5,736" fill="#219487"/>
+
+<!-- decision / output -->
+<polygon points="1530,495 1610,545 1530,595 1450,545" fill="#fff" stroke="#3985c6" stroke-width="3"/>
+<text x="1530" y="540" text-anchor="middle" class="heading">Continue?</text>
+<text x="1530" y="563" text-anchor="middle" class="small">budget / quality</text>
+<path d="M1415 540H1450" class="flow"/><polygon points="1450,540 1441,535.5 1441,544.5" fill="#23364d"/>
+<path d="M1610 545H1695V297" class="flow"/><polygon points="1695,297 1690.5,306 1699.5,306" fill="#23364d"/>
+<text x="1625" y="530" class="tiny">no</text>
+<path d="M1530 595V805H735V580H705" class="feedback"/><polygon points="705,580 714,575.5 714,584.5" fill="#735fbd"/>
+<text x="1550" y="700" class="tiny" transform="rotate(90 1550 700)">yes: expand frontier</text>
+
+<!-- feedback loop from human gate -->
+<path d="M1407 990V1070H395V322H405" class="feedback"/><polygon points="405,322 414,317.5 414,326.5" fill="#735fbd"/>
+<text x="820" y="1097" text-anchor="middle" class="small">Human feedback and new evidence redirect the next search round; discarded branches remain auditable.</text>
+
+<!-- footer design contract -->
+<rect x="430" y="1150" width="990" height="55" rx="9" fill="#fff" stroke="#c4ced8" stroke-width="2"/>
+<text x="925" y="1185" text-anchor="middle" class="body">Design contract: candidate schema · diversity / deduplication · evidence ledger · scoring rule · budget · termination gate</text>
+</svg>

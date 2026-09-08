@@ -1,20 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
 <defs><style>
-.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial,sans-serif;fill:#17283c}.u{font:400 18px Arial,sans-serif;fill:#5b6b7c}.h{font:700 22px Arial,sans-serif;fill:#17283c}.s{font:400 16px Arial,sans-serif;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.d{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.title{font:700 36px Arial,sans-serif;fill:#17283c}.sub{font:400 19px Arial,sans-serif;fill:#536a7f}.label{font:700 16px Arial,sans-serif;fill:#476176;letter-spacing:1px}.h{font:700 21px Arial,sans-serif;fill:#17283c}.s{font:400 15px Arial,sans-serif;fill:#405268}.small{font:400 14px Arial,sans-serif;fill:#536b80}.tiny{font:700 13px Arial,sans-serif;fill:#5a7082;letter-spacing:.6px}.flow{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.evidence{stroke:#219487;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.feedback{stroke:#735fbd;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.boundary{fill:#fbfcfe;stroke:#b8c7d5;stroke-width:2}.panel{fill:#f5f8fb;stroke:#c5d1dc;stroke-width:2}.card{stroke-width:3}.note{fill:#fff;stroke:#c4ced8;stroke-width:2}
 </style></defs>
-<rect width="1600" height="900" fill="#f7f9fc"/>
-<text x="80" y="75" class="t">Knowledge Retrieval Pattern</text><text x="80" y="110" class="u">Ground an agent's context in selected sources rather than in memory alone</text>
-<rect x="100" y="350" width="245" height="110" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="222" y="395" text-anchor="middle" class="h">Input query</text><text x="222" y="427" text-anchor="middle" class="s">input item</text>
-<path d="M345 405H500" class="l"/><polygon points="500,405 491,400.5 491,409.5" class="al"/>
-<rect x="500" y="350" width="260" height="110" rx="10" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="630" y="395" text-anchor="middle" class="h">Retriever</text><text x="630" y="427" text-anchor="middle" class="s">keyword · semantic · hybrid</text>
-<rect x="900" y="195" width="275" height="100" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="1037" y="238" text-anchor="middle" class="h">Corpus</text><text x="1037" y="268" text-anchor="middle" class="s">documents · records</text>
-<rect x="900" y="350" width="275" height="100" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="1037" y="393" text-anchor="middle" class="h">Metadata</text><text x="1037" y="423" text-anchor="middle" class="s">attributes · provenance</text>
-<rect x="900" y="505" width="275" height="100" rx="10" fill="#fceceb" stroke="#c65b5b" class="b"/><text x="1037" y="548" text-anchor="middle" class="h">Retrieved context</text><text x="1037" y="578" text-anchor="middle" class="s">ranked evidence bundle</text>
-<!-- Three unambiguous branches: corpus, metadata, and context -->
-<path d="M760 405H840V245H890" class="l"/><polygon points="890,245 881,240.5 881,249.5" class="al"/>
-<path d="M760 405H890" class="l"/><polygon points="890,405 881,400.5 881,409.5" class="al"/>
-<path d="M760 405H840V555H890" class="l"/><polygon points="890,555 881,550.5 881,559.5" class="al"/>
-<path d="M1175 555H1310V700H222V460" class="d"/><polygon points="222,460 217.5,469 226.5,469" class="ad"/>
-<text x="800" y="720" text-anchor="middle" class="s">The consumer should cite retrieved evidence and disclose missing support.</text>
-<rect x="330" y="765" width="940" height="55" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="800" text-anchor="middle" class="s">Retrieval quality is a system property: indexing, search, ranking, and context limits all matter.</text>
+<rect width="1800" height="1120" fill="#f7f9fc"/>
+<text x="70" y="75" class="title">Knowledge Retrieval and Provenance</text>
+<text x="70" y="112" class="sub">Build a grounded context through query analysis, hybrid retrieval, ranking, access control, and citations</text>
+<g transform="translate(1240,62)"><line x1="0" y1="0" x2="38" y2="0" class="flow"/><polygon points="38,0 29,-4.5 29,4.5" fill="#23364d"/><text x="52" y="6" class="small">control flow</text><line x1="160" y1="0" x2="198" y2="0" class="evidence"/><polygon points="198,0 189,-4.5 189,4.5" fill="#219487"/><text x="212" y="6" class="small">evidence flow</text><line x1="350" y1="0" x2="388" y2="0" class="feedback"/><polygon points="388,0 379,-4.5 379,4.5" fill="#735fbd"/><text x="402" y="6" class="small">index feedback</text></g>
+
+<!-- query-time plane -->
+<rect x="80" y="165" width="1640" height="420" rx="16" class="boundary"/><text x="115" y="201" class="label">QUERY-TIME GROUNDING PLANE</text>
+<rect x="110" y="340" width="215" height="110" rx="11" fill="#e6f1fb" stroke="#3985c6" class="card"/><text x="217" y="382" text-anchor="middle" class="h">User query</text><text x="217" y="414" text-anchor="middle" class="s">question + scope</text>
+<rect x="385" y="340" width="245" height="110" rx="11" fill="#fff4e8" stroke="#d98c2b" class="card"/><text x="507" y="382" text-anchor="middle" class="h">Query analysis</text><text x="507" y="414" text-anchor="middle" class="s">rewrite · filters · ACL</text>
+<rect x="690" y="340" width="255" height="110" rx="11" fill="#f0ebfb" stroke="#7863b6" class="card"/><text x="817" y="382" text-anchor="middle" class="h">Hybrid retrieval</text><text x="817" y="414" text-anchor="middle" class="s">lexical + semantic + graph</text>
+<rect x="1005" y="340" width="245" height="110" rx="11" fill="#fff4e8" stroke="#d98c2b" class="card"/><text x="1127" y="382" text-anchor="middle" class="h">Rerank / filter</text><text x="1127" y="414" text-anchor="middle" class="s">relevance · freshness</text>
+<rect x="1310" y="340" width="245" height="110" rx="11" fill="#e9f5f1" stroke="#219487" class="card"/><text x="1432" y="382" text-anchor="middle" class="h">Context builder</text><text x="1432" y="414" text-anchor="middle" class="s">bounded evidence bundle</text>
+<rect x="1610" y="340" width="80" height="110" rx="11" fill="#edf3fb" stroke="#527ea8" class="card"/><text x="1650" y="382" text-anchor="middle" class="h">LLM</text><text x="1650" y="414" text-anchor="middle" class="small">answer</text>
+<path d="M325 395H385" class="flow"/><polygon points="385,395 376,390.5 376,399.5" fill="#23364d"/><path d="M630 395H690" class="flow"/><polygon points="690,395 681,390.5 681,399.5" fill="#23364d"/><path d="M945 395H1005" class="flow"/><polygon points="1005,395 996,390.5 996,399.5" fill="#23364d"/><path d="M1250 395H1310" class="flow"/><polygon points="1310,395 1301,390.5 1301,399.5" fill="#23364d"/><path d="M1555 395H1610" class="flow"/><polygon points="1610,395 1601,390.5 1601,399.5" fill="#23364d"/>
+
+<!-- index-time plane -->
+<rect x="80" y="645" width="1640" height="320" rx="16" class="boundary"/><text x="115" y="681" class="label">INDEX-TIME AND PROVENANCE PLANE</text><text x="1685" y="681" text-anchor="end" class="small">update independently of generation</text>
+<rect x="120" y="760" width="245" height="110" rx="11" fill="#e9f5f1" stroke="#219487" class="card"/><text x="242" y="802" text-anchor="middle" class="h">Source corpus</text><text x="242" y="834" text-anchor="middle" class="s">documents · records · code</text>
+<rect x="430" y="760" width="245" height="110" rx="11" fill="#fff4e8" stroke="#d98c2b" class="card"/><text x="552" y="802" text-anchor="middle" class="h">Ingestion</text><text x="552" y="834" text-anchor="middle" class="s">chunk · normalize · version</text>
+<rect x="740" y="730" width="500" height="170" rx="13" class="panel"/><text x="990" y="765" text-anchor="middle" class="label">INDEX AND ACCESS LAYER</text>
+<rect x="770" y="790" width="135" height="72" rx="8" fill="#f0ebfb" stroke="#7863b6" stroke-width="2.5"/><text x="837" y="820" text-anchor="middle" class="h">Lexical</text><text x="837" y="844" text-anchor="middle" class="small">BM25 / terms</text>
+<rect x="922" y="790" width="135" height="72" rx="8" fill="#e6f1fb" stroke="#3985c6" stroke-width="2.5"/><text x="989" y="820" text-anchor="middle" class="h">Vector</text><text x="989" y="844" text-anchor="middle" class="small">embeddings</text>
+<rect x="1074" y="790" width="135" height="72" rx="8" fill="#edf3fb" stroke="#527ea8" stroke-width="2.5"/><text x="1141" y="820" text-anchor="middle" class="h">Metadata</text><text x="1141" y="844" text-anchor="middle" class="small">ACL / time</text>
+<rect x="1300" y="760" width="245" height="110" rx="11" fill="#e9f5f1" stroke="#219487" class="card"/><text x="1422" y="802" text-anchor="middle" class="h">Provenance store</text><text x="1422" y="834" text-anchor="middle" class="s">source · location · version</text>
+<rect x="1580" y="760" width="110" height="110" rx="11" fill="#fff" stroke="#c65b5b" class="card"/><text x="1635" y="802" text-anchor="middle" class="h">Freshness</text><text x="1635" y="834" text-anchor="middle" class="small">reindex</text>
+<path d="M365 815H430" class="evidence"/><polygon points="430,815 421,810.5 421,819.5" fill="#219487"/><path d="M675 815H740" class="evidence"/><polygon points="740,815 731,810.5 731,819.5" fill="#219487"/><path d="M1240 815H1300" class="evidence"/><polygon points="1300,815 1291,810.5 1291,819.5" fill="#219487"/><path d="M1545 815H1580" class="feedback"/><polygon points="1580,815 1571,810.5 1571,819.5" fill="#735fbd"/>
+
+<!-- index feeds retrieval -->
+<path d="M990 730V625H817V450" class="evidence"/><polygon points="817,450 812.5,459 821.5,459" fill="#219487"/><text x="860" y="615" class="tiny">indexed candidates</text>
+<path d="M1127 450V625H1635V760" class="feedback"/><polygon points="1635,760 1630.5,751 1639.5,751" fill="#735fbd"/><text x="1390" y="615" class="tiny">miss / freshness signal</text>
+<path d="M1422 760V625H1432V450" class="evidence"/><polygon points="1432,450 1427.5,459 1436.5,459" fill="#219487"/>
+<rect x="310" y="1010" width="1180" height="55" rx="9" class="note"/><text x="900" y="1045" text-anchor="middle" class="s">Retrieval contract: return bounded evidence with applicability, access rights, source location, version, and enough provenance to support each important claim.</text>
 </svg>
