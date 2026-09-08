@@ -68,7 +68,7 @@ Claim. This series of blog posts are finished under the cooperation of AI.
 ## Part VI. Case study and domain-specific design
 
 28. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
-29. [A spiral-induction agent for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
+29. [Research agenda: building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
 
 The case study uses the real Danus and Rethlas codebases. The new domain-specific
 page then sketches how the same pattern vocabulary can be organized around the

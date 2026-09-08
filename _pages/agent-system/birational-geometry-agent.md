@@ -1,5 +1,5 @@
 ---
-title: "Case Study Extension: A Spiral-Induction Agent for Birational Geometry"
+title: "Research Agenda: Building an Agent System for Birational Geometry"
 permalink: /posts/2026/08/agent-system/birational-geometry-agent/
 tags:
   - Agent System
@@ -20,14 +20,22 @@ verified updates. The lower band maps the agent-design patterns to the research
 workflow. Solid navy arrows show control, dashed teal arrows show evidence or
 repair feedback, and red arrows show a correctness or admission gate.*
 
-> **Status of this page.** This is a domain-specific architecture sketch. It is
-> not a claim that Danus, Rethlas, or any current system already implements the
-> complete birational-geometry workflow shown here.
+> **Status of this page.** This is a domain-specific research architecture and
+> a long-term implementation target. It is not a claim that Danus, Rethlas, or
+> any current system already implements the complete birational-geometry
+> workflow shown here.
 
-The central idea is that birational geometry should not be represented as a
-single linear “question → proof” pipeline. A research episode often changes
-representation: a pair may be replaced by a log-smooth model, a divisor may be
-restricted by adjunction, or a fibration may expose a lower-dimensional base.
+The objective is not only to build an assistant that explains known
+mathematics, but to build a system that can eventually solve selected real
+birational-geometry problems. A successful solution must include a precise
+statement, a dependency-complete argument, checked hypotheses, and enough
+provenance for a mathematician to inspect and challenge it.
+
+The central architectural idea is that birational geometry should not be
+represented as a single linear “question → proof” pipeline. A research episode
+often changes representation: a pair may be replaced by a log-smooth model, a
+divisor may be restricted by adjunction, or a fibration may expose a
+lower-dimensional base.
 The agent must preserve those changes as explicit, typed obligations rather
 than hiding them inside a long conversation.
 
@@ -63,7 +71,76 @@ The system therefore spirals in two senses: it revisits a coupled theorem
 package, and it moves between dimensions or derived objects while preserving a
 machine-readable ledger of what has actually been established.
 
-## 2. The pattern is broader than BCHM
+## 2. Geometric engines of the spiral
+
+The main tools are geometric transformations, not generic Agent tools. They
+manufacture a new object on which an inductive theorem may be applied, then
+transfer the conclusion back to the original problem. The system should treat
+each transformation as a typed **GeometricReduction** record containing the
+source pair, the map or center, the target dimension, the transformed pair, the
+relation between adjoint data, the hypotheses checked, and the unresolved
+conditions.
+
+### Adjunction and subadjunction
+
+**Adjunction** restricts an adjoint expression to a divisor or a suitable
+stratum, producing a lower-dimensional pair. **Subadjunction** is the
+higher-codimension version used around a minimal log-canonical or non-klt
+center; under the relevant hypotheses it produces a generalized pair on the
+center. See the adjunction discussion in the [Hacon–McKernan–Xu
+notes](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf),
+§3.2. In both cases the agent must record the center, normalization, induced
+boundary or nef part, and the singularity statement that makes the next
+induction step legal.
+
+### Canonical bundle formula
+
+For a suitable fibration $f\colon X\to Z$, the canonical bundle formula
+transfers adjoint data to the base in the form
+$$
+K_X+B+M_X \sim_{\mathbb{R}} f^*(K_Z+B_Z+M_Z).
+$$
+The discriminant part $B_Z$ records singularities of the fibers, while the
+moduli part $M_Z$ records the remaining variation, as formalized for
+lc-trivial fibrations in [Ambro's work](https://arxiv.org/abs/math/0308143).
+This is not merely a change of notation: the base pair and the positivity of
+its moduli part must be constructed and checked before a lower-dimensional
+theorem can be invoked. The
+[Hacon–Xie proof](https://arxiv.org/html/2607.24986) gives a recent Kähler
+example in which the canonical bundle formula is an explicit ingredient of the
+inductive argument.
+
+### MRC and Iitaka fibrations
+
+The **MRC fibration** is the natural branch when non-pseudo-effectivity of the
+canonical class leads to uniruledness: its general fibers are rationally
+connected and its base has smaller dimension. The agent should route the
+resulting base problem separately from the fiber problem, rather than flattening
+the fibration into one prompt.
+
+The **Iitaka fibration** is the corresponding positive-Kodaira-dimension
+mechanism when the relevant linear series or semi-ampleness is available. Its
+base records the Kodaira dimension and its general fiber has Kodaira dimension
+zero. It must not be invoked before the system has established the positivity,
+abundance, or finite-generation assumptions needed to define the fibration; see
+the standard treatment in Lazarsfeld's [*Positivity in Algebraic Geometry I*](https://link.springer.com/book/10.1007/978-3-642-18808-4).
+
+### MMP and scaling as the bridge
+
+Adjunction, subadjunction, and fibrations often require a suitable model first.
+An MMP with scaling, a dlt or log-smooth modification, and the negativity lemma
+are therefore bridge mechanisms: they change the model while preserving the
+precise numerical or birational relation needed by the target theorem. A
+research agent must distinguish a model change from a proof of the target
+statement.
+
+The spiral can consequently be read as:
+
+**target obligation → choose geometric engine → construct transformed pair or
+base → verify hypotheses → invoke lower-dimensional result → transfer and
+record the update.**
+
+## 3. The pattern is broader than BCHM
 
 The theorem graph is not universal: BAB and the Kähler results of Hacon–Xie do
 not use the same labels or the same technical objects. What recurs is the
@@ -84,7 +161,7 @@ the original space. The agent should therefore store the *construction of the
 induction object* as a first-class artifact, rather than treating “apply
 induction” as a black-box action.
 
-## 3. Proposed architecture
+## 4. Proposed architecture
 
 Read the upper band of the figure first. The supervisor does not ask a worker
 to “prove the theorem” in one shot. It selects one frontier obligation, asks
@@ -114,7 +191,7 @@ The lower band is a composition of the patterns developed in this course:
 9. **Human-in-the-loop and guardrails** reserve mathematical interpretation,
    research significance, and final admission for an explicit checkpoint.
 
-## 4. Typed research artifacts
+## 5. Typed research artifacts
 
 The architecture becomes auditable only when its intermediate objects are
 stable. A minimal artifact vocabulary is:
@@ -133,7 +210,7 @@ An artifact should carry a status such as `proposed`, `needs-hypothesis-check`,
 the next stage, and a `verified` result should still record which verifier and
 which assumptions produced that status.
 
-## 5. One spiral episode
+## 6. One spiral episode
 
 For one frontier obligation, the control loop is:
 
@@ -163,7 +240,7 @@ has a verified dependency path, or stop with a precise unresolved obligation
 when the evidence or hypotheses are insufficient. “The model produced a
 plausible proof” is not a termination condition.
 
-## 6. Domain-specific pattern map
+## 7. Domain-specific pattern map
 
 | Course pattern | Birational-geometry specialization | Stable interface |
 |---|---|---|
@@ -181,7 +258,7 @@ The interfaces are deliberately mathematical rather than framework-specific.
 An implementation could change its language model, retrieval backend, or formal
 checker without changing the contract of an obligation or verification report.
 
-## 7. Reliability boundaries
+## 8. Reliability boundaries
 
 The proposed system may search, compare, formalize, test, and suggest. It must
 not silently:
@@ -199,7 +276,7 @@ These boundaries are the domain equivalent of the correctness gate seen in the
 generation and verification are separate responsibilities, and admission is an
 explicit state transition.
 
-## 8. A realistic first implementation
+## 9. A realistic first implementation
 
 The safest first vertical slice is deliberately narrow:
 
@@ -217,6 +294,34 @@ Only after this slice is reliable should the system add broader exploration,
 more agents, or expensive formal verification. The architectural objective is
 not maximal autonomy. It is a trustworthy research instrument whose next step,
 evidence, and reason for stopping can all be inspected.
+
+## 10. What “solve a real problem” should mean
+
+For this research programme, “solve” should be an operational claim rather than
+a marketing label. A candidate solution should produce:
+
+- a precise theorem or counterexample statement;
+- a complete dependency graph of the lemmas and external results used;
+- an explicit record of every representation change, dimension drop, and
+  hypothesis check;
+- a reproducible verification report, including failed approaches; and
+- a human-readable mathematical argument that survives expert review.
+
+The validation ladder should therefore move from controlled to genuinely open
+work:
+
+1. **Proof replay:** reconstruct known arguments and recover their dependency
+   structure from source material.
+2. **Bounded problem sets:** solve examples, special cases, and counterexample
+   searches with known answers.
+3. **Research-grade reconstruction:** complete missing steps in published or
+   partially formalized arguments under human supervision.
+4. **New mathematics:** attempt unresolved problems, while reporting clearly
+   which parts are verified, conjectural, or still open.
+
+The final stage is the scientific goal, but the earlier stages are necessary to
+measure false admissions, missing hypotheses, unsupported citations, and the
+system's ability to recover from a wrong branch of the spiral.
 
 ## References
 
@@ -239,3 +344,9 @@ evidence, and reason for stopping can all be inspected.
    Systems*, Springer, 2025. [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
 7. V. Dibia, *Designing Multi-Agent Systems: Principles, Patterns and
    Implementation for AI Agents*. [Author's book site](https://multiagentbook.com/).
+8. F. Ambro, “The moduli b-divisor of an lc-trivial fibration,”
+   arXiv:math/0308143. [Paper](https://arxiv.org/abs/math/0308143).
+9. R. Lazarsfeld, *Positivity in Algebraic Geometry I: Classical Setting:
+   Line Bundles and Linear Series*, Springer, 2004. [Publisher record](https://link.springer.com/book/10.1007/978-3-642-18808-4).
+10. C. D. Hacon, J. McKernan, and C. Xu, *Boundedness of varieties of log
+    general type*, expository notes, Section 3.2 on adjunction. [Notes](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf).

@@ -62,10 +62,10 @@
   <rect class="panel" x="540" y="175" width="410" height="190" rx="10"/>
   <text class="card-title" x="565" y="207">2. Manufacture the object</text>
   <text class="body" x="565" y="235">Make the next hypothesis applicable</text>
-  <rect class="soft-blue" x="565" y="255" width="165" height="42" rx="7"/><text class="small" x="584" y="281">adjunction</text>
-  <rect class="soft-blue" x="745" y="255" width="165" height="42" rx="7"/><text class="small" x="758" y="281">fibration / base</text>
-  <rect class="soft-blue" x="565" y="310" width="165" height="42" rx="7"/><text class="small" x="585" y="336">restriction</text>
-  <rect class="soft-blue" x="745" y="310" width="165" height="42" rx="7"/><text class="small" x="770" y="336">model change</text>
+  <rect class="soft-blue" x="565" y="255" width="165" height="42" rx="7"/><text class="small" x="584" y="276">adjunction</text><text class="tiny" x="584" y="293">subadjunction</text>
+  <rect class="soft-blue" x="745" y="255" width="165" height="42" rx="7"/><text class="small" x="758" y="276">canonical bundle</text><text class="tiny" x="758" y="293">formula</text>
+  <rect class="soft-blue" x="565" y="310" width="165" height="42" rx="7"/><text class="small" x="585" y="331">MRC / Iitaka</text><text class="tiny" x="585" y="348">fibration</text>
+  <rect class="soft-blue" x="745" y="310" width="165" height="42" rx="7"/><text class="small" x="770" y="331">MMP / model</text><text class="tiny" x="770" y="348">change</text>
 
   <line x1="950" y1="270" x2="1020" y2="270" class="navy"/>
   <polygon points="1020,270 1006,262 1006,278" class="arrow-navy"/>
