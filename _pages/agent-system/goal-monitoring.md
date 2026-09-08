@@ -33,6 +33,13 @@ Aggressive stopping saves cost but can miss a solution; permissive stopping can
 run indefinitely. Make the stopping decision observable and allow escalation or
 replanning when the goal changes.
 
+## Real-world application
+
+For a long-running migration or investigation, a goal ledger records milestones,
+dependencies, budget, and termination criteria. Monitoring can distinguish real
+progress from repeated tool calls and stop or escalate when the goal becomes
+infeasible.
+
 ## Figure
 
 ![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)

@@ -38,6 +38,13 @@ Reflection catches local defects but adds latency and may lead to endless
 rewriting. Limit revision rounds, retain the rejected draft, and stop when a
 defined quality threshold or human checkpoint is reached.
 
+## Real-world application
+
+In code review or report production, a generator creates a candidate and an
+independent checker compares it with explicit requirements. The checker should
+return localized repair instructions, so the workflow can revise one defect and
+retain the rejected version for audit.
+
 ## Figure
 
 ![Reflection pattern](/images/agent-system/05-reflection.svg)

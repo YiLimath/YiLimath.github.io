@@ -40,6 +40,13 @@ Schemas improve parsing, testing, and auditing, but overly rigid schemas can
 discard useful uncertainty. Validate both syntax and semantics, and preserve an
 explicit `unknown`, `incomplete`, or `needs_review` status.
 
+## Real-world application
+
+An underwriting or compliance service can require every model response to be a
+record containing decision, evidence, uncertainty, and next action. The parser
+can reject malformed records before they reach a policy engine, while a valid
+record still remains subject to semantic review.
+
 ## Figure
 
 ![Structured output pattern](/images/agent-system/13-structured-output.svg)

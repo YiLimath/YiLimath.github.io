@@ -41,6 +41,13 @@ Search can become a loop, confirmation bias can narrow the branches too early,
 and citation count can be mistaken for mathematical relevance. Keep a search log
 and preserve negative results.
 
+## Real-world application
+
+For a market, technical, or literature investigation, the coordinator can
+decompose the question, query several source types, maintain an evidence ledger,
+and launch follow-up searches when coverage is weak. The final report is useful
+because its claims and stopping condition remain inspectable.
+
 ## Figure
 
 ![Deep search workflow](/images/agent-system/15-deep-search.svg)

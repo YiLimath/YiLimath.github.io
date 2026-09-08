@@ -42,6 +42,13 @@ The Rethlas generation agent exposes theorem search and proof verification as
 explicit tools; Danus adds a role-gated gateway so different agents see
 different capabilities.
 
+## Real-world application
+
+An operations agent may query a database, run a diagnostic command, and open a
+ticket. Typed tool schemas, permission checks, timeouts, and explicit
+observations turn those side effects into a controlled workflow rather than an
+unreviewable conversation.
+
 ## Figure
 
 ![Tool use and code execution](/images/agent-system/06-tool-use.svg)

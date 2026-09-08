@@ -68,3 +68,9 @@ architecture-views page.*
 29. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
 
 The case study uses the real Danus and Rethlas codebases. It identifies which patterns appear in their orchestration, worker, verification, memory, gateway, and authoring components.
+
+## Part VII. Patterns applied to real problems
+
+30. [Real-world architecture templates](/posts/2026/08/agent-system/real-world-applications/)
+
+The final page converts the pattern vocabulary into concrete architecture decisions for support, research, software maintenance, reporting, and proof verification.

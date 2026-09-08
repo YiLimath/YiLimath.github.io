@@ -38,6 +38,13 @@ Planning improves coordination and resumability, but plans can be stale,
 overly detailed, or prematurely committed. Persist checkpoints, permit
 replanning, and define a stopping rule before expensive execution.
 
+## Real-world application
+
+A software maintenance agent can turn an issue into a bounded plan, execute the
+steps in a sandbox, run tests, and send the diff for review. The plan is useful
+because the system can resume or repair one failed step without repeating the
+whole task blindly.
+
 ## Figure
 
 ![Plan and execute pattern](/images/agent-system/08-plan.svg)

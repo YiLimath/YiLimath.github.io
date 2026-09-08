@@ -40,6 +40,13 @@ Use scopes, provenance, ranking, limits, and explicit invalidation. Test whether
 the system performs better with a memory item rather than assuming persistence
 is always helpful.
 
+## Real-world application
+
+In case management, short-term conversation state and durable customer records
+have different retention and access rules. A memory policy should decide what
+to write, how to retrieve it, how to expire it, and how to correct a stale
+record; storing every message is not a design.
+
 ## Figure
 
 ![Memory management pattern](/images/agent-system/09-memory-management.svg)

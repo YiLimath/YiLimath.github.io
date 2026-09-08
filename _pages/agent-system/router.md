@@ -42,6 +42,12 @@ Routing reduces prompt complexity and allows specialization, but misclassificati
 can be worse than using a general path. Use an abstain or human-escalation path,
 monitor route distributions, and test boundary cases.
 
+## Real-world application
+
+Customer support is a direct use: billing, technical, and account requests have
+different tools and owners, while the caller still expects one response
+contract. Low-confidence or high-risk cases should route to a human queue.
+
 ## Figure
 
 ![Router pattern](/images/agent-system/03-router.svg)

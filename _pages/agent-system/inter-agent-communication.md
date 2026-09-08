@@ -37,6 +37,13 @@ duplicated work, unbounded message histories, and messages that omit assumptions
 Could a new agent reconstruct the claim, its assumptions, evidence, and next
 action from the message alone?
 
+## Real-world application
+
+In a multi-team service desk, agents should exchange task IDs, status, evidence,
+and error types rather than free-form dialogue. A versioned message protocol
+allows one worker to be replaced, retried, or audited without changing every
+other worker.
+
 ## Figure
 
 ![Inter-agent communication and protocols](/images/agent-system/21-inter-agent-communication.svg)

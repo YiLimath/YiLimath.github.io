@@ -32,6 +32,13 @@ Strict controls can block useful work; weak controls can make failures invisible
 Design an explicit escalation path, test adversarial and edge cases, and make
 blocked actions observable so that safety does not become silent failure.
 
+## Real-world application
+
+An agent that can send messages, change records, or execute code needs input,
+context, action, and output controls. Permissions, validation, redaction,
+sandboxing, and human approval should sit at explicit boundaries around the
+capability, not only inside a system prompt.
+
 ## Figure
 
 ![Guardrails and safety](/images/agent-system/20-guardrails-safety.svg)

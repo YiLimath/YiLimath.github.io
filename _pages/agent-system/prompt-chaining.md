@@ -41,6 +41,13 @@ Chaining improves observability and revision, but adds latency and can propagate
 an early extraction error through every later stage. Validate high-value
 artifacts before continuing; formatting success is not mathematical correctness.
 
+## Real-world application
+
+In an invoice or compliance workflow, one stage extracts fields, another
+checks them against policy, and a final stage prepares a human-readable report.
+Each stage can be replayed from its artifact when a supplier changes a field or
+the policy is revised.
+
 ## Figure
 
 ![Prompt chaining workflow](/images/agent-system/02-prompt-chaining.svg)

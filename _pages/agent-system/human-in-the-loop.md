@@ -39,6 +39,13 @@ record the decision, and make resumption idempotent.
 The system may propose a proof direction or a literature connection, while the
 mathematician decides whether it is relevant, novel, or worth pursuing.
 
+## Real-world application
+
+Refunds, access changes, publication decisions, and other consequential actions
+need an explicit approval checkpoint. The agent should present the proposed
+action, evidence, uncertainty, and reversible alternatives, then resume from a
+durable checkpoint after the human accepts or rejects it.
+
 ## Figure
 
 ![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)

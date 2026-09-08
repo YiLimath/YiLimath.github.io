@@ -42,6 +42,13 @@ and citation drift. Evaluate recall and precision separately, cap context,
 rerank for applicability, and allow the system to say that no adequate source
 was found.
 
+## Real-world application
+
+An internal policy assistant should retrieve the current policy version and
+return a claim with its source location, rather than answer from model memory.
+The retrieval boundary can enforce access control, freshness, and citation
+requirements before generation.
+
 ## Figure
 
 ![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)

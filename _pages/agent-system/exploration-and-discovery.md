@@ -39,6 +39,13 @@ tests, budgets, and human review keep the process meaningful.
 What new evidence justifies expanding the search, and what evidence justifies
 stopping it?
 
+## Real-world application
+
+For product discovery or scientific search, several candidate explanations can
+be explored in parallel and tested against examples or counterexamples. The
+system should preserve discarded branches and apply a budgeted selection rule,
+so novelty does not replace evidence.
+
 ## Figure
 
 ![Exploration and discovery workflow](/images/agent-system/22-exploration-discovery.svg)

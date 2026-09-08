@@ -34,6 +34,13 @@ Measure what happens when model quality, retrieval quality, or tool availability
 decreases. A graceful fallback should expose lower confidence or reduced scope,
 not silently claim the original quality.
 
+## Real-world application
+
+A high-volume support service can send routine requests to a cheaper path,
+reserve stronger reasoning for ambiguous cases, and defer work that is not
+urgent. The policy must expose quality limits and escalation behavior so cost
+savings do not silently change the service promise.
+
 ## Figure
 
 ![Resource-aware optimization](/images/agent-system/19-resource-aware-optimization.svg)

@@ -57,6 +57,14 @@ The same system can therefore be structurally complicated without becoming
 conceptually muddled. Keep the visual language stable, but choose the diagram
 form that matches the relation being explained.
 
+## Real-world application
+
+For a customer-support or repository-maintenance system, begin with the
+failure that matters: misrouting, unsafe side effects, missing evidence, or an
+unreviewed result. Select the smallest composition that exposes that failure,
+then add parallel workers, memory, or reflection only when the workflow needs
+their contract.
+
 ## Figures
 
 ![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)

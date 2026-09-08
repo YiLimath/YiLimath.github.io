@@ -43,6 +43,13 @@ A fallback that returns a shorter answer must not claim the quality of a verifie
 proof. Degraded operation should expose reduced confidence, reduced scope, or a
 human escalation.
 
+## Real-world application
+
+For a customer-facing agent, the gateway owns authentication, rate limits, and
+request identity; the runtime owns task state; and the evaluator owns quality
+signals. Keeping those responsibilities separate makes provider failures,
+prompt changes, and partial tool outages observable in production.
+
 ## Figure
 
 ![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)

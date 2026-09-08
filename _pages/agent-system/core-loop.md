@@ -37,6 +37,13 @@ correct result from a lucky or irreproducible one.
 Which step is allowed to be probabilistic, and which boundary must be
 deterministic, observable, and testable?
 
+## Real-world application
+
+Consider an operations agent diagnosing a failed service. It reads a metric,
+forms a hypothesis, runs a read-only command, observes the result, and either
+tries a bounded next step or escalates. The loop is real only when those
+observations and control decisions are retained as an operational trace.
+
 ## Figure
 
 ![Agent system core control loop](/images/agent-system/00-agent-system-overview.svg)

@@ -81,3 +81,6 @@ course synthesis built from those overlapping contributions.
 
 *Figure: a source-to-course crosswalk for control flow, knowledge and reasoning,
 coordination, and reliability/operations.*
+
+For task-level application architectures, see [Real-world architecture
+templates](/posts/2026/08/agent-system/real-world-applications/).

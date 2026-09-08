@@ -33,6 +33,13 @@ Adaptation improves performance on recurring tasks but risks overfitting,
 catastrophic forgetting, and self-reinforcing errors. Use held-out evaluation
 cases, rollback, versioned policies, and human approval for high-impact changes.
 
+## Real-world application
+
+A support router can learn from resolved tickets, but only after feedback is
+validated and evaluated against a fixed test set. Versioned prompts, routing
+policies, and memories let the team roll back a change that improves one queue
+while damaging another.
+
 ## Figure
 
 ![Learning and adaptation pattern](/images/agent-system/10-learning-adaptation.svg)

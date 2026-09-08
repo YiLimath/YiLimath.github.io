@@ -38,6 +38,13 @@ Multiple agents improve diversity and throughput but create coordination cost,
 duplicate work, inconsistent assumptions, and error amplification. Shared truth
 must be guarded by an evaluator or verifier; consensus is not correctness.
 
+## Real-world application
+
+An incident-response system can assign log analysis, dependency lookup, and
+remediation planning to separate specialists. A coordinator merges their typed
+artifacts and sends only the agreed incident state to the operator; specialists
+do not need to share hidden conversational context.
+
 ## Figure
 
 ![Multiple-agent cooperation](/images/agent-system/07-multi-agent-cooperation.svg)

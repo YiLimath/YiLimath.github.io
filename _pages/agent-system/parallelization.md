@@ -38,6 +38,13 @@ aggregator needs a quality rule, not just a majority vote.
 Would the branches still be correct if they were run in a different order or on
 different machines?
 
+## Real-world application
+
+In due-diligence or incident analysis, independent workers can inspect separate
+repositories, logs, or source collections at the same time. Aggregation is safe
+only after each branch returns a typed result with provenance and an explicit
+failure status.
+
 ## Figure
 
 ![Parallelization pattern](/images/agent-system/04-parallelization.svg)

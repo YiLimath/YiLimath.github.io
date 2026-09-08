@@ -44,6 +44,14 @@ particular model name.
 If replacing the model requires rewriting every downstream component, the system
 has exposed an implementation instead of an interface.
 
+## Real-world application
+
+In a production request, these objects appear as concrete boundaries: an API
+request becomes bounded context, the model proposes an action, a tool returns
+an observation, and an evaluator or policy decides whether state may change.
+The building blocks are useful because each boundary can be logged and tested
+independently.
+
 ## Figure
 
 ![Agent system building blocks](/images/agent-system/01-building-blocks.svg)

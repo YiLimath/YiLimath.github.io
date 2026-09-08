@@ -64,6 +64,14 @@ Read from outside to inside, then from structure to execution:
 This keeps a complicated architecture visible without forcing one diagram to
 carry incompatible levels of abstraction.
 
+## Real-world application
+
+For an internal research assistant, the context view identifies the operator,
+source systems, and downstream report; the container view separates retrieval,
+runtime, evaluation, and storage; and the dynamic view shows the evidence and
+repair loop. A single diagram cannot answer all three questions without hiding
+important responsibility boundaries.
+
 ## Reference notation
 
 The context and container figures are teaching redraws of the first two levels

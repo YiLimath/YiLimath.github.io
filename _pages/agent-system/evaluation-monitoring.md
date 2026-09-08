@@ -35,6 +35,13 @@ Build a golden set containing ordinary cases, edge cases, and known failures
 before optimizing prompts or architecture. Monitor drift after deployment and
 turn recurring failures into regression tests.
 
+## Real-world application
+
+An automated report service should evaluate both the final report and the trace
+that produced it: source coverage, schema validity, latency, cost, and policy
+violations. A score without a retained artifact does not tell an engineer what
+to repair.
+
 ## Figure
 
 ![Evaluation and monitoring](/images/agent-system/18-evaluation-monitoring.svg)

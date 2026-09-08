@@ -40,6 +40,13 @@ branch. Use a budget, a verifier, and a criterion for changing representation.
 Which representation makes the next mathematical obstruction visible, and what
 independent check can reject the resulting candidate?
 
+## Real-world application
+
+In root-cause analysis, the same incident can be represented as a timeline, a
+dependency graph, and a set of competing hypotheses. Representation change is
+valuable when one view hides a dependency; each proposed explanation still
+needs tests or evidence before it is accepted.
+
 ## Figure
 
 ![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)

@@ -38,6 +38,13 @@ Recovery improves availability but can amplify side effects, duplicate work, or
 loop forever. Use idempotence, exponential backoff where appropriate, retry
 limits, circuit breakers, and human escalation.
 
+## Real-world application
+
+When a payment API, retriever, or code tool fails, the system should classify
+the failure before retrying. A bounded retry, an idempotent replay, a fallback,
+or a human escalation is safer than sending the same action again until the
+context window or budget is exhausted.
+
 ## Figure
 
 ![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)

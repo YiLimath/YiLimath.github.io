@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Real-world architecture templates for agent design patterns</title>
+<desc id="figure-desc">Five architecture templates show how agent design patterns solve customer support triage, literature research, software maintenance, data reporting, and mathematical proof verification. Each template has a real task, connected components, and an observable contract.</desc>
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}
+    .subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .column{font:700 14px Arial,sans-serif;letter-spacing:.7px;fill:#5b6b7c}
+    .rowtitle{font:700 19px Arial,sans-serif;fill:#17283c}
+    .heading{font:700 15px Arial,sans-serif;fill:#17283c}
+    .body{font:400 14px Arial,sans-serif;fill:#405268}
+    .small{font:400 12px Arial,sans-serif;fill:#5b6b7c}
+    .panel{fill:#fff;stroke:#cfd9e5;stroke-width:1.8}
+    .boundary{fill:#fbfcfe;stroke:#95a5b7;stroke-width:1.8;stroke-dasharray:8 7}
+    .problem{fill:#e7f1fb;stroke:#3985c6;stroke-width:2.5}
+    .control{fill:#fff3e4;stroke:#d98c2b;stroke-width:2.5}
+    .runtime{fill:#e6f4f0;stroke:#219487;stroke-width:2.5}
+    .knowledge{fill:#f0ebfb;stroke:#7863b6;stroke-width:2.5}
+    .evaluation{fill:#fceceb;stroke:#c65b5b;stroke-width:2.5}
+    .artifact{fill:#fffbed;stroke:#b79438;stroke-width:2.5}
+    .human{fill:#edf1f6;stroke:#6f8195;stroke-width:2.5}
+    .flow{stroke:#23364d;stroke-width:2.5;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .feedback{stroke:#219487;stroke-width:2.5;fill:none;stroke-dasharray:8 7;stroke-linecap:butt;stroke-linejoin:miter}
+    .gate{stroke:#c65b5b;stroke-width:2.5;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .navy{fill:#23364d}.teal{fill:#219487}.red{fill:#c65b5b}
+  </style>
+</defs>
+
+<rect width="1600" height="1500" fill="#f7f9fc"/>
+<text x="70" y="68" class="title">Real-World Architecture Templates</text>
+<text x="70" y="103" class="subtitle">A design pattern earns its place when it makes a real failure mode observable and recoverable</text>
+<text x="70" y="143" class="column">PROBLEM TO SOLVE</text>
+<text x="350" y="143" class="column">FUNCTIONAL ARCHITECTURE IN USE</text>
+<text x="1160" y="143" class="column">STABLE CONTRACT / EVIDENCE</text>
+
+<!-- 01 -->
+<rect x="50" y="175" width="1500" height="220" rx="14" class="panel"/>
+<text x="75" y="204" class="small">01 · ROUTING + SPECIALIZATION</text>
+<rect x="75" y="230" width="250" height="125" rx="11" class="problem"/>
+<text x="200" y="267" text-anchor="middle" class="rowtitle">Customer support</text>
+<text x="200" y="292" text-anchor="middle" class="rowtitle">triage</text>
+<text x="200" y="323" text-anchor="middle" class="body">many intents, different owners</text>
+<rect x="350" y="205" width="780" height="175" rx="12" class="boundary"/>
+<text x="372" y="227" class="small">REQUEST PATH · ONE COMMON RESPONSE CONTRACT</text>
+<rect x="382" y="250" width="116" height="55" rx="9" class="problem"/>
+<text x="440" y="283" text-anchor="middle" class="heading">Ingress</text>
+<text x="440" y="299" text-anchor="middle" class="small">message + account</text>
+<rect x="540" y="250" width="135" height="55" rx="9" class="control"/>
+<text x="607" y="283" text-anchor="middle" class="heading">Router</text>
+<text x="607" y="299" text-anchor="middle" class="small">intent + risk</text>
+<rect x="755" y="215" width="150" height="55" rx="9" class="runtime"/>
+<text x="830" y="248" text-anchor="middle" class="heading">Specialist queue</text>
+<text x="830" y="264" text-anchor="middle" class="small">billing / technical</text>
+<rect x="755" y="320" width="150" height="55" rx="9" class="human"/>
+<text x="830" y="353" text-anchor="middle" class="heading">Human queue</text>
+<text x="830" y="369" text-anchor="middle" class="small">high risk / unclear</text>
+<rect x="970" y="250" width="135" height="55" rx="9" class="artifact"/>
+<text x="1037" y="283" text-anchor="middle" class="heading">Response schema</text>
+<text x="1037" y="299" text-anchor="middle" class="small">status + next step</text>
+<path d="M498 277 H540" class="flow"/><polygon points="540,277 528,271 528,283" class="navy"/>
+<path d="M675 265 H720 V242 H755" class="flow"/><polygon points="755,242 743,236 743,248" class="navy"/>
+<path d="M675 290 H720 V347 H755" class="flow"/><polygon points="755,347 743,341 743,353" class="navy"/>
+<path d="M905 242 H940 V277 H970" class="flow"/><polygon points="970,277 958,271 958,283" class="navy"/>
+<path d="M905 347 H940 V290 H970" class="flow"/><polygon points="970,290 958,284 958,296" class="navy"/>
+<text x="698" y="234" class="small">low risk</text><text x="698" y="338" class="small">escalate</text>
+<rect x="1160" y="225" width="360" height="125" rx="11" class="artifact"/>
+<text x="1185" y="257" class="heading">Contract</text>
+<text x="1185" y="282" class="body">A route is explicit, reversible, and logged.</text>
+<text x="1185" y="305" class="body">Every branch returns the same status schema;</text>
+<text x="1185" y="328" class="body">risk or ambiguity sends the case to a person.</text>
+
+<!-- 02 -->
+<rect x="50" y="415" width="1500" height="220" rx="14" class="panel"/>
+<text x="75" y="444" class="small">02 · DECOMPOSITION + RETRIEVAL + REFLECTION</text>
+<rect x="75" y="470" width="250" height="125" rx="11" class="problem"/>
+<text x="200" y="507" text-anchor="middle" class="rowtitle">Literature survey</text>
+<text x="200" y="538" text-anchor="middle" class="body">broad question, incomplete support</text>
+<text x="200" y="562" text-anchor="middle" class="body">and source-quality variation</text>
+<rect x="350" y="445" width="780" height="175" rx="12" class="boundary"/>
+<text x="372" y="467" class="small">EVIDENCE PATH · ITERATE UNTIL COVERAGE IS ADEQUATE</text>
+<rect x="382" y="490" width="105" height="55" rx="9" class="problem"/>
+<text x="434" y="523" text-anchor="middle" class="heading">Question</text>
+<rect x="525" y="490" width="125" height="55" rx="9" class="control"/>
+<text x="587" y="523" text-anchor="middle" class="heading">Decompose</text>
+<rect x="688" y="470" width="112" height="42" rx="8" class="runtime"/>
+<text x="744" y="496" text-anchor="middle" class="heading">Search A</text>
+<rect x="688" y="525" width="112" height="42" rx="8" class="runtime"/>
+<text x="744" y="551" text-anchor="middle" class="heading">Search B</text>
+<rect x="850" y="490" width="145" height="55" rx="9" class="knowledge"/>
+<text x="922" y="523" text-anchor="middle" class="heading">Evidence ledger</text>
+<text x="922" y="539" text-anchor="middle" class="small">source + claim + span</text>
+<rect x="1040" y="490" width="70" height="55" rx="9" class="artifact"/>
+<text x="1075" y="523" text-anchor="middle" class="heading">Draft</text>
+<path d="M487 517 H525" class="flow"/><polygon points="525,517 513,511 513,523" class="navy"/>
+<path d="M650 505 H668 V491 H688" class="flow"/><polygon points="688,491 676,485 676,497" class="navy"/>
+<path d="M650 530 H668 V546 H688" class="flow"/><polygon points="688,546 676,540 676,552" class="navy"/>
+<path d="M800 491 H825 V510 H850" class="flow"/><polygon points="850,510 838,504 838,516" class="navy"/>
+<path d="M800 546 H825 V525 H850" class="flow"/><polygon points="850,525 838,519 838,531" class="navy"/>
+<path d="M995 517 H1040" class="flow"/><polygon points="1040,517 1028,511 1028,523" class="navy"/>
+<path d="M1075 545 V590 H587 V545" class="feedback"/><polygon points="587,545 581,557 593,557" class="teal"/>
+<text x="850" y="590" class="small">missing coverage / weak source</text>
+<rect x="1160" y="465" width="360" height="125" rx="11" class="artifact"/>
+<text x="1185" y="497" class="heading">Contract</text>
+<text x="1185" y="522" class="body">Claims are tied to evidence before synthesis.</text>
+<text x="1185" y="545" class="body">The ledger records coverage and uncertainty;</text>
+<text x="1185" y="568" class="body">the stopping rule is visible, not implicit.</text>
+
+<!-- 03 -->
+<rect x="50" y="655" width="1500" height="220" rx="14" class="panel"/>
+<text x="75" y="684" class="small">03 · PLAN + TOOLS + TEST-GATED RECOVERY</text>
+<rect x="75" y="710" width="250" height="125" rx="11" class="problem"/>
+<text x="200" y="747" text-anchor="middle" class="rowtitle">Software maintenance</text>
+<text x="200" y="778" text-anchor="middle" class="body">change a repository safely</text>
+<text x="200" y="802" text-anchor="middle" class="body">under tests and review policy</text>
+<rect x="350" y="685" width="780" height="175" rx="12" class="boundary"/>
+<text x="372" y="707" class="small">CHANGE PATH · SIDE EFFECTS STAY INSIDE A SANDBOX</text>
+<rect x="382" y="730" width="100" height="55" rx="9" class="problem"/>
+<text x="432" y="763" text-anchor="middle" class="heading">Issue</text>
+<rect x="520" y="730" width="120" height="55" rx="9" class="control"/>
+<text x="580" y="763" text-anchor="middle" class="heading">Planner</text>
+<text x="580" y="779" text-anchor="middle" class="small">steps + scope</text>
+<rect x="680" y="730" width="140" height="55" rx="9" class="runtime"/>
+<text x="750" y="763" text-anchor="middle" class="heading">Sandbox tools</text>
+<text x="750" y="779" text-anchor="middle" class="small">repo + commands</text>
+<rect x="860" y="730" width="115" height="55" rx="9" class="evaluation"/>
+<text x="917" y="763" text-anchor="middle" class="heading">Test gate</text>
+<text x="917" y="779" text-anchor="middle" class="small">fail / pass</text>
+<rect x="1015" y="730" width="95" height="55" rx="9" class="human"/>
+<text x="1062" y="763" text-anchor="middle" class="heading">Review</text>
+<text x="1062" y="779" text-anchor="middle" class="small">merge / stop</text>
+<path d="M482 757 H520" class="flow"/><polygon points="520,757 508,751 508,763" class="navy"/>
+<path d="M640 757 H680" class="flow"/><polygon points="680,757 668,751 668,763" class="navy"/>
+<path d="M820 757 H860" class="flow"/><polygon points="860,757 848,751 848,763" class="navy"/>
+<path d="M975 757 H1015" class="flow"/><polygon points="1015,757 1003,751 1003,763" class="navy"/>
+<path d="M917 785 V835 H580 V785" class="feedback"/><polygon points="580,785 574,797 586,797" class="teal"/>
+<text x="790" y="835" class="small">bounded repair loop; stop after retry budget</text>
+<rect x="1160" y="705" width="360" height="125" rx="11" class="artifact"/>
+<text x="1185" y="737" class="heading">Contract</text>
+<text x="1185" y="762" class="body">A change produces a diff, test log, and review</text>
+<text x="1185" y="785" class="body">status. Failed actions are repaired or escalated;</text>
+<text x="1185" y="808" class="body">the agent never silently merges its own guess.</text>
+
+<!-- 04 -->
+<rect x="50" y="895" width="1500" height="220" rx="14" class="panel"/>
+<text x="75" y="924" class="small">04 · PARALLELIZATION + AGGREGATION + EVALUATION</text>
+<rect x="75" y="950" width="250" height="125" rx="11" class="problem"/>
+<text x="200" y="987" text-anchor="middle" class="rowtitle">Data / report generation</text>
+<text x="200" y="1018" text-anchor="middle" class="body">independent analyses</text>
+<text x="200" y="1042" text-anchor="middle" class="body">must become one deliverable</text>
+<rect x="350" y="925" width="780" height="175" rx="12" class="boundary"/>
+<text x="372" y="947" class="small">PIPELINE PATH · INDEPENDENT WORK MERGES THROUGH A SCHEMA</text>
+<rect x="382" y="970" width="95" height="55" rx="9" class="problem"/>
+<text x="429" y="1003" text-anchor="middle" class="heading">Sources</text>
+<rect x="515" y="970" width="120" height="55" rx="9" class="control"/>
+<text x="575" y="1003" text-anchor="middle" class="heading">Coordinator</text>
+<rect x="675" y="950" width="145" height="95" rx="9" class="runtime"/>
+<text x="747" y="975" text-anchor="middle" class="heading">Workers</text>
+<rect x="692" y="985" width="110" height="17" rx="4" class="problem"/>
+<text x="747" y="998" text-anchor="middle" class="small">analysis A</text>
+<rect x="692" y="1005" width="110" height="17" rx="4" class="problem"/>
+<text x="747" y="1018" text-anchor="middle" class="small">analysis B</text>
+<rect x="692" y="1025" width="110" height="17" rx="4" class="problem"/>
+<text x="747" y="1038" text-anchor="middle" class="small">analysis C</text>
+<rect x="860" y="970" width="125" height="55" rx="9" class="knowledge"/>
+<text x="922" y="1003" text-anchor="middle" class="heading">Merge schema</text>
+<rect x="1025" y="970" width="85" height="55" rx="9" class="evaluation"/>
+<text x="1067" y="1003" text-anchor="middle" class="heading">Validate</text>
+<path d="M477 997 H515" class="flow"/><polygon points="515,997 503,991 503,1003" class="navy"/>
+<path d="M635 997 H675" class="flow"/><polygon points="675,997 663,991 663,1003" class="navy"/>
+<path d="M820 997 H860" class="flow"/><polygon points="860,997 848,991 848,1003" class="navy"/>
+<path d="M985 997 H1025" class="flow"/><polygon points="1025,997 1013,991 1013,1003" class="navy"/>
+<path d="M1067 1025 V1070 H575 V1025" class="feedback"/><polygon points="575,1025 569,1037 581,1037" class="teal"/>
+<text x="805" y="1070" class="small">missing field / inconsistent result</text>
+<rect x="1160" y="945" width="360" height="125" rx="11" class="artifact"/>
+<text x="1185" y="977" class="heading">Contract</text>
+<text x="1185" y="1002" class="body">Parallel work is useful only when outputs can</text>
+<text x="1185" y="1025" class="body">be normalized and checked independently.</text>
+<text x="1185" y="1048" class="body">Provenance and omissions remain in the report.</text>
+
+<!-- 05 -->
+<rect x="50" y="1135" width="1500" height="220" rx="14" class="panel"/>
+<text x="75" y="1164" class="small">05 · GENERATION + VERIFICATION + CORRECTNESS GATE</text>
+<rect x="75" y="1190" width="250" height="125" rx="11" class="problem"/>
+<text x="200" y="1227" text-anchor="middle" class="rowtitle">Mathematical proof</text>
+<text x="200" y="1252" text-anchor="middle" class="rowtitle">workflow</text>
+<text x="200" y="1283" text-anchor="middle" class="body">search broadly, admit facts carefully</text>
+<rect x="350" y="1165" width="780" height="175" rx="12" class="boundary"/>
+<text x="372" y="1187" class="small">TRUST PATH · EXPLORATION IS SEPARATE FROM ADMISSION</text>
+<rect x="382" y="1210" width="95" height="55" rx="9" class="problem"/>
+<text x="429" y="1243" text-anchor="middle" class="heading">Problem</text>
+<rect x="515" y="1210" width="120" height="55" rx="9" class="runtime"/>
+<text x="575" y="1243" text-anchor="middle" class="heading">Generator</text>
+<text x="575" y="1259" text-anchor="middle" class="small">candidate proof</text>
+<rect x="675" y="1210" width="120" height="55" rx="9" class="evaluation"/>
+<text x="735" y="1243" text-anchor="middle" class="heading">Verifier</text>
+<text x="735" y="1259" text-anchor="middle" class="small">verdict + gaps</text>
+<polygon points="860,1237 900,1207 940,1237 900,1267" fill="#fffbed" stroke="#c65b5b" stroke-width="2.5"/>
+<text x="900" y="1242" text-anchor="middle" class="heading">pass?</text>
+<rect x="985" y="1190" width="125" height="55" rx="9" class="artifact"/>
+<text x="1047" y="1223" text-anchor="middle" class="heading">Fact graph</text>
+<text x="1047" y="1239" text-anchor="middle" class="small">accepted artifact</text>
+<rect x="985" y="1280" width="125" height="45" rx="9" class="human"/>
+<text x="1047" y="1307" text-anchor="middle" class="heading">Repair hints</text>
+<path d="M477 1237 H515" class="flow"/><polygon points="515,1237 503,1231 503,1243" class="navy"/>
+<path d="M635 1237 H675" class="flow"/><polygon points="675,1237 663,1231 663,1243" class="navy"/>
+<path d="M795 1237 H860" class="gate"/><polygon points="860,1237 848,1231 848,1243" class="red"/>
+<path d="M900 1207 V1178 H1047 V1190" class="gate"/><polygon points="1047,1190 1041,1178 1053,1178" class="red"/>
+<path d="M900 1267 V1302 H985" class="gate"/><polygon points="985,1302 973,1296 973,1308" class="red"/>
+<path d="M985 1302 H650 V1325 H575 V1265" class="feedback"/><polygon points="575,1265 569,1277 581,1277" class="teal"/>
+<text x="760" y="1325" class="small">repair only with an explicit verifier verdict</text>
+<rect x="1160" y="1185" width="360" height="125" rx="11" class="artifact"/>
+<text x="1185" y="1217" class="heading">Contract</text>
+<text x="1185" y="1242" class="body">Generated text is not truth. Admission requires</text>
+<text x="1185" y="1265" class="body">a structured verdict, a retained proof artifact,</text>
+<text x="1185" y="1288" class="body">and a clear repair or escalation path.</text>
+
+<rect x="250" y="1380" width="1100" height="56" rx="9" fill="#edf2f7" stroke="#d1dce7" stroke-width="1.5"/>
+<path d="M280 1408 H335" class="flow"/><polygon points="335,1408 323,1402 323,1414" class="navy"/>
+<text x="350" y="1413" class="body">functional control / handoff</text>
+<path d="M610 1408 H665" class="feedback"/><polygon points="665,1408 653,1402 653,1414" class="teal"/>
+<text x="680" y="1413" class="body">state, evidence, or repair feedback</text>
+<path d="M1010 1408 H1065" class="gate"/><polygon points="1065,1408 1053,1402 1053,1414" class="red"/>
+<text x="1080" y="1413" class="body">correctness / policy gate</text>
+<text x="800" y="1470" text-anchor="middle" class="subtitle">The pattern is justified by the operational contract at the end of the path.</text>
+</svg>
