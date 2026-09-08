@@ -18,7 +18,10 @@ of that generation–verification core.
 
 *Figure 1. A layered as-built view of the case study. Solid navy arrows show
 control, dashed teal arrows show data or feedback, and red arrows mark the
-correctness-gated path into the fact graph.*
+correctness-gated path into the fact graph. The dashed teal return carries the
+verifier's verdict and repair hints back to the gateway; the verdict also enters
+the explicit correctness gate, and only its accepted branch reaches the
+gateway-controlled write into the fact graph.*
 
 The architecture is a code-based case study. Its purpose is to show how the
 patterns from the reference books appear as concrete modules and interfaces.

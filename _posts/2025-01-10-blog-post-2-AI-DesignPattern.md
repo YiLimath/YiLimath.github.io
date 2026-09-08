@@ -8,7 +8,7 @@ classes: agent-system-hub
 full_page_reading: true
 ---
 
-The aim of this series is to give a research-oriented introduction to design patterns for agent systems. The pages are independent, but they share one question:
+The aim of this series is to give an introduction to design patterns for agent systems. The pages are independent, but they share one question:
 
 > Where does the system need flexibility, and where does it need a stable, testable interface?
 
@@ -19,6 +19,9 @@ An agent system trades determinism for flexibility. A design pattern is a reusab
 *Architecture figure: the system context view introduces the agent system's
 external relationships; its internal containers are explained on the
 architecture-views page.*
+
+Claim. This series of blog posts are finished under the cooperation of AI.
+
 
 ## Part I. Foundations
 

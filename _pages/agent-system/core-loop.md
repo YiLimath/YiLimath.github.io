@@ -11,7 +11,10 @@ full_page_reading: true
 
 ![Agent system core control loop](/images/agent-system/00-agent-system-overview.svg)
 
-*Figure: perception, inference, action, feedback, and control form the reusable execution loop.*
+*Figure: course architecture redraw. Read the center from left to right: the
+execution cycle is surrounded by goal and termination policy, context and
+memory, action policy, trace and evaluation, and bounded tools. The control
+gate decides whether another action is justified.*
 
 The core loop is the common denominator behind workflow agents and autonomous
 agents. It should be treated as an execution abstraction, not as an excuse for
@@ -52,7 +55,9 @@ observations and control decisions are retained as an operational trace.
 
 ## Reference basis
 
-The five-stage loop is the introductory agent loop in Gulli, *Agentic Design
-Patterns*, and the execution-loop treatment in Dibia, *Designing Multi-Agent
-Systems*, Chapter 4, Section 4.2. ReAct gives a primary research example of
-interleaving reasoning, actions, and observations: [paper](https://arxiv.org/abs/2210.03629).
+The five-stage loop is the introductory agent loop in Antonio Gulli,
+[*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+and the execution-loop treatment in Victor Dibia,
+[*Designing Multi-Agent Systems*](https://multiagentbook.com/), Chapter 4,
+Section 4.2. ReAct gives a primary research example of interleaving reasoning,
+actions, and observations: [paper](https://arxiv.org/abs/2210.03629).

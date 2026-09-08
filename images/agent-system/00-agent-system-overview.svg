@@ -1,18 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}
-.title{font:700 34px Arial,sans-serif;fill:#17283c}.sub{font:400 18px Arial,sans-serif;fill:#5b6b7c}.h{font:700 22px Arial,sans-serif;fill:#17283c}.t{font:600 18px Arial,sans-serif;fill:#17283c}.s{font:400 16px Arial,sans-serif;fill:#405268}.box{fill:#fff;stroke:#9eb0c2;stroke-width:2}.line{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:butt;stroke-linejoin:miter}.dash{stroke:#70859a;stroke-width:2.5;stroke-dasharray:9 8;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<defs><style>
+.title{font:700 36px Arial,sans-serif;fill:#17283c}.sub{font:400 19px Arial,sans-serif;fill:#536a7f}.label{font:700 16px Arial,sans-serif;fill:#476176;letter-spacing:1px}.h{font:700 21px Arial,sans-serif;fill:#17283c}.s{font:400 15px Arial,sans-serif;fill:#405268}.small{font:400 14px Arial,sans-serif;fill:#536b80}.tiny{font:700 13px Arial,sans-serif;fill:#5a7082;letter-spacing:.6px}.flow{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.feedback{stroke:#735fbd;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.stateflow{stroke:#219487;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.boundary{fill:#fbfcfe;stroke:#b8c7d5;stroke-width:2}.panel{fill:#f5f8fb;stroke:#c5d1dc;stroke-width:2}.card{stroke-width:3}.note{fill:#fff;stroke:#c4ced8;stroke-width:2}
 </style></defs>
-<rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="title">Agent System: Core Control Loop</text><text x="80" y="110" class="sub">A reusable architecture for trading determinism for flexibility</text>
-<rect x="80" y="180" width="190" height="100" rx="10" class="box"/><text x="175" y="220" text-anchor="middle" class="h">Environment</text><text x="175" y="251" text-anchor="middle" class="s">task, data, user</text>
-<rect x="365" y="180" width="250" height="100" rx="10" fill="#e6f1fb" stroke="#3985c6" stroke-width="3"/><text x="490" y="220" text-anchor="middle" class="h">Perception</text><text x="490" y="251" text-anchor="middle" class="s">observe · filter · interpret</text>
-<rect x="700" y="180" width="250" height="100" rx="10" fill="#eee8fb" stroke="#7355aa" stroke-width="3"/><text x="825" y="220" text-anchor="middle" class="h">Inference</text><text x="825" y="251" text-anchor="middle" class="s">reason · plan · decide</text>
-<rect x="1035" y="180" width="250" height="100" rx="10" fill="#e6f4f1" stroke="#219487" stroke-width="3"/><text x="1160" y="220" text-anchor="middle" class="h">Action</text><text x="1160" y="251" text-anchor="middle" class="s">use tools · interact · modify</text>
-<rect x="1370" y="180" width="170" height="100" rx="10" class="box"/><text x="1455" y="220" text-anchor="middle" class="h">Outcome</text><text x="1455" y="251" text-anchor="middle" class="s">new state</text>
-<path d="M270 230 H353" class="line"/><polygon points="365,230 353,224 353,236" class="al"/><path d="M615 230 H688" class="line"/><polygon points="700,230 688,224 688,236" class="al"/><path d="M950 230 H1023" class="line"/><polygon points="1035,230 1023,224 1023,236" class="al"/><path d="M1285 230 H1358" class="line"/><polygon points="1370,230 1358,224 1358,236" class="al"/>
-<path d="M1455 300 V570 H490 V292" class="dash"/><polygon points="490,280 484,292 496,292" class="ad"/>
-<rect x="365" y="570" width="250" height="100" rx="10" fill="#eef5ff" stroke="#3985c6" stroke-width="2"/><text x="490" y="610" text-anchor="middle" class="h">Memory</text><text x="490" y="641" text-anchor="middle" class="s">store · retrieve · update</text>
-<path d="M490 570 V292" class="dash"/><polygon points="490,280 484,292 496,292" class="ad"/>
-<rect x="1035" y="570" width="250" height="100" rx="10" fill="#fff4e8" stroke="#d98c2b" stroke-width="2"/><text x="1160" y="610" text-anchor="middle" class="h">Human checkpoint</text><text x="1160" y="641" text-anchor="middle" class="s">review · approve · revise</text>
-<path d="M1160 570 V292" class="dash"/><polygon points="1160,280 1154,292 1166,292" class="ad"/>
-<rect x="80" y="760" width="1440" height="70" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><circle cx="120" cy="795" r="9" fill="#3985c6"/><text x="140" y="801" class="s">control flow</text><circle cx="330" cy="795" r="9" fill="#70859a"/><text x="350" y="801" class="s">state / feedback</text><circle cx="590" cy="795" r="9" fill="#d98c2b"/><text x="610" y="801" class="s">human intervention</text><text x="1000" y="801" class="s">Design question: what changes, and what remains stable?</text>
+<rect width="1800" height="1120" fill="#f7f9fc"/>
+<text x="70" y="75" class="title">Agent System: Core Control Loop</text>
+<text x="70" y="112" class="sub">Perception, inference, action, observation, and control under explicit state and policy boundaries</text>
+<g transform="translate(1220,62)"><line x1="0" y1="0" x2="38" y2="0" class="flow"/><polygon points="38,0 29,-4.5 29,4.5" fill="#23364d"/><text x="52" y="6" class="small">control flow</text><line x1="160" y1="0" x2="198" y2="0" class="stateflow"/><polygon points="198,0 189,-4.5 189,4.5" fill="#219487"/><text x="212" y="6" class="small">state / observation</text><line x1="390" y1="0" x2="428" y2="0" class="feedback"/><polygon points="428,0 419,-4.5 419,4.5" fill="#735fbd"/><text x="442" y="6" class="small">revision loop</text></g>
+
+<!-- external boundary -->
+<rect x="60" y="430" width="220" height="155" rx="12" fill="#fff" stroke="#6e83a0" class="card"/>
+<text x="170" y="474" text-anchor="middle" class="h">Environment</text>
+<text x="170" y="506" text-anchor="middle" class="s">task · data · user</text>
+<text x="170" y="534" text-anchor="middle" class="small">tools and external state</text>
+
+<!-- agent boundary -->
+<rect x="320" y="165" width="1415" height="825" rx="18" class="boundary"/>
+<text x="355" y="201" class="label">AGENT EXECUTION BOUNDARY</text>
+
+<!-- control sidecars -->
+<rect x="390" y="235" width="275" height="105" rx="11" fill="#fff4e8" stroke="#d98c2b" class="card"/>
+<text x="527" y="276" text-anchor="middle" class="h">Goal &amp; constraints</text>
+<text x="527" y="308" text-anchor="middle" class="s">success · budget · permissions</text>
+<rect x="715" y="235" width="275" height="105" rx="11" fill="#e9f5f1" stroke="#219487" class="card"/>
+<text x="852" y="276" text-anchor="middle" class="h">Context / memory</text>
+<text x="852" y="308" text-anchor="middle" class="s">retrieve · compress · persist</text>
+<rect x="1040" y="235" width="275" height="105" rx="11" fill="#f0ebfb" stroke="#7863b6" class="card"/>
+<text x="1177" y="276" text-anchor="middle" class="h">Model / action policy</text>
+<text x="1177" y="308" text-anchor="middle" class="s">next action selection</text>
+<rect x="1365" y="235" width="275" height="105" rx="11" fill="#fceceb" stroke="#c65b5b" class="card"/>
+<text x="1502" y="276" text-anchor="middle" class="h">Trace / evaluator</text>
+<text x="1502" y="308" text-anchor="middle" class="s">quality · error · progress</text>
+
+<!-- execution cycle -->
+<rect x="370" y="395" width="1085" height="365" rx="15" class="panel"/>
+<text x="400" y="430" class="label">EXECUTION CYCLE</text>
+<text x="1425" y="430" text-anchor="end" class="small">the reusable agent runtime</text>
+<rect x="410" y="520" width="215" height="110" rx="11" fill="#e6f1fb" stroke="#3985c6" class="card"/><text x="517" y="562" text-anchor="middle" class="h">1 · Perceive</text><text x="517" y="594" text-anchor="middle" class="s">filter observation</text>
+<rect x="690" y="520" width="215" height="110" rx="11" fill="#f0ebfb" stroke="#7863b6" class="card"/><text x="797" y="562" text-anchor="middle" class="h">2 · Infer</text><text x="797" y="594" text-anchor="middle" class="s">reason · plan · decide</text>
+<rect x="970" y="520" width="215" height="110" rx="11" fill="#fff4e8" stroke="#d98c2b" class="card"/><text x="1077" y="562" text-anchor="middle" class="h">3 · Act</text><text x="1077" y="594" text-anchor="middle" class="s">emit action or artifact</text>
+<rect x="1250" y="520" width="170" height="110" rx="11" fill="#e9f5f1" stroke="#219487" class="card"/><text x="1335" y="562" text-anchor="middle" class="h">4 · Observe</text><text x="1335" y="594" text-anchor="middle" class="s">validate result</text>
+<path d="M280 575H410" class="stateflow"/><polygon points="410,575 401,570.5 401,579.5" fill="#219487"/><text x="300" y="562" class="tiny">initial state</text>
+<path d="M625 575H690" class="flow"/><polygon points="690,575 681,570.5 681,579.5" fill="#23364d"/>
+<path d="M905 575H970" class="flow"/><polygon points="970,575 961,570.5 961,579.5" fill="#23364d"/>
+<path d="M1185 575H1250" class="flow"/><polygon points="1250,575 1241,570.5 1241,579.5" fill="#23364d"/>
+<path d="M1185 600H1450V505H1480" class="flow"/><polygon points="1480,505 1471,500.5 1471,509.5" fill="#23364d"/><text x="1375" y="493" class="tiny">tool call</text>
+<rect x="1480" y="430" width="200" height="150" rx="12" fill="#fff" stroke="#6e83a0" class="card"/><text x="1580" y="474" text-anchor="middle" class="h">Tools / world</text><text x="1580" y="506" text-anchor="middle" class="s">API · code · environment</text><text x="1580" y="534" text-anchor="middle" class="small">side effects are bounded</text>
+<path d="M1480 555H1450V610H1420" class="stateflow"/><polygon points="1420,610 1429,605.5 1429,614.5" fill="#219487"/><text x="1455" y="638" class="tiny">observation</text>
+
+<!-- control gate -->
+<polygon points="1335,735 1430,795 1335,855 1240,795" fill="#fff" stroke="#3985c6" stroke-width="3"/><text x="1335" y="790" text-anchor="middle" class="h">Continue?</text><text x="1335" y="814" text-anchor="middle" class="small">goal · budget · safety</text>
+<path d="M1335 630V735" class="flow"/><polygon points="1335,735 1330.5,726 1339.5,726" fill="#23364d"/>
+<path d="M1240 795H1130V670H797V630" class="feedback"/><polygon points="797,630 792.5,639 801.5,639" fill="#735fbd"/><text x="1070" y="686" class="tiny">yes: next controlled step</text>
+<path d="M1430 795H1510V745" class="flow"/><polygon points="1510,745 1505.5,754 1514.5,754" fill="#23364d"/>
+<rect x="1435" y="640" width="245" height="105" rx="11" fill="#fff" stroke="#3985c6" class="card"/><text x="1557" y="682" text-anchor="middle" class="h">Response / handoff</text><text x="1557" y="714" text-anchor="middle" class="s">verified artifact or escalation</text><text x="1450" y="780" class="tiny">no</text>
+
+<!-- sidecar connections -->
+<path d="M527 340V395H520V520" class="feedback"/><polygon points="520,520 515.5,511 524.5,511" fill="#735fbd"/>
+<path d="M852 340V420H520V520" class="stateflow"/><polygon points="520,520 515.5,511 524.5,511" fill="#219487"/>
+<path d="M1177 340V420H797V520" class="feedback"/><polygon points="797,520 792.5,511 801.5,511" fill="#735fbd"/>
+<path d="M1502 340V420H1335V520" class="feedback"/><polygon points="1335,520 1330.5,511 1339.5,511" fill="#735fbd"/>
+<path d="M1502 340V600H1430V795" class="feedback"/><polygon points="1430,795 1425.5,786 1434.5,786" fill="#735fbd"/>
+<text x="1120" y="375" class="tiny">sidecars inject context and policy; evaluation constrains control</text>
+
+<!-- bottom contract -->
+<rect x="390" y="930" width="1110" height="55" rx="9" class="note"/><text x="945" y="965" text-anchor="middle" class="s">Core invariant: every action produces an observation, every iteration updates traceable state, and control decides whether another action is justified.</text>
 </svg>

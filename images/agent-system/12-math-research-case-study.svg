@@ -65,13 +65,13 @@
 <text x="880" y="661" text-anchor="middle" class="body">HTTP /verify · fresh Codex judge</text>
 <text x="880" y="683" text-anchor="middle" class="body">correct ⇔ no errors and no gaps</text>
 
-<rect x="1100" y="555" width="220" height="82" rx="11" fill="#fff2f0" stroke="#c65b5b" class="box"/>
-<text x="1210" y="587" text-anchor="middle" class="label" style="font-size:18px">Fact graph</text>
-<text x="1210" y="614" text-anchor="middle" class="body">write only if correct</text>
+<rect x="1160" y="555" width="160" height="82" rx="11" fill="#fff2f0" stroke="#c65b5b" class="box"/>
+<text x="1240" y="587" text-anchor="middle" class="label" style="font-size:18px">Fact graph</text>
+<text x="1240" y="614" text-anchor="middle" class="body">write if correct</text>
 
-<rect x="1100" y="665" width="220" height="82" rx="11" fill="#edf7f5" stroke="#72b9ae" class="box"/>
-<text x="1210" y="697" text-anchor="middle" class="label" style="font-size:18px">Memory tiers</text>
-<text x="1210" y="724" text-anchor="middle" class="body">local · global · trace</text>
+<rect x="1160" y="665" width="160" height="82" rx="11" fill="#edf7f5" stroke="#72b9ae" class="box"/>
+<text x="1240" y="697" text-anchor="middle" class="label" style="font-size:18px">Memory tiers</text>
+<text x="1240" y="724" text-anchor="middle" class="body">local · global · trace</text>
 
 <path d="M590 535V570H480V590" class="navy"/>
 <polygon points="480,590 474.5,579 485.5,579" class="ah-navy"/>
@@ -79,25 +79,29 @@
 <path d="M630 625H730" class="navy"/>
 <polygon points="730,625 719,619.5 719,630.5" class="ah-navy"/>
 <text x="680" y="611" text-anchor="middle" class="small">POST /verify</text>
-<path d="M730 745H630" class="teal"/>
-<polygon points="630,745 641,739.5 641,750.5" class="ah-teal"/>
-<text x="680" y="735" text-anchor="middle" class="small">verdict + repair_hints</text>
+<path d="M730 690H630" class="teal"/>
+<polygon points="630,690 641,684.5 641,695.5" class="ah-teal"/>
+<text x="680" y="678" text-anchor="middle" class="small">verdict + repair_hints</text>
 
 <!-- Verification-gated writes -->
-<path d="M630 590V560H1100" class="red"/>
-<polygon points="1100,560 1089,554.5 1089,565.5" class="ah-red"/>
-<text x="800" y="548" text-anchor="middle" class="small">gateway commits iff correct</text>
-<path d="M480 715V770H1060V706H1100" class="teal"/>
-<polygon points="1100,706 1089,700.5 1089,711.5" class="ah-teal"/>
+<path d="M1030 625H1060" class="teal"/>
+<polygon points="1060,625 1049,619.5 1049,630.5" class="ah-teal"/>
+<polygon points="1060,625 1100,590 1140,625 1100,660" fill="#fff8e8" stroke="#d98c2b" class="box"/>
+<text x="1100" y="630" text-anchor="middle" class="small" style="font-weight:700">correct?</text>
+<path d="M1140 625H1160" class="red"/>
+<polygon points="1160,625 1149,619.5 1149,630.5" class="ah-red"/>
+<text x="1150" y="650" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">yes</text>
+<path d="M480 715V770H1130V706H1160" class="teal"/>
+<polygon points="1160,706 1149,700.5 1149,711.5" class="ah-teal"/>
 <text x="820" y="758" text-anchor="middle" class="small">gm_* reads / verification trace</text>
 
 <!-- Output plane -->
 <rect x="440" y="805" width="620" height="82" rx="12" fill="#fffdf5" stroke="#d98c2b" class="box"/>
 <text x="750" y="838" text-anchor="middle" class="label">Isolated authoring agents</text>
 <text x="750" y="866" text-anchor="middle" class="body">write-paper (publication) · human-summary (progress report)</text>
-<path d="M1100 625H1070V775H1060V805" class="teal"/>
+<path d="M1160 625H1130V775H1060V805" class="teal"/>
 <polygon points="1060,805 1054.5,794 1065.5,794" class="ah-teal"/>
-<text x="1165" y="766" text-anchor="middle" class="small">verified facts / reports</text>
+<text x="1190" y="766" text-anchor="middle" class="small">verified facts / reports</text>
 
 <!-- Cross-cutting services -->
 <rect x="330" y="905" width="990" height="45" rx="9" fill="#ffffff" stroke="#c4ced8" stroke-width="2"/>
