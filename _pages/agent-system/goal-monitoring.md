@@ -48,7 +48,8 @@ infeasible.
 
 ## Reference basis
 
-The source pattern is Gulli, *Agentic Design Patterns*, Chapter 11, “Goal
-Setting and Monitoring.” Dibia's orchestrator loop and task-management
+The source pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 11, “Goal Setting and Monitoring.” Dibia's orchestrator loop and
+task-management
 treatment appears in *Designing Multi-Agent Systems*, Chapters 2 and 7; the
 task and progress ledgers are also explicit in the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).

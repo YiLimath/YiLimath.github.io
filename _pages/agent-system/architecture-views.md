@@ -7,6 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Figures
+
+![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
+
+*Figure 1. Context view: the agent system is treated as one unit and its
+external relationships are shown; internal containers are deliberately hidden.*
+
+![Agent system container view](/images/agent-system/28-agent-system-container.svg)
+
+*Figure 2. Container view: the system boundary is opened into replaceable
+responsibilities, stable interfaces, and operational controls.*
+
 ## Why one architecture diagram is not enough
 
 An agent system combines control flow, model calls, tools, knowledge, state,
@@ -19,11 +31,7 @@ small set of views, each with one question and one scope.
 The context view treats the agent system as one unit. It identifies the people,
 services, knowledge sources, and reviewers that exchange responsibility with
 that unit. It is the right view for introducing the system and for deciding
-what belongs inside or outside the architecture.
-
-![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
-
-*Figure: context view; internal containers are deliberately hidden.*
+what belongs inside or outside the architecture. Figure 1 gives this view.
 
 ## Container view: the responsibilities
 
@@ -36,12 +44,9 @@ interface:
 - knowledge and memory provide context and persistent state;
 - the tool gateway authorizes and adapts external actions;
 - the evaluator turns quality or policy requirements into a verdict;
-- the artifact store makes checkpoints, traces, and results durable.
-
-![Agent system container view](/images/agent-system/28-agent-system-container.svg)
-
-*Figure: container view; commands, data, and evaluation feedback use distinct
-arrow conventions.*
+- the artifact store makes checkpoints, traces, and results durable. Figure 2
+  gives this view; commands, data, and evaluation feedback use distinct arrow
+  conventions.
 
 ## Dynamic and operational views
 

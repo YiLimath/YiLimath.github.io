@@ -65,15 +65,11 @@ Claim. This series of blog posts are finished under the cooperation of AI.
 26. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
 27. [Architecture views](/posts/2026/08/agent-system/architecture-views/)
 
-## Part VI. Case study
+## Part VI. Case study and domain-specific design
 
 28. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
-29. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
+29. [A spiral-induction agent for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
 
-The case study uses the real Danus and Rethlas codebases. It identifies which patterns appear in their orchestration, worker, verification, memory, gateway, and authoring components.
-
-## Part VII. Patterns applied to real problems
-
-30. [Real-world architecture templates](/posts/2026/08/agent-system/real-world-applications/)
-
-The final page converts the pattern vocabulary into concrete architecture decisions for support, research, software maintenance, reporting, and proof verification.
+The case study uses the real Danus and Rethlas codebases. The new domain-specific
+page then sketches how the same pattern vocabulary can be organized around the
+spiraling induction that appears in birational-geometry proof architecture.

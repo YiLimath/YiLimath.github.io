@@ -52,8 +52,9 @@ other worker.
 
 ## Reference basis
 
-The pattern is Gulli, *Agentic Design Patterns*, Chapter 15, “Inter-Agent
-Communication (A2A),” and Dibia, *Designing Multi-Agent Systems*, Chapter 12,
+The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 15, “Inter-Agent Communication (A2A),” and Dibia, [*Designing Multi-Agent
+Systems*](https://multiagentbook.com/), Chapter 12,
 “Protocols for Distributed Agents.” The [MCP specification](https://modelcontextprotocol.io/specification)
 is a primary protocol reference for standardized access to tools and data; it
 is complementary to agent-to-agent messaging.

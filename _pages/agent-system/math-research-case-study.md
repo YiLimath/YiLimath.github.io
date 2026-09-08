@@ -8,23 +8,28 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-This case study uses two real codebases. **Rethlas** is the smaller proof-search
-system: a generation agent reads a mathematical problem and drafts a proof
-blueprint, while a verification agent checks the blueprint through a local HTTP
-service. **Danus** builds a long-running, strategy-steered worker system on top
-of that generation–verification core.
+## Figure 1
 
 ![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)
 
 *Figure 1. A layered as-built view of the case study. Solid navy arrows show
 control, dashed teal arrows show data or feedback, and red arrows mark the
 correctness-gated path into the fact graph. The dashed teal return carries the
-verifier's verdict and repair hints back to the gateway; the verdict also enters
-the explicit correctness gate, and only its accepted branch reaches the
-gateway-controlled write into the fact graph.*
+verifier's verdict and repair hints back to the gateway; the gateway's
+`fact_submit` path contains the write gate, and only `verdict == "correct"`
+leaves on the red commit path into the fact graph.*
+
+This case study uses two real codebases. **Rethlas** is the smaller proof-search
+system: a generation agent reads a mathematical problem and drafts a proof
+blueprint, while a verification agent checks the blueprint through a local HTTP
+service. **Danus** builds a long-running, strategy-steered worker system on top
+of that generation–verification core.
 
 The architecture is a code-based case study. Its purpose is to show how the
 patterns from the reference books appear as concrete modules and interfaces.
+For a domain-specific design sketch that uses the same vocabulary for
+birational-geometry research, see [A spiral-induction agent for birational
+geometry](/posts/2026/08/agent-system/birational-geometry-agent/).
 
 ## Rethlas: the two-agent core
 
@@ -108,14 +113,29 @@ long-running operation:
 
 ## Scope and limits
 
-This page documents the architecture visible in the Danus and Rethlas source
-trees. It does not claim that the system automatically proves arbitrary
-mathematics. A verified artifact is a result accepted by the system's verifier
-contract; mathematical interpretation and research significance remain separate
-questions.
+This page documents the architecture visible in the local Danus and Rethlas
+code snapshots used for this case study. The linked papers and repositories
+provide public provenance, but their default branches or later revisions may
+differ from the snapshots inspected here. It does not claim that either system
+automatically proves arbitrary mathematics. A verified artifact is a result
+accepted by the system's verifier contract; mathematical interpretation and
+research significance remain separate questions.
 
 ## How to read the diagrams
 
 *The two diagrams deliberately use different forms: the first emphasizes
 components and boundaries, while the second emphasizes states, decisions, and
 recovery. Both describe the same code-based case study.*
+
+## References
+
+1. J. Liu et al., “Danus: Orchestrating Mathematical Reasoning Agents with
+   Fact-Graph Memory,” arXiv:2607.06447 (2026). [Paper](https://arxiv.org/abs/2607.06447)
+   and [source repository](https://github.com/frenzymath/Danus).
+2. H. Ju et al., “Automated Conjecture Resolution with Formal Verification,”
+   arXiv:2604.03789 (2026). [Paper](https://arxiv.org/abs/2604.03789) and
+   [Rethlas source repository](https://github.com/frenzymath/Rethlas).
+3. A. Gullí, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent
+   Systems*, Springer, 2025. [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
+4. V. Dibia, *Designing Multi-Agent Systems: Principles, Patterns and
+   Implementation for AI Agents*. [Author's book site](https://multiagentbook.com/).

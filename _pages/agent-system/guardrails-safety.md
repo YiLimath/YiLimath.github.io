@@ -47,9 +47,10 @@ capability, not only inside a system prompt.
 
 ## Reference basis
 
-The source pattern is Gulli, *Agentic Design Patterns*, Chapter 18,
-“Guardrails/Safety Patterns,” and Lakshmanan and Hapke, *Generative AI Design
-Patterns*, Chapter 9, including Self-Check and Guardrails. Anthropic's
+The source pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 18, “Guardrails/Safety Patterns,” and Lakshmanan and Hapke, [*Generative
+AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+Chapter 9, including Self-Check and Guardrails. Anthropic's
 [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
 provides a current engineering discussion of human control, security, and
 prompt-injection risk.

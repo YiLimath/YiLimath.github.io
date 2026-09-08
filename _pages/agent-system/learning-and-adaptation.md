@@ -51,6 +51,8 @@ while damaging another.
 ## Reference basis
 
 This page follows Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 9, “Learning and
-Adaptation.” The online/offline separation, rollback, and fixed-evaluation
+Adaptation.” Dibia's [evaluation and optimization treatment](https://multiagentbook.com/)
+provides a complementary systems perspective. The online/offline separation,
+rollback, and fixed-evaluation
 requirements are course engineering safeguards, not a claim that online
 learning is automatically safe.

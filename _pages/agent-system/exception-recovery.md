@@ -53,7 +53,8 @@ context window or budget is exhausted.
 
 ## Reference basis
 
-The pattern is Gulli, *Agentic Design Patterns*, Chapter 12, “Exception
-Handling and Recovery.” The production consequences of retries, fallbacks, and
-failure isolation are developed in Mitra, *System Design for the LLM Era*,
+The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 12, “Exception Handling and Recovery.” The production consequences of
+retries, fallbacks, and failure isolation are developed in Mitra, [*System
+Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
 Chapter 2, including the circuit-breaker and tiered-fallback patterns.

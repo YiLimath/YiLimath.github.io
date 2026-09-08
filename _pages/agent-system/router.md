@@ -57,7 +57,9 @@ contract. Low-confidence or high-risk cases should route to a human queue.
 
 ## Reference basis
 
-The pattern is Gulli, *Agentic Design Patterns*, Chapter 2. It is also treated
+The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 2. It is also treated
 as a routing workflow in Anthropic's [engineering guide](https://www.anthropic.com/engineering/building-effective-agents)
-and as model routing, tiered orchestration, and intent routing in Mitra, *System
-Design for the LLM Era*, Chapters 2 and 6.
+and as model routing, tiered orchestration, and intent routing in Mitra, [*System
+Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
+Chapters 2 and 6.

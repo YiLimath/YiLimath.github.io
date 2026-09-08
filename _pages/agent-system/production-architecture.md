@@ -58,9 +58,10 @@ prompt changes, and partial tool outages observable in production.
 
 ## Reference basis
 
-The production patterns follow Mitra, *System Design for the LLM Era*, Chapters
-2–6, especially gateways, circuit breakers, asynchronous processing, caching,
-evaluation, and security. Dibia's Chapters 10–13 provide complementary
+The production patterns follow Mitra, [*System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
+Chapters 2–6, especially gateways, circuit breakers, asynchronous processing,
+caching, evaluation, and security. Dibia's [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapters 10–13 provide complementary
 references for trajectory evaluation, optimization, distributed protocols, and
 responsible deployment.
 

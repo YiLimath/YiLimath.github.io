@@ -45,7 +45,8 @@ architectural requirements.
 
 ## Reference basis
 
-This translation is a course synthesis of Gulli's pattern catalogue and
-Dibia's treatment of task decomposition, workflow architecture, evaluation, and
-responsible AI. The [reference map](/posts/2026/08/agent-system/reference-map/)
-identifies the corresponding book chapters and supporting research sources.
+This translation is a course synthesis of Gulli's [pattern catalogue](https://link.springer.com/book/10.1007/978-3-032-01402-3)
+and Dibia's treatment of task decomposition, workflow architecture, evaluation,
+and responsible AI in [*Designing Multi-Agent Systems*](https://multiagentbook.com/).
+The relevant books and supporting research sources are linked directly in the
+reference basis at the end of each page.

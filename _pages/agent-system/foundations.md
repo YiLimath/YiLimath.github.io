@@ -60,8 +60,9 @@ independently.
 
 ## Reference diagrams and sources
 
-The vocabulary is anchored in Gulli, *Agentic Design Patterns*, the introduction
-and Chapter 1, and Dibia, *Designing Multi-Agent Systems*, Chapter 4. This figure
+The vocabulary is anchored in Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+the introduction and Chapter 1, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapter 4. This figure
 is an original teaching redraw: it synthesizes the vocabulary of the four
 course books rather than reproducing one of their illustrations. Its main loop
 can be compared with Figure 1 of Yao et al., *ReAct: Synergizing
@@ -71,5 +72,5 @@ and [Google Research overview](https://research.google/blog/react-synergizing-re
 
 For the surrounding component vocabulary and orchestration boundaries, see
 Victor Dibia's [official *Designing Multi-Agent Systems* book site](https://multiagentbook.com/).
-The broader pattern catalogues used in this course are listed with publisher
-and author links on the [reference map](/posts/2026/08/agent-system/reference-map/).
+The broader pattern catalogues are linked directly above and in the reference
+basis at the end of each pattern page.

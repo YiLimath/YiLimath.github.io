@@ -50,8 +50,8 @@ to repair.
 
 ## Reference basis
 
-The pattern follows Gulli, *Agentic Design Patterns*, Chapter 19, “Evaluation
-and Monitoring,” and Dibia, *Designing Multi-Agent Systems*, Chapter 10,
-“Evaluating Multi-Agent Systems.” Dibia's emphasis on trajectory evaluation is
-especially relevant when the final answer alone hides a failed intermediate
-step.
+The pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 19, “Evaluation and Monitoring,” and Dibia, [*Designing Multi-Agent
+Systems*](https://multiagentbook.com/), Chapter 10, “Evaluating Multi-Agent
+Systems.” Dibia's emphasis on trajectory evaluation is especially relevant
+when the final answer alone hides a failed intermediate step.

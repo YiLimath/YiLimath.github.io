@@ -55,10 +55,12 @@
 <text x="950" y="357" class="small">master_guidance</text>
 
 <!-- Verification and truth plane -->
-<rect x="330" y="590" width="300" height="125" rx="12" fill="#f0ebfb" stroke="#7863b6" class="box"/>
+<rect x="330" y="590" width="300" height="145" rx="12" fill="#f0ebfb" stroke="#7863b6" class="box"/>
 <text x="480" y="632" text-anchor="middle" class="label">Role-gated MCP gateway</text>
 <text x="480" y="661" text-anchor="middle" class="body">worker: fact_submit</text>
 <text x="480" y="683" text-anchor="middle" class="body">main: no submit · verifier: read-only</text>
+<rect x="365" y="694" width="230" height="30" rx="8" fill="#fff2f0" stroke="#c65b5b" stroke-width="2"/>
+<text x="480" y="714" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">fact_submit: commit iff correct</text>
 
 <rect x="730" y="590" width="300" height="125" rx="12" fill="#fceceb" stroke="#c65b5b" class="box"/>
 <text x="880" y="632" text-anchor="middle" class="label">Cold-start verifier</text>
@@ -84,14 +86,10 @@
 <text x="680" y="678" text-anchor="middle" class="small">verdict + repair_hints</text>
 
 <!-- Verification-gated writes -->
-<path d="M1030 625H1060" class="teal"/>
-<polygon points="1060,625 1049,619.5 1049,630.5" class="ah-teal"/>
-<polygon points="1060,625 1100,590 1140,625 1100,660" fill="#fff8e8" stroke="#d98c2b" class="box"/>
-<text x="1100" y="630" text-anchor="middle" class="small" style="font-weight:700">correct?</text>
-<path d="M1140 625H1160" class="red"/>
-<polygon points="1160,625 1149,619.5 1149,630.5" class="ah-red"/>
-<text x="1150" y="650" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">yes</text>
-<path d="M480 715V770H1130V706H1160" class="teal"/>
+<path d="M595 710H620V560H1160" class="red"/>
+<polygon points="1160,560 1149,554.5 1149,565.5" class="ah-red"/>
+<text x="865" y="548" text-anchor="middle" class="small">accepted verdict → fact commit</text>
+<path d="M480 735V770H1130V706H1160" class="teal"/>
 <polygon points="1160,706 1149,700.5 1149,711.5" class="ah-teal"/>
 <text x="820" y="758" text-anchor="middle" class="small">gm_* reads / verification trace</text>
 

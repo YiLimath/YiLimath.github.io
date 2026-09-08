@@ -79,7 +79,7 @@ their contract.
 
 ## Reference basis
 
-The selection principle follows Dibia, *Designing Multi-Agent Systems*, Chapter
-2, Sections 2.1–2.4, and Anthropic's [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents),
+The selection principle follows Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapter 2, Sections 2.1–2.4, and Anthropic's [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents),
 which recommends simple composable workflows before adding autonomous
 complexity.

@@ -57,7 +57,8 @@ unreviewable conversation.
 
 ## Reference basis
 
-The tool-use pattern is Gulli, *Agentic Design Patterns*, Chapter 5, and
-Lakshmanan and Hapke, *Generative AI Design Patterns*, the Tool Calling pattern
-in Chapter 7. The reasoning/action interface is exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
+The tool-use pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 5, and Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+the Tool Calling pattern in Chapter 7. The reasoning/action interface is
+exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
 standardized access to external data and tools is specified by the [MCP specification](https://modelcontextprotocol.io/specification).

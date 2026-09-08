@@ -53,8 +53,9 @@ whole task blindly.
 
 ## Reference basis
 
-The planning pattern is Gulli, *Agentic Design Patterns*, Chapter 6. Dibia
-discusses explicit and implicit planning in *Designing Multi-Agent Systems*,
+The planning pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 6. Dibia discusses explicit and implicit planning in [*Designing
+Multi-Agent Systems*](https://multiagentbook.com/),
 Chapter 5, and persistent workflow execution in Chapter 6. A published
 architecture with planning, progress ledgers, and re-planning is documented in
 the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).

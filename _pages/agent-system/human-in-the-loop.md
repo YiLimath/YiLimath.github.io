@@ -54,7 +54,8 @@ durable checkpoint after the human accepts or rejects it.
 
 ## Reference basis
 
-This follows Gulli, *Agentic Design Patterns*, Chapter 13, and Dibia,
-*Designing Multi-Agent Systems*, Chapter 4, Section 4.13, “Adding Humans in the
+This follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 13, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapter 4, Section 4.13, “Adding Humans in the
 Loop.” For a current engineering discussion of human control, transparency, and
 agent risk, see Anthropic's [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents).

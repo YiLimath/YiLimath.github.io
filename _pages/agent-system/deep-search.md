@@ -58,9 +58,10 @@ because its claims and stopping condition remain inspectable.
 
 ## Reference basis
 
-The figure and control logic are tied to Lakshmanan and Hapke, *Generative AI
-Design Patterns*, Pattern 12, Figure 4-14, with the original-diagram link given
-below. The research-oriented comparison is Shao et al.'s [STORM paper](https://aclanthology.org/2024.naacl-long.347/),
+The figure and control logic are tied to Lakshmanan and Hapke, [*Generative AI
+Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+Pattern 12, Figure 4-14, with the original-diagram link given below. The
+research-oriented comparison is Shao et al.'s [STORM paper](https://aclanthology.org/2024.naacl-long.347/),
 which makes perspective discovery, grounded conversations, and outline
 curation explicit.
 
@@ -69,7 +70,7 @@ curation explicit.
 This figure is a redraw for this course, not a reproduction of a book image.
 Its central structure follows Figure 4-14, “Deep Search adds iteration, external
 tools, and a thinking stage to traditional RAG,” in Valliappa Lakshmanan and
-Hannes Hapke, *Generative AI Design Patterns*, Pattern 12. The book's public
+Hannes Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/), Pattern 12. The book's public
 companion repository also publishes the original diagram collection, with its
 copyright notice and recommended citation: [O'Reilly book page](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/)
 and [companion diagrams](https://github.com/lakshmanok/generative-ai-design-patterns/tree/main/diagrams).

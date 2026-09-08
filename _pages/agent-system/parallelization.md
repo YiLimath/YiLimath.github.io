@@ -53,7 +53,8 @@ failure status.
 
 ## Reference basis
 
-This is Gulli, *Agentic Design Patterns*, Chapter 3, combined with Dibia,
-*Designing Multi-Agent Systems*, Chapters 2 and 6. Anthropic distinguishes
+This is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 3, combined with Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapters 2 and 6. Anthropic distinguishes
 sectioning and voting forms of the pattern in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
 and warns that shared mutable state requires an explicit conflict policy.

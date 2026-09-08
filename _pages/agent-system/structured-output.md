@@ -55,8 +55,9 @@ record still remains subject to semantic review.
 
 ## Reference basis
 
-The interface-first treatment follows Dibia, *Designing Multi-Agent Systems*,
-Chapter 4, Section 4.5, “Enabling Structured Output,” together with
-Lakshmanan and Hapke, *Generative AI Design Patterns*, the constrained
-generation patterns in Chapters 1 and 2. The page treats schema validity and
-truth as separate checks, as required by both sources.
+The interface-first treatment follows Dibia, [*Designing Multi-Agent
+Systems*](https://multiagentbook.com/), Chapter 4, Section 4.5, “Enabling
+Structured Output,” together with Lakshmanan and Hapke, [*Generative AI Design
+Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+the constrained generation patterns in Chapters 1 and 2. The page treats
+schema validity and truth as separate checks, as required by both sources.

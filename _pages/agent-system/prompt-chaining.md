@@ -56,7 +56,8 @@ the policy is revised.
 
 ## Reference basis
 
-This pattern follows Gulli, *Agentic Design Patterns*, Chapter 1, and Dibia,
-*Designing Multi-Agent Systems*, the explicit workflow treatment in Chapters 2
+This pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 1, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+the explicit workflow treatment in Chapters 2
 and 6. Anthropic gives an independent engineering description of prompt
 chaining and its intermediate gates in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents).

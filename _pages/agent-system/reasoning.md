@@ -57,7 +57,8 @@ needs tests or evidence before it is accepted.
 
 ## Reference basis
 
-This page synthesizes Gulli, *Agentic Design Patterns*, Chapter 17, with the
-reasoning and representation patterns in Lakshmanan and Hapke, *Generative AI
-Design Patterns*, Chapter 5. ReAct provides a primary example of interleaving
+This page synthesizes Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 17, with the reasoning and representation patterns in Lakshmanan and
+Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+Chapter 5. ReAct provides a primary example of interleaving
 reasoning with information-gathering actions: [paper](https://arxiv.org/abs/2210.03629).

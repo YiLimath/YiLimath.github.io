@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1480" viewBox="0 0 2200 1480" role="img" aria-labelledby="title desc">
+  <title id="title">A spiral-induction agent architecture for birational geometry</title>
+  <desc id="desc">A formal two-level architecture. The upper level shows a mathematical spiral: maintain an inductive theorem ledger, construct a lower-dimensional object, re-check its hypotheses, and admit a verified update. The lower level maps agent design patterns to research-state, control, specialist, verification, and ledger-update components.</desc>
+  <style>
+    .bg { fill: #f7fafc; }
+    .panel { fill: #ffffff; stroke: #c7d2de; stroke-width: 2; }
+    .band { fill: #eef4f8; stroke: #a8bac9; stroke-width: 2; }
+    .title { font: 700 30px Inter, Segoe UI, Arial, sans-serif; fill: #102a43; }
+    .band-title { font: 700 20px Inter, Segoe UI, Arial, sans-serif; fill: #102a43; letter-spacing: .3px; }
+    .card-title { font: 700 18px Inter, Segoe UI, Arial, sans-serif; fill: #102a43; }
+    .body { font: 400 16px Inter, Segoe UI, Arial, sans-serif; fill: #243b53; }
+    .small { font: 400 14px Inter, Segoe UI, Arial, sans-serif; fill: #486581; }
+    .tiny { font: 400 13px Inter, Segoe UI, Arial, sans-serif; fill: #486581; }
+    .label { font: 600 13px Inter, Segoe UI, Arial, sans-serif; fill: #486581; letter-spacing: .2px; }
+    .navy { stroke: #173f5f; stroke-width: 4; fill: none; }
+    .teal { stroke: #0f766e; stroke-width: 3.5; fill: none; stroke-dasharray: 12 9; }
+    .red { stroke: #b42318; stroke-width: 4; fill: none; }
+    .arrow-navy { fill: #173f5f; }
+    .arrow-teal { fill: #0f766e; }
+    .arrow-red { fill: #b42318; }
+    .soft-blue { fill: #e6f0f7; stroke: #7b9bb3; stroke-width: 1.5; }
+    .soft-teal { fill: #e5f5f2; stroke: #5ca69d; stroke-width: 1.5; }
+    .soft-gold { fill: #fff5d9; stroke: #d5a33a; stroke-width: 1.5; }
+    .soft-red { fill: #fff0ee; stroke: #d56a60; stroke-width: 1.7; }
+    .chip { fill: #ffffff; stroke: #7b9bb3; stroke-width: 1.2; }
+    .chip-text { font: 700 14px Inter, Segoe UI, Arial, sans-serif; fill: #173f5f; }
+    .gate-text { font: 700 14px Inter, Segoe UI, Arial, sans-serif; fill: #b42318; letter-spacing: .6px; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="2200" height="1480"/>
+  <text class="title" x="70" y="55">Birational-geometry research agent</text>
+  <text class="small" x="70" y="84">A domain-specific design sketch built around spiraling induction</text>
+  <line x1="1510" y1="48" x2="1548" y2="48" class="navy"/>
+  <polygon points="1548,48 1536,41 1536,55" class="arrow-navy"/>
+  <text class="label" x="1562" y="53">control</text>
+  <line x1="1650" y1="48" x2="1688" y2="48" class="teal"/>
+  <polygon points="1688,48 1676,41 1676,55" class="arrow-teal"/>
+  <text class="label" x="1702" y="53">evidence / repair</text>
+  <line x1="1902" y1="48" x2="1940" y2="48" class="red"/>
+  <polygon points="1940,48 1928,41 1928,55" class="arrow-red"/>
+  <text class="label" x="1954" y="53">admission</text>
+
+  <!-- Mathematical control state -->
+  <rect class="band" x="50" y="110" width="2100" height="350" rx="14"/>
+  <text class="band-title" x="80" y="145">Mathematical control state — a spiral-induction frontier</text>
+  <text class="small" x="1110" y="145">BCHM / BAB / Hacon–Xie use different theorem graphs, but share this control shape</text>
+
+  <rect class="panel" x="80" y="175" width="390" height="190" rx="10"/>
+  <text class="card-title" x="105" y="207">1. Maintain the frontier ledger</text>
+  <text class="body" x="105" y="235">Coupled statements at dimension n</text>
+  <rect class="chip" x="105" y="260" width="72" height="38" rx="7"/><text class="chip-text" x="129" y="285">Aₙ</text>
+  <rect class="chip" x="187" y="260" width="72" height="38" rx="7"/><text class="chip-text" x="211" y="285">Bₙ</text>
+  <rect class="chip" x="269" y="260" width="72" height="38" rx="7"/><text class="chip-text" x="293" y="285">Cₙ</text>
+  <rect class="chip" x="351" y="260" width="72" height="38" rx="7"/><text class="chip-text" x="375" y="285">Dₙ</text>
+  <rect class="chip" x="146" y="310" width="72" height="38" rx="7"/><text class="chip-text" x="170" y="335">Eₙ</text>
+  <rect class="chip" x="228" y="310" width="72" height="38" rx="7"/><text class="chip-text" x="252" y="335">Fₙ</text>
+  <text class="tiny" x="318" y="334">status + dependencies</text>
+
+  <line x1="470" y1="270" x2="540" y2="270" class="navy"/>
+  <polygon points="540,270 526,262 526,278" class="arrow-navy"/>
+
+  <rect class="panel" x="540" y="175" width="410" height="190" rx="10"/>
+  <text class="card-title" x="565" y="207">2. Manufacture the object</text>
+  <text class="body" x="565" y="235">Make the next hypothesis applicable</text>
+  <rect class="soft-blue" x="565" y="255" width="165" height="42" rx="7"/><text class="small" x="584" y="281">adjunction</text>
+  <rect class="soft-blue" x="745" y="255" width="165" height="42" rx="7"/><text class="small" x="758" y="281">fibration / base</text>
+  <rect class="soft-blue" x="565" y="310" width="165" height="42" rx="7"/><text class="small" x="585" y="336">restriction</text>
+  <rect class="soft-blue" x="745" y="310" width="165" height="42" rx="7"/><text class="small" x="770" y="336">model change</text>
+
+  <line x1="950" y1="270" x2="1020" y2="270" class="navy"/>
+  <polygon points="1020,270 1006,262 1006,278" class="arrow-navy"/>
+
+  <rect class="panel" x="1020" y="175" width="410" height="190" rx="10"/>
+  <text class="card-title" x="1045" y="207">3. Re-check the hypotheses</text>
+  <text class="body" x="1045" y="235">Before invoking the lower-dimensional result</text>
+  <rect class="soft-gold" x="1045" y="255" width="165" height="42" rx="7"/><text class="small" x="1087" y="281">dimension</text>
+  <rect class="soft-gold" x="1225" y="255" width="165" height="42" rx="7"/><text class="small" x="1260" y="281">singularities</text>
+  <rect class="soft-gold" x="1045" y="310" width="165" height="42" rx="7"/><text class="small" x="1092" y="336">positivity</text>
+  <rect class="soft-gold" x="1225" y="310" width="165" height="42" rx="7"/><text class="small" x="1255" y="336">provenance</text>
+
+  <line x1="1430" y1="270" x2="1500" y2="270" class="navy"/>
+  <polygon points="1500,270 1486,262 1486,278" class="arrow-navy"/>
+
+  <rect class="panel" x="1500" y="175" width="620" height="190" rx="10"/>
+  <text class="card-title" x="1525" y="207">4. Admit a verified update</text>
+  <text class="body" x="1525" y="235">An accepted result changes the frontier; a failure becomes a repair task</text>
+  <rect class="soft-teal" x="1525" y="255" width="250" height="53" rx="7"/>
+  <text class="small" x="1548" y="278">verified artifact</text>
+  <text class="tiny" x="1548" y="297">new dependency edge</text>
+  <rect class="soft-red" x="1800" y="255" width="285" height="53" rx="7"/>
+  <text class="gate-text" x="1822" y="278">ADMISSION GATE</text>
+  <text class="tiny" x="1822" y="297">unlock next obligation only if accepted</text>
+  <rect class="soft-blue" x="1525" y="320" width="560" height="28" rx="6"/>
+  <text class="tiny" x="1542" y="339">next frontier: a new statement, dimension, base, or unresolved repair</text>
+
+  <path d="M 1940 365 L 1940 415 L 275 415 L 275 365" class="teal"/>
+  <polygon points="275,365 267,379 283,379" class="arrow-teal"/>
+  <text class="label" x="912" y="408">next spiral turn — advance, descend, or repair</text>
+
+  <!-- Agent architecture -->
+  <rect class="band" x="50" y="500" width="2100" height="900" rx="14"/>
+  <text class="band-title" x="80" y="535">Agent architecture — patterns become explicit research responsibilities</text>
+
+  <!-- State column -->
+  <rect class="panel" x="80" y="565" width="300" height="760" rx="10"/>
+  <text class="card-title" x="105" y="600">Research state</text>
+  <text class="small" x="105" y="625">immutable inputs + auditable memory</text>
+  <rect class="soft-blue" x="105" y="660" width="250" height="135" rx="8"/>
+  <text class="card-title" x="125" y="693">Research brief</text>
+  <text class="small" x="125" y="721">pair (X, Δ), dimension n</text>
+  <text class="small" x="125" y="745">target statement + scope</text>
+  <text class="small" x="125" y="769">known assumptions</text>
+  <rect class="soft-blue" x="105" y="830" width="250" height="165" rx="8"/>
+  <text class="card-title" x="125" y="863">Induction ledger</text>
+  <text class="small" x="125" y="891">Aₙ … Fₙ and dependencies</text>
+  <text class="small" x="125" y="915">proposed / verified / rejected</text>
+  <text class="small" x="125" y="939">unlocked obligations</text>
+  <text class="small" x="125" y="963">dimension and object history</text>
+  <rect class="soft-teal" x="105" y="1030" width="250" height="150" rx="8"/>
+  <text class="card-title" x="125" y="1063">Evidence graph</text>
+  <text class="small" x="125" y="1091">source • premise • artifact</text>
+  <text class="small" x="125" y="1115">proof edge • counterexample</text>
+  <text class="small" x="125" y="1139">locator + verification trace</text>
+
+  <!-- Control column -->
+  <rect class="panel" x="430" y="565" width="380" height="760" rx="10"/>
+  <text class="card-title" x="455" y="600">Control plane</text>
+  <text class="small" x="455" y="625">plan, route, budget, terminate</text>
+  <rect class="soft-blue" x="455" y="660" width="330" height="115" rx="8"/>
+  <text class="card-title" x="475" y="694">Supervisor</text>
+  <text class="small" x="475" y="722">select one frontier obligation</text>
+  <text class="small" x="475" y="746">enforce scope and resource budget</text>
+  <rect class="soft-blue" x="455" y="810" width="330" height="125" rx="8"/>
+  <text class="card-title" x="475" y="844">Obligation router</text>
+  <text class="small" x="475" y="872">flip | finiteness | non-vanishing</text>
+  <text class="small" x="475" y="896">model | termination | application</text>
+  <rect class="soft-blue" x="455" y="970" width="330" height="125" rx="8"/>
+  <text class="card-title" x="475" y="1004">Plan-and-execute</text>
+  <text class="small" x="475" y="1032">construct → check → record</text>
+  <text class="small" x="475" y="1056">typed repair task on failure</text>
+  <rect class="soft-gold" x="455" y="1130" width="330" height="115" rx="8"/>
+  <text class="card-title" x="475" y="1164">Goal / termination</text>
+  <text class="small" x="475" y="1192">verified dependency path, or</text>
+  <text class="small" x="475" y="1216">precise unresolved frontier</text>
+
+  <!-- Specialist column -->
+  <rect class="panel" x="860" y="565" width="500" height="760" rx="10"/>
+  <text class="card-title" x="885" y="600">Bounded specialist pool</text>
+  <text class="small" x="885" y="625">parallel only when outputs are mergeable</text>
+  <rect class="soft-blue" x="885" y="660" width="210" height="125" rx="8"/>
+  <text class="card-title" x="905" y="694">Literature</text>
+  <text class="small" x="905" y="722">theorem + hypotheses</text>
+  <text class="small" x="905" y="746">source locator</text>
+  <rect class="soft-blue" x="1120" y="660" width="210" height="125" rx="8"/>
+  <text class="card-title" x="1140" y="694">Examples</text>
+  <text class="small" x="1140" y="722">boundary cases</text>
+  <text class="small" x="1140" y="746">counterexamples</text>
+  <rect class="soft-blue" x="885" y="820" width="210" height="125" rx="8"/>
+  <text class="card-title" x="905" y="854">Proof synthesis</text>
+  <text class="small" x="905" y="882">candidate derivation</text>
+  <text class="small" x="905" y="906">dependency edges</text>
+  <rect class="soft-blue" x="1120" y="820" width="210" height="125" rx="8"/>
+  <text class="card-title" x="1140" y="854">Formalization</text>
+  <text class="small" x="1140" y="882">symbolic / formal checks</text>
+  <text class="small" x="1140" y="906">normalization adapter</text>
+  <rect class="soft-teal" x="885" y="1000" width="445" height="170" rx="8"/>
+  <text class="card-title" x="905" y="1034">Structured merge boundary</text>
+  <text class="small" x="905" y="1062">EvidencePacket[] + Derivation</text>
+  <text class="small" x="905" y="1086">explicit assumptions + transformations</text>
+  <text class="small" x="905" y="1110">unresolved gaps are preserved</text>
+  <text class="small" x="905" y="1134">no free-form result enters the ledger</text>
+
+  <!-- Verification column -->
+  <rect class="panel" x="1410" y="565" width="450" height="760" rx="10"/>
+  <text class="card-title" x="1435" y="600">Verification and admission</text>
+  <text class="small" x="1435" y="625">separate proposal from acceptance</text>
+  <rect class="soft-gold" x="1435" y="660" width="400" height="115" rx="8"/>
+  <text class="card-title" x="1455" y="694">Hypothesis checker</text>
+  <text class="small" x="1455" y="722">dimension, singularities, positivity</text>
+  <text class="small" x="1455" y="746">adjunction / fibration conditions</text>
+  <rect class="soft-gold" x="1435" y="810" width="400" height="115" rx="8"/>
+  <text class="card-title" x="1455" y="844">Provenance + consistency</text>
+  <text class="small" x="1455" y="872">source applicability + dependency check</text>
+  <text class="small" x="1455" y="896">counterexample and notation audit</text>
+  <rect class="soft-blue" x="1435" y="960" width="400" height="105" rx="8"/>
+  <text class="card-title" x="1455" y="994">Human checkpoint</text>
+  <text class="small" x="1455" y="1022">interpretation and research significance</text>
+  <rect class="soft-red" x="1435" y="1100" width="400" height="120" rx="8"/>
+  <text class="gate-text" x="1455" y="1137">ADMISSION GATE</text>
+  <text class="small" x="1455" y="1165">verified / rejected / needs repair</text>
+  <text class="small" x="1455" y="1189">only verified or human-accepted</text>
+  <text class="small" x="1455" y="1213">artifacts update the ledger</text>
+
+  <!-- Update column -->
+  <rect class="panel" x="1910" y="565" width="210" height="760" rx="10"/>
+  <text class="card-title" x="1935" y="600">Ledger update</text>
+  <text class="small" x="1935" y="625">commit state</text>
+  <rect class="soft-red" x="1935" y="700" width="160" height="145" rx="8"/>
+  <text class="gate-text" x="1955" y="735">ACCEPT</text>
+  <text class="small" x="1955" y="767">add artifact</text>
+  <text class="small" x="1955" y="791">add edge</text>
+  <text class="small" x="1955" y="815">unlock target</text>
+  <rect class="soft-teal" x="1935" y="900" width="160" height="175" rx="8"/>
+  <text class="card-title" x="1955" y="935">Next turn</text>
+  <text class="small" x="1955" y="967">new statement</text>
+  <text class="small" x="1955" y="991">lower dimension</text>
+  <text class="small" x="1955" y="1015">new base / model</text>
+  <text class="small" x="1955" y="1039">repair task</text>
+
+  <!-- Main control arrows -->
+  <line x1="380" y1="720" x2="430" y2="720" class="navy"/>
+  <polygon points="430,720 416,712 416,728" class="arrow-navy"/>
+  <text class="label" x="382" y="700">frontier</text>
+  <line x1="810" y1="720" x2="860" y2="720" class="navy"/>
+  <polygon points="860,720 846,712 846,728" class="arrow-navy"/>
+  <text class="label" x="810" y="700">tasks</text>
+  <line x1="1360" y1="720" x2="1410" y2="720" class="navy"/>
+  <polygon points="1410,720 1396,712 1396,728" class="arrow-navy"/>
+  <text class="label" x="1354" y="700">artifacts</text>
+  <line x1="1860" y1="1160" x2="1910" y2="1160" class="red"/>
+  <polygon points="1910,1160 1896,1152 1896,1168" class="arrow-red"/>
+  <text class="gate-text" x="1852" y="1140">accepted</text>
+
+  <!-- Repair feedback -->
+  <path d="M 1610 1065 L 1610 1280 L 760 1280 L 760 1245" class="teal"/>
+  <polygon points="760,1245 752,1259 768,1259" class="arrow-teal"/>
+  <text class="label" x="1025" y="1269">repair hints / unmet hypotheses</text>
+
+  <!-- Spiral feedback from committed state to new research state -->
+  <path d="M 2015 1075 L 2015 1360 L 230 1360 L 230 1180" class="navy"/>
+  <polygon points="230,1180 222,1194 238,1194" class="arrow-navy"/>
+  <text class="label" x="872" y="1350">verified update becomes the next research frontier</text>
+</svg>

@@ -53,6 +53,7 @@ retain the rejected version for audit.
 
 ## Reference basis
 
-The source pattern is Gulli, *Agentic Design Patterns*, Chapter 4, and
-Lakshmanan and Hapke, *Generative AI Design Patterns*, Pattern 18. The
+The source pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 4, and Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+Pattern 18. The
 feedback-and-refinement loop is studied directly in Madaan et al., [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651).

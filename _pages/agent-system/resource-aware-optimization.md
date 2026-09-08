@@ -49,7 +49,8 @@ savings do not silently change the service promise.
 
 ## Reference basis
 
-This is Gulli, *Agentic Design Patterns*, Chapter 16, “Resource-Aware
-Optimization,” combined with Mitra, *System Design for the LLM Era*, Chapter 2,
-which treats latency, cost, model routing, and dynamic traffic control as
-architectural concerns.
+This is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 16, “Resource-Aware Optimization,” combined with Mitra, [*System Design
+for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
+Chapter 2, which treats latency, cost, model routing, and dynamic traffic
+control as architectural concerns.

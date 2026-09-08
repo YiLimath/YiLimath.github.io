@@ -54,8 +54,9 @@ do not need to share hidden conversational context.
 
 ## Reference basis
 
-The pattern follows Gulli, *Agentic Design Patterns*, Chapter 7, and Dibia,
-*Designing Multi-Agent Systems*, Chapters 2 and 7. Published system examples
+The pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 7, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapters 2 and 7. Published system examples
 include AutoGen's [multi-agent conversation paper](https://arxiv.org/abs/2308.08155)
 and Microsoft's [Magentic-One report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
 

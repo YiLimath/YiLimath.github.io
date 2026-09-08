@@ -55,7 +55,9 @@ record; storing every message is not a design.
 
 ## Reference basis
 
-The pattern is Gulli, *Agentic Design Patterns*, Chapter 8, and Dibia,
-*Designing Multi-Agent Systems*, Chapter 4, Sections 4.7 and 4.8. Long-term
-memory and context management are also treated as application patterns by
-Lakshmanan and Hapke in *Generative AI Design Patterns*, Chapter 8.
+The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
+Chapter 8, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
+Chapter 4, Sections 4.7 and 4.8. Long-term memory and context management are
+also treated as application patterns by Lakshmanan and Hapke in [*Generative AI
+Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+Chapter 8.
