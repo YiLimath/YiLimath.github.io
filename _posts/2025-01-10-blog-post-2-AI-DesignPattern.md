@@ -14,9 +14,11 @@ The aim of this series is to give a research-oriented introduction to design pat
 
 An agent system trades determinism for flexibility. A design pattern is a reusable way to buy back determinism at the boundary where the task requires it. Each page therefore describes the recurring problem, intent, structure, stable interface, variable implementation, trade-offs, failure modes, and an example.
 
-![General reference architecture for an agent system](/images/agent-system/00-agent-system-architecture.svg)
+![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
 
-*Architecture figure: a general agent system separates user goals, orchestration, reasoning, knowledge, action, evaluation, and guardrails.*
+*Architecture figure: the system context view introduces the agent system's
+external relationships; its internal containers are explained on the
+architecture-views page.*
 
 ## Part I. Foundations
 
@@ -58,10 +60,11 @@ An agent system trades determinism for flexibility. A design pattern is a reusab
 24. [Guardrails and safety](/posts/2026/08/agent-system/guardrails-safety/)
 25. [Production architecture](/posts/2026/08/agent-system/production-architecture/)
 26. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
+27. [Architecture views](/posts/2026/08/agent-system/architecture-views/)
 
 ## Part VI. Case study
 
-27. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
-28. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
+28. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
+29. [Reference books and the pattern taxonomy](/posts/2026/08/agent-system/reference-map/)
 
 The case study uses the real Danus and Rethlas codebases. It identifies which patterns appear in their orchestration, worker, verification, memory, gateway, and authoring components.

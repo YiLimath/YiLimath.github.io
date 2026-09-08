@@ -40,8 +40,31 @@ increase coordination surfaces and failure modes.
 What is uncertain? Which interface makes it observable? What is the simplest
 pattern that provides that interface?
 
-## Figure
+## Read the architecture at multiple levels
 
-![Reference architecture for choosing and composing patterns](/images/agent-system/00-agent-system-architecture.svg)
+Do not ask one diagram to answer every architecture question. Read the views in
+order:
 
-*Figure: pattern selection assigns responsibilities to orchestration, reasoning, knowledge, action, evaluation, and guardrails.*
+1. **Context:** who exchanges responsibility with the agent system?
+2. **Container:** which internal responsibilities own orchestration, runtime,
+   knowledge, action, evaluation, and persistence?
+3. **Dynamic:** in what order do messages, decisions, parallel branches, and
+   feedback occur? The sequence and workflow pages provide these views.
+4. **Operations:** which gateways, fallbacks, checkpoints, and evaluators make
+   the design reliable in production?
+
+The same system can therefore be structurally complicated without becoming
+conceptually muddled. Keep the visual language stable, but choose the diagram
+form that matches the relation being explained.
+
+## Figures
+
+![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
+
+*Figure: the context view shows the agent system as one unit and labels its
+external relationships.*
+
+![Agent system container view](/images/agent-system/28-agent-system-container.svg)
+
+*Figure: the container view expands the boundary into replaceable
+responsibilities and labels the interfaces between them.*

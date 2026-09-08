@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Agent System — Container View</title>
+<desc id="figure-desc">A container view showing orchestration, agent runtime, knowledge and memory, evaluation, tool gateway, and artifact storage, with their typed relationships.</desc>
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}
+    .subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .heading{font:700 20px Arial,sans-serif;fill:#17283c}
+    .body{font:400 15px Arial,sans-serif;fill:#405268}
+    .small{font:400 13px Arial,sans-serif;fill:#5b6b7c}
+    .scope{fill:#fbfcfe;stroke:#8595a8;stroke-width:2.5;stroke-dasharray:9 8}
+    .person{fill:#e6f1fb;stroke:#3985c6;stroke-width:3}
+    .control{fill:#fff4e8;stroke:#d98c2b;stroke-width:3}
+    .runtime{fill:#e9f5f1;stroke:#219487;stroke-width:3}
+    .knowledge{fill:#f0ebfb;stroke:#7863b6;stroke-width:3}
+    .evaluation{fill:#fceceb;stroke:#c65b5b;stroke-width:3}
+    .action{fill:#e6f1fb;stroke:#3985c6;stroke-width:3}
+    .data{fill:#fffdf5;stroke:#d98c2b;stroke-width:3}
+    .relation{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .reply{stroke:#219487;stroke-width:3;stroke-dasharray:9 7;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .check{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .arrow{fill:#23364d}
+    .reply-arrow{fill:#219487}
+    .check-arrow{fill:#c65b5b}
+  </style>
+</defs>
+
+<rect width="1600" height="980" fill="#f7f9fc"/>
+<text x="80" y="72" class="title">Agent System — Container View</text>
+<text x="80" y="106" class="subtitle">Responsibility boundaries and stable interfaces inside the system context</text>
+
+<rect x="260" y="150" width="1080" height="650" rx="16" class="scope"/>
+<text x="290" y="185" class="small">CONTAINER VIEW · SCOPE: AGENT SYSTEM INTERNALS</text>
+
+<rect x="50" y="245" width="190" height="110" rx="12" class="person"/>
+<text x="145" y="289" text-anchor="middle" class="heading">Operator</text>
+<text x="145" y="321" text-anchor="middle" class="body">goal · constraints</text>
+
+<rect x="350" y="205" width="280" height="110" rx="12" class="control"/>
+<text x="490" y="248" text-anchor="middle" class="heading">Orchestrator</text>
+<text x="490" y="279" text-anchor="middle" class="body">route · schedule · terminate</text>
+<text x="490" y="301" text-anchor="middle" class="small">owns task state and policy</text>
+
+<rect x="760" y="205" width="300" height="110" rx="12" class="runtime"/>
+<text x="910" y="248" text-anchor="middle" class="heading">Agent runtime</text>
+<text x="910" y="279" text-anchor="middle" class="body">reason · choose · act</text>
+<text x="910" y="301" text-anchor="middle" class="small">executes one bounded step</text>
+
+<rect x="760" y="430" width="300" height="120" rx="12" class="knowledge"/>
+<text x="910" y="475" text-anchor="middle" class="heading">Knowledge &amp; memory</text>
+<text x="910" y="507" text-anchor="middle" class="body">retrieve · write · cite</text>
+<text x="910" y="530" text-anchor="middle" class="small">context and persistent state</text>
+
+<rect x="350" y="650" width="280" height="120" rx="12" class="evaluation"/>
+<text x="490" y="695" text-anchor="middle" class="heading">Evaluator</text>
+<text x="490" y="727" text-anchor="middle" class="body">check · score · verdict</text>
+<text x="490" y="750" text-anchor="middle" class="small">quality and policy gate</text>
+
+<rect x="1100" y="430" width="250" height="120" rx="12" class="action"/>
+<text x="1225" y="475" text-anchor="middle" class="heading">Tool gateway</text>
+<text x="1225" y="507" text-anchor="middle" class="body">authorize · adapt · observe</text>
+<text x="1225" y="530" text-anchor="middle" class="small">typed action boundary</text>
+
+<rect x="1390" y="430" width="180" height="110" rx="12" class="knowledge"/>
+<text x="1480" y="474" text-anchor="middle" class="heading">External</text>
+<text x="1480" y="506" text-anchor="middle" class="body">services</text>
+
+<g>
+  <ellipse cx="910" cy="660" rx="145" ry="22" class="data"/>
+  <path d="M765 660V730C765 742 830 752 910 752C990 752 1055 742 1055 730V660" class="data"/>
+  <ellipse cx="910" cy="730" rx="145" ry="22" fill="#fffdf5" stroke="#d98c2b" stroke-width="3"/>
+  <text x="910" y="695" text-anchor="middle" class="heading">Artifact store</text>
+  <text x="910" y="718" text-anchor="middle" class="small">checkpoint · trace · result</text>
+</g>
+
+<path d="M240 285H338" class="relation"/>
+<polygon points="350,285 338,279 338,291" class="arrow"/>
+<text x="290" y="270" text-anchor="middle" class="small">task</text>
+
+<path d="M630 260H748" class="relation"/>
+<polygon points="760,260 748,254 748,266" class="arrow"/>
+<text x="695" y="245" text-anchor="middle" class="small">step / state</text>
+
+<path d="M748 295H662" class="reply"/>
+<polygon points="650,295 662,289 662,301" class="reply-arrow"/>
+<text x="695" y="314" text-anchor="middle" class="small">status / result</text>
+
+<path d="M820 315V418" class="relation"/>
+<polygon points="820,430 814,418 826,418" class="arrow"/>
+<text x="840" y="370" class="small">context query</text>
+
+<path d="M990 418V350H1010V327" class="reply"/>
+<polygon points="1010,315 1004,327 1016,327" class="reply-arrow"/>
+<text x="1030" y="395" class="small">evidence / memory</text>
+
+<path d="M780 315H700V600H525V638" class="check"/>
+<polygon points="525,650 519,638 531,638" class="check-arrow"/>
+<text x="682" y="580" text-anchor="middle" class="small">candidate</text>
+
+<path d="M400 638V590H320V370H660V327H600" class="check"/>
+<polygon points="600,315 594,327 606,327" class="check-arrow"/>
+<text x="365" y="395" text-anchor="middle" class="small">verdict</text>
+
+<path d="M1030 315H1085V418H1100" class="relation"/>
+<polygon points="1100,430 1094,418 1106,418" class="arrow"/>
+<text x="1095" y="380" class="small">typed action</text>
+
+<path d="M1350 485H1378" class="relation"/>
+<polygon points="1390,485 1378,479 1378,491" class="arrow"/>
+<text x="1362" y="470" text-anchor="middle" class="small">tool call</text>
+
+<path d="M1378 525H1365V580H1225V562" class="reply"/>
+<polygon points="1225,550 1219,562 1231,562" class="reply-arrow"/>
+<text x="1330" y="600" text-anchor="middle" class="small">observation</text>
+
+<path d="M630 305H740V620H800V638" class="reply"/>
+<polygon points="800,650 794,638 806,638" class="reply-arrow"/>
+<text x="700" y="595" class="small">checkpoint / trace</text>
+
+<path d="M1055 680V600H1070V350H1010V327" class="reply"/>
+<polygon points="1010,315 1004,327 1016,327" class="reply-arrow"/>
+<text x="1085" y="580" class="small">resume state</text>
+
+<rect x="300" y="850" width="1000" height="78" rx="10" fill="#ffffff" stroke="#c4ced8" stroke-width="2"/>
+<text x="325" y="880" class="small">CONTAINER VIEW</text>
+<line x1="485" y1="876" x2="540" y2="876" class="relation"/>
+<polygon points="550,876 540,871 540,881" class="arrow"/>
+<text x="565" y="881" class="small">command or request</text>
+<line x1="720" y1="876" x2="775" y2="876" class="reply"/>
+<polygon points="785,876 775,871 775,881" class="reply-arrow"/>
+<text x="800" y="881" class="small">data or response</text>
+<line x1="950" y1="876" x2="1005" y2="876" class="check"/>
+<polygon points="1015,876 1005,871 1005,881" class="check-arrow"/>
+<text x="1030" y="881" class="small">evaluation boundary</text>
+<text x="325" y="910" class="small">Use dynamic diagrams to explain order over time; use this view to explain ownership and replaceable interfaces.</text>
+</svg>
