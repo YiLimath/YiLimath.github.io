@@ -47,7 +47,7 @@ arrow conventions.*
 
 Static structure does not explain execution order. Use the tool-use page for a
 message sequence, the plan-and-execute page for a checkpointed workflow, and
-the human-delegation page for an approval swimlane. Use the production page for
+the human-in-the-loop page for an approval swimlane. Use the production page for
 gateways, caching, fallbacks, observability, and evaluation around the runtime.
 
 The figures deliberately share typography, palette, stroke weights, and arrow
@@ -63,3 +63,12 @@ Read from outside to inside, then from structure to execution:
 
 This keeps a complicated architecture visible without forcing one diagram to
 carry incompatible levels of abstraction.
+
+## Reference notation
+
+The context and container figures are teaching redraws of the first two levels
+of Simon Brown's C4 model: a system-context diagram shows the system in its
+surrounding world, while a container diagram opens the system boundary. Compare
+the [official C4 introduction](https://c4model.com/introduction), the [system-context
+diagram guide](https://c4model.com/diagrams/system-context), and the [complete
+diagram catalogue](https://c4model.com/diagrams).

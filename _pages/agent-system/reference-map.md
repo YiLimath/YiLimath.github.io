@@ -20,6 +20,8 @@ reflection, tool use, planning, multi-agent systems, memory, learning,
 exception recovery, human-in-the-loop, retrieval, reasoning, safety, evaluation,
 prioritization, and exploration.
 
+Publisher record: [Springer — *Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3).
+
 ### Victor Dibia — *Designing Multi-Agent Systems*
 
 This book supplies the workflow architecture: explicit computational graphs,
@@ -28,6 +30,9 @@ round-robin interaction, task termination, human delegation, structured output,
 tools, memory, middleware, observability, checkpointing, persistence, and
 trajectory evaluation.
 
+Author's book site and companion code: [Designing Multi-Agent Systems](https://multiagentbook.com/)
+and [GitHub repository](https://github.com/victordibia/designing-multiagent-systems).
+
 ### Valliappa Lakshmanan and Hannes Hapke — *Generative AI Design Patterns*
 
 This book gives finer-grained application patterns: constrained generation,
@@ -35,12 +40,19 @@ RAG stages, deep search, reasoning, reflection, dependency injection, tool
 calling, code execution, multi-agent collaboration, caching, long-term memory,
 self-check, reformatting, and guardrails.
 
+Publisher record: [O'Reilly — *Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
+The publisher-authorized [companion diagram collection](https://github.com/lakshmanok/generative-ai-design-patterns/tree/main/diagrams)
+is especially useful for checking the original Deep Search figures; the course
+redraws their logic and cites the source rather than embedding the originals.
+
 ### Sampriti Mitra — *System Design for the LLM Era*
 
 This book adds production architecture: gateways, circuit breakers, tiered
 fallbacks, synchronous versus asynchronous processing, prompt compression,
 hybrid retrieval, function calling, golden datasets, evaluation, observability,
 security, caching, latency, and cost.
+
+Publisher record: [Packt — *System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923).
 
 ## Course organization
 

@@ -45,4 +45,22 @@ and preserve negative results.
 
 ![Deep search workflow](/images/agent-system/15-deep-search.svg)
 
-*Figure: a broad question is decomposed into evidence-producing search branches.*
+*Figure: a teaching redraw of the Deep Search control structure. Retrieval,
+generation, and thinking are separate stages; the two decisions make budget
+and evidence coverage explicit; reflection produces the next subqueries.*
+
+## Reference diagrams
+
+This figure is a redraw for this course, not a reproduction of a book image.
+Its central structure follows Figure 4-14, “Deep Search adds iteration, external
+tools, and a thinking stage to traditional RAG,” in Valliappa Lakshmanan and
+Hannes Hapke, *Generative AI Design Patterns*, Pattern 12. The book's public
+companion repository also publishes the original diagram collection, with its
+copyright notice and recommended citation: [O'Reilly book page](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/)
+and [companion diagrams](https://github.com/lakshmanok/generative-ai-design-patterns/tree/main/diagrams).
+
+For a research-oriented counterpart, compare Figure 2 of Shao et al.,
+“Assisting in Writing Wikipedia-like Articles From Scratch with Large Language
+Models.” STORM makes perspective discovery, simulated expert conversations,
+trusted retrieval, and outline construction explicit: [paper](https://aclanthology.org/2024.naacl-long.347/)
+and [official implementation](https://github.com/stanford-oval/storm).

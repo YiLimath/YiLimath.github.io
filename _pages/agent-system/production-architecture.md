@@ -48,3 +48,9 @@ human escalation.
 ![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)
 
 *Figure: gateways, caching, fallbacks, and evaluation surround the agent core.*
+
+## Reference architecture
+
+This is a course synthesis of production concerns, not a copy of a vendor
+reference architecture. For the production-design viewpoint used here, see
+Sampriti Mitra's [*System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923).

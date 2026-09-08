@@ -42,4 +42,13 @@ must be guarded by an evaluator or verifier; consensus is not correctness.
 
 ![Multiple-agent cooperation](/images/agent-system/07-multi-agent-cooperation.svg)
 
-*Figure: specialized agents divide work and return artifacts to an orchestrator.*
+*Figure: specialized agents return typed artifacts through a shared message
+protocol; the coordinator aggregates and verifies the result.*
+
+## Related systems
+
+This figure is a teaching abstraction of supervisor-style coordination. Compare
+Victor Dibia's [multi-agent systems book and companion material](https://multiagentbook.com/)
+for explicit orchestration patterns. For a research system with an orchestrator
+directing specialized agents, see Microsoft's [Magentic-One overview](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/)
+and [technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).

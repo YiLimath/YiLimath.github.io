@@ -1,1 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial;fill:#17283c}.u{font:400 18px Arial;fill:#5b6b7c}.h{font:700 22px Arial;fill:#17283c}.s{font:400 16px Arial;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.d{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="t">Deep Search Pattern</text><text x="80" y="110" class="u">Turn a broad question into an evidence-producing search process</text><rect x="110" y="350" width="230" height="110" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="225" y="395" text-anchor="middle" class="h">Question</text><text x="225" y="427" text-anchor="middle" class="s">scope and constraints</text><path d="M340 405H500" class="l"/><polygon points="500,405 491,400.5 491,409.5" class="al"/><rect x="500" y="350" width="250" height="110" rx="10" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="625" y="395" text-anchor="middle" class="h">Decompose</text><text x="625" y="427" text-anchor="middle" class="s">subquestions · queries</text><path d="M750 405H865" class="l"/><polygon points="865,405 856,400.5 856,409.5" class="al"/><rect x="865" y="175" width="260" height="100" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="995" y="218" text-anchor="middle" class="h">Search branch A</text><text x="995" y="248" text-anchor="middle" class="s">retrieve and record</text><rect x="865" y="355" width="260" height="100" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="995" y="398" text-anchor="middle" class="h">Search branch B</text><text x="995" y="428" text-anchor="middle" class="s">retrieve and record</text><rect x="865" y="535" width="260" height="100" rx="10" fill="#fceceb" stroke="#c65b5b" class="b"/><text x="995" y="578" text-anchor="middle" class="h">Search branch C</text><text x="995" y="608" text-anchor="middle" class="s">retrieve and record</text><path d="M750 405H810V225H855" class="l"/><polygon points="855,225 846,220.5 846,229.5" class="al"/><path d="M750 405H855" class="l"/><polygon points="855,405 846,400.5 846,409.5" class="al"/><path d="M750 405H810V585H855" class="l"/><polygon points="855,585 846,580.5 846,589.5" class="al"/><path d="M1125 225H1235V405" class="l"/><polygon points="1235,405 1230.5,396 1239.5,396" class="al"/><path d="M1125 405H1235" class="l"/><polygon points="1235,405 1226,400.5 1226,409.5" class="al"/><path d="M1125 585H1235V405H1360" class="l"/><polygon points="1360,405 1351,400.5 1351,409.5" class="al"/><rect x="1360" y="350" width="190" height="110" rx="10" fill="#fff" stroke="#3985c6" class="b"/><text x="1455" y="395" text-anchor="middle" class="h">Synthesis</text><text x="1455" y="427" text-anchor="middle" class="s">evidence + gaps</text><path d="M1455 460V700H225V460" class="d"/><polygon points="225,460 220.5,469 229.5,469" class="ad"/><text x="800" y="735" text-anchor="middle" class="s">Stop when the question is answered, the evidence is saturated, or escalation is required.</text><rect x="390" y="765" width="820" height="55" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="800" text-anchor="middle" class="s">Deep search is exploration with provenance, not merely a longer prompt.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}.subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .stage{font:700 18px Arial,sans-serif;fill:#3985c6;letter-spacing:1px}.label{font:700 20px Arial,sans-serif;fill:#17283c}.body{font:400 14px Arial,sans-serif;fill:#405268}.small{font:400 13px Arial,sans-serif;fill:#5b6b7c}
+    .scope{fill:#fbfcfe;stroke:#3985c6;stroke-width:2.5;stroke-dasharray:10 8}.box{stroke-width:2.5}.navy{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.teal{stroke:#219487;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.red{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.green{stroke:#2f9e44;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .ah-navy{fill:#23364d}.ah-teal{fill:#219487}.ah-red{fill:#c65b5b}.ah-green{fill:#2f9e44}
+  </style>
+</defs>
+
+<rect width="1600" height="1120" fill="#f7f9fc"/>
+<text x="60" y="68" class="title">Deep Search Pattern: Retrieval + Thinking + Iteration</text>
+<text x="60" y="103" class="subtitle">A research workflow keeps an evidence ledger, evaluates coverage, and chooses the next query from the remaining gaps</text>
+
+<!-- Retrieval stage -->
+<rect x="210" y="145" width="1240" height="280" rx="18" class="scope"/>
+<rect x="235" y="132" width="210" height="30" rx="15" fill="#f7f9fc"/>
+<text x="250" y="153" class="stage">RETRIEVAL</text>
+
+<ellipse cx="105" cy="300" rx="60" ry="40" fill="#fff0b3" stroke="#d98c2b" class="box"/>
+<text x="105" y="305" text-anchor="middle" class="label" style="font-size:18px">Question</text>
+<path d="M165 300H270" class="navy"/><polygon points="270,300 259,294.5 259,305.5" class="ah-navy"/>
+<text x="216" y="285" text-anchor="middle" class="small">scope</text>
+
+<rect x="270" y="250" width="220" height="100" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="380" y="289" text-anchor="middle" class="label">Decompose query</text>
+<text x="380" y="318" text-anchor="middle" class="body">subquestions · search policy</text>
+
+<rect x="560" y="180" width="225" height="65" rx="10" fill="#fff4e8" stroke="#d98c2b" class="box"/>
+<text x="672" y="219" text-anchor="middle" class="label" style="font-size:18px">Hybrid retriever</text>
+<rect x="560" y="270" width="225" height="65" rx="10" fill="#dff3df" stroke="#2f9e44" class="box"/>
+<text x="672" y="309" text-anchor="middle" class="label" style="font-size:18px">Web search</text>
+<rect x="560" y="360" width="225" height="65" rx="10" fill="#dff3df" stroke="#2f9e44" class="box"/>
+<text x="672" y="399" text-anchor="middle" class="label" style="font-size:18px">Enterprise tools</text>
+
+<path d="M490 285H520V212H560" class="navy"/><polygon points="560,212 549,206.5 549,217.5" class="ah-navy"/>
+<path d="M490 310H560" class="navy"/><polygon points="560,310 549,304.5 549,315.5" class="ah-navy"/>
+<path d="M490 335H520V392H560" class="navy"/><polygon points="560,392 549,386.5 549,397.5" class="ah-navy"/>
+<text x="520" y="265" text-anchor="middle" class="small">queries</text>
+
+<rect x="950" y="230" width="270" height="145" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="1085" y="267" text-anchor="middle" class="label">Extract evidence</text>
+<text x="1085" y="296" text-anchor="middle" class="body">relevant passages</text>
+<text x="1085" y="322" text-anchor="middle" class="body">source · claim · relevance</text>
+<text x="1085" y="348" text-anchor="middle" class="body">unresolved question / gap</text>
+<path d="M785 212H850V265H950" class="teal"/><polygon points="950,265 939,259.5 939,270.5" class="ah-teal"/>
+<path d="M785 302H950" class="teal"/><polygon points="950,302 939,296.5 939,307.5" class="ah-teal"/>
+<path d="M785 392H850V340H950" class="teal"/><polygon points="950,340 939,334.5 939,345.5" class="ah-teal"/>
+<text x="860" y="195" text-anchor="middle" class="small">retrieved sources</text>
+
+<!-- Generation stage -->
+<rect x="210" y="455" width="1240" height="250" rx="18" class="scope"/>
+<rect x="235" y="442" width="220" height="30" rx="15" fill="#f7f9fc"/>
+<text x="250" y="463" class="stage">GENERATION</text>
+
+<rect x="980" y="510" width="260" height="95" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="1110" y="549" text-anchor="middle" class="label">Synthesize</text>
+<text x="1110" y="578" text-anchor="middle" class="body">answer from evidence ledger</text>
+<path d="M1085 375V490H1110V510" class="navy"/><polygon points="1110,510 1104.5,499 1115.5,499" class="ah-navy"/>
+<text x="1160" y="484" class="small">evidence</text>
+
+<polygon points="1110,620 1180,670 1110,720 1040,670" fill="#f1f3f5" stroke="#d98c2b" class="box"/>
+<text x="1110" y="656" text-anchor="middle" class="body" style="font-weight:700">Cost / time</text>
+<text x="1110" y="676" text-anchor="middle" class="body" style="font-weight:700">budget exceeded?</text>
+<path d="M1110 605V620" class="navy"/><polygon points="1110,620 1104.5,609 1115.5,609" class="ah-navy"/>
+
+<!-- Final response and budget branch -->
+<rect x="1280" y="620" width="160" height="100" rx="38" fill="#fff0b3" stroke="#d98c2b" class="box"/>
+<text x="1360" y="659" text-anchor="middle" class="label" style="font-size:18px">Response</text>
+<text x="1360" y="688" text-anchor="middle" class="body">answer + citations</text>
+<path d="M1180 670H1280" class="red"/><polygon points="1280,670 1269,664.5 1269,675.5" class="ah-red"/>
+<text x="1230" y="654" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">Yes</text>
+<path d="M1110 720V780" class="teal"/><polygon points="1110,780 1104.5,769 1115.5,769" class="ah-teal"/>
+<text x="1130" y="756" class="small" style="font-weight:700;fill:#219487">No</text>
+
+<!-- Thinking stage -->
+<rect x="210" y="735" width="1240" height="350" rx="18" class="scope"/>
+<rect x="235" y="722" width="210" height="30" rx="15" fill="#f7f9fc"/>
+<text x="250" y="743" class="stage">THINKING</text>
+
+<rect x="980" y="780" width="260" height="95" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="1110" y="819" text-anchor="middle" class="label">Evaluate</text>
+<text x="1110" y="848" text-anchor="middle" class="body">coverage · consistency · gaps</text>
+
+<polygon points="1110,880 1175,930 1110,980 1045,930" fill="#f1f3f5" stroke="#d98c2b" class="box"/>
+<text x="1110" y="926" text-anchor="middle" class="body" style="font-weight:700">Good enough?</text>
+<path d="M1110 875V880" class="navy"/><polygon points="1110,880 1104.5,869 1115.5,869" class="ah-navy"/>
+
+<path d="M1175 930H1260V700H1280" class="green"/><polygon points="1280,700 1269,694.5 1269,705.5" class="ah-green"/>
+<text x="1200" y="916" class="small" style="font-weight:700;fill:#2f9e44">Yes</text>
+
+<rect x="730" y="970" width="220" height="75" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="840" y="1000" text-anchor="middle" class="label" style="font-size:18px">Reflect</text>
+<text x="840" y="1027" text-anchor="middle" class="body">what is still unsupported?</text>
+<path d="M1045 930H990V1007H950" class="red"/><polygon points="950,1007 961,1001.5 961,1012.5" class="ah-red"/>
+<text x="1010" y="914" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">No</text>
+
+<rect x="480" y="970" width="200" height="75" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="580" y="1000" text-anchor="middle" class="label" style="font-size:18px">Find gaps</text>
+<text x="580" y="1027" text-anchor="middle" class="body">missing links / evidence</text>
+<path d="M730 1007H680" class="navy"/><polygon points="680,1007 691,1001.5 691,1012.5" class="ah-navy"/>
+
+<rect x="230" y="970" width="200" height="75" rx="12" fill="#fff4e8" stroke="#d98c2b" class="box"/>
+<text x="330" y="1000" text-anchor="middle" class="label" style="font-size:18px">Next subqueries</text>
+<text x="330" y="1027" text-anchor="middle" class="body">update the search direction</text>
+<path d="M480 1007H430" class="navy"/><polygon points="430,1007 441,1001.5 441,1012.5" class="ah-navy"/>
+
+<!-- Iterative feedback path -->
+<path d="M230 1007H185V340H270" class="teal"/><polygon points="270,340 259,334.5 259,345.5" class="ah-teal"/>
+<text x="185" y="735" text-anchor="middle" class="small" transform="rotate(-90 185 735)">new subqueries</text>
+
+<!-- Reading key -->
+<rect x="50" y="815" width="115" height="145" rx="10" fill="#fff" stroke="#c4ced8" stroke-width="2"/>
+<text x="107" y="844" text-anchor="middle" class="small" style="font-weight:700">Key</text>
+<text x="107" y="874" text-anchor="middle" class="small">blue: model step</text>
+<text x="107" y="898" text-anchor="middle" class="small">green: retrieval</text>
+<text x="107" y="922" text-anchor="middle" class="small">red: rejection</text>
+<text x="107" y="946" text-anchor="middle" class="small">teal: feedback</text>
+
+<rect x="460" y="1090" width="680" height="25" rx="7" fill="#f7f9fc"/>
+<text x="800" y="1108" text-anchor="middle" class="small">Deep search stops at a supported answer, a budget limit, or an explicit unresolved gap.</text>
+</svg>

@@ -1,1 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.title{font:700 34px Arial;fill:#17283c}.sub{font:400 18px Arial;fill:#5b6b7c}.h{font:700 22px Arial;fill:#17283c}.t{font:600 18px Arial;fill:#17283c}.s{font:400 16px Arial;fill:#405268}.b{fill:#fff;stroke:#9eb0c2;stroke-width:2}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="title">Agent System: Building Blocks</text><text x="80" y="110" class="sub">Keep interfaces small; compose modules around a stable contract</text><text x="800" y="170" text-anchor="middle" class="h">stable orchestration interface</text><rect x="300" y="205" width="1000" height="95" rx="10" fill="#e6f1fb" stroke="#3985c6" stroke-width="3"/><text x="800" y="245" text-anchor="middle" class="h">Orchestration</text><text x="800" y="276" text-anchor="middle" class="s">input → context → model → output</text><path d="M800 300 V350" class="l"/><polygon points="800,350 795.5,341 804.5,341" class="al"/><rect x="120" y="380" width="250" height="150" rx="10" class="b"/><text x="245" y="425" text-anchor="middle" class="h">Model</text><text x="245" y="460" text-anchor="middle" class="s">reasoning capacity</text><text x="245" y="492" text-anchor="middle" class="s">generation / scoring</text><rect x="445" y="380" width="250" height="150" rx="10" class="b"/><text x="570" y="425" text-anchor="middle" class="h">Prompt</text><text x="570" y="460" text-anchor="middle" class="s">instructions</text><text x="570" y="492" text-anchor="middle" class="s">role / format / constraints</text><rect x="770" y="380" width="250" height="150" rx="10" class="b"/><text x="895" y="425" text-anchor="middle" class="h">Context</text><text x="895" y="460" text-anchor="middle" class="s">task state</text><text x="895" y="492" text-anchor="middle" class="s">retrieved information</text><rect x="1095" y="380" width="250" height="150" rx="10" class="b"/><text x="1220" y="425" text-anchor="middle" class="h">Evaluation</text><text x="1220" y="460" text-anchor="middle" class="s">tests</text><text x="1220" y="492" text-anchor="middle" class="s">feedback / guardrails</text><path d="M245 380 V340 H800" class="l"/><polygon points="800,340 791,335.5 791,344.5" class="al"/><path d="M570 380 V340" class="l"/><polygon points="570,340 565.5,349 574.5,349" class="al"/><path d="M895 380 V340" class="l"/><polygon points="895,340 890.5,349 899.5,349" class="al"/><path d="M1220 380 V340 H800" class="l"/><polygon points="800,340 809,335.5 809,344.5" class="al"/><rect x="280" y="610" width="1040" height="105" rx="10" fill="#eef5ff" stroke="#3985c6" stroke-width="2"/><text x="800" y="652" text-anchor="middle" class="h">External capabilities</text><text x="800" y="686" text-anchor="middle" class="s">tools · memory · human approval · domain services</text><path d="M800 610 V530" class="l"/><polygon points="800,530 795.5,539 804.5,539" class="al"/><text x="800" y="795" text-anchor="middle" class="s">The pattern is not a single model. It is the boundary that makes the parts replaceable.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<style>
+.title{font:700 34px Arial,sans-serif;fill:#17283c}.sub{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+.boundary-title{font:700 20px Arial,sans-serif;fill:#23364d}.h{font:700 21px Arial,sans-serif;fill:#17283c}
+.t{font:600 18px Arial,sans-serif;fill:#17283c}.s{font:400 15px Arial,sans-serif;fill:#405268}
+.small{font:400 14px Arial,sans-serif;fill:#5b6b7c}.node{fill:#fff;stroke:#9eb0c2;stroke-width:2}
+.main{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.data{stroke:#219487;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 8}
+.control{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9 7}
+.navy{fill:#23364d}.teal{fill:#219487}.red{fill:#c65b5b}
+</style>
+</defs>
+<rect width="1600" height="1000" fill="#f7f9fc"/>
+<text x="80" y="70" class="title">Agent System: Building Blocks</text>
+<text x="80" y="105" class="sub">A small vocabulary for separating the data plane, control plane, and replaceable implementations</text>
+
+<!-- Agent boundary -->
+<rect x="300" y="160" width="920" height="650" rx="22" fill="#ffffff" stroke="#8fa6bd" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="330" y="181" width="250" height="36" rx="18" fill="#e6f1fb" stroke="#3985c6" stroke-width="2"/>
+<text x="455" y="205" text-anchor="middle" class="boundary-title">Agent runtime</text>
+<text x="600" y="205" class="small">loop + policy + state</text>
+<text x="330" y="245" class="small">DATA PLANE</text>
+
+<!-- External request -->
+<rect x="55" y="265" width="190" height="95" rx="10" class="node" stroke="#3985c6"/>
+<text x="150" y="302" text-anchor="middle" class="t">Request / goal</text>
+<text x="150" y="330" text-anchor="middle" class="s">user or upstream system</text>
+
+<!-- Main data-plane spine -->
+<rect x="350" y="250" width="220" height="125" rx="12" fill="#e6f1fb" stroke="#3985c6" stroke-width="2.5"/>
+<text x="460" y="291" text-anchor="middle" class="h">Context builder</text>
+<text x="460" y="322" text-anchor="middle" class="s">prompt + state</text>
+<text x="460" y="347" text-anchor="middle" class="s">retrieved evidence</text>
+
+<rect x="630" y="250" width="220" height="125" rx="12" fill="#f0ebfa" stroke="#8468b7" stroke-width="2.5"/>
+<text x="740" y="291" text-anchor="middle" class="h">Model / inference</text>
+<text x="740" y="322" text-anchor="middle" class="s">reasoning</text>
+<text x="740" y="347" text-anchor="middle" class="s">generation / scoring</text>
+
+<rect x="910" y="250" width="220" height="125" rx="12" fill="#e5f4f1" stroke="#219487" stroke-width="2.5"/>
+<text x="1020" y="291" text-anchor="middle" class="h">Action policy</text>
+<text x="1020" y="322" text-anchor="middle" class="s">choose next step</text>
+<text x="1020" y="347" text-anchor="middle" class="s">emit a typed action</text>
+
+<rect x="1290" y="265" width="250" height="95" rx="10" class="node" stroke="#219487"/>
+<text x="1415" y="302" text-anchor="middle" class="t">Tools / environment</text>
+<text x="1415" y="330" text-anchor="middle" class="s">domain services and APIs</text>
+
+<!-- Main arrows: one direction, one meaning -->
+<path d="M245 312.5 H350" class="main"/>
+<polygon points="350,312.5 340,307 340,318" class="navy"/>
+<text x="297" y="296" text-anchor="middle" class="small">request</text>
+<path d="M570 312.5 H630" class="main"/>
+<polygon points="630,312.5 620,307 620,318" class="navy"/>
+<text x="600" y="296" text-anchor="middle" class="small">context</text>
+<path d="M850 312.5 H910" class="main"/>
+<polygon points="910,312.5 900,307 900,318" class="navy"/>
+<text x="880" y="296" text-anchor="middle" class="small">candidate</text>
+<path d="M1130 312.5 H1290" class="main"/>
+<polygon points="1290,312.5 1280,307 1280,318" class="navy"/>
+<text x="1210" y="296" text-anchor="middle" class="small">action</text>
+
+<!-- State and memory plane -->
+<text x="330" y="530" class="small">STATE PLANE</text>
+<rect x="350" y="560" width="220" height="120" rx="12" fill="#eef5ff" stroke="#3985c6" stroke-width="2.5"/>
+<text x="460" y="600" text-anchor="middle" class="h">Working state</text>
+<text x="460" y="631" text-anchor="middle" class="s">current task record</text>
+<text x="460" y="655" text-anchor="middle" class="s">trajectory / artifacts</text>
+
+<rect x="630" y="560" width="220" height="120" rx="12" fill="#fff7e7" stroke="#d98c2b" stroke-width="2.5"/>
+<text x="740" y="600" text-anchor="middle" class="h">Memory</text>
+<text x="740" y="631" text-anchor="middle" class="s">selected durable facts</text>
+<text x="740" y="655" text-anchor="middle" class="s">retrieval index</text>
+
+<!-- Observation and state flow -->
+<path d="M1290 345 H1245 V500 H600 V620 H570" class="data"/>
+<polygon points="570,620 580,614.5 580,625.5" class="teal"/>
+<text x="1180" y="486" text-anchor="middle" class="small">observation</text>
+<path d="M460 560 V375" class="data"/>
+<polygon points="460,375 454.5,385 465.5,385" class="teal"/>
+<text x="405" y="468" text-anchor="middle" class="small">state update</text>
+<path d="M570 650 H630" class="data"/>
+<polygon points="630,650 620,644.5 620,655.5" class="teal"/>
+<text x="600" y="638" text-anchor="middle" class="small">write</text>
+<path d="M740 560 V455 H520 V375" class="data"/>
+<polygon points="520,375 514.5,385 525.5,385" class="teal"/>
+<text x="630" y="440" text-anchor="middle" class="small">retrieve</text>
+
+<!-- Evaluation and checkpoint -->
+<rect x="910" y="560" width="220" height="120" rx="12" fill="#fff7e7" stroke="#d98c2b" stroke-width="2.5"/>
+<text x="1020" y="600" text-anchor="middle" class="h">Evaluator</text>
+<text x="1020" y="631" text-anchor="middle" class="s">tests artifact / trajectory</text>
+<text x="1020" y="655" text-anchor="middle" class="s">returns feedback</text>
+<path d="M1020 375 V560" class="main"/>
+<polygon points="1020,560 1014.5,550 1025.5,550" class="navy"/>
+<text x="1068" y="470" class="small">evaluate</text>
+
+<rect x="1290" y="560" width="250" height="120" rx="10" class="node" stroke="#c65b5b"/>
+<text x="1415" y="600" text-anchor="middle" class="t">Checkpoint / human</text>
+<text x="1415" y="631" text-anchor="middle" class="s">approve, revise, or delegate</text>
+<text x="1415" y="655" text-anchor="middle" class="s">responsibility transfer</text>
+<path d="M1130 620 H1290" class="control"/>
+<polygon points="1290,620 1280,614.5 1280,625.5" class="red"/>
+<text x="1210" y="605" text-anchor="middle" class="small">feedback</text>
+<path d="M1415 560 V435 H1150 V375" class="control"/>
+<polygon points="1150,375 1144.5,385 1155.5,385" class="red"/>
+<text x="1260" y="421" text-anchor="middle" class="small">approval / intervention</text>
+
+<!-- Reading key -->
+<rect x="330" y="750" width="870" height="42" rx="9" fill="#f1f4f8" stroke="#d7e0e9"/>
+<path d="M360 771 H415" class="main"/><polygon points="415,771 405,765.5 405,776.5" class="navy"/><text x="430" y="777" class="small">execution flow</text>
+<path d="M600 771 H655" class="data"/><polygon points="655,771 645,765.5 645,776.5" class="teal"/><text x="670" y="777" class="small">state / data flow</text>
+<path d="M875 771 H930" class="control"/><polygon points="930,771 920,765.5 920,776.5" class="red"/><text x="945" y="777" class="small">control / approval</text>
+<text x="800" y="862" text-anchor="middle" class="sub">The agent is the coordinated loop; the model is one replaceable component inside it.</text>
+</svg>
