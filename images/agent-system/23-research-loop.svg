@@ -1,1 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial;fill:#17283c}.u{font:400 18px Arial;fill:#5b6b7c}.h{font:700 21px Arial;fill:#17283c}.s{font:400 15px Arial;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.d{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.r{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="t">Rethlas / Danus: Verified-Proof Loop</text><text x="80" y="110" class="u">A worker proposes; a fresh verifier decides; rejection becomes repair information</text><rect x="100" y="360" width="230" height="105" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="215" y="402" text-anchor="middle" class="h">Problem file</text><text x="215" y="432" text-anchor="middle" class="s">statement + references</text><path d="M330 412H475" class="l"/><polygon points="475,412 466,407.5 466,416.5" class="al"/><rect x="475" y="360" width="245" height="105" rx="10" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="597" y="402" text-anchor="middle" class="h">Generation agent</text><text x="597" y="432" text-anchor="middle" class="s">search · memory · branch</text><path d="M720 412H855" class="l"/><polygon points="855,412 846,407.5 846,416.5" class="al"/><rect x="855" y="360" width="250" height="105" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="980" y="402" text-anchor="middle" class="h">Proof blueprint</text><text x="980" y="432" text-anchor="middle" class="s">statement + proof markdown</text><path d="M1105 412H1240" class="l"/><polygon points="1240,412 1231,407.5 1231,416.5" class="al"/><rect x="1240" y="360" width="250" height="105" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="1365" y="402" text-anchor="middle" class="h">Verifier service</text><text x="1365" y="432" text-anchor="middle" class="s">fresh Codex judge</text><path d="M1365 465V610H1110" class="l"/><polygon points="1110,610 1119,605.5 1119,614.5" class="al"/><rect x="855" y="610" width="255" height="100" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="982" y="650" text-anchor="middle" class="h">Correct verdict</text><text x="982" y="680" text-anchor="middle" class="s">write verified result</text><path d="M1365 465V525H700V610" class="r"/><polygon points="700,610 695.5,601 704.5,601" class="ar"/><rect x="445" y="610" width="255" height="100" rx="10" fill="#fceceb" stroke="#c65b5b" class="b"/><text x="572" y="650" text-anchor="middle" class="h">Reject + repair hints</text><text x="572" y="680" text-anchor="middle" class="s">preserve report · revise</text><path d="M445 660H250V412H465" class="r"/><polygon points="465,412 456,407.5 456,416.5" class="ar"/><path d="M1110 660H1260V760H215V465" class="d"/><polygon points="215,465 210.5,474 219.5,474" class="ad"/><text x="800" y="770" text-anchor="middle" class="s">Rethlas uses two agents; Danus repeats the loop across workers and adds a verifier-gated fact graph.</text><rect x="360" y="805" width="880" height="45" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="834" text-anchor="middle" class="s">The terminal artifact is blueprint_verified.md, not merely a fluent draft.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}.subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .label{font:700 19px Arial,sans-serif;fill:#17283c}.body{font:400 14px Arial,sans-serif;fill:#405268}.small{font:400 13px Arial,sans-serif;fill:#5b6b7c}
+    .scope{fill:#fbfcfe;stroke:#9eb0c2;stroke-width:2.5;stroke-dasharray:10 8}.box{stroke-width:2.5}.navy{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.teal{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.red{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.orange{stroke:#d98c2b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .ah-navy{fill:#23364d}.ah-teal{fill:#219487}.ah-red{fill:#c65b5b}.ah-orange{fill:#d98c2b}
+  </style>
+</defs>
+
+<rect width="1600" height="1000" fill="#f7f9fc"/>
+<text x="60" y="68" class="title">Rethlas / Danus — Verified-Proof State Machine</text>
+<text x="60" y="103" class="subtitle">Rethlas closes a generation–verification loop; Danus adds a guarded path for admitting verified facts</text>
+
+<!-- Rethlas standalone loop -->
+<rect x="70" y="140" width="1460" height="545" rx="20" class="scope"/>
+<rect x="95" y="127" width="360" height="30" rx="15" fill="#f7f9fc"/>
+<text x="110" y="148" class="small" style="font-weight:700;letter-spacing:1px">RETHLAS STANDALONE · STATE MACHINE</text>
+<text x="1180" y="150" class="small">generation agent calls /verify</text>
+
+<circle cx="125" cy="335" r="18" fill="#23364d"/>
+<path d="M143 335H170" class="navy"/><polygon points="170,335 159,329.5 159,340.5" class="ah-navy"/>
+
+<rect x="170" y="280" width="220" height="110" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="280" y="321" text-anchor="middle" class="label">Problem loaded</text>
+<text x="280" y="350" text-anchor="middle" class="body">problem.md</text>
+<text x="280" y="372" text-anchor="middle" class="body">statement + references</text>
+
+<path d="M390 335H450" class="navy"/><polygon points="450,335 439,329.5 439,340.5" class="ah-navy"/>
+<text x="420" y="321" text-anchor="middle" class="small">read</text>
+<rect x="450" y="280" width="270" height="110" rx="12" fill="#fff4e8" stroke="#d98c2b" class="box"/>
+<text x="585" y="321" text-anchor="middle" class="label">Generation round</text>
+<text x="585" y="350" text-anchor="middle" class="body">theorem search · memory</text>
+<text x="585" y="372" text-anchor="middle" class="body">branch state · proof drafting</text>
+
+<path d="M720 335H800" class="navy"/><polygon points="800,335 789,329.5 789,340.5" class="ah-navy"/>
+<text x="760" y="321" text-anchor="middle" class="small">draft</text>
+<rect x="800" y="280" width="270" height="110" rx="12" fill="#e9f5f1" stroke="#219487" class="box"/>
+<text x="935" y="321" text-anchor="middle" class="label">Proof blueprint</text>
+<text x="935" y="350" text-anchor="middle" class="body">blueprint.md</text>
+<text x="935" y="372" text-anchor="middle" class="body">statement + proof markdown</text>
+
+<path d="M935 390V445" class="navy"/><polygon points="935,445 929.5,434 940.5,434" class="ah-navy"/>
+<rect x="800" y="445" width="270" height="95" rx="12" fill="#f0ebfb" stroke="#7863b6" class="box"/>
+<text x="935" y="483" text-anchor="middle" class="label">Verification service</text>
+<text x="935" y="512" text-anchor="middle" class="body">fresh agent · structured JSON</text>
+
+<path d="M935 540V570" class="navy"/><polygon points="935,570 929.5,559 940.5,559" class="ah-navy"/>
+<polygon points="935,570 1000,620 935,670 870,620" fill="#fff8e8" stroke="#d98c2b" class="box"/>
+<text x="935" y="616" text-anchor="middle" class="label" style="font-size:17px">verdict?</text>
+<text x="935" y="638" text-anchor="middle" class="small">correct / reject</text>
+
+<!-- Wrong branch and loop-back -->
+<path d="M870 620H690" class="red"/><polygon points="690,620 701,614.5 701,625.5" class="ah-red"/>
+<text x="780" y="606" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">wrong</text>
+<rect x="420" y="570" width="270" height="100" rx="12" fill="#fceceb" stroke="#c65b5b" class="box"/>
+<text x="555" y="608" text-anchor="middle" class="label">Repair state</text>
+<text x="555" y="637" text-anchor="middle" class="body">preserve report + repair_hints</text>
+<text x="555" y="658" text-anchor="middle" class="body">revise candidate</text>
+<path d="M555 570V430H585V390" class="red"/><polygon points="585,390 579.5,401 590.5,401" class="ah-red"/>
+<text x="505" y="447" text-anchor="middle" class="small">next iteration</text>
+
+<!-- Correct branch -->
+<path d="M1000 620H1120" class="teal"/><polygon points="1120,620 1109,614.5 1109,625.5" class="ah-teal"/>
+<text x="1060" y="606" text-anchor="middle" class="small" style="font-weight:700;fill:#219487">correct</text>
+<rect x="1120" y="570" width="290" height="100" rx="12" fill="#e9f5f1" stroke="#219487" class="box"/>
+<text x="1265" y="608" text-anchor="middle" class="label">Verified artifact</text>
+<text x="1265" y="637" text-anchor="middle" class="body">blueprint_verified.md</text>
+<text x="1265" y="658" text-anchor="middle" class="body">accepted proof blueprint</text>
+
+<!-- Danus admission path -->
+<rect x="70" y="700" width="1460" height="220" rx="20" fill="#fff" stroke="#9eb0c2" stroke-width="2.5"/>
+<rect x="95" y="687" width="470" height="30" rx="15" fill="#f7f9fc"/>
+<text x="110" y="708" class="small" style="font-weight:700;letter-spacing:1px">DANUS EXTENSION · PER-WORKER FACT ADMISSION</text>
+<text x="1110" y="708" class="small">repeat until correct or a stop condition</text>
+
+<rect x="105" y="765" width="245" height="90" rx="12" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="227" y="800" text-anchor="middle" class="label">Worker round</text>
+<text x="227" y="829" text-anchor="middle" class="body">candidate statement + proof</text>
+<path d="M350 810H405" class="navy"/><polygon points="405,810 394,804.5 394,815.5" class="ah-navy"/>
+
+<rect x="405" y="765" width="265" height="90" rx="12" fill="#f0ebfb" stroke="#7863b6" class="box"/>
+<text x="537" y="800" text-anchor="middle" class="label">Role-gated gateway</text>
+<text x="537" y="829" text-anchor="middle" class="body">fact_submit · sanctioned door</text>
+<path d="M670 810H725" class="navy"/><polygon points="725,810 714,804.5 714,815.5" class="ah-navy"/>
+
+<rect x="725" y="765" width="265" height="90" rx="12" fill="#fceceb" stroke="#c65b5b" class="box"/>
+<text x="857" y="800" text-anchor="middle" class="label">Cold-start /verify</text>
+<text x="857" y="829" text-anchor="middle" class="body">verdict + report + hints</text>
+<path d="M990 810H1025" class="navy"/><polygon points="1025,810 1014,804.5 1014,815.5" class="ah-navy"/>
+
+<polygon points="1025,810 1070,775 1115,810 1070,845" fill="#fff8e8" stroke="#d98c2b" class="box"/>
+<text x="1070" y="814" text-anchor="middle" class="small" style="font-weight:700">correct?</text>
+
+<path d="M1115 810H1160V765H1200" class="teal"/><polygon points="1200,765 1189,759.5 1189,770.5" class="ah-teal"/>
+<text x="1150" y="751" text-anchor="middle" class="small" style="font-weight:700;fill:#219487">yes</text>
+<rect x="1200" y="730" width="285" height="70" rx="11" fill="#fff2f0" stroke="#c65b5b" class="box"/>
+<text x="1342" y="759" text-anchor="middle" class="label" style="font-size:18px">Fact graph</text>
+<text x="1342" y="783" text-anchor="middle" class="body">gateway commits fact_id iff correct</text>
+
+<path d="M1115 810H1160V865H1200" class="red"/><polygon points="1200,865 1189,859.5 1189,870.5" class="ah-red"/>
+<text x="1150" y="887" text-anchor="middle" class="small" style="font-weight:700;fill:#c65b5b">no</text>
+<rect x="1200" y="830" width="285" height="70" rx="11" fill="#fceceb" stroke="#c65b5b" class="box"/>
+<text x="1342" y="859" text-anchor="middle" class="label" style="font-size:18px">Repair / next round</text>
+<text x="1342" y="883" text-anchor="middle" class="body">return hints; preserve failed report</text>
+
+<!-- Explanatory footer -->
+<rect x="105" y="935" width="1380" height="40" rx="8" fill="#f7f9fc" stroke="#c4ced8" stroke-width="2"/>
+<text x="795" y="961" text-anchor="middle" class="body">Danus runs this admission path inside detached rounds built from the Rethlas generation–verification core.</text>
+</svg>

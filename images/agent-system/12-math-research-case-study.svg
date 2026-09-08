@@ -1,1 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial;fill:#17283c}.u{font:400 18px Arial;fill:#5b6b7c}.h{font:700 20px Arial;fill:#17283c}.s{font:400 14px Arial;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.d{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.r{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="t">Case Study: Danus + Rethlas</text><text x="80" y="110" class="u">An as-built architecture for long-running, multi-agent mathematical proof search</text><rect x="85" y="350" width="205" height="110" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="187" y="393" text-anchor="middle" class="h">Operator</text><text x="187" y="424" text-anchor="middle" class="s">problem · priorities · stop</text><path d="M290 405H405" class="l"/><polygon points="405,405 396,400.5 396,409.5" class="al"/><rect x="405" y="300" width="270" height="210" rx="12" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="540" y="350" text-anchor="middle" class="h">Danus orchestration</text><text x="540" y="388" text-anchor="middle" class="s">main agent + danus CLI</text><text x="540" y="421" text-anchor="middle" class="s">assign · start · monitor · stop</text><text x="540" y="454" text-anchor="middle" class="s">strategy consult → guidance</text><path d="M675 405H780" class="l"/><polygon points="780,405 771,400.5 771,409.5" class="al"/><rect x="780" y="170" width="300" height="105" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="930" y="212" text-anchor="middle" class="h">Rethlas proof workers</text><text x="930" y="243" text-anchor="middle" class="s">parallel Codex sessions + skills</text><rect x="780" y="350" width="300" height="105" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="930" y="392" text-anchor="middle" class="h">Role-gated gateway</text><text x="930" y="423" text-anchor="middle" class="s">MCP tools · permissions</text><rect x="780" y="530" width="300" height="105" rx="10" fill="#fceceb" stroke="#c65b5b" class="b"/><text x="930" y="572" text-anchor="middle" class="h">Cold-start verifier</text><text x="930" y="603" text-anchor="middle" class="s">HTTP /verify · strict verdict</text><path d="M675 405H730V222H770" class="l"/><polygon points="770,222 761,217.5 761,226.5" class="al"/><path d="M675 405H770" class="l"/><polygon points="770,405 761,400.5 761,409.5" class="al"/><path d="M675 405H730V582H770" class="l"/><polygon points="770,582 761,577.5 761,586.5" class="al"/><path d="M1080 222H1190V690H187V460" class="d"/><polygon points="187,460 182.5,469 191.5,469" class="ad"/><path d="M1080 402H1190" class="r"/><polygon points="1190,402 1181,397.5 1181,406.5" class="ar"/><path d="M1080 582H1190" class="r"/><polygon points="1190,582 1181,577.5 1181,586.5" class="ar"/><rect x="405" y="650" width="270" height="95" rx="10" fill="#fff" stroke="#23364d" class="b"/><text x="540" y="690" text-anchor="middle" class="h">Truth layer</text><text x="540" y="721" text-anchor="middle" class="s">local/global memory + fact graph</text><path d="M540 650V510" class="d"/><polygon points="540,510 535.5,519 544.5,519" class="ad"/><rect x="1230" y="300" width="280" height="125" rx="12" fill="#fffdf5" stroke="#d98c2b" class="b"/><text x="1370" y="343" text-anchor="middle" class="h">Outputs</text><text x="1370" y="375" text-anchor="middle" class="s">isolated write-paper agent</text><text x="1370" y="402" text-anchor="middle" class="s">isolated human-summary agent</text><path d="M1080 222H1160V362H1220" class="l"/><polygon points="1220,362 1211,357.5 1211,366.5" class="al"/><path d="M1080 582H1160V362H1220" class="l"/><polygon points="1220,362 1211,357.5 1211,366.5" class="al"/><rect x="1230" y="500" width="280" height="125" rx="12" fill="#fff" stroke="#9eb0c2" class="b"/><text x="1370" y="543" text-anchor="middle" class="h">Cross-cutting</text><text x="1370" y="575" text-anchor="middle" class="s">observability · theorem search</text><text x="1370" y="602" text-anchor="middle" class="s">runtime · services · recovery</text><path d="M1080 582H1160V562H1220" class="d"/><polygon points="1220,562 1211,557.5 1211,566.5" class="ad"/><text x="800" y="780" text-anchor="middle" class="s">Danus extends the Rethlas generation–verification core with orchestration, memory, truth gates, and production controls.</text><rect x="350" y="810" width="900" height="45" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="839" text-anchor="middle" class="s">A fact enters the truth layer only after the verifier accepts it.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}.subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .label{font:700 20px Arial,sans-serif;fill:#17283c}.body{font:400 15px Arial,sans-serif;fill:#405268}.small{font:400 13px Arial,sans-serif;fill:#5b6b7c}
+    .scope{fill:#fbfcfe;stroke:#9eb0c2;stroke-width:2.5;stroke-dasharray:10 8}.box{stroke-width:2.5}.navy{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.teal{stroke:#219487;stroke-width:3;stroke-dasharray:10 8;fill:none;stroke-linecap:round;stroke-linejoin:round}.red{stroke:#c65b5b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.orange{stroke:#d98c2b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .ah-navy{fill:#23364d}.ah-teal{fill:#219487}.ah-red{fill:#c65b5b}.ah-orange{fill:#d98c2b}
+  </style>
+</defs>
+
+<rect width="1600" height="1000" fill="#f7f9fc"/>
+<text x="60" y="68" class="title">Danus + Rethlas — As-Built Architecture</text>
+<text x="60" y="103" class="subtitle">Danus adds orchestration and truth controls around the inherited Rethlas proof core</text>
+
+<!-- Scope -->
+<rect x="255" y="145" width="1085" height="780" rx="22" class="scope"/>
+<rect x="280" y="132" width="300" height="30" rx="15" fill="#f7f9fc"/>
+<text x="295" y="153" class="small" style="font-weight:700;letter-spacing:1px">DANUS SYSTEM BOUNDARY</text>
+
+<!-- External operator -->
+<rect x="35" y="220" width="185" height="105" rx="10" fill="#e6f1fb" stroke="#3985c6" class="box"/>
+<text x="127" y="262" text-anchor="middle" class="label">Operator</text>
+<text x="127" y="292" text-anchor="middle" class="body">problem · priorities</text>
+<text x="127" y="314" text-anchor="middle" class="body">stop / resume</text>
+<path d="M220 272H330" class="navy"/>
+<polygon points="330,272 319,266.5 319,277.5" class="ah-navy"/>
+<text x="274" y="258" text-anchor="middle" class="small">commands</text>
+
+<!-- Control plane -->
+<rect x="330" y="205" width="300" height="115" rx="12" fill="#fff4e8" stroke="#d98c2b" class="box"/>
+<text x="480" y="247" text-anchor="middle" class="label">Orchestration</text>
+<text x="480" y="276" text-anchor="middle" class="body">main agent + danus CLI</text>
+<text x="480" y="298" text-anchor="middle" class="body">assign · start · monitor · stop</text>
+
+<rect x="780" y="205" width="300" height="115" rx="12" fill="#e9f5f1" stroke="#219487" class="box"/>
+<text x="930" y="247" text-anchor="middle" class="label">Strategy consult</text>
+<text x="930" y="276" text-anchor="middle" class="body">elaboration → consultation</text>
+<text x="930" y="298" text-anchor="middle" class="body">next master_guidance</text>
+<path d="M630 262H780" class="navy"/>
+<polygon points="780,262 769,256.5 769,267.5" class="ah-navy"/>
+<text x="705" y="248" text-anchor="middle" class="small">elaboration</text>
+
+<!-- Execution plane -->
+<rect x="500" y="390" width="560" height="145" rx="14" fill="#eef7f5" stroke="#219487" class="box"/>
+<text x="780" y="427" text-anchor="middle" class="label">Worker swarm</text>
+<text x="780" y="453" text-anchor="middle" class="body">detached, resumable rounds · parallel exploration</text>
+<rect x="530" y="475" width="500" height="42" rx="9" fill="#ffffff" stroke="#72b9ae" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="780" y="502" text-anchor="middle" class="body">Rethlas proof core: Codex + proving skills</text>
+
+<path d="M480 320V350H630V390" class="navy"/>
+<polygon points="630,390 624.5,379 635.5,379" class="ah-navy"/>
+<text x="548" y="344" text-anchor="middle" class="small">TASK.md / round</text>
+<path d="M930 320V390" class="teal"/>
+<polygon points="930,390 924.5,379 935.5,379" class="ah-teal"/>
+<text x="950" y="357" class="small">master_guidance</text>
+
+<!-- Verification and truth plane -->
+<rect x="330" y="590" width="300" height="125" rx="12" fill="#f0ebfb" stroke="#7863b6" class="box"/>
+<text x="480" y="632" text-anchor="middle" class="label">Role-gated MCP gateway</text>
+<text x="480" y="661" text-anchor="middle" class="body">worker: fact_submit</text>
+<text x="480" y="683" text-anchor="middle" class="body">main: no submit · verifier: read-only</text>
+
+<rect x="730" y="590" width="300" height="125" rx="12" fill="#fceceb" stroke="#c65b5b" class="box"/>
+<text x="880" y="632" text-anchor="middle" class="label">Cold-start verifier</text>
+<text x="880" y="661" text-anchor="middle" class="body">HTTP /verify · fresh Codex judge</text>
+<text x="880" y="683" text-anchor="middle" class="body">correct ⇔ no errors and no gaps</text>
+
+<rect x="1100" y="555" width="220" height="82" rx="11" fill="#fff2f0" stroke="#c65b5b" class="box"/>
+<text x="1210" y="587" text-anchor="middle" class="label" style="font-size:18px">Fact graph</text>
+<text x="1210" y="614" text-anchor="middle" class="body">write only if correct</text>
+
+<rect x="1100" y="665" width="220" height="82" rx="11" fill="#edf7f5" stroke="#72b9ae" class="box"/>
+<text x="1210" y="697" text-anchor="middle" class="label" style="font-size:18px">Memory tiers</text>
+<text x="1210" y="724" text-anchor="middle" class="body">local · global · trace</text>
+
+<path d="M590 535V570H480V590" class="navy"/>
+<polygon points="480,590 474.5,579 485.5,579" class="ah-navy"/>
+<text x="515" y="566" class="small">fact_submit</text>
+<path d="M630 625H730" class="navy"/>
+<polygon points="730,625 719,619.5 719,630.5" class="ah-navy"/>
+<text x="680" y="611" text-anchor="middle" class="small">POST /verify</text>
+<path d="M730 745H630" class="teal"/>
+<polygon points="630,745 641,739.5 641,750.5" class="ah-teal"/>
+<text x="680" y="735" text-anchor="middle" class="small">verdict + repair_hints</text>
+
+<!-- Verification-gated writes -->
+<path d="M630 590V560H1100" class="red"/>
+<polygon points="1100,560 1089,554.5 1089,565.5" class="ah-red"/>
+<text x="800" y="548" text-anchor="middle" class="small">gateway commits iff correct</text>
+<path d="M480 715V770H1060V706H1100" class="teal"/>
+<polygon points="1100,706 1089,700.5 1089,711.5" class="ah-teal"/>
+<text x="820" y="758" text-anchor="middle" class="small">gm_* reads / verification trace</text>
+
+<!-- Output plane -->
+<rect x="440" y="805" width="620" height="82" rx="12" fill="#fffdf5" stroke="#d98c2b" class="box"/>
+<text x="750" y="838" text-anchor="middle" class="label">Isolated authoring agents</text>
+<text x="750" y="866" text-anchor="middle" class="body">write-paper (publication) · human-summary (progress report)</text>
+<path d="M1100 625H1070V775H1060V805" class="teal"/>
+<polygon points="1060,805 1054.5,794 1065.5,794" class="ah-teal"/>
+<text x="1165" y="766" text-anchor="middle" class="small">verified facts / reports</text>
+
+<!-- Cross-cutting services -->
+<rect x="330" y="905" width="990" height="45" rx="9" fill="#ffffff" stroke="#c4ced8" stroke-width="2"/>
+<text x="825" y="933" text-anchor="middle" class="body">Cross-cutting: observability · theorem search · runtime · service recovery</text>
+
+<!-- Legend -->
+<path d="M1380 235H1450" class="navy"/><polygon points="1450,235 1439,229.5 1439,240.5" class="ah-navy"/>
+<text x="1465" y="240" class="small">command / control</text>
+<path d="M1380 275H1450" class="teal"/><polygon points="1450,275 1439,269.5 1439,280.5" class="ah-teal"/>
+<text x="1465" y="280" class="small">data / feedback</text>
+<path d="M1380 315H1450" class="red"/><polygon points="1450,315 1439,309.5 1439,320.5" class="ah-red"/>
+<text x="1465" y="320" class="small">correctness gate</text>
+
+<rect x="35" y="760" width="185" height="105" rx="10" fill="#fff" stroke="#c4ced8" stroke-width="2"/>
+<text x="127" y="794" text-anchor="middle" class="small" style="font-weight:700">Reading key</text>
+<text x="127" y="820" text-anchor="middle" class="small">Rethlas is the</text>
+<text x="127" y="840" text-anchor="middle" class="small">inherited proof core;</text>
+<text x="127" y="860" text-anchor="middle" class="small">Danus supplies control.</text>
+</svg>

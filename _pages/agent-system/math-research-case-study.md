@@ -16,6 +16,10 @@ of that generation–verification core.
 
 ![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)
 
+*Figure 1. A layered as-built view of the case study. Solid navy arrows show
+control, dashed teal arrows show data or feedback, and red arrows mark the
+correctness-gated path into the fact graph.*
+
 The architecture is a code-based case study. Its purpose is to show how the
 patterns from the reference books appear as concrete modules and interfaces.
 
@@ -35,6 +39,10 @@ The Rethlas repository separates proof generation from proof verification.
 6. A successful run produces `blueprint_verified.md`.
 
 ![Rethlas and Danus verified-proof loop](/images/agent-system/23-research-loop.svg)
+
+*Figure 2. The upper state machine is the standalone Rethlas loop. The lower
+flow is Danus's per-worker fact-admission path, where `fact_submit` reaches the
+verifier before a fact can be committed.*
 
 This is a direct instance of the books' reflection, tool-use, exception-recovery,
 structured-output, and human-or-machine evaluation patterns.
@@ -103,7 +111,8 @@ mathematics. A verified artifact is a result accepted by the system's verifier
 contract; mathematical interpretation and research significance remain separate
 questions.
 
-## Figure
+## How to read the diagrams
 
-*The two diagrams above are the architecture and control-flow views of the same
-case study.*
+*The two diagrams deliberately use different forms: the first emphasizes
+components and boundaries, while the second emphasizes states, decisions, and
+recovery. Both describe the same code-based case study.*

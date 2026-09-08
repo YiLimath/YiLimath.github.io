@@ -58,8 +58,14 @@ The books are translated into five design questions:
 Do not use every pattern at once. Choose the smallest composition that makes the
 important uncertainty observable and the important steps verifiable.
 
+The matrix below is a crosswalk, not a claim that each book owns one category.
+Read across a row to see how the books complement one design dimension; read
+down a column to see the emphasis of one book. The right-hand column is the
+course synthesis built from those overlapping contributions.
+
 ## Figure
 
 ![Book-informed agent pattern taxonomy](/images/agent-system/25-book-pattern-taxonomy.svg)
 
-*Figure: the four books contribute complementary architectural, application, orchestration, and production viewpoints.*
+*Figure: a source-to-course crosswalk for control flow, knowledge and reasoning,
+coordination, and reliability/operations.*

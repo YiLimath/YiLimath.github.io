@@ -1,1 +1,178 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><style>.al{fill:#23364d;stroke:none}.ad{fill:#219487;stroke:none}.ar{fill:#c65b5b;stroke:none}.t{font:700 34px Arial;fill:#17283c}.u{font:400 18px Arial;fill:#5b6b7c}.h{font:700 20px Arial;fill:#17283c}.s{font:400 15px Arial;fill:#405268}.b{stroke-width:3}.l{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}</style></defs><rect width="1600" height="900" fill="#f7f9fc"/><text x="80" y="75" class="t">Book-Informed Pattern Taxonomy</text><text x="80" y="110" class="u">Four complementary viewpoints on the design of agent systems</text><rect x="95" y="180" width="300" height="110" rx="10" fill="#e6f1fb" stroke="#3985c6" class="b"/><text x="245" y="223" text-anchor="middle" class="h">Agentic Design Patterns</text><text x="245" y="255" text-anchor="middle" class="s">broad pattern catalogue</text><rect x="95" y="355" width="300" height="110" rx="10" fill="#fff4e8" stroke="#d98c2b" class="b"/><text x="245" y="398" text-anchor="middle" class="h">Designing Multi-Agent Systems</text><text x="245" y="430" text-anchor="middle" class="s">workflow and autonomy</text><rect x="95" y="530" width="300" height="110" rx="10" fill="#e9f5f1" stroke="#219487" class="b"/><text x="245" y="573" text-anchor="middle" class="h">Generative AI Design Patterns</text><text x="245" y="605" text-anchor="middle" class="s">fine-grained application patterns</text><rect x="95" y="705" width="300" height="110" rx="10" fill="#f0ebfb" stroke="#7863b6" class="b"/><text x="245" y="748" text-anchor="middle" class="h">System Design for the LLM Era</text><text x="245" y="780" text-anchor="middle" class="s">production constraints</text><path d="M395 235H570" class="l"/><polygon points="570,235 561,230.5 561,239.5" class="al"/><path d="M395 410H570" class="l"/><polygon points="570,410 561,405.5 561,414.5" class="al"/><path d="M395 585H570" class="l"/><polygon points="570,585 561,580.5 561,589.5" class="al"/><path d="M395 760H570" class="l"/><polygon points="570,760 561,755.5 561,764.5" class="al"/><rect x="570" y="300" width="350" height="310" rx="12" fill="#fff" stroke="#23364d" class="b"/><text x="745" y="350" text-anchor="middle" class="h">Shared design questions</text><text x="745" y="395" text-anchor="middle" class="s">What is the stable interface?</text><text x="745" y="435" text-anchor="middle" class="s">Where is state kept?</text><text x="745" y="475" text-anchor="middle" class="s">How is failure detected?</text><text x="745" y="515" text-anchor="middle" class="s">When does the system stop?</text><path d="M920 455H1080" class="l"/><polygon points="1080,455 1071,450.5 1071,459.5" class="al"/><rect x="1080" y="300" width="420" height="310" rx="12" fill="#fffdf5" stroke="#d98c2b" class="b"/><text x="1290" y="350" text-anchor="middle" class="h">This series translates them into</text><text x="1290" y="400" text-anchor="middle" class="s">workflow and control-flow patterns</text><text x="1290" y="440" text-anchor="middle" class="s">knowledge and reasoning patterns</text><text x="1290" y="480" text-anchor="middle" class="s">multi-agent and human coordination</text><text x="1290" y="520" text-anchor="middle" class="s">reliability and operations</text><text x="800" y="735" text-anchor="middle" class="s">The books provide the vocabulary; the page examples provide the domain translation.</text><rect x="390" y="765" width="820" height="55" rx="8" fill="#fff" stroke="#c4ced8" stroke-width="2"/><text x="800" y="800" text-anchor="middle" class="s">Choose the smallest pattern composition that makes uncertainty observable.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Book-Informed Pattern Taxonomy</title>
+<desc id="figure-desc">A crosswalk matrix mapping four reference books to four design dimensions and the corresponding pattern families in the course.</desc>
+<defs>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#17283c}
+    .subtitle{font:400 18px Arial,sans-serif;fill:#5b6b7c}
+    .heading{font:700 17px Arial,sans-serif;fill:#17283c}
+    .row-title{font:700 17px Arial,sans-serif;fill:#17283c}
+    .body{font:400 14px Arial,sans-serif;fill:#405268}
+    .small{font:400 12px Arial,sans-serif;fill:#5b6b7c}
+    .outline{fill:#ffffff;stroke:#c4ced8;stroke-width:2}
+    .grid{fill:#ffffff;stroke:#d2dae3;stroke-width:1.5}
+    .book-a{fill:#e6f1fb;stroke:#3985c6;stroke-width:2.5}
+    .book-b{fill:#fff4e8;stroke:#d98c2b;stroke-width:2.5}
+    .book-c{fill:#e9f5f1;stroke:#219487;stroke-width:2.5}
+    .book-d{fill:#f0ebfb;stroke:#7863b6;stroke-width:2.5}
+    .control{fill:#eef6fd;stroke:#3985c6;stroke-width:2.5}
+    .knowledge{fill:#f4f0fc;stroke:#7863b6;stroke-width:2.5}
+    .coordination{fill:#edf8f5;stroke:#219487;stroke-width:2.5}
+    .reliability{fill:#fff4e8;stroke:#d98c2b;stroke-width:2.5}
+    .relation{stroke:#23364d;stroke-width:3;fill:none;stroke-linecap:butt;stroke-linejoin:miter}
+    .arrow{fill:#23364d}
+  </style>
+</defs>
+
+<rect width="1600" height="1000" fill="#f7f9fc"/>
+<text x="80" y="72" class="title">Book-Informed Pattern Taxonomy</text>
+<text x="80" y="106" class="subtitle">A crosswalk from four reference books to the design dimensions used by this course</text>
+
+<rect x="70" y="150" width="1460" height="710" rx="14" class="outline"/>
+<text x="100" y="188" class="small">READ ACROSS A ROW TO SEE HOW THE SOURCES COMPLEMENT ONE DESIGN DIMENSION</text>
+
+<rect x="100" y="215" width="220" height="100" rx="10" class="outline"/>
+<text x="210" y="255" text-anchor="middle" class="heading">Course dimension</text>
+<text x="210" y="284" text-anchor="middle" class="small">four recurring questions</text>
+
+<rect x="330" y="215" width="220" height="100" rx="10" class="book-a"/>
+<text x="440" y="248" text-anchor="middle" class="heading">Agentic Design</text>
+<text x="440" y="271" text-anchor="middle" class="heading">Patterns</text>
+<text x="440" y="296" text-anchor="middle" class="small">Antonio Gulli</text>
+
+<rect x="560" y="215" width="220" height="100" rx="10" class="book-b"/>
+<text x="670" y="248" text-anchor="middle" class="heading">Designing Multi-Agent</text>
+<text x="670" y="271" text-anchor="middle" class="heading">Systems</text>
+<text x="670" y="296" text-anchor="middle" class="small">Victor Dibia</text>
+
+<rect x="790" y="215" width="220" height="100" rx="10" class="book-c"/>
+<text x="900" y="248" text-anchor="middle" class="heading">Generative AI</text>
+<text x="900" y="271" text-anchor="middle" class="heading">Design Patterns</text>
+<text x="900" y="296" text-anchor="middle" class="small">Lakshmanan &amp; Hapke</text>
+
+<rect x="1020" y="215" width="220" height="100" rx="10" class="book-d"/>
+<text x="1130" y="248" text-anchor="middle" class="heading">System Design</text>
+<text x="1130" y="271" text-anchor="middle" class="heading">for the LLM Era</text>
+<text x="1130" y="296" text-anchor="middle" class="small">Sampriti Mitra</text>
+
+<rect x="1260" y="215" width="270" height="100" rx="10" class="outline"/>
+<text x="1395" y="248" text-anchor="middle" class="heading">Course pattern family</text>
+<text x="1395" y="278" text-anchor="middle" class="small">the pages built from the crosswalk</text>
+
+<rect x="100" y="325" width="220" height="125" rx="8" class="control"/>
+<text x="210" y="360" text-anchor="middle" class="row-title">Control flow</text>
+<text x="210" y="388" text-anchor="middle" class="body">decompose · branch</text>
+<text x="210" y="412" text-anchor="middle" class="body">route · terminate</text>
+
+<rect x="330" y="325" width="220" height="125" class="grid"/>
+<text x="345" y="359" class="body">chaining · routing</text>
+<text x="345" y="384" class="body">planning · exploration</text>
+<text x="345" y="414" class="small">broad catalogue</text>
+<rect x="560" y="325" width="220" height="125" class="grid"/>
+<text x="575" y="359" class="body">graphs · branches</text>
+<text x="575" y="384" class="body">handoffs · termination</text>
+<text x="575" y="414" class="small">workflow structure</text>
+<rect x="790" y="325" width="220" height="125" class="grid"/>
+<text x="805" y="359" class="body">decomposition</text>
+<text x="805" y="384" class="body">structured output</text>
+<text x="805" y="414" class="small">application boundary</text>
+<rect x="1020" y="325" width="220" height="125" class="grid"/>
+<text x="1035" y="359" class="body">sync / async</text>
+<text x="1035" y="384" class="body">orchestration cost</text>
+<text x="1035" y="414" class="small">system constraint</text>
+<rect x="1260" y="325" width="270" height="125" rx="8" class="control"/>
+<text x="1275" y="359" class="body">workflow · router</text>
+<text x="1275" y="384" class="body">parallel · plan</text>
+<text x="1275" y="414" class="small">pages 02–05, 08, 22</text>
+<path d="M1240 387H1248" class="relation"/>
+<polygon points="1260,387 1248,381 1248,393" class="arrow"/>
+
+<rect x="100" y="460" width="220" height="125" rx="8" class="knowledge"/>
+<text x="210" y="495" text-anchor="middle" class="row-title">Knowledge &amp; reasoning</text>
+<text x="210" y="523" text-anchor="middle" class="body">select context</text>
+<text x="210" y="547" text-anchor="middle" class="body">change representation · check</text>
+
+<rect x="330" y="460" width="220" height="125" class="grid"/>
+<text x="345" y="494" class="body">retrieval · reflection</text>
+<text x="345" y="519" class="body">reasoning · evaluation</text>
+<text x="345" y="549" class="small">pattern vocabulary</text>
+<rect x="560" y="460" width="220" height="125" class="grid"/>
+<text x="575" y="494" class="body">memory · trajectory</text>
+<text x="575" y="519" class="body">state · persistence</text>
+<text x="575" y="549" class="small">runtime state</text>
+<rect x="790" y="460" width="220" height="125" class="grid"/>
+<text x="805" y="494" class="body">RAG · deep search</text>
+<text x="805" y="519" class="body">self-check · reflection</text>
+<text x="805" y="549" class="small">application detail</text>
+<rect x="1020" y="460" width="220" height="125" class="grid"/>
+<text x="1035" y="494" class="body">hybrid retrieval</text>
+<text x="1035" y="519" class="body">context compression</text>
+<text x="1035" y="549" class="small">context budget</text>
+<rect x="1260" y="460" width="270" height="125" rx="8" class="knowledge"/>
+<text x="1275" y="494" class="body">retrieval · deep search</text>
+<text x="1275" y="519" class="body">reasoning · reflection</text>
+<text x="1275" y="549" class="small">pages 14, 15, 27, 05, 18</text>
+<path d="M1240 522H1248" class="relation"/>
+<polygon points="1260,522 1248,516 1248,528" class="arrow"/>
+
+<rect x="100" y="595" width="220" height="125" rx="8" class="coordination"/>
+<text x="210" y="630" text-anchor="middle" class="row-title">Coordination</text>
+<text x="210" y="658" text-anchor="middle" class="body">exchange responsibility</text>
+<text x="210" y="682" text-anchor="middle" class="body">between agents, tools, people</text>
+
+<rect x="330" y="595" width="220" height="125" class="grid"/>
+<text x="345" y="629" class="body">tool use · multi-agent</text>
+<text x="345" y="654" class="body">human delegation</text>
+<text x="345" y="684" class="small">coordination patterns</text>
+<rect x="560" y="595" width="220" height="125" class="grid"/>
+<text x="575" y="629" class="body">protocols · handoffs</text>
+<text x="575" y="654" class="body">delegation · termination</text>
+<text x="575" y="684" class="small">agent workflow</text>
+<rect x="790" y="595" width="220" height="125" class="grid"/>
+<text x="805" y="629" class="body">tools · code execution</text>
+<text x="805" y="654" class="body">guardrails · collaboration</text>
+<text x="805" y="684" class="small">capability boundary</text>
+<rect x="1020" y="595" width="220" height="125" class="grid"/>
+<text x="1035" y="629" class="body">function calling</text>
+<text x="1035" y="654" class="body">gateway · security</text>
+<text x="1035" y="684" class="small">access boundary</text>
+<rect x="1260" y="595" width="270" height="125" rx="8" class="coordination"/>
+<text x="1275" y="629" class="body">tool use · cooperation</text>
+<text x="1275" y="654" class="body">communication · human</text>
+<text x="1275" y="684" class="small">pages 06, 07, 11, 21</text>
+<path d="M1240 657H1248" class="relation"/>
+<polygon points="1260,657 1248,651 1248,663" class="arrow"/>
+
+<rect x="100" y="730" width="220" height="105" rx="8" class="reliability"/>
+<text x="210" y="764" text-anchor="middle" class="row-title">Reliability &amp; operations</text>
+<text x="210" y="792" text-anchor="middle" class="body">persist · evaluate</text>
+<text x="210" y="816" text-anchor="middle" class="body">recover · control cost</text>
+
+<rect x="330" y="730" width="220" height="105" class="grid"/>
+<text x="345" y="764" class="body">recovery · prioritization</text>
+<text x="345" y="789" class="body">evaluation · safety</text>
+<text x="345" y="819" class="small">quality and control</text>
+<rect x="560" y="730" width="220" height="105" class="grid"/>
+<text x="575" y="764" class="body">persistence · middleware</text>
+<text x="575" y="789" class="body">observability · checkpoints</text>
+<text x="575" y="819" class="small">operational graph</text>
+<rect x="790" y="730" width="220" height="105" class="grid"/>
+<text x="805" y="764" class="body">caching · long-term memory</text>
+<text x="805" y="789" class="body">self-check · guardrails</text>
+<text x="805" y="819" class="small">application safeguards</text>
+<rect x="1020" y="730" width="220" height="105" class="grid"/>
+<text x="1035" y="764" class="body">fallback · latency · cost</text>
+<text x="1035" y="789" class="body">security · golden set</text>
+<text x="1035" y="819" class="small">production system</text>
+<rect x="1260" y="730" width="270" height="105" rx="8" class="reliability"/>
+<text x="1275" y="764" class="body">memory · recovery · evaluation</text>
+<text x="1275" y="789" class="body">safety · production</text>
+<text x="1275" y="819" class="small">pages 09, 10, 16–20, 26</text>
+<path d="M1240 782H1248" class="relation"/>
+<polygon points="1260,782 1248,776 1248,788" class="arrow"/>
+
+<rect x="100" y="875" width="1400" height="70" rx="10" fill="#ffffff" stroke="#c4ced8" stroke-width="2"/>
+<text x="130" y="905" class="small">INTERPRETATION</text>
+<text x="320" y="905" class="body">The books overlap; no single book owns one row. The matrix records complementary emphasis, while the right column records this course's synthesis.</text>
+<text x="130" y="929" class="small">The diagrams are newly drawn from these concepts; they are not copied from the books' artwork.</text>
+</svg>
