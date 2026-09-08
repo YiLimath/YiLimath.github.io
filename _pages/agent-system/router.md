@@ -32,6 +32,10 @@ A research assistant can route a request to definition lookup, theorem search,
 example construction, proof checking, or exposition. The output should state
 which route was used and what evidence supports it.
 
+Those are application examples, not elements of the abstract pattern. The
+pattern itself only assumes a request, a routing decision, interchangeable
+handlers, and a shared result contract.
+
 ## Forces and failure modes
 
 Routing reduces prompt complexity and allows specialization, but misclassification
@@ -42,4 +46,5 @@ monitor route distributions, and test boundary cases.
 
 ![Router pattern](/images/agent-system/03-router.svg)
 
-*Figure: a routing decision sends different task classes to specialized paths.*
+*Figure: an abstract routing decision selects one interchangeable handler while
+preserving a common result contract.*

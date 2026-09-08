@@ -42,6 +42,6 @@ independent check can reject the resulting candidate?
 
 ## Figure
 
-![Reasoning and representation change](/images/agent-system/05-reflection.svg)
+![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)
 
 *Figure: a candidate representation is transformed, evaluated, and revised.*
