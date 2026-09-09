@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: independent branches run concurrently and are combined by an aggregation step.*
 
+**In one sentence.** Run genuinely independent branches at once and aggregate deliberately; the hard part is the aggregation rule, not the concurrency.
+
 ## Problem
 
 Some tasks contain independent branches, but a sequential agent wastes latency

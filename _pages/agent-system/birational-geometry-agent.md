@@ -25,6 +25,8 @@ repair feedback, and red arrows show a correctness or admission gate.*
 > any current system already implements the complete birational-geometry
 > workflow shown here.
 
+**In one sentence.** A design sketch rather than a built system: what the pattern vocabulary looks like when it is organized around the spiraling induction of birational-geometry proofs.
+
 The objective is not only to build an assistant that explains known
 mathematics, but to build a system that can eventually solve selected real
 birational-geometry problems. A successful solution must include a precise

@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: failures are classified and routed to bounded retry, repair, fallback, escalation, or safe stop.*
 
+**In one sentence.** Treat failure as state rather than as another prompt: classify it, retry only where retrying helps, and surface what cannot be repaired.
+
 ## Problem
 
 Tools fail, retrieval returns nothing, output violates a schema, services time

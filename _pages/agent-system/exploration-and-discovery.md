@@ -15,6 +15,8 @@ full_page_reading: true
 frontier, worker roles, evidence ledger, and termination gate explicit; it is
 not a reproduction of the book's conceptual visual summary.*
 
+**In one sentence.** Search deliberately over candidates with an explicit test and a stopping rule; exploration produces evidence, never proof.
+
 ## Problem
 
 A single greedy line of reasoning can miss useful cases, counterexamples, or
@@ -56,7 +58,10 @@ so novelty does not replace evidence.
 
 ## Reference basis
 
-The source pattern is Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 21. The
+The source pattern is Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 21.
+The branch-evaluate-prune structure, with an explicit state evaluator and search
+budget, is Pattern 14 in Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
+after Yao et al., [Tree of Thoughts](https://arxiv.org/abs/2305.10601). The
 six-role decomposition in the figure follows the published description of
 Google Research's [AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Generation,
 Reflection, Ranking, Evolution, Proximity, and Meta-review coordinated by a

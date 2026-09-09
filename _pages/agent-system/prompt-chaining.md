@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: specialized stages pass structured artifacts forward.*
 
+**In one sentence.** Split one overloaded prompt into stages so each has a checkable output, paying latency and the risk that an early error propagates.
+
 ## Problem
 
 A single prompt must often perform incompatible jobs: interpret an input,

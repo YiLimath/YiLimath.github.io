@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: a policy routes work among cheap, targeted, deferred, and stopped execution paths.*
 
+**In one sentence.** Match model and effort to the value of the task, treating cost and latency as design constraints rather than as things measured afterwards.
+
 ## Problem
 
 Agent systems consume model calls, context, retrieval, tools, worker slots, and

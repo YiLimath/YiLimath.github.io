@@ -15,6 +15,8 @@ full_page_reading: true
 plane; only a candidate that passes held-out evaluation enters the versioned
 policy registry.*
 
+**In one sentence.** Turn outcomes into changes of prompt, policy, or examples — slowly enough not to erase behavior that was already working.
+
 ## Problem
 
 An agent that repeats the same failed strategy wastes resources. Yet changing

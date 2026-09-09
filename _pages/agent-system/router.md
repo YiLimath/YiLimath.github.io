@@ -14,6 +14,8 @@ full_page_reading: true
 *Figure: an abstract routing decision selects one interchangeable handler while
 preserving a common result contract.*
 
+**In one sentence.** Send each request to the handler suited to it while preserving one result contract, so that specialization does not fragment the interface.
+
 ## Problem
 
 One general agent is rarely the best implementation for every task class. A

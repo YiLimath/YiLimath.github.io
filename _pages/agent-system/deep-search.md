@@ -16,6 +16,8 @@ full_page_reading: true
 generation, and thinking are separate stages; the two decisions make budget
 and evidence coverage explicit; reflection produces the next subqueries.*
 
+**In one sentence.** Decompose a broad question, gather evidence across rounds, and stop on a stated criterion rather than on the first plausible answer.
+
 ## Problem
 
 The first query is usually underspecified and retrieves only the obvious

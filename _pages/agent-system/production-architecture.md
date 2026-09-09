@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: gateways, caching, fallbacks, and evaluation surround the agent core.*
 
+**In one sentence.** The whole request path — gateway, cache, fallback, observability — decides reliability; the model call is a small part of it.
+
 ## Problem
 
 An agent prototype may work in a notebook but fail under load, provider errors,

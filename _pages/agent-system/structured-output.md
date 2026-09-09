@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: a schema boundary makes intermediate artifacts parseable without claiming that they are true.*
 
+**In one sentence.** Fix the shape of whatever crosses a boundary, so the next component can consume it instead of interpreting prose.
+
 ## Problem
 
 Free-form language is ambiguous at a workflow boundary. A downstream component

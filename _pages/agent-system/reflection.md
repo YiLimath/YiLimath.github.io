@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: a draft is evaluated and revised before it is passed onward.*
 
+**In one sentence.** Separate the generator from the critic so quality is checked by something with a different blind spot, and bound the revision loop.
+
 ## Problem
 
 A first draft can be fluent, incomplete, or subtly inconsistent. Asking for a

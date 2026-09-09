@@ -9,15 +9,17 @@ full_page_reading: true
 
 ## Figures
 
-![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
+![Agent system: system context view](/images/agent-system/00-agent-system-architecture.svg)
 
 *Figure 1. Context view: the agent system is treated as one unit and its
 external relationships are shown; internal containers are deliberately hidden.*
 
-![Agent system container view](/images/agent-system/28-agent-system-container.svg)
+![Agent system: container view](/images/agent-system/28-agent-system-container.svg)
 
 *Figure 2. Container view: the system boundary is opened into replaceable
 responsibilities, stable interfaces, and operational controls.*
+
+**In one sentence.** No single diagram answers every architecture question; read the context, container, dynamic, and operational views in that order.
 
 ## Why one architecture diagram is not enough
 

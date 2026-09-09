@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: the system pauses at an explicit checkpoint when human judgment is required.*
 
+**In one sentence.** Place a person at the decisions that are irreversible or beyond an evaluator, and make the handover an interface rather than an interruption.
+
 ## Problem
 
 Some decisions are high impact, ambiguous, irreversible, or not captured by an

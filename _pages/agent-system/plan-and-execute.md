@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: planning separates high-level decomposition from execution and revision.*
 
+**In one sentence.** Make the plan an artifact, so progress, dependencies, and replanning are visible instead of buried inside one long generation.
+
 ## Problem
 
 Long-horizon tasks fail when the agent treats the whole objective as one

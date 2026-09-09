@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: goals become operational through priorities, bounded actions, progress checks, and termination.*
 
+**In one sentence.** State the objective, how progress is measured, and what makes stopping correct; termination is a design decision, not an accident of budget.
+
 ## Problem
 
 Autonomous execution can drift from the user's objective, spend resources on

@@ -19,6 +19,8 @@ verifier's verdict and repair hints back to the gateway; the gateway's
 `fact_submit` path contains the write gate, and only `verdict == "correct"`
 leaves on the red commit path into the fact graph.*
 
+**In one sentence.** Two real codebases read as an as-built pattern map: what the books call reflection, tool use, and evaluation appear here as concrete modules around one correctness boundary.
+
 This case study uses two real codebases. **Rethlas** is the smaller proof-search
 system: a generation agent reads a mathematical problem and drafts a proof
 blueprint, while a verification agent checks the blueprint through a local HTTP

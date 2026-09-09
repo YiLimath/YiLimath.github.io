@@ -14,6 +14,8 @@ full_page_reading: true
 *Figure: specialized agents return typed artifacts through a shared message
 protocol; the coordinator aggregates and verifies the result.*
 
+**In one sentence.** Divide work across specialists exchanging typed artifacts; the cost is coordination, and agreement between agents is not correctness.
+
 ## Problem
 
 A complex task may require incompatible skills, independent exploration, or
@@ -26,6 +28,29 @@ The main forms are a **supervisor** that delegates to specialists, a **peer
 group** that exchanges artifacts, a **pipeline** in which each agent owns a
 stage, and a **debate** in which agents critique alternatives. The choice should
 be driven by task dependencies, not by a desire to maximize agent count.
+
+## Agents as tools
+
+One composition mechanism deserves separate mention because it dissolves the
+distinction between a specialist agent and a tool. An agent can be wrapped so
+that it presents the ordinary tool interface — a description telling the caller
+when to use it, and a single task parameter — while keeping its own model,
+tools, memory, and configuration behind that interface. A coordinator then calls
+a specialist exactly as it calls a function.
+
+This is the variation-point argument applied to agents: the caller depends on the
+contract, so a specialist can use a cheap model for routine lookups and an
+expensive one for analysis without the coordinator knowing or caring.
+
+It also carries a consequence that is easy to miss. What returns from the
+specialist is a design decision, not a default. Returning only the final message
+gives maximum context isolation — the specialist may spend thirty thousand tokens
+internally while the coordinator's context grows by a two-hundred-token summary —
+but loses information when the final message is uninformative and the substance
+appeared earlier. Returning everything preserves detail and reintroduces the
+context explosion the delegation was meant to prevent. Each layer of a hierarchy
+therefore has to set its own return policy; see
+[context engineering](/posts/2026/08/agent-system/context-engineering/).
 
 ## Stable interface
 
@@ -56,7 +81,11 @@ do not need to share hidden conversational context.
 
 The pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
 Chapter 7, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapters 2 and 7. Published system examples
+Chapters 2 and 7; multi-agent collaboration is Pattern 23 in Lakshmanan and
+Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
+The agents-as-tools mechanism and the return-policy trade-off between context
+isolation and informativeness are Dibia, Chapter 4, Section 4.11. Published
+system examples
 include AutoGen's [multi-agent conversation paper](https://arxiv.org/abs/2308.08155)
 and Microsoft's [Magentic-One report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
 

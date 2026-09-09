@@ -16,6 +16,8 @@ full_page_reading: true
 view hides the next useful inference. Read it left to right; the dashed loop
 means that a failed check triggers revision rather than a more confident claim.*
 
+**In one sentence.** When the model is not underpowered but the representation is wrong, change the representation; chains and trees are the two shapes, and a tree pays only when partial work can be judged.
+
 ## Problem
 
 Some tasks fail because the chosen representation hides the next obstruction,
@@ -36,6 +38,21 @@ artifact or proof obligation, not an unbounded private monologue.
 - conjecture → examples and counterexample tests;
 - proof idea → lemmas and dependency graph;
 - symbolic expression → computer algebra or formal code.
+
+## Linear and branching reasoning
+
+Two shapes cover most of what is used in practice. A **chain** decomposes the
+problem into ordered steps and commits to each; it is cheap, and it fails when an
+early commitment was wrong, since nothing revisits it. A **tree** maintains
+several partial candidates, evaluates them against a heuristic, and expands or
+abandons branches deliberately, which buys the ability to backtrack at the cost
+of a search budget and an evaluation rule.
+
+The choice is not a matter of sophistication. A tree is worth its cost only when
+the problem admits a meaningful intermediate evaluation — when a partial solution
+can be judged before it is complete. Where no such judgement exists, branching
+multiplies cost while selecting essentially at random, and a chain with an
+independent check afterwards is the better design.
 
 ## Forces and failure modes
 
@@ -60,5 +77,11 @@ needs tests or evidence before it is accepted.
 This page synthesizes Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
 Chapter 17, with the reasoning and representation patterns in Lakshmanan and
 Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-Chapter 5. ReAct provides a primary example of interleaving
-reasoning with information-gathering actions: [paper](https://arxiv.org/abs/2210.03629).
+Chapter 5, where chain-of-thought and tree-of-thoughts appear as Patterns 13 and
+14. The two shapes have primary sources: Wei et al., [Chain-of-Thought Prompting
+Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903),
+and Yao et al., [Tree of Thoughts: Deliberate Problem Solving with Large Language
+Models](https://arxiv.org/abs/2305.10601), which makes the state evaluator and
+the search budget explicit components rather than prompting style. ReAct provides
+a primary example of interleaving reasoning with information-gathering actions:
+[paper](https://arxiv.org/abs/2210.03629).

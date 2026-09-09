@@ -16,6 +16,8 @@ execution cycle is surrounded by goal and termination policy, context and
 memory, action policy, trace and evaluation, and bounded tools. The control
 gate decides whether another action is justified.*
 
+**In one sentence.** Perceive, infer, act, observe, control: the five stages every agent shares, and the question of which one is allowed to be probabilistic.
+
 The core loop is the common denominator behind workflow agents and autonomous
 agents. It should be treated as an execution abstraction, not as an excuse for
 unbounded improvisation.

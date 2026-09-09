@@ -9,15 +9,17 @@ full_page_reading: true
 
 ## Figures
 
-![Agent system system context view](/images/agent-system/00-agent-system-architecture.svg)
+![Agent system: system context view](/images/agent-system/00-agent-system-architecture.svg)
 
 *Figure: the context view shows the agent system as one unit and labels its
 external relationships.*
 
-![Agent system container view](/images/agent-system/28-agent-system-container.svg)
+![Agent system: container view](/images/agent-system/28-agent-system-container.svg)
 
 *Figure: the container view expands the boundary into replaceable
 responsibilities and labels the interfaces between them.*
+
+**In one sentence.** Begin with the smallest deterministic structure that meets the requirement, and add a pattern only against a named source of complexity.
 
 ## Start with the task shape
 

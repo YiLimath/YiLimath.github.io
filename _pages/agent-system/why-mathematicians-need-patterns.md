@@ -14,6 +14,8 @@ full_page_reading: true
 
 *Figure: decomposition, abstraction, composition, and validation turn recurring research activities into explicit artifacts.*
 
+**In one sentence.** Research is already a composition of recurring activities; patterns matter because a research loop must preserve failed paths and expose uncertainty, which a solver loop need not.
+
 Mathematical research is a composition of activities: reading, retrieving,
 constructing examples, forming conjectures, searching for proofs, checking
 claims, and writing exposition. An agent becomes useful when each recurring

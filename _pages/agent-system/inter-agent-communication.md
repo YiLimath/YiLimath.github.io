@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: independent agents coordinate through explicit task, evidence, status, and error messages.*
 
+**In one sentence.** Give messages between agents an explicit protocol — identity, schema, turn-taking — so that a conversation between them can be inspected.
+
 ## Problem
 
 Agents have different context, assumptions, tools, and lifetimes. An implicit
@@ -57,4 +59,6 @@ Chapter 15, “Inter-Agent Communication (A2A),” and Dibia, [*Designing Multi-
 Systems*](https://multiagentbook.com/), Chapter 12,
 “Protocols for Distributed Agents.” The [MCP specification](https://modelcontextprotocol.io/specification)
 is a primary protocol reference for standardized access to tools and data; it
-is complementary to agent-to-agent messaging.
+is complementary to agent-to-agent messaging, and Gulli gives it a separate
+treatment in Chapter 10. For server-side implementation patterns, see Stephen
+Clear, *Claude AI Bible*, Chapter 16 and Appendix D.

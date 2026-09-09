@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: the basic objects and interfaces used throughout the series.*
 
+**In one sentence.** Fixing the words — model, agent, context, state, tool, memory, evaluator, checkpoint — so that later pages can argue about boundaries instead of about vocabulary.
+
 This page fixes the vocabulary used by the rest of the course. The books use
 different names for similar components, but the design question is the same:
 which boundary should remain stable when the model or implementation changes?
@@ -45,6 +47,21 @@ The contract is deliberately small. Structured artifacts, tool schemas,
 messages, state records, and evaluation reports are more important than a
 particular model name.
 
+## The prompt level
+
+Below the pattern vocabulary sits a smaller one for a single inference, and it is
+worth fixing separately because patterns are often applied to problems that a
+better-specified call would have solved. Five principles cover it: give
+direction, so the model knows the role and the goal; specify format, so the
+output has a shape a downstream component can consume; provide examples, which
+constrain behavior more reliably than description; evaluate quality, so that
+"better" is measurable before anything is tuned; and divide labor, splitting a
+task into steps each of which can be checked.
+
+The last is the hinge between the two levels. Dividing labor across separate
+inferences is where prompting ends and architecture begins, and every pattern in
+Part II is a disciplined way of doing it.
+
 ## Design test
 
 If replacing the model requires rewriting every downstream component, the system
@@ -72,5 +89,9 @@ and [Google Research overview](https://research.google/blog/react-synergizing-re
 
 For the surrounding component vocabulary and orchestration boundaries, see
 Victor Dibia's [official *Designing Multi-Agent Systems* book site](https://multiagentbook.com/).
+The five prompt-level principles — give direction, specify format, provide
+examples, evaluate quality, divide labor — are Chapter 1 of James Phoenix and
+Mike Taylor, *Prompt Engineering for Generative AI*, O'Reilly, first edition,
+May 2024, ISBN 978-1-098-15343-4.
 The broader pattern catalogues are linked directly above and in the reference
 basis at the end of each pattern page.

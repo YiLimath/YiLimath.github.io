@@ -16,6 +16,8 @@ full_page_reading: true
 index-time ingestion, with hybrid indexes, access metadata, reranking,
 provenance, freshness feedback, and a bounded context builder.*
 
+**In one sentence.** Ground claims in retrieved sources and carry provenance with them; a relevant-looking theorem with mismatched hypotheses is a retrieval failure disguised as a success.
+
 ## Problem
 
 Context is bounded, while a technical corpus is large. Internal model memory is

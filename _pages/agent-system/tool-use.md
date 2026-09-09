@@ -13,6 +13,8 @@ full_page_reading: true
 
 *Figure: the agent acts through typed tool interfaces and receives explicit observations.*
 
+**In one sentence.** Act through typed interfaces that return explicit observations, so side effects are authorized and checkable rather than asserted.
+
 ## Problem
 
 Language generation is not the right mechanism for deterministic operations,
@@ -59,6 +61,11 @@ unreviewable conversation.
 
 The tool-use pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
 Chapter 5, and Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-the Tool Calling pattern in Chapter 7. The reasoning/action interface is
-exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
+where tool calling and code execution are Patterns 21 and 22. The
+reasoning/action interface is exemplified by the [ReAct paper](https://arxiv.org/abs/2210.03629);
 standardized access to external data and tools is specified by the [MCP specification](https://modelcontextprotocol.io/specification).
+Function calling as an implementation, and its parallel form, are treated
+practically in James Phoenix and Mike Taylor, *Prompt Engineering for Generative
+AI*, O'Reilly, 2024, Chapter 4. For the packaging of tools and instructions as
+named, loadable capabilities — so that a capability's detail enters context only
+when it is needed — see Stephen Clear, *Claude AI Bible*, Chapters 14 and 16.
