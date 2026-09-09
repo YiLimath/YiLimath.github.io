@@ -1,0 +1,39 @@
+{% if site.visitor_counter.enabled and site.visitor_counter.code %}
+<aside class="visitor-counter" aria-label="Page view count">
+  <span class="visitor-counter__icon" aria-hidden="true">◉</span>
+  <span class="visitor-counter__label">views</span>
+  <span id="visitor-counter-value" class="visitor-counter__value">—</span>
+</aside>
+
+<script data-goatcounter="https://{{ site.visitor_counter.code }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+<script>
+  (function () {
+    var value = document.getElementById('visitor-counter-value');
+    var counter = 'https://{{ site.visitor_counter.code }}.goatcounter.com';
+    var attempts = 0;
+
+    function loadCount() {
+      if (!window.goatcounter || !window.goatcounter.get_data) {
+        if (attempts++ < 40) window.setTimeout(loadCount, 250);
+        return;
+      }
+
+      var path = window.goatcounter.get_data().p;
+      fetch(counter + '/counter/' + encodeURIComponent(path) + '.json', {
+        credentials: 'omit',
+        cache: 'no-store'
+      })
+        .then(function (response) { return response.ok ? response.json() : null; })
+        .then(function (data) {
+          if (data && data.count) value.textContent = data.count;
+        })
+        .catch(function () {
+          // The counter is decorative; never affect the page if unavailable.
+        });
+    }
+
+    loadCount();
+  }());
+</script>
+{% endif %}

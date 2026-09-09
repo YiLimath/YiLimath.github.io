@@ -43,8 +43,9 @@ Three reading paths through the same material:
   guardrails, evaluation, and production architecture. This is the sequence in
   which the decisions actually arise when a system is built.
 - **Mathematician's path.** Foundations, why mathematicians need patterns,
-  context engineering, knowledge retrieval, the verification gate, then the case
-  study and the birational-geometry agenda.
+  context engineering, knowledge retrieval, the verification gate, the
+  code case study, the proof-sketch architecture, then the birational-geometry
+  agenda.
 
 One page is worth reading before the rest regardless of path. *Variation points*
 answers the question the series is organized around — how to find the boundary
@@ -98,11 +99,14 @@ where a pattern belongs — and every later page is an instance of it.
 ## Part VI. Case study and domain-specific design
 
 31. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
-32. [Research agenda: building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
+32. [Proof-sketch and method-recommendation system](/posts/2026/08/agent-system/proof-sketch-system/)
+33. [Research agenda: building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
 
-The case study uses the real Danus and Rethlas codebases. The new domain-specific
-page then sketches how the same pattern vocabulary can be organized around the
-spiraling induction that appears in birational-geometry proof architecture.
+The first case study uses the real Danus and Rethlas codebases. The
+proof-sketch page develops a professional architecture for recommending proof
+methods and compiling them into critic-tested obligation graphs. The final page
+specializes that architecture to the spiraling induction that appears in
+birational geometry.
 
 ## Course books
 

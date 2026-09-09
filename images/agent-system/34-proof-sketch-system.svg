@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Proof-sketch and method-recommendation system architecture</title>
+  <desc id="desc">A theorem specification is compiled into a portfolio of proof methods. Parallel applicability, retrieval, counterexample, and formal probes feed an evidence-calibrated selector. The chosen method becomes a proof-obligation graph, is examined by independent critics, and may be admitted only as a proof sketch rather than as a proved theorem.</desc>
+  <defs>
+    <style>
+      .title{font:700 42px Arial,sans-serif;fill:#17283c}
+      .subtitle{font:400 21px Arial,sans-serif;fill:#526579}
+      .phase{font:700 18px Arial,sans-serif;letter-spacing:1.5px;fill:#526579}
+      .h{font:700 24px Arial,sans-serif;fill:#17283c}
+      .sh{font:700 19px Arial,sans-serif;fill:#17283c}
+      .b{font:400 17px Arial,sans-serif;fill:#405268}
+      .m{font:400 15px Arial,sans-serif;fill:#5b6b7c}
+      .tiny{font:400 14px Arial,sans-serif;fill:#5b6b7c}
+      .node{fill:#ffffff;stroke:#9eb0c2;stroke-width:2}
+      .blue{fill:#e8f2fb;stroke:#3985c6;stroke-width:3}
+      .teal{fill:#e7f5f2;stroke:#219487;stroke-width:3}
+      .purple{fill:#f0ecf8;stroke:#7355aa;stroke-width:3}
+      .gold{fill:#fff4e6;stroke:#d98c2b;stroke-width:3}
+      .green{fill:#e8f5ee;stroke:#2d8a60;stroke-width:3}
+      .redbox{fill:#fff0f0;stroke:#c65b5b;stroke-width:3}
+      .lane{fill:#ffffff;stroke:#d7e0e9;stroke-width:2}
+      .control{fill:none;stroke:#23364d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .evidence{fill:none;stroke:#219487;stroke-width:3;stroke-dasharray:10 8;stroke-linecap:round;stroke-linejoin:round}
+      .reject{fill:none;stroke:#c65b5b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .dependency{fill:none;stroke:#23364d;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+      .an{fill:#23364d}
+      .at{fill:#219487}
+      .ar{fill:#c65b5b}
+    </style>
+  </defs>
+
+  <rect width="2400" height="1500" fill="#f7f9fc"/>
+  <text x="70" y="66" class="title">Proof-Sketch and Method-Recommendation System</text>
+  <text x="70" y="105" class="subtitle">Select methods by applicability evidence; compile the leading strategy into explicit proof obligations</text>
+
+  <path d="M1560 62 H1620" class="control"/>
+  <polygon points="1620,62 1608,56 1608,68" class="an"/>
+  <text x="1638" y="68" class="tiny">control / dependency</text>
+  <path d="M1835 62 H1895" class="evidence"/>
+  <polygon points="1895,62 1883,56 1883,68" class="at"/>
+  <text x="1913" y="68" class="tiny">evidence / repair</text>
+  <path d="M2090 62 H2150" class="reject"/>
+  <polygon points="2150,62 2138,56 2138,68" class="ar"/>
+  <text x="2168" y="68" class="tiny">boundary / rejection</text>
+
+  <rect x="55" y="140" width="2290" height="630" rx="16" class="lane"/>
+  <text x="85" y="181" class="phase">1  METHOD DISCOVERY AND FEASIBILITY</text>
+
+  <rect x="100" y="240" width="280" height="190" rx="12" class="blue"/>
+  <text x="240" y="282" text-anchor="middle" class="h">TheoremSpec</text>
+  <text x="125" y="320" class="b">• exact statement</text>
+  <text x="125" y="348" class="b">• hypotheses and types</text>
+  <text x="125" y="376" class="b">• domain and notation</text>
+  <text x="125" y="404" class="b">• allowed sources</text>
+
+  <path d="M380 335 H450" class="control"/>
+  <polygon points="450,335 438,329 438,341" class="an"/>
+
+  <rect x="450" y="240" width="300" height="190" rx="12" class="node"/>
+  <text x="600" y="282" text-anchor="middle" class="h">State compiler</text>
+  <text x="475" y="320" class="b">normalize definitions</text>
+  <text x="475" y="348" class="b">classify the goal shape</text>
+  <text x="475" y="376" class="b">extract invariants</text>
+  <text x="475" y="404" class="b">identify hard constraints</text>
+
+  <path d="M750 335 H830" class="control"/>
+  <polygon points="830,335 818,329 818,341" class="an"/>
+
+  <rect x="450" y="505" width="300" height="180" rx="12" class="teal"/>
+  <text x="600" y="545" text-anchor="middle" class="sh">Method library</text>
+  <text x="475" y="578" class="m">preconditions + effects</text>
+  <text x="475" y="604" class="m">constructions + subgoals</text>
+  <text x="475" y="630" class="m">failure signatures + critics</text>
+  <text x="475" y="656" class="m">provenance + expected cost</text>
+
+  <path d="M600 505 V465 H830" class="evidence"/>
+  <polygon points="830,465 818,459 818,471" class="at"/>
+  <text x="620" y="486" class="tiny">schemas and proof analogues</text>
+
+  <rect x="830" y="190" width="470" height="300" rx="12" class="purple"/>
+  <text x="1065" y="232" text-anchor="middle" class="h">Candidate portfolio</text>
+  <rect x="865" y="258" width="400" height="44" rx="6" fill="#ffffff" stroke="#c5b9de" stroke-width="1.5"/>
+  <text x="885" y="286" class="b">A  known reduction or related theorem</text>
+  <rect x="865" y="314" width="400" height="44" rx="6" fill="#ffffff" stroke="#c5b9de" stroke-width="1.5"/>
+  <text x="885" y="342" class="b">B  induction or minimal counterexample</text>
+  <rect x="865" y="370" width="400" height="44" rx="6" fill="#ffffff" stroke="#c5b9de" stroke-width="1.5"/>
+  <text x="885" y="398" class="b">C  representation change / auxiliary object</text>
+  <rect x="865" y="426" width="400" height="44" rx="6" fill="#ffffff" stroke="#c5b9de" stroke-width="1.5"/>
+  <text x="885" y="454" class="b">D  domain-specific method</text>
+
+  <rect x="1800" y="240" width="430" height="190" rx="12" class="gold"/>
+  <text x="2015" y="280" text-anchor="middle" class="h">Strategy selector</text>
+  <text x="1830" y="318" class="b">1. hard-filter contradicted preconditions</text>
+  <text x="1830" y="348" class="b">2. compare progress, evidence, cost, risk</text>
+  <text x="1830" y="378" class="b">3. retain a diverse top-k portfolio</text>
+  <text x="1830" y="408" class="b">4. expose rationale and human override</text>
+
+  <path d="M1065 490 V535 H1955" class="control"/>
+  <path d="M1065 535 H965" class="control"/>
+  <text x="1370" y="523" text-anchor="middle" class="tiny">bounded parallel feasibility probes</text>
+
+  <path d="M965 535 V570" class="control"/>
+  <polygon points="965,570 959,558 971,558" class="an"/>
+  <path d="M1295 535 V570" class="control"/>
+  <polygon points="1295,570 1289,558 1301,558" class="an"/>
+  <path d="M1625 535 V570" class="control"/>
+  <polygon points="1625,570 1619,558 1631,558" class="an"/>
+  <path d="M1955 535 V570" class="control"/>
+  <polygon points="1955,570 1949,558 1961,558" class="an"/>
+
+  <rect x="810" y="570" width="310" height="150" rx="10" class="node"/>
+  <text x="965" y="610" text-anchor="middle" class="sh">Applicability</text>
+  <text x="835" y="642" class="m">hypothesis and type unification</text>
+  <text x="835" y="668" class="m">missing conditions become obligations</text>
+  <text x="835" y="694" class="m">contradictions block the method</text>
+
+  <rect x="1140" y="570" width="310" height="150" rx="10" class="node"/>
+  <text x="1295" y="610" text-anchor="middle" class="sh">Analogue retrieval</text>
+  <text x="1165" y="642" class="m">related proofs and premises</text>
+  <text x="1165" y="668" class="m">source locators and hypothesis use</text>
+  <text x="1165" y="694" class="m">similarity is evidence, not transfer</text>
+
+  <rect x="1470" y="570" width="310" height="150" rx="10" class="node"/>
+  <text x="1625" y="610" text-anchor="middle" class="sh">Adversarial examples</text>
+  <text x="1495" y="642" class="m">small cases and edge regimes</text>
+  <text x="1495" y="668" class="m">counterexample search</text>
+  <text x="1495" y="694" class="m">stress-test new intermediate claims</text>
+
+  <rect x="1800" y="570" width="310" height="150" rx="10" class="node"/>
+  <text x="1955" y="610" text-anchor="middle" class="sh">Formal smoke test</text>
+  <text x="1825" y="642" class="m">symbolic or numerical checks</text>
+  <text x="1825" y="668" class="m">formalize a load-bearing subgoal</text>
+  <text x="1825" y="694" class="m">record the exact verified scope</text>
+
+  <path d="M965 720 V748 H2130" class="evidence"/>
+  <path d="M1295 720 V748" class="evidence"/>
+  <path d="M1625 720 V748" class="evidence"/>
+  <path d="M1955 720 V748" class="evidence"/>
+  <path d="M2130 748 V430" class="evidence"/>
+  <polygon points="2130,430 2124,442 2136,442" class="at"/>
+  <text x="2145" y="548" class="tiny" transform="rotate(-90 2145 548)">ProbeReport[]</text>
+
+  <path d="M2230 335 H2330 V805 H260 V890" class="control"/>
+  <polygon points="260,890 254,878 266,878" class="an"/>
+  <rect x="850" y="783" width="820" height="42" rx="8" fill="#f7f9fc"/>
+  <text x="1260" y="811" text-anchor="middle" class="b">Selected MethodCard + ranked alternatives + applicability record</text>
+
+  <rect x="55" y="840" width="2290" height="600" rx="16" class="lane"/>
+  <text x="85" y="881" class="phase">2  BLUEPRINT COMPILATION, CRITICISM, AND SKETCH ADMISSION</text>
+
+  <rect x="100" y="900" width="320" height="220" rx="12" class="blue"/>
+  <text x="260" y="942" text-anchor="middle" class="h">Blueprint compiler</text>
+  <text x="125" y="980" class="b">instantiate method schema</text>
+  <text x="125" y="1008" class="b">name constructions and lemmas</text>
+  <text x="125" y="1036" class="b">attach hypotheses to nodes</text>
+  <text x="125" y="1064" class="b">declare dependency reasons</text>
+  <text x="125" y="1092" class="b">mark the critical path</text>
+
+  <path d="M420 1010 H500" class="control"/>
+  <polygon points="500,1010 488,1004 488,1016" class="an"/>
+
+  <rect x="500" y="900" width="920" height="220" rx="12" fill="#fbfcfe" stroke="#9eb0c2" stroke-width="2"/>
+  <text x="960" y="932" text-anchor="middle" class="sh">ProofBlueprint: named obligations and dependency edges</text>
+
+  <rect x="535" y="965" width="190" height="80" rx="8" class="teal"/>
+  <text x="630" y="995" text-anchor="middle" class="sh">C  construction</text>
+  <text x="630" y="1022" text-anchor="middle" class="tiny">new object / reduction</text>
+
+  <rect x="790" y="948" width="200" height="72" rx="8" class="node"/>
+  <text x="890" y="978" text-anchor="middle" class="sh">L1  main lemma</text>
+  <text x="890" y="1002" text-anchor="middle" class="tiny">method-specific step</text>
+
+  <rect x="790" y="1040" width="200" height="62" rx="8" class="node"/>
+  <text x="890" y="1068" text-anchor="middle" class="sh">L2  side condition</text>
+  <text x="890" y="1090" text-anchor="middle" class="tiny">hypothesis transfer</text>
+
+  <rect x="1080" y="988" width="205" height="76" rx="8" class="gold"/>
+  <text x="1182" y="1018" text-anchor="middle" class="sh">L3  synthesis</text>
+  <text x="1182" y="1043" text-anchor="middle" class="tiny">combine L1 and L2</text>
+
+  <rect x="1320" y="988" width="80" height="76" rx="8" class="green"/>
+  <text x="1360" y="1018" text-anchor="middle" class="sh">T</text>
+  <text x="1360" y="1043" text-anchor="middle" class="tiny">target</text>
+
+  <path d="M725 1005 H758 V984 H790" class="dependency"/>
+  <polygon points="790,984 779,978.5 779,989.5" class="an"/>
+  <path d="M725 1005 H758 V1071 H790" class="dependency"/>
+  <polygon points="790,1071 779,1065.5 779,1076.5" class="an"/>
+  <path d="M990 984 H1035 V1026 H1080" class="dependency"/>
+  <polygon points="1080,1026 1069,1020.5 1069,1031.5" class="an"/>
+  <path d="M990 1071 H1035 V1026 H1080" class="dependency"/>
+  <path d="M1285 1026 H1320" class="dependency"/>
+  <polygon points="1320,1026 1309,1020.5 1309,1031.5" class="an"/>
+
+  <path d="M1420 1010 H1500" class="control"/>
+  <polygon points="1500,1010 1488,1004 1488,1016" class="an"/>
+
+  <rect x="1500" y="900" width="340" height="220" rx="12" class="purple"/>
+  <text x="1670" y="942" text-anchor="middle" class="h">Independent critics</text>
+  <text x="1525" y="980" class="b">• applicability and theorem use</text>
+  <text x="1525" y="1008" class="b">• dependency, circularity, hidden gaps</text>
+  <text x="1525" y="1036" class="b">• counterexamples and generalization</text>
+  <text x="1525" y="1064" class="b">• source, notation, quantifiers</text>
+  <text x="1525" y="1092" class="b">• obligation granularity</text>
+
+  <path d="M1840 1010 H1940" class="control"/>
+  <polygon points="1940,1010 1928,1004 1928,1016" class="an"/>
+
+  <rect x="1940" y="915" width="260" height="190" rx="12" class="redbox"/>
+  <text x="2070" y="958" text-anchor="middle" class="h">Sketch gate</text>
+  <text x="1970" y="996" class="b">VIABLE</text>
+  <text x="1970" y="1025" class="b">CONDITIONAL</text>
+  <text x="1970" y="1054" class="b">REJECT + REPAIR</text>
+  <text x="2070" y="1084" text-anchor="middle" class="tiny">never “proved”</text>
+
+  <path d="M1670 1120 V1185 H260 V1120" class="evidence"/>
+  <polygon points="260,1120 254,1132 266,1132" class="at"/>
+  <text x="965" y="1212" text-anchor="middle" class="b">repair: insert a lemma, split cases, change representation, or return to the method portfolio</text>
+
+  <path d="M2070 1105 V1240" class="control"/>
+  <polygon points="2070,1240 2064,1228 2076,1228" class="an"/>
+  <text x="2090" y="1185" class="tiny">admit as sketch</text>
+
+  <rect x="1540" y="1240" width="660" height="150" rx="12" class="green"/>
+  <text x="1870" y="1278" text-anchor="middle" class="h">ProofSketch</text>
+  <text x="1570" y="1312" class="b">strategy thesis • key construction • obligation graph • critical path</text>
+  <text x="1570" y="1342" class="b">hypothesis ledger • bottleneck • fallback methods • citations • status</text>
+  <text x="1570" y="1372" class="m">An auditable research plan whose unresolved obligations remain visible.</text>
+
+  <path d="M1510 1420 H2240" class="reject"/>
+  <text x="1875" y="1452" text-anchor="middle" class="b">Proof execution and independent verification are required before any theorem or fact ledger.</text>
+</svg>
+

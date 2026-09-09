@@ -29,9 +29,11 @@ of that generation–verification core.
 
 The architecture is a code-based case study. Its purpose is to show how the
 patterns from the reference books appear as concrete modules and interfaces.
-For a domain-specific design sketch that uses the same vocabulary for
-birational-geometry research, see [A spiral-induction agent for birational
-geometry](/posts/2026/08/agent-system/birational-geometry-agent/).
+For the proposed strategy layer that recommends proof methods and compiles
+critic-tested obligation graphs, see the [proof-sketch and method-recommendation
+system](/posts/2026/08/agent-system/proof-sketch-system/). Its domain-specific
+specialization is the [birational-geometry research
+architecture](/posts/2026/08/agent-system/birational-geometry-agent/).
 
 ## Rethlas: the two-agent core
 

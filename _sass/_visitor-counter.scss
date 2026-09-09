@@ -1,0 +1,45 @@
+/* A deliberately quiet, fixed corner counter for the public site. */
+.visitor-counter {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .38rem .65rem;
+  border: 1px solid rgba(127, 127, 127, .26);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 3px 14px rgba(0, 0, 0, .12);
+  color: #666;
+  font-size: .7rem;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.visitor-counter__icon {
+  color: #777;
+  font-size: .55rem;
+}
+
+.visitor-counter__label {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.visitor-counter__value {
+  min-width: 1.1em;
+  color: #333;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .visitor-counter {
+    right: .65rem;
+    bottom: .65rem;
+    opacity: .82;
+  }
+}

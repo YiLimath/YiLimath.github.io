@@ -140,6 +140,13 @@ analytics:
   google:
     tracking_id          :
 
+# Small, privacy-friendly page-view counter shown in the bottom-right corner.
+# Create a GoatCounter site at https://www.goatcounter.com, then put its site
+# code here (the part before ".goatcounter.com").
+visitor_counter:
+  enabled                : true
+  code                   :
+
 
 # Reading Files
 include:
