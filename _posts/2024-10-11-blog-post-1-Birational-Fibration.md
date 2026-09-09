@@ -47,9 +47,9 @@ Note-II.4 Canonical bundle formulas *(in preparation)*
 ---
 ## Part III. Foliation in Algebraic Geometry
 
-Note-IV.1 Campana–Păun's Algebraic Criterion for Foliations and Cao–Păun's Generalization *(in preparation)*
+Note-III.1 Campana–Păun's Algebraic Criterion for Foliations and Cao–Păun's Generalization *(in preparation)*
 
-Note-IV.2 Algebraically Integrable Foliations: From Foliations to Fibrations *(in preparation)*
+Note-III.2 Algebraically Integrable Foliations: From Foliations to Fibrations *(in preparation)*
 
 
 ---
@@ -75,18 +75,18 @@ In this part of the notes, I summarize classification results for projective/Kä
 
 [Note-VI.0 Overview](https://yilimath.github.io/files/Birational/Fibration/OverviewNefAnticanonical.pdf) [4.3]
 
-[Note-VI.1 Numerical Flatness Criteria](https://yilimath.github.io/files/Birational/Fibration/NumericalFlatness.pdf)
+Note-VI.1 Numerical Flatness Criteria *(in preparation)*
 
-[Note-VI.2 Positivities of the Direct Images](https://yilimath.github.io/files/Birational/Fibration/WeaklyPositiveCurvedDirectImage.pdf) [4.4]
+Note-VI.2 Positivities of the Direct Images *(in preparation)*
 
-[Note-VI.3 Birational Geometry of the MRC/Albanese Fibration](https://yilimath.github.io/files/Birational/Fibration/BirationalMRC.pdf)
+Note-VI.3 Birational Geometry of the MRC/Albanese Fibration *(in preparation)*
 
 Note-VI.4 Criteria for Fibrations to Be Locally Trivial *(in preparation)*
 
-[Note-VI.5 Splitting of the Tangent Sheaf](https://yilimath.github.io/files/Birational/Fibration/SplitTangent2.pdf)
+Note-VI.5 Splitting of the Tangent Sheaf *(in preparation)*
 
 Note-VI.6 Structure Theorem for klt Projective Varieties with Nef Anti-canonical Bundle *(in preparation)*
 
-[Note-VI.7 Structure Theorem for klt Kähler Varieties with Nef Anti-canonical Bundle](https://yilimath.github.io/files/Birational/Fibration/StructureNefAntiCanonical.pdf)
+Note-VI.7 Structure Theorem for klt Kähler Varieties with Nef Anti-canonical Bundle *(in preparation)*
 
-[Note-VI.8 On the Hacon–McKernan Question](https://yilimath.github.io/files/Birational/Fibration/HaconMckernanQuestion.pdf)
+Note-VI.8 On the Hacon–McKernan Question *(in preparation)*

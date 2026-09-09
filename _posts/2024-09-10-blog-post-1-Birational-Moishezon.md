@@ -13,7 +13,7 @@ The purpose of this series of notes is to discuss the recent paper [Moishezon mo
 will see in my notes. Secondly, from almost any projective variety we can construct a Moishezon
 space via bimeromorphic modification, making Moishezon spaces versatile in birational geometry.
 Thirdly, by Artin’s fundamental theorem, the category of Moishezon spaces appears naturally in
-moduli theory. Another compelling reason to consider the Moishezon category is that it allows cutand-paste operations similar to those we can perform in topology.
+moduli theory. Another compelling reason to consider the Moishezon category is that it allows cut-and-paste operations similar to those we can perform in topology.
 
 
 Here is the outline:
@@ -28,7 +28,7 @@ Here is the outline:
 
 [5. Rational Curves on Moishezon Spaces, Mori Bend-and-Break for Moishezon Varieties](https://yilimath.github.io/files/Birational/Moishezon/Moishezon5.pdf) [update 7.4]
 
-[6. Algebraic Approximation and Inversion of Adjunction](https://yilimath.github.io/files/Birational/Moishezon/Moishezon4.pdf) [TODO]
+6. Algebraic Approximation and Inversion of Adjunction *(in preparation)*
 
 [Summary Slides](https://yilimath.github.io/files/Birational/Moishezon/MoishezonSlides.pdf) [update 12.4]
 

@@ -22,7 +22,7 @@ In this series of notes, we summarize several standard metric methods that are u
 
 [II.1. Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf) [upd 5.11]
 
-II.2. Demailly-Hacon-Paun's Proof of DLT Extension Theorem *(in preparation)*
+II.2. Demailly–Hacon–Păun's Proof of the DLT Extension Theorem *(in preparation)*
 
 
 ---
@@ -32,7 +32,7 @@ III.1. Păun–Takayama's Construction of Singular Hermitian Metrics on Direct I
 
 [III.2. Hacon–Popa–Schnell's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
 
-III.3. Applications of positivity of direct images *(in preparation)*
+III.3. Applications of the Positivity of Direct Images *(in preparation)*
 
 
 ---

@@ -18,13 +18,13 @@ For detailed information, see my reading notes:
 
 [3. Kawamata's Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawaCanonicalBundle.pdf) [6.4]
 
-[4. Ambro's Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/AmbroCanonicalBundle.pdf)
+4. Ambro's Canonical Bundle Formula *(in preparation)*
 
-[5. Fujino–Mori Canonical Bundle Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/FujinoMoriCanonicalBundle.pdf)
+5. Fujino–Mori Canonical Bundle Formula *(in preparation)*
 
-[6. Generalized Canonical Bundle Formula of Birkar–Zhang](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/GeneralizedCanonicalBundle.pdf) [6.7]
+6. Generalized Canonical Bundle Formula of Birkar–Zhang *(in preparation)*
 
-[7. Canonical Bundle Formula for Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KahlerAdjunction.pdf) [6.4]
+7. Canonical Bundle Formula for Generalized Kähler Pairs *(in preparation)*
 
 8. o-minimality Approach to the b-semiampleness Conjecture *(in preparation)*
 
@@ -32,11 +32,11 @@ For detailed information, see my reading notes:
 ----
 ## Part II. Subadjunction Theorems
 
-[1. Adjunction Formulas](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/Adjunction.pdf)
+1. Adjunction Formulas *(in preparation)*
 
-[2. The Restriction of Divisors and the Shokurov Difference Divisor](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/ShokurovDiff.pdf)
+2. The Restriction of Divisors and the Shokurov Difference Divisor *(in preparation)*
 
-[3. Kawamata's Subadjunction Formula](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/KawamataSubadjunction.pdf) 
+3. Kawamata's Subadjunction Formula *(in preparation)* 
 
 [4. Hacon–McKernan–Xu's Subadjunction-Type Theorem](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/HMXAdjunction.pdf) [6.6]
 
@@ -44,7 +44,7 @@ For detailed information, see my reading notes:
 ----
 ## Part III. Inversion of Adjunction
 
-[1. Inversion of Adjunction](https://yilimath.github.io/files/Birational/CanonicalBundleFormula/InvAdjunction.pdf)
+1. Inversion of Adjunction *(in preparation)*
 
 
 ---

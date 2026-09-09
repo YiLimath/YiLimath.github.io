@@ -17,9 +17,9 @@ The aim of this series of notes is to study the classical paper [BCHM](https://w
 ## Part I. Loci in Birational Geometry
 
 
-Note-1: Exceptional Locus and indetermancy locus *(in preparation)*
+Note-1: Exceptional Locus and Indeterminacy Locus *(in preparation)*
 
-Note-2: A brief introduction to Zariski Decomposition *(in preparation)*
+Note-2: A Brief Introduction to Zariski Decomposition *(in preparation)*
 
 Note-3: Base Locus, Stable Base Locus, Diminished Base Locus, and Augmented Base Locus *(in preparation)*
 
@@ -34,7 +34,7 @@ Note-5: Non-nef Locus (Numerical Base Locus), Non-Kähler Locus *(in preparation
 
 Note-II.1 Classical Base Point Free Theorem for klt and dlt Pairs *(in preparation)*
 
-[Note-II.2 Positivity in Families and Base Point Freeness](https://yilimath.github.io/files/Birational/BCHM/PositivityFamilyandbpf.pdf)
+Note-II.2 Positivity in Families and Base Point Freeness *(in preparation)*
 
 Note-II.3 Cone and contraction theorems *(in preparation)*
 
@@ -62,9 +62,9 @@ Note-II.4 Mori's bend and break *(in preparation)*
 
 
 
-[Note-III.1: Hacon–McKernan's Proof of Existence of klt Flips](https://yilimath.github.io/files/Birational/BCHM/ExistkltFlip.pdf)
+Note-III.1: Hacon–McKernan's Proof of Existence of klt Flips *(in preparation)*
 
-[Note-III.2: Hacon–Xu and Birkar's Proof of the Existence of lc Flips (with Generalizations)](https://yilimath.github.io/files/Birational/BCHM/ExistLCFlip.pdf)
+Note-III.2: Hacon–Xu and Birkar's Proof of the Existence of lc Flips (with Generalizations) *(in preparation)*
 
 Note-III.3: Existence of Minimal Models (BCHM C and Related Results) *(in preparation)*
 
@@ -101,18 +101,18 @@ Note-V.2: MMP with Scaling *(in preparation)*
 
 [Note-V.3: Special Termination](https://yilimath.github.io/files/Birational/BCHM/SpecialTermination.pdf)
 
-[Note-V.4: Global Termination Problem](https://yilimath.github.io/files/Birational/BCHM/GlobalTermination.pdf)
+Note-V.4: Global Termination Problem *(in preparation)*
 
 
 ---
 
 ## Part VII. Finite Generation Problems
 
-Finite Generation Note-VI.1: Finite Generation of the Canonical Ring and Cox Ring *(in preparation)*
+Note-VII.1: Finite Generation of the Canonical Ring and Cox Ring *(in preparation)*
 
-Finite Generation Note-VI.2: Demailly–Hacon–Păun's Analytic Proof of Finite Generation *(in preparation)*
+Note-VII.2: Demailly–Hacon–Păun's Analytic Proof of Finite Generation *(in preparation)*
 
-Finite Generation Note-VI.3: Finite Generation and Abundance *(in preparation)*
+Note-VII.3: Finite Generation and Abundance *(in preparation)*
 
 
 ---
@@ -123,15 +123,15 @@ Note-1: Log Resolution and Discrepancy *(in preparation)*
 
 Note-2: Crepant Extraction with Applications *(in preparation)*
  
-[Note-3: dlt Modification with Applications](https://yilimath.github.io/files/Birational/BCHM/dltModification.pdf)
+Note-3: dlt Modification with Applications *(in preparation)*
 
-[Note-4: Canonical and Terminal Modifications, Q-factorialization](https://yilimath.github.io/files/Birational/BCHM/CanonicalTerminalModification.pdf)
+Note-4: Canonical and Terminal Modifications, Q-factorialization *(in preparation)*
 
 Note-5: Semi-log Modification *(in preparation)*
 
 
 ---
-## Part VIII. Analytic bchm
+## Part IX. Analytic BCHM
 
 Note-1: Cone theorem for analytic varieties *(in preparation)*
 

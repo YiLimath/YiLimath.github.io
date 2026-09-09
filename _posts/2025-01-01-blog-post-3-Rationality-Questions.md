@@ -2,12 +2,13 @@
 title: 'Birational Geometry Notes: Rationality Questions'
 date: 2025-01-01
 permalink: /posts/2025/01/Rationality/
+published: false
 tags:
   - Moduli Theory
   - Birational Geometry
 ---
 
-The aim of this series notes is to give a brief introduction to rationality questions in birational geometry. 
+The aim of this series of notes is to give a brief introduction to rationality questions in birational geometry. 
 
 
 ## Part I. Rational Curves

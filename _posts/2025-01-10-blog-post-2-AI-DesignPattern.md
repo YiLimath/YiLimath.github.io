@@ -20,7 +20,7 @@ An agent system trades determinism for flexibility. A design pattern is a reusab
 external relationships; its internal containers are explained on the
 architecture-views page.*
 
-Claim. This series of blog posts are finished under the cooperation of AI.
+Claim. This series of blog posts was written in cooperation with AI.
 
 ## How to use this series
 

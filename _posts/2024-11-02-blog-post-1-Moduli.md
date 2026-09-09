@@ -26,19 +26,19 @@ In this part of the notes, we focus on the properties of moduli spaces. The guid
 ---
 ## Part B. Geometry of Moduli
 
-[Note-1: Dimension and Tangent Space of Moduli](https://yilimath.github.io/files/Moduli/TangentSpace.pdf)
+Note-1: Dimension and Tangent Space of Moduli *(in preparation)*
 
-[Note-2: Boundedness of Moduli Spaces](https://yilimath.github.io/files/Moduli/BoundednessModuli.pdf)
+Note-2: Boundedness of Moduli Spaces *(in preparation)*
 
-[Note-3: Properness and Separatedness of Moduli Spaces](https://yilimath.github.io/files/Moduli/ProperModuli.pdf)
+Note-3: Properness and Separatedness of Moduli Spaces *(in preparation)*
 
-[Note-4: Projectivity and Positivity on Moduli Spaces](https://yilimath.github.io/files/Moduli/ProjectiveModuli.pdf) [update 8.24]
+Note-4: Projectivity and Positivity on Moduli Spaces *(in preparation)*
 
-[Note-5: Irreducibility of Moduli Spaces](https://yilimath.github.io/files/Moduli/IrreducibleModuli.pdf)
+Note-5: Irreducibility of Moduli Spaces *(in preparation)*
 
-[Note-6: K-stability of Moduli Spaces](https://yilimath.github.io/files/Moduli/Kstable.pdf)
+Note-6: K-stability of Moduli Spaces *(in preparation)*
 
-[Note-7: On Automorphism Groups](https://yilimath.github.io/files/Moduli/AutGroup.pdf)
+Note-7: On Automorphism Groups *(in preparation)*
 
 
 ----
@@ -51,9 +51,9 @@ Note-1: Singularities on Moduli Spaces *(in preparation)*
 ---
 ## Part D. Moduli of Curves and Surfaces
 
-[1. Construction of Teichmüller Space and Teichmüller Theorem](https://yilimath.github.io/files/Moduli/Teichmuller.pdf)
+1. Construction of Teichmüller Space and Teichmüller Theorem *(in preparation)*
 
-[2. Moduli Space of Smooth Curves and Stable Curves](https://yilimath.github.io/files/Moduli/ModuliCurve.pdf) [update 8.24]
+2. Moduli Space of Smooth Curves and Stable Curves *(in preparation)*
 
 3. Moduli Spaces for Surfaces of General Type *(in preparation)*
 
@@ -70,7 +70,7 @@ Note-1: Singularities on Moduli Spaces *(in preparation)*
 
 2. Betti Moduli, de Rham Moduli, and Dolbeault Moduli *(in preparation)*
 
-[3. Moduli Space of K3 Surfaces](https://yilimath.github.io/files/Moduli/ModuliK3.pdf)
+3. Moduli Space of K3 Surfaces *(in preparation)*
 
 4. Moduli Space of Abelian Varieties (ppav) *(in preparation)*
 
@@ -128,11 +128,11 @@ In this part, we discuss further aspects of moduli of Abelian varieties and K3 s
 
 
 ---
-## Part J. Geometric Langlands and Mirror Symmetry
+## Part L. Geometric Langlands and Mirror Symmetry
 
 
 1. A Brief Introduction to D-modules *(in preparation)*
 
-[2. A Brief Introduction to Fourier–Mukai Transform](https://yilimath.github.io/files/Moduli/FourierMukai.pdf)
+2. A Brief Introduction to Fourier–Mukai Transform *(in preparation)*
 
 3. A Brief Introduction to Geometric Langlands *(in preparation)*
