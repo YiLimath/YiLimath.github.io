@@ -20,43 +20,15 @@ An agent system trades determinism for flexibility. A design pattern is a reusab
 external relationships; its internal containers are explained on the
 architecture-views page.*
 
-Claim. This series of blog posts was written in cooperation with AI.
+> Claim. This series of blog posts was written in cooperation with AI.
 
-## How to use this series
-
-Each page follows the same structure, so it can be read as a reference entry or
-worked through as a lesson. It opens with a one-sentence statement of what the
-pattern is for, then gives the recurring **problem**, the **intent and
-structure** as a short pipeline, the **stable interface** that must survive a
-change of implementation, the **forces and failure modes** that decide whether
-the pattern is worth its cost, and a **reference basis** naming where the
-pattern comes from. Most pages also carry a **mathematical** application, and
-several end with **exercises** — written to be done against a system you are
-actually building, not answered from the page above them.
-
-Three reading paths through the same material:
-
-- **Shortest useful path.** Foundations, the core loop, variation points, then
-  choosing and composing patterns. Four pages, and enough to decide whether a
-  given problem needs a pattern at all.
-- **Builder's path.** The shortest path, then Parts II and III in order, then
-  guardrails, evaluation, and production architecture. This is the sequence in
-  which the decisions actually arise when a system is built.
-- **Mathematician's path.** Foundations, why mathematicians need patterns,
-  context engineering, knowledge retrieval, the verification gate, the
-  code case study, the proof-sketch architecture, then the birational-geometry
-  agenda.
-
-One page is worth reading before the rest regardless of path. *Variation points*
-answers the question the series is organized around — how to find the boundary
-where a pattern belongs — and every later page is an instance of it.
 
 ## Part I. Foundations
 
 1. [Terminology and atomic building blocks](/posts/2026/08/agent-system/foundations/)
 2. [The core agent loop](/posts/2026/08/agent-system/core-loop/)
 3. [Variation points and the stable interface](/posts/2026/08/agent-system/variation-points/)
-4. [Why mathematicians need agent design patterns](/posts/2026/08/agent-system/why-mathematicians-need-patterns/)
+
 
 ## Part II. Workflow and control-flow patterns
 
@@ -100,7 +72,7 @@ where a pattern belongs — and every later page is an instance of it.
 
 31. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
 32. [Proof-sketch and method-recommendation system](/posts/2026/08/agent-system/proof-sketch-system/)
-33. [Research agenda: building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
+33. [Building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
 
 The first case study uses the real Danus and Rethlas codebases. The
 proof-sketch page develops a professional architecture for recommending proof
@@ -108,7 +80,7 @@ methods and compiling them into critic-tested obligation graphs. The final page
 specializes that architecture to the spiraling induction that appears in
 birational geometry.
 
-## Course books
+## References
 
 The series draws on six books, each covering a different altitude. Individual
 pages cite chapters and sections; this is the shared basis.
