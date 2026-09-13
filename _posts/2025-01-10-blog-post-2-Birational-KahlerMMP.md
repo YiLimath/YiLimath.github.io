@@ -30,7 +30,7 @@ My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论�
 
 ---
 ## Part-II. Reading Notes on the Kähler minimal model program
-[Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 4.4]
+[Note 0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [upd 9.13]
 
 [Note-1 Positivities and cones in the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
 
