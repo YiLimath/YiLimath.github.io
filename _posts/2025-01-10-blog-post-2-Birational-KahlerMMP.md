@@ -1,6 +1,6 @@
 ---
 title: 'My PhD Thesis Project: Kähler minimal model program'
-date: 2026-04-04
+date: 2026-09-13
 permalink: /posts/2026/04/Kahler-MMP/
 tags:
   - Birational geometry
