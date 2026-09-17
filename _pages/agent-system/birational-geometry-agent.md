@@ -1,5 +1,5 @@
 ---
-title: "Research Agenda: Building an Agent System for Birational Geometry"
+title: "Designing a Spiraling Induction System for Birational Geometry"
 permalink: /posts/2026/08/agent-system/birational-geometry-agent/
 tags:
   - Agent System
@@ -9,346 +9,445 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+The goal is to build a research system whose unit of reasoning is a **geometric
+induction step**: construct the right object, establish the hypotheses of an
+available theorem, obtain a conclusion, and prove how that conclusion advances
+the original problem. The system should eventually help solve birational
+geometry problems, with an argument that a researcher can inspect, correct,
+and reuse.
 
-![A spiral-induction agent architecture for birational geometry](/images/agent-system/30-birational-geometry-agent.svg)
+Birational geometry suggests a particular architecture. A proof often needs
+several statements at once: existence of models, non-vanishing, finiteness, or
+termination in a specified setting. Progress on one makes another accessible.
+Meanwhile, adjunction or a fibration changes the object and may lower its
+dimension. The proof returns to its original target with additional
+information. I call this organization **spiraling induction**.
 
-*Figure. Design sketch, not an as-built system. The upper band is the
-mathematical control state: a coupled theorem package is advanced by creating
-the right lower-dimensional object, checking its hypotheses, and admitting only
-verified updates. The lower band maps the agent-design patterns to the research
-workflow. Solid navy arrows show control, dashed teal arrows show evidence or
-repair feedback, and red arrows show a correctness or admission gate.*
+The design question is precise: **how can an agent explore this spiral while
+keeping every use of induction and every transfer of a conclusion
+mathematically accountable?**
 
-> **Status of this page.** This is a domain-specific research architecture and
-> a long-term implementation target. It is not a claim that Danus, Rethlas, or
-> any current system already implements the complete birational-geometry
-> workflow shown here.
+> **Status.** This page proposes an architecture and an evaluation programme.
+> It does not describe an implemented prover or claim that an existing agent
+> can autonomously solve the problems discussed here. The mathematical examples
+> motivate the design; the software contracts below are proposed interfaces.
 
-**In one sentence.** A design sketch rather than a built system: what the pattern vocabulary looks like when it is organized around the spiraling induction of birational-geometry proofs.
+![Spiraling induction: descend to a suitable object, return through a transfer proof, and advance an acyclic theorem ledger](/images/agent-system/30-birational-geometry-agent.svg)
 
-The objective is not only to build an assistant that explains known
-mathematics, but to build a system that can eventually solve selected real
-birational-geometry problems. A successful solution must include a precise
-statement, a dependency-complete argument, checked hypotheses, and enough
-provenance for a mathematician to inspect and challenge it.
+*A turn of the spiral has an outward journey and a return journey. Constructing
+a lower-dimensional pair is only the first half. A separate transfer argument
+must connect its conclusion to the current target. Repeated exploration may
+loop; accepted proof dependencies must remain well-founded.*
 
-The central architectural idea is that birational geometry should not be
-represented as a single linear “question → proof” pipeline. A research episode
-often changes representation: a pair may be replaced by a log-smooth model, a
-divisor may be restricted by adjunction, or a fibration may expose a
-lower-dimensional base.
-The agent must preserve those changes as explicit, typed obligations rather
-than hiding them inside a long conversation.
+## 1. What makes the induction spiral?
 
-## 1. Spiraling induction as the mathematical control policy
+There are three interacting movements:
 
-Here “spiraling induction” refers to the [BCHM-style proof organization](https://www.ams.org/jams/2010-23-02/S0894-0347-09-00649-3/viewer/)
-recorded in the birational-geometry notes: several statements are proved
-together in dimension $n$, while some steps manufacture an object in dimension
-$n-1$, apply the lower-dimensional package, and use the result to advance the
-current package. It is a mathematical proof architecture, not a standard AI
-design pattern name.
+1. **Advance within a theorem package.** Prove an auxiliary statement that
+   unlocks another statement in the same dimension.
+2. **Descend through geometry.** Construct a divisor, center, base, or fiber
+   on which an available lower-dimensional statement applies.
+3. **Return with a transfer argument.** Lift sections, descend a divisor,
+   glue morphisms, or compare models to advance the original target.
 
-For the BCHM package, the useful abstract dependency shape is:
+The return is often the difficult part. Knowing something on a divisor does
+not automatically prove it on the ambient variety. Nor does replacing a pair
+by a better model automatically solve the original problem.
 
-| Dependency | Role in the package |
+### A concrete dependency pattern: BCHM
+
+In [BCHM, Section 2](https://arxiv.org/html/math/0610203#S2), the labels denote
+pl-flips ($A$), special finiteness ($B$), log terminal models with an effective
+representative ($C$), non-vanishing ($D$), finiteness of models ($E$), and the
+finite-generation package ($F$). Their inductive dependencies are:
+
+| Available premises | Next conclusion |
 |---|---|
-| $E_{n-1}\Rightarrow B_n$ | lower-dimensional finiteness supplies special finiteness in dimension $n$ |
-| $A_n+B_n\Rightarrow C_n$ | flips plus special finiteness support the minimal-model step |
-| $D_{n-1}+B_n+C_n\Rightarrow D_n$ | non-vanishing is lifted one dimension up |
-| $C_n+D_n\Rightarrow E_n$ | existence and non-vanishing yield global finiteness |
-| $C_n+D_n+E_n\Rightarrow F_n$ | the package closes with finite generation |
+| $F_{n-1}$ | $A_n$ |
+| $E_{n-1}$ | $B_n$ |
+| $A_n$ and $B_n$ | $C_n$ |
+| $D_{n-1}$, $B_n$, and $C_n$ | $D_n$ |
+| $C_n$ and $D_n$ | $E_n$ |
+| $C_n$, $D_n$, and $E_n$ | $F_n$ |
 
-The important engineering consequence is not to encode these symbols as labels
-only. Each edge needs an obligation record containing:
+These summarize dependencies, not unrestricted theorem statements. Each node
+must retain the source's full hypotheses, including its relative setting and
+boundary conditions. The first implication uses the external pl-flip result
+cited there. In particular, $C_n$ assumes an effective representative; using
+$D_n$ to supply it cannot be hidden inside a purported independent proof of
+$C_n$.
 
-- the statement being attempted and its dimension;
-- the object that has to be constructed before induction applies;
-- the hypotheses that must be rechecked on that object;
-- the evidence and proof artifact supporting the implication; and
-- the next obligations unlocked by an accepted result.
+**Store implications with all their premises.** An edge from three premises to
+one conclusion is a single inference requiring all three, not three independent
+routes. Base cases and external theorems must be listed explicitly.
 
-The system therefore spirals in two senses: it revisits a coupled theorem
-package, and it moves between dimensions or derived objects while preserving a
-machine-readable ledger of what has actually been established.
+### A spiral is not a circular proof
 
-## 2. Geometric engines of the spiral
+After indexing statements by dimension and proof stage, the accepted graph
+must be acyclic. For the schematic package above, one can order nodes by
 
-The main tools are geometric transformations, not generic Agent tools. They
-manufacture a new object on which an inductive theorem may be applied, then
-transfer the conclusion back to the original problem. The system should treat
-each transformation as a typed **GeometricReduction** record containing the
-source pair, the map or center, the target dimension, the transformed pair, the
-relation between adjoint data, the hypotheses checked, and the unresolved
-conditions.
+$$
+\rho(T_n)=(n,\operatorname{stage}(T)),
+\qquad A<B<C<D<E<F,
+$$
+
+with lexicographic order. Inductive calls use a smaller dimension; dependencies
+in the same dimension use an earlier stage. This is a scheduling order for
+this package, not a universal invariant of birational geometry. An induction
+on another complexity requires its own well-founded order and a proof of
+strict decrease.
+
+Maintain two graphs: a **search graph**, which may revisit failed ideas, and an
+**accepted dependency graph**, which cannot use its own conclusion as a premise.
+A proposed cycle becomes a diagnostic: split a statement, find an independent
+lemma, strengthen the induction hypothesis, or abandon the route. Renaming a
+claim or changing its model does not break a logical cycle.
+
+## 2. The research state must carry the mathematics
+
+A transcript is useful history, but it is not sufficient proof state. The
+system needs the following records:
+
+| Record | Mathematical content |
+|---|---|
+| Problem | Exact target, quantifiers, hypotheses, and allowed external results |
+| Geometric object | Variety or space, dimension, base, boundary, nef data if present, and current model |
+| Theorem instance | Source version and locator, full statement, substitution of variables, and evidence for each hypothesis |
+| Obligation | One missing claim, its scope, prerequisites, and required output |
+| Reduction | Source and target objects, construction, adjoint relation, dimension or complexity change, and return obligation |
+| Proof artifact | Argument, exact premises, conclusion, unresolved assumptions, and review evidence |
+| Ledger | Versioned artifacts, accepted dependencies, blocked branches, and invalidated descendants |
+
+The object record distinguishes projective from compact Kähler geometry,
+absolute from relative statements, ordinary from generalized pairs, and
+$\mathbb Q$-divisors from $\mathbb R$-divisors or transcendental classes.
+Singularity and positivity properties carry evidence; they are not inherited
+merely because a predecessor object had them.
+
+A theorem lookup must return more than a relevant paragraph. It should produce
+an applicability table:
+
+| Required hypothesis | Evidence on this object | Result |
+|---|---|---|
+| Dimension below the current induction level | Construction and dimension calculation | Discharged or open |
+| Required singularities | Applicable adjunction theorem and its inputs | Discharged or open |
+| Required positivity over the specified base | Separate positivity argument | Discharged or open |
+| Permitted coefficient set | Calculation after transformation | Discharged or open |
+
+An open row creates a new obligation. It never disappears into “the hypotheses
+are standard.” In a boundedness problem, track uniformity as well: which
+constants depend only on dimension, coefficients, or a fixed $\epsilon$, and
+which still depend on the individual variety.
+
+## 3. Geometric reductions need a return contract
+
+Every reduction answers four questions: **What is constructed? Why is the next
+theorem applicable? What does it give? How does that help the original target?**
 
 ### Adjunction and subadjunction
 
-**Adjunction** restricts an adjoint expression to a divisor or a suitable
-stratum, producing a lower-dimensional pair. **Subadjunction** is the
-higher-codimension version used around a minimal log-canonical or non-klt
-center; under the relevant hypotheses it produces a generalized pair on the
-center. See the adjunction discussion in the [Hacon–McKernan–Xu
-notes](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf),
-§3.2. In both cases the agent must record the center, normalization, induced
-boundary or nef part, and the singularity statement that makes the next
-induction step legal.
+For a suitable plt pair $(X,S+B)$ with $S$ a coefficient-one prime divisor,
+divisorial adjunction produces
+
+$$
+(K_X+S+B)|_S=K_S+B_S.
+$$
+
+Record normality, the different $B_S$, the induced singularities, and
+$\dim S=\dim X-1$. Subadjunction on a higher-codimension center is a separate
+operation: ordinary and generalized formulations have different inputs and
+outputs. A generic “non-klt center” is not enough to select one. See the
+[adjunction discussion in the Hacon–McKernan–Xu notes, §3.2](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf).
+
+The return contract might ask for extension of sections, control near $S$, or
+gluing across strata. None follows from the adjunction identity alone.
 
 ### Canonical bundle formula
 
-For a suitable fibration $f\colon X\to Z$, the canonical bundle formula
-transfers adjoint data to the base in the form
+In a suitable ordinary lc-trivial fibration, the relevant formula has the form
+
 $$
-K_X+B+M_X \sim_{\mathbb{R}} f^*(K_Z+B_Z+M_Z).
+K_X+B\sim_{\mathbb Q}f^*(K_Z+B_Z+M_Z).
 $$
-The discriminant part $B_Z$ records singularities of the fibers, while the
-moduli part $M_Z$ records the remaining variation, as formalized for
-lc-trivial fibrations in [Ambro's work](https://arxiv.org/abs/math/0308143).
-This is not merely a change of notation: the base pair and the positivity of
-its moduli part must be constructed and checked before a lower-dimensional
-theorem can be invoked. The
-[Hacon–Xie proof](https://arxiv.org/html/2607.24986) gives a recent Kähler
-example in which the canonical bundle formula is an explicit ingredient of the
-inductive argument.
+
+First justify the fibration hypotheses, then record the discriminant and
+moduli b-divisor and the model on which the required positivity holds. Nefness
+of the moduli part must not be silently upgraded to semiampleness. Generalized
+or Kähler versions require their own contracts; the displayed formula is not
+an automatic identity for every fibration.
+[Ambro's paper](https://arxiv.org/abs/math/0308143) provides a foundational
+reference for the moduli b-divisor.
+
+If the lower-dimensional conclusion is semiampleness, the return contract must
+identify an actual pullback relation of the appropriate kind. Numerical
+equivalence cannot substitute for a relation of line bundles when transporting
+sections.
 
 ### MRC and Iitaka fibrations
 
-The **MRC fibration** is the natural branch when non-pseudo-effectivity of the
-canonical class leads to uniruledness: its general fibers are rationally
-connected and its base has smaller dimension. The agent should route the
-resulting base problem separately from the fiber problem, rather than flattening
-the fibration into one prompt.
+An MRC fibration separates rationally connected directions from a base problem;
+an Iitaka fibration organizes a linear series of nonnegative Iitaka dimension.
+The latter can be constructed birationally without first proving semiampleness.
+Distinguish this rational-map construction from a morphism defined by a
+semiample divisor, and check whether the base is actually lower-dimensional.
+A big divisor gives no such dimension drop. See Lazarsfeld's
+[*Positivity I*](https://link.springer.com/book/10.1007/978-3-642-18808-4)
+for the linear-series setting.
 
-The **Iitaka fibration** is the corresponding positive-Kodaira-dimension
-mechanism when the relevant linear series or semi-ampleness is available. Its
-base records the Kodaira dimension and its general fiber has Kodaira dimension
-zero. It must not be invoked before the system has established the positivity,
-abundance, or finite-generation assumptions needed to define the fibration; see
-the standard treatment in Lazarsfeld's [*Positivity in Algebraic Geometry I*](https://link.springer.com/book/10.1007/978-3-642-18808-4).
+Neither fibration automatically equips the base with the adjoint structure
+needed for induction. Constructing that structure and proving a transfer
+statement are additional tasks.
 
-### MMP and scaling as the bridge
+### Birational modifications and MMP steps
 
-Adjunction, subadjunction, and fibrations often require a suitable model first.
-An MMP with scaling, a dlt or log-smooth modification, and the negativity lemma
-are therefore bridge mechanisms: they change the model while preserving the
-precise numerical or birational relation needed by the target theorem. A
-research agent must distinguish a model change from a proof of the target
-statement.
+A log resolution, dlt modification, contraction, or flip usually preserves
+dimension. These operations prepare a reduction or improve a model. Record
+discrepancies, exceptional divisors, and the precise pullback or pushforward
+comparison needed later.
 
-The spiral can consequently be read as:
+“Run the MMP” must resolve into an applicable existence and termination result,
+or remain an obligation. A software iteration limit is not a mathematical
+termination proof. Not every model change decreases an induction rank.
 
-**target obligation → choose geometric engine → construct transformed pair or
-base → verify hypotheses → invoke lower-dimensional result → transfer and
-record the update.**
+## 4. A worked turn: returning from a divisor
 
-## 3. The pattern is broader than BCHM
+Here is a deliberately elementary test of the full contract. It exercises
+adjunction, a lower-dimensional input, and a return argument without pretending
+to reproduce the harder extension steps of the MMP.
 
-The theorem graph is not universal: BAB and the Kähler results of Hacon–Xie do
-not use the same labels or the same technical objects. What recurs is the
-architecture of the proof: a family of coupled claims, a representation change
-that makes an induction hypothesis applicable, a hypothesis audit, and an
-output that feeds a later claim.
+Let $X$ be a smooth projective variety over $\mathbb C$, let $S$ be a smooth
+prime divisor, and let $B$ be an effective $\mathbb Q$-divisor such that
+$S+\operatorname{Supp}B$ has simple normal crossings, $S$ is not a component of
+$B$, and every coefficient of $B$ is less than one. Put
 
-| Proof programme | Spiral structure | Design lesson for the agent |
+$$
+D=K_X+S+B.
+$$
+
+Fix a positive integer $m$ such that $mD$ is Cartier. Suppose the available
+lower-dimensional input gives
+$H^0(S,\mathcal O_S(mD|_S))\ne0$, and suppose separately that
+
+$$
+H^1(X,\mathcal O_X(mD-S))=0.
+$$
+
+**Local target:** prove $H^0(X,\mathcal O_X(mD))\ne0$.
+
+| Step | Artifact produced | What remains |
 |---|---|---|
-| BCHM | $A_n,\ldots,F_n$ are advanced together; lower-dimensional finiteness and adjacent statements close the package | the ledger must represent a dependency graph, not a single chain |
-| [Birkar's BAB theorem](https://annals.math.princeton.edu/2021/193-2/p01) | lower-dimensional boundedness is used to control current-dimensional volume or birational boundedness, which is combined with complements and singularity estimates to obtain a bounded family | boundedness is an output contract, not merely a similarity score or a list of examples |
-| [Hacon–Xie](https://arxiv.org/html/2607.24986) | the proof explicitly cycles through contraction, base-point-free, MMP with scaling, and non-gklt contraction results across dimensions; the paper lays out these implications in Section 1.1 | each edge must record its dimension, manufactured object, and rechecked hypotheses |
+| Construct | $(S,B|_S)$ with $D|_S=K_S+B|_S$ | Check the lower-dimensional theorem |
+| Check | Smooth $S$, dimension $n-1$, klt induced pair | Match any positivity and divisibility assumptions |
+| Invoke | A nonzero section $s_S$ at this particular multiple $m$ | Lift it to $X$ |
+| Transfer | Surjectivity of the restriction map below | Choose a lift of $s_S$ |
+| Record | A nonzero section upstairs | Admit only this stated conclusion |
 
-The Hacon–Xie case is particularly close to the proposed control model. Their
-proof separates the big and non-big cases, uses adjunction or an MRC/Mori-fibre
-space base to reach a lower-dimensional problem, and then returns the result to
-the original space. The agent should therefore store the *construction of the
-induction object* as a first-class artifact, rather than treating “apply
-induction” as a black-box action.
+The transfer uses the exact sequence
 
-## 4. Proposed architecture
+$$
+0\longrightarrow\mathcal O_X(mD-S)
+\longrightarrow\mathcal O_X(mD)
+\longrightarrow\mathcal O_S(mD|_S)
+\longrightarrow0.
+$$
 
-Read the upper band of the figure first. The supervisor does not ask a worker
-to “prove the theorem” in one shot. It selects one frontier obligation, asks
-what object would make the next theorem applicable, and routes the obligation
-to the appropriate specialists. The verifier then checks both the proposed
-mathematical artifact and the conditions for using it.
+The assumed $H^1$-vanishing makes restriction on global sections surjective.
+A lift of the nonzero $s_S$ is nonzero, proving the target.
 
-The lower band is a composition of the patterns developed in this course:
+This exposes three common failures. A lower-dimensional theorem that gives a
+section at *some* multiple does not automatically give one at the chosen $m$.
+A section on $S$ does not lift without a transfer argument. And one nonzero
+section does not establish semiampleness or finite generation.
 
-1. **Plan-and-execute** decomposes a target into a bounded sequence of
-   obligations rather than free-form subgoals.
-2. **Routing** chooses between literature recovery, example construction,
-   proof synthesis, formalization, counterexample search, and human review.
-3. **Parallelization** runs independent searches only when their outputs can be
-   normalized and compared.
-4. **Structured output** makes every worker return an obligation, evidence
-   packet, derivation, counterexample, or verification report with a fixed
-   schema.
-5. **Knowledge retrieval and provenance** preserve theorem statements,
-   hypotheses, page or section information, and the exact source of a claim.
-6. **Reasoning and representation change** treats adjunction, fibrations,
-   restrictions, models, and numerical conditions as explicit transformations.
-7. **Reflection and recovery** turn a failed hypothesis check into a repair
-   task, not an unsupported revision of the conclusion.
-8. **Memory management** stores accepted artifacts and dependency edges, not
-   merely the raw transcript of the agent.
-9. **Human-in-the-loop and guardrails** reserve mathematical interpretation,
-   research significance, and final admission for an explicit checkpoint.
+If vanishing is unproved, the correct output is a conditional lemma and an
+open transfer obligation. The system may seek a vanishing or extension theorem,
+or change its route. It must not invent the missing positivity. This is the
+basic behaviour the first prototype should demonstrate.
 
-## 5. Typed research artifacts
+## 5. A controller for one turn of the spiral
 
-The architecture becomes auditable only when its intermediate objects are
-stable. A minimal artifact vocabulary is:
+The supervisor works on a **frontier of unresolved obligations**. Prefer an
+obligation that unlocks several needed claims, has a plausible geometric
+construction, and has a manageable verification cost. This is a search
+heuristic, not evidence that the chosen branch is true.
 
-| Artifact | Required content | Why it matters |
+```text
+while budget remains and the target is unresolved:
+    choose a frontier obligation
+    propose a theorem application or geometric reduction
+    reject circular dependencies and illegal inductive calls
+    record construction, applicability, and transfer obligations
+    work on prerequisites whose own inputs are available
+    check the candidate against exact object and premise versions
+    if the admission policy is satisfied:
+        commit the artifact and its full dependencies
+        refresh the frontier
+    else:
+        preserve the failure and queue a repair or alternative route
+return the argument, its assurance level, and the unresolved frontier
+```
+
+A conditional derivation may be stored before its premises are proved, but its
+conclusion cannot become an unconditional fact. External results also need an
+audit for hidden dependence on the target. In proof-replay evaluation, exclude
+the target theorem and downstream corollaries as shortcuts.
+
+Stopping outcomes are explicit: **target discharged under the declared trust
+policy**, **checked counterexample**, **blocked by named obligations**, or
+**budget exhausted**. Exhausting a search proves neither truth nor falsity.
+The controller can stop reliably without claiming that mathematical research
+must terminate.
+
+## 6. Agents have bounded responsibilities
+
+Agent patterns become useful once each role has a mathematical input and
+output contract:
+
+| Role | Responsibility | Output |
 |---|---|---|
-| Research brief | pair, dimension, target statement, hypotheses, scope | fixes what the system is actually trying to establish |
-| Obligation | claim, dependencies, target dimension, constructed object, acceptance test | makes the spiral step local and schedulable |
-| Evidence packet | source, theorem/lemma, quotation or locator, applicability notes | prevents retrieved mathematics from becoming context-free text |
-| Derivation | premises, transformations, conclusion, unresolved gaps | separates a proposed proof route from a verified proof |
-| Verification report | checks run, failures, repair hints, status | makes rejection informative and reproducible |
-| Ledger update | accepted artifact, dependency edges, newly unlocked obligations | records the state of the induction rather than the conversation |
+| Planner | Decompose the target and maintain legal dependencies | Obligation graph |
+| Literature worker | Recover exact statements and compare hypotheses | Theorem instances with locators |
+| Geometry worker | Propose a model, center, divisor, or fibration | Reduction and return contract |
+| Example worker | Test boundary cases and seek counterexamples | Computations and their scope |
+| Proof worker | Derive one local claim from declared premises | Candidate argument with gaps exposed |
+| Verifier | Check applicability, inference, transfer, and provenance | Review report with failed checks |
+| Ledger controller | Enforce admission and propagate revisions | Versioned proof state |
 
-An artifact should carry a status such as `proposed`, `needs-hypothesis-check`,
-`rejected`, `verified`, or `human-accepted`. Only the last two states may unlock
-the next stage, and a `verified` result should still record which verifier and
-which assumptions produced that status.
+These are responsibilities, not a requirement for seven separate language
+models. Start with a small implementation. Independent literature searches or
+example checks can run in parallel, but their outputs must refer to compatible
+object and statement versions before being merged.
 
-## 6. One spiral episode
+The [Danus and Rethlas case study](/posts/2026/08/agent-system/math-research-case-study/)
+connects this proposal to the course's agent-design patterns. The distinctive
+requirement here is the geometric reduction contract and its place in a
+well-founded theorem package.
 
-For one frontier obligation, the control loop is:
+## 7. Admission, trust, and mathematical memory
 
-1. **Select the frontier.** The supervisor chooses the highest-value unresolved
-   obligation under a dimension, dependency, and resource budget.
-2. **Compile the obligation.** The planner writes the target statement,
-   dependencies, and the object that must be manufactured before the induction
-   hypothesis can be invoked.
-3. **Route and explore.** Specialists search the literature, inspect examples,
-   test boundary cases, and propose a proof or reduction in parallel where
-   independence is genuine.
-4. **Normalize.** The system converts the results into typed evidence packets
-   and derivations with explicit hypotheses and provenance.
-5. **Check the representation change.** A dedicated verifier checks that
-   adjunction, restriction, fibration, birational modification, or dimension
-   drop has been stated correctly and that the new object satisfies the needed
-   assumptions.
-6. **Verify and repair.** Logical, symbolic, formal, and citation checks either
-   produce a repairable failure or a candidate admission report. A human may
-   inspect the interpretation when the mathematical stakes require it.
-7. **Commit the update.** The ledger receives the result only through an
-   admission gate. The update unlocks the next obligation and starts the next
-   turn of the spiral.
+“Verified” is too ambiguous to be a single status. Keep workflow state separate
+from the kind of evidence supporting an artifact.
 
-This gives the system a meaningful stopping rule: stop when the target package
-has a verified dependency path, or stop with a precise unresolved obligation
-when the evidence or hypotheses are insufficient. “The model produced a
-plausible proof” is not a termination condition.
+| Field | Example values |
+|---|---|
+| Workflow | Proposed, checking, blocked, admitted, rejected, invalidated |
+| Evidence | Source-backed, machine-checked calculation, model-reviewed, expert-reviewed, formally checked |
+| Scope | Exact statement, object version, assumptions, theorem versions |
+| Admission | Policy used, reviewer or checker, timestamp, dependencies |
 
-## 7. Domain-specific pattern map
+Evidence labels can coexist. Formal checking applies only to the encoded
+statement and its declared axioms; it does not automatically verify the
+translation from the research problem. A source-backed theorem still needs
+an applicability argument. Agreement between models is review evidence, not
+a proof certificate.
 
-| Course pattern | Birational-geometry specialization | Stable interface |
-|---|---|---|
-| Plan and execute | theorem package → local implication → verification task | `Obligation` |
-| Router | choose flip, finiteness, non-vanishing, model, termination, or application branch | `Obligation.kind` |
-| Parallelization | literature search, examples, reductions, and formal checks | `EvidencePacket[]` |
-| Knowledge retrieval | recover a theorem together with hypotheses and applicability conditions | `SourceRecord` |
-| Reasoning / representation change | adjunction, fibration, restriction, model change, numerical-to-linear data | `Transformation` |
-| Reflection | compare a proposed step against all required hypotheses and dependencies | `VerificationReport` |
-| Memory management | persist theorem statements, accepted artifacts, and dependency edges | `InductionLedger` |
-| Exception recovery | classify missing hypothesis, failed reduction, contradiction, or tool failure | `RepairTask` |
-| Human-in-the-loop | interpret significance and approve high-consequence admissions | `ReviewDecision` |
+During the first evaluation stage, an expert should approve every new
+mathematical inference admitted to the ledger. Automated checks can enforce
+required fields, dependency order, version consistency, and the presence of
+hypothesis evidence. Schema validation alone cannot establish that an informal
+proof is correct.
 
-The interfaces are deliberately mathematical rather than framework-specific.
-An implementation could change its language model, retrieval backend, or formal
-checker without changing the contract of an obligation or verification report.
+Admission requires all of the following:
 
-## 8. Reliability boundaries
+1. The exact claimed conclusion is supported by the argument.
+2. Every premise is admitted at the required assurance level, or explicitly
+   retained as an assumption of a conditional statement.
+3. The theorem application and geometric transfer have no undisclosed gaps.
+4. The dependency graph remains well-founded.
+5. The designated review policy has been satisfied.
 
-The proposed system may search, compare, formalize, test, and suggest. It must
-not silently:
+If a premise is corrected or withdrawn, affected descendants become stale and
+must be rechecked before reuse. Search history and failed attempts remain
+available, but cannot function as accepted facts. Reusable memory stores the
+scope of a lemma and its failure conditions alongside its successful argument.
 
-- apply an induction hypothesis before recording the dimension drop;
-- replace a pair without rechecking singularities, positivity, or coefficient
-  conditions;
-- confuse numerical equivalence, linear equivalence, and actual equality;
-- treat a citation as evidence that its hypotheses apply to the current pair;
-- promote a fluent proof sketch into the induction ledger; or
-- treat an unresolved counterexample search as evidence of truth.
+## 8. Extending the architecture beyond one package
 
-These boundaries are the domain equivalent of the correctness gate seen in the
-[Danus and Rethlas code case study](/posts/2026/08/agent-system/math-research-case-study/):
-generation and verification are separate responsibilities, and admission is an
-explicit state transition.
+BCHM supplies an unusually explicit dependency skeleton. It should be the first
+package to encode, not a universal template into which all proofs are forced.
 
-## 9. A realistic first implementation
+For **boundedness**, [Birkar's BAB theorem](https://annals.math.princeton.edu/2021/193-2/p01)
+motivates a different output contract: a bound must be uniform in the declared
+parameters. Checking many examples cannot establish boundedness of a family.
+Track quantifiers and dependence of constants through every reduction.
 
-The safest first vertical slice is deliberately narrow:
+For **Kähler geometry**, [Hacon–Xie, §§1.1–1.2](https://arxiv.org/html/2607.24986)
+organize contraction, base-point-free, MMP, and non-gklt results across dimensions.
+Their discussion separates big and non-big cases and uses lower-dimensional
+objects together with gluing or transfer arguments. This motivates additional
+object types for transcendental classes and analytic spaces. A projective
+theorem cannot be imported solely because its conclusion sounds similar.
 
-1. define the `ResearchBrief`, `Obligation`, `EvidencePacket`, and
-   `VerificationReport` schemas;
-2. implement a supervisor that advances one small theorem package at a time;
-3. add retrieval with source locators and hypothesis extraction;
-4. add example and counterexample workers before adding many autonomous proof
-   writers;
-5. require a human review for every ledger update during evaluation; and
-6. measure hypothesis accuracy, provenance completeness, repair usefulness,
-   and false-admission rate on a fixed collection of known arguments.
+For **new research**, the theorem package itself may be unknown. The system
+must be able to propose an auxiliary lemma or a stronger inductive statement.
+That proposal remains a conjectural node until justified. Changing the package
+requires checking its base cases and rebuilding the dependency order; it is
+not permission to assume the stronger statement.
 
-Only after this slice is reliable should the system add broader exploration,
-more agents, or expensive formal verification. The architectural objective is
-not maximal autonomy. It is a trustworthy research instrument whose next step,
-evidence, and reason for stopping can all be inspected.
+## 9. Build and evaluate the smallest complete spiral
 
-## 10. What “solve a real problem” should mean
+The first implementation should replay a small collection of known arguments
+from a fixed source corpus. It needs a theorem registry, an obligation ledger,
+a reduction interface, an admission gate, and a readable proof export. It does
+not need a large autonomous agent population.
 
-For this research programme, “solve” should be an operational claim rather than
-a marketing label. A candidate solution should produce:
+**Milestone 1: represent the package.** Encode the six BCHM dependency shapes,
+their full source statements, explicit base cases, and permitted external
+inputs. Demonstrate that a missing premise or circular invocation is blocked.
 
-- a precise theorem or counterexample statement;
-- a complete dependency graph of the lemmas and external results used;
-- an explicit record of every representation change, dimension drop, and
-  hypothesis check;
-- a reproducible verification report, including failed approaches; and
-- a human-readable mathematical argument that survives expert review.
+**Milestone 2: complete a local turn.** Implement the divisor example above,
+including a successful transfer and variants with missing vanishing or a
+mismatched multiple. Produce a readable argument and its obligation trace.
 
-The validation ladder should therefore move from controlled to genuinely open
-work:
+**Milestone 3: replay a substantive reduction.** Choose one published adjunction
+or canonical-bundle-formula argument. Recover its construction, applicability
+checks, and return step with expert review. Test the same interface on a second
+argument without changing the schema to fit the answer.
 
-1. **Proof replay:** reconstruct known arguments and recover their dependency
-   structure from source material.
-2. **Bounded problem sets:** solve examples, special cases, and counterexample
-   searches with known answers.
-3. **Research-grade reconstruction:** complete missing steps in published or
-   partially formalized arguments under human supervision.
-4. **New mathematics:** attempt unresolved problems, while reporting clearly
-   which parts are verified, conjectural, or still open.
+**Milestone 4: attempt a bounded research task.** Fill a specified missing step
+or explore a special case under a fixed budget. Report conditional results and
+remaining obstacles as carefully as successful proofs.
 
-The final stage is the scientific goal, but the earlier stages are necessary to
-measure false admissions, missing hypotheses, unsupported citations, and the
-system's ability to recover from a wrong branch of the spiral.
+Evaluation must include deliberately invalid steps:
+
+| Test case | Required behaviour |
+|---|---|
+| Missing bigness or wrong singularity class | Block the application and name the missing evidence |
+| Numerical equivalence substituted for linear equivalence | Reject unsupported transport of sections |
+| A dimension-preserving model change called induction | Demand another justified induction order or treat it as preparation |
+| Lower-dimensional conclusion with no return proof | Keep the original target open |
+| Unproved target reused under another name | Detect the dependency cycle |
+| Premise corrected after admission | Invalidate dependent artifacts and recheck them |
+| No counterexample found within budget | Report an inconclusive search |
+
+Measure false admissions among injected invalid steps, successful admission of
+valid steps, completeness of hypothesis and transfer records, and expert time
+needed to repair an argument. Track cost per completed obligation as well.
+A system that rejects everything has low false-admission counts but does not
+help research; useful progress and sound rejection must be measured together.
+
+The desired deliverable from a research episode is a precise statement, a
+readable argument, its dependency graph, the geometric constructions and return
+proofs, and an honest account of unresolved assumptions. The spiral advances
+when one of those mathematical obligations is discharged—not when another
+round of discussion has finished.
 
 ## References
 
-1. C. Birkar, P. Cascini, C. D. Hacon, and J. McKernan, “Existence of minimal
-   models for varieties of log general type,” *Journal of the American
-   Mathematical Society* 23 (2010), 405–468. [AMS article](https://www.ams.org/jams/2010-23-02/S0894-0347-09-00649-3/viewer/)
-   and [arXiv version](https://arxiv.org/abs/math/0610203).
-2. C. Birkar, “Singularities of linear systems and boundedness of Fano
-   varieties,” *Annals of Mathematics* 193 (2021), 347–405. [Journal article](https://annals.math.princeton.edu/2021/193-2/p01).
-3. C. Hacon and L. Xie, “On the Kähler MMP and the transcendental
-   base-point-free theorem,” arXiv:2607.24986 (2026), especially Sections 1.1–1.2.
-   [Paper](https://arxiv.org/abs/2607.24986) and [HTML version](https://arxiv.org/html/2607.24986).
-4. J. Liu et al., “Danus: Orchestrating Mathematical Reasoning Agents with
-   Fact-Graph Memory,” arXiv:2607.06447 (2026). [Paper](https://arxiv.org/abs/2607.06447)
-   and [source repository](https://github.com/frenzymath/Danus).
-5. H. Ju et al., “Automated Conjecture Resolution with Formal Verification,”
-   arXiv:2604.03789 (2026). [Paper](https://arxiv.org/abs/2604.03789) and
-   [source repository](https://github.com/frenzymath/Rethlas).
-6. A. Gullí, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent
-   Systems*, Springer, 2025. [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
-7. V. Dibia, *Designing Multi-Agent Systems: Principles, Patterns and
-   Implementation for AI Agents*. [Author's book site](https://multiagentbook.com/).
-8. F. Ambro, “The moduli b-divisor of an lc-trivial fibration,”
-   arXiv:math/0308143. [Paper](https://arxiv.org/abs/math/0308143).
-9. R. Lazarsfeld, *Positivity in Algebraic Geometry I: Classical Setting:
-   Line Bundles and Linear Series*, Springer, 2004. [Publisher record](https://link.springer.com/book/10.1007/978-3-642-18808-4).
-10. C. D. Hacon, J. McKernan, and C. Xu, *Boundedness of varieties of log
-    general type*, expository notes, Section 3.2 on adjunction. [Notes](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf).
+1. C. Birkar, P. Cascini, C. D. Hacon, and J. McKernan, *Existence of minimal
+   models for varieties of log general type*, JAMS 23 (2010), 405–468.
+   [Paper, especially §2](https://arxiv.org/html/math/0610203#S2).
+2. C. Birkar, *Singularities of linear systems and boundedness of Fano
+   varieties*, Annals of Mathematics 193 (2021), 347–405.
+   [Journal article](https://annals.math.princeton.edu/2021/193-2/p01).
+3. C. Hacon and L. Xie, *On the Kähler MMP and the transcendental
+   base-point-free theorem*, arXiv:2607.24986 (2026).
+   [Paper](https://arxiv.org/html/2607.24986).
+4. F. Ambro, *The moduli b-divisor of an lc-trivial fibration*.
+   [arXiv:math/0308143](https://arxiv.org/abs/math/0308143).
+5. C. D. Hacon, J. McKernan, and C. Xu, *Boundedness of varieties of log
+   general type*, expository notes, §3.2.
+   [Notes](https://www.claymath.org/wp-content/uploads/2022/03/Hacon-AG2015.pdf).
+6. R. Lazarsfeld, *Positivity in Algebraic Geometry I: Classical Setting:
+   Line Bundles and Linear Series*, Springer, 2004.
+   [Publisher record](https://link.springer.com/book/10.1007/978-3-642-18808-4).

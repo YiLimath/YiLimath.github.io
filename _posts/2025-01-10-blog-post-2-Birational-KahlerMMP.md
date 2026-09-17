@@ -23,7 +23,7 @@ My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论�
 
 ## Part II. Reading Notes on the Kähler minimal model program
 
-[Note-0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [Video](https://www.youtube.com/watch?v=JhD0l1nEHX8&t=25s) [upd 9.13]
+[Note-0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [[Video]](https://www.youtube.com/watch?v=JhD0l1nEHX8&t=25s) [upd 9.13]
 
 [Note-1 Quasi-psh Functions, currents, and Lelong Numbers](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf) [TODO]
 
@@ -41,7 +41,7 @@ My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论�
 
 [Note-8 Analytic Contraction Theorems](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
-Note-9 Contractions Preserve Kählerness *(in preparation)*
+Note-9 Kählerness criterion *(in preparation)*
 
 [Note-10 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf) [TODO]
 
