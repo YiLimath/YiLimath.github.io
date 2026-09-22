@@ -1,6 +1,6 @@
 ---
 title: 'Metric method in Birational Geometry'
-date: 2026-09-21
+date: 2026-09-22
 permalink: /posts/2026/05/Metric-Method/
 tags:
   - Birational geometry
@@ -8,13 +8,8 @@ tags:
 ---
 
 
-In this series of notes, we summarize the metric methods that have become standard tools in birational geometry. Almost every result below follows the same pattern, and it is worth stating it once at the start.
+In this series of notes, we summarize the metric methods that have become standard tools in birational geometry.
 
-> Build a metric whose singularities are exactly as bad as the geometry allows, then feed it into an $L^2$ estimate to produce a section. The birational content is in the choice of metric; the analysis is in the estimate.
-
-The notes are ordered so that each part uses only what comes before it. Parts I and II are the machinery: singular metrics and multiplier ideals, then the extension theorem. Parts III to VIII are the applications, arranged by how much of that machinery they need — Part III uses only the vanishing theorem, Parts IV to VII use the extension theorem, and Part VIII needs everything and is still open. Part IX collects the transcendental statements. A reader who wants one application can start at the relevant part and refer back.
-
-Where a result also has a purely algebraic treatment we say so and point to the [BCHM notes](https://yilimath.github.io/posts/2026/05/BCHM/) or the [adjunction notes](https://yilimath.github.io/posts/2025/05/Adjunction-Theory/) rather than repeating it.
 
 
 ---
@@ -30,59 +25,49 @@ Note-I.3 The Dictionary with Divisorial Singularities: klt, lc, and Log Canonica
 
 Note-I.4 Demailly Regularization and Approximation by Analytic Singularities *(in preparation)*
 
-Note-I.5 The Strong Openness Theorem and Its Consequences *(in preparation)*
-
-Note-I.6 Metrics with Minimal Singularities and Equisingular Approximations *(in preparation)*
+Note-I.5 Metrics with Minimal Singularities and Equisingular Approximations *(in preparation)*
 
 
 ---
-## Part II. The $L^2$ Extension Theorem
+## Part II. The Ohsawa–Takegoshi Extension Theorem
 
-The Ohsawa–Takegoshi theorem is the one technical input behind Parts IV to VIII. We start from the $\bar\partial$ estimate it rests on and end with the form that the birational applications actually invoke, which is the one with a singular metric on the twisting line bundle.
+The Ohsawa–Takegoshi theorem is one of the key technical tools used throughout this series of notes.
 
-Note-II.1 Hörmander's $L^2$ Estimates and the Basic Existence Machinery *(in preparation)*
+[Note-II.1 The Ohsawa–Takegoshi Extension Theorem](https://yilimath.github.io/files/Birational/MetricMethod/OTExtension.pdf) [upd 10.8]
 
-[Note-II.2 The Ohsawa–Takegoshi Extension Theorem and Why It Is Useful in Birational Geometry](https://yilimath.github.io/files/Birational/MetricMethod/OTExtension.pdf) [upd 10.8]
-
-Note-II.3 The Optimal Constant: Błocki, Guan–Zhou, and Berndtsson–Lempert *(in preparation)*
-
-Note-II.4 Extension with Singular Metrics: the Version Used in the Minimal Model Program *(in preparation)*
+Note-II.2 The Optimal Constant: Błocki, Guan–Zhou, and Berndtsson–Lempert *(in preparation)*
 
 
 ---
-## Part III. Effective Results from Vanishing Alone
+## Part III. Bergman Kernel, Narasimhan–Simha, and Hodge Metrics
 
-The first application, and the only one that does not need the extension theorem. Everything here comes from Nadel vanishing applied to a metric built by hand, so it can be read directly after Part I.
+Part II produces sections. To produce a metric one needs a construction that is canonical in the family, and there are three standard ones. The first two are $L^2$ constructions, on the relative canonical bundle and then on its higher powers; the third comes from Hodge theory and is the one whose positivity was understood first.
 
-Note-III.1 The Fujita Conjecture: Statement, Evidence, and What Is Known *(in preparation)*
+Note-III.1 The Bergman Kernel Metric and Berndtsson's Positivity Theorem *(in preparation)*
 
-Note-III.2 Cutting Log Canonical Centers and the Theorem of Angehrn and Siu *(in preparation)*
+Note-III.2 The Narasimhan–Simha Metric on Relative Pluricanonical Bundles *(in preparation)*
 
-Note-III.3 Effective Base Point Freeness and Separation of Jets *(in preparation)*
+Note-III.3 Hodge Metrics, Griffiths Positivity, and Variation of Hodge Structure *(in preparation)*
+
+Note-III.4 Comparison of the Three Constructions and Their Curvature Properties *(in preparation)*
 
 
 ---
 ## Part IV. Extension of Pluricanonical Forms and Invariance of Plurigenera
 
-The first genuine use of Ohsawa–Takegoshi: sections of $mK_X$ on a fibre or a divisor extend to the ambient space. Invariance of plurigenera is the model case; the dlt extension theorem is the form in which the method enters the minimal model program. The part ends with the two directions in which the theorem is still open — singular families, and non-projective ones.
+The first genuine use of Ohsawa–Takegoshi: sections of $mK_X$ on a fibre or a divisor extend to the ambient space.
 
 [Note-IV.1 Păun's Analytic Proof of Invariance of Plurigenera](https://yilimath.github.io/files/Birational/MetricMethod/InvarPluri.pdf) [upd 5.11]
 
-Note-IV.2 The Algebraic Counterpart: Kawamata and Nakayama via Asymptotic Multiplier Ideals *(in preparation)*
+Note-IV.2 Berndtsson–Păun's Extension Theorem for Metrics with Minimal Singularities *(in preparation)*
 
 Note-IV.3 Demailly–Hacon–Păun's Proof of the DLT Extension Theorem *(in preparation)*
-
-Note-IV.4 Degeneration of Plurigenera and What Fails without Smoothness *(in preparation)*
-
-Note-IV.5 Invariance of Plurigenera beyond the Projective Case: Moishezon and Kähler Families *(in preparation)*
-
-The algebraic extension theorems of Nakayama, Hacon–McKernan, and de Fernex–Hacon, which run parallel to Note-IV.3, are in [Part III of the BCHM notes](https://yilimath.github.io/posts/2026/05/BCHM/).
 
 
 ---
 ## Part V. Positivity of Direct Images
 
-The same extension theorem, applied fibrewise, puts a singular Hermitian metric on $f_* \omega_{X/Y}^{\otimes m}$ with semipositive curvature. We fix the vocabulary for what that means first, then give the two constructions, then the classification results they yield.
+The same extension theorem, applied fibrewise, puts a singular Hermitian metric on $f_* \omega_{X/Y}^{\otimes m}$ with semipositive curvature. We fix the vocabulary for what that means first, then give the two constructions, then the application to the Iitaka conjecture.
 
 Note-V.1 Positivity Notions for Torsion-Free Sheaves and Singular Hermitian Vector Bundles *(in preparation)*
 
@@ -91,8 +76,6 @@ Note-V.2 Păun–Takayama's Construction of Singular Hermitian Metrics on Direct
 [Note-V.3 Hacon–Popa–Schnell's Construction of Singular Hermitian Metrics on Direct Images of Relative (Pluri)canonical Sheaves](https://yilimath.github.io/files/Birational/MetricMethod/HPSIitaka.pdf) [upd 10.24]
 
 Note-V.4 The Iitaka Conjecture: Subadditivity of Kodaira Dimension *(in preparation)*
-
-Note-V.5 Viehweg Hyperbolicity and Applications to Moduli *(in preparation)*
 
 
 ---
@@ -112,13 +95,17 @@ The algebraic development of the canonical bundle formula, subadjunction, and in
 ---
 ## Part VII. Effective Birationality and Boundedness
 
-Now the estimates are used quantitatively. The constants in Parts II and III become explicit bounds on the multiple of $K_X$ that gives a birational map, and boundedness of the family follows from that bound together with a lower bound on volume.
+Now the estimates are used quantitatively. The constants in Parts I and II become explicit bounds on the multiple of $K_X$ that gives a birational map, and boundedness of the family follows from that bound together with a lower bound on volume.
 
-Note-VII.1 Volumes, the DCC Conjecture, and the Statement of Birational Boundedness *(in preparation)*
+Note-VII.1 Cutting Log Canonical Centers and the Theorem of Angehrn and Siu *(in preparation)*
 
-Note-VII.2 Effective Birationality of Pluricanonical Maps: the Analytic Argument *(in preparation)*
+Note-VII.2 Effective Base Point Freeness and Separation of Jets *(in preparation)*
 
-Note-VII.3 Birational Boundedness for Varieties of General Type *(in preparation)*
+Note-VII.3 Volumes, the DCC Conjecture, and the Statement of Birational Boundedness *(in preparation)*
+
+Note-VII.4 Effective Birationality of Pluricanonical Maps: the Analytic Argument *(in preparation)*
+
+Note-VII.5 Birational Boundedness for Varieties of General Type *(in preparation)*
 
 
 ---
@@ -133,16 +120,6 @@ Note-VIII.2 Siu and Păun's Analytic Approach to Shokurov's Non-vanishing *(in p
 Note-VIII.3 Supercanonical Metrics and the Abundance Conjecture *(in preparation)*
 
 Note-VIII.4 The Analytic Proof of Finite Generation of the Canonical Ring *(in preparation)*
-
-
----
-## Part IX. Metric Methods in the Kähler and Analytic Setting
-
-On a Kähler variety there are no divisors to work with, so the metric method is not one tool among several but the only one. This part records the transcendental statements that the earlier parts specialise to in the projective case; the minimal model program built on them is in the [Kähler MMP notes](https://yilimath.github.io/posts/2026/04/Kahler-MMP/).
-
-Note-IX.1 Demailly–Păun's Characterisation of the Kähler Cone and Transcendental Morse Inequalities *(in preparation)*
-
-Note-IX.2 Non-nef Locus, Non-Kähler Locus, and the Divisorial Zariski Decomposition *(in preparation)*
 
 
 ---
