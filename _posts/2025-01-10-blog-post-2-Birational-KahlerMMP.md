@@ -1,6 +1,6 @@
 ---
 title: 'My PhD Thesis Project: Kähler minimal model program'
-date: 2026-09-13
+date: 2026-09-24
 permalink: /posts/2026/04/Kahler-MMP/
 tags:
   - Birational geometry
@@ -43,7 +43,7 @@ Note-6 Existence of MMP for projective morphism between analytic varieties *(in 
 
 [Note-9 Analytic Contraction Theorems](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
 
-Note-10 Projectivity criterion and Kählerness criterion *(in preparation)*
+[Note-10 Projectivity and Kählerness Criteria](https://yilimath.github.io/files/Birational/KahlerMMP/ProjKahlerCriteria.pdf) [upd 9.24]
 
 [Note-11 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf) [TODO]
 
