@@ -21,42 +21,56 @@ My PhD Thesis (Chinese version): 凯勒极小模型纲领及其在变形理论�
 
 ---
 
-## Part II. Reading Notes on the Kähler minimal model program
+## Part II. Reading Notes on the Kähler Minimal Model Program
 
-[Note-0 An Overview of the Kähler Minimal Model Program](https://yilimath.github.io/files/Birational/KahlerMMP/Overview.pdf) [[Video]](https://www.youtube.com/watch?v=JhD0l1nEHX8&t=25s) [upd 9.13]
+**Base draft — updated 21 November 2026.** This edition covers the series with central results, proof ideas, selected detailed arguments, and research directions. Some substantial proofs remain outlines or rely on explicitly cited inputs; the notes have not yet undergone a complete mathematical review. Corrections are welcome.
 
-[Note-1 Quasi-psh Functions, currents, and Lelong Numbers](https://yilimath.github.io/files/Birational/KahlerMMP/LeLongNumber.pdf) [TODO]
+The notes are intended for readers familiar with complex manifolds and Kähler geometry, divisors and singularities of pairs, and the cone, contraction, and base-point-free theorems in the projective MMP.
 
-[Note-2 Positivities and Cones in the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Positivities.pdf) [upd 10.10]
+[Download the complete series (PDF, 156 pages, chapter bookmarks)](/files/Birational/KahlerMMP/KahlerMMP-BaseDraft.pdf)
 
-[Note-3 Transcendental Volume Function](https://yilimath.github.io/files/Birational/KahlerMMP/Volume.pdf)
+[Note-0 An Overview of the Kähler Minimal Model Program](/files/Birational/KahlerMMP/Overview.pdf) · [Video](https://www.youtube.com/watch?v=JhD0l1nEHX8&t=25s)
 
-[Note-4 Boucksom's Divisorial Zariski Decomposition](https://yilimath.github.io/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf) [TODO]
+[Note-1 Currents and Lelong Numbers](/files/Birational/KahlerMMP/LeLongNumber.pdf)
 
-[Note-5 Generalized Kähler Pairs](https://yilimath.github.io/files/Birational/KahlerMMP/GeneralizedPairs.pdf) [TODO]
+[Note-2 Positivities and Cones](/files/Birational/KahlerMMP/Positivities.pdf)
 
-Note-6 Existence of MMP for projective morphism between analytic varieties *(in preparation)*
+[Note-3 Transcendental Volume Function](/files/Birational/KahlerMMP/Volume.pdf)
 
-[Note-7 Rational Curves on Compact Kähler Manifolds](https://yilimath.github.io/files/Birational/KahlerMMP/Rationalcurve.pdf) [upd 5.23]
+[Note-4 Boucksom’s Divisorial Zariski Decomposition](/files/Birational/KahlerMMP/BoucksomZariskiDecomp.pdf)
 
-[Note-8 Cone Theorem for the Kähler MMP](https://yilimath.github.io/files/Birational/KahlerMMP/ConeTheorem.pdf) [upd 12.28]
+[Note-5 Generalized Kähler Pairs](/files/Birational/KahlerMMP/GeneralizedPairs.pdf)
 
-[Note-9 Analytic Contraction Theorems](https://yilimath.github.io/files/Birational/KahlerMMP/Contractions.pdf) [upd 9.28]
+[Note-6 Analytic BCHM for Projective Morphisms](/files/Birational/KahlerMMP/AnalyticBCHM.pdf) — concise theorem and proof strategy.
 
-[Note-10 Projectivity and Kählerness Criteria](https://yilimath.github.io/files/Birational/KahlerMMP/ProjKahlerCriteria.pdf) [upd 9.24]
+[Note-7 Rational Curves on Compact Kähler Manifolds](/files/Birational/KahlerMMP/Rationalcurve.pdf)
 
-[Note-11 Transcendental Base Point Free Conjecture](https://yilimath.github.io/files/Birational/KahlerMMP/Basepointfree.pdf) [TODO]
+[Note-8 Cone Theorem for the Kähler MMP](/files/Birational/KahlerMMP/ConeTheorem.pdf)
 
-[Note-12 Existence of MMP in the Kähler Setting](https://yilimath.github.io/files/Birational/KahlerMMP/ExistMM.pdf) [TODO]
+[Note-9 Analytic Contractions and Their Extension](/files/Birational/KahlerMMP/Contractions.pdf)
 
-[Note-13 Finite Generation Problem in the Kähler Setting](https://yilimath.github.io/files/Birational/KahlerMMP/FinieGeneration.pdf) [TODO]
+[Note-10 Projectivity and Kählerness Criteria](/files/Birational/KahlerMMP/ProjKahlerCriteria.pdf)
 
-Note-14 Canonical Bundle Formulas and Subadjunction with Applications in the Kähler MMP *(in preparation)*
+[Note-11 Transcendental Base Point Freeness](/files/Birational/KahlerMMP/Basepointfree.pdf)
 
-Note-15 Abundance for Kähler Threefolds *(in preparation)*
+[Note-12 Existence of Minimal Models](/files/Birational/KahlerMMP/ExistMM.pdf)
 
-Note-16 Applications of the Kähler MMP *(in preparation)*
+[Note-13 Finite Generation in the Kähler Setting](/files/Birational/KahlerMMP/FinieGeneration.pdf)
 
-[Note-17 On the Kähler 3-Fold and 4-Fold MMP](https://yilimath.github.io/files/Birational/KahlerMMP/Kahler4foldMMP.pdf) [TODO]
+[Note-14 Canonical Bundle Formulas and Subadjunction](/files/Birational/KahlerMMP/CanonicalBundleFormula.pdf)
 
-[Supplement: Tools That Can Be Used to Reduce a Kähler Problem to a Projective Problem](https://yilimath.github.io/files/Birational/KahlerMMP/Toolkits.pdf)
+[Note-15 Abundance for Kähler Threefolds](/files/Birational/KahlerMMP/Abundance.pdf)
+
+Note-16 Applications of the Kähler MMP *(planned separate chapter; applications also appear throughout the current notes)*
+
+[Note-17 The Kähler Threefold and Fourfold MMP](/files/Birational/KahlerMMP/Kahler4foldMMP.pdf)
+
+[Note-18 Termination Problems](/files/Birational/KahlerMMP/Termination.pdf)
+
+[Note-19 Preservation of the Kähler Condition](/files/Birational/KahlerMMP/KahlernessPreservation.pdf)
+
+[Note-20 Uniruled Kähler Manifolds and the MRC Fibration](/files/Birational/KahlerMMP/UniruledKahler.pdf)
+
+[Supplement A: Tools from Kähler Geometry to Projective Morphisms](/files/Birational/KahlerMMP/Toolkits.pdf)
+
+[Supplement B: BDPP and the Positivity-to-Curves Principle](/files/Birational/KahlerMMP/BDPPBase.pdf)
