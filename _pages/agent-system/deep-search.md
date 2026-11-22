@@ -10,8 +10,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: search for the exact missing descent result
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Search for a morphism factoring through the contraction of an exceptional curve. Inspect Tag 0C5J and check its hypotheses in the common resolution.
 
 **Mathematical output:** A justified application; search failure alone must not be called a counterexample.

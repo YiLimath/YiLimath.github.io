@@ -7,231 +7,91 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: choose between two real proof routes
+A proof plan is useful when it selects an achievable next obligation and avoids work that the target does not require. We continue the surface uniqueness problem from Module 1: a given birational map between smooth projective surfaces with nef canonical divisors should extend to an isomorphism.
 
-Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare the two-negativity-application route with the last-blowup route before expanding either. Identify their imported inputs and the first obligation the baseline failed to close. Develop the route that addresses that failure; do not require every possible route to finish.
+The task is to choose between two actual proofs, not to generate a long list of strategies. Both complete arguments are in the [central workshop](/posts/2026/08/agent-system/birational-proof-workshop/). Attempt the problem before reading them if you want an informative baseline.
 
-**Mathematical output:** A completed proof route, or the exact unresolved inference; record searches and failed branches used to reach it.
+## 1. Plan with implications, not job titles
 
-**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+A plan saying “research, reason, verify” names activities but does not explain why the target should follow. The negativity route has a mathematical chain:
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+$$
+\begin{gathered}
+\text{common resolution and canonical identities}\\
+\Longrightarrow D\geq0\text{ and }D\leq0\\
+\Longrightarrow E_p=E_q\\
+\Longrightarrow\text{same contracted curves}\\
+\Longrightarrow\text{descent and an isomorphism}.
+\end{gathered}
+$$
 
+Each arrow has prerequisites. In particular, the two inequalities require different signed applications; the support step requires positive coefficients on every exceptional curve; and the final arrow needs a descent theorem. A completed task called “compare divisors” does not certify all three.
 
-Planning means deciding which missing mathematical justification to pursue next. A task list alone does not express which results actually imply the target. This lesson develops the distinction through a complete interpolation problem, then transfers it to geometric research. Bring the statement and argument records from Module 1.
+The classical distinction between proof methods and their applicability conditions is developed in [Bundy, “Proof Planning,” pp. 261–262](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf#page=1). The source motivates this representation; it does not establish that our agent workflow will be efficient.
 
-**Learning outcome:** you should be able to justify a decomposition, compare routes without confusing sufficient and necessary conditions, choose an informative next action, and preserve useful results when a route fails. Use the worked calculations for the lecture and the four-round laboratory for a separate practice session.
+## 2. Compare the two routes before expanding both
 
-## A complete example before the architecture
+| Route | Decisive move | Inputs that must be available | Characteristic failure |
+|---|---|---|---|
+| Negativity | Prove opposite coefficient inequalities for D | Common resolution, canonical errors, relative nefness, effective pushforwards, negativity lemma | Wrong sign or a missing descent step |
+| Last blowup | Intersect the last exceptional curve with the canonical divisor | Minimal blowup count, blowup formula, descent through a contracted curve, nefness | Using a negative intersection without checking the curve is not a component of the error divisor |
 
-Recall Module 1: a constant $c$ produces the pair $(c,c)$. We now ask what changes when we allow a linear polynomial instead of only constants. You may take all numbers to be real on a first reading; the same calculation works over any field. A “preimage” is an input producing the requested output, and “surjective” means that every output in the stated target space can be produced.
+The second route is especially short for surfaces. Choose a common resolution with the number of blowups in p minimal. If p is nontrivial, let C be its last exceptional curve. If q contracts C, q descends through that blowup and contradicts minimality. Otherwise C is not a component of the effective error $E_q$, and
 
-Let $k$ be a field and let $a,b\in k$ be distinct. Given $u,v\in k$, seek a polynomial $f$ of degree at most $d$ satisfying
+$$
+-1=K_W\cdot C=(q^{\ast}K_Y+E_q)\cdot C\geq0,
+$$
 
-$$f(a)=u,\qquad f(b)=v.$$
+a contradiction. The rest of the proof excludes a nontrivial q using nefness of $K_X$.
 
-The values, evaluation points, and degree constraint all belong to the target. A formula that matches the values but exceeds the allowed degree does not solve the problem.
+This is a method with a specific surface input. It is not a general recipe for arbitrary birational models. The first route may be a better starting point for a different category, but that possibility must be assessed by the actual hypotheses and missing lemmas.
 
-### First route: construct and check a witness
+## 3. Select the next action from the current obstruction
 
-For $d\ge1$, consider
+Suppose the baseline has already established the canonical identities but repeatedly mishandles the sign in negativity. The next useful action is to instantiate the exact lemma with B=D over X and B=-D over Y. Searching for further common resolutions adds no evidence to that gap.
 
-$$f(t)=u\frac{t-b}{a-b}+v\frac{t-a}{b-a}.$$
+Suppose instead the divisor comparison is complete but descent is missing. Retrieve [Stacks Tag 0C5J](https://stacks.math.columbia.edu/tag/0C5J), check that q contracts the last exceptional curve of p, and factor q. Repeating the comparison is wasted work unless a new doubt about it has appeared.
 
-The denominators are nonzero because $a\ne b$. At $t=a$, the first fraction is one and the second term is zero, so $f(a)=u$. At $t=b$, the first term is zero and the second fraction is one, so $f(b)=v$. Each summand has degree at most one. Thus the witness meets the degree constraint.
+A plan should name the expected mathematical output of each action. “Read a paper” is an activity. “Locate a theorem allowing a morphism constant on the exceptional curve to factor through its contraction, then check its hypotheses” is a bounded research action.
 
-This gives three explicit obligations: the expression is defined, it has the required values, and it has the permitted degree. “Construct an interpolating polynomial” becomes a proof plan only when these checks are included.
+## 4. Joint prerequisites and alternative routes
 
-### Second route: solve a linear system
+Within the negativity route, both inequalities are required. Between the two complete routes, either valid proof suffices. These are different relationships. A scheduler that treats the inequalities as alternatives can stop too early; one that insists on completing both full proofs can waste resources.
 
-Write $f(t)=c_0+c_1t$. The evaluation equations become
+A second route is worthwhile when it supplies a cheaper proof, a genuinely different check, or information relevant to a planned extension. Do not expand it only to create the appearance of independent corroboration. Two workers invoking the same unproved descent implication still share the same gap.
 
-$$\begin{pmatrix}1&a\\1&b\end{pmatrix}
-\begin{pmatrix}c_0\\c_1\end{pmatrix}
-=\begin{pmatrix}u\\v\end{pmatrix}.$$
+Keep a plan conditional until its inputs are justified. “Assuming descent, the argument concludes” is useful progress if descent is an explicit obligation. It is not an accepted proof of the target.
 
-The determinant is $b-a\ne0$. The matrix is invertible, so every pair of values has a preimage. For larger degree bounds, this degree-at-most-one solution remains available.
+## 5. Replan after mathematical evidence changes
 
-This argument proves more than existence for one pair: the evaluation map is surjective. Its extra generality can be useful when later tasks require many pairs. If only one pair matters, the explicit witness may be the shorter route.
+Remove nefness of $K_X$. In the first route, $D\geq0$ still follows from nefness of $K_Y$, while the reverse inequality loses its justification. The blowup of an abelian surface supplies a counterexample to the weakened target. At this point the right action is to stop trying to prove that false statement, not to allocate more workers.
 
-### A boundary case changes the decision
+For the relative-nef variant over S, the target is not refuted. The decisive check is whether each curve used in the inequality is contracted over S. A common resolution commuting with the maps to S supplies that condition. Replanning should distinguish a demonstrated obstruction from a missing application check.
 
-For $d=0$, every allowed polynomial is constant. A solution exists precisely when $u=v$. The pair $(1,1)$ lifts and $(1,0)$ does not. Surjectivity onto all of $k^2$ is false, but some specified pairs still have preimages.
+## 6. A bounded planning experiment
 
-This boundary case is the planning lesson: failure of a stronger route does not imply failure of the chosen target. This is exactly Module 1's rule $r(c)=(c,c)$. The geometric interpretation is optional.
-
-## Work backward, then verify forward
-
-Backward reasoning asks what would suffice for the target. Forward checking asks whether that proposed sufficient condition is actually established. A complete decomposition needs both.
-
-For example, to show a continuous real-valued function on $[0,1]$ attains a maximum, a planner may propose the extreme value theorem. The resulting obligations include continuity, real-valuedness, and a nonempty compact domain. The source theorem supplies the conclusion only after its hypotheses are checked.
-
-If the domain becomes $(0,1)$, the compactness route no longer applies. That alone does not say whether a particular function attains a maximum: the constant zero function does, while $f(x)=x$ does not.
-
-Before scheduling subtasks, ask: **if every listed subtask succeeded, would the original target follow?** If an additional theorem or transfer argument is needed, it belongs in the plan.
-
-Lean's official [tactic tutorial](https://lean-lang.org/theorem_proving_in_lean4/Tactics/) illustrates how theorem application creates remaining goals. Our informal plans use analogous distinctions, but still need mathematical review; Markdown goal lists are not kernel-checked proofs.
-
-## Two routes to one specified output
-
-Keep the target fixed: produce the requested pair $(u,v)$ by evaluating an allowed polynomial at the distinct points $a,b$.
-
-| Route | What must be checked together | Result |
-|---|---|---|
-| Direct witness | Formula is defined; both values match; degree is allowed | This requested pair is produced |
-| General solvability | Degree bound allows linear polynomials; evaluation matrix is invertible | Every pair can be produced, including this one |
-
-For degree zero, the general route fails because constants cannot produce every pair. The direct route still succeeds for $(1,1)$ using the constant $1$. This is why failure of a stronger route must not be treated as failure of the specified target.
-
-[![Two elementary proof routes: check one witness or establish solvability for every pair.](/images/agent-system/course-elementary-routes.svg)](/images/agent-system/course-elementary-routes.svg)
-
-The two routes end at the same question. Each route requires all of its own checks; completing checks from unrelated targets does not supply a proof.
-
-## The dependency rule
-
-A conclusion becomes supported when at least one justified argument has all its premises supported or explicitly assumed. If $P\Rightarrow Q$ and $Q\Rightarrow P$, neither $P$ nor $Q$ follows without a starting point. Repeated execution does not add a logical premise.
-
-For an indexed argument, a finite dependency trace is not a proof of induction. Suppose $B_0$ is established and, for every $n\ge1$, the following implications are proved:
-
-$$B_{n-1}\Rightarrow A_n,\qquad A_n\Rightarrow B_n.$$
-
-Then the dependencies admit the order
-
-$$B_0,\ A_1,\ B_1,\ A_2,\ B_2,\ldots.$$
-
-The general implications and base case justify induction. Checking a finite list of instances does not replace either obligation.
-
-## Choose an action that can change the assessment
-
-Suppose the interpolation task omitted the degree bound. A search for more sophisticated theorems is premature: determining the permitted degree separates a universally solvable problem from one with a compatibility condition.
-
-| Action | Evidence it could produce | Decision it affects |
-|---|---|---|
-| Clarify the degree bound | Exact target specification | Whether linear interpolation is allowed |
-| Substitute into a proposed polynomial | Verification or failure of its values | Whether this witness works |
-| Check its degree | Compatibility with the target | Whether the witness solves the actual task |
-| Compute the determinant | Surjectivity of evaluation | Whether every pair can be solved |
-| Test the degree-zero case | A necessary compatibility condition | Whether a general claim is overstated |
-
-The purpose is not to assign invented probabilities to each action. State the uncertainty, the action, a reasonable budget, and how its possible outcomes would alter the plan. A short decisive calculation may be more useful than another broad search.
-
-For a research problem, an informative action might check a theorem’s compactness or boundedness hypothesis, prove a restricted version of the hardest lemma, or test a family that could break a uniform estimate. Positive evidence from a special case does not prove the general theorem, but can expose the mechanism that a general proof would need.
-
-## Distinguish rejection, uncertainty, and exhaustion
-
-A counterexample can refute a proposed bridge. An unverified source hypothesis leaves an applicability question open. A timeout records an operational failure. These outcomes require different next steps.
-
-In the interpolation problem, degree zero with unequal values gives a complete negative answer. For an analysis problem, an unproved uniform bound leaves that route unresolved. An interrupted calculation supplies no mathematical verdict at all.
-
-Keep useful results when replanning. If a candidate polynomial has the right values but excessive degree, preserve the interpolation identity as a result for a different degree bound. Do not present it as a solution of the original task. If a source check fails, retain any valid definitions and matrix calculations that did not depend on the failed application.
-
-Stop a branch when its decisive necessary condition fails. Stop a bounded experiment when its agreed budget is spent and export the remaining gap. Declare the original task complete only with an argument for its exact conclusion or a valid refutation. A well-scoped partial result is valuable without being renamed a full solution.
-
-## Laboratory: four rounds in Codex
-
-Save the initial response before giving corrective hints. These prompts specify experiments; they are not transcripts of successful runs.
-
-### Round 1: compare real routes
+Start with the same theorem, source packet, model, and total allowance in two fresh sessions. Let one attempt a direct proof. In the other, request at most two routes, their decisive inputs, and a choice of one route before full expansion.
 
 ```text
-For distinct a,b in a field k, find a polynomial of degree at most d
-with prescribed values u,v at a,b. Compare an explicit witness with
-a linear-system argument. State each prerequisite and check every step.
-Treat degree zero separately. Keep the same target across both routes.
+Compare the negativity and last-blowup routes for this surface target.
+For each, state the decisive lemma and the implication back to isomorphism.
+Use the current proved state; do not redo established constructions.
+Choose one route, attempt its first unresolved obligation, and revise
+only when the result gives a mathematical reason to do so.
 ```
 
-**Inspect:** the two derivations above provide reference answers. The assistant must check the denominators, evaluations, and degree; a correct formula without those checks is an incomplete submission.
+Preserve unsuccessful actions and source lookups. If the structured run is more expensive but no more correct, it has not demonstrated a benefit. If the baseline succeeds immediately, use an unfamiliar lemma from your research or evaluate cost rather than claiming increased capability.
 
-### Round 2: expose a false inference
+## 7. Exercises and acceptance
 
-```text
-A proposed argument says: the space of constants and k² are both nonzero,
-therefore evaluation from constants to k² is surjective.
-Locate the failed inference and compute the actual image.
-Test the pairs (1,1) and (1,0), without changing the allowed degree.
-```
+**Find a premature stop.** A plan has proved only $D\geq0$. Explain why it cannot yet use equality of exceptional supports, then specify the next signed application.
 
-**Inspect:** the image is the diagonal. A correction that suddenly permits degree-one polynomials has changed the task. Preserve the original failure and the repair separately.
+**Audit a shortcut.** In the last-blowup route, justify why $E_q\cdot C\geq0$. The answer must establish that C is not a component of $E_q$; effectivity alone is insufficient when the curve is a component.
 
-### Round 3: test grounding
+**Choose between further search and proof.** If Tag 0C5J has been located and its hypotheses match, complete the application before issuing broader literature searches. Record whether the intervention saves repeated lookup or closes a stalled step.
 
-```text
-We have valid implications A implies B and B implies A, but neither
-antecedent is established. Report what follows.
-Add an independent proof of A as stipulated evidence, then withdraw it.
-Explain each change without claiming the stipulated proof was checked.
-```
+**Transfer.** Explain which part of either route is specifically two-dimensional before considering a higher-dimensional uniqueness claim. A valid surface proof does not justify changing the dimension in the target.
 
-**Inspect:** initially only the implications are available. The independent support permits both conclusions; its withdrawal leaves the cycle without a starting point. Multiple approving reports do not supply that point.
+Submit the chosen route, its completed argument or exact remaining gap, and the action record. Measure solved obligations and total resources, not the size of the plan.
 
-### Round 4: attempt a bounded research plan
-
-Choose one theorem application in your field and supply its actual source. Allow three substantive actions, such as a hypothesis audit, a boundary calculation, and a lemma attempt. After each action, record what changed mathematically and what remains open. Do not count rephrasing a plan as another established result.
-
-Submit the actual argument or calculation, not merely a summary that an action was completed. This round has no promised positive outcome: a precisely diagnosed obstruction can be its most useful result.
-
-## Exercises and worked answers
-
-<details markdown="1">
-<summary>1. Does counting completed subtasks measure progress?</summary>
-
-A route requires P and Q. P is proved, and the assistant reports 50% completion. What is missing from that assessment?
-
-**Answer.** Q may contain essentially the entire research difficulty. The plan also needs a justified implication from P and Q to the target. The count can be recorded as operational information, but it does not measure mathematical distance to a proof. Report the exact remaining obstacle.
-
-</details>
-
-<details markdown="1">
-<summary>2. What changes when the evaluation points coincide?</summary>
-
-Set $a=b$ in the interpolation task. Analyze equal and unequal prescribed values.
-
-**Answer.** If $u\ne v$, the same input cannot have both values, so no function meets the requirements. If $u=v$, the constant $u$ works whenever constants are allowed. The earlier formula is undefined because its denominators vanish; a true conclusion in the equal-value case does not repair that formula.
-
-</details>
-
-<details markdown="1">
-<summary>3. Can failure of surjectivity settle a specified lifting task?</summary>
-
-**Answer.** No. A proper image may still contain the specified element. The diagonal image contains $(1,1)$ and excludes $(1,0)$. The correct next question is membership of the chosen pair, unless some other argument already decides it.
-
-</details>
-
-<details markdown="1">
-<summary>4. Which induction pattern has a starting point?</summary>
-
-Compare $A_n$ from $B_{n-1}$ and $B_n$ from $A_n$, with $A_n$ from $B_n$ and $B_n$ from $A_n$. Assume $B_0$ is established.
-
-**Answer.** The first pattern supports the order $B_0,A_1,B_1,A_2,B_2,\ldots$, provided the general implications are proved. In the second pattern, $B_0$ supplies no starting point for the mutual dependence of $A_1$ and $B_1$. Calling it induction does not establish well-foundedness.
-
-</details>
-
-<details markdown="1">
-<summary>5. Design a probe for a uniform estimate</summary>
-
-You have separate bounds for each object and need one bound for the whole family. What could a useful next action establish?
-
-**Answer guide.** Inspect the dependence of the constants, seek a family forcing them to grow, or prove a uniform estimate on a precisely restricted subfamily. A counterexample can reject the proposed general bridge. Finitely many bounded examples do not prove uniformity over the entire family. State exactly which assessment the probe changes.
-
-</details>
-
-## Assessment and design limits
-
-Submit the two interpolation arguments, the invalid-inference diagnosis, the cycle experiment, and a bounded research action log. The strongest submission explains why an action was chosen, what its actual evidence establishes, and why the next plan changed.
-
-Do not turn every arithmetic operation into an administrative task. Split an obligation when it has a separately checkable statement, a reusable result, a different evidence source, or a meaningful independent attempt. Excessive decomposition increases maintenance costs and can hide a stalled hard lemma behind many completed easy tasks.
-
-The mathematical examples have derivations in this chapter. The conversational protocol is a design proposal whose behavior must be tested. Correct mathematics in the reference answer is not evidence that an assistant reliably follows the protocol.
-
-## Continue with the research record
-
-Use both (1,1) and (1,0). Then remove the evidence for one route and ask which alternatives remain. Separately test the circular P/Q example. Submit the actual plan, actions, and revised status; compare with the mathematical reference rather than accepting a confident completion label.
-
----
-
-[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/knowledge-retrieval/)
-
-
-## Source basis and limits
-
-Bundy, [“Proof Planning,” pp. 261–262](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf#page=1), distinguishes proof methods and their prerequisites. Our task files and route-selection policy are proposed teaching implementations, not results validated by that paper.
+[Next: use the literature](/posts/2026/08/agent-system/knowledge-retrieval/) · [Course roadmap](/posts/2026/12/Agent-System/)

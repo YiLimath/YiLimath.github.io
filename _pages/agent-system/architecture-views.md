@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: draw only the dependencies the proof uses
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Separate the logical arrows leading to D = 0 and descent from the operational arrows used to retrieve and inspect sources. Label each logical arrow with its hypotheses.
 
 **Mathematical output:** A diagram from which another reader can reconstruct the actual proof obligations.

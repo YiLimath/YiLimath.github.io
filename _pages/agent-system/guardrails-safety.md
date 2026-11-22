@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: protect the exact theorem from silent weakening
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Keep the original target and source statements read-only while the proof attempt develops. Detect a candidate that adds “assume the birational map is already a morphism.”
 
 **Mathematical output:** A rejected target change or a valid justification of the added intermediate property.

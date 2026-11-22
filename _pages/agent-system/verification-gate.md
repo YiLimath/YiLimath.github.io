@@ -8,162 +8,62 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: inspect a proof whose ending is missing
+Review should change a mathematical decision: preserve a valid argument, locate the inference blocking completion, or reject an unsupported conclusion. We use the surface uniqueness proof to make those outcomes inspectable. An approval label alone adds no proof.
 
-Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Review the baseline for the signs in negativity, positivity of exceptional coefficients, and descent. Preserve correct steps. If the proof ends at equality of exceptional loci, require the factorization argument rather than accepting the phrase “therefore isomorphic.”
+## 1. Freeze the actual statement and attempt
 
-**Mathematical output:** A localized gap report and a repaired argument; the informal report is not a formal certificate.
+Give the reviewer the surface assumptions, the specified birational map, the common resolution and canonical conventions, the complete candidate argument, and its sources. Preserve that exact version. Otherwise a report may approve an argument under assumptions different from those of the current task.
 
-**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+The [central workshop](/posts/2026/08/agent-system/birational-proof-workshop/) is the reference proof, not evidence that an agent has solved it. Keep it out of a session intended to measure independent solving.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+## 2. Review a wrong-sign application
 
+Suppose a candidate defines $D=p^{\ast}K_X-q^{\ast}K_Y$ and proves that -D is p-nef and that $p_{\ast}D$ is effective. It then concludes $D\leq0$.
 
-Review asks whether an argument supports its conclusion. Admission asks whether the workflow may reuse that conclusion, under which assumptions and for which version. These decisions are related, but neither an approving tone nor a field named `verified` supplies mathematical evidence.
+The computations can be correct while the conclusion has the wrong sign. [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), applied with its divisor B equal to D, gives $D\geq0$. Preserve the computations; repair the inference. The opposite inequality requires the separate application with B=-D over Y.
 
-**Learning goals:** localize a defective inference; distinguish a gap from a counterexample; preserve assumptions through a chain; and bind a review to the text it examined. The laboratory uses the limit and prescribed-output examples from earlier modules. No formal prover is required yet.
+A useful report names the first invalid inference, states the justified conclusion, and identifies the additional work needed. “Negativity was used incorrectly” is too vague to guide repair. Rejecting the entire proof discards valid work unnecessarily.
 
-## The endpoint: checking evidence rather than requiring a human reviewer
+## 3. Review a hidden circular assumption
 
-The informal reviews below teach how to identify defective inferences. They are not the strongest available acceptance mechanism. When the exact target and its dependencies are formalized, replace routine human proof review with mechanical validation and an explicit admission policy. A second approving model is not equivalent to a checked proof.
+A candidate tries to prove D is p-exceptional by asserting that p and q have the same exceptional loci, then uses negativity to conclude those loci agree. This imports the desired relationship as a premise.
 
-Maintain separate lanes: exploratory informal claims may remain useful and conditional; formally admitted results carry validated evidence for a fixed declaration. Promoting between lanes requires the evidence, not a stronger confidence label. This is the [proof-producing architecture in Module 6](/posts/2026/08/agent-system/lean-formalization/#8-build-an-admission-path-without-routine-human-proof-review).
+The repair is to use the version of negativity requiring an effective pushforward. Compute $p_{\ast}D=p_{\ast}E_q\geq0$ without assuming the loci agree. The reviewer has not merely detected circularity; it has identified a legitimate route around the unnecessary premise.
 
-## 1. A reviewer needs a claim, an argument, and a context
+If the reviewer proposes this repair, record that mathematical assistance. A run rescued by a supplied decisive argument should not be described as unaided discovery.
 
-Consider this submission:
+## 4. Review the final return
 
-> Each approximating function is continuous. The sequence converges pointwise. Passing to the limit proves continuity.
+Even after $E_p=E_q$ is proved, the target is unfinished unless descent is justified. Check positive support, the point-blowup factorization, and [Tag 0C5J](https://stacks.math.columbia.edu/tag/0C5J) at each contraction. Then check the inverse identities.
 
-An unhelpful review says “more rigor is needed.” A useful review identifies the exact transition: pointwise convergence does not justify preservation of continuity. It then separates three questions. Are the premises established? Does the stated implication hold? Is the particular target nevertheless true for another reason?
+The report should distinguish “this step is missing” from “the conclusion is false.” For the original surface target the gap is repairable. When nefness of one canonical divisor is deleted, a blowup of an abelian surface refutes the weakened theorem. Those are different mathematical outcomes.
 
-For $f_n(x)=x^n$ on $[0,1]$, the premises are valid and the conclusion is false. The calculation from Module 4 supplies a counterexample. For a constant sequence of continuous functions, the same general inference is still unjustified as stated, but the particular limit is continuous. An invalid argument and a false conclusion are not synonyms.
+## 5. Admission preserves assumptions
 
-To make the review reproducible, freeze the target, proof text, hypotheses, and cited source versions. “Review my latest proof” is ambiguous once several revisions coexist. An ordinary filename and a version label can suffice for the course; the important point is that the reviewed text remains available.
+A proof conditional on a descent lemma remains conditional until that lemma is established or validly imported. Saving it in a theorem file does not discharge the assumption. If a source application is invalidated, withdraw that route's support while retaining unaffected calculations and alternative proofs.
 
-## 2. Review an argument one inference at a time
-
-Here is a more detailed defective proof. Fix $x_0$ and $\varepsilon>0$. Choose $N$ so that $\vert f_N(x_0)-f(x_0)\vert<\varepsilon/3$. By continuity of $f_N$, choose $\delta$ controlling its variation near $x_0$. Apply the triangle inequality and conclude that $\vert f(x)-f(x_0)\vert<\varepsilon$ whenever $\vert x-x_0\vert<\delta$.
-
-The beginning looks like the correct uniform-limit proof. The precise omission is an estimate for $\vert f(x)-f_N(x)\vert$ at all nearby $x$ for the **same** $N$.
-
-| Inference | Review | Reason |
-|---|---|---|
-| Choose $N$ controlling the error at $x_0$ | Accepted | Pointwise convergence supplies this |
-| Choose $\delta$ for continuity of this $f_N$ | Accepted | $N$ is now fixed |
-| Split the difference into three terms | Accepted | Triangle inequality |
-| Bound the error at every nearby $x$ | Unsupported | Pointwise convergence supplies thresholds depending on $x$ |
-| Deduce continuity of $f$ | Not established | Depends on the unsupported estimate |
-
-This report preserves the valid work. It also suggests a concrete repair: establish an estimate uniform on a neighborhood of $x_0$. Global uniform convergence would suffice, but can be stronger than necessary. The reviewer should identify this as a new obligation, not silently add it to the original hypotheses.
-
-## 3. Admission carries assumptions forward
-
-Suppose a draft establishes $P\Rightarrow Q$ and $Q\Rightarrow R$, while $P$ is an unproved assumption. Then $R$ is available conditionally on $P$. Writing a separate lemma for $Q$ does not discharge $P$.
-
-For the output problem, let $P$ say that the requested pair has equal entries. The rule $r(c)=(c,c)$ then gives a solution by choosing that common value. Until the equality is established, this is a conditional result. It is useful because it identifies the remaining check; it does not justify a solution for arbitrary requested pairs.
-
-Store three distinct fields:
-
-| Field | What it answers | Example |
-|---|---|---|
-| Workflow status | What has been done? | Reviewed and admitted for conditional use |
-| Evidence | Why is the implication supported? | Inspected argument using the common value as input |
-| Scope | What may be concluded? | A solution assuming the two requested entries are equal |
-
-Do not compress these fields into a confidence percentage. A confidence score cannot say which hypothesis a downstream proof must retain.
-
-[![Review and admission: a frozen submission receives a localized report, then a scoped decision; revisions return for impact review.](/images/agent-system/course-review-admission.svg)](/images/agent-system/course-review-admission.svg)
-
-The diagram separates the reviewer from the decision to reuse a result. In a small workspace, one person can perform both functions. The separation is logical rather than a requirement to create two agents.
-
-## 4. What changes when a proof is revised?
-
-Recall Module 1's rule $r(c)=(c,c)$. The requested output $(1,1)$ is produced by $c=1$, while $(1,0)$ cannot be produced. No geometric interpretation is needed for this review test.
-
-A review of the input $c=1$ supports the first requested output. If a revision replaces that output by $(1,0)$, the old review no longer supports the target. Yet the description of the possible outputs remains reusable. A good change review therefore says both what expires and what survives.
-
-Compare three revisions:
-
-1. A typographical correction leaves the proposition and proof unchanged. Confirm that it is only editorial.
-2. A new proof of the same statement replaces a cited theorem. Review the replacement argument and its assumptions; the old review remains evidence about the old proof.
-3. A changed requested output, domain, quantifier, or allowed input changes the mathematical target. Recheck applicability even if most prose is identical.
-
-This is why “review every changed file from scratch” can waste effort, while “reuse every old approval” is unsafe. The useful unit is the affected mathematical inference. The system must still justify its judgment that an edit is irrelevant.
-
-## 5. Design a review request with a bounded job
-
-Create a frozen submission and a separate report. Give the reviewer enough source material to inspect the argument, not merely a summary saying that another assistant approved it.
-
-```text
-Review TARGET-v2 and ARGUMENT-v3 without editing them.
-For each substantive inference, identify its premises and justification.
-Classify findings as a false inference, missing evidence, or an accepted step.
-For a claimed counterexample, check every hypothesis of the target.
-State the strongest conclusion supported and all remaining assumptions.
-Propose repairs separately; do not incorporate them into the reviewed claim.
-```
-
-Ask for a second pass after a repair. It should compare the repaired argument with the original finding: was the missing estimate proved, assumed, or avoided by a different route? A longer proof is not evidence that the gap disappeared.
-
-A fresh conversation can reduce exposure to earlier persuasive framing, but it does not guarantee independent mathematical errors. Two reviewers can share the same misconception or incomplete source. Stronger evidence comes from checking the fragile step by another method: an explicit example, a source application audit, or an appropriate formalization.
-
-## 6. Four laboratory tests
-
-Use the same report format for all four cases. Save responses before giving corrections.
-
-| Input | Expected review behavior |
+| Finding | Permitted conclusion |
 |---|---|
-| Correct uniform-limit proof | Accept the actual argument under its stated hypotheses |
-| Pointwise proof with the omitted nearby error term | Localize that missing estimate |
-| Old $(1,1)$ review attached to new $(1,0)$ target | Reject transfer of approval; retain the image calculation |
-| Valid chain from assumed $P$ to $R$ | Preserve $P$ in the conclusion's scope |
+| Both signed applications and descent justified | The specified isomorphism target is established informally |
+| Comparison complete, descent not supplied | Intermediate divisor equality established; target open in this argument |
+| Nefness of $K_X$ removed | First inequality may survive; reverse application needs reconsideration |
+| A counterexample satisfies the weakened hypotheses | That weakened statement is false |
+| A process times out | No mathematical verdict from the timeout |
 
-Include the valid control. A reviewer that finds imaginary flaws everywhere is not successful. Likewise, a reviewer that says “unverified” without reading any inference has not completed the job.
+## 6. Mechanical validation has a different role
 
-For formal claims, ask what was actually checked. Lean code in a response is a proposed artifact. The next module introduces execution evidence, axiom dependencies, and the separate question of whether the encoded statement matches the intended one.
+A Lean proof is evidence for its encoded declaration under its definitions and dependencies. It does not automatically establish that the declaration expresses this surface theorem. The official [validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) distinguishes proof validity from intended meaning and describes dependency and environment checks.
 
-## 7. Exercises and worked answers
+An abstract formal proof that opposite coefficient inequalities imply equality verifies that component only. It does not certify the source applications or descent. Conversely, a second model's informal approval is not a kernel certificate. Future automated admission should rely on the appropriate checked evidence rather than permanently requiring a human to reread every proof step.
 
-<details markdown="1">
-<summary>1. A counterexample violates one hypothesis</summary>
+## 7. Evaluate the review on actual faults
 
-A reviewer rejects the compact-domain maximum theorem using $f(x)=x$ on $(0,1)$. Is this a valid refutation?
+Use one complete candidate and variants containing a wrong sign, an assumed equality of exceptional loci, or omitted descent. Keep these as teaching fixtures, not invented historical agent failures. Ask the reviewer to localize each issue and preserve the correct parts.
 
-**Answer.** No. The example violates compactness, so it does not refute the theorem. It does refute the proposed version without compactness. The review must identify which statement it tests.
-</details>
+Then test the repaired argument on the relative-nef variant. The reviewer must check the common base and contracted image curves rather than accept the previous verdict unchanged.
 
-<details markdown="1">
-<summary>2. Repair or target change?</summary>
+Measure both invalid acceptance and unnecessary rejection of valid work. Count repairs, rereading, and researcher-supplied mathematics. A reviewer that blocks every result is not useful, and a reviewer that approves every fluent proof is not reliable.
 
-A failed continuity proof on $[0,1]$ is replaced by a correct proof on every $[0,a]$ with $a<1$.
+**Submit:** the exact attempts, localized findings, repaired steps, and scoped conclusions. The valuable outcome is a proof completed or corrected at an acceptable cost. The informal review protocol remains a proposal until its behavior is observed.
 
-**Answer.** This is a useful weaker result on a smaller domain, not a completion of continuity at the endpoint. Record the new branch and retain the unresolved or false original conclusion as appropriate to the example.
-</details>
-
-<details markdown="1">
-<summary>3. Two approvals disagree with a direct calculation</summary>
-
-Two reviews approve an input for $(1,0)$, but every possible output is proved to have equal entries. What should the merge do?
-
-**Answer.** Inspect the arguments and objects, not the vote count. Under the stated hypotheses, the equal-entry calculation excludes $(1,0)$. Locate the erroneous step in the approvals and withdraw their support. Agreement supplies no alternative mathematical implication.
-</details>
-
-<details markdown="1">
-<summary>4. What exactly should a conditional review admit?</summary>
-
-**Answer.** It may admit the implication and allow use of its conclusion in a context where the remaining assumption is explicit. It may not mark the assumption established. Downstream arguments should inherit that assumption unless they discharge it or use an independent route.
-</details>
-
-## 8. Assessment
-
-Submit the frozen inputs, localized reports, repaired versions, and final scoped decisions. Explain one valid inference preserved and one invalid inference blocked. The goal is a review that makes the mathematics easier to inspect and repair, rather than a ritual that turns generated prose into an approval label.
-
----
-
-[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/lean-formalization/)
-
-
-## Source basis and limits
-
-The official [Lean validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains the distinction between a valid formal proof and the meaning of its statement. Informal review procedures below are our design proposals and do not inherit kernel-checking guarantees.
+[Next: formalization](/posts/2026/08/agent-system/lean-formalization/) · [Course roadmap](/posts/2026/12/Agent-System/)

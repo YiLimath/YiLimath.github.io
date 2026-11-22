@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: spend mathematical assistance where it matters
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. After the baseline, record whether the researcher supplies a theorem locator, identifies a missing step, or provides the decisive proof. Count these separately when attributing success to the workflow.
 
 **Mathematical output:** An explicit assistance record; automation claims must not hide human proof construction.

@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: make the next action close an obligation
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. When the proof reaches E_p = E_q, the next action is to establish descent through a point blowup. Retrieve and apply Tag 0C5J rather than asking for another general proof sketch.
 
 **Mathematical output:** The new factorization, or a precise reason it cannot be justified.

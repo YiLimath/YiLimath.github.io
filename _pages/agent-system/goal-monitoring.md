@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: keep the theorem distinct from its intermediate identity
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Challenge an answer that declares completion after p* K_X = q* K_Y. Ask it to produce the morphism extending the given birational map and prove its inverse.
 
 **Mathematical output:** The actual target completed, with the extra work needed after the divisor comparison.

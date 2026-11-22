@@ -5,73 +5,30 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: use a complete geometric case across modules
+The course follows one geometric argument through three versions. They have different mathematical outcomes, so they test whether an agent uses the hypotheses rather than memorizing a verdict. Full proofs and sources are in the [minimal-surface workshop](/posts/2026/08/agent-system/birational-proof-workshop/).
 
-Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the surface uniqueness workshop as the shared proof task. The constant-function and analysis cases below remain optional diagnostics for particular logical errors.
+## Two nef canonical divisors
 
-**Mathematical output:** A proof-level result in the geometric case; elementary diagnostics alone do not establish research usefulness.
+Let X and Y be smooth projective surfaces over an algebraically closed characteristic-zero field, and let a birational map between them be given. If both canonical divisors are nef, prove that this map extends to an isomorphism.
 
-**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+Compare canonical divisors on a common resolution, apply negativity with opposite signs, identify the contracted curves, and prove descent in both directions. The imported inputs are [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), [Stacks Tag 0C5S](https://stacks.math.columbia.edu/tag/0C5S), [Tag 0C5R](https://stacks.math.columbia.edu/tag/0C5R), and [Tag 0C5J](https://stacks.math.columbia.edu/tag/0C5J). Stopping at a divisor identity does not complete the target.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+## Remove one nefness assumption
 
+Keep only nefness of $K_Y$. Blow up an abelian surface Y at a point to obtain X, with exceptional curve E. Then $K_Y=0$, but $K_X=E$ and $K_X\cdot E=-1$. The blowdown is not an isomorphism, so the weakened general statement is false.
 
-The examples in this series have different jobs. The elementary maximum example is a smoke test for a missing hypothesis. The following three cases expose deeper architectural requirements: transferring a result between objects, preserving quantifiers through approximation, and organizing induction. None is offered as a new research theorem.
+One half of the original divisor comparison survives; the other does not. The agent should retain the surviving proof and give the counterexample. Failure of a proof step alone would not establish falsity.
 
-## Case A. Produce the specified output, not merely some output
+## Work over a common base
 
-Start with real numbers and the rule $r(c)=(c,c)$. Choosing $c=1$ produces $(1,1)$. It does not produce the requested pair $(1,0)$. Indeed, no input can produce that pair because every output has equal entries.
+Let the surfaces map to a common projective base S, with the birational map over S, and assume the canonical divisors are nef over S. A p-contracted curve on a common resolution over S has q-image either a point or a curve contracted over S. Relative nefness supplies the same intersection inequalities, and descent gives an isomorphism over S.
 
-This separates three questions: does an input exist at all, does one produce $(1,1)$, and does one produce $(1,0)$? The first two answers are yes; the third is no. A system that substitutes one question for another can report a valid calculation as a solution to the wrong target.
+The new applicability evidence is commutativity over the base. Repeating the absolute theorem without checking curve images is insufficient.
 
-Save the exact output rule, requested pair, candidate input, and comparison of actual versus requested output. Module 1 works through this example step by step. Module 4 extends this idea to limits, and the coordinate-change workshop tests what happens when a formula is not defined everywhere.
+## Use these cases to test an intervention
 
-## Case B. Approximation does not manufacture a uniform bound
+Preserve a direct-agent baseline. Add a source check, precise state, or focused repair only when it addresses an observed gap. Compare complete arguments and actual resources under comparable inputs. Withhold reference solutions from independent-solving runs.
 
-Suppose a method constructs quantities $u_j$ and proves $\vert u_j\vert \le C_j$ for every $j$. The target requires a single finite $C$ with $\vert u_j\vert \le C$ for all $j$. These are different quantifier structures:
+These are classical teaching cases, not discoveries or observed agent successes. Transfer the workflow to an unfamiliar proof in your research before claiming broader usefulness.
 
-$$
-\forall j\;\exists C_j\quad\text{versus}\quad\exists C\;\forall j.
-$$
-
-The first gives no uniform estimate. The sequence $u_j=j$ in $\mathbb R$ is already a counterexample to that implication. If a limiting argument requires compactness, the planner must identify the topology and an actual compactness theorem; boundedness alone is not sufficient in every space and topology.
-
-In geometric analysis, an approximation route often has exactly this shape: construct regularized objects, prove estimates, extract a limit, and identify the limit as a solution of the original problem. The architecture must record which constants depend on the approximation parameter, what converges, and which properties pass to the limit. This paragraph describes a proof obligation, not a claim that any specific analytic conjecture follows.
-
-### Required artifacts
-
-An estimate record names the quantity, norm or topology, domain, allowed parameter dependence, and range of parameters. A limit record names the convergence theorem and the implication that transfers the property. Sampling many values can expose bad estimates; it cannot establish an infinite uniform bound.
-
-A useful failure report is “the estimate depends on j, and no uniform replacement is supplied.” “The approximation approach is wrong” is too broad: the route may be repairable with a different estimate.
-
-## Case C. Mutually supporting statements need a well-founded order
-
-Consider a schematic theorem package with statements $A_n$ and $B_n$. Assume explicit base cases $A_0,B_0$, and suppose that for every $n>0$ there are justified implications
-
-$$
-B_{n-1}\Longrightarrow A_n,\qquad
-(A_n\land B_{n-1})\Longrightarrow B_n.
-$$
-
-The package is well-founded under the lexicographic order $(n,\mathrm{stage})$, with $A$ before $B$. This is an abstract dependency example, not a claimed theorem of birational geometry. The supplied implication proofs and base cases do the mathematical work; the ordering explains why their composition is legitimate.
-
-Now replace the first implication by $B_n\Longrightarrow A_n$. The two claims can no longer justify each other from the listed base cases. More worker rounds do not repair the cycle. One needs an additional independent argument, a stronger inductive package, or a genuinely decreasing rank.
-
-### Required artifacts
-
-Store the statement family, quantified parameter, base cases, step implications, and a well-founded rank. A model change that preserves dimension is not automatically an induction step. Nor does checking a finite collection of indexed nodes prove the entire induction scheme.
-
-## How the cases connect
-
-| Design question | Case A | Case B | Case C |
-|---|---|---|---|
-| Meaning to preserve | Specified output and permitted inputs | Quantifier order and constant dependence | Indexed statements and full premises |
-| Search choice | Vanishing or direct obstruction | Improve estimate or change topology | Reorder package or prove a new bridge |
-| False completion | Downstairs result reported upstairs | Pointwise bounds reported uniform | Circular support reported induction |
-| Useful partial result | A candidate plus an unchecked compatibility condition | Valid parameter-dependent estimate | A verified step with missing base case |
-
-Use these cases throughout the [chapter route](/posts/2026/12/Agent-System/) and [project laboratory](/posts/2026/08/agent-system/hands-on-lab/). The same artifact contracts should handle all three. If an implementation only catches one example by matching its vocabulary, it has learned a fixture rather than enforced a design rule.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Course roadmap](/posts/2026/12/Agent-System/)

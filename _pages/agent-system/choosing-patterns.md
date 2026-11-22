@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: choose an intervention from a failed proof
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. If the baseline has a sign error, add a signed applicability check. If it omits descent, add the return obligation. Test only the intervention relevant to the observed failure.
 
 **Mathematical output:** A repaired inference and its additional cost; remove a mechanism that does not help.

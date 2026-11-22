@@ -7,146 +7,58 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: divide only independent mathematical work
+More workers are useful only if they produce mathematical evidence that can be combined, or finish equally sound work at a lower acceptable cost. The surface uniqueness proof offers a concrete comparison: source application and descent checking are distinct obligations, while many steps inside each are tightly dependent.
 
-Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare one-session solving with a split between checking the two negativity applications and independently closing the descent argument. Give both configurations the same source packet and total allowance. Merge only after checking that both concern the same W, p, q and canonical choices.
+## 1. Start with a sequential baseline
 
-**Mathematical output:** A valid combined proof and measured total work; no presumed advantage from additional workers.
+Use the [central workshop's target and source packet](/posts/2026/08/agent-system/birational-proof-workshop/). Ask one session to prove the theorem and preserve its complete attempt. Record source access, retries, actual usage where available, and mathematical hints supplied by the researcher.
 
-**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+If it already succeeds cheaply, extra workers may add only overhead. If it fails, identify the gap before deciding how to divide the work. A generic team of “researcher, expert, critic” does not explain which missing mathematics anyone is responsible for.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+## 2. Divide distinct obligations
 
+One task can inspect the two signed applications of negativity. Another can develop the descent implication from equality of exceptional errors with positive support. The second task must state that equality as an explicit input, not pretend to have established it.
 
-Dividing research work is useful when the parts produce evidence that can be combined correctly. More workers do not automatically mean more mathematical progress. This module begins with a sequential workflow, then asks when separate tasks or conversations improve its evidence or elapsed time.
+| Task | Inputs | Required output |
+|---|---|---|
+| Comparison | W, p, q, compatible canonical identities, two nefness assumptions, exact negativity lemma | Both inequalities with sign, base, and pushforward calculations |
+| Return implication | Equality of error divisors and positive exceptional support | Descent through point blowups, the inverse morphism, and identity checks |
+| Merge | The two complete arguments under matching hypotheses | One proof of the original specified map extending to an isomorphism |
 
-**Learning goals:** choose a useful division of work, specify a handoff, merge reports about the same target, and compare divided work with a simpler baseline. You can complete the laboratory with ordinary conversations or a Codex workspace; a custom multi-agent implementation is not required.
+The comparison result satisfies a premise of the return argument. That relationship is the mathematical reason they can be combined. The handoff must preserve the same morphisms and canonical conventions; two similarly named surfaces are not enough.
 
-## 1. Divide by mathematical obligation
+## 3. Work through a genuine conflict
 
-For a prescribed-output problem, two useful tasks are checking whether a general solvability theorem applies and calculating the actual outputs directly. They answer different questions. The first may establish that every requested output is possible; the second can settle the chosen output even when the general theorem is unavailable.
+Suppose the comparison report proves $D\geq0$ over X but the summary says $D\leq0$. A descent report assumes D=0. These reports do not combine into a proof.
 
-Contrast this with asking three workers to “think harder about lifting.” Their reports may repeat the same unsupported claim, use different targets, and produce little that can be merged. Job titles such as researcher, critic, and expert do not specify mathematical outputs.
+The merge should retain the valid first inequality, correct the summary, and request the missing symmetric application over Y. It should not average confidence or count two positive verdicts. Once the reverse inequality is justified, the existing conditional descent argument may become applicable without being regenerated.
 
-A task should identify its input, allowed scope, expected artifact, and stopping condition. For a source audit, the artifact is a hypothesis table with inspected source locations. For a calculation, it is an explicit map or witness together with a proof that it addresses the target. For a review, it is a localized inference report.
+Now suppose the descent task requires equality of actual error divisors, while the comparison task reports only numerical equivalence. That is a different mismatch. The merge must either strengthen the comparison or prove that the weaker input suffices. It cannot silently substitute one for the other.
 
-## 2. A complete merge example
+## 4. Test a delayed result after revision
 
-Use Module 1's real-number rule $r(c)=(c,c)$. Target T1 asks whether an input produces $(1,0)$. One task audits a proposed general theorem; the other calculates the possible outputs.
+While the tasks run, remove nefness of $K_X$. The old comparison report may still be a correct proof under the old hypotheses. Its reverse inequality no longer applies to the revised target, while the first inequality may survive.
 
-The source-audit task reports: “The proposed theorem requires allowing linear polynomials, while this target permits only constants. This application does not settle T1.” The calculation task proves that every output has equal entries:
+A delayed report should therefore retain its original scope. Reapply its useful components explicitly to the new task. The blowup counterexample then refutes the weakened theorem. Changing the version label on an old result does not perform that mathematical check.
 
-$$
-r(c)=(c,c).
-$$
+This is where a shared state can help coordination: it makes the current hypotheses and unresolved obligations visible. It cannot enforce correct reasoning by itself.
 
-The pair $(1,0)$ has unequal entries, so no input produces it. The merged result is a negative answer supported by that calculation. Failure of the theorem route does not make the target unresolved once another valid argument settles it.
+## 5. Independent work is not automatically independent evidence
 
-In the optional geometry, inputs are global sections and the output rule is restriction. The same merge principle applies; the numerical experiment below does not require that interpretation.
+Two conversations can invoke the same wrong theorem or inherit the same omitted assumption. A second vote adds little if neither supplies the missing calculation. Diverse evidence can help: one task checks the negativity route, another reconstructs the last-blowup proof, and a reviewer examines where their assumptions overlap.
 
-Now introduce a third report: “The input $c=1$ produces $(1,1)$.” This is correct for $(1,1)$, but does not contradict the negative answer about $(1,0)$. A useful merge checks the objects before comparing verdicts. It can retain the third report as a positive control while rejecting it as support for T1.
+But fully developing two routes costs more. Use that extra work when it addresses a concrete uncertainty or supports a planned extension, not as a ritual. A source audit and a descent proof may be a more economical division for this task.
 
-Finally, suppose a report claims that every requested pair can be produced. This really conflicts with the equal-entry calculation. The merge must inspect both arguments and locate the error; it cannot resolve the conflict by counting approvals or averaging confidence.
+[Danus v2](https://arxiv.org/abs/2607.06447v2) reports planning, parallel workers, and fact-graph memory. That description motivates a design question; it does not establish that our particular split outperforms the sequential baseline. The surface mathematics is supported by the sources in the central workshop.
 
-[![Parallel evidence tasks return scoped artifacts; a merge checks their targets, hypotheses, and logical contributions before updating the research state.](/images/agent-system/course-evidence-merge.svg)](/images/agent-system/course-evidence-merge.svg)
+## 6. Compare total effort and elapsed time
 
-The arrows into the merge mean “reports to inspect,” not “premises already accepted.” Only the reviewed mathematical content can support the target.
+Give both configurations identical authorized sources and comparable total allowances. Parallel work can reduce elapsed time while increasing tokens, source lookups, and reconciliation work. Report those dimensions separately rather than collapsing them into “more efficient.”
 
-## 3. The handoff contract
+Count every worker, retries, failed routes, merge corrections, and human hints. If usage is unavailable, report observable time and action counts without inventing token savings. Use repeated matched runs before making a general performance claim; one pair is a case study.
 
-Use the following table before launching any work:
+**Exercises:** merge a valid first inequality with a conditional descent report; resolve an actual-divisor versus numerical-equivalence mismatch; process a delayed two-nef report after the hypothesis change. In each case, supply the missing proof step or preserve its open status.
 
-| Task | Input | Required output | Stop when |
-|---|---|---|---|
-| Source audit | Target version, allowed inputs, candidate passage | Substitution and hypothesis evidence | Application justified, blocked, or source unavailable |
-| Direct calculation | Same target and explicit objects | Possible outputs and consequence for the requested output | Calculation is complete or a precise gap remains |
-| Review | Frozen argument and supporting material | Accepted inferences and localized defects | Every substantive step has a stated disposition |
-| Merge | Reports plus current target | Reusable support, conflicts, open obligations | Each report's scope and effect are accounted for |
+**Deliverable:** the sequential attempt, divided attempts, actual merge, resulting proof, and resource comparison. Choosing one worker is a successful design decision when the extra division does not help.
 
-Give each task the same target snapshot. A source-audit worker need not receive a persuasive draft of the desired proof; it does need the exact objects and hypotheses. A reviewer needs the complete argument rather than just the author's conclusion. Limiting irrelevant context can help, but omitting necessary mathematical data creates artificial failures.
-
-Here is a minimal source-audit assignment:
-
-```text
-Task S, target T1-v1, supplied source S2-v1.
-Determine whether this theorem applies to the exact objects in TARGET.md.
-Return a hypothesis table, exact conclusion, and source locations inspected.
-Do not solve other branches or update the shared target.
-If a hypothesis is unresolved, identify one concrete test of that hypothesis.
-```
-
-For a calculation task, replace the theorem application with the explicit map to compute. Require the same target version in its output. This is enough to demonstrate the architecture without implementing a scheduler.
-
-## 4. Merge mathematics before merging prose
-
-Inspect reports in this order. First compare the targets: domain, objects, requested output, and quantifiers. Next compare assumptions and source versions. Then inspect the actual argument and its remaining gaps. Finally decide its contribution: completion, conditional result, obstruction, reusable lemma, or no new support.
-
-This order prevents a common mistake: producing a polished synthesis before discovering that its ingredients refer to different problems. A report about the wrong target may still contain useful mathematics, but transferring it requires a new applicability check.
-
-Keep the original reports. If a merge rewrites their conclusions, the reason should be visible. In particular, a missing hypothesis in one report must not be silently supplied by another report that also merely assumes it. Combining two assumptions does not establish either one.
-
-Use a simple conflict record when necessary:
-
-```text
-Conflict C1
-  Report A: all outputs have equal entries, with explicit calculation
-  Report B: every requested pair can be produced, using a theorem about linear polynomials
-  Same objects and target? Check before treating as contradiction
-  Disputed step: whether the theorem allows the constants-only input constraint
-  Next action: inspect that exact hypothesis; preserve both original reports
-```
-
-## 5. Revision while work is in flight
-
-Change T1 from $(1,0)$ to $(1,1)$ while a task is still working on the old snapshot. When its report arrives, do not overwrite its version label. The negative verdict for the old requested output does not answer the new question, but the equal-entry calculation does: $(1,1)$ lies in the image.
-
-This is a small but realistic test of asynchronous work. A delayed report is not necessarily worthless; its reusable content must be separated from its expired conclusion. The same issue occurs when a research project changes a matrix, removes a hypothesis, or switches coordinates.
-
-For course practice, perform the same event sequence manually in separate conversations. Parallel execution is optional. The point is to learn what a correct handoff and merge require before adding concurrency.
-
-## 6. Compare with sequential work
-
-First run the source audit, calculation, and merge in one sequential session. Then repeat with separate tasks under a comparable total effort budget and identical source access. Specify the budget before either run: for example, a fixed number of source inspections and review rounds. Record actual usage where available; mark unavailable token or cost data as unavailable.
-
-Measure elapsed time separately from total effort. Parallel work can finish sooner while duplicating searches and increasing cost. Count useful completed obligations, invalid conclusions admitted, repeated work, and unresolved conflicts. A larger volume of text is not an improvement.
-
-Separate conversations are not guaranteed independent. Workers may use the same theorem incorrectly or share a misleading input. Diversify the **evidence** when useful: compare a general theorem application with a direct example, or an informal proof with a suitable formal lemma. Adding an identical vote is a weaker intervention.
-
-## 7. Exercises and worked answers
-
-<details markdown="1">
-<summary>1. One worker is blocked; another solves the target</summary>
-
-**Answer.** Admit the supported conclusion after reviewing the successful argument. Preserve the blocked route as such. Completion does not require every proposed route to succeed, and the blocked route must not be described as proved merely because the target is settled.
-</details>
-
-<details markdown="1">
-<summary>2. Both workers assume the same missing lemma</summary>
-
-**Answer.** Their merged result remains conditional on that lemma. The shared premise is a single unresolved dependency, not corroboration. Assign a task to the lemma itself or find a route that avoids it.
-</details>
-
-<details markdown="1">
-<summary>3. An old report has a useful general calculation</summary>
-
-**Answer.** Retain the calculation under its original hypotheses. Apply it explicitly to the current target and create a new conclusion record. Do not transfer the old verdict solely because the same variety appears in both tasks.
-</details>
-
-<details markdown="1">
-<summary>4. When is one worker the better architecture?</summary>
-
-**Answer.** When tasks are tightly dependent, context handoff dominates the work, or divided runs add no useful evidence under comparable resources. Choosing the simpler workflow is a successful design outcome, not a failure to build a sophisticated system.
-</details>
-
-## 8. Submission
-
-Submit task contracts, unedited reports, the merge decision, the delayed-report test, and the sequential comparison. Explain one specific benefit or cost of division. The enduring design question is where genuinely different mathematical work can proceed independently and how its evidence returns to a shared target.
-
----
-
-[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/evaluation-monitoring/)
-
-
-## Source basis and limits
-
-The [Danus v2 abstract](https://arxiv.org/abs/2607.06447v2) reports coordinated workers and fact-graph memory. This motivates a question to test; it does not establish that splitting this course task will outperform a sequential run.
+[Next: evaluate the system](/posts/2026/08/agent-system/evaluation-monitoring/) · [Course roadmap](/posts/2026/12/Agent-System/)

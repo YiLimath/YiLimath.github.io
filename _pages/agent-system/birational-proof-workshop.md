@@ -39,19 +39,19 @@ Take a smooth common resolution with projective birational morphisms $p:W\to X$ 
 For a point blowup b with exceptional curve E,
 
 $$
-K_{\widetilde S}=b^*K_S+E.
+K_{\widetilde S}=b^{\ast}K_S+E.
 $$
 
 Here is the local calculation behind the coefficient. In coordinates $x=u$, $y=uv$,
 
 $$
-b^*(dx\wedge dy)=u\,du\wedge dv.
+b^{\ast}(dx\wedge dy)=u\,du\wedge dv.
 $$
 
 The Jacobian vanishes to order one along E; away from E the map is an isomorphism. The other blowup chart gives the same divisor. Applying the formula successively yields
 
 $$
-K_W=p^*K_X+E_p=q^*K_Y+E_q,
+K_W=p^{\ast}K_X+E_p=q^{\ast}K_Y+E_q,
 $$
 
 where each error divisor is effective and has strictly positive coefficient along every exceptional curve of its morphism. At each blowup the old effective error pulls back effectively, while the new exceptional curve receives at least its new coefficient one. This also explains why the support is the entire exceptional locus.
@@ -59,7 +59,7 @@ where each error divisor is effective and has strictly positive coefficient alon
 The useful intermediate target is now
 
 $$
-D:=p^*K_X-q^*K_Y=E_q-E_p=0.
+D:=p^{\ast}K_X-q^{\ast}K_Y=E_q-E_p=0.
 $$
 
 This is a substantive reduction: it will identify the contracted curves. It does not by itself construct the final isomorphism.
@@ -73,29 +73,29 @@ Birkar's Lemma 4.15 says that, for a projective birational morphism of normal va
 **Over X.** If C is p-contracted, then
 
 $$
-(-D)\cdot C=q^*K_Y\cdot C\geq0.
+(-D)\cdot C=q^{\ast}K_Y\cdot C\geq0.
 $$
 
 If q also contracts C, the intersection is zero; otherwise the projection formula and nefness of $K_Y$ give nonnegativity. Thus $-D$ is p-nef. Moreover,
 
 $$
-p_*D=p_*E_q\geq0,
+p_{\ast}D=p_{\ast}E_q\geq0,
 $$
 
-because $p_*E_p=0$. Apply the lemma with B=D and morphism p to get $D\geq0$.
+because $p_{\ast}E_p=0$. Apply the lemma with B=D and morphism p to get $D\geq0$.
 
 **Over Y.** Reverse the roles. The divisor D is q-nef, and
 
 $$
-q_*(-D)=q_*E_p\geq0.
+q_{\ast}(-D)=q_{\ast}E_p\geq0.
 $$
 
 Apply the lemma with $B=-D$ and morphism q to get $-D\geq0$. Therefore D=0, and $E_p=E_q$.
 
 | Application | Divisor submitted to the lemma | Required negative is nef | Effective pushforward | Conclusion |
 |---|---|---|---|---|
-| Over X | D | $-D$ is p-nef | $p_*E_q$ | $D\geq0$ |
-| Over Y | $-D$ | D is q-nef | $q_*E_p$ | $D\leq0$ |
+| Over X | D | $-D$ is p-nef | $p_{\ast}E_q$ | $D\geq0$ |
+| Over Y | $-D$ | D is q-nef | $q_{\ast}E_p$ | $D\leq0$ |
 
 Do not demand that D be exceptional for either morphism before the calculation. That would assume a relationship between the exceptional loci that we are trying to prove. This version of the lemma requires effectivity of the pushforward; the calculation supplies exactly that.
 
@@ -117,7 +117,7 @@ Choose a common resolution with the number of point blowups in p minimal. If p i
 
 If q contracts C, Tag 0C5J lets q descend through this blowup, contradicting minimality of the number of blowups in p. Thus q does not contract C, so C is not a component of $E_q$.
 
-Now intersect $K_W=q^*K_Y+E_q$ with C. The first term is nonnegative by nefness of $K_Y$. The second is nonnegative because $E_q$ is effective and C is a distinct curve from every component of its support on a smooth surface. This contradicts $K_W\cdot C=-1$.
+Now intersect $K_W=q^{\ast}K_Y+E_q$ with C. The first term is nonnegative by nefness of $K_Y$. The second is nonnegative because $E_q$ is effective and C is a distinct curve from every component of its support on a smooth surface. This contradicts $K_W\cdot C=-1$.
 
 Consequently p is an isomorphism. Then q is a birational morphism from X to Y. If it has any point blowup in its factorization, its last exceptional curve on X has canonical intersection -1, contradicting nefness of $K_X$. Hence q is also an isomorphism.
 

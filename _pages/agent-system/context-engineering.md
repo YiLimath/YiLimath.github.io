@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: provide the decisive theorem context
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Prepare the exact negativity statement and the definitions of D, p and q. Compare it with a long topic summary under a declared context allowance. Check both signs and pushforwards in the actual outputs.
 
 **Mathematical output:** Evidence about whether precise source context fixes an observed application failure; record preparation cost.

@@ -9,7 +9,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Start here if the elementary calibration problems are already familiar.
+**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Use this as the shared mathematical project.
 
 
 The difficult part of a change of coordinates is often the part the new coordinates do not cover. This workshop develops that issue through explicit formulas, then connects it to a research system's obligation to preserve domains, recover solutions, and justify recursive reductions. You need polynomial algebra, functions, and induction—not algebraic geometry terminology.
@@ -172,7 +172,7 @@ Choose one assumption to weaken. Locate the first broken application, formulate 
 
 For a spiraling induction package, list each statement with all its parameters. Draw an arrow only when the proof actually invokes another statement. Check every arrow against the proposed rank, including boundary cases. If a same-rank cycle remains, identify the missing independent input. A visually convincing spiral has no evidential value without these checks.
 
-Use the [proof-based hands-on track](/posts/2026/08/agent-system/hands-on-lab/#research-track-audit-and-improve-an-actual-proof) and mission 07 in the practice pack. No numerical experiment is required. The deliverable is a source-grounded proof attempt that another researcher can resume and scrutinize.
+Use the [proof-based hands-on track](/posts/2026/08/agent-system/hands-on-lab/#proof-based-research-track) and mission 07 in the practice pack. No numerical experiment is required. The deliverable is a source-grounded proof attempt that another researcher can resume and scrutinize.
 
 
 ## 9. A source-based assignment: negativity and uniqueness
@@ -185,7 +185,7 @@ This is the research-background track. It assumes divisors, relative nefness, an
 
 Assume D is exceptional over X and $D\equiv_f0$. Here exceptional means every prime component maps into codimension at least two, and numerical triviality means intersection zero with every contracted integral curve. Prove $D=0$ as a divisor, not merely as a numerical class.
 
-Exceptional support gives $f_*D=0$. Numerical triviality makes both D and $-D$ relatively nef. Apply the negativity lemma first to D: its required negative is nef and its pushforward is effective, so $D\geq0$. Apply it again to $-D$: its negative is nef and its pushforward is zero, so $-D\geq0$. Every coefficient is both nonnegative and nonpositive; hence D is the zero divisor.
+Exceptional support gives $f_{\ast}D=0$. Numerical triviality makes both D and $-D$ relatively nef. Apply the negativity lemma first to D: its required negative is nef and its pushforward is effective, so $D\geq0$. Apply it again to $-D$: its negative is nef and its pushforward is zero, so $-D\geq0$. Every coefficient is both nonnegative and nonpositive; hence D is the zero divisor.
 
 The two applications have opposite signs. A system that records only “nef, therefore effective” can silently reverse one of them. The source statement, the substitution, and the resulting inequality should be readable next to one another.
 

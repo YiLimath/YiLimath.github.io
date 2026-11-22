@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: resume an interrupted proof faithfully
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Interrupt after the first signed negativity application. Resume from the saved argument and identify the second sign and descent as unfinished. Do not rerun completed source extraction unnecessarily.
 
 **Mathematical output:** The remaining proof completed with actual recovery cost and no fabricated earlier review.

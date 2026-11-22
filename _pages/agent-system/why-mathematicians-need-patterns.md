@@ -10,8 +10,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: ask whether the design changed the result
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare what the agent accomplished before and after one intervention on a real proof obligation. A workflow that changes only presentation has not demonstrated increased mathematical capability.
 
 **Mathematical output:** A localized proof improvement or measured resource saving under a shared quality standard.

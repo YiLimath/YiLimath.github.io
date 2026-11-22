@@ -5,7 +5,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Start here if the elementary calibration problems are already familiar.
+**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Use this as the shared mathematical project.
 
 
 **Practice pack:** [Download seven progressively harder missions](/files/reasoning-practice-lab.zip), following the birational proof project, with baseline records, source checks, descent, hypothesis changes, and transfer tasks. Begin with one mission; preserve the first attempt before reviewing it.
@@ -19,9 +19,7 @@ The student is the system designer. Codex helps create and operate the workspace
 
 ## 1. Start with a task you can evaluate
 
-Use this elementary target first: every continuous real-valued function on $(0,1)$ attains a maximum. It is false: $f(x)=x$ is a counterexample. A correct system should diagnose the problem rather than silently replace the interval by $[0,1]$.
-
-Then use the two quantifier orders from the running cases. Finally choose a short published proof from your own field, with a reference solution you understand. Open research comes after these controlled exercises, where failure is easier to recognize.
+Use surface uniqueness and the central workshop's source packet. Preserve a direct proof attempt before adding records. If it stops at a divisor comparison, expose and complete descent. If it already succeeds, evaluate cost or move to an unfamiliar geometric lemma.
 
 ## 2. Create the workspace through a conversation
 
@@ -65,39 +63,20 @@ Update the records with its evidence and remaining obligations.
 Do not report completion unless the original success criteria are met.
 ```
 
-For the maximum example, inspect the counterexample and the failure of compactness. If Codex proposes a corrected theorem, store it as a different version. Successful repair of a nearby claim does not prove the original claim.
+Check whether the specified birational map has actually been extended to an isomorphism. A divisor identity is an intermediate result.
 
-**Deliverable:** one complete episode, including the initial response and any correction. Do not erase a mistaken first answer from the experiment record.
-
-### What the files should contain after the first cycle
-
-Here is a reference state for the maximum example. It illustrates substantive content rather than a required software format; it is not a log of an executed assistant session.
+### A checkpoint with mathematical content
 
 ```text
-TARGET.md
-  T1-v1: every continuous f:(0,1)->R attains a maximum.
-  A counterexample must satisfy continuity and show nonattainment.
-
-ARGUMENTS.md
-  A1 addresses T1-v1 using f(x)=x.
-  This function is continuous on (0,1).
-  For any proposed maximizer x, let y=(x+1)/2.
-  Then x<y<1, and f(y)>f(x). Thus no maximizer exists.
-
-REVIEWS.md
-  Review A1 against T1-v1.
-  Check continuity, membership of y in the domain, and strict inequality.
-  If accepted, its scope is refutation of T1-v1 by this counterexample.
-
-STATE.md
-  T1-v1 is refuted by A1.
-  T1-v2, with domain [0,1], is a separate proposed repair.
-  A1 does not refute T1-v2: the endpoint 1 changes the argument.
+TARGET: smooth projective surfaces; both canonical divisors nef;
+        extend the given birational map to an isomorphism.
+ESTABLISHED: common resolution, canonical identities,
+             two signed negativity applications, E_p = E_q.
+OPEN: positive exceptional support; descent; inverse identities.
+NEXT: apply Stacks Tag 0C5J to the last blowup in p.
 ```
 
-The inequality $x<(x+1)/2<1$ follows from $x<1$. At the closed interval's endpoint $x=1$, the same construction gives $y=1$, so strict improvement fails. This explains exactly why the counterexample proof does not transfer to the repaired domain.
-
-Before moving on, ask Codex to reconstruct these distinctions from its files. If `STATE.md` says only “maximum theorem solved,” the record is insufficient: it fails to say which version was refuted and which was proposed as a repair. Fix the record at that point instead of adding more orchestration.
+This is an illustrative state, not an executed run. Save only what the actual attempt has established. After removing nefness of K_X, retain the first inequality but reopen the reverse application and the final verdict.
 
 ## 4. Add alternative routes without multiplying agents
 

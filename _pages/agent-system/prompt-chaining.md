@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: make a chain carry mathematics
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Pass the common-resolution identities into the signed comparison, then pass the equality of exceptional divisors into descent. Each stage must supply its stated conclusion and unresolved assumptions.
 
 **Mathematical output:** A valid end-to-end proof; a fluent final stage cannot repair an invalid earlier premise.

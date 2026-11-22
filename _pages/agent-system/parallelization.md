@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: test parallel work on distinct obligations
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Run source application and descent checking independently, then compare their total work and elapsed time with a sequential run. Include reconciliation of inconsistent notation.
 
 **Mathematical output:** A proof of the same quality and measured costs; faster completion alone is not fewer total tokens.

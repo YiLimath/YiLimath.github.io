@@ -5,15 +5,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: distinguish a known variant from a new opportunity
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Start with the relative-nef variant of the surface theorem and inspect why the absolute proof transfers. Then select a real paper and a precisely changed hypothesis; compare prior results before recommending work.
 
 **Mathematical output:** An actual attempted bridge and prior-art comparison, not a confidence score or a list of topics.
 
 **Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
 
 
 The deliverable is a research proposal you can actually begin: an exact candidate theorem, a source audit, a plausible method, and a tested first lemma. A list of fashionable papers or a polished architecture diagram does not meet this standard.

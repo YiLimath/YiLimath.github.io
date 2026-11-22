@@ -8,15 +8,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: evaluate architecture on proof completion
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the same surface proof packet to compare direct conversation with a persistent workspace. Test a new hypothesis only after retaining the first outcomes. Do not call this a reproduction of Danus or Rethlas.
 
 **Mathematical output:** Measured capability/cost results for this local experiment; reported systems remain separate evidence.
 
 **Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
 
 
 Use existing research systems as sources of questions, not templates whose complexity must be copied. This chapter builds and evaluates a small Codex workflow. It does not claim to reproduce a current Danus or Rethlas implementation, and it does not treat historical local API names as a usable specification.
@@ -65,11 +62,9 @@ This procedure is analogous to checking a precondition before committing an upda
 
 ### 4. A concrete stale-result experiment
 
-At time one, a task investigates polynomial interpolation with degree bound one. It proves every value pair at two distinct points can be obtained. At time two, the target changes to degree zero. At time three, the old approval arrives.
+At time one, a task proves the reverse negativity inequality using nefness of K_X. At time two, that assumption is removed. At time three, the old approval arrives. Preserve its original scope; it cannot justify the reverse inequality for the revised target. The canonical identities and the first inequality using K_Y remain available.
 
-The old theorem remains true but cannot establish universal solvability under the new bound. The system should retain the linear interpolation proof, reopen the application, and calculate the constants-only compatibility condition. It must not delete useful mathematics, silently change the bound, or count the stale approval as a current proof.
-
-Now deliver the same old report twice. Its two deliveries are one piece of evidence, not independent corroboration. Then remove the applicability record while retaining the theorem. Recovery should identify exactly what is missing: the source theorem is preserved, but its use for the current target is unsupported.
+Deliver the same report twice. Two deliveries are not independent evidence. Recovery must reconstruct which hypothesis each application used. The blowup of an abelian surface then supplies a counterexample to the weakened theorem.
 
 [![Persistent research architecture separates proposal submission, version-aware review, admission, and recovery.](/images/agent-system/advanced-research-state.svg)](/images/agent-system/advanced-research-state.svg)
 
@@ -99,7 +94,7 @@ The capstone can therefore have an autonomous formal lane alongside open informa
 
 ## The task and baseline
 
-Choose one short mathematical argument you can check, plus two damaged versions: one missing a hypothesis and one missing a return implication. Use the lifting or blow-up experiments from the preceding projects if you need a controlled starting point.
+Choose one short mathematical argument you can check, plus two damaged versions: one missing a hypothesis and one missing a return implication. Use the signed-negativity or descent arguments from the central project if you need a controlled starting point.
 
 First ask an ordinary chat to solve or review each task. Preserve its full output, source access, date, and effort budget. This is your baseline. Do not give your redesigned workflow extra source material and attribute the difference entirely to architecture.
 
@@ -137,27 +132,17 @@ Run these interventions and retain the actual responses. A prompt requesting the
 
 ## A reference episode with expected state changes
 
-Use the real-number rule $r(c)=(c,c)$ from Module 1. The following is a hand-derived test specification, not an observed transcript of Danus, Rethlas, or Codex.
+Use the surface proof as a hand-derived test specification, not an observed transcript of Danus, Rethlas, or Codex.
 
-| Event | Evidence actually available | Expected state |
+| Event | Evidence retained | Expected response |
 |---|---|---|
-| Set target V1 to producing $(1,1)$ | Rule and candidate $c=1$ | Check $r(1)=(1,1)$, then admit this solution |
-| Change target to V2, producing $(1,0)$ | Old calculation still available | Old witness does not solve V2 |
-| Deliver an old approving review | Review concerns V1 | Keep it with V1; do not transfer its verdict |
-| Calculate every possible output | Both entries always equal | V2 impossible, with a general argument |
-| Save a checkpoint and restart | Rule, targets, arguments, reviews | Recover V1 solved and V2 refuted for different reasons |
+| First comparison over X | Nefness of K_Y and effective pushforward | Admit D >= 0, not equality |
+| Reverse comparison over Y | Separate use of K_X nef | Admit equality of error divisors |
+| Remove K_X nef | Exact dependencies of the old argument | Withdraw the reverse application's current support |
+| Supply the blowup example | Canonical divisor and exceptional intersection | Refute the weakened target |
+| Change to relative nefness over S | Commuting resolution and curve-image check | Reconsider the applications over S |
 
-An important distinction appears in the second and fourth rows. A failed witness establishes only that this candidate does not work. The fourth row supplies a universal reason no candidate can work. A system that declares impossibility immediately after testing $c=1$ happens to reach the right answer here but has not justified it.
-
-Test that weakness with a second rule $q(c)=(c,1-c)$. The same candidate $c=1$ now produces $(1,0)$. Changing the rule changes the problem, so the old equal-entry argument is inapplicable. A memorized negative verdict should not survive this intervention.
-
-### Attribute an improvement to a mechanism
-
-Compare the baseline with a version that adds only explicit target versions. If the new run catches the stale review but still mistakes candidate failure for impossibility, report exactly that. The version record addressed identity; it did not supply the missing universal argument.
-
-Then add a review question: “Does this evidence reject one candidate, or all possible candidates?” Test both rules again, preserving first responses. If several mechanisms are added at once, you can assess the combined workflow but cannot isolate their individual effects from that experiment.
-
-Avoid converting this five-event episode into an impressive-looking success percentage. Report the events, expected transitions, actual transitions, and mathematical reasons. More cases and repeated runs can later support a broader empirical claim.
+Compare a baseline with one intervention targeting an observed failure. Catching stale approval is a narrow improvement if descent remains unfinished; it is not completion of the theorem. Preserve actual responses and resources. These expected transitions are not performance data.
 
 ### What to inspect in a named implementation
 

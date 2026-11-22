@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: retain a useful method without memorizing a verdict
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Save the two-sign application as a method with preconditions. Apply it to the relative-nef variant with a new applicability check, not the old conclusion.
 
 **Mathematical output:** Successful transfer with the curve-to-base argument supplied; otherwise an unresolved prerequisite.

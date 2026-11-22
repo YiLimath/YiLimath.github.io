@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: stop duplicated proof search
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Choose a route after a bounded comparison. Reuse inspected statements rather than retrieving them in every round. Count preparation, retries, and discarded branches as work.
 
 **Mathematical output:** Same accepted theorem with lower measured total cost, or a documented failure to save resources.

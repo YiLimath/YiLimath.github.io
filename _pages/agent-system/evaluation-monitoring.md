@@ -8,159 +8,74 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: measure capability or savings on the same theorem
+The course has two practical success criteria: help an agent complete mathematical work its direct attempt could not complete, or obtain an equally justified result with substantially less measured work. This module defines a comparison that can support those claims without confusing a polished answer with a proof.
 
-Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Apply the workshop rubric to direct and assisted runs, including all retries and mathematical hints. Use the relative-nef variant as a transfer task only if its solution has not been supplied. If both methods solve the problem, compare measured resources at the same proof quality.
+## 1. Fix the mathematical acceptance criterion first
 
-**Mathematical output:** Original outputs, localized correctness judgments, actual resource observations, and an honest no-improvement result when appropriate.
+Use the [surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) as a controlled starting task. Its reference proof depends on [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21) and the factorization and descent results listed there. This is established mathematics, not a discovery benchmark.
 
-**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+Require a proof of the specified map extending to an isomorphism. Check common resolution, compatible canonical identities, the signed comparison or a valid alternative, and the final return to X and Y. A correct theorem statement with an incomplete proof does not meet the same standard as a complete argument.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+A valid different proof should pass. Do not grade by whether the response matches the reference wording or uses the preferred architecture.
 
+## 2. Prepare geometric controls
 
-A research system should be judged by the mathematics it delivers and the errors it prevents at an acceptable cost. It should neither accept every plausible argument nor reject every proposal. This module builds a small controlled evaluation and then explains what must change when the target is an open research problem.
-
-**Learning goals:** prepare valid and invalid controls, distinguish a decision from its supporting argument, report denominators and abstentions, compare workflows fairly, and assess partial progress without pretending to know the answer to an open problem.
-
-## 1. Three questions that need separate answers
-
-**Protocol fidelity:** did the system preserve the target, source versions, and assumptions? **Mathematical correctness:** are its inferences valid? **Research usefulness:** does the result advance a worthwhile objective? A perfectly organized record can contain a false proof; a correct elementary calculation can have little value for the chosen research problem.
-
-Evaluate each dimension rather than averaging them into one unexplained score. A workflow change may improve recovery while adding no mathematical capability. That can still be valuable, but the evidence supports a narrower claim than “better at research.”
-
-## 2. Prepare the reference set before the run
-
-Use paired cases that change one important condition. The following set has known answers derived in earlier modules:
-
-| Case | Reference result | Failure exposed |
+| Input | Reference outcome | What must be inspected |
 |---|---|---|
-| Continuous real-valued $f$ on $[0,1]$ | Maximum exists | Rejecting an applicable theorem |
-| $f(x)=x$ on $(0,1)$ | No maximum | Missing attainment or compactness |
-| Constant zero on $(0,1)$ | Maximum exists | Treating a failed hypothesis as a false target |
-| Requested output $(1,1)$ | Produced by input $c=1$ | Rejecting a valid witness |
-| Requested output $(1,0)$ | Cannot be produced | Changing the specified output |
-| Each natural number has a bound | True with $C=n$ | Misreading witness dependence |
-| One natural number bounds all natural numbers | False using $n=C+1$ | Exchanging quantifiers |
-| Uniform limit of continuous functions | Continuous | Rejecting a valid return bridge |
-| $x^n$ on $[0,1]$, pointwise limit | Limit is discontinuous | Using the wrong convergence mode |
+| Smooth projective surfaces, both canonical divisors nef | The specified birational map extends to an isomorphism | All proof obligations, including descent |
+| Only $K_Y$ assumed nef | General uniqueness claim is false | Blowup of an abelian surface gives the counterexample |
+| Canonical divisors relatively nef over a common base S | The same conclusion over S under the workshop's assumptions | Curve images lie in fibers and the resolution commutes over S |
+| First signed comparison supplied, second absent | Partial progress only for that route | No premature equality or completion |
+| Equality of numerical classes supplied in place of actual error divisors | Original support argument needs further justification | The precise weaker input, not an automatic false verdict |
 
-The two output cases use real numbers and the fixed rule $r(c)=(c,c)$ from Module 1. Include that rule in the inputs. If you test the optional geometric version instead, specify its projective line, trivial bundle, and two distinct rational points; do not mix the two task descriptions silently.
+Withhold the reference solutions from runs intended to measure independent solving. If the student has studied the worked proof, use an unfamiliar task for a transfer assessment and disclose that training exposure.
 
-Keep reference reasoning outside the tested conversation. Save the model's original response before giving feedback. Evaluate the first answer and any repaired answer separately. Otherwise an interactive lesson can be mistaken for first-attempt performance.
+## 3. Compare interventions fairly
 
-## 3. Decide what counts as a correct outcome
+A direct request and a structured workflow should have the same model, tools, source access, and declared total allowance. A better result after supplying the crucial proof is assisted solving, not evidence that file organization improved reasoning.
 
-A correct yes/no answer with an invalid proof is not a correct mathematical solution. Ask for the exact conclusion, argument, assumptions, and sources actually used. Score the verdict and the reasoning separately when they differ.
+Record assistance in distinct forms: a source locator, diagnosis of a gap, a suggested method, or the decisive argument itself. These interventions can all be educationally useful, but they support different explanations of the result.
 
-For review tests, the input is a proposed argument. A correct decision accepts a valid argument, rejects a defective one with a localized reason, or explicitly abstains when evidence is unavailable. For theorem-solving tests, the input is a target; a valid counterexample can solve a false target. Do not mix these two tasks in a single acceptance rate.
+Change one mechanism at a time where practical. For example, test signed source-application records before also adding separate reviewers and persistent memory. If several mechanisms change together, attribute the result to the combined workflow rather than pretending to isolate a cause.
 
-Write a short rubric before testing:
+## 4. Assess capability and cost separately
 
-| Dimension | Passing evidence |
-|---|---|
-| Target preservation | Same objects, domain, quantifiers, and conclusion |
-| Mathematical argument | Every essential inference justified |
-| Source use | Inspected material distinguished from recollection |
-| Conditional scope | Unproved assumptions remain explicit |
-| Revision handling | Changed evidence triggers the appropriate recheck |
-| Usefulness | A named obligation is completed or sharply localized |
+For capability, retain the baseline's precise unresolved or invalid inference and the assisted run's replacement argument. Explain why the latter closes the actual target obligation. If both runs fail, clearer diagnosis can be useful partial progress but is not a solved theorem.
 
-If the reviewer cannot determine whether an argument is correct, record that uncertainty. Do not manufacture a ground-truth label merely to finish a spreadsheet.
+For cost, first establish comparable proof quality. Then record total tokens where available, elapsed time, repeated source inspections, retries, and researcher correction. Include setup and discarded branches. Report one-time preparation separately from per-problem work if reuse is the intended benefit.
 
-## 4. A worked scoring example with explicit denominators
+A shorter final answer can conceal a much larger search. Faster parallel completion can consume more total tokens. Neither observation alone establishes overall resource savings.
 
-The following numbers are **hypothetical**, chosen to explain reporting. They are not measured model results. Suppose a review set contains ten valid arguments and ten invalid arguments:
+## 5. Evaluate revisions and recovery
 
-| Reference class | Accepted | Rejected | Abstained |
-|---|---:|---:|---:|
-| Valid: 10 | 7 | 1 | 2 |
-| Invalid: 10 | 2 | 6 | 2 |
+After a completed two-nef proof, remove nefness of $K_X$. Check whether the workflow retains the first inequality, reopens the reverse application, and recognizes the blowup counterexample. Then supply the relative-nef variant: it should check the new base conditions rather than reuse a blanket negative verdict about weakened assumptions.
 
-The invalid-acceptance rate is $2/10=20\%$. The valid-rejection rate is $1/10=10\%$. Overall abstention is $4/20=20\%$. Reporting only accepted outputs would instead give seven valid arguments among nine accepted, or $7/9$. That is a different denominator and answers a different question.
+For recovery, restart from saved mathematical evidence. Measure reconstruction fidelity and repeated work. A checkpoint that causes the agent to restore a deleted assumption has failed even if it saves context tokens.
 
-Likewise, there are thirteen correct decisions among sixteen non-abstaining decisions, but only thirteen correct decisions among all twenty cases. Neither number should be reported without naming its denominator. Abstention can be responsible when evidence is missing; it is still important to know how much of the task set the system completed.
+These are concrete failure probes. Their outcomes must be recorded from actual runs; the reference expectations are not experimental results.
 
-These small counts are descriptive. They do not establish a stable error rate for future research mathematics. Report the underlying cases and repeat runs when feasible. If a rare failure is expensive, inspect the failure mechanism rather than trusting a favorable aggregate.
+## 6. When the target is genuinely open
 
-## 5. Evaluate changes, not just snapshots
+For an open birational problem, there may be no known final verdict. Assess intermediate mathematics: a valid application of an existing theorem, a proved special case, an explicit obstruction to a proposed route, or a precise reduction accompanied by an attempted missing lemma.
 
-Many dangerous errors appear after an initially correct answer. Add transition tests:
+Distinguish obstruction to a method from refutation of the target. Lack of an applicable analytic negativity citation does not by itself disprove an analytic conclusion. An actual counterexample must satisfy the proposed hypotheses and violate the conclusion.
 
-1. Change the requested output from $(1,1)$ to $(1,0)$ and deliver an old review.
-2. Withdraw one of two alternative proof routes, then their shared premise.
-3. Replace uniform convergence by pointwise convergence.
-4. Resume from a checkpoint whose cited proof artifact is missing.
+Novelty is also separate from correctness. A proof of a known consequence can be a successful learning outcome without being a new research result. Literature-search failure is not evidence of novelty.
 
-For each test, specify the expected state change before running it. Correct behavior often preserves some evidence while withdrawing a conclusion. A system that discards everything and a system that keeps everything both fail the more precise task.
+## 7. Final project
 
-[![Evaluation separates hidden references from system inputs and preserves first responses before review, repair, and comparison.](/images/agent-system/course-evaluation-loop.svg)](/images/agent-system/course-evaluation-loop.svg)
+Choose a proof or proposed extension from your birational research. Start with a direct-agent attempt and preserve the output. Identify one observed failure that the course's methods can plausibly address. Introduce the smallest relevant intervention, attempt the decisive lemma, and check the resulting mathematics.
 
-The return arrow represents a design revision for the **next** run. It must not overwrite the original response. Otherwise the record no longer shows what the system did before assistance.
+The final report should include the exact target, inspected sources, baseline, intervention, complete new argument or localized remaining gap, actual assistance, and measured resources. Use an unseen variant to assess transfer when feasible.
 
-## 6. Compare a simple workflow with a structured one
+A new theorem is welcome but not a universal grading requirement. A substantial partial result or decisive obstruction can pass. A workflow diagram with no attempted mathematical bridge cannot.
 
-Use the same tasks, source access, and total effort allowance for both workflows. Record the date, visible model settings, number of attempts, available tools, and actual outputs. If usage information is unavailable, say so and use an observable budget such as source inspections and review rounds; do not claim exact cost equivalence.
+## 8. Report only what the evidence supports
 
-The baseline can be an ordinary request for a proof and review. The structured version adds target records, application tables, or version-aware checkpoints. Add one mechanism at a time when practical. If several change together, the result may support the combined workflow but cannot isolate which component caused the improvement.
+A single successful comparison is evidence for that episode. Repeated runs are needed to understand variability; broader claims need a task set that represents the intended research use. Do not assign success probabilities or dramatic savings without data.
 
-Track elapsed time and total work separately. Count duplicate retrieval, human corrections, invalid arguments admitted, and useful obligations completed. Be alert to answer leakage: if the same conversation has already seen the reference proof, its subsequent solution does not measure an unaided attempt.
+Formal admission should be evaluated separately from proof discovery. The [Lean validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains why the encoded statement, dependencies, and checking environment matter. A checked auxiliary declaration is not formal verification of the entire geometric proof.
 
-Familiar examples test specific behaviors; they are not a benchmark of original mathematical discovery. Use them to catch avoidable mistakes before moving to harder material, then test on less familiar cases with independently reviewable answers.
+The comparison procedure here is a course proposal. No collected performance results are supplied by this page. Its purpose is to make it possible to demonstrate—or reject—the practical value of a design on real mathematics.
 
-## 7. What changes for an open research problem?
-
-You may not know whether the target is true. You can still inspect the validity and value of intermediate work. A useful deliverable might reconstruct a published lemma with its actual assumptions, prove a nontrivial special case, identify a counterexample to a proposed bridge, or reduce the target to a precise new obligation.
-
-Distinguish an obstruction to a method from a counterexample to the theorem. A family on which an attempted uniform estimate fails can decisively rule out that route while leaving the main conjecture open. Likewise, failure to find prior work is not a proof of novelty. Record the searched corpus and unresolved literature questions.
-
-For the final project, require at least two candidate improvements to a source result, a justified choice of one, two substantive proof routes, and an attempt at the hardest bridge. The project should include a reviewed intermediate result or decisive obstruction, recovery after evidence withdrawal, and comparison with a simpler workflow. A new theorem is welcome but not a sensible universal grading requirement.
-
-The assessment should ask what a mathematician can now do that was not justified before the project. “We produced twenty agent reports” answers a different question.
-
-## 8. Exercises and worked answers
-
-<details markdown="1">
-<summary>1. A system rejects every argument</summary>
-
-**Answer.** Its invalid-acceptance rate is zero, but it rejects all valid controls. Report both directions of error and completion. A single safety-looking number conceals that the system provides no useful admission decisions.
-</details>
-
-<details markdown="1">
-<summary>2. The correct verdict has a false proof</summary>
-
-**Answer.** Record the verdict as correct and the mathematical solution as defective. For example, a constant function on an open interval has a maximum, but a proof asserting that the open interval is compact is invalid. Success must include the evidence required by the task.
-</details>
-
-<details markdown="1">
-<summary>3. A repaired answer is excellent</summary>
-
-**Answer.** Preserve the first failure and report repair separately, including the feedback supplied. Repairability is a useful capability, but it is not first-pass correctness. Compare workflows under comparable feedback as well as comparable initial inputs.
-</details>
-
-<details markdown="1">
-<summary>4. No new theorem, but one route is decisively blocked</summary>
-
-**Answer.** Assess whether the obstruction is correct, addresses a serious route, and changes the next research decision. A precise counterexample to the route's central lemma can be substantial progress. An unsupported statement that a route “seems difficult” is not comparable evidence.
-</details>
-
-## Evaluate automated admission separately from proof discovery
-
-For the formal track, add a benchmark with frozen specifications, known valid proofs, wrong-target proofs, and forbidden assumptions. Measure valid admissions, invalid admissions, unresolved attempts, time spent generating versus checking, and mathematical human interventions. An always-rejecting gate is not a successful autonomous system.
-
-Report “no human proof review during this run” only when the trace supports it. Disclose prior human specification work and library infrastructure separately. A correct checker does not establish the novelty, importance, or intended meaning of a theorem. A failed search does not refute the target. This evaluation makes progress toward autonomous research measurable without requiring a person to certify every proof step.
-
-## 9. Final submission: an inspectable research result
-
-Submit task inputs, reference reasoning where available, original responses, review decisions, repairs, resource observations, and limitations. Conclude with one concrete design decision: retain, revise, or remove a mechanism, explaining which observed failure or benefit supports that decision.
-
-This completes the core course. The advanced modules apply the same discipline to opportunity discovery, proof-sketch systems, birational geometry, and reported research implementations. Their architectures earn their complexity only when the resulting evidence improves a real mathematical decision.
-
----
-
-[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/)
-
-
-## Source basis and limits
-
-The scoring and comparison procedure here is a course proposal. Its mathematical reference task uses [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21) and the surface results listed in the workshop. Hypothetical scoring examples below are not collected performance data.
+[Course roadmap](/posts/2026/12/Agent-System/) · [Central proof project](/posts/2026/08/agent-system/birational-proof-workshop/)

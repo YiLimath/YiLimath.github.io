@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: use structure only to expose the sign computation
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Represent the two negativity applications in separate rows with B, -B, morphism, pushforward and conclusion. Challenge a perfectly formatted row with the wrong sign.
 
 **Mathematical output:** Mathematical rejection of the wrong row; field presence alone does not validate a proof.

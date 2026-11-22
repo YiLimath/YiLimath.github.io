@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: transmit a theorem application that can be checked
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Send the first negativity application to a second task with the morphism, signed divisor, pushforward computation, and canonical-divisor convention. Ask the receiver to derive only what follows.
 
 **Mathematical output:** A correct coefficient inequality and no accidental switch of p and q.

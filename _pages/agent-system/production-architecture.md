@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: bind acceptance to the proof actually inspected
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Preserve the exact statement, proof, source versions, and checker evidence if any. Change the field or nefness assumption and require an applicability review before reuse.
 
 **Mathematical output:** No stale admission; ordinary Markdown conventions are not claimed to enforce transactional guarantees.

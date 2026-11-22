@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: request a specific mathematical criticism
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Ask a reviewer to check whether D really must be exceptional before negativity can apply and whether equality of exceptional supports completes descent. Compare this with an unrestricted “check your answer” request.
 
 **Mathematical output:** An identified invalid inference or missing bridge, followed by a repair with actual evidence.

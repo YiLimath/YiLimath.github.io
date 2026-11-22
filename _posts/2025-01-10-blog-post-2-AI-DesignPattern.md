@@ -8,131 +8,42 @@ classes: agent-system-hub
 full_page_reading: true
 ---
 
-How do we build a system that can work on a mathematical problem, explain its progress, and keep track of what remains unproved?
+Design reasoning systems that help an agent solve real mathematical problems—or reach the same justified result with substantially less work.
 
-This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. The shared research task is a source-based proof in birational geometry. Each module introduces an intervention that must help complete a mathematical obligation or reduce measured work at the same proof quality. Elementary examples are optional calibration.
+The course focuses on **birational geometry**. Its lasting subject is how to specify a problem, organize proof search, use the literature, and check evidence. Models and tools will change; these mathematical responsibilities remain.
 
+## Start with the central project
 
-## Start with a real birational proof
+[**Uniqueness of smooth minimal surfaces**](/posts/2026/08/agent-system/birational-proof-workshop/)
 
-[Can an agent establish uniqueness of smooth minimal surfaces?](/posts/2026/08/agent-system/birational-proof-workshop/) is the main practical project. It includes the exact target, inspected mathematical sources, two complete proof routes, a relative-nef transfer problem, and a baseline comparison. First try the problem with your agent; then introduce only the course mechanisms that address its actual gaps.
+Begin with a direct attempt using your agent. The workshop supplies the exact target, primary sources, two complete proof routes, and a relative-nef transfer problem. Work through the modules to address the gaps you actually encounter.
 
-**The value criterion:** solve a problem the direct run could not complete, or reach the same justified result with substantially less measured token use, time, repeated search, or human correction. Count preparation and retries. A more elaborate workflow with no observed benefit does not pass. This course proposes interventions; it has not yet established their effectiveness through controlled agent runs.
-
-**Editorial status:** the [source map](/posts/2026/08/agent-system/sources-and-claims/) identifies established mathematics, reported systems, and course proposals separately. The new birational workshop is the source-based reference project. Other modules and optional design cards should be read in that context, not as a collection of independently validated architectures.
-
-## Design for a future without routine human proof checking
-
-**The long-term goal is a system that discovers and constructs proofs autonomously, while acceptance rests on mechanically checkable evidence.** Human-written proofs and line-by-line human verification need not remain mandatory steps for a precisely formalized target. Stronger AI should expand what can be discovered and formalized, rather than become an authority whose assertions must be trusted.
-
-The stable architecture separates **specification, proof generation, checking, and admission**. Fix the intended formal target and definitions; let agents explore; require a proof term or an appropriate checkable certificate; admit the result only after validation under an explicit foundation and dependency policy. This does not guarantee that proof search will succeed or finish.
-
-Formal checking establishes the encoded theorem relative to its foundations. It does not, by itself, establish that the encoding expresses the intended research question. Semantic alignment and the trusted computing base remain explicit boundaries; they are not an assertion that humans must personally inspect every future proof. Once a formal specification is established, routine checking and admission can be automated. [Module 6](/posts/2026/08/agent-system/lean-formalization/#8-build-an-admission-path-without-routine-human-proof-review) develops this architecture and its failure tests.
-
-The early informal exercises teach these distinctions with accessible mathematics. They are stepping stones toward proof-producing systems, not a permanent requirement for human sign-off.
-
-### What to learn for stronger future models
-
-| Likely to change with capabilities | Design knowledge that remains useful |
-|---|---|
-| How much proof construction, formalization, and coordination can be delegated | How to specify the exact task and preserve its meaning across transformations |
-| Which model, agent framework, or prover interface performs the work | How to bind evidence to a target, its definitions, dependencies, and checking environment |
-| How much routine human reading is practical or necessary | How to define an acceptance policy, automate checking, and measure actual mathematical progress |
-
-A future system may produce proofs too numerous or lengthy for routine human inspection. Explanations can still support understanding and research choice, while acceptance relies on validated proof evidence. Learn to design that separation. Today's ChatGPT, Codex, and Lean exercises are concrete ways to learn it; their interfaces are not the curriculum's endpoint.
-
-## Before the first module
-
-<div class="research-start-grid">
-  <a class="research-start-card" href="/posts/2026/08/agent-system/design-principles/">
-    <span class="research-card-step">Course orientation</span>
-    <strong>What are we trying to design?</strong>
-    <span>Start with a simple proof attempt and see why preserving the problem matters.</span>
-    <span class="research-card-link">Read the introduction →</span>
-  </a>
-  <a class="research-start-card" href="/posts/2026/08/agent-system/research-cases/">
-    <span class="research-card-step">Shared examples</span>
-    <strong>Meet the three running cases</strong>
-    <span>Prescribed outputs, uniform estimates, and induction connect the modules.</span>
-    <span class="research-card-link">Explore the cases →</span>
-  </a>
-  <a class="research-start-card" href="/posts/2026/08/agent-system/hands-on-lab/">
-    <span class="research-card-step">Practical materials</span>
-    <strong>Experiment in ChatGPT or Codex</strong>
-    <span>Investigate real examples, preserve evidence, and challenge the results. No programming is required.</span>
-    <span class="research-card-link">Open the laboratory →</span>
-  </a>
-</div>
-
-**Background.** The main research track assumes basic birational geometry: smooth surfaces, divisors, intersections, nefness, and blowups. The optional elementary/analysis track explains the same logical mechanisms for readers without that background; it is not a substitute for the geometric project.
-
+**Background:** smooth surfaces, divisors, intersection numbers, nefness, and blowups. Elementary examples within the modules are optional explanations.
 
 ## The course at a glance
 
-Follow the sequence using one research record in ChatGPT or Codex. Each module tests another part of the same mathematical workflow.
+Follow this sequence while working on the same proof project.
 
-1. [Represent the mathematics](/posts/2026/08/agent-system/foundations/) — statements, assumptions, arguments, and open questions.
-2. [Plan and search](/posts/2026/08/agent-system/plan-and-execute/) — turn a strategy into tasks and alternative routes.
-3. [Use the literature](/posts/2026/08/agent-system/knowledge-retrieval/) — find results and check that they apply.
-4. [Change the viewpoint](/posts/2026/08/agent-system/reasoning/) — transform a problem without losing the way back.
-5. [Review and admit results](/posts/2026/08/agent-system/verification-gate/) — decide what evidence permits reuse.
-6. [Formalize a proof](/posts/2026/08/agent-system/lean-formalization/) — use Lean and audit what a checked proof establishes.
-7. [Remember and recover](/posts/2026/08/agent-system/memory-management/) — preserve versions, alternatives, and unfinished work.
-8. [Coordinate the work](/posts/2026/08/agent-system/multiple-agent-cooperation/) — an optional extension when one worker is not enough.
-9. [Evaluate and assemble](/posts/2026/08/agent-system/evaluation-monitoring/) — test the complete system on a mathematical task.
+1. [**Represent the mathematics**](/posts/2026/08/agent-system/foundations/) — keep the target, assumptions, and unresolved obligations precise.
+2. [**Plan and search**](/posts/2026/08/agent-system/plan-and-execute/) — compare proof routes and choose the next useful task.
+3. [**Use the literature**](/posts/2026/08/agent-system/knowledge-retrieval/) — retrieve the right theorem and justify its application.
+4. [**Preserve the implication back**](/posts/2026/08/agent-system/reasoning/) — close the gap between a reduction and the original problem.
+5. [**Review and admit results**](/posts/2026/08/agent-system/verification-gate/) — locate proof gaps and determine what can be reused.
+6. [**Formalize and check**](/posts/2026/08/agent-system/lean-formalization/) — understand Lean, formal specifications, and the limits of a checked declaration.
+7. [**Remember and recover**](/posts/2026/08/agent-system/memory-management/) — preserve valid work when hypotheses or sessions change.
+8. [**Coordinate the work**](/posts/2026/08/agent-system/multiple-agent-cooperation/) — divide tasks only when it improves the result or cost.
+9. [**Evaluate the system**](/posts/2026/08/agent-system/evaluation-monitoring/) — compare capability and resource use at the same proof quality.
 
-## A repeatable lesson format
+## What counts as success?
 
-Begin with a mathematical attempt that almost works, or a recorded failure from a real workflow. Ask students to locate the missing distinction or implication before introducing the architecture. Draw the relevant records or dependencies, try the smallest useful change to the workflow, and test it on both a valid case and a damaged variant.
+An intervention should either close a mathematical gap the direct run could not close, or produce an equally sound result with less measured token use, time, repeated search, or human correction. Include preparation, retries, and added mathematical hints in the comparison. More agents or more elaborate records are not achievements by themselves.
 
-End each meeting with three questions: **What did this mechanism improve? What does it establish? What does it still trust?** If it added complexity without a useful benefit, simplify or remove it. Keep the resulting artifacts; they become inputs to the next module.
+For the final project, apply the workflow to a proof or proposed extension from your own research. Submit the actual argument, a precise account of remaining gaps, and a comparison with your baseline. A substantive partial result or a decisive obstruction can be valuable; an untested plan is insufficient.
 
-## The final project: design and run a research programme
+The long-term aim is autonomous proof construction with mechanically checkable evidence. Formal checking establishes the encoded statement relative to its foundations; alignment with the intended question remains a separate requirement. This course does not assume that routine human proof checking must remain permanent.
 
-Choose a research direction supported by papers you can actually inspect. Build a Codex workspace from zero and use it to select a precise candidate theorem, investigate competing proof routes, and produce a reviewed mathematical result or a substantive obstruction. No Python framework is required.
+## References and evidence
 
-1. **Discover and justify the target.** Audit at least three relevant sources, compare two possible improvements, and explain why one deserves investigation. Record the limits of the novelty search.
-2. **Reconstruct a known argument.** Reproduce the source proof step your extension depends on. Locate exactly where the changed hypothesis matters.
-3. **Develop competing routes.** Give two distinct proof plans with applicability conditions, dependency records, and return arguments. Attempt a decisive lemma for each before choosing a route to pursue.
-4. **Produce substantive mathematics.** Establish a nontrivial intermediate result, a meaningful special case, or a counterexample or obstruction that decisively changes the proposal. A list of potential lemmas is insufficient.
-5. **Test the research system.** Introduce a stale review, withdraw a premise, and restart from a checkpoint. Compare the actual behavior with an ordinary-chat baseline using comparable evidence and effort.
-6. **Defend the outcome.** Submit a short research report, source audit, full experiment traces, reviewed arguments, remaining gaps, and a concrete next research session. Include one failure and explain the design change it motivates.
+[**Primary sources and claim boundaries**](/posts/2026/08/agent-system/sources-and-claims/)
 
-Use [the from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/) and select the advanced projects below as needed. Formalize one useful local lemma when suitable definitions and tools are available; document the actual execution and its limited scope. Do not force a toy formalization unrelated to the research bottleneck.
-
-The project is challenging because it requires mathematical progress and an evaluated workflow, not because it has many agents. A new publishable theorem is an ambitious outcome, not a guaranteed grading requirement. A rigorous partial result or decisive negative result can pass; an unsupported claim of novelty or a weakened target presented as solved cannot.
-
-### Optional advanced modules
-
-These four research workshops extend the core course. Each introduces a distinct technical problem, a worked mathematical analysis, a Codex construction exercise, and a research-level assessment. Classroom controls establish that the workflow is understandable; the final submission must also engage with an actual paper.
-
-| Workshop | Technical core | Research submission |
-|---|---|---|
-| **A. [Research opportunity discovery](/posts/2026/08/agent-system/research-opportunity-system/)** | Compare theorem changes; maintain competing candidates; design probes that change a research decision | Three source-grounded candidates, a prior-art audit, an attempted new lemma, and justified pursue/defer/reject decisions |
-| **B. [Method recommendation and proof search](/posts/2026/08/agent-system/proof-sketch-system/)** | Positive and negative witnesses; complete finite-dimensional obstruction analysis; interpolation compatibility and sharp perturbation bounds | Two eligible methods for a source-dependent target, checked evidence, and an attempted decisive bridge |
-| **C. [Birational proof workshop](/posts/2026/08/agent-system/birational-proof-workshop/)** | Compare canonical divisors on a common resolution; apply negativity with both signs; prove descent | A complete uniqueness proof, a relative-nef transfer argument, and measured baseline comparison |
-| **D. [Persistent research systems: Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)** | Version-sensitive admission, stale results, recovery, and controlled removal of components | A reproducible research trace, failure experiments, and a budget-matched comparison with ordinary chat |
-
-**Preparation:** A and B use Modules 3–5 and 9; C uses smooth surfaces, divisors, intersections, nefness, and blowups; D uses Modules 5–9. Begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). No separate orchestration program is required for the manual exercises. Untested architectures remain proposals, and a claimed improvement over a named system needs a direct comparison.
-
-**Combined capstone:** select a candidate from three papers, reconstruct its nearest known proof, attempt its hardest new lemma through two methods, and maintain the evolving evidence through a target revision and recovery test. Submit the unsuccessful routes as well as the strongest surviving result. An exact obstruction or a well-supported decision to stop can be a successful research outcome; a polished proposal without a substantive attempt cannot.
-
-## Use the course modularly
-
-For a **conceptual seminar**, emphasize Modules 1, 2, 4, 5, 6, and 9, with diagrams and written arguments. For a **hands-on workshop**, follow all nine modules in ChatGPT or Codex and carry the same research record forward. A **reading group** can assign one module per meeting and compare solutions to its exercise.
-
-These are teaching formats, not different standards of mathematical evidence. In every format, keep the target, assumptions, and remaining obligations visible.
-
-### Sources and further reading
-
-See [why explicit architecture matters](/posts/2026/08/agent-system/why-mathematicians-need-patterns/) for motivation and [books, primary sources, and claim boundaries](/posts/2026/08/agent-system/sources-and-claims/) for references.
-
-*Written in cooperation with AI. Proposed architectures, teaching code, informal reviews, and formally checked results are distinguished throughout the series.*
-
-
-### Practice that tests the design
-
-[Download the English practice pack](/files/reasoning-practice-lab.zip): seven missions now follow the birational proof project: baseline, source applicability, route selection, descent, hypothesis revision, scoped formalization, and transfer. Every mission asks for an initial attempt, a deliberate fault, a repair, and a fresh transfer case. Reference answers are separate so the first attempt remains meaningful.
-
-
-**For birational geometry researchers:** the elementary examples are calibration tasks, not the research endpoint. Follow the [proof-based research track](/posts/2026/08/agent-system/hands-on-lab/#what-hands-on-means-in-a-proof-based-subject): audit an actual proof, identify the first failed hypothesis, attempt a replacement lemma, and reconstruct the dependencies of a theorem package. Numerical experimentation is optional. The advanced project is assessed by mathematical proof progress and the precision of its unresolved obligations.
+The source map distinguishes established mathematics, reported systems, and proposed course workflows. The workflows have not yet been validated by controlled agent runs; improvements must be demonstrated through actual results.

@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: route by the unmet obligation
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Send an unresolved theorem hypothesis to source/application work; send E_p = E_q with no morphism to descent work; send a completed proof to checking.
 
 **Mathematical output:** The next task addresses the actual gap rather than producing another general discussion.

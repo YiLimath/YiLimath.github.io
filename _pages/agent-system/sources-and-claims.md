@@ -21,10 +21,6 @@ The new workshop supplies complete proof routes relative to explicitly imported 
 | Common resolution of regular surfaces | [Stacks, Tag 0C5S](https://stacks.math.columbia.edu/tag/0C5S), Lemma 54.17.2 | Common point-blowup model for a birational map of proper regular surfaces |
 | Factorization of surface morphisms | [Stacks, Tag 0C5R](https://stacks.math.columbia.edu/tag/0C5R), Lemma 54.17.1 | Factorization into point blowups under its regular surface hypotheses |
 | Descent through a contracted exceptional curve | [Stacks, Tag 0C5J](https://stacks.math.columbia.edu/tag/0C5J), Lemma 54.16.1 | Factorization of a morphism constant on that curve |
-| Continuity of a uniform limit | [Lebl, *Basic Analysis*, §6.2.1](https://www.jirka.org/ra/html/sec_liminter.html) | The analysis calibration proof; no claim about an agent's accuracy |
-| Dini's theorem | [Müger, *Topology for the Working Mathematician*, Proposition 7.7.37, p. 158](https://www.math.ru.nl/~mueger/topology.pdf#page=158) | Monotone convergence with a continuous limit on a countably compact space; the course uses the compact metric specialization |
-| Extreme values on compact spaces | [Müger, Corollary 7.7.30, pp. 156–157](https://www.math.ru.nl/~mueger/topology.pdf#page=157) | The nonempty-domain attainment examples in Module 3 |
-| Classical polynomial interpolation | [NIST DLMF, §3.3](https://dlmf.nist.gov/3.3) | Interpolation formulas; degree restrictions and elementary error bounds are derived in the course |
 
 Local calculations and consequences are written out and labeled as course exposition. They are not attributed as quotations or claimed to be new theorems. The geometric project imports the four listed results and proves the remaining comparisons and descent steps explicitly.
 

@@ -8,15 +8,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Research task: formalize the dependency without disguising assumptions
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. If the necessary geometric library is unavailable, encode only the abstract two-sign implication: coefficientwise nonnegativity of D and -D implies D = 0. State the finite index set and coefficient function explicitly. Keep the geometric negativity applications and descent as imported, unformalized obligations.
 
 **Mathematical output:** Actual checker evidence for the encoded lemma, if run, and an explicit list of what it does not certify about the surface theorem.
 
 **Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
 
 
 **The practical question:** when an agent returns Lean code, what evidence would justify using its result in another proof?
@@ -41,7 +38,7 @@ $$
 \exists C\in\mathbb N\;\forall n\in\mathbb N:\ n\leq C.
 $$
 
-The first witness may depend on $n$. The second must work for every $n$. This is the elementary version of the uniformity error in [Case B](/posts/2026/08/agent-system/research-cases/). Formalization makes that distinction part of the proposition the checker sees.
+The first witness may depend on $n$. The second must work for every $n$. This short formal exercise isolates dependence of a witness on its input. It teaches how the encoded proposition fixes the task; it is not a formalization of the geometric project.
 
 ```lean
 theorem pointwiseBound : ∀ n : Nat, ∃ C : Nat, n ≤ C := by

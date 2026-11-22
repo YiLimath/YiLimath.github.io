@@ -9,8 +9,6 @@ full_page_reading: true
 
 This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-## Research task: compare models without changing the task
-
 Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Hold the surface statement, source access, allowed assistance, and acceptance rubric fixed while changing the model. Record actual settings and resource use.
 
 **Mathematical output:** Comparable outcomes without attributing extra tools or supplied proof steps to model quality.
