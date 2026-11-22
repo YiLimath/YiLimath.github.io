@@ -257,3 +257,17 @@
 @media print {
   .agent-system-hub .research-chapter-group > :not(summary) { display: block !important; }
 }
+
+/* Course guide links: quiet at rest, clear on interaction. */
+.agent-system-hub .page__content {
+  a { text-decoration: none; color: #245978; }
+  a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 2px solid #376887; outline-offset: 3px; }
+  a.research-start-card,
+  a.research-start-card:hover,
+  a.research-start-card:focus,
+  a.research-start-card:visited { text-decoration: none; color: #263746; }
+  .research-chapter-group { scroll-margin-top: 2rem; }
+  .research-chapter-group > ol { margin: 1rem 1.25rem; padding-left: 1.6rem; font-size: 0.94em; }
+  .research-chapter-group > h3 { margin: 1.3rem 1.25rem 0.5rem; font-size: 1.05em; }
+}
