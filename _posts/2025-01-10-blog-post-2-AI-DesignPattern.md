@@ -59,14 +59,20 @@ Begin with a mathematical attempt that almost works, or a recorded failure from 
 
 End each meeting with three questions: **What did this mechanism improve? What does it establish? What does it still trust?** If it added complexity without a useful benefit, simplify or remove it. Keep the resulting artifacts; they become inputs to the next module.
 
-## The final project
+## The final project: design and run a research programme
 
-Follow [From an empty folder to a mathematical research system in Codex](/posts/2026/08/agent-system/codex-research-studio/). Build the workflow through instructions and inspectable records, without implementing an agent framework. Use the experiments to decide whether added sophistication actually helps.
+Choose a research direction supported by papers you can actually inspect. Build a Codex workspace from zero and use it to select a precise candidate theorem, investigate competing proof routes, and produce a reviewed mathematical result or a substantive obstruction. No Python framework is required.
 
+1. **Discover and justify the target.** Audit at least three relevant sources, compare two possible improvements, and explain why one deserves investigation. Record the limits of the novelty search.
+2. **Reconstruct a known argument.** Reproduce the source proof step your extension depends on. Locate exactly where the changed hypothesis matters.
+3. **Develop competing routes.** Give two distinct proof plans with applicability conditions, dependency records, and return arguments. Attempt a decisive lemma for each before choosing a route to pursue.
+4. **Produce substantive mathematics.** Establish a nontrivial intermediate result, a meaningful special case, or a counterexample or obstruction that decisively changes the proposal. A list of potential lemmas is insufficient.
+5. **Test the research system.** Introduce a stale review, withdraw a premise, and restart from a checkpoint. Compare the actual behavior with an ordinary-chat baseline using comparable evidence and effort.
+6. **Defend the outcome.** Submit a short research report, source audit, full experiment traces, reviewed arguments, remaining gaps, and a concrete next research session. Include one failure and explain the design change it motivates.
 
-Choose a short published proof that you understand. Build a system that records its target, theorem applications, intermediate arguments, and one substantive transformation. Then create two damaged variants: one with a missing hypothesis and one with an invalid return argument.
+Use [the from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/) and select the advanced projects below as needed. Formalize one useful local lemma when suitable definitions and tools are available; document the actual execution and its limited scope. Do not force a toy formalization unrelated to the research bottleneck.
 
-Submit the original mathematical task, your records and diagrams, a reproducible run, review reports, and an evaluation against a simpler baseline. The assessment should reward a correct and useful partial result, clear diagnosis, and honest uncertainty—not just a successful-looking final answer.
+The project is challenging because it requires mathematical progress and an evaluated workflow, not because it has many agents. A new publishable theorem is an ambitious outcome, not a guaranteed grading requirement. A rigorous partial result or decisive negative result can pass; an unsupported claim of novelty or a weakened target presented as solved cannot.
 
 ### Optional advanced modules
 

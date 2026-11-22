@@ -108,11 +108,15 @@ Use qualitative decisions with explicit reasons:
 
 Even the first category is not a promise of success. Ask a separate review conversation to attack the weakest step using the full evidence. Distinct conversations do not guarantee independent judgments.
 
-## Acceptance experiment
+## Run a pilot before searching your whole corpus
 
-Choose a paper whose later improvement you already know. Withhold that improvement from the supplied corpus and ask the system for candidates. Record the possibility that the model already knows the result, so this is a workflow test rather than a clean discovery benchmark. Add a tempting but false generalization and a proposal already covered by an accessible source.
+Start with the lifting problem in the [method-selection project](/posts/2026/08/agent-system/proof-sketch-system/). Give the system the exact sequence and a proposed sufficient vanishing argument. Ask whether vanishing is necessary for the specified section. Require it to distinguish a weaker sufficient criterion from the exact obstruction criterion.
 
-Check whether the system provides exact statements, detects the false route, locates the known result when it becomes available, and produces a genuinely useful first proof attempt. Compare with one ordinary chat request under comparable time and source access. Do not score verbosity or number of proposed projects as research progress.
+Use the projective line with the trivial bundle and two distinct rational points as a control. The restriction map sends a constant c to (c,c), so (1,1) lifts while (1,0) does not. Ask the system to produce that calculation before proposing a generalization. This is established elementary mathematics, not a new research opportunity; recognizing that boundary is part of the exercise.
+
+Next select three actual papers from your authorized corpus. For one candidate, complete the hypothesis-use table, prior-art search, and first proof attempt. Save all outputs, including a rejected candidate. Compare this with an ordinary request to suggest research topics using the same material and effort budget.
+
+Judge the system by whether its proposal is precise, its source comparisons are correct, and its first attempt materially changes your assessment. A clean negative report can outperform a confident list of untested ideas. Do not score verbosity or number of proposed projects as research progress.
 
 ## Final output to the researcher
 

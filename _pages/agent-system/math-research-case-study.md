@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Danus and Rethlas"
+title: "Advanced Project: Evaluate a Research Workflow Inspired by Danus and Rethlas"
 permalink: /posts/2026/08/agent-system/math-research-case-study/
 tags:
   - Agent System
@@ -8,162 +8,55 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Practical project: A tested Codex workflow rather than an imitation of an architecture
+Use existing research systems as sources of questions, not templates whose complexity must be copied. This chapter builds and evaluates a small Codex workflow. It does not claim to reproduce a current Danus or Rethlas implementation, and it does not treat historical local API names as a usable specification.
 
-**Build from zero in Codex.** Build the linked Codex workspace from an empty folder. Reproduce one research episode with alternatives, versioned reviews, a withdrawn premise, and recovery in a new conversation. Use Danus and Rethlas as architectural references, and distinguish documented behavior from your proposed extensions.
+## The task and baseline
 
-**Acceptance evidence.** Compare against a single-conversation baseline on a valid case and damaged variants. Claim superiority to a named system only after testing a specified version under comparable conditions. Record any capability that the available tools cannot actually execute.
+Choose one short mathematical argument you can check, plus two damaged versions: one missing a hypothesis and one missing a return implication. Use the lifting or blow-up experiments from the preceding projects if you need a controlled starting point.
 
-The architecture below is a design reference. Its components earn their place by helping this experiment; implementing every component is not the assignment. Use [the base Codex setup](/posts/2026/08/agent-system/codex-research-studio/) and [the research-opportunity project](/posts/2026/08/agent-system/research-opportunity-system/) for the working protocol.
+First ask an ordinary chat to solve or review each task. Preserve its full output, source access, date, and effort budget. This is your baseline. Do not give your redesigned workflow extra source material and attribute the difference entirely to architecture.
 
+## Build the smallest useful system
 
-For the hands-on companion, see [build a research system directly in Codex](/posts/2026/08/agent-system/codex-research-studio/). It turns the architectural questions into experiments without requiring students to implement a framework.
+```text
+Create a research workspace using Markdown only.
+Use TARGET.md for exact versioned targets, ARGUMENTS.md for alternative routes,
+REVIEWS.md for reviews of identified argument versions, and CHECKPOINT.md
+for the state needed to resume without this conversation.
+Investigate one task. Record the actual argument and remaining obligations.
+Do not promote a proposal merely because it has been repeated or approved.
+```
 
-## Figure 1
+These files provide explicit interfaces: a target enters investigation, an argument enters review, and a reviewed result may support another step only within its recorded scope. You can operate all of them in one conversation before considering divided work.
 
-[![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)](/images/agent-system/12-math-research-case-study.svg)
+## Separate proposal and review
 
-*Figure 1. A layered as-built view of the case study. Solid navy arrows show
-control, dashed teal arrows show data or feedback, and red arrows mark the
-review-gated path into the fact graph. The dashed teal return carries the
-verifier's verdict and repair hints back to the gateway; the gateway's
-`fact_submit` path contains the write gate, and only `verdict == "correct"`
-leaves on the red commit path into the fact graph.*
+Give a fresh review conversation the exact statement, argument, and sources. Ask it to identify failed inferences and missing premises. Preserve the report even when it disagrees with the proposal. Separate conversations are not guaranteed independent and may share the same error.
 
-**In one sentence.** Two real codebases read as an as-built pattern map: what the books call reflection, tool use, and evaluation appear here as concrete modules around one admission boundary.
+An informal review is fallible mathematical evidence. A label such as 'correct' is not a Lean certificate. If you use Lean, retain the encoded statement, environment, actual checking output, and axiom audit; also compare the encoded statement with the intended mathematics.
 
-This case study uses two real codebases. **Rethlas** is the smaller proof-search
-system: a generation agent reads a mathematical problem and drafts a proof
-blueprint, while a verification agent checks the blueprint through a local HTTP
-service. **Danus** builds a long-running, strategy-steered worker system on top
-of that generation–verification core.
+## Challenge the workflow
 
-The architecture is a code-based case study. Its purpose is to show how the
-patterns from the reference books appear as concrete modules and interfaces.
-For the proposed strategy layer that recommends proof methods and compiles
-critic-tested obligation graphs, see the [proof-sketch and method-recommendation
-system](/posts/2026/08/agent-system/proof-sketch-system/). Its domain-specific
-specialization is the [birational-geometry research
-architecture](/posts/2026/08/agent-system/birational-geometry-agent/).
-
-## Evidence boundary in this case study
-
-The public [Rethlas–Archon paper, version 2](https://arxiv.org/abs/2604.03789v2) distinguishes Rethlas, the informal reasoning agent, from Archon, the Lean formalization agent. A local review service returning `correct` is not the same event as a Lean kernel accepting a proof. Likewise, `blueprint_verified.md` is a workflow filename, not a statement of formal assurance.
-
-The [Danus paper, version 2](https://arxiv.org/abs/2607.06447v2) describes a shared fact graph and a stateless admission verifier. Read “fact” here as the system's record category. The public paper supports this architectural description; the detailed local endpoints below are historical implementation notes whose exact snapshot was not recorded. They should not be treated as a current API specification.
-
-## Rethlas: the two-agent core
-
-The Rethlas repository separates proof generation from proof verification.
-
-1. A problem is stored as Markdown under the generation agent's data directory.
-2. The generation agent uses explicit tools for theorem search, memory, branch
-   state, and proof verification.
-3. It produces a Markdown proof blueprint rather than treating a fluent answer
-   as a finished proof.
-4. The verification service exposes `/verify`; it starts a fresh verification
-   agent and expects a structured JSON verdict.
-5. A rejected blueprint returns repair hints; the generation agent revises and
-   submits again.
-6. A successful run produces `blueprint_verified.md`.
-
-[![Rethlas and Danus verified-proof loop](/images/agent-system/23-research-loop.svg)](/images/agent-system/23-research-loop.svg)
-
-*Figure 2. The upper state machine is the standalone Rethlas loop. The lower
-flow is Danus's per-worker fact-admission path, where `fact_submit` reaches the
-verifier before a fact can be committed.*
-
-This is a direct instance of the books' reflection, tool-use, exception-recovery,
-structured-output, and human-or-machine evaluation patterns.
-
-## Danus: extending the core
-
-Danus adds the system architecture needed for multiple problems, workers, and
-long-running operation:
-
-- **Orchestration:** the main agent and the `danus` CLI create projects, assign
-  tasks, start workers, inspect status, and stop execution. The orchestrator
-  coordinates work; it is not the admission authority.
-- **Strategy:** an elaboration is prepared, a strategy consultation is run, and
-  the resulting `master_guidance` steers the next worker round.
-- **Execution:** detached workers run rounds, each using the inherited Rethlas
-  proving skills. Multiple workers provide parallel exploration.
-- **Verification:** a cold-start verifier judges submitted statements and
-  proofs. The verdict is strict: the verifier is instructed to accept only when it identifies no critical errors or gaps.
-- **Evidence and memory:** worker-local memory, project-global memory, and a
-  content-addressed fact graph have different roles. Only verifier-accepted
-  facts enter the fact graph.
-- **Gateway:** the role-gated MCP gateway controls the tool surface. Workers can
-  submit facts; the main agent cannot call `fact_submit`; the verifier is
-  read-only.
-- **Outputs:** isolated authoring agents render verified material into a paper or
-  a human progress summary.
-- **Operations:** theorem search, observability, loopback services, configuration,
-  and recovery scripts support the runtime without becoming sources of truth.
-
-## Pattern mapping
-
-| Book pattern | Concrete realization in Danus/Rethlas |
+| Intervention | Behavior to inspect |
 |---|---|
-| Prompt chaining | staged problem reading, proof drafting, verification, and repair |
-| Routing and planning | main-agent task assignment and strategy guidance |
-| Parallelization | detached worker swarm exploring different proof directions |
-| Reflection | verifier feedback and generation-agent repair loop |
-| Tool use | MCP tools, theorem search, and the `/verify` HTTP interface |
-| Structured output | proof Markdown, verification JSON, memory channels, and fact records |
-| Memory management | worker-local logs, global findings, and verified facts |
-| Multi-agent cooperation | operator, main agent, workers, verifier, and isolated authoring agents |
-| Exception recovery | retry, repair hints, persisted rounds, and explicit failure states |
-| Evaluation and guardrails | strict verdict schema, role permissions, and the fact write-gate |
-| Resource-aware operation | configurable workers, models, transports, service timeouts, and detached execution |
+| Change a hypothesis after review | Old review is reconsidered against the new statement |
+| Withdraw one of two independent routes | Remaining valid route still supports the target |
+| Withdraw all available support | Target becomes unresolved, not automatically false |
+| Deliver a delayed report | Its target version is checked before reuse |
+| Restart with only a checkpoint | Target, assumptions, and open obligations survive |
+| Ask for formal status without running a tool | Missing execution is reported honestly |
 
-## Design lessons
+Run these interventions and retain the actual responses. A prompt requesting the right behavior is not evidence that the behavior occurred.
 
-1. The most important pattern is the **admission boundary**: generation may be
-   broad and exploratory, but claims become usable only under an explicit evidence policy; model acceptance remains fallible.
-2. The **interface boundary** matters more than the agent's label. MCP tool
-   schemas, the `/verify` request, the verification JSON, and fact identifiers
-   make components replaceable.
-3. The **workflow/autonomy distinction** is visible in the architecture. Rethlas
-   is a bounded two-agent loop; Danus adds autonomous workers but keeps them
-   inside explicit round, memory, permission, and termination controls.
-4. The system demonstrates why design patterns are useful for mathematical
-   software: they separate search, judgment, storage, and publication so that
-   each can be inspected independently.
+## Decide whether more coordination helps
 
-## Scope and limits
+If source checking and an alternative proof can proceed separately, try distinct Codex tasks or conversations. Fix comparable total effort and source access. Count duplicated work, elapsed time, accepted errors, missed valid arguments, and useful partial conclusions. A single-worker system is a valid outcome when coordination adds no value.
 
-This page documents the architecture visible in the local Danus and Rethlas
-code snapshots used for this case study. The linked papers and repositories
-provide public provenance, but their default branches or later revisions may
-differ from the snapshots inspected here. It does not claim that either system
-automatically proves arbitrary mathematics. A verified artifact is a result
-accepted by the system's verifier contract; mathematical interpretation and
-research significance remain separate questions.
+## How to make a responsible comparison with a named system
 
-## How to read the diagrams
+To compare directly with Danus or Rethlas, obtain an accessible, identified version and document its configuration. Run the same cases with comparable tools and resources. Separate claims supported by a paper from observations of your own run. If you cannot execute the named system, compare only architectural choices and do not claim measured superiority.
 
-*The two diagrams deliberately use different forms: the first emphasizes
-components and boundaries, while the second emphasizes states, decisions, and
-recovery. Both describe the same code-based case study.*
+A useful final report says which failure the redesigned workflow caught, which it missed, and what the added mechanism cost. It may conclude that an ordinary chat is sufficient for a task. The objective is improved mathematical work, not a larger collection of agent roles.
 
-## References
+[From-zero Codex setup](/posts/2026/08/agent-system/codex-research-studio/) · [Research-opportunity project](/posts/2026/08/agent-system/research-opportunity-system/) · [Course roadmap](/posts/2026/12/Agent-System/)
 
-1. J. Liu et al., “Danus: Orchestrating Mathematical Reasoning Agents with
-   Fact-Graph Memory,” arXiv:2607.06447 (2026). [Paper](https://arxiv.org/abs/2607.06447)
-   and [source repository](https://github.com/frenzymath/Danus).
-2. H. Ju et al., “Automated Conjecture Resolution with Formal Verification,”
-   arXiv:2604.03789 (2026). [Paper](https://arxiv.org/abs/2604.03789) and
-   [Rethlas source repository](https://github.com/frenzymath/Rethlas).
-3. A. Gullí, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent
-   Systems*, Springer, 2025. [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
-4. V. Dibia, *Designing Multi-Agent Systems: Principles, Patterns and
-   Implementation for AI Agents*. [Author's book site](https://multiagentbook.com/).
-
-## Hands-on: audit one admission path
-
-Choose a pinned repository revision before reproducing this case. Trace one candidate from submission to stored record. Save the request, review report, evidence type, and dependency identifiers. Submit the same statement with a changed hypothesis and confirm that the old verdict is not reused. Report whether the path performs informal review, formal checking, or both; do not infer this from filenames.
-
----
-
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
