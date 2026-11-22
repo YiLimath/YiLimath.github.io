@@ -26,6 +26,12 @@ Replay three actions: find a sufficient vanishing criterion, discover an unmatch
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: make one iteration produce a state change
+
+Begin with an exact unresolved obligation. Choose an action that could resolve or sharpen it, inspect the evidence returned, and update the record. A repeated suggestion with no new argument, source, or counterexample is not a productive iteration.
+
+**Acceptance exercise.** For each iteration, write what was known before, what evidence arrived, and what changed. Permit “still unresolved” as an honest result, but require a different next action or a reason to stop.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

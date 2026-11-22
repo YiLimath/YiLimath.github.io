@@ -26,6 +26,12 @@ Construct a source statement, hypothesis matrix, and conditional lifting argumen
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: preserve the boundary between extraction and application
+
+A first step extracts a theorem; a second substitutes the current objects; a third checks the hypotheses. If extraction omits compactness, later fluent reasoning cannot recover the missing assumption reliably. Preserve the source passage alongside the extracted statement.
+
+**Acceptance exercise.** Deliberately remove one hypothesis from the extracted record. The application step should detect the discrepancy by returning to the source, not approve the shortened statement because it came from an earlier stage.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

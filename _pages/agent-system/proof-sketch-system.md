@@ -11,6 +11,78 @@ full_page_reading: true
 
 A useful method recommendation ends with an attempted mathematical argument. This project asks Codex to compare routes, identify their decisive obligations, and work on one of those obligations. No orchestration software is required.
 
+**Reading route:** start with the workshop below for the advanced design; use [First understand the method-selection problem without geometry](#first-understand-the-method-selection-problem-without-geometry) as a concrete calibration when needed. Complete the research assignment after the control example.
+
+## Research workshop B: search for proofs that carry checkable evidence
+
+**Entry requirements:** Modules 2–6; linear algebra; the geometry extension additionally uses sheaf cohomology. **Deliverable:** a search record with two applicable methods, an explicit success witness or obstruction, and a review showing exactly what the evidence settles. The warm-up below introduces the idea; this section develops the general mechanism.
+
+### 1. The result of a method is more than a proposed verdict
+
+Let $A:V\to W$ be a linear map of finite-dimensional vector spaces over a field $k$. For a fixed $b\in W$, the task is to solve $Ax=b$. There are two kinds of evidence worth searching for:
+
+- A **positive witness** $x$ with an exact check that $Ax=b$.
+- A **negative witness** $\lambda\in W^*$ with $\lambda\circ A=0$ and $\lambda(b)\ne0$.
+
+The negative witness proves impossibility: if $Ax=b$, then $\lambda(b)=\lambda(Ax)=0$, contradicting its nonzero value. This is a complete refutation with a short check, not a failed search for $x$.
+
+Why does such a negative witness exist whenever $b$ is outside the image? Choose a basis of $\operatorname{im}A$, append $b$, and extend to a basis of $W$. Define $\lambda$ to vanish on the image basis, take value one on $b$, and vanish on the other basis vectors. This proves that, in this finite-dimensional setting, the two evidence types cover all cases.
+
+The scope matters. For maps between infinite-dimensional topological spaces, continuity of the functional and closedness of the image introduce additional questions. A system must not export the finite-dimensional proof as a theorem about arbitrary function spaces.
+
+### 2. An exact obstruction can guide the search
+
+For the worked map $A(x,y)=(x+y,x-y,2x)$ over $\mathbb R$, take $\lambda(a,b,c)=c-a-b$. Then $\lambda\circ A=0$. The output $(3,1,5)$ has obstruction one and is impossible; $(3,1,4)$ has obstruction zero and has the positive witness $(2,1)$.
+
+In this example, the kernel of $\lambda$ equals the image of $A$, because the explicit solution proves sufficiency. For a general map, finding **one** vanishing functional gives only one necessary compatibility condition. A complete collection of conditions must characterize the image. This is the distinction between a useful obstruction and a complete solvability criterion.
+
+The system should return the witness and its validation argument, not merely the word “solvable.” For approximate numerical computations, specify the norm, tolerance, and error estimate. A small residual can guide a conjecture, but it does not by itself produce an exact solution or a formal proof.
+
+### 3. The geometric version: compute the actual obstruction
+
+Let $X=\mathbb P^1_k$, let $D$ be a sum of $m\geq1$ distinct rational points, and let $L=\mathcal O_X(d)$ with $d\geq0$. Choose points in an affine chart and compatible fiber trivializations. Global sections then correspond to polynomials of degree at most $d$, and restriction is evaluation at those points.
+
+The standard cohomology computation gives
+
+$$
+\begin{aligned}
+h^0(\mathcal O_X(n))&=\max(n+1,0),\\
+h^1(\mathcal O_X(n))&=\max(-n-1,0).
+\end{aligned}
+$$
+
+These are the $\mathbb P^1$ specialization of [Stacks Project, Lemma 30.8.1](https://stacks.math.columbia.edu/tag/01XS). The restriction sequence has kernel sheaf $\mathcal O_X(d-m)$. Since $H^1(\mathcal O_X(d))=0$, its long exact sequence identifies the cokernel of evaluation with $H^1(\mathcal O_X(d-m))$. Consequently,
+
+$$
+\dim\operatorname{coker}(r)=\max(m-d-1,0).
+$$
+
+Every requested value tuple lifts precisely when $d\geq m-1$. Below that threshold, a particular tuple may still lift. Its class in the cokernel is the exact obstruction.
+
+For three affine points $0,1,2$ over $\mathbb R$ and $d=1$, write $f(t)=u+vt$. Its values satisfy
+
+$$
+f(2)-2f(1)+f(0)=0.
+$$
+
+Thus $(a,b,c)$ lifts exactly when $c-2b+a=0$: choose $u=a$ and $v=b-a$ for the converse. The tuples $(0,1,2)$ and $(0,1,3)$ give a positive and a negative control under identical geometric hypotheses. Here the obstruction space is one-dimensional, and the displayed expression computes a nonzero linear coordinate on it, up to a chosen identification.
+
+This is a complete bridge between theorem application, exact sequences, and an explicit calculation. In a harder research problem, computing the analogous obstruction may be the central research task rather than a routine stage.
+
+### 4. Architecture for method selection
+
+[![Proof-search architecture retains method preconditions and checks positive or negative witnesses before updating the target.](/images/agent-system/advanced-proof-search.svg)](/images/agent-system/advanced-proof-search.svg)
+
+A method record contains its applicability conditions, generated subgoals, return implication, expected evidence, and stop condition. A method is eligible only in a context where its conditions hold or remain visible as assumptions. Rank eligible methods by the unresolved work they require; relevance alone does not make a method eligible.
+
+For a selected route, separate **constructing** evidence from **checking** it. A different worker is optional. The interface matters: a positive witness enters substitution; a negative witness enters a check of both annihilation and nonzero pairing. A method that times out returns an unresolved task, not a negative witness.
+
+### 5. Build and defend the system in Codex
+
+Create `TARGET.md`, `METHODS.md`, `WITNESSES.md`, and `CHECKS.md`. First reproduce the finite-dimensional argument and both three-point controls. Next change the degree bound or evaluation points and require a new applicability check. Finally replace the control with a source-dependent lemma from your own research and attempt its decisive subgoal.
+
+The defense must show one success witness, one exact obstruction, one method rejected because of its hypotheses, and one unresolved research bridge. Explain which components are informal judgments and which, if any, were checked by actual software. A framework that only lists plausible proof methods has not completed this workshop.
+
 ## First understand the method-selection problem without geometry
 
 Module 1 used one input $c$ to produce $(c,c)$. Here is a harder control with two unknowns and three output conditions. Let

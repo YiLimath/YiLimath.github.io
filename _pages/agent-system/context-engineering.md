@@ -26,6 +26,12 @@ Compress a Case B estimate to five lines, then reconstruct its dependencies. Fai
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: choose context by the next inference
+
+For a theorem application, prioritize the target, relevant definitions, exact theorem, and unmatched hypotheses. A long conversation about related geometry can crowd out the one condition that decides applicability. Keep full sources retrievable outside the working summary.
+
+**Acceptance exercise.** Remove background prose while preserving the decisive hypothesis; then remove that hypothesis. Only the second change should prevent a justified application. Use this contrast to evaluate whether context selection is evidence-sensitive.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

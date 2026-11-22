@@ -9,6 +9,70 @@ The deliverable is a research proposal you can actually begin: an exact candidat
 
 This is a design and laboratory, not a report that a system has already discovered a new theorem. It requires access to real sources and mathematical checking. Do not assign numerical success probabilities without calibration data.
 
+**Reading route:** start with the workshop below for the advanced design; use [A worked opportunity audit: replace compactness by what the proof needs](#a-worked-opportunity-audit-replace-compactness-by-what-the-proof-needs) as a concrete calibration when needed. Complete the research assignment after the control example.
+
+## Research workshop A: select a project under incomplete evidence
+
+**Entry requirements:** Modules 3–5 and 9; three accessible papers in one area; enough background to reconstruct one proof. **Research deliverable:** a decision dossier comparing precise candidate theorems, including an attempted new lemma and a reasoned decision to pursue, defer, or reject each candidate. The elementary example later in this chapter is a calibration exercise, not the final assignment.
+
+The difficult design problem is that novelty, feasibility, and value are different uncertainties. A candidate can be new but inaccessible, easy but already known, or mathematically correct but irrelevant to the research objective. A single numerical “promising” score hides these distinctions.
+
+### 1. Represent an opportunity as a change to a theorem
+
+For each candidate, store the original theorem $H\Rightarrow C$ and the proposed theorem $H'\Rightarrow C'$. Supply the logical comparison, not just the label “generalization.” For weaker hypotheses with the same conclusion, establish $H\Rightarrow H'$. For a stronger conclusion under the same hypotheses, establish $C'\Rightarrow C$. If neither comparison is available, describe the statements as different or incomparable.
+
+A stronger hypothesis and stronger conclusion can still define a worthwhile project, but it is not automatically an improvement of the original theorem. Similarly, proving a special case may be valuable feasibility evidence without settling the candidate.
+
+| Candidate field | What the researcher must be able to inspect |
+|---|---|
+| Theorem difference | Original and proposed domains, quantifiers, hypotheses, and conclusions |
+| Mathematical value | Which existing obstruction or downstream application the change addresses |
+| Proof difference | Exact source step that stops working and proposed replacement |
+| Prior-art status | Closest inspected results and implication comparisons |
+| Feasibility evidence | Completed calculation or lemma attempt, including failure |
+| Decision | Next action, remaining uncertainty, and reason to spend or stop work |
+
+The retrieval system searches for this structured difference. “Find papers on extension” is a corpus-discovery query. “Find a result that removes positivity hypothesis H while retaining extension of the specified section” is a theorem-level query. They need different evidence.
+
+### 2. Keep a frontier of candidates rather than a popularity ranking
+
+First reject candidates contradicted by a valid example or already implied by an inspected result in the same scope. Put inaccessible-source cases aside with the reason recorded. Among survivors, compare mathematical value, prerequisites, unproved bridges, and cost of the next decisive test.
+
+One candidate dominates another for your current project only when it is no worse on the criteria you actually care about and better on at least one. Often neither dominates: one targets a more important theorem, another has a much sharper first experiment. Preserve that trade-off for the researcher instead of hiding it in decimal probabilities.
+
+For example, compare extending an argument to a broader category with improving its conclusion in the original category. The former may need a replacement for compactness; the latter may need a sharper estimate. If both depend on the same missing uniform bound, that lemma is a shared bottleneck. Probing it may inform both candidates at once. The reason to prioritize it is this concrete dependency, not a claim that the model knows the probability of success.
+
+### 3. Design a discriminating probe
+
+A good probe has specified consequences for different outcomes. Suppose an argument supplies constants $C_j$ but the extension needs one $C$ independent of $j$. Write a small family where the dependence can be calculated exactly. If $C_j$ must diverge for that family under the candidate's hypotheses, the proposed bridge fails. If a uniform estimate is proved only on a restricted family, record that scope and ask what additional step would generalize it.
+
+Before the attempt, record these branches:
+
+```text
+Probe P3 tests candidate C2-v1, bridge B7-v1.
+Question: does the required bound hold uniformly in the chosen family?
+Positive outcome: a proof with a constant independent of the index.
+Negative outcome: examples satisfying the hypotheses that force divergence.
+Inconclusive outcome: only separate bounds or a finite sample.
+Decision affected: pursue B7, change the proposed hypothesis, or defer C2.
+```
+
+This is an experimental design for reasoning. It does not require coding, and a failure is useful when it rules out an important route. Finitely many successful examples cannot discharge a uniform statement over an infinite family.
+
+### 4. Separate discovery from recommendation
+
+[![Research opportunity system with separate source, candidate, prior-art, and feasibility records.](/images/agent-system/advanced-opportunity.svg)](/images/agent-system/advanced-opportunity.svg)
+
+The source store is read-only evidence. Candidate proposals do not write accepted mathematical facts. The decision dossier receives both the prior-art comparison and the feasibility report. Neither report substitutes for the other. A recommendation can remain provisional when the closest inaccessible paper might already contain the result.
+
+In Codex, create `CORPUS.md`, one `candidates/C*.md` per candidate, `PROBES.md`, and `DECISION.md`. For the first run, use a small authorized corpus and require the exact theorem passages. Expand retrieval only when a named gap calls for it. Keep the same candidate ID through revisions, with distinct statement versions.
+
+### 5. Graduate assignment and oral defense
+
+Start from three real papers and produce three candidate changes. Reconstruct the source argument for the strongest candidate. Complete a prior-art comparison with at least one near-match whose hypotheses differ. Attempt one substantive bridge and compare it with an alternative route. The mathematical result may be a restricted theorem or a decisive obstruction, but it must include the argument.
+
+At the defense, answer: Which implication makes this an extension? Where does the original proof use the changed hypothesis? What did the probe establish that was not justified before? What evidence would reverse your recommendation? A list of papers, an untested blueprint, or an unsupported claim that the project is “very likely doable” does not pass.
+
 ## What the system should return
 
 For each shortlisted paper, require its exact version and theorem locator, the proposed improvement, the proof step where the original hypothesis is used, and a reason the proposed replacement could work. Preserve the original statement alongside the candidate. A weaker conclusion or a special case must be labeled accordingly.

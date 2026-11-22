@@ -26,6 +26,12 @@ Report Case B with only parameter-dependent estimates available. State the parti
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: detect a solved substitute
+
+The target is to lift a specified pair (a,b) to a constant function. Producing a lift for (1,1) does not solve the target (1,0). Monitor the actual input, output, and quantifiers, not whether the conversation contains a plausible solution.
+
+**Acceptance exercise.** Keep the original target beside the current subgoal. Every completed subgoal needs a stated implication back to the target. A change of target requires an explicit decision and leaves the earlier task unresolved.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

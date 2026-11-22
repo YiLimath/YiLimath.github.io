@@ -26,6 +26,12 @@ Split “justify the limit” into topology, uniformity, compactness, and identi
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: route an unresolved estimate
+
+Suppose a proof needs a bound independent of a parameter. If a cited theorem supplies the bound, route to source inspection with the exact parameter dependence as the question. If the theorem does not apply, route to a mathematical argument or counterexample search. Sending the same question to more literature workers does not repair a failed hypothesis.
+
+**Acceptance exercise.** Require the result to name the missing estimate, its quantifiers, and the evidence needed to discharge it. Test an ambiguous request and check that the router asks for the missing domain instead of inventing one.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

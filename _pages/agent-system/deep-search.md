@@ -27,6 +27,12 @@ Use a ten-query budget. Return the source ledger, one rejected near-match, remai
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: search a missing bridge, not a broad topic
+
+After finding a relevant theorem, search for the exact unmatched hypothesis or comparison lemma. Record the query, corpus, source version, and why each result changes the argument. More papers about the same topic are not necessarily progress.
+
+**Acceptance exercise.** Stop with a bounded coverage statement: which sources were checked, what remained inaccessible, and which bridge remains open. A failed search is not evidence that no theorem exists.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

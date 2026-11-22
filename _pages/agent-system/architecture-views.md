@@ -41,6 +41,12 @@ Draw the four views for the ledger lab. Mark which components are implemented an
 
 [C4](https://c4model.com/introduction) supplies established context and container views for software architecture. The semantic and logical views here add the mathematical content that a deployment view cannot express. These are design proposals; the figure does not assert that any particular research system implements them.
 
+## Worked design decision: draw one system from complementary views
+
+A dependency view shows which claims rely on which premises. A workflow view shows how proposals move through review. A storage view shows where versions and sources persist. Combining all three into unlabeled arrows hides the difference between logical implication and a file transfer.
+
+**Acceptance exercise.** For every arrow, state its meaning and a failure that can occur there. If an arrow cannot be given an operational or mathematical interpretation, remove it or mark it as a proposed relationship.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

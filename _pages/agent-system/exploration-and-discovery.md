@@ -26,6 +26,12 @@ Write compatible reports for non-liftability of (1,0) and successful lifting of 
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: explore a controlled change
+
+Vary one hypothesis of a known theorem and predict where the proof first stops. For minimum attainment, removing compactness suggests testing open domains, then looking for a replacement compact sublevel set. This generates a concrete bridge rather than an unbounded list of ideas.
+
+**Acceptance exercise.** Produce a counterexample to the unrestricted variant and a proof under a stated replacement condition. Before calling the replacement a research opportunity, check whether it is already standard.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

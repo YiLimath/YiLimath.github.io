@@ -26,7 +26,7 @@ Victor Dibia's *Designing Multi-Agent Systems* and Lakshmanan and Hapke's *Gener
 
 ## Evidence labels used in the text
 
-A **worked argument** has its reasoning supplied in the article. A **design proposal** specifies behavior to implement and test. A **reported system** is attributed to its source. A **historical implementation note** may describe a local snapshot and requires a pinned revision before reproduction. The laboratory is executable policy code, not a proof assistant.
+A **worked argument** has its reasoning supplied in the article. A **design proposal** specifies behavior to implement and test. A **reported system** is attributed to its source. A **historical implementation note** may describe a local snapshot and requires a pinned revision before reproduction. The laboratory is a guided ChatGPT or Codex workflow. A written protocol specifies intended behavior; its execution must be recorded and evaluated. Only the separately identified Lean exercises supply proof-assistant checks.
 
 The three running cases are teaching examples with explicit conclusions. They do not resolve the open problems that motivate advanced mathematical research. The long birational-geometry chapter is a proposed specialization; its source theorem hypotheses must be consulted before implementing a theorem application.
 

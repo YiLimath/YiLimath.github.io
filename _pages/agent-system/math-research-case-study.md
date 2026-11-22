@@ -10,6 +10,74 @@ full_page_reading: true
 
 Use existing research systems as sources of questions, not templates whose complexity must be copied. This chapter builds and evaluates a small Codex workflow. It does not claim to reproduce a current Danus or Rethlas implementation, and it does not treat historical local API names as a usable specification.
 
+**Reading route:** start with the workshop below for the advanced design; use [A reference episode with expected state changes](#a-reference-episode-with-expected-state-changes) as a concrete calibration when needed. Complete the research assignment after the control example.
+
+## Research workshop D: design a persistent research system and test its failure behavior
+
+**Entry requirements:** the core course and one source-dependent mathematical project. **Deliverable:** a versioned research workspace, reproducible failure experiments, and a comparison that identifies which architectural mechanism changes which observed behavior. The elementary episode later in this chapter is a diagnostic control, not the research benchmark.
+
+### 1. Learn from reported systems without conflating their evidence
+
+[Danus v2](https://arxiv.org/abs/2607.06447v2) reports planning and parallel proof search organized around shared fact-graph memory, with proposed claims checked before admission. [Rethlas–Archon v2](https://arxiv.org/abs/2604.03789v2) reports a division between informal reasoning and Lean formalization. These descriptions motivate two distinct design questions: how to maintain an evolving proof state, and how to relate informal discoveries to formally checked declarations.
+
+The workshop combines these questions into a proposed architecture. It does not claim that every component below is absent from those systems, nor that a prompt-based workspace already outperforms them. Such comparisons require an inspected implementation revision and matched runs.
+
+### 2. Separate proposals, reviews, and current state
+
+Use a single authoritative current-state document with preserved supporting artifacts. A proposal writes to an inbox, a review refers to exact target and argument versions, and an admission step updates the current view only after checking that those versions still apply. A worker's report should not directly overwrite the current target.
+
+```text
+TARGET.md                 current target and version
+inbox/                    proposals with target and premise versions
+arguments/                complete argument texts; old revisions retained
+reviews/                  scope, findings, and exact reviewed inputs
+DECISIONS.md              admitted, conditional, rejected, or stale reports
+STATE.md                  supported conclusions and open obligations
+CHECKPOINT.md             recovery entry point with artifact locations
+```
+
+These directories can be created and operated in Codex without an orchestration program. Their rules remain a protocol that can fail; tests must check compliance. If concurrent writers can overwrite one another, a plain Markdown convention does not provide a transactional guarantee. Use one admission writer for the course experiment and treat stronger concurrency guarantees as a separately implemented extension.
+
+### 3. Admission is a state transition with preconditions
+
+Before applying a review, compare its target version, argument version, premise versions, and evidence policy with the current records. If any relevant item changed, the report may remain historically correct but must be reassessed for current use.
+
+| Incoming result | Current condition | Permitted transition |
+|---|---|---|
+| Reviewed argument | Exact inputs still match; assumptions discharged | Admit its supported conclusion |
+| Valid implication using an unproved lemma | The lemma remains assumed | Admit only conditional use |
+| Review for old target | Target changed materially | Retain report; request applicability review |
+| Duplicate report | Same decision already recorded | Do not create another independent support route |
+| Withdrawn premise | Other routes may survive | Recompute affected support before downgrading the target |
+
+This procedure is analogous to checking a precondition before committing an update. In a Codex-only laboratory it is a behavior to observe, not an automatic atomic operation.
+
+### 4. A concrete stale-result experiment
+
+At time one, a task investigates polynomial interpolation with degree bound one. It proves every value pair at two distinct points can be obtained. At time two, the target changes to degree zero. At time three, the old approval arrives.
+
+The old theorem remains true but cannot establish universal solvability under the new bound. The system should retain the linear interpolation proof, reopen the application, and calculate the constants-only compatibility condition. It must not delete useful mathematics, silently change the bound, or count the stale approval as a current proof.
+
+Now deliver the same old report twice. Its two deliveries are one piece of evidence, not independent corroboration. Then remove the applicability record while retaining the theorem. Recovery should identify exactly what is missing: the source theorem is preserved, but its use for the current target is unsupported.
+
+[![Persistent research architecture separates proposal submission, version-aware review, admission, and recovery.](/images/agent-system/advanced-research-state.svg)](/images/agent-system/advanced-research-state.svg)
+
+### 5. Evaluate through controlled removal of components
+
+Compare three configurations on the same mathematical material: ordinary conversation, versioned records without an explicit admission procedure, and versioned records with the procedure above. Keep source access and the effort allowance comparable. Run both valid controls and changes designed to produce stale evidence.
+
+Record invalid reuse, false rejection of still-valid mathematics, recovery fidelity, useful completed obligations, human corrections, and total effort. Preserve first responses. If a repair needs the evaluator to supply the missing lemma, report that assistance rather than attributing its mathematics to the architecture.
+
+Then remove one component at a time. Does removing version comparison allow stale approvals? Does removing alternative-route tracking discard a supported result after one premise is withdrawn? A failure with and without the component does not demonstrate a benefit. A single successful run supports only that observed episode.
+
+### 6. Upgrade the benchmark beyond classroom controls
+
+Select a published argument whose proof spans multiple source results. Freeze one reconstruction task and two hypothesis variants. Include one variant with a known failure and one whose status the reviewer must investigate. Keep the reference material separate from the solving conversation, while giving both compared systems equal authorized source access.
+
+For an open target, assess intermediate results individually rather than labeling the whole run successful from its final prose. Require one source application audit, one attempted new lemma, one withdrawal experiment, and one fresh-session recovery. Include an actual Lean artifact only when the encoded bridge is relevant and executable. The final report must say which conclusions are informal, formal, conditional, or unresolved.
+
+The advanced skill is designing a system that can change its mind for the right mathematical reason while retaining valid work. Future models may simplify the implementation, but the distinctions tested by these experiments remain necessary.
+
 ## The task and baseline
 
 Choose one short mathematical argument you can check, plus two damaged versions: one missing a hypothesis and one missing a return implication. Use the lifting or blow-up experiments from the preceding projects if you need a controlled starting point.

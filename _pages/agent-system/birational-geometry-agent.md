@@ -11,6 +11,92 @@ full_page_reading: true
 
 The aim is to test whether a geometric construction actually advances the original target. Start with a known reduction and a reference argument. Only then ask whether it survives changed hypotheses. 'Spiraling induction' is not an extra proof principle: any induction still needs explicit statements, bases, and a well-founded dependency order.
 
+**Reading route:** start with the workshop below for the advanced design; use [First task: a blow-up and the return to the original surface](#first-task-a-blow-up-and-the-return-to-the-original-surface) as a concrete calibration when needed. Complete the research assignment after the control example.
+
+## Research workshop C: transport theorems across models and induction stages
+
+**Entry requirements:** divisors, line bundles, intersection theory on smooth projective surfaces, and the core course's dependency records. **Deliverable:** a theorem package with an explicit model-change argument, its admissible scope, and an induction schedule whose rank decreases at every recursive invocation. The negative blow-up control later in the chapter is only the starting test.
+
+### 1. One modification can destroy one property and preserve another
+
+Let $\pi:Y\to X$ be the blow-up of a point on a smooth projective surface over an algebraically closed field, with exceptional curve $E$. The later calculation shows that $K_Y\cdot E=-1$, so nefness of $K_X$ does not transfer to $K_Y$. Yet the spaces of pluricanonical sections are preserved:
+
+$$
+H^0(X,mK_X)\cong H^0(Y,mK_Y)
+\quad(m\geq1).
+$$
+
+The contrast forces a useful architectural distinction. A model change is not labeled simply “safe” or “unsafe.” It has a transfer rule for a specified object and property. Section spaces and nefness require different arguments.
+
+### 2. Derive the positive transfer
+
+Use compatible canonical divisors, so $K_Y=\pi^*K_X+E$. For $j\geq1$, consider
+
+$$
+\begin{gathered}
+0\to\mathcal O_Y((j-1)E)\to\mathcal O_Y(jE)
+\\ \to\mathcal O_E(-j)\to0.
+\end{gathered}
+$$
+
+Here $E\cong\mathbb P^1$ and $\mathcal O_E(E)\cong\mathcal O_{\mathbb P^1}(-1)$. The last sheaf has no global sections. Since $E$ maps to a point, its direct image under $\pi$ is zero. Left exactness of direct image therefore gives
+
+$$
+\pi_{\ast}\mathcal O_Y((j-1)E)
+\cong\pi_{\ast}\mathcal O_Y(jE).
+$$
+
+Together with $\pi_{\ast}\mathcal O_Y=\mathcal O_X$ for a proper birational morphism to the smooth, hence normal, surface $X$, induction gives $\pi_{\ast}\mathcal O_Y(mE)=\mathcal O_X$. The projection formula now yields
+
+$$
+\begin{gathered}
+\pi_{\ast}\mathcal O_Y(mK_Y)\\
+\cong\mathcal O_X(mK_X)\otimes\pi_{\ast}\mathcal O_Y(mE)\\
+\cong\mathcal O_X(mK_X).
+\end{gathered}
+$$
+
+Taking global sections proves the claimed isomorphism. Notice what was not needed: vanishing of all higher direct images. Introducing that stronger obligation would complicate the proof without serving this target.
+
+This calculation specializes the exceptional-divisor pushforward mechanism discussed in §1.2 of [Kollár's 2017 draft, *Families of varieties of general type*](https://web.math.princeton.edu/~kollar/book/modbook20170720). The surface argument above exposes the particular ingredients a source audit must check. It does not assert a transfer theorem for arbitrary singular spaces or analytic modifications.
+
+### 3. Package the result with its interface
+
+| Component | Required content |
+|---|---|
+| Input objects | Smooth projective surfaces, point blow-up, exceptional curve, integer $m\geq1$ |
+| Imported facts | Canonical-divisor identity, normal-target pushforward, projection formula, negative-degree section vanishing on $E$ |
+| Output | An isomorphism of the specified global section spaces |
+| Forbidden inference | Nefness of $K_Y$, or a family-level base-change statement |
+| Revision trigger | Change of singularities, category, center, coefficient type, or relative setting |
+
+The last row is especially important for mathematical research. Fiberwise equality of dimensions does not alone prove a sheaf isomorphism over a parameter space. Nor does a calculation for line bundles automatically handle a non-Cartier canonical divisor. Those proposed extensions need new statement versions and new bridge lemmas.
+
+### 4. Make a spiraling induction genuinely well founded
+
+Suppose a theorem package contains statements $A_{d,q}$ and $B_{d,q}$, where $d,q$ are nonnegative integers. One proposed dependency is: $A_{d,q}$ uses $B_{d,q-1}$ when $q>0$ and specified lower-dimensional results; $B_{d,q}$ then uses $A_{d,q}$. At $q=0$, replace the unavailable predecessor by an explicit boundary argument.
+
+Assign lexicographic ranks
+
+$$
+\rho(A_{d,q})=(d,q,0),\qquad
+\rho(B_{d,q})=(d,q,1).
+$$
+
+Each stated predecessor has smaller rank: the lower-dimensional step lowers $d$, the predecessor $B_{d,q-1}$ lowers $q$, and $A_{d,q}$ precedes $B_{d,q}$ within the same pair. Provide the $d=0$ boundary proofs and all $q=0$ transitions. This establishes a well-founded *dependency plan*, provided every implication is separately proved.
+
+An invocation of $B_{d,q}$ inside the proof of $A_{d,q}$ violates this order and creates a cycle. Reducing some informal “complexity” is not enough unless its values and decrease are defined. For an actual MMP proof, the ranks must match the parameters in the source; the two-index rehearsal is not a claim about a named theorem.
+
+[![Geometric theorem packages track objects, transfer lemmas, and well-founded theorem invocations separately.](/images/agent-system/advanced-geometry.svg)](/images/agent-system/advanced-geometry.svg)
+
+### 5. A research-level Codex assignment
+
+Create one object record per model and one transfer record per claimed property. Reproduce both the negative nefness calculation and the positive pluricanonical calculation. Then choose an actual induction theorem from accessible literature and supply the relevant proof passages.
+
+Require Codex to extract every theorem invocation into a row containing the caller, callee, full hypotheses, parameter substitution, and rank comparison. For a same-rank auxiliary result, give an independent earlier proof or mark the invocation unresolved. Finally change one hypothesis and attempt the first transfer or induction step that breaks.
+
+The submission must contain mathematical proofs and the actual invocation audit. A diagram with decreasing labels does not prove the corresponding implications. A successful local transfer does not establish the whole theorem package.
+
 ## First task: a blow-up and the return to the original surface
 
 Let X be a smooth projective surface over an algebraically closed field and let π:Y→X be the blow-up of a smooth point, with exceptional curve E. The canonical divisor formula is

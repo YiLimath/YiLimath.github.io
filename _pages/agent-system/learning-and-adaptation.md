@@ -26,6 +26,12 @@ Tune a route preference on vanishing-friendly fixtures, then evaluate it on the 
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: learn a method with its eligibility conditions
+
+A successful compactness argument may suggest a reusable method: obtain uniform bounds, choose a topology, extract a subsequence, identify the limit. Store the necessary hypotheses with that sequence. “Use compactness” alone is not reusable mathematical knowledge.
+
+**Acceptance exercise.** Test the extracted method on a nearby problem lacking the bound. It should expose a missing premise. Record failures and scope restrictions alongside successes to avoid teaching the system a false universal rule.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

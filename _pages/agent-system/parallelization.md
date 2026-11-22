@@ -26,6 +26,12 @@ Withdraw the vanishing evidence in the workbench: the direct route must survive.
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: parallelize alternatives, not dependent conclusions
+
+Two methods may independently attack the same lemma. They cannot independently declare downstream lemmas proved while their shared premise remains unresolved. Give each branch the same frozen target and source packet; preserve incompatible assumptions in separate branches.
+
+**Acceptance exercise.** Compare elapsed time and usable mathematical evidence with a serial run under the same total effort. Include a case in which both branches repeat the same invalid premise; two copies must not count as corroboration.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

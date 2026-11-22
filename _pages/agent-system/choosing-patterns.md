@@ -26,6 +26,12 @@ Start with one worker and the workbench. Add one mechanism to address a measured
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: choose from a diagnosed failure
+
+If the problem is a missing source hypothesis, add an application check. If it is incompatible worker assumptions, add explicit branch records. If it is a stale verdict, add a version-sensitive admission step. More agents do not address every failure.
+
+**Acceptance exercise.** Write the failure observed before adding the component, then rerun that case and an unaffected control. Keep the component only if its benefit justifies the extra work and new failure modes.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

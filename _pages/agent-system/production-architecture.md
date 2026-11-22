@@ -26,6 +26,12 @@ Save after withdrawing one Case A route, reload, and verify that the alternative
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: separate research correctness from operational reliability
+
+A process can recover every file correctly and still preserve a false lemma. Conversely, a correct proof can be lost by a broken save operation. Maintain separate checks for mathematical admission and storage recovery, with distinct failure reports.
+
+**Acceptance exercise.** Interrupt a write, replay an already processed proposal, and withdraw a supporting premise. Explain which behaviors a manual workflow can demonstrate and which require an implemented transactional storage mechanism.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

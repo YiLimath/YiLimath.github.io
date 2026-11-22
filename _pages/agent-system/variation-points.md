@@ -30,6 +30,12 @@ Replace the worker with a scripted response and retain the same version and admi
 
 Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: replace a model while preserving the research contract
+
+A new model can generate candidates faster without changing what counts as an admissible premise. Keep the target format, evidence requirements, and review scope stable while testing the replacement on the same tasks. Change those contracts only through an explicit redesign.
+
+**Acceptance exercise.** Compare actual outputs under equal conditions and disclose different tool access. Better prose or faster completion alone does not show improved proof reliability.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

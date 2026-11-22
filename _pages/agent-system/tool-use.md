@@ -68,6 +68,12 @@ AI*, O'Reilly, 2024, Chapter 4. For the packaging of tools and instructions as
 named, loadable capabilities — so that a capability's detail enters context only
 when it is needed — see Stephen Clear, *Claude AI Bible*, Chapters 14 and 16.
 
+## Worked design decision: interpret the tool result before reusing it
+
+A symbolic calculation may return zero because of simplification rules, hidden assumptions, or a restricted domain. Preserve the exact expression, assumptions, command, and output. Then explain why that computation supports the mathematical inference in this problem.
+
+**Acceptance exercise.** Test a nearby input outside the declared assumptions. If the tool still produces output, the interpretation layer must prevent an unsupported conclusion. Numerical agreement is evidence for investigation, not a general proof.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -76,14 +76,18 @@ The project is challenging because it requires mathematical progress and an eval
 
 ### Optional advanced modules
 
-Start with a concrete mathematical task, build the workflow directly in Codex, and evaluate its actual output. The linked chapters contain proposed designs and historical examples; neither a diagram nor a written protocol establishes that a system works. Each project below has a specific deliverable.
+These four research workshops extend the core course. Each introduces a distinct technical problem, a worked mathematical analysis, a Codex construction exercise, and a research-level assessment. Classroom controls establish that the workflow is understandable; the final submission must also engage with an actual paper.
 
-- [Find a research opportunity worth pursuing](/posts/2026/08/agent-system/research-opportunity-system/) — search your authorized vault, database, and accessible literature; identify a precise theorem to improve, check the closest prior work, and attempt the hardest new bridge. **Deliverable:** a research proposal with a completed feasibility probe, explicit gaps, and reasons to proceed or stop.
-- [Turn a proposed method into a testable proof plan](/posts/2026/08/agent-system/proof-sketch-system/) — compare two methods for the same target, check their hypotheses, and attempt a decisive intermediate lemma in Codex. **Deliverable:** an inspectable proof plan, the actual lemma attempt, and a mathematically justified rejection or revision of an unsuitable route.
-- [Audit a birational argument and its induction](/posts/2026/08/agent-system/birational-geometry-agent/) — reconstruct one known geometric reduction before attempting a generalization. Track the objects, theorem hypotheses, induction order, base cases, and argument returning to the original target. **Deliverable:** a checked reconstruction and a precise diagnosis of what fails when a hypothesis or base case is removed.
-- [Build and evaluate a Codex research workflow](/posts/2026/08/agent-system/math-research-case-study/) — use Danus and Rethlas as architectural references, then build a small workflow with alternative arguments, versioned reviews, and recovery. **Deliverable:** complete research traces and a comparison with ordinary chat on valid and damaged cases. Claims of improvement over a named system require a direct, documented comparison.
+| Workshop | Technical core | Research submission |
+|---|---|---|
+| **A. [Research opportunity discovery](/posts/2026/08/agent-system/research-opportunity-system/)** | Compare theorem changes; maintain competing candidates; design probes that change a research decision | Three source-grounded candidates, a prior-art audit, an attempted new lemma, and justified pursue/defer/reject decisions |
+| **B. [Method recommendation and proof search](/posts/2026/08/agent-system/proof-sketch-system/)** | Positive and negative witnesses; complete finite-dimensional obstruction analysis; an explicit geometric lifting calculation | Two eligible methods for a source-dependent target, checked evidence, and an attempted decisive bridge |
+| **C. [Birational geometry and spiraling induction](/posts/2026/08/agent-system/birational-geometry-agent/)** | Derive preservation of pluricanonical sections; distinguish failed nefness transfer; audit a well-founded induction | A reconstructed theorem package, model-by-model interfaces, and a precise test of a proposed extension |
+| **D. [Persistent research systems: Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)** | Version-sensitive admission, stale results, recovery, and controlled removal of components | A reproducible research trace, failure experiments, and a budget-matched comparison with ordinary chat |
 
-For each project, begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). Keep prompts, source material, actual outputs, and failed attempts. Add a component only when an observed problem justifies it; label untested extensions as proposals.
+**Preparation:** A and B use Modules 3–5 and 9; C additionally requires algebraic geometry and sheaf cohomology; D uses Modules 5–9. Begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). No separate orchestration program is required for the manual exercises. Untested architectures remain proposals, and a claimed improvement over a named system needs a direct comparison.
+
+**Combined capstone:** select a candidate from three papers, reconstruct its nearest known proof, attempt its hardest new lemma through two methods, and maintain the evolving evidence through a target revision and recovery test. Submit the unsuccessful routes as well as the strongest surviving result. An exact obstruction or a well-supported decision to stop can be a successful research outcome; a polished proposal without a substantive attempt cannot.
 
 ## Use the course modularly
 

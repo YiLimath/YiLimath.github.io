@@ -26,6 +26,12 @@ Allocate twelve action units across Case A’s routes. Declare predicted cost an
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: spend effort where a decision can change
+
+A project may have ten routine checks and one unknown uniform estimate. Completing more routine checks can make the dossier longer without making the project more feasible. Allocate a bounded attempt to the estimate and specify what a positive, negative, or inconclusive result would change.
+
+**Acceptance exercise.** Record effort and resulting decision changes. Stop when the next action merely repeats an unchanged attempt; continue when a new source, example, or reduction materially changes the unresolved obligation.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

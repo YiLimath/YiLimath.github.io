@@ -30,6 +30,12 @@ Create a valid record that interchanges the quantifiers in Case B. Parsing shoul
 
 Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: validate meaning after validating fields
+
+A record can contain every required field and still claim that an open interval is compact. Structural validation checks presence and format; mathematical review checks the argument and applicability. Store these as separate outcomes.
+
+**Acceptance exercise.** Create one malformed but mathematically correct record and one well-formed but false record. A useful system distinguishes them and requests the appropriate repair instead of assigning one generic confidence score.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -26,6 +26,12 @@ Delay a review, change the section, then deliver the old report. Reject its reus
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: send the mathematical dependency
+
+A message saying “compactness checked” is unusable without the space, topology, hypotheses, and source or argument. Send the exact conclusion together with its assumptions and the version of the problem it concerns. The receiver still checks applicability.
+
+**Acceptance exercise.** Change the topology while preserving the space name. A receiver that accepts the old message without inspection has failed the exercise. Communication should reduce ambiguity, not turn a short label into authority.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

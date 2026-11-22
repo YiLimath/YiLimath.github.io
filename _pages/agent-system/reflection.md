@@ -26,6 +26,12 @@ Diagnose a Case B proof that swaps quantifiers. Give the exact counterexample u_
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: turn criticism into a falsifiable objection
+
+For a proposed proof that every continuous function on an open interval attains its minimum, a useful critic identifies the unsupported compactness step and supplies f(x)=x on (0,1). A request to “think harder” supplies neither a diagnosis nor a repair.
+
+**Acceptance exercise.** After repair, inspect the changed inference. Adding compactness gives a different theorem; replacing the argument requires a new proof. Retain the original target so a silent weakening cannot pass.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

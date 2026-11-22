@@ -26,6 +26,12 @@ Inject a timeout, stale review, and nonzero obstruction. Write three recovery re
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
+## Worked design decision: recover without manufacturing evidence
+
+If a source download fails, the state is “source inaccessible,” not “the theorem is false.” Preserve the requested source, failed operation, and unfinished mathematical obligation. Resume from the last supported state after access returns.
+
+**Acceptance exercise.** Interrupt a run after a proposed proof is saved but before review. On restart, the proposal must remain unreviewed. Check that a repeated operation does not create two independent-looking pieces of evidence.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

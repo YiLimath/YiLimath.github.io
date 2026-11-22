@@ -32,6 +32,12 @@ Write a decision packet for the open-interval example in the [introduction](/pos
 
 Gulli, *Agentic Design Patterns*, Chapter 13, treats human involvement as a pattern. This page specializes the interface to mathematical scope changes and delegated research. It makes no claim that a particular cognitive task will remain exclusively human.
 
+## Worked design decision: locate responsibility without predicting permanent limitations
+
+The researcher chooses which question matters, what evidence justifies further investment, and what claim to publish. These are responsibilities of the research process, even when increasingly capable models assist with every decision. Do not base the architecture on a forecast that a specific task will always resist automation.
+
+**Acceptance exercise.** At a decision point, present the exact options, supporting evidence, costs, and unresolved obligations. Ask for a substantive research choice rather than routine confirmation of every reversible step.
+
 ---
 
 [Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
