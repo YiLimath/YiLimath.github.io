@@ -70,13 +70,14 @@ Submit the original mathematical task, your records and diagrams, a reproducible
 
 ### Optional advanced modules
 
-Choose an advanced project because it helps a real research task. Each includes architecture, a from-zero Codex workflow, and an acceptance experiment. A polished diagram alone is not a successful submission.
+Start with a concrete mathematical task, build the workflow directly in Codex, and evaluate its actual output. The linked chapters contain proposed designs and historical examples; neither a diagram nor a written protocol establishes that a system works. Each project below has a specific deliverable.
 
-- [Research opportunity discovery](/posts/2026/08/agent-system/research-opportunity-system/) — search an authorized vault, database, and accessible literature; propose a precise improvement and test its hardest bridge before recommending a project.
+- [Find a research opportunity worth pursuing](/posts/2026/08/agent-system/research-opportunity-system/) — search your authorized vault, database, and accessible literature; identify a precise theorem to improve, check the closest prior work, and attempt the hardest new bridge. **Deliverable:** a research proposal with a completed feasibility probe, explicit gaps, and reasons to proceed or stop.
+- [Turn a proposed method into a testable proof plan](/posts/2026/08/agent-system/proof-sketch-system/) — compare two methods for the same target, check their hypotheses, and attempt a decisive intermediate lemma in Codex. **Deliverable:** an inspectable proof plan, the actual lemma attempt, and a mathematically justified rejection or revision of an unsuitable route.
+- [Audit a birational argument and its induction](/posts/2026/08/agent-system/birational-geometry-agent/) — reconstruct one known geometric reduction before attempting a generalization. Track the objects, theorem hypotheses, induction order, base cases, and argument returning to the original target. **Deliverable:** a checked reconstruction and a precise diagnosis of what fails when a hypothesis or base case is removed.
+- [Build and evaluate a Codex research workflow](/posts/2026/08/agent-system/math-research-case-study/) — use Danus and Rethlas as architectural references, then build a small workflow with alternative arguments, versioned reviews, and recovery. **Deliverable:** complete research traces and a comparison with ordinary chat on valid and damaged cases. Claims of improvement over a named system require a direct, documented comparison.
 
-- [Method recommendation and proof-sketch systems](/posts/2026/08/agent-system/proof-sketch-system/) — develop the full architecture introduced in Module 4.
-- [Birational geometry and spiraling induction](/posts/2026/08/agent-system/birational-geometry-agent/) — apply the contracts to geometric reductions and theorem packages.
-- [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/) — audit the boundaries in reported implementations.
+For each project, begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). Keep prompts, source material, actual outputs, and failed attempts. Add a component only when an observed problem justifies it; label untested extensions as proposals.
 
 ## Use the course modularly
 
@@ -89,4 +90,3 @@ These are teaching formats, not different standards of mathematical evidence. In
 See [why explicit architecture matters](/posts/2026/08/agent-system/why-mathematicians-need-patterns/) for motivation and [books, primary sources, and claim boundaries](/posts/2026/08/agent-system/sources-and-claims/) for references.
 
 *Written in cooperation with AI. Proposed architectures, teaching code, informal reviews, and formally checked results are distinguished throughout the series.*
-
