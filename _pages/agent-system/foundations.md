@@ -53,39 +53,127 @@ The first is true by choosing C=n. The second is false: after a proposed C is fi
 
 **Discussion checkpoint:** when a paper writes “there exists a constant C,” what variables may C depend on? A research system should preserve that dependence explicitly wherever it matters to the next inference.
 
-## 3. A complete worked example: lifting a specified section
+## 3. A complete worked example: can one constant give two prescribed values?
 
-Start with the linear map
+The idea we need is simple: **finding an object is not enough; it must satisfy the exact conditions requested.** We will first work with ordinary real numbers. The connection to “lifting a section” comes afterward, and you can follow the system-design lesson without knowing algebraic geometry.
 
-$$r:k\longrightarrow k^2,\qquad c\longmapsto(c,c)$$
+### Step 1. State the rules of the problem
 
-over a field k. Its image is the diagonal. The vector (a,b) has a preimage if and only if a=b. In particular, (1,1) has preimage 1 and (1,0) has no preimage.
+We are allowed to choose a **constant function**. Once we choose its value $c$, the function has that value everywhere. In particular, at two different points called $p$ and $q$, its values are
 
-Now interpret the map geometrically. Let X be the projective line over k, let L be its trivial line bundle, and let D consist of two distinct k-rational points p and q. Sections of L on D are pairs of values. Global sections of L on X are constants.
+$$
+f(p)=c,\qquad f(q)=c.
+$$
 
-Here is a direct justification of the last assertion. Cover the projective line by its two standard affine charts with coordinates $t$ and $u=1/t$. A regular function is represented by polynomials $f(t)$ and $g(u)$ that agree on the overlap. In the Laurent polynomial ring, $f(t)=g(t^{-1})$. The left side has only nonnegative powers and the right side only nonpositive powers. Their common expression is therefore constant. Restricting that constant to $p$ and $q$ gives precisely $r$.
+The restriction to constant functions is part of this example's rules. If we allowed arbitrary functions, assigning different values at the two points would be a different problem.
 
-We can now distinguish three tasks:
+Our task is to find an allowed function with these **prescribed** values:
 
-| Task | Exact question | Answer and reason |
+$$
+f(p)=1,\qquad f(q)=0.
+$$
+
+“Prescribed” means that the values are already part of the question. We cannot replace the zero by a one to make the problem easier.
+
+### Step 2. Test a proposed answer
+
+Suppose the assistant proposes the constant function $f(x)=1$. This is an allowed function, and it is nonzero. But we must check both requirements:
+
+| Point | Required value | Value of the proposed function | Matches? |
+|---|---|---|---|
+| $p$ | $1$ | $1$ | Yes |
+| $q$ | $0$ | $1$ | No |
+
+So this candidate fails. The error would be to report “a nonzero function exists, therefore the task is solved.” Existence answers only part of the question; matching the prescribed values is essential.
+
+Could a different constant work? To match the value at $p$, we need $c=1$. To match the value at $q$, we need $c=0$. No real number satisfies both equations. This proves that **no allowed function solves this target**, rather than merely showing that our first attempt failed.
+
+### Step 3. Compare three questions that sound similar
+
+Now change the second prescribed value to one. The constant function $f(x)=1$ does meet both requirements. Keep this new task separate from the original:
+
+| Task | Exact question | Answer |
 |---|---|---|
-| T1 | Does the chosen section (1,0) lift? | No: it is outside the diagonal |
-| T2 | Does the chosen section (1,1) lift? | Yes: use the constant 1 |
-| T3 | Is there a nonzero global section of L? | Yes: use the constant 1 |
+| T1 | Can a constant function have values $1$ at $p$ and $0$ at $q$? | No: its values must be equal |
+| T2 | Can a constant function have values $1$ at both points? | Yes: choose the constant $1$ |
+| T3 | Does any nonzero constant function exist? | Yes: choose the constant $1$ |
 
-T3 does not solve T1. T2 and T3 happen to share a witness, but they are still different propositions. The target includes the chosen section and the restriction map, not merely the bundle name.
+T2 and T3 happen to have the same answer and the same example. They still ask different questions. Neither establishes T1. A research system must preserve this distinction even when the conversation moves quickly between the three tasks.
 
-### What an incorrect research trace looks like
+### Step 4. Give the calculation a reusable notation
 
-1. The task asks whether (1,0) lifts.
-2. The assistant finds the global section 1.
-3. It reports success because this section is nonzero.
+Let $r$ mean “read off the values at the two points.” Its input is the chosen constant $c$; its output is the pair of observed values:
 
-The invalid step is the third one. The candidate witness restricts to (1,1), not (1,0). This diagnosis is more useful than marking the entire response “wrong”: the computation of global sections remains reusable.
+$$
+r(c)=(c,c).
+$$
 
-### A corrected trace
+For example, $r(0)=(0,0)$, $r(1)=(1,1)$, and $r(2)=(2,2)$. Every output has equal entries. Conversely, any pair with equal entries, say $(a,a)$, is produced by choosing $c=a$.
 
-Keep the global-section calculation. Compute the restriction of each proposed witness. Record the image of r. Then conclude separately that T1 is false and T2 and T3 are true. No new agent role is needed; the repair is a better mathematical contract for the witness.
+The **image** of $r$ means the collection of outputs it can produce. Here that collection consists exactly of pairs with equal entries. It is sometimes called the diagonal because those pairs lie on the line $y=x$ in the plane.
+
+Given a desired pair $s$, a **lift** is an input $c$ that produces it. The equation to check is
+
+$$
+r(c)=s.
+$$
+
+This is all “lifting” means in the calculation: work backward from prescribed output to an allowed input. The pair $s=(1,1)$ has a lift; $s=(1,0)$ does not. Finding some input without checking its output is not enough.
+
+### Where sections enter the story
+
+There is a geometric setting in which the allowed functions really are exactly the constants. It gives the same map $r$, so none of the answers above changes. Here is a translation guide for readers who will encounter this example in later modules:
+
+| Language in the geometric example | Meaning in this calculation |
+|---|---|
+| A global section of the trivial line bundle | An allowed function on the whole space |
+| A section on the two points | A prescribed pair of values $(a,b)$ |
+| Restriction | Read off the function's values at those points |
+| Lift the specified section | Find an allowed function producing that exact pair |
+
+These descriptions concern this particular trivial-bundle example; sections of general bundles need not be ordinary scalar-valued functions. You do not need the following geometric justification to use the example in the course laboratory.
+
+<details markdown="1">
+<summary>Optional geometry: why the projective-line example gives exactly this map</summary>
+
+Let $k$ be a field, let $X=\mathbb P^1_k$ be the projective line, let $L=\mathcal O_X$ be the trivial line bundle, and let $D$ consist of two distinct $k$-rational points $p,q$. A global section of this bundle is a regular function on $X$. A section on $D$ is a pair of values in $k$.
+
+The important geometric fact is that the global regular functions on $X$ are constants. Here is the calculation for readers familiar with affine charts. Cover $X$ by its two standard affine charts with coordinates $t$ and $u$. On their overlap, $u=1/t$.
+
+A global regular function is described by a polynomial $f(t)$ on the first chart and a polynomial $g(u)$ on the second. Because they describe the same function where the charts overlap, they must satisfy
+
+$$
+f(t)=g(t^{-1}).
+$$
+
+The left side contains only nonnegative powers of $t$. The right side contains only nonpositive powers. Equality of Laurent polynomials forces every nonconstant coefficient to vanish, so their common value is constant.
+
+Restricting a constant $c$ to $p$ and $q$ produces $(c,c)$. Thus the geometric restriction map is precisely
+
+$$
+r:k\longrightarrow k^2,\qquad c\longmapsto(c,c).
+$$
+
+Taking $k=\mathbb R$ recovers the numerical calculation above. Over any field the same argument works, since $1\ne0$.
+</details>
+
+### What the research system should save
+
+Keep the target, candidate, test, and conclusion distinct:
+
+```text
+Target T1: find c such that r(c) = (1,0), where r(c) = (c,c).
+Candidate: c = 1.
+Test: r(1) = (1,1), which is not the required pair.
+Candidate decision: this witness fails.
+General argument: every output has equal entries; (1,0) does not.
+Target decision: no lift exists under these rules.
+Reusable result: (a,b) lifts exactly when a = b.
+```
+
+Notice the two different conclusions: the test rejects one candidate; the general argument rules out every candidate. A failed attempt alone would not justify the second conclusion.
+
+**Quick check:** does $(3,3)$ lift? Does $(3,2)$? The first lifts by choosing $c=3$; the second cannot lift because its entries differ. If you can explain those answers and why T3 does not solve T1, you have the mathematical idea needed for the next section.
 
 ## 4. The five records and their responsibilities
 
@@ -148,6 +236,8 @@ Review T2 using the witness 1. Then change the chosen section to (1,0) and retai
 
 ## 7. From the example to a research reduction
 
+**Optional on a first reading.** This section shows how the same question appears in advanced geometry. If line bundles and cohomology are unfamiliar, continue to the laboratory in Section 8. The numerical map from Section 3 is enough for the core exercises.
+
 For an effective Cartier divisor D and a line bundle L, the restriction sequence is
 
 $$0\longrightarrow L(-D)\longrightarrow L\longrightarrow L|_D\longrightarrow0.$$
@@ -172,15 +262,15 @@ Use a fresh conversation or a dedicated folder in Codex. Save initial outputs be
 ### Round A: construct the record
 
 ```text
-Create RESEARCH.md using the projective-line two-point example.
-Record the objects and restriction map explicitly.
-Create distinct targets for lifting (1,0), lifting (1,1), and existence
-of a nonzero global section. Supply arguments, not just verdicts.
-Separate what was given from what you derived.
-Explain why the global sections are constants.
+Create RESEARCH.md for real numbers with the given map r(c) = (c,c).
+Create three distinct targets: produce (1,0), produce (1,1),
+and find any nonzero input c. Supply arguments, not just verdicts.
+Test each proposed input by computing its output.
+Distinguish rejecting one candidate from ruling out every candidate.
+Separate the given rule from the conclusions you derive.
 ```
 
-**Inspect:** all three targets appear; the witness is checked against the chosen section; the constant-function argument is complete. If the assistant lacks the geometric background, let it work with the explicit linear map first, then add the geometric derivation.
+**Inspect:** all three targets appear; each proposed input is checked against the required output; impossibility is justified using the equal-entry rule. **Optional extension:** add the projective-line interpretation and ask for the chart calculation explaining why its global sections are constants.
 
 ### Round B: introduce a bad witness and a stale review
 
