@@ -5,9 +5,31 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Practice pack:** [Download seven progressively harder missions](/files/reasoning-practice-lab.zip), with starter records, deliberate faults, transfer challenges, and separate reference answers. Begin with one mission; preserve the first attempt before reviewing it.
+
+
 Use ChatGPT or Codex directly. No Python project, API integration, or programming prerequisite is needed. Each experiment produces a small record that you can inspect and carry into the next experiment.
 
 **What you are testing:** whether the assistant preserves the mathematical target, distinguishes evidence from assertions, and responds correctly when assumptions or arguments change. A successful conversation is evidence about that run, not a guarantee that future runs will behave the same way.
+
+## What hands-on means in a proof-based subject
+
+For a birational geometer, the central practical activity is working on proofs: reconstructing a reduction, checking a theorem's hypotheses, finding the first unsupported implication, and attempting a replacement lemma. Numerical experiments are optional and are not the course's main research method. The elementary examples below are short calibration problems: their known answers make a system's mistakes visible before you trust it with unfamiliar mathematics.
+
+**Two levels, one workflow.** First use a small example to learn the mechanism. Then take a proof you actually care about and produce mathematical work with that mechanism. You do not have to complete every interpolation or stability exercise before starting your research track.
+
+### Research track: audit and improve an actual proof
+
+Choose a precise theorem or reduction from a paper you know in birational geometry. Supply the statement, proof passage, and cited results; preserve their exact hypotheses. Choose one change to investigate, such as removing a positivity assumption or moving from a projective setting to a compact Kähler setting. These are candidate questions, not promised generalizations.
+
+1. **Reconstruct:** express the argument as explicit implications. For each arrow, give the source result and the substitution that makes it apply. Separate existence, preservation of properties, and termination.
+2. **Find the first break:** identify the earliest use of the hypothesis you want to change. Quote its precise role. A theorem unavailable in the new setting is a missing justification, not automatically a false conclusion.
+3. **Attempt a replacement:** formulate the weakest lemma that would repair this particular step, and try to prove it. Compare a local repair with an alternative route that avoids the step. Preserve the original target when assessing both.
+4. **Stress-test:** look for a counterexample after weakening an assumption. If you cannot construct one, retain “unresolved”; do not convert search failure into evidence of truth.
+5. **Return to the theorem:** check whether the replacement really closes the original argument or merely proves a special case. Record every remaining dependency.
+6. **Restart and revise:** remove one shared lemma or change a hypothesis. Recover which conclusions still follow from the saved record, including alternative proofs.
+
+**Submission:** an annotated proof, an exact replacement lemma, a genuine attempted argument, and a supported conclusion about what has or has not been achieved. A rigorous explanation of why a proposed extension fails can be more valuable than an optimistic project proposal. Formalize a suitable component when useful; lack of full formalization does not justify labeling the rest mechanically checked.
 
 ## Set up your research record
 

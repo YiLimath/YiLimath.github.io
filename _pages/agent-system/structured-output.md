@@ -7,12 +7,12 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/foundations/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/foundations/).
 
 
 A record with `claim` and `confidence` is structured but mathematically weak. Useful types distinguish a statement from its argument, an assumption from a justified premise, and an evidence category from a workflow status.
 
-Case A needs the chosen section and exact restriction map. Case B needs quantifier order and allowed constant dependencies. Case C needs indexed statements, base cases, and a rank. A generic summary field conceals all three.
+Case A needs the specified output and exact input-to-output map. Case B needs quantifier order and allowed constant dependencies. Case C needs indexed statements, base cases, and a rank. A generic summary field conceals all three.
 
 ## Four checks, four meanings
 

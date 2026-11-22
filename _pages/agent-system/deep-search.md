@@ -8,10 +8,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/).
 
 
-A lifting problem may appear under extension, restriction, vanishing, or obstruction classes. Decompose the mathematical need before expanding the vocabulary. Search the sufficient-vanishing and direct-obstruction routes separately.
+A linear-system problem may appear under solvability, matrix rank, compatibility, or null-space tests. Identify the exact missing claim before expanding the search vocabulary. Search general solvability and compatibility of the requested vector separately.
 
 ## The contract
 

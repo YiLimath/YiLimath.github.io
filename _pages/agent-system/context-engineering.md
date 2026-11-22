@@ -7,14 +7,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
 
 
 Even an enormous context window needs a distinction between current assumptions, rejected attempts, source statements, and control instructions. A longer transcript does not automatically supply that distinction.
 
 ## The contract
 
-For Case A, give the worker the exact sheaf, divisor, section, and open obstruction. For Case B, preserve parameter dependence and topology. Summaries may omit detail only when the full artifact remains retrievable and the scope survives compression.
+For Case A, give the worker the exact input rule, requested output, and unchecked compatibility condition. For Case B, preserve parameter dependence and topology. Summaries may omit detail only when the full artifact remains retrievable and the scope survives compression.
 
 ## Trade-offs and failure modes
 

@@ -13,7 +13,7 @@ A research checkpoint should let a new session reconstruct what is known, why it
 
 ## 1. Memory is a claim about the research state
 
-Suppose a conversation concludes that the requested output cannot be produced. A later summary says “there are no allowed inputs.” The files persisted, but the mathematics changed. For the elementary rule $r(c)=(c,c)$, plenty of inputs exist; the failure concerns producing the prescribed output $(1,0)$. In the geometric version those inputs are global sections.
+Suppose a conversation concludes that the requested output cannot be produced. A later summary says “there are no allowed inputs.” The files persisted, but the mathematics changed. For the elementary rule $r(c)=(c,c)$, plenty of inputs exist; the failure concerns producing the prescribed output $(1,0)$.
 
 Every summary is an interpretation of evidence. It can introduce a new error. Keep the full argument available and write summaries with explicit objects and quantifiers. A compact statement such as “every output has equal entries, so $(1,0)$ is excluded” is both shorter and more faithful than a vague conclusion about nonexistence.
 
@@ -30,7 +30,7 @@ $$
 \end{aligned}
 $$
 
-Here $E$ is a shared structural fact, while $P$ and $Q$ support alternative routes. For this protocol exercise the implications are stipulated inputs, not newly proved mathematical theorems. Read $E$ as a shared rule whose applicability has been checked; $P$ and $Q$ are different additional facts used by the two arguments. For example, two calculations can use the same model of the allowed inputs. If that model is wrong, both calculations need reconsideration. The optional geometric interpretation takes $E$ to encode the restriction sequence, $P$ global vanishing, and $Q$ zero obstruction for the chosen section.
+Here $E$ is a shared structural fact, while $P$ and $Q$ support alternative routes. For this protocol exercise the implications are stipulated inputs, not newly proved mathematical theorems. Read $E$ as a shared rule whose applicability has been checked; $P$ and $Q$ are different additional facts used by the two arguments. For example, two calculations can use the same model of the allowed inputs. If that model is wrong, both calculations need reconsideration.
 
 | Event | Route A: $E,P$ | Route B: $E,Q$ | Status of $T$ |
 |---|---|---|---|

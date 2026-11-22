@@ -45,7 +45,7 @@ A future system may produce proofs too numerous or lengthy for routine human ins
   <a class="research-start-card" href="/posts/2026/08/agent-system/research-cases/">
     <span class="research-card-step">Shared examples</span>
     <strong>Meet the three running cases</strong>
-    <span>Section lifting, uniform estimates, and induction connect the modules.</span>
+    <span>Prescribed outputs, uniform estimates, and induction connect the modules.</span>
     <span class="research-card-link">Explore the cases →</span>
   </a>
   <a class="research-start-card" href="/posts/2026/08/agent-system/hands-on-lab/">
@@ -56,7 +56,7 @@ A future system may produce proofs too numerous or lengthy for routine human ins
   </a>
 </div>
 
-**Background.** No background is needed.
+**Background.** Begin with equations, functions, and basic logical reasoning. Linear algebra and introductory analysis are recalled where needed. No algebraic geometry is assumed.
 
 
 ## The course at a glance
@@ -101,11 +101,11 @@ These four research workshops extend the core course. Each introduces a distinct
 | Workshop | Technical core | Research submission |
 |---|---|---|
 | **A. [Research opportunity discovery](/posts/2026/08/agent-system/research-opportunity-system/)** | Compare theorem changes; maintain competing candidates; design probes that change a research decision | Three source-grounded candidates, a prior-art audit, an attempted new lemma, and justified pursue/defer/reject decisions |
-| **B. [Method recommendation and proof search](/posts/2026/08/agent-system/proof-sketch-system/)** | Positive and negative witnesses; complete finite-dimensional obstruction analysis; an explicit geometric lifting calculation | Two eligible methods for a source-dependent target, checked evidence, and an attempted decisive bridge |
-| **C. [Birational geometry and spiraling induction](/posts/2026/08/agent-system/birational-geometry-agent/)** | Derive preservation of pluricanonical sections; distinguish failed nefness transfer; audit a well-founded induction | A reconstructed theorem package, model-by-model interfaces, and a precise test of a proposed extension |
+| **B. [Method recommendation and proof search](/posts/2026/08/agent-system/proof-sketch-system/)** | Positive and negative witnesses; complete finite-dimensional obstruction analysis; interpolation compatibility and sharp perturbation bounds | Two eligible methods for a source-dependent target, checked evidence, and an attempted decisive bridge |
+| **C. [Coordinate changes and well-founded reductions](/posts/2026/08/agent-system/birational-geometry-agent/)** | Track an inverse with a restricted domain; parametrize a plane curve; audit a decreasing induction rank | A complete coordinate calculation, explicit exceptional cases, and a tested reduction protocol |
 | **D. [Persistent research systems: Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)** | Version-sensitive admission, stale results, recovery, and controlled removal of components | A reproducible research trace, failure experiments, and a budget-matched comparison with ordinary chat |
 
-**Preparation:** A and B use Modules 3–5 and 9; C additionally requires algebraic geometry and sheaf cohomology; D uses Modules 5–9. Begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). No separate orchestration program is required for the manual exercises. Untested architectures remain proposals, and a claimed improvement over a named system needs a direct comparison.
+**Preparation:** A and B use Modules 3–5 and 9; C uses two-variable polynomial algebra and elementary induction; D uses Modules 5–9. Begin with the [from-zero Codex workspace](/posts/2026/08/agent-system/codex-research-studio/). No separate orchestration program is required for the manual exercises. Untested architectures remain proposals, and a claimed improvement over a named system needs a direct comparison.
 
 **Combined capstone:** select a candidate from three papers, reconstruct its nearest known proof, attempt its hardest new lemma through two methods, and maintain the evolving evidence through a target revision and recovery test. Submit the unsuccessful routes as well as the strongest surviving result. An exact obstruction or a well-supported decision to stop can be a successful research outcome; a polished proposal without a substantive attempt cannot.
 
@@ -120,3 +120,11 @@ These are teaching formats, not different standards of mathematical evidence. In
 See [why explicit architecture matters](/posts/2026/08/agent-system/why-mathematicians-need-patterns/) for motivation and [books, primary sources, and claim boundaries](/posts/2026/08/agent-system/sources-and-claims/) for references.
 
 *Written in cooperation with AI. Proposed architectures, teaching code, informal reviews, and formally checked results are distinguished throughout the series.*
+
+
+### Practice that tests the design
+
+[Download the English practice pack](/files/reasoning-practice-lab.zip): seven missions progress from exact targets to sharp stability bounds, quantifier repairs, exceptional-coordinate analysis, formal admission, and a source-based research capstone. Every mission asks for an initial attempt, a deliberate fault, a repair, and a fresh transfer case. Reference answers are separate so the first attempt remains meaningful.
+
+
+**For birational geometry researchers:** the elementary examples are calibration tasks, not the research endpoint. Follow the [proof-based research track](/posts/2026/08/agent-system/hands-on-lab/#what-hands-on-means-in-a-proof-based-subject): audit an actual proof, identify the first failed hypothesis, attempt a replacement lemma, and reconstruct the dependencies of a theorem package. Numerical experimentation is optional. The advanced project is assessed by mathematical proof progress and the precision of its unresolved obligations.

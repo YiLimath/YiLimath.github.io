@@ -10,7 +10,7 @@ full_page_reading: true
 
 A relevant paper is a starting point. To use it in a proof, you must identify its exact theorem, match its objects to yours, and discharge its hypotheses. This module turns that familiar mathematical practice into a research workflow that can be delegated and audited.
 
-**Learning goals:** distinguish retrieval from application; build a hypothesis table; diagnose a near-match; and decide when more searching is less useful than proving a missing condition. Modules 1–2 are prerequisites. The main example needs only elementary real analysis; the geometric extension reuses the lifting problem.
+**Learning goals:** distinguish retrieval from application; build a hypothesis table; diagnose a near-match; and decide when more searching is less useful than proving a missing condition. Modules 1–2 are prerequisites. The main example needs only elementary real analysis; the second example uses elementary linear algebra.
 
 **Lesson route:** work through Sections 1–4, run the source-application laboratory, and finish with the exercises. The deliverable is one justified application and one rejected or conditional near-match, with enough evidence for someone else to reproduce the decision.
 
@@ -74,29 +74,19 @@ The source locator should be recoverable: a theorem number, section, page in a s
 
 In Module 1, a claim about outputs of linear functions cannot automatically be applied to a problem allowing only constants. The words “function” and “two values” match, but the allowed inputs differ. Source applications need the same object-level precision.
 
-The following extension shows this issue in geometry. It is optional; the maximum example supplies everything needed for the laboratory below.
+### A correct theorem about the wrong matrix
 
-<details markdown="1">
-<summary>Advanced connection: a vanishing theorem for the wrong line bundle</summary>
-
-### The wrong line bundle
-
-Return to a line bundle $L$ and an effective Cartier divisor $D$ on $X$. The restriction sequence is
+Consider
 
 $$
-0\longrightarrow L(-D)\longrightarrow L\longrightarrow L|_D\longrightarrow0.
+A_t=\begin{pmatrix}1&0\\0&t\end{pmatrix}.
 $$
 
-Its cohomology sequence shows that $H^1(X,L(-D))=0$ is sufficient for every section of $L\vert_D$ to lift. A theorem proving $H^1(X,L)=0$ concerns a different object. The missing twist is a mathematical mismatch, even if the paper contains the words “vanishing” and “line bundle.”
+When $t\ne0$, the determinant is nonzero, so every requested vector $(a,b)$ has the solution $(a,b/t)$. At $t=0$, the same formula is undefined and the output is always $(x,0)$. A specified target is attainable exactly when $b=0$.
 
-An application table should identify the ambient category, the exact sheaf, the degree of cohomology, and all positivity or regularity assumptions of the actual source theorem. Do not fill those rows with a generic list remembered from some other vanishing theorem. Extract the list from the theorem you intend to use.
+The source theorem about invertible matrices remains correct. Its old application does not survive the parameter change. Record the matrix, parameter, requested vector, determinant condition, and evidence for that condition. If $b=0$, a direct calculation can still solve the task even though the invertibility theorem cannot be used.
 
-If the positivity of $L(-D)$ is unresolved, save it as an obligation. There are then at least three sensible next actions: prove that positivity; find a theorem with weaker hypotheses; or abandon global vanishing and compute the obstruction of the particular section. The table helps choose among these actions because it localizes the difficulty.
-
-The distinction matters in research opportunity discovery too. A paper's projective theorem may suggest a Kähler extension, but a shared keyword does not transfer the result. A useful proposal identifies the precise proof step using projectivity and offers a replacement argument that can actually be tested.
-
-
-</details>
+**Try it.** First request $(2,3)$ at $t=1$. Then set $t=0$ and deliver the old approval. Finally request $(2,0)$ at $t=0$. The correct sequence is: solvable, impossible, solvable by a different argument. A system that equates “the theorem does not apply” with “the target is false” fails the third case.
 
 ## 5. A laboratory in ChatGPT or Codex
 
@@ -137,17 +127,17 @@ Give a noncompact domain and continuous function with a maximum. What status sho
 </details>
 
 <details markdown="1">
-<summary>3. Correct source, wrong twist</summary>
+<summary>3. Correct source, changed parameter</summary>
 
-A source proves vanishing for $L$. The target requires vanishing for $L(-D)$. May the system reuse the source record?
+A source theorem applies to invertible matrices. The parameter changes from t=1 to t=0 in the matrix above. May the system reuse the source record?
 
-**Answer.** Yes, as a record of the source statement. It may not reuse the application as support for the new twist. Either instantiate the theorem again and establish its hypotheses for $L(-D)$, or find another argument. This is an application failure, not necessarily a source error.
+**Answer.** Yes, as a record of the theorem. Its application must be reconsidered because the determinant is now zero. Solve the requested vector directly or find another applicable result. The source is not wrong merely because its hypotheses fail in the new task.
 </details>
 
 <details markdown="1">
 <summary>4. When should retrieval stop?</summary>
 
-After inspecting five relevant sources, all available statements need the same unproved positivity condition. What is a useful next task?
+After inspecting five relevant sources, all available statements need the same unproved uniform-bound condition. What is a useful next task?
 
 **Answer.** Isolate that condition as a mathematical obligation and attempt it in a tractable example or under the current hypotheses. More retrieval is justified only by a specific alternative to test. A report should preserve what was searched so another session does not repeat the same five near-matches.
 </details>

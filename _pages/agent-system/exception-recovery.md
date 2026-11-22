@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
 
 
-A timeout, inaccessible source, malformed record, and nonzero connecting class require different responses. Only the last may establish that the chosen section does not lift, and only with mathematical evidence.
+A timeout, inaccessible source, malformed record, and failed compatibility equation require different responses. Only the last may prove the requested output impossible, and only after proving that every allowed output must satisfy that equation.
 
 ## The contract
 
@@ -18,7 +18,7 @@ Classify before retrying. Bound transient retries, repair malformed inputs, seek
 
 ## Trade-offs and failure modes
 
-A restarted worker should consume the same versioned inputs or create a new attempt. It must not merge fragments from different sheaves or sections. A failed method leaves the target open unless its failure actually proves the target false.
+A restarted worker should consume the same versioned inputs or create a new attempt. It must not merge fragments from different maps or requested vectors. A failed method leaves the target open unless its failure actually proves the target false.
 
 ## Build and test
 

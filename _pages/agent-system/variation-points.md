@@ -7,7 +7,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/lean-formalization/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/lean-formalization/).
 
 
 A stronger model may replace several workers or discover a shorter proof. It must still identify what was proved, from which premises, under which assumptions. These are the stable contracts; model selection and prompting are mechanisms behind them.

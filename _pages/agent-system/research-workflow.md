@@ -7,7 +7,7 @@ full_page_reading: true
 
 ## Begin with a mathematical obligation
 
-A useful research system must preserve the question while exploring ways to answer it. Consider this recurring task: a proof uses a projective theorem, but the target is compact Kähler. The assignment is to identify whether the step survives, find an applicable replacement, or isolate the missing lemma. Merely rewriting the argument in analytic language is not progress.
+A useful research system must preserve the question while exploring ways to answer it. Consider this recurring task: a proof uses uniform convergence, but the target assumes only pointwise convergence. The assignment is to identify whether the step survives, find an applicable replacement, or isolate the missing lemma. Merely rewriting the same estimates is not progress.
 
 Freeze the original target. Record the category, dimension, singularities, coefficient field, positivity assumptions, and whether the assertion is absolute or relative. Maintain a separate list of proposed additional hypotheses. A proof under a stronger assumption is a partial result, not completion of the original task.
 
@@ -22,7 +22,7 @@ Each task carries a statement version, available premises, one requested conclus
 | Parallel work | Search for a replacement theorem and construct obstructing examples | Merge evidence, not votes; preserve disagreement |
 | Planning | Decompose the desired implication into lemmas | Expose all assumptions and detect circular dependencies |
 | Retrieval | Locate the exact theorem behind a citation | A related abstract is not an applicable theorem |
-| Representation change | Pass to a model, divisor, fiber, or formal statement | Supply both the forward construction and the return implication |
+| Representation change | Change coordinates, restrict a domain, or encode a formal statement | Supply both the forward construction and the return implication |
 | Reflection | Challenge the weakest inference | Return a localized defect or a justified repair |
 | Memory | Save a reusable result and its scope | Retrieval must retain qualifications and invalidation status |
 | Recovery | Resume after a tool failure or a rejected lemma | Distinguish infrastructure failure from mathematical failure |

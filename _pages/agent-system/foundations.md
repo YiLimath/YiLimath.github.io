@@ -7,17 +7,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-A mathematical research system must preserve the meaning of its task while its methods, evidence, and conclusions change. This module develops a representation that makes those changes inspectable. We begin with elementary logic, work through a constant-function example, and then construct a research record directly in Codex. An optional extension connects the calculation to geometry.
+A mathematical research system must preserve the meaning of its task while its methods, evidence, and conclusions change. This module develops a representation that makes those changes inspectable. We begin with elementary logic, work through a constant-function example, and then construct a research record directly in Codex. The same records will later support linear systems and analysis examples.
 
 **Lesson format:** plan for 60–90 minutes of explanation and discussion, followed by a separate laboratory. These are teaching allocations, not measured recording times. Sections 1–4 form the conceptual core; Sections 5–7 connect it to research; Sections 8–10 supply practice and assessment.
 
-**By the end, you should be able to:** distinguish a statement from an argument; track assumptions through several steps; identify a changed target; explain which evidence survives a revision; and build a checkpoint another researcher can audit. No programming is required. The main example needs only real numbers and equality. Geometry is optional.
+**By the end, you should be able to:** distinguish a statement from an argument; track assumptions through several steps; identify a changed target; explain which evidence survives a revision; and build a checkpoint another researcher can audit. No programming is required. The main example needs only real numbers and equality. No algebraic geometry is assumed.
 
 ## 1. Why conversation history is not a mathematical state
 
-Imagine a conversation that begins with “Can this section be extended?” After several attempts, the assistant reports “There is a nonzero section, so the task is solved.” Every sentence may sound relevant. The conclusion can nevertheless answer a different question.
+Imagine a conversation that begins with “Can a constant function take the values 1 and 0 at two different points?” After several attempts, the assistant reports “A nonzero constant exists, so the task is solved.” The conclusion answers a different question.
 
-The problem is not primarily a lack of memory. The conversation may preserve every word while failing to distinguish the chosen section from an existentially quantified section. More context does not repair an incorrectly represented target.
+The problem is not primarily a lack of memory. The conversation may preserve every word while failing to distinguish a function with specified values from the existence of any function. More context does not repair an incorrectly represented target.
 
 A research state should let a new reader answer four questions without reconstructing the entire conversation: What is the exact task? What supports each current conclusion? Which assumptions remain? What would need reconsideration if an input changed?
 
@@ -55,7 +55,7 @@ The first is true by choosing C=n. The second is false: after a proposed C is fi
 
 ## 3. A complete worked example: can one constant give two prescribed values?
 
-The idea we need is simple: **finding an object is not enough; it must satisfy the exact conditions requested.** We will first work with ordinary real numbers. The connection to “lifting a section” comes afterward, and you can follow the system-design lesson without knowing algebraic geometry.
+The idea we need is simple: **finding an object is not enough; it must satisfy the exact conditions requested.** We will first work with ordinary real numbers. Every step can be checked by substitution.
 
 ### Step 1. State the rules of the problem
 
@@ -120,43 +120,6 @@ $$
 
 This is all “lifting” means in the calculation: work backward from prescribed output to an allowed input. The pair $s=(1,1)$ has a lift; $s=(1,0)$ does not. Finding some input without checking its output is not enough.
 
-### Where sections enter the story
-
-There is a geometric setting in which the allowed functions really are exactly the constants. It gives the same map $r$, so none of the answers above changes. Here is a translation guide for readers who will encounter this example in later modules:
-
-| Language in the geometric example | Meaning in this calculation |
-|---|---|
-| A global section of the trivial line bundle | An allowed function on the whole space |
-| A section on the two points | A prescribed pair of values $(a,b)$ |
-| Restriction | Read off the function's values at those points |
-| Lift the specified section | Find an allowed function producing that exact pair |
-
-These descriptions concern this particular trivial-bundle example; sections of general bundles need not be ordinary scalar-valued functions. You do not need the following geometric justification to use the example in the course laboratory.
-
-<details markdown="1">
-<summary>Optional geometry: why the projective-line example gives exactly this map</summary>
-
-Let $k$ be a field, let $X=\mathbb P^1_k$ be the projective line, let $L=\mathcal O_X$ be the trivial line bundle, and let $D$ consist of two distinct $k$-rational points $p,q$. A global section of this bundle is a regular function on $X$. A section on $D$ is a pair of values in $k$.
-
-The important geometric fact is that the global regular functions on $X$ are constants. Here is the calculation for readers familiar with affine charts. Cover $X$ by its two standard affine charts with coordinates $t$ and $u$. On their overlap, $u=1/t$.
-
-A global regular function is described by a polynomial $f(t)$ on the first chart and a polynomial $g(u)$ on the second. Because they describe the same function where the charts overlap, they must satisfy
-
-$$
-f(t)=g(t^{-1}).
-$$
-
-The left side contains only nonnegative powers of $t$. The right side contains only nonpositive powers. Equality of Laurent polynomials forces every nonconstant coefficient to vanish, so their common value is constant.
-
-Restricting a constant $c$ to $p$ and $q$ produces $(c,c)$. Thus the geometric restriction map is precisely
-
-$$
-r:k\longrightarrow k^2,\qquad c\longmapsto(c,c).
-$$
-
-Taking $k=\mathbb R$ recovers the numerical calculation above. Over any field the same argument works, since $1\ne0$.
-</details>
-
 ### What the research system should save
 
 Keep the target, candidate, test, and conclusion distinct:
@@ -193,7 +156,7 @@ A source quotation can be evidence about what a paper states without establishin
 
 [![Mathematical records and their evidence relationships](/images/agent-system/course-research-records.svg)](/images/agent-system/course-research-records.svg)
 
-*Arrows name relationships between records, not steps that prove a theorem. The review is tied to the exact target and argument versions. A changed section requires checking that relationship again.*
+*Arrows name relationships between records, not steps that prove a theorem. The review is tied to the exact target and argument versions. A changed requested output requires checking that relationship again.*
 
 ### Why a single “verified” flag fails
 
@@ -225,7 +188,7 @@ Versioning is useful because reviews have a subject. Changing the requested outp
 Distinguish three changes:
 
 - **Editorial:** punctuation or presentation changes without altering meaning. Check the claimed equivalence if later automation relies on it.
-- **Mathematical:** the domain, section, hypotheses, or conclusion changes. Create a new statement version and reconsider affected applications.
+- **Mathematical:** the domain, requested output, hypotheses, or conclusion changes. Create a new statement version and reconsider affected applications.
 - **Evidential:** a cited result is corrected or an argument is withdrawn. The statement can remain unchanged while its support changes.
 
 An identifier is a reference, not a mathematical invariant. A content hash detects changes in text, not equivalence of propositions. Two equivalent statements can have different text; identical-looking text can use different definitions in different contexts. The record must preserve enough context to interpret its identifiers.
@@ -234,26 +197,21 @@ An identifier is a reference, not a mathematical invariant. A content hash detec
 
 Review T2 using the input $c=1$: its output is $(1,1)$, as requested. Then change the requested output to $(1,0)$ and retain the old review. The calculation $r(1)=(1,1)$ is still correct, but it no longer matches the request. The rule describing all outputs also survives. Reuse those calculations while withdrawing the claim that this input solves the new target.
 
-## 7. From the example to a research reduction
+## 7. Extend the record to a linear system
 
-**Optional on a first reading.** This section shows how the same question appears in advanced geometry. If line bundles and cohomology are unfamiliar, continue to the laboratory in Section 8. The numerical map from Section 3 is enough for the core exercises.
+An input may have several coordinates. Let $A(x,y)=(x+y,x-y,2x)$ and ask for the specified output $(a,b,c)$. The first two equations force
 
-For an effective Cartier divisor D and a line bundle L, the restriction sequence is
+$$
+x=(a+b)/2,\qquad y=(a-b)/2.
+$$
 
-$$0\longrightarrow L(-D)\longrightarrow L\longrightarrow L|_D\longrightarrow0.$$
+Substitution into the third equation requires $c=a+b$. Conversely, if that equality holds, the displayed input satisfies all three equations. We have proved an exact criterion, not merely a necessary condition.
 
-The associated cohomology sequence identifies the liftable sections with the kernel of the connecting map $\delta$. Thus a specified $s$ lifts exactly when $\delta(s)=0$. Vanishing of $H^1(X,L(-D))$ is sufficient to make every obstruction zero, but it is stronger than the vanishing of the obstruction of one section.
+For $(3,1,4)$, the input $(2,1)$ works. For $(3,1,5)$, no input works. Store the common map once, but keep the two target records and their evidence separate. An accepted solution of the first target cannot be reused as a solution of the second.
 
-In a research record, preserve the distinction between these obligations:
+This is a useful reduction: replace the search over all inputs by a compatibility calculation, then reconstruct an input when compatibility holds. The record needs both directions. A failed candidate does not prove impossibility; a nonzero compatibility error does, because we proved every output satisfies the relation.
 
-1. Establish that the sequence applies to the specified objects.
-2. Prove a sufficient vanishing theorem, if that route is chosen.
-3. Alternatively determine δ(s) for the particular s.
-4. Use exactness to return to the lifting target.
-
-The sequence follows by tensoring the ideal sequence of an effective Cartier divisor with the locally free sheaf L. The exactness-to-kernel step is the mechanism, not an appeal to the phrase “standard lifting argument.” This chapter derives the elementary case explicitly; applying the construction in a new setting requires checking its hypotheses there.
-
-A richer research system will store source applicability, transformations, and alternative methods. They all depend on preserving the simpler distinctions introduced here. Implementing a large framework first cannot compensate for losing them.
+**Try it before continuing.** Request $(0,2,2)$, compute the candidate, and check all three entries. Then change only the third entry to 3. Record the exact inference that changes. No new terminology or software framework is needed.
 
 ## 8. Laboratory: build and challenge the representation
 
@@ -270,7 +228,7 @@ Distinguish rejecting one candidate from ruling out every candidate.
 Separate the given rule from the conclusions you derive.
 ```
 
-**Inspect:** all three targets appear; each proposed input is checked against the required output; impossibility is justified using the equal-entry rule. **Optional extension:** add the projective-line interpretation and ask for the chart calculation explaining why its global sections are constants.
+**Inspect:** all three targets appear; each proposed input is checked against the required output; impossibility is justified using the equal-entry rule.
 
 ### Round B: introduce a bad witness and a stale review
 
@@ -308,7 +266,7 @@ Ask Codex to save the exact targets, arguments, assumptions, rejected witness, a
 
 A task asks for an input producing a specified output $s$. The response supplies only a nonzero input $c$. What additional equation must be checked?
 
-**Answer.** Check $r(c)=s$. Being nonzero does not establish this equality. For $r(c)=(c,c)$, the input $c=1$ produces $(1,1)$, not $(1,0)$. In the optional geometric interpretation, this is the equation saying that a global section restricts to the specified section.
+**Answer.** Check $r(c)=s$. Being nonzero does not establish this equality. For $r(c)=(c,c)$, the input $c=1$ produces $(1,1)$, not $(1,0)$.
 
 </details>
 
@@ -335,16 +293,16 @@ A source correction adds hypothesis H to a theorem previously used to establish 
 
 Extend the output rule to $m$ entries: an input $c$ produces $(c,\ldots,c)$. Which requested outputs are possible? Treat $m=1$ separately. What must be reconsidered if the output rule changes?
 
-**Answer.** For $m\geq1$, precisely the outputs whose entries are all equal can be produced. For $m=1$, any requested value $a$ is produced by $c=a$. A different rule requires a new calculation of possible outputs. **Optional geometry:** changing the line bundle can change both the global sections and the restriction map, so the constants-only calculation must not be reused without justification.
+**Answer.** For $m\geq1$, precisely the outputs whose entries are all equal can be produced. For $m=1$, any requested value $a$ is produced by $c=a$. A different rule requires a new calculation of possible outputs.
 
 </details>
 
 <details markdown="1">
 <summary>Exercise 5 — Design a record for your own mathematics</summary>
 
-Choose a proof step involving a specified function, output, bound, or parameter. If you know geometry, a divisor or section is another option. Write its exact target, one argument, and one tempting nearby statement. Identify a change that would invalidate the argument's current review.
+Choose a proof step involving a specified function, output, bound, or parameter. Write its exact target, one argument, and one tempting nearby statement. Identify a change that would invalidate the argument's current review.
 
-**Answer guide.** There is no universal target here. A satisfactory submission names the mathematical objects and assumptions, supplies the actual inference, and gives a concrete distinction that affects the conclusion. “The model might hallucinate” is not a localized failure analysis. An example of a meaningful change is replacing the specified section, changing the divisor twist in a vanishing theorem, or interchanging the order of dependent quantifiers.
+**Answer guide.** There is no universal target here. A satisfactory submission names the mathematical objects and assumptions, supplies the actual inference, and gives a concrete distinction that affects the conclusion. “The model might hallucinate” is not a localized failure analysis. An example of a meaningful change is changing the requested vector, changing the permitted polynomial degree, or interchanging the order of dependent quantifiers.
 
 </details>
 
@@ -360,7 +318,7 @@ The schemas and laboratory protocol are course design proposals. Their mathemati
 
 ## Reading and continuation
 
-For the logical distinction between propositions, assumptions, and proofs, read the official [Lean chapter on propositions and proofs](https://lean-lang.org/theorem_proving_in_lean4/Propositions-and-Proofs/). For the role of a *specified* section in geometry, compare the Stacks Project's [correspondence between effective Cartier divisors and invertible sheaves with a regular section](https://stacks.math.columbia.edu/tag/01X0). That correspondence concerns regular sections and should not be confused with a claim that every section is regular.
+For the logical distinction between propositions, assumptions, and proofs, read the official [Lean chapter on propositions and proofs](https://lean-lang.org/theorem_proving_in_lean4/Propositions-and-Proofs/).
 
 The next module uses the records developed here to choose research actions and represent joint premises and alternative routes. Bring RESEARCH.md forward rather than starting a new unrelated example.
 

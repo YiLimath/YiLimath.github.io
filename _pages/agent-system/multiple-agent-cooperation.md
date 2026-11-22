@@ -89,7 +89,7 @@ Conflict C1
 
 Change T1 from $(1,0)$ to $(1,1)$ while a task is still working on the old snapshot. When its report arrives, do not overwrite its version label. The negative verdict for the old requested output does not answer the new question, but the equal-entry calculation does: $(1,1)$ lies in the image.
 
-This is a small but realistic test of asynchronous work. A delayed report is not necessarily worthless; its reusable content must be separated from its expired conclusion. The same issue occurs when a research project changes a divisor, removes a hypothesis, or switches between a variety and a birational model.
+This is a small but realistic test of asynchronous work. A delayed report is not necessarily worthless; its reusable content must be separated from its expired conclusion. The same issue occurs when a research project changes a matrix, removes a hypothesis, or switches coordinates.
 
 For course practice, perform the same event sequence manually in separate conversations. Parallel execution is optional. The point is to learn what a correct handoff and merge require before adding concurrency.
 

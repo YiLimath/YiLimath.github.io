@@ -13,7 +13,7 @@ This series combines established software patterns with a proposed architecture 
 |---|---|---|
 | [Bundy, Proof Planning (1996)](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf) | Plans built from methods with preconditions; control of proof search | Reliability of a general language-model researcher |
 | [Lean reference: axioms](https://lean-lang.org/doc/reference/latest/Axioms/) | Formal results depend on the encoded statement and audited axioms | Correctness of an informal-to-formal translation |
-| [Stacks Project: effective Cartier divisors](https://stacks.math.columbia.edu/tag/0C4S) | Ideal-sheaf conventions underlying Case A | An automatic vanishing theorem for the chosen geometry |
+| [NIST DLMF: interpolation](https://dlmf.nist.gov/3.3) | Polynomial interpolation at distinct nodes | Solvability under an arbitrary smaller degree bound |
 | [Anthropic, Building effective agents](https://www.anthropic.com/research/building-effective-agents) | Distinction between fixed workflows and dynamically selected actions | A prescription for how many mathematical workers to use |
 | [Danus, version 2](https://arxiv.org/abs/2607.06447v2) | A reported fact-graph orchestration system | A correctness guarantee for every admitted informal claim |
 | [Rethlas–Archon, version 2](https://arxiv.org/abs/2604.03789v2) | Separation of informal reasoning and Lean formalization | Equivalence between an informal review verdict and kernel checking |
@@ -28,7 +28,7 @@ Victor Dibia's *Designing Multi-Agent Systems* and Lakshmanan and Hapke's *Gener
 
 A **worked argument** has its reasoning supplied in the article. A **design proposal** specifies behavior to implement and test. A **reported system** is attributed to its source. A **historical implementation note** may describe a local snapshot and requires a pinned revision before reproduction. The laboratory is a guided ChatGPT or Codex workflow. A written protocol specifies intended behavior; its execution must be recorded and evaluated. Only the separately identified Lean exercises supply proof-assistant checks.
 
-The three running cases are teaching examples with explicit conclusions. They do not resolve the open problems that motivate advanced mathematical research. The long birational-geometry chapter is a proposed specialization; its source theorem hypotheses must be consulted before implementing a theorem application.
+The three running cases are teaching examples with explicit conclusions. They do not resolve the open problems that motivate advanced mathematical research. The basic birational example is derived using coordinate formulas; every inverse comes with an explicit domain restriction.
 
 ## Source audit exercise
 

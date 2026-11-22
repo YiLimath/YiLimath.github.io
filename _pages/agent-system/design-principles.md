@@ -25,7 +25,7 @@ Consider the deliberately false conjecture: every continuous real-valued functio
 
 A good system records a refutation of the original universal statement. It may separately propose a repaired statement on $[0,1]$. It must not silently replace the original question with that repaired statement and report success.
 
-This elementary example is a diagnostic fixture, not a benchmark for research ability. The same interfaces must survive when the missing hypothesis is projectivity or the missing implication is descent from a birational model.
+This elementary example is a diagnostic fixture, not a benchmark for research ability. The same interfaces must survive when the missing hypothesis is a uniform bound or the missing implication is a return from transformed coordinates.
 
 ## Two graphs, two meanings
 

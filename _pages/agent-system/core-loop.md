@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/codex-research-studio/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/codex-research-studio/).
 
 
-In Case A, finding a vanishing theorem is not completion: the exact twist and its hypotheses must match. The next action may be an applicability check rather than another proof draft. A useful iteration begins with an open obligation and ends with a recorded change.
+In Case A, finding an invertibility theorem is not completion: the actual matrix and its hypotheses must match. The next action may be an applicability check rather than another proof draft. A useful iteration begins with an open obligation and ends with a recorded change.
 
 ## The contract
 
@@ -22,7 +22,7 @@ Every action should have an informative possible outcome: a usable theorem, a re
 
 ## Build and test
 
-Replay three actions: find a sufficient vanishing criterion, discover an unmatched hypothesis, and switch to the direct obstruction. Save the trace and mark the exact replanning event.
+Replay three actions: try an invertibility criterion, discover a zero determinant, and test whether the requested vector is nevertheless in the image. Save the trace and mark the exact replanning event.
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 

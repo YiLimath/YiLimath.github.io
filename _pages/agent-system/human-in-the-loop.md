@@ -7,7 +7,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/design-principles/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/design-principles/).
 
 
 A mathematical research system needs an explicit policy for changing its objective, spending its budget, accepting evidence, and releasing results. These responsibilities do not imply that a human must approve every action.
@@ -22,7 +22,7 @@ Specification design, interpretation, and research priorities can also receive i
 
 Routine search, source checking, and bounded revision can proceed under delegated authority. Escalate when an action would change the agreed target or exceed that authority. A model can propose the decision; the policy determines who may authorize it.
 
-For example, replacing a compact Kähler hypothesis with projectivity may make a route work. The system should preserve the original task, create a separate strengthened statement, and explain what has and has not been achieved. It should not interrupt simply because a proof attempt failed.
+For example, replacing pointwise convergence with uniform convergence may make a route work. The system should preserve the original task, create a separate strengthened statement, and explain what has and has not been achieved. It should not interrupt simply because a proof attempt failed.
 
 ## What a decision packet contains
 

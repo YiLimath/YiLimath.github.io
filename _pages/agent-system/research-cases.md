@@ -13,50 +13,7 @@ Start with real numbers and the rule $r(c)=(c,c)$. Choosing $c=1$ produces $(1,1
 
 This separates three questions: does an input exist at all, does one produce $(1,1)$, and does one produce $(1,0)$? The first two answers are yes; the third is no. A system that substitutes one question for another can report a valid calculation as a solution to the wrong target.
 
-Save the exact output rule, requested pair, candidate input, and comparison of actual versus requested output. Module 1 works through this example step by step. The geometry below gives a research setting with the same structure and is optional on a first reading.
-
-<details markdown="1">
-<summary>Advanced connection: lifting a specified section in geometry</summary>
-
-### A section on a smaller space need not extend
-
-Let $X$ be a scheme, let $S\subset X$ be an effective Cartier divisor, and let $L$ be an invertible sheaf on $X$. Fix a nonzero section $s\in H^0(S,L\vert _S)$. The research task is to lift this particular section to $X$.
-
-The ideal sequence of $S$, tensored with $L$, gives
-
-$$
-0\longrightarrow L(-S)\longrightarrow L\longrightarrow i_*(L|_S)\longrightarrow0.
-$$
-
-Here $i:S\hookrightarrow X$ is the inclusion. The associated cohomology sequence contains
-
-$$
-H^0(X,L)\longrightarrow H^0(S,L|_S)
-\xrightarrow{\delta} H^1(X,L(-S)).
-$$
-
-Exactness says that $s$ lifts precisely when $\delta(s)=0$. The stronger condition $H^1(X,L(-S))=0$ is sufficient, but is not necessary for this particular section to lift. Any lift of a nonzero section is nonzero.
-
-This distinction matters for search. A planner may first try a vanishing theorem. If that route fails, it should retain the weaker obstruction problem $\delta(s)=0$ as an alternative. It must not mark the lifting problem impossible merely because the sufficient vanishing condition is unavailable.
-
-[![The exact obstruction and a sufficient vanishing route](/images/agent-system/research-case-a.svg)](/images/agent-system/research-case-a.svg)
-
-*Every arrow here is a mathematical implication under the fixed setup. The left implication has no converse in general; the two right arrows express exactness.*
-
-### A concrete failure fixture
-
-Take $X=\mathbb P^1$, $S=\lbrace p,q\rbrace $ for two distinct points, and $L=\mathcal O_X$. Sections on $X$ are constants; sections on $S$ are pairs of scalars. Restriction sends $c$ to $(c,c)$. Thus $(1,0)$ does not lift, while $(1,1)$ does. A nonzero downstairs section alone does not justify lifting that chosen section.
-
-This example does not refute the different conclusion $H^0(X,L)\ne0$: constants already prove that. The system must distinguish “lift this section” from “produce some nonzero section.” Otherwise a valid counterexample to a method may be misreported as a counterexample to the original target.
-
-### Required artifacts
-
-Store the exact objects, the restriction map, the chosen section, the obstruction, and either an argument that the obstruction vanishes or a sufficient vanishing theorem with matched hypotheses. A changed multiple of a divisor changes the sheaf and the lifting task. An agent cannot reuse an old review solely because both tasks are called “extension.”
-
-The [Stacks Project's Cartier-divisor treatment](https://stacks.math.columbia.edu/tag/0C4S) supplies the ideal-sheaf conventions. The exact-sequence argument above is written out here so the inference, including its weaker sufficient alternatives, is inspectable.
-
-
-</details>
+Save the exact output rule, requested pair, candidate input, and comparison of actual versus requested output. Module 1 works through this example step by step. Module 4 extends this idea to limits, and the coordinate-change workshop tests what happens when a formula is not defined everywhere.
 
 ## Case B. Approximation does not manufacture a uniform bound
 
@@ -97,10 +54,10 @@ Store the statement family, quantified parameter, base cases, step implications,
 
 | Design question | Case A | Case B | Case C |
 |---|---|---|---|
-| Meaning to preserve | Chosen section and exact sheaf | Quantifier order and constant dependence | Indexed statements and full premises |
+| Meaning to preserve | Specified output and permitted inputs | Quantifier order and constant dependence | Indexed statements and full premises |
 | Search choice | Vanishing or direct obstruction | Improve estimate or change topology | Reorder package or prove a new bridge |
 | False completion | Downstairs result reported upstairs | Pointwise bounds reported uniform | Circular support reported induction |
-| Useful partial result | A section plus an open obstruction | Valid parameter-dependent estimate | A verified step with missing base case |
+| Useful partial result | A candidate plus an unchecked compatibility condition | Valid parameter-dependent estimate | A verified step with missing base case |
 
 Use these cases throughout the [chapter route](/posts/2026/12/Agent-System/) and [project laboratory](/posts/2026/08/agent-system/hands-on-lab/). The same artifact contracts should handle all three. If an implementation only catches one example by matching its vocabulary, it has learned a fixture rather than enforced a design rule.
 

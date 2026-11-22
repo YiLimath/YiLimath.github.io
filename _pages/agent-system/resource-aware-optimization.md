@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/plan-and-execute/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/plan-and-execute/).
 
 
-A difficult sufficient vanishing theorem may cost more than directly checking the chosen section’s obstruction. Rank routes by expected information, usefulness, cost, and shared prerequisites, treating every estimate as a heuristic.
+A general solvability theorem may cost more than directly checking the chosen output’s compatibility conditions. Rank routes by expected information, usefulness, cost, and shared prerequisites, treating every estimate as a heuristic.
 
 ## The contract
 

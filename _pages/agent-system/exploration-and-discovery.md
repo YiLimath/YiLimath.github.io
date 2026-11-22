@@ -7,7 +7,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/research-opportunity-system/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/research-opportunity-system/).
 
 
 Case B invites a cheap probe: does the proposed estimate depend on the approximation index? Answering that can change the plan more than a polished draft of the limit argument. Choose probes by what they can teach the scheduler.
@@ -18,7 +18,7 @@ An exact counterexample refutes a specified implication. Numerical samples can s
 
 ## Trade-offs and failure modes
 
-Preserve the scope of negative results. In Case A, (1,0) does not lift from the two-point divisor, but nonzero upstairs sections still exist. “The method failed” and “the target is false” require different evidence. A budgeted search with no witness remains inconclusive.
+Preserve the scope of negative results. In Case A, (1,0) cannot be produced by the constants-only rule, but nonzero constant functions still exist. “The method failed” and “the target is false” require different evidence. A budgeted search with no witness remains inconclusive.
 
 ## Build and test
 

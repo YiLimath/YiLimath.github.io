@@ -9,183 +9,159 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-A useful method recommendation ends with an attempted mathematical argument. This project asks Codex to compare routes, identify their decisive obligations, and work on one of those obligations. No orchestration software is required.
+A method recommendation earns its place by producing evidence. This workshop starts with a small system of equations, develops a complete distinction between success and impossibility, and then asks a harder question: can a method be exactly correct but dangerously unstable?
 
-**Reading route:** start with the workshop below for the advanced design; use [First understand the method-selection problem without geometry](#first-understand-the-method-selection-problem-without-geometry) as a concrete calibration when needed. Complete the research assignment after the control example.
+**Deliverable:** two method cards, an attempted decisive calculation, a record of rejected claims, and a transfer experiment. You need elementary linear algebra and polynomials. The reference calculations below are mathematical examples, not reported autonomous research results.
 
-## Research workshop B: search for proofs that carry checkable evidence
+## 1. Start with a problem whose answer can be checked
 
-**Entry requirements:** Modules 2–6; linear algebra; the geometry extension additionally uses sheaf cohomology. **Deliverable:** a search record with two applicable methods, an explicit success witness or obstruction, and a review showing exactly what the evidence settles. The warm-up below introduces the idea; this section develops the general mechanism.
-
-### 1. The result of a method is more than a proposed verdict
-
-Let $A:V\to W$ be a linear map of finite-dimensional vector spaces over a field $k$. For a fixed $b\in W$, the task is to solve $Ax=b$. There are two kinds of evidence worth searching for:
-
-- A **positive witness** $x$ with an exact check that $Ax=b$.
-- A **negative witness** $\lambda\in W^*$ with $\lambda\circ A=0$ and $\lambda(b)\ne0$.
-
-The negative witness proves impossibility: if $Ax=b$, then $\lambda(b)=\lambda(Ax)=0$, contradicting its nonzero value. This is a complete refutation with a short check, not a failed search for $x$.
-
-Why does such a negative witness exist whenever $b$ is outside the image? Choose a basis of $\operatorname{im}A$, append $b$, and extend to a basis of $W$. Define $\lambda$ to vanish on the image basis, take value one on $b$, and vanish on the other basis vectors. This proves that, in this finite-dimensional setting, the two evidence types cover all cases.
-
-The scope matters. For maps between infinite-dimensional topological spaces, continuity of the functional and closedness of the image introduce additional questions. A system must not export the finite-dimensional proof as a theorem about arbitrary function spaces.
-
-### 2. An exact obstruction can guide the search
-
-For the worked map $A(x,y)=(x+y,x-y,2x)$ over $\mathbb R$, take $\lambda(a,b,c)=c-a-b$. Then $\lambda\circ A=0$. The output $(3,1,5)$ has obstruction one and is impossible; $(3,1,4)$ has obstruction zero and has the positive witness $(2,1)$.
-
-In this example, the kernel of $\lambda$ equals the image of $A$, because the explicit solution proves sufficiency. For a general map, finding **one** vanishing functional gives only one necessary compatibility condition. A complete collection of conditions must characterize the image. This is the distinction between a useful obstruction and a complete solvability criterion.
-
-The system should return the witness and its validation argument, not merely the word “solvable.” For approximate numerical computations, specify the norm, tolerance, and error estimate. A small residual can guide a conjecture, but it does not by itself produce an exact solution or a formal proof.
-
-### 3. The geometric version: compute the actual obstruction
-
-Let $X=\mathbb P^1_k$, let $D$ be a sum of $m\geq1$ distinct rational points, and let $L=\mathcal O_X(d)$ with $d\geq0$. Choose points in an affine chart and compatible fiber trivializations. Global sections then correspond to polynomials of degree at most $d$, and restriction is evaluation at those points.
-
-The standard cohomology computation gives
+Suppose the requested output is $(a,b,c)$ and the available operation is
 
 $$
-\begin{aligned}
-h^0(\mathcal O_X(n))&=\max(n+1,0),\\
-h^1(\mathcal O_X(n))&=\max(-n-1,0).
-\end{aligned}
+A(x,y)=(x+y,x-y,2x).
 $$
 
-These are the $\mathbb P^1$ specialization of [Stacks Project, Lemma 30.8.1](https://stacks.math.columbia.edu/tag/01XS). The restriction sequence has kernel sheaf $\mathcal O_X(d-m)$. Since $H^1(\mathcal O_X(d))=0$, its long exact sequence identifies the cokernel of evaluation with $H^1(\mathcal O_X(d-m))$. Consequently,
+Can you produce the requested output? The first two equations force
 
 $$
-\dim\operatorname{coker}(r)=\max(m-d-1,0).
+x=\frac{a+b}{2},\qquad y=\frac{a-b}{2}.
 $$
 
-Every requested value tuple lifts precisely when $d\geq m-1$. Below that threshold, a particular tuple may still lift. Its class in the cokernel is the exact obstruction.
+The third equation then holds exactly when $c=a+b$. This proves both necessity and sufficiency. For $(3,1,4)$, the input $(2,1)$ works. For $(3,1,5)$, no input works.
 
-For three affine points $0,1,2$ over $\mathbb R$ and $d=1$, write $f(t)=u+vt$. Its values satisfy
+Now compare two routes. **Elimination** constructs the only possible input, then checks it. **An obstruction calculation** applies the rule $\lambda(a,b,c)=c-a-b$ to the output. Every obtainable output has value zero under this rule, whereas $(3,1,5)$ has value one. That single exact calculation rules out every possible input.
 
-$$
-f(2)-2f(1)+f(0)=0.
-$$
+The distinction is useful in much harder mathematics: a failed attempt to find a solution is not evidence that a solution cannot exist. A contradiction satisfied by every possible solution is.
 
-Thus $(a,b,c)$ lifts exactly when $c-2b+a=0$: choose $u=a$ and $v=b-a$ for the converse. The tuples $(0,1,2)$ and $(0,1,3)$ give a positive and a negative control under identical geometric hypotheses. Here the obstruction space is one-dimensional, and the displayed expression computes a nonzero linear coordinate on it, up to a chosen identification.
+**Try before continuing.** Classify $(0,2,2)$ and $(0,2,3)$ using both routes. Write down the input or the obstruction value, not merely “possible” or “impossible.” Then ask whether the obstruction would still characterize solvability if A had a fourth output coordinate. You would have to check the new equation; the old test need not be complete.
 
-This is a complete bridge between theorem application, exact sequences, and an explicit calculation. In a harder research problem, computing the analogous obstruction may be the central research task rather than a routine stage.
+## 2. Positive and negative evidence
 
-### 4. Architecture for method selection
-
-[![Proof-search architecture retains method preconditions and checks positive or negative witnesses before updating the target.](/images/agent-system/advanced-proof-search.svg)](/images/agent-system/advanced-proof-search.svg)
-
-A method record contains its applicability conditions, generated subgoals, return implication, expected evidence, and stop condition. A method is eligible only in a context where its conditions hold or remain visible as assumptions. Rank eligible methods by the unresolved work they require; relevance alone does not make a method eligible.
-
-For a selected route, separate **constructing** evidence from **checking** it. A different worker is optional. The interface matters: a positive witness enters substitution; a negative witness enters a check of both annihilation and nonzero pairing. A method that times out returns an unresolved task, not a negative witness.
-
-### 5. Build and defend the system in Codex
-
-Create `TARGET.md`, `METHODS.md`, `WITNESSES.md`, and `CHECKS.md`. First reproduce the finite-dimensional argument and both three-point controls. Next change the degree bound or evaluation points and require a new applicability check. Finally replace the control with a source-dependent lemma from your own research and attempt its decisive subgoal.
-
-The defense must show one success witness, one exact obstruction, one method rejected because of its hypotheses, and one unresolved research bridge. Explain which components are informal judgments and which, if any, were checked by actual software. A framework that only lists plausible proof methods has not completed this workshop.
-
-## First understand the method-selection problem without geometry
-
-Module 1 used one input $c$ to produce $(c,c)$. Here is a harder control with two unknowns and three output conditions. Let
+For a linear map $A:V\to W$ between finite-dimensional real vector spaces, a positive witness for $Ax=b$ is an actual x together with the equality check. A negative witness is a linear rule $\lambda:W\to\mathbb R$ such that
 
 $$
-A(x,y)=(x+y,\ x-y,\ 2x).
+\lambda(Ax)=0\text{ for every }x,
+\qquad \lambda(b)\ne0.
 $$
 
-For a specified output $(a,b,c)$, determine whether an input exists. “Find a method” is not the deliverable: we need an applicable method and a calculation that settles this output.
+Why does the second witness prove impossibility? If $Ax=b$, applying the same rule to both sides would give both zero and a nonzero number.
 
-### Route 1: solve for the input, then check the unused condition
+In this setting these two kinds of evidence cover all cases. If b lies outside the image of A, choose a basis of the image, append b, and extend to a basis of W. Define a linear rule to be zero on the image basis, one on b, and zero on the remaining basis vectors. It supplies the negative witness.
 
-The first two equations give $x=(a+b)/2$ and $y=(a-b)/2$. Substitute these values into the third equation. Its left side becomes $2x=a+b$, so the third requirement holds exactly when $c=a+b$.
+There is a subtle limitation. Finding one rule that vanishes on the image supplies a necessary condition. It need not supply every condition. In our example, the explicit formula for x and y proved that our single condition was sufficient too. Keep that sufficiency proof attached to the criterion.
 
-This proves both necessity and sufficiency:
+Do not silently extend this argument to continuous linear rules on infinite-dimensional spaces. The basis construction alone does not prove continuity. Recording the theorem's scope is part of designing a usable method library.
 
-$$
-(a,b,c)\text{ is obtainable}\quad\Longleftrightarrow\quad c=a+b.
-$$
+## 3. A second problem: fit prescribed data with a polynomial
 
-Necessity alone would reject incompatible outputs but would not construct a solution for compatible ones. Sufficiency is supplied by the explicit formulas for $x$ and $y$, with all three equations checked.
-
-### Route 2: identify an obstruction before solving
-
-Every output of $A$ satisfies “third entry equals first plus second,” since $(x+y)+(x-y)=2x$. Define the obstruction of a proposed output to be
+Ask for a polynomial p of degree at most one with
 
 $$
-o(a,b,c)=c-a-b.
+p(0)=a,\qquad p(1)=b,\qquad p(2)=c.
 $$
 
-If this number is nonzero, the output is impossible and there is no reason to search for inputs. If it is zero, the formulas from Route 1 establish that this is the only obstruction. The obstruction test is exact because we proved that converse; defining a quantity that must vanish would not alone prove completeness of the test.
+Writing $p(t)=u+vt$ forces $u=a$ and $v=b-a$. Substitution at 2 gives the complete criterion
 
-For $(3,1,4)$ the obstruction is zero. The input $(2,1)$ works, as direct substitution gives $(3,1,4)$. For $(3,1,5)$ the obstruction is one, so no input works. Reusing $(2,1)$ after changing the final entry would solve the old task, not the new one.
+$$
+c-2b+a=0.
+$$
 
-### What the two method cards should contain
+Thus $(0,1,2)$ is fitted by $p(t)=t$, but $(0,1,3)$ has no linear fit. If the degree allowance becomes two, the latter data are fitted by $p(t)=(t^2+t)/2$. The negative verdict was about a degree bound, not the data alone.
 
-| Method | Decisive work | Best reason to choose it | What it cannot skip |
-|---|---|---|---|
-| Construct a candidate | Solve the first two equations | A concrete witness is needed | Check the third equation |
-| Test compatibility | Evaluate $c-a-b$ | Many proposed outputs need quick rejection | Prove zero obstruction is sufficient before claiming an exact criterion |
+For distinct real nodes $t_1,\ldots,t_m$, define
 
-The routes share mathematics. Do not advertise them as statistically independent evidence. Their value is that they expose different failure points and can be chosen for different immediate tasks.
+$$
+\ell_i(t)=\prod_{j\ne i}\frac{t-t_j}{t_i-t_j}.
+$$
 
-Ask Codex to create the four files below using this example first. Give it $(3,1,4)$, then revise only the third entry to five. Require it to preserve the old witness, recompute its output, and distinguish candidate failure from a proof of impossibility. These are reference outcomes, not a record of a measured Codex run.
+At its own node this polynomial equals one; at every other node it equals zero. Therefore
 
-### From this calculation to the geometric project
+$$
+p(t)=\sum_{i=1}^m b_i\ell_i(t)
+$$
 
-In the next task, a global section plays the role of an input, restriction plays the role of $A$, and the specified section plays the role of $(a,b,c)$. A connecting homomorphism supplies the obstruction. The advanced work is proving that this machinery applies to the given geometric objects; the logical structure is the one just derived.
+fits all prescribed values and has degree at most $m-1$. This is the Lagrange construction; [NIST DLMF, Section 3.3](https://dlmf.nist.gov/3.3) gives the standard interpolation formulas. Here the denominators also show exactly why distinctness is required.
 
-**Prerequisites for the geometric extension:** line bundles, effective Cartier divisors, and the cohomology sequence of a short exact sequence. If those are unfamiliar, complete the linear example and use Modules 3–5 to design and review its method cards.
+For a degree allowance $d<m-1$, evaluation is injective: a polynomial of degree at most d that vanishes at m distinct nodes must be zero. Its image consequently has dimension $d+1$, inside the m-dimensional space of data. There are $m-d-1$ independent compatibility conditions. For $d\ge m-1$, the construction above proves surjectivity. Altogether, for nonnegative integer d,
 
-## The controlled mathematical task
+$$
+\operatorname{codim}(\operatorname{im}E_d)=\max(m-d-1,0),
+$$
 
-Let X be a projective variety, L a line bundle, D an effective Cartier divisor, and s a specified section of L restricted to D. Determine whether this particular s lifts to a global section of L. Work from the exact sequence
+where $E_d$ sends a polynomial to its values at the nodes. This dimension count says some data fail when the image is proper. It does **not** say that the particular data in your task fail. You still need a witness or the relevant compatibility tests.
 
-$$0\to L(-D)\to L\to L|_D\to0.$$
+## 4. Turn the mathematics into method cards
 
-The connecting map gives the exact criterion: s lifts if and only if its image under the connecting homomorphism is zero. Vanishing of the entire group H¹(X,L(-D)) is sufficient but need not be necessary for this chosen section.
+A useful card records an executable mathematical action, its prerequisites, and its evidence.
 
-There are therefore two genuinely different routes: prove a sufficient vanishing theorem, or compute the obstruction for s. Recommending vanishing without checking its hypotheses is not a method selection success.
+| Field | Constructive interpolation | Compatibility calculation |
+|---|---|---|
+| Task | Produce a polynomial meeting the data | Decide whether data lie in the allowed image |
+| Preconditions | Distinct nodes; sufficient degree allowance for this construction | Exact evaluation matrix and specified degree bound |
+| Action | Form the Lagrange sum and evaluate it | Eliminate coefficients or compute all independent linear constraints |
+| Positive evidence | Polynomial, degree check, values at every node | Recovered coefficients and substitution checks |
+| Negative evidence | Not supplied merely by failure of this construction | A linear relation violated by the specified data |
+| Scope warning | More degree than allowed invalidates the answer | One necessary relation may not be sufficient |
 
-## Build the workspace in Codex
+The selection policy is now concrete. When the degree allowance is sufficient, construct and check. When it is restrictive, compute compatibility. When the nodes collide, rebuild the task before choosing either route.
+
+![Method search produces evidence for the exact target](/images/agent-system/advanced-proof-search.svg)
+
+## 5. Build and break the workflow in Codex
+
+Create a folder with `TARGET.md`, `METHODS.md`, `ATTEMPTS.md`, and `DECISION.md`. Begin with this assignment:
 
 ```text
-Create TARGET.md, METHODS.md, ATTEMPTS.md, and REVIEW.md.
-Record X, L, D, and the specified section s exactly.
-Compare two routes: sufficient cohomology vanishing and direct obstruction.
-For each route list prerequisites, applicable source results, and missing steps.
-Do not change 'this section lifts' into 'some section lifts'.
-Choose one decisive mathematical calculation and carry it out in ATTEMPTS.md.
-Keep failed attempts and distinguish supplied facts from checked arguments.
+Target v1: real polynomials of degree at most one, with values
+0, 1, 3 at nodes 0, 1, 2 respectively.
+Compare a coefficient-solving route and a compatibility route.
+For each, state prerequisites, perform the decisive calculation,
+and attach either an exact witness or an impossibility certificate.
+Do not replace the degree constraint by an easier one.
+Save the original attempts and a separate review.
 ```
 
-This small architecture has four responsibilities: preserve the target, compare applicable methods, attempt a bridge, and review the result. Files make those responsibilities inspectable; instructions alone do not enforce them.
+Inspect the actual evidence. Next change only the degree allowance to two and label it v2. Ask which calculations survive and which verdict must be withdrawn. A robust system retains the old impossibility proof as a statement about degree one while admitting the quadratic solution for v2.
 
-## A worked case with a decisive answer
+Run these additional cases yourself:
 
-Take X to be the projective line over a field k, L the trivial bundle, and D the sum of two distinct k-rational points. Identify sections on D with pairs in k². Global sections of L are constants, so restriction sends c to (c,c).
+| Case | What must be distinguished |
+|---|---|
+| Degree zero; values (2,2,2) | A restrictive degree bound can still fit the chosen data |
+| Degree zero; values (2,2,3) | A concrete inconsistency, not a dimension slogan |
+| Repeated node 0 with values 1 and 2 | No function can satisfy contradictory values at one input |
+| Repeated node 0 with values 1 and 1 | Repetition alone is not inconsistency; combine duplicate constraints |
+| Proposed answer has correct values but excessive degree | The target includes the degree requirement |
+| Old approval submitted after changing one node | Recheck evaluations and the distinctness assumptions |
 
-Consequently (1,1) lifts and (1,0) does not. Both have the same ambient geometric data. A policy looking only at the variety, line bundle, or a broad method label cannot distinguish them. The direct restriction computation can.
+For each case retain the first answer, your localized criticism, the repair, and a fresh test. Do not rewrite the first answer to make the workflow look successful. Use the [downloadable practice pack](/files/reasoning-practice-lab.zip) for a starter record and additional fault injections.
 
-```text
-Carry out the two-point calculation from the stated definitions.
-Explain why all global sections of the trivial bundle on the projective line
-are constants, citing or supplying the needed justification.
-Compute the restriction image and test both sections separately.
-Then explain why failure of a sufficient vanishing condition alone would
-not prove that either specified section fails to lift.
-```
+## 6. The harder bridge: exact solvability versus stability
 
-The mathematical answer above is the reference calculation. It is not a claim that a Codex run has already reproduced it. Save the actual response and inspect its reasoning.
+Let the nodes be 0 and h, with $h>0$, and the data be 0 and $\varepsilon$. The unique linear interpolant is
 
-## Move from the control to research
+$$
+p(t)=\frac{\varepsilon}{h}t.
+$$
 
-Select a lifting step in a proof you understand. Supply the actual statement and source excerpt. Require an applicability table for the vanishing route and an explicit obstruction target for the direct route. Attempt whichever unresolved step could most change the assessment within your budget.
+The data perturbation has size $\vert\varepsilon\vert$, but the value at 1 is $\varepsilon/h$. As h becomes small, this extrapolated value can be arbitrarily larger than the perturbation. Exact interpolation therefore supplies no bound independent of h on this output.
 
-Reject a proof plan that hides its main difficulty in 'standard arguments'. A conditional plan remains useful when its missing lemma is exact and its implication back to the target is justified.
+But a broad claim that the interpolant is unstable everywhere would also be wrong. On the interval $[0,h]$, we have $\vert p(t)\vert\le\vert\varepsilon\vert$. The output domain changes the conclusion.
 
-## Evaluation and submission
+**Challenge.** For arbitrary data a,b at 0,h, derive
 
-Test both sections, then change the target version and present an old review. Check that the assistant preserves the chosen section and does not reuse an irrelevant verdict. Compare with an ordinary request to suggest a proof method using the same evidence and time budget.
+$$
+p(t)=\left(1-\frac{t}{h}\right)a+\frac{t}{h}b.
+$$
 
-Submit the exact target, two method cards, full attempted calculation, review findings, and remaining obligations. A persuasive method list without an attempted bridge does not pass.
+Perturb each datum by at most $\eta$. Prove that the output error is at most $\eta$ on $[0,h]$. Then compute the worst-case error at a fixed $t>h$ and show it equals $(2t/h-1)\eta$ by choosing opposite signs for the two perturbations. This is a sharp bound, not just a few numerical tests.
 
-[Build the base workspace](/posts/2026/08/agent-system/codex-research-studio/) · [Course roadmap](/posts/2026/12/Agent-System/)
+Now design a method card that separates existence, uniqueness, and stability. A solver that returns a correct polynomial but labels it “robust” without an output domain and an error bound has exceeded its evidence.
 
+## 7. Extend the workshop toward research
+
+Choose an interpolation or approximation result from an accessible source. Record its exact node assumptions, approximation domain, norm, and conclusion. Propose one change: clustered nodes, a changed domain, noisy data, or a restricted polynomial family. First recover a known special case. Then attempt the step on which the proposed improvement depends.
+
+A serious submission may end with a counterexample or a conditional bound. It must include the actual inequality or construction attempted, the source comparison, and the remaining obstruction. Finding a classical bound is a successful learning result, not a claim of research novelty. Novelty requires a separate literature check.
+
+**Completion criterion:** another learner can reconstruct the decision from your artifacts, distinguish every target version, and check the decisive mathematics. The system's architecture earns its complexity only when these tasks become more reliable.

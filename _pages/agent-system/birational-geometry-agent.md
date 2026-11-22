@@ -1,5 +1,5 @@
 ---
-title: "Advanced Project: Audit a Birational Reduction in Codex"
+title: "Advanced Project: Coordinate Changes and Well-Founded Reductions"
 permalink: /posts/2026/08/agent-system/birational-geometry-agent/
 tags:
   - Agent System
@@ -9,184 +9,164 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-The aim is to test whether a geometric construction actually advances the original target. Start with a known reduction and a reference argument. Only then ask whether it survives changed hypotheses. 'Spiraling induction' is not an extra proof principle: any induction still needs explicit statements, bases, and a well-founded dependency order.
+The difficult part of a change of coordinates is often the part the new coordinates do not cover. This workshop develops that issue through explicit formulas, then connects it to a research system's obligation to preserve domains, recover solutions, and justify recursive reductions. You need polynomial algebra, functions, and induction—not algebraic geometry terminology.
 
-**Reading route:** start with the workshop below for the advanced design; use [First task: a blow-up and the return to the original surface](#first-task-a-blow-up-and-the-return-to-the-original-surface) as a concrete calibration when needed. Complete the research assignment after the control example.
+**Research workshop C.** Produce a complete reduction record, including an inverse-domain check, an exceptional-case calculation, and an induction audit. The examples are reference mathematics. The Codex experiments are tasks to run and record, not reported successes of an autonomous system.
 
-## Research workshop C: transport theorems across models and induction stages
+## 1. A transformation that is easy to invert—almost everywhere
 
-**Entry requirements:** divisors, line bundles, intersection theory on smooth projective surfaces, and the core course's dependency records. **Deliverable:** a theorem package with an explicit model-change argument, its admissible scope, and an induction schedule whose rank decreases at every recursive invocation. The negative blow-up control later in the chapter is only the starting test.
-
-### 1. One modification can destroy one property and preserve another
-
-Let $\pi:Y\to X$ be the blow-up of a point on a smooth projective surface over an algebraically closed field, with exceptional curve $E$. The later calculation shows that $K_Y\cdot E=-1$, so nefness of $K_X$ does not transfer to $K_Y$. Yet the spaces of pluricanonical sections are preserved:
+Consider the map from the real plane to itself
 
 $$
-H^0(X,mK_X)\cong H^0(Y,mK_Y)
-\quad(m\geq1).
+F(u,v)=(u,uv).
 $$
 
-The contrast forces a useful architectural distinction. A model change is not labeled simply “safe” or “unsafe.” It has a transfer rule for a specified object and property. Section spaces and nefness require different arguments.
-
-### 2. Derive the positive transfer
-
-Use compatible canonical divisors, so $K_Y=\pi^*K_X+E$. For $j\geq1$, consider
+If the requested output is $(x,y)$ with $x\ne0$, its unique preimage is
 
 $$
-\begin{gathered}
-0\to\mathcal O_Y((j-1)E)\to\mathcal O_Y(jE)
-\\ \to\mathcal O_E(-j)\to0.
-\end{gathered}
+u=x,\qquad v=y/x.
 $$
 
-Here $E\cong\mathbb P^1$ and $\mathcal O_E(E)\cong\mathcal O_{\mathbb P^1}(-1)$. The last sheaf has no global sections. Since $E$ maps to a point, its direct image under $\pi$ is zero. Left exactness of direct image therefore gives
+Check this by substitution. The division is legitimate because the domain restriction has been stated. Now examine the excluded case rather than treating it as a footnote. If $x=0$, the first equation forces $u=0$, and the second output is then zero regardless of $v$.
 
-$$
-\pi_{\ast}\mathcal O_Y((j-1)E)
-\cong\pi_{\ast}\mathcal O_Y(jE).
-$$
-
-Together with $\pi_{\ast}\mathcal O_Y=\mathcal O_X$ for a proper birational morphism to the smooth, hence normal, surface $X$, induction gives $\pi_{\ast}\mathcal O_Y(mE)=\mathcal O_X$. The projection formula now yields
-
-$$
-\begin{gathered}
-\pi_{\ast}\mathcal O_Y(mK_Y)\\
-\cong\mathcal O_X(mK_X)\otimes\pi_{\ast}\mathcal O_Y(mE)\\
-\cong\mathcal O_X(mK_X).
-\end{gathered}
-$$
-
-Taking global sections proves the claimed isomorphism. Notice what was not needed: vanishing of all higher direct images. Introducing that stronger obligation would complicate the proof without serving this target.
-
-This calculation specializes the exceptional-divisor pushforward mechanism discussed in §1.2 of [Kollár's 2017 draft, *Families of varieties of general type*](https://web.math.princeton.edu/~kollar/book/modbook20170720). The surface argument above exposes the particular ingredients a source audit must check. It does not assert a transfer theorem for arbitrary singular spaces or analytic modifications.
-
-### 3. Package the result with its interface
-
-| Component | Required content |
-|---|---|
-| Input objects | Smooth projective surfaces, point blow-up, exceptional curve, integer $m\geq1$ |
-| Imported facts | Canonical-divisor identity, normal-target pushforward, projection formula, negative-degree section vanishing on $E$ |
-| Output | An isomorphism of the specified global section spaces |
-| Forbidden inference | Nefness of $K_Y$, or a family-level base-change statement |
-| Revision trigger | Change of singularities, category, center, coefficient type, or relative setting |
-
-The last row is especially important for mathematical research. Fiberwise equality of dimensions does not alone prove a sheaf isomorphism over a parameter space. Nor does a calculation for line bundles automatically handle a non-Cartier canonical divisor. Those proposed extensions need new statement versions and new bridge lemmas.
-
-### 4. Make a spiraling induction genuinely well founded
-
-Suppose a theorem package contains statements $A_{d,q}$ and $B_{d,q}$, where $d,q$ are nonnegative integers. One proposed dependency is: $A_{d,q}$ uses $B_{d,q-1}$ when $q>0$ and specified lower-dimensional results; $B_{d,q}$ then uses $A_{d,q}$. At $q=0$, replace the unavailable predecessor by an explicit boundary argument.
-
-Assign lexicographic ranks
-
-$$
-\rho(A_{d,q})=(d,q,0),\qquad
-\rho(B_{d,q})=(d,q,1).
-$$
-
-Each stated predecessor has smaller rank: the lower-dimensional step lowers $d$, the predecessor $B_{d,q-1}$ lowers $q$, and $A_{d,q}$ precedes $B_{d,q}$ within the same pair. Provide the $d=0$ boundary proofs and all $q=0$ transitions. This establishes a well-founded *dependency plan*, provided every implication is separately proved.
-
-An invocation of $B_{d,q}$ inside the proof of $A_{d,q}$ violates this order and creates a cycle. Reducing some informal “complexity” is not enough unless its values and decrease are defined. For an actual MMP proof, the ranks must match the parameters in the source; the two-index rehearsal is not a claim about a named theorem.
-
-[![Geometric theorem packages track objects, transfer lemmas, and well-founded theorem invocations separately.](/images/agent-system/advanced-geometry.svg)](/images/agent-system/advanced-geometry.svg)
-
-### 5. A research-level Codex assignment
-
-Create one object record per model and one transfer record per claimed property. Reproduce both the negative nefness calculation and the positive pluricanonical calculation. Then choose an actual induction theorem from accessible literature and supply the relevant proof passages.
-
-Require Codex to extract every theorem invocation into a row containing the caller, callee, full hypotheses, parameter substitution, and rank comparison. For a same-rank auxiliary result, give an independent earlier proof or mark the invocation unresolved. Finally change one hypothesis and attempt the first transfer or induction step that breaks.
-
-The submission must contain mathematical proofs and the actual invocation audit. A diagram with decreasing labels does not prove the corresponding implications. A successful local transfer does not establish the whole theorem package.
-
-## First task: a blow-up and the return to the original surface
-
-Let X be a smooth projective surface over an algebraically closed field and let π:Y→X be the blow-up of a smooth point, with exceptional curve E. The canonical divisor formula is
-
-$$K_Y=\pi^*K_X+E.$$
-
-Using E²=-1 and π* K_X · E=0 gives K_Y · E=-1. Thus even if K_X is nef, K_Y is not nef. For a concrete instance choose X an abelian surface, whose canonical bundle is trivial.
-
-This is a useful control: moving to a smooth birational model does not preserve every positivity condition. A system that stores only 'birationally equivalent' loses information essential to the argument.
-
-The displayed calculation is a reference argument, not an automated research result. Students must justify the blow-up formula and intersection identities from a source or a proof they can inspect.
-
-## Unpack the calculation before designing the workflow
-
-This is an advanced module. It assumes basic divisors and intersection numbers on smooth projective surfaces. Its system-design lesson is accessible without reconstructing surface theory: **a property of a pulled-back object is not automatically a property of another object on the same model.**
-
-On a projective surface, a divisor is nef when its intersection with every integral curve is nonnegative. To disprove nefness, one curve with negative intersection is enough. The exceptional curve $E$ is therefore a decisive test, not an arbitrary example chosen after the conclusion.
-
-There are three divisors that the record must distinguish:
-
-| Divisor | Space | Role |
+| Requested output | Preimages | Reason |
 |---|---|---|
-| $K_X$ | Original surface $X$ | Object in the original positivity hypothesis |
-| $\pi^*K_X$ | Blown-up surface $Y$ | Pullback of that object |
-| $K_Y$ | Blown-up surface $Y$ | Canonical divisor of the new surface |
+| $x\ne0$ | Exactly $(x,y/x)$ | Substitute into both equations |
+| $(0,0)$ | Every $(0,v)$ | The entire line is sent to the origin |
+| $(0,y)$ with $y\ne0$ | None | The second coordinate would have to be zero |
 
-The last two live on the same surface but differ by $E$. Using the supplied canonical-divisor identity, bilinearity of intersection gives
+Thus F is neither globally one-to-one nor globally onto. Nevertheless, on the regions $u\ne0$ and $x\ne0$, it has the displayed inverse. The inverse coordinates are ratios of polynomials. This is the elementary feature behind a *birational* change: rational formulas identify suitable dense open regions, without promising a global bijection. Here those regions are simply the planes with the vertical axis removed.
+
+**First challenge.** Give Codex the request “invert F” without specifying a domain. Save its first answer. Does it return only the division formula, or does it discover all three rows? The full deliverable is the classification, including uniqueness and failure of existence. A few successful substitutions are not enough.
+
+## 2. When failure of the transformed task says nothing about the original one
+
+Suppose the original task is to exhibit a point satisfying $x=0$ and $y=1$. The answer $(0,1)$ exists. A planner decides to represent every point as F(u,v), then concludes that the original problem is impossible because the transformed equations have no solution.
+
+The calculation is correct, but the reduction is invalid: F does not cover every allowed original point. Producing a preimage is a sufficient way to produce an original solution, not a necessary one. The missing implication is “every original solution has a representation of this form.”
+
+Store the directions separately:
+
+- A transformed solution maps to an original solution after checking substitution.
+- An original solution maps back only where the inverse exists, unless exceptional cases are handled separately.
+
+This is a small example of a serious research failure: a convenient construction becomes an unstated extra hypothesis. An unsuccessful transformed search is then misreported as a negative result about the original question.
+
+**Adversarial test.** Ask for $(2,6)$, $(0,0)$, and $(0,1)$ in successive target versions. Deliver the first review after the last change. A reliable record retains the first calculation but does not transfer its approval or its uniqueness conclusion to the other cases.
+
+## 3. A curve with two different routes through one point
+
+Now consider all real solutions of
+
+$$
+y^2=x^2(1+x).
+$$
+
+The origin satisfies the equation. Away from $x=0$, set $t=y/x$. Dividing by $x^2$ gives $t^2=1+x$, so
 
 $$
 \begin{aligned}
-K_Y\cdot E
-&=(\pi^*K_X+E)\cdot E\\
-&=(\pi^*K_X)\cdot E+E^2\\
-&=0-1=-1.
+x&=t^2-1,\\
+y&=t(t^2-1).
 \end{aligned}
 $$
 
-The pullback term has intersection zero because $E$ is contracted to a point: the projection formula pairs $K_X$ with the zero pushforward curve class. The other input, $E^2=-1$, is the exceptional-curve identity for this blow-up. A complete source reconstruction must justify these inputs and the canonical-divisor formula; the arithmetic after them is not a substitute for that audit.
+We have derived a candidate parametrization. To use it as a complete solution, prove two different statements.
 
-If $X$ is an abelian surface, its trivial canonical bundle makes $K_X$ nef. Yet the calculation proves that $K_Y$ is not nef. The contradicted implication is specifically “nef canonical divisor remains nef after this blow-up.” Neither the smoothness of $Y$ nor the original nefness on $X$ has been disproved.
+**Forward direction.** For any real t, substitute these formulas. Both sides of the curve equation equal $t^2(t^2-1)^2$. Thus every parameter produces a point on the curve.
 
-### A useful repair has a different statement
+**Reverse direction away from the origin.** If $(x,y)$ satisfies the equation and $x\ne0$, set $t=y/x$. The equation gives $t^2=1+x$, and both reconstruction formulas follow. No such solution is lost.
 
-The identity gives $K_Y-E=\pi^*K_X$. That correction removes the offending exceptional term. It does not prove nefness of $K_Y$. A report that changes the object to $K_Y-E$ must label the new claim rather than announcing that the original target was repaired.
+**Excluded case.** If $x=0$, the original equation gives $y=0$. The origin is produced by both $t=1$ and $t=-1$. Thus the parametrization covers the entire real curve, but is not globally injective.
 
-For the laboratory, require a four-line review: the exact false implication, the curve testing it, the computation giving the contradiction, and the corrected object identity that survives. Then remove the exceptional term from the submitted formula and ask the reviewer to identify the missing input. This checks whether the system understands the object change rather than memorizing the answer “blow-ups are bad.”
+Here the exceptional-case calculation restores completeness; in the earlier plane example, a whole family of outputs was genuinely missing. The system must calculate which situation it is in. “We divided by x” is a reason to open an obligation, not a reason to assume that obligation is harmless.
 
-For a checkable source for the three blow-up identities, see Proposition 7.6, items (3)–(5), in [Sam Frengley’s algebraic-surfaces course notes](https://samfrengley.github.io/teaching/DRAFT-notes/alg-surfaces-notes.html). Match the smooth-surface and point-blow-up hypotheses before using them.
+Near t=1 and t=-1, the parametrization approaches the same point along different directions. At nonzero x, the slope y/x equals t; its two limiting values are therefore 1 and −1. This explains the two crossing branches using only the formulas. For geometric context, see the plane-curve examples in [Shifrin's differential-geometry notes](https://ghomi.math.gatech.edu/Classes/Math4441Fall2021/ShifrinDiffGeo.pdf). The algebra needed for this workshop is supplied above.
 
-## Build from an empty Codex folder
+### A tempting cancellation that changes the solution set
+
+Substituting x=u and y=uv into the curve equation yields
+
+$$
+u^2(v^2-1-u)=0.
+$$
+
+For $u\ne0$, this is equivalent to $v^2=1+u$. At $u=0$, however, the product equation allows every v, while the latter equation allows only v=±1. These are different sets of transformed points, even though both extra and retained points at u=0 map to the origin.
+
+The two retained values capture the limiting slopes of nearby nonzero-u solutions. If u tends to zero along $v^2=1+u$, every finite limit of v must satisfy $v^2=1$; conversely each sign is realized by $v=\pm\sqrt{1+u}$ near zero. Cancelling the factor requires this explanation of what is retained and what is discarded.
+
+**Second challenge.** Submit the false claim that the two transformed equations are equivalent everywhere. Require an explicit counterexample, an exact repaired domain, and a separate explanation of whether their images on the original curve differ. The input (u,v)=(0,0) disproves the equivalence; it does not produce an off-curve image.
+
+## 4. The architecture records what each arrow proves
+
+[![A coordinate reduction separates the ordinary inverse domain from excluded points and merges only after both cases are checked.](/images/agent-system/advanced-geometry.svg)](/images/agent-system/advanced-geometry.svg)
+
+| Record | Required content |
+|---|---|
+| Original task | Equation, real domain, and whether existence, coverage, or uniqueness is requested |
+| Forward map | Explicit formula and substitution proof |
+| Inverse map | Formula and every nonzero-denominator condition |
+| Exceptional branch | Direct calculation on the excluded set |
+| Return argument | Which conclusions about transformed inputs establish the original target |
+| Admission scope | Exact target version; whether coverage and uniqueness were separately established |
+
+A plot is useful for noticing the crossing. It does not prove surjectivity of the parametrization or classify the missing points. A symbolic simplification can help check an identity, but must not erase its denominator assumptions.
+
+## 5. A reduction is not automatically an induction step
+
+Changing coordinates can simplify an equation without lowering any induction parameter. To call a repeated reduction an induction, give a quantity in a well-founded order and prove that each recursive call lowers it.
+
+A concrete model is the Euclidean algorithm. For nonnegative integers a and positive b, write
+
+$$
+a=qb+r,\qquad 0\le r<b.
+$$
+
+The common divisors of a and b are exactly the common divisors of b and r: one direction uses $r=a-qb$, the other uses $a=qb+r$. Therefore the greatest common divisor is preserved. The next pair is (b,r), and its second coordinate is smaller. If r=0, stop; the greatest common divisor is b. The case with initial b=0 is handled separately, returning a when a>0.
+
+There are two proofs here: preservation of the target and termination. Neither substitutes for the other. Trace (1071,462) → (462,147) → (147,21) → (21,0), obtaining 21. Then explain why this finite trace alone does not prove the algorithm for all inputs; the general divisor argument and decreasing nonnegative integer do.
+
+For a mutually dependent theorem package, suppose $A_{d,q}$ uses $B_{d,q-1}$ and lower-dimensional results, while $B_{d,q}$ uses $A_{d,q}$. Lexicographic ranks (d,q,0) and (d,q,1) can organize those calls, provided all implications and boundary cases are proved. A same-rank cycle needs an independent argument; more rounds of agents cannot create one. This abstract extension does not require any theorem from algebraic geometry.
+
+## 6. Build and stress-test it in Codex
 
 ```text
-Create OBJECTS.md, TARGET.md, REDUCTIONS.md, SOURCES.md, and REVIEW.md.
-Record X, Y, π, E, their assumptions, and the direction of each map.
-Record divisor identities on the space where they hold.
-Audit the claim: nefness of K_X implies nefness of K_Y.
-Check every identity used in the intersection calculation.
-Do not silently replace pullback of K_X by K_Y.
-Preserve the original false claim and the corrected conclusion separately.
+Create TARGET.md, MAPS.md, EXCEPTIONS.md, ARGUMENTS.md, and CHECKPOINT.md.
+Start with F(u,v)=(u,uv) over the real numbers.
+Classify every output by existence and uniqueness of a preimage.
+Keep forward and inverse statements separate, with their domains.
+Next parametrize y²=x²(1+x), proving both coverage and the exceptional case.
+Do not cancel a factor without recording where it is nonzero.
+For every rejected claim, retain a counterexample and a corrected statement.
+Restart from the checkpoint and reconstruct exactly what was established.
 ```
 
-The architecture is the record of objects, the proposed implication, its evidence, and a review of that exact implication. No additional agent roles are needed to do this first experiment.
+Run three deliberate faults: omit x≠0 from the inverse; claim uniqueness at the origin; cancel u² without a case split. Diagnose the first invalid inference in each. Then replace the target by $y^2=x^3$ and repeat the argument from scratch. This time the formulas are x=t² and y=t³; direct substitution and the x=0 case give full coverage, with a unique parameter at the origin. Do not reuse the old two-parameter verdict.
 
-## What a successful run must show
+For a formal track, ask Codex to encode one polynomial identity and one restricted inverse statement in an appropriate available Lean environment. Keep the domain assumption in the declaration. A proved identity alone does not certify the full coverage argument. Retain actual checker evidence and the admission policy from Module 6.
 
-It must identify the exceptional correction E, compute the negative intersection, and reject the proposed preservation of nefness. It must not conclude that the original X has non-nef canonical divisor. It should explain which assertion was refuted and which original hypotheses remain unchanged.
+## 7. Submission and research-level extension
 
-Introduce two damaged variants: omit E from the canonical divisor formula, or apply an intersection statement on Y as though it were on X. Require the review to locate the exact error, rather than simply output 'incorrect'.
+Submit the complete classification of F, both curve parametrizations, cancellation counterexample, decreasing-rank argument, and actual initial and repaired assistant outputs. A successful submission distinguishes existence, uniqueness, coverage, and termination throughout. A beautiful graph with unproved arrows does not pass.
 
-## Second task: audit an actual induction package
+For the accessible track, select an analysis or linear-algebra argument that changes variables, divides by a parameter, takes a limit, or recurses. Reconstruct the transformation and excluded cases. Change one hypothesis and attempt a replacement for the first failing step. The mathematical challenge is preserving the full target through a genuine revision—not adding unfamiliar terminology.
 
-Choose a specific theorem and proof from your own literature. Supply the relevant statement and proof passages. Do not ask Codex to reconstruct a major theorem from its name alone.
+[Method-selection workshop](/posts/2026/08/agent-system/proof-sketch-system/) · [Course roadmap](/posts/2026/12/Agent-System/)
 
-```text
-Create INDUCTION.md from this source proof.
-For every statement record its complete hypotheses and parameter values.
-For every invocation record all premises needed together.
-Specify the base cases and the order that makes dependencies well-founded.
-Separate same-dimension auxiliary steps from lower-dimensional invocations.
-If a parameter does not decrease, identify the earlier established statement
-that permits this step. Flag any circular dependency without repairing it silently.
-```
+## 8. From calibration to birational geometry research
 
-For a purely logical rehearsal, use A_n depending on B_(n-1), and B_n depending on A_n, with B_0 supplied. Order the obligations as B_0, A_1, B_1, A_2, B_2, and so on. This is a valid dependency pattern only when each implication has its own proof. Removing B_0 leaves the construction ungrounded. This rehearsal is not a theorem in birational geometry.
+The coordinate examples teach how to audit a reduction; they are not substitutes for a research problem. For the research track, select an actual proof passage involving a birational model or a recursive theorem package. Keep the cited statements open beside the proof. Your task is to produce the following mathematical dossier, not a generic architecture proposal.
 
-## Attempt a research extension only after reconstruction
+| Question | Required evidence |
+|---|---|
+| Does the model or operation exist under the stated assumptions? | The applicable theorem, with every relevant hypothesis matched to the current objects |
+| Which properties survive the transformation? | The precise preservation statement and its proof or applicable citation |
+| What changes on exceptional loci? | A localized calculation or theorem; do not infer global equivalence from agreement on an open set |
+| How does the transformed result imply the original target? | An explicit return implication with its own assumptions |
+| Why can the reduction not continue forever? | A proved termination theorem or a genuinely decreasing well-founded invariant |
 
-Change exactly one hypothesis in the chosen geometric argument. Locate its actual use. Ask whether the failed step has a replacement and attempt that replacement. Keep the original and proposed statements side by side. A successful calculation on a divisor, fiber, or model must still have a justified implication back to the original target.
+Choose one assumption to weaken. Locate the first broken application, formulate a replacement lemma, and spend the main work on that lemma. A successful submission can establish a special case or identify a concrete obstruction; it must not rename a conditional reduction as the original theorem.
 
-Submit the source reconstruction, object and dependency records, the changed hypothesis, the attempted replacement lemma, and a precise account of what remains open. A negative result about the proposed route can be valuable. A diagram of unproved arrows is not a proof blueprint ready for reuse.
+For a spiraling induction package, list each statement with all its parameters. Draw an arrow only when the proof actually invokes another statement. Check every arrow against the proposed rank, including boundary cases. If a same-rank cycle remains, identify the missing independent input. A visually convincing spiral has no evidential value without these checks.
 
-[Method-selection laboratory](/posts/2026/08/agent-system/proof-sketch-system/) · [Course roadmap](/posts/2026/12/Agent-System/)
-
+Use the [proof-based hands-on track](/posts/2026/08/agent-system/hands-on-lab/#research-track-audit-and-improve-an-actual-proof) and mission 07 in the practice pack. No numerical experiment is required. The deliverable is a source-grounded proof attempt that another researcher can resume and scrutinize.

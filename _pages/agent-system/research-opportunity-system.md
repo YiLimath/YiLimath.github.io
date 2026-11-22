@@ -216,7 +216,7 @@ Even the first category is not a promise of success. Ask a separate review conve
 
 ## Run a pilot before searching your whole corpus
 
-Start with the lifting problem in the [method-selection project](/posts/2026/08/agent-system/proof-sketch-system/). Give the system the exact sequence and a proposed sufficient vanishing argument. Ask whether vanishing is necessary for the specified section. Require it to distinguish a weaker sufficient criterion from the exact obstruction criterion.
+Start with the interpolation problem in the [method-selection project](/posts/2026/08/agent-system/proof-sketch-system/). Give the system three distinct nodes, specified data, and a degree bound of one. Ask whether the sufficient degree allowance of two is necessary for these particular data. Require an exact compatibility criterion. Then investigate the stability challenge: changing the output domain changes the sharp error bound.
 
 Use the projective line with the trivial bundle and two distinct rational points as a control. The restriction map sends a constant c to (c,c), so (1,1) lifts while (1,0) does not. Ask the system to produce that calculation before proposing a generalization. This is established elementary mathematics, not a new research opportunity; recognizing that boundary is part of the exercise.
 

@@ -7,14 +7,14 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
 
 
 After a crash, the system should recover the same target, arguments, reviews, and open obligations. Reconstructing them from a conversational summary can silently change mathematical scope.
 
 ## The contract
 
-Use immutable artifact versions, durable writes, and explicit review bindings. Cache keys include the relevant statement, source, context, and policy versions. A hit for another sheaf or assumption set is a correctness defect.
+Use immutable artifact versions, durable writes, and explicit review bindings. Cache keys include the relevant statement, source, context, and policy versions. A hit for another domain or assumption set is a correctness defect.
 
 ## Trade-offs and failure modes
 

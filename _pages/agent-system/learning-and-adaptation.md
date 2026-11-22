@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
 
 
-Repeated success with vanishing can justify trying it earlier on related lifting tasks. It does not establish the positivity needed in every new case. The learned object is a scoped search preference.
+Repeated success with matrix inversion can justify trying it earlier on related linear systems. It does not establish invertibility in every new case. The learned object is a scoped search preference.
 
 ## The contract
 
@@ -22,7 +22,7 @@ Include difficult negative cases when evaluating adaptation. A policy that impro
 
 ## Build and test
 
-Tune a route preference on vanishing-friendly fixtures, then evaluate it on the two-point divisor. The direct-obstruction alternative must remain available.
+Tune a route preference on invertible matrices, then test a singular matrix with one solvable and one impossible requested vector. Direct compatibility checking must remain available.
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 

@@ -7,7 +7,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
 
 
 If the failure is a missing theorem hypothesis, add an applicability record. If it is stale evidence, bind reviews to versions. If it is duplicated exploration, share task state. A larger team does not automatically fix any of these.
@@ -18,7 +18,7 @@ Chaining organizes stages, routing selects capabilities, parallelization explore
 
 ## Trade-offs and failure modes
 
-Compare each added mechanism against a simpler baseline under a fixed budget. A stronger model may combine several responsibilities in one worker without erasing their contracts. The same design should preserve the chosen section, quantifier dependence, and induction rank across all three cases.
+Compare each added mechanism against a simpler baseline under a fixed budget. A stronger model may combine several responsibilities in one worker without erasing their contracts. The same design should preserve the specified output, quantifier dependence, and induction rank across all three cases.
 
 ## Build and test
 

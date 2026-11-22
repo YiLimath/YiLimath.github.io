@@ -10,7 +10,7 @@ full_page_reading: true
 
 A reduction is useful only if solving the new problem helps solve the original one. In mathematical research, the difficult step is often the bridge back: a limiting argument, descent from a model, removal of an auxiliary hypothesis, or recovery of uniformity. This module teaches you to expose and test that bridge before investing in the easier subproblem.
 
-**Learning goals:** classify a transformation as an equivalence or one-way implication; track the dependence of choices; prove a return implication; and preserve useful partial progress when the bridge fails. The main worked example uses real analysis. The final section transfers the design to geometric research.
+**Learning goals:** classify a transformation as an equivalence or one-way implication; track the dependence of choices; prove a return implication; and preserve useful partial progress when the bridge fails. The main worked example uses real analysis. The coordinate-change workshop gives an additional example using two-variable polynomials.
 
 ## 1. Write the return argument before delegating the new task
 
@@ -21,12 +21,6 @@ For Module 1's rule $r(c)=(c,c)$, asking whether $(a,b)$ can be produced is equi
 Requiring that **every** pair can be produced would be stronger and false. That failure does not stop the particular pair $(1,1)$ from being produced. The transformed task may demand more than the original needs.
 
 A good system stores both the new obligation and its relation to the original. “Try a stronger general theorem” is a research action. “That theorem implies this target under these hypotheses” is a mathematical dependency. Keeping them separate lets the system change its plan without changing what has been proved.
-
-<details markdown="1">
-<summary>Advanced connection: the obstruction to lifting a section</summary>
-
-In the geometric interpretation, the desired output is a specified section $s$, and the input is a global section restricting to it. For the valid restriction exact sequence, exactness gives $s$ liftable if and only if $\delta(s)=0$. Vanishing of the entire obstruction space is a stronger sufficient condition. Failure to prove that space vanishes does not prove that the particular obstruction is nonzero. See Module 1's optional geometry for the objects and hypotheses.
-</details>
 
 ## 2. Full example: approximating a continuous function
 
@@ -120,7 +114,7 @@ What remains useful? The approximants are continuous, the pointwise limit has be
 
 The record is short because the proof itself lives elsewhere. Its purpose is to prevent the system from reporting that the approximating problem solved the original merely because both use the same nouns.
 
-For a geometric transformation, replace the approximation row by the actual map: a birational morphism, a finite cover, a restriction, or a deformation. Name the objects on both sides. Then state the required transfer theorem. A property of a pullback divisor and a property of the canonical divisor on the new model are different assertions. An auxiliary construction is only helpful when its relationship to the target is justified.
+For a coordinate transformation, record its formula, domain, inverse where defined, and the excluded inputs. The substitution (u,v) → (u,uv) has inverse (x,y) → (x,y/x) only when x is nonzero. The coordinate-change workshop derives this example completely. A useful substitution still needs an argument returning to the original problem.
 
 ## 6. Build and stress-test the workflow in Codex
 

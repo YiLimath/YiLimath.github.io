@@ -76,29 +76,6 @@ For degree zero, the general route fails because constants cannot produce every 
 
 The two routes end at the same question. Each route requires all of its own checks; completing checks from unrelated targets does not supply a proof.
 
-<details markdown="1">
-<summary>Advanced connection: the same planning distinction in geometry</summary>
-
-### Optional geometry: two routes to a section lift
-
-For a line bundle $L$ and effective Cartier divisor $D$, the restriction sequence gives a connecting map $\delta$. Exactness says that a specified section $s$ lifts precisely when $\delta(s)=0$.
-
-| Route | Premises needed together | Conclusion |
-|---|---|---|
-| Vanishing | Correct restriction sequence; $H^1(X,L(-D))=0$ | Every section on $D$ lifts |
-| Direct obstruction | Correct restriction sequence; $\delta(s)=0$ | This section $s$ lifts |
-
-Within each row the premises are joint requirements. Between rows there are alternatives for proving that $s$ lifts. Failure of the vanishing route leaves the direct route available; it does not refute liftability.
-
-For the two-point example on the projective line, direct calculation distinguishes (1,1) from (1,0). A plan that merely says “apply vanishing” has not done that work.
-
-[![Two proof routes and their distinct evidence requirements](/images/agent-system/course-proof-routes.svg)](/images/agent-system/course-proof-routes.svg)
-
-*Solid arrows denote justified inference once all inputs are available. The dashed arrow is a request for research work: it produces a candidate result, not automatic support for the conclusion. Both routes must concern the same target version.*
-
-
-</details>
-
 ## The dependency rule
 
 A conclusion becomes supported when at least one justified argument has all its premises supported or explicitly assumed. If $P\Rightarrow Q$ and $Q\Rightarrow P$, neither $P$ nor $Q$ follows without a starting point. Repeated execution does not add a logical premise.
@@ -127,15 +104,15 @@ Suppose the interpolation task omitted the degree bound. A search for more sophi
 
 The purpose is not to assign invented probabilities to each action. State the uncertainty, the action, a reasonable budget, and how its possible outcomes would alter the plan. A short decisive calculation may be more useful than another broad search.
 
-For a research problem, an informative action might inspect the exact positivity hypothesis of a vanishing theorem, prove a restricted version of the hardest lemma, or test a family that could break a uniform estimate. Positive evidence from a special case does not prove the general theorem, but can expose the mechanism that a general proof would need.
+For a research problem, an informative action might check a theorem’s compactness or boundedness hypothesis, prove a restricted version of the hardest lemma, or test a family that could break a uniform estimate. Positive evidence from a special case does not prove the general theorem, but can expose the mechanism that a general proof would need.
 
 ## Distinguish rejection, uncertainty, and exhaustion
 
 A counterexample can refute a proposed bridge. An unverified source hypothesis leaves an applicability question open. A timeout records an operational failure. These outcomes require different next steps.
 
-In the interpolation problem, degree zero with unequal values gives a complete negative answer. In the lifting problem, inability to verify a vanishing theorem leaves that route unresolved. An interrupted calculation supplies no mathematical verdict at all.
+In the interpolation problem, degree zero with unequal values gives a complete negative answer. For an analysis problem, an unproved uniform bound leaves that route unresolved. An interrupted calculation supplies no mathematical verdict at all.
 
-Keep useful results when replanning. If a candidate polynomial has the right values but excessive degree, preserve the interpolation identity as a result for a different degree bound. Do not present it as a solution of the original task. If a source check fails, retain any valid definitions and exact-sequence calculations that did not depend on the failed application.
+Keep useful results when replanning. If a candidate polynomial has the right values but excessive degree, preserve the interpolation identity as a result for a different degree bound. Do not present it as a solution of the original task. If a source check fails, retain any valid definitions and matrix calculations that did not depend on the failed application.
 
 Stop a branch when its decisive necessary condition fails. Stop a bounded experiment when its agreed budget is spent and export the remaining gap. Declare the original task complete only with an argument for its exact conclusion or a valid refutation. A well-scoped partial result is valuable without being renamed a full solution.
 

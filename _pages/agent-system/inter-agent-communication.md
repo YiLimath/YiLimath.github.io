@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/multiple-agent-cooperation/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/multiple-agent-cooperation/).
 
 
-“The vanishing is proved” is incomplete. Which group, which twist, which assumptions, and which statement version? Changing the multiple in Case A can change the problem while leaving the informal task title unchanged.
+“The system is solvable” is incomplete. Which matrix, requested vector, assumptions, and target version? Changing the degree bound in the interpolation example changes the problem even if the task title stays the same.
 
 ## The contract
 
@@ -22,7 +22,7 @@ A late review for an old argument may be retained historically but cannot approv
 
 ## Build and test
 
-Delay a review, change the section, then deliver the old report. Reject its reuse. Deliver a valid report twice and specify an idempotent handling policy.
+Delay a review, change the requested vector, then deliver the old report. Reject its reuse. Deliver a valid report twice and specify an idempotent handling policy.
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 

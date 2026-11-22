@@ -7,7 +7,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/plan-and-execute/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/plan-and-execute/).
 
 
 In Case B, finding a compactness theorem, checking constant dependence, and justifying passage to a limit are different tasks. A router should inspect the unresolved obligation rather than route everything containing “analysis” to one specialist.

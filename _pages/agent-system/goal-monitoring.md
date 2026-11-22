@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
 
 
-Case A may end with a lift, a justified non-liftability result for the chosen section, or an open obstruction. Case B may produce useful estimates without the uniformity required by the target. These outcomes deserve different names.
+Case A may end with a lift, a proof that the specified output is impossible, or an open obstruction. Case B may produce useful estimates without the uniformity required by the target. These outcomes deserve different names.
 
 ## The contract
 

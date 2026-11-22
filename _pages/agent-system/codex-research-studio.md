@@ -5,6 +5,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Practice pack:** [Download seven progressively harder missions](/files/reasoning-practice-lab.zip), with starter records, deliberate faults, transfer challenges, and separate reference answers. Begin with one mission; preserve the first attempt before reviewing it.
+
+
 **The project:** design a research workflow in Codex without first implementing an agent framework. Use instructions, Markdown records, source material, and actual mathematical tools. No Python project is required.
 
 Danus is a useful architectural reference in this series. Our goal is to explore richer research organization, not to assert that this exercise already outperforms Danus. That would require a matched evaluation. More roles and more files are not evidence of better mathematics.

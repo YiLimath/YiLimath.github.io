@@ -7,10 +7,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/). Geometry references below refer to the optional extension of Case A.
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/).
 
 
-A theorem application has natural stages: retrieve, transcribe, instantiate, check hypotheses, and derive the requested conclusion. In Case A, a result about a nearby sheaf is not a result about the group needed by the lifting sequence.
+A theorem application has natural stages: retrieve, transcribe, instantiate, check hypotheses, and derive the requested conclusion. In Case A, a result allowing linear polynomials does not apply to a task allowing only constants.
 
 ## The contract
 
