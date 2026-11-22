@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">03 / From a relevant source to a valid application</title><desc id="desc">A retrieved passage becomes usable only after the target satisfies its actual hypotheses.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">03 / From a relevant source to a valid application</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">A retrieved passage becomes usable only after the target satisfies its actual hypotheses.</text>
+<rect x="40" y="125" width="275" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Candidate passage</text>
+<text x="58" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Inspect the actual source</text>
+<text x="58" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Keep version and locator</text>
+<rect x="410" y="125" width="300" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="428" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Extracted theorem</text>
+<text x="428" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Exact hypotheses and conclusion</text>
+<text x="428" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Definitions that affect scope</text>
+<rect x="805" y="125" width="275" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="823" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Current target</text>
+<text x="823" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Objects and domain</text>
+<text x="823" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Exact statement and version</text>
+<polyline points="315,180 410,180" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="343" y="166" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">extract</text>
+<rect x="410" y="320" width="300" height="130" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="428" y="351" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Application table</text>
+<text x="428" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Substitute current objects</text>
+<text x="428" y="405" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Attach evidence to every row</text>
+<text x="428" y="430" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Keep unresolved rows visible</text>
+<polyline points="560,235 560,320" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="574" y="282" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">instantiate</text>
+<polyline points="942,235 942,275 675,275 675,320" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="335" width="275" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="366" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Hypothesis evidence</text>
+<text x="58" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Proofs, assumptions, calculations</text>
+<text x="58" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Not supplied by relevance alone</text>
+<polyline points="315,390 410,390" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="340" y="376" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">justify</text>
+<rect x="805" y="320" width="275" height="130" rx="12" fill="#e9eef9" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="823" y="351" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Scoped outcome</text>
+<text x="823" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Applicable: exact conclusion</text>
+<text x="823" y="405" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Conditional: named obligations</text>
+<text x="823" y="430" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Rejected: failed requirement</text>
+<polyline points="710,390 805,390" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="734" y="376" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">decide</text>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">Failure probe: replace [0,1] by (0,1).</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">Compactness fails. The application is blocked; the target may still have another proof.</text>
+</svg>

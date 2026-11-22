@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">09 / Keep the test separate from its answer</title><desc id="desc">Preserve the first response before review, feedback, or workflow revision.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">09 / Keep the test separate from its answer</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Preserve the first response before review, feedback, or workflow revision.</text>
+<rect x="40" y="125" width="285" height="115" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Test input</text>
+<text x="58" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Exact target or proposed argument</text>
+<text x="58" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Fixed source access and budget</text>
+<rect x="415" y="125" width="285" height="115" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="433" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Workflow under test</text>
+<text x="433" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Simple baseline or structured run</text>
+<text x="433" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Save original output and usage</text>
+<rect x="790" y="125" width="290" height="115" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="808" y="156" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Frozen first response</text>
+<text x="808" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Verdict AND supporting argument</text>
+<text x="808" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">No retrospective replacement</text>
+<polyline points="325,182 415,182" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="700,182 790,182" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="380" width="285" height="130" rx="12" fill="#e9eef9" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="411" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Reference / rubric</text>
+<text x="58" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Held outside tested conversation</text>
+<text x="58" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Known answers for controls</text>
+<text x="58" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Review criteria for open problems</text>
+<rect x="415" y="380" width="285" height="130" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="433" y="411" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Evaluation</text>
+<text x="433" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Check reasoning and scope</text>
+<text x="433" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Report failures and abstentions</text>
+<text x="433" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">State denominators and costs</text>
+<rect x="790" y="380" width="290" height="130" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="808" y="411" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Next design decision</text>
+<text x="808" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Retain, revise, or remove a step</text>
+<text x="808" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Evaluate repairs separately</text>
+<text x="808" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Compare on the next run</text>
+<polyline points="935,240 935,300 560,300 560,380" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="325,445 415,445" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="700,445 790,445" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="1080,445 1095,445 1095,105 560,105 560,125" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">A correct verdict with an invalid proof is not a correct mathematical solution.</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">Elementary controls diagnose failure modes; they do not measure original research ability.</text>
+</svg>

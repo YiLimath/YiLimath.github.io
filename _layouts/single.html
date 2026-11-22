@@ -45,6 +45,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% include course-language-switch.html %}
         {{ content }}
 
         {% if page.citation and page.paperurl %}

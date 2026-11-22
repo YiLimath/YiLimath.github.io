@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">07 / Withdraw support without losing surviving proofs</title><desc id="desc">Two alternative routes share E. Inputs within each route are joint requirements.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">07 / Withdraw support without losing surviving proofs</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Two alternative routes share E. Inputs within each route are joint requirements.</text>
+<rect x="40" y="130" width="280" height="90" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">P: route-specific premise</text>
+<text x="58" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">First route needs this fact</text>
+<rect x="40" y="300" width="280" height="90" rx="12" fill="#e9eef9" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="331" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">E: shared structural fact</text>
+<text x="58" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Both routes need this rule</text>
+<rect x="40" y="470" width="280" height="90" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="501" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Q: route-specific premise</text>
+<text x="58" y="530" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Second route needs this fact</text>
+<rect x="420" y="160" width="270" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="438" y="191" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Argument A</text>
+<text x="438" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Requires E AND P</text>
+<text x="438" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Produces a proof of T</text>
+<rect x="420" y="420" width="270" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="438" y="451" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Argument B</text>
+<text x="438" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Requires E AND Q</text>
+<text x="438" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Produces another proof of T</text>
+<rect x="800" y="285" width="280" height="130" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="818" y="316" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Target T</text>
+<text x="818" y="345" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Either valid route suffices</text>
+<text x="818" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Neither route: unresolved</text>
+<text x="818" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Shared E lost: both blocked</text>
+<polyline points="320,175 420,200" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="320,345 365,345 365,240 420,240" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="320,345 365,345 365,450 420,450" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="320,515 420,495" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="690,215 745,215 745,320 800,320" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="690,475 745,475 745,385 800,385" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">Withdraw P only: B survives if E and Q remain established.</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">Withdraw E: both routes lose support. Loss of support is not a proof that T is false.</text>
+</svg>

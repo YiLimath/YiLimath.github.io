@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">04 / The bridge in the uniform-limit proof</title><desc id="desc">Order of choices matters: choose one approximant, then use its continuity.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">04 / The bridge in the uniform-limit proof</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Order of choices matters: choose one approximant, then use its continuity.</text>
+<rect x="40" y="130" width="300" height="135" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">1. Fix the requested accuracy</text>
+<text x="58" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Choose x₀ and ε &gt; 0</text>
+<text x="58" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Uniform convergence supplies N</text>
+<text x="58" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">One N controls every x</text>
+<rect x="410" y="130" width="300" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="428" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">2. Fix the approximant</text>
+<text x="428" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Use continuity of this f_N</text>
+<text x="428" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Choose δ for x₀ and ε / 3</text>
+<text x="428" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">N stays fixed</text>
+<rect x="780" y="130" width="300" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="798" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">3. Compare nearby values</text>
+<text x="798" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Take x in the domain</text>
+<text x="798" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Require |x − x₀| &lt; δ</text>
+<text x="798" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Assemble the three estimates</text>
+<polyline points="340,198 410,198" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="710,198 780,198" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="355" width="300" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="386" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Approximation at x</text>
+<text x="58" y="415" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">|f(x) − f_N(x)| &lt; ε / 3</text>
+<text x="58" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Uses the same N at nearby x</text>
+<rect x="410" y="355" width="300" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="428" y="386" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Variation of f_N</text>
+<text x="428" y="415" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">|f_N(x) − f_N(x₀)| &lt; ε / 3</text>
+<text x="428" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Uses continuity after N is fixed</text>
+<rect x="780" y="355" width="300" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="798" y="386" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Approximation at x₀</text>
+<text x="798" y="415" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">|f_N(x₀) − f(x₀)| &lt; ε / 3</text>
+<text x="798" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Uses the uniform estimate</text>
+<polyline points="190,465 190,525 560,525 560,554" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="560,465 560,554" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="930,465 930,525 560,525" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="346" y="580" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#19364b">Triangle inequality ⇒ |f(x) − f(x₀)| &lt; ε</text>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">Failure probe: pointwise convergence controls x₀, but not every nearby x with that N.</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">For xⁿ on [0,1], choose x = (3/4)^(1/n): the approximation error remains 3/4.</text>
+</svg>
