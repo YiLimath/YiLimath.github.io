@@ -10,7 +10,7 @@ full_page_reading: true
 
 How do we build a system that can work on a mathematical problem, explain its progress, and keep track of what remains unproved?
 
-This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a small implementation task.
+This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a direct experiment in ChatGPT or Codex.
 
 
 ## Before the first module
@@ -30,8 +30,8 @@ This course develops the answer in **nine modules**. We begin with the mathemati
   </a>
   <a class="research-start-card" href="/posts/2026/08/agent-system/hands-on-lab/">
     <span class="research-card-step">Practical materials</span>
-    <strong>Set up the small Python workbench</strong>
-    <span>The reference code runs without an API key. Its limitations are part of the lesson.</span>
+    <strong>Experiment in ChatGPT or Codex</strong>
+    <span>Investigate real examples, preserve evidence, and challenge the results. No programming is required.</span>
     <span class="research-card-link">Open the laboratory →</span>
   </a>
 </div>
@@ -41,7 +41,7 @@ This course develops the answer in **nine modules**. We begin with the mathemati
 
 ## The course at a glance
 
-Follow the sequence to build one system progressively. Each module adds a capability to the same research workbench.
+Follow the sequence using one research record in ChatGPT or Codex. Each module tests another part of the same mathematical workflow.
 
 1. [Represent the mathematics](#module-1) — statements, assumptions, arguments, and open questions.
 2. [Plan and search](#module-2) — turn a strategy into tasks and alternative routes.
@@ -77,7 +77,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Explain why a well-formed record does not establish mathematical correctness.
 
-**Laboratory connection:** Stage 1; inspect the introductory ledger before the advanced workbench.
+**Laboratory connection:** Experiment 1. Preserve the false claim, its counterexample, and the explicit revision.
 
 </details>
 
@@ -103,7 +103,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Show that a loop in execution cannot supply a missing logical premise.
 
-**Laboratory connection:** Stages 1 and 4. Introduce the distinction between the simple ledger and grounded closure.
+**Laboratory connection:** Experiment 2. Compare a circular plan with one grounded by an independent premise.
 
 </details>
 
@@ -125,7 +125,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** State exactly what the source establishes and what the current application still requires.
 
-**Laboratory connection:** Prepare the source evidence used in Stage 7. The workbench does not implement a literature-search engine; this artifact can be prepared manually.
+**Laboratory connection:** Experiment 3. Inspect an actual source and preserve a rejected near-match.
 
 </details>
 
@@ -148,7 +148,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Identify what was solved on the transformed problem and why that does—or does not—solve the original problem.
 
-**Laboratory connection:** Extend Stage 1 with a transformation record; use Stage 6 to challenge its mathematical content.
+**Laboratory connection:** Experiment 4. Challenge the implication from separate witnesses to a common witness.
 
 </details>
 
@@ -170,7 +170,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Explain why a model review, a passing software test, and a kernel-checked term provide different assurances.
 
-**Laboratory connection:** Stages 3, 5, and 6. Run the deliberately false-mathematics fixture and explain why its software test passes.
+**Laboratory connection:** Experiment 5. Test stale reviews and the propagation of assumptions.
 
 </details>
 
@@ -192,7 +192,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Explain why a correct proof of the wrong statement, or compilation using an unapproved axiom, does not satisfy the research task.
 
-**Laboratory connection:** This separate project supplies real formal evidence. The Python workbench's evidence labels alone do not invoke Lean or validate a proof.
+**Laboratory connection:** Experiment 6. Ask Codex to run the Lean files and preserve actual output. A chat label alone is not formal evidence.
 
 </details>
 
@@ -215,7 +215,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Distinguish withdrawing an argument from refuting its conclusion, and a tool failure from a mathematical obstruction.
 
-**Laboratory connection:** Stages 2, 3, and 5. Discuss the reference implementation’s single-writer and authentication limitations.
+**Laboratory connection:** Experiment 7. Withdraw alternative arguments and reconstruct the state in a fresh conversation.
 
 </details>
 
@@ -240,7 +240,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Explain what the additional worker improved and what coordination cost it introduced.
 
-**Laboratory connection:** Stage 7. A scripted worker is sufficient to test the protocol before using a model.
+**Laboratory connection:** Experiment 8. Compare one conversation with divided tasks under comparable effort.
 
 </details>
 
@@ -266,17 +266,20 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **Check your understanding:** Separate software correctness, mathematical correctness, and research usefulness in the final evaluation.
 
-**Laboratory connection:** Stage 8. Reuse the workbench tests, then add domain-specific fixtures.
+**Laboratory connection:** Experiment 9. Evaluate a valid proof and two damaged variants against a simpler chat baseline.
 
 </details>
 
 ## A repeatable lesson format
 
-Begin with a mathematical attempt that almost works, or a recorded failure from a real workflow. Ask students to locate the missing distinction or implication before introducing the architecture. Draw the relevant records or dependencies, implement the smallest useful mechanism, and test it on both a valid case and a damaged variant.
+Begin with a mathematical attempt that almost works, or a recorded failure from a real workflow. Ask students to locate the missing distinction or implication before introducing the architecture. Draw the relevant records or dependencies, try the smallest useful change to the workflow, and test it on both a valid case and a damaged variant.
 
 End each meeting with three questions: **What did this mechanism improve? What does it establish? What does it still trust?** If it added complexity without a useful benefit, simplify or remove it. Keep the resulting artifacts; they become inputs to the next module.
 
 ## The final project
+
+Follow [From an empty folder to a mathematical research system in Codex](/posts/2026/08/agent-system/codex-research-studio/). Build the workflow through instructions and inspectable records, without implementing an agent framework. Use the experiments to decide whether added sophistication actually helps.
+
 
 Choose a short published proof that you understand. Build a system that records its target, theorem applications, intermediate arguments, and one substantive transformation. Then create two damaged variants: one with a missing hypothesis and one with an invalid return argument.
 
@@ -292,7 +295,7 @@ These can follow Module 9 or replace a project session for a specialist audience
 
 ## Use the course modularly
 
-For a **conceptual seminar**, emphasize Modules 1, 2, 4, 5, 6, and 9, with diagrams and written arguments replacing code. For an **implementation workshop**, follow all nine modules and carry the same workbench forward. A **reading group** can assign one module per meeting and compare solutions to its exercise.
+For a **conceptual seminar**, emphasize Modules 1, 2, 4, 5, 6, and 9, with diagrams and written arguments. For a **hands-on workshop**, follow all nine modules in ChatGPT or Codex and carry the same research record forward. A **reading group** can assign one module per meeting and compare solutions to its exercise.
 
 These are teaching formats, not different standards of mathematical evidence. In every format, keep the target, assumptions, and remaining obligations visible.
 

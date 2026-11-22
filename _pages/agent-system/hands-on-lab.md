@@ -1,94 +1,169 @@
 ---
-title: "Hands-on: Build a Mathematical Obligation Ledger"
+title: "Hands-on: Mathematical Research Experiments in ChatGPT or Codex"
 permalink: /posts/2026/08/agent-system/hands-on-lab/
 classes: agent-system-page
 full_page_reading: true
 ---
 
-Build a small research workbench before connecting an AI worker. You will implement the contracts used throughout the series, observe their failure modes, and learn exactly what the software does not verify.
+Use ChatGPT or Codex directly. No Python project, API integration, or programming prerequisite is needed. Each experiment produces a small record that you can inspect and carry into the next experiment.
 
-Download the [complete laboratory ZIP](/files/math-reasoning-lab.zip), extract it, and use Python 3.9 or later. No API key or external Python package is required.
+**What you are testing:** whether the assistant preserves the mathematical target, distinguishes evidence from assertions, and responds correctly when assumptions or arguments change. A successful conversation is evidence about that run, not a guarantee that future runs will behave the same way.
 
-```sh
-python ledger.py
-python workbench.py
-python -m unittest -v test_workbench.py
+## Set up your research record
+
+In a chatbox, keep the record in the conversation and copy each checkpoint to a document. In Codex, ask it to save the record as `research-record.md` in your chosen working folder. Use a separate folder for this course. File creation is convenient, but not necessary.
+
+Start with this instruction:
+
+```text
+Help me investigate a mathematical claim. Keep a research record with:
+1. Target ID and version, exact statement, domain, and quantifiers.
+2. Assumptions and their status: established, assumed, or unresolved.
+3. Candidate arguments, each with its premises and open obligations.
+4. Evidence: actual source locations, proof text, or tool output.
+5. Review findings tied to the exact target and argument version.
+6. Current conclusion and the next useful action.
+
+Do not silently weaken the target. Do not treat agreement as proof.
+Do not invent source access or execution results.
+After each change, show what changed and what still follows.
 ```
 
-The first program is the introductory ledger. The second is the reference implementation with alternative arguments, conditional results, version-bound reviews, and persistence. The third runs eight regression tests. Read the code before treating a passing test as evidence about anything beyond the behavior it exercises.
+These instructions establish a working protocol. They do not enforce correctness or create independent reviewers. You will deliberately challenge the protocol in the experiments below.
 
-## Stage 1. Separate the statement from its proof
+## Experiment 1. Catch a familiar-looking false statement
 
-Read [Case A](/posts/2026/08/agent-system/research-cases/). Create statements for the exact-sequence setup, sufficient vanishing, zero obstruction of the chosen section, and lifting that section. Create two arguments for lifting: one using vanishing and another using the direct obstruction.
+```text
+Target T1, version 1:
+Every continuous real-valued function on (0,1) attains a maximum.
+Create the research record. Decide whether the claim is true.
+Give an explicit proof or counterexample and identify any missing hypothesis.
+```
 
-**Deliverable:** a diagram with an AND relationship inside each argument and an OR relationship between the two arguments. The supplied `case_a()` function is the reference fixture. Its input evidence is stipulated for testing; it does not compute cohomology or prove a vanishing theorem.
+**Inspect:** the function $f(x)=x$ has no maximum on $(0,1)$. An appeal to compactness is inapplicable. Ask the assistant to repair the statement using $[0,1]$, but require a new version and an explicit explanation of the changed domain.
 
-**Acceptance:** both routes must refer to the same target version. A route about another section must create another statement.
+**Save:** the original claim, counterexample, revised claim, and distinct argument. A polished record of the false claim is not a proof.
 
-## Stage 2. Withdraw evidence without destroying valid alternatives
+## Experiment 2. Expose a circular plan
 
-Run `workbench.py`. It first reports `usable` via `via-vanishing`. After withdrawal of `vanishing-evidence`, it reports `usable` via `via-obstruction`. After withdrawal of `direct-obstruction`, it reports `unresolved` and lists the missing premises of the candidate routes.
+```text
+We have proofs of B implies A and A implies B, but no proof of A or B.
+Draw the dependency graph and report what is established.
+Then add an independent proof of A as stipulated evidence.
+Show exactly what changes. Label the stipulated evidence as such.
+```
 
-The setup remains available. The conclusion is not declared false. The reports say which arguments the policy permits, not whether an oracle has established the underlying mathematics.
+**Inspect:** initially only the implications are established. Neither conclusion follows without a starting point. After the independent proof of A, B follows. Ask what happens if that independent proof is withdrawn.
 
-**Deliverable:** the three reports and an explanation of the difference between invalidating an argument and refuting a statement.
+**Save:** before-and-after dependency diagrams. A search loop supplies no mathematical base case.
 
-## Stage 3. Preserve conditional conclusions
+## Experiment 3. Audit a source application
 
-Declare P and Q and an argument from P to Q. With no evidence for P, Q stays unresolved. Call `report("Q", assumptions=["P"])`; the result is `conditional` with P still listed.
+Provide the actual statement of a theorem from a source you can inspect, including its locator. For a first example, use the extreme value theorem for a continuous real-valued function on a nonempty compact domain.
 
-**Acceptance:** a subsequent argument from Q to R must retain P. Add this test yourself. The reference implementation records one supporting route, not every minimal set of assumptions. Explain why enumerating all minimal supports can be more expensive.
+```text
+Compare this source theorem with T1 on (0,1).
+Make a table: source hypothesis, corresponding object here,
+evidence that the hypothesis holds, and unresolved obligations.
+Separate what the supplied excerpt says from anything you cannot verify.
+Do not invent page numbers or claim to have read an unavailable source.
+```
 
-## Stage 4. Unsupported cycles cannot create evidence
+**Inspect:** the domain does not satisfy compactness. Then repeat with a valid application on $[0,1]$. A real source and a relevant conclusion are not enough to justify an application.
 
-Declare arguments A from B and B from A, and attach reviews to both. Closure remains empty. Add an independent admitted argument for A; both A and B can then enter closure through grounded support.
+**Save:** one accepted application and one rejected near-match. If the assistant has source-access tools, record the exact source it actually opened; otherwise work from the supplied excerpt.
 
-This differs from the introductory ledger, which conservatively rejects cycles at insertion. The advanced workbench allows cyclic candidate alternatives while refusing to bootstrap them. Neither implementation checks an infinite induction scheme.
+## Experiment 4. Test the return implication
 
-**Deliverable:** a finite instance of Case C and a separate written proof of its general induction order. Removing a base case must expose the corresponding open dependency.
+```text
+Compare these statements over natural numbers:
+P: for every n there exists C such that n <= C.
+U: there exists C such that for every n, n <= C.
+Give a witness for P. Test whether solving P establishes U.
+Identify the exact failed implication without changing either target.
+```
 
-## Stage 5. Bind review to meaning and version
+**Inspect:** choose $C=n$ for P. For any proposed uniform bound C, choose $n=C+1$ to refute U. Ask the assistant to label the local success and the failed return implication separately.
 
-Change the section or sheaf in an argument. The old review digest must not apply. Run the stale-review and persistence tests. Save the workbench, reload it, and compare reports. Alter the saved conclusion text and observe the digest mismatch.
+**Save:** a transformation record containing the original target, subproblem, and return obligation. This is the elementary version of [Case B](/posts/2026/08/agent-system/research-cases/).
 
-Now request a policy accepting only `formal-checked` evidence. The informal fixtures must remain unresolved. A common JSON envelope does not make evidence kinds interchangeable.
+## Experiment 5. Challenge reviews and conditional conclusions
 
-**Deliverable:** a version-change trace and a policy comparison. Identify which boundary would authenticate a reviewer in a real service; the teaching implementation does not provide it.
+```text
+Assume P, and suppose we have valid arguments P implies Q and Q implies R.
+Report the status of R, including all remaining assumptions.
+Next, review an argument for target version 1.
+Change one hypothesis to create version 2, then present the old review.
+Explain whether that review supports the new version and why.
+```
 
-## Stage 6. Find what the software cannot catch
+**Inspect:** R remains conditional on P. The old review cannot automatically approve changed mathematical content. A request to label an argument “formal-checked” must not produce that status without actual formal evidence.
 
-Run `test_wrong_math_can_pass_policy`. A false open-interval assertion is admitted because the caller supplies a review that endorses it. The test is supposed to pass: it demonstrates the trust boundary.
+**Save:** a current review, a stale review, and an explicit conditional conclusion. If the assistant misses the error, preserve the failure before asking for a correction.
 
-Write the actual mathematical rejection. Then repeat the exercise with Case B's quantifier interchange. A record validator cannot infer a missing uniform estimate merely because it knows the field names.
+## Experiment 6. Run Lean through Codex
 
-**Deliverable:** one software test and one mathematical review for each fixture. Label their evidence separately.
+Continue to [the Lean laboratory](/posts/2026/08/agent-system/lean-formalization/) and download its project. In Codex, use:
 
-## Stage 7. Add an agent through an artifact contract
+```text
+Open this Lean project and read its lean-toolchain file.
+Use the pinned toolchain to run lake build and each supplied Lean fixture.
+Show the commands, exit codes, warnings, and printed axiom dependencies.
+Explain why the incomplete and extra-axiom examples are unacceptable.
+Do not replace failed execution with a predicted successful result.
+Then help me complete Exercises.lean without changing its statements.
+```
 
-Ask a worker to return a target version, candidate argument, required premises, source locators, and open obligations. It may propose records; it may not authorize its own reviews in the production design. Use a separate review interface and preserve its report.
+**Inspect:** the completed proofs compile; the broken proof fails; the placeholder example reports `sorryAx`; the extra-axiom example reports `inventedBound`. Compare the informal and formal statements as well as the outputs.
 
-Start with a deterministic fixture adapter before using a model. Then test the same interface on all three cases. Compare with a single-prompt baseline using the same source access and total budget. Measure valid progress and false admissions, not merely the number of completed tool calls.
+A chatbox without execution tools can explain the proof, but cannot perform this check. Run the commands in a Lean-enabled environment or use Codex with the required tools installed. If execution is unavailable, label the exercise **not run**.
 
-**Acceptance:** the worker cannot silently replace the target, omit a reported open premise during export, or reuse a verdict for a different argument version.
+**Save:** the exact source, version, actual output, and statement-alignment report. No Python wrapper is required.
 
-## Stage 8. A research-grade capstone
+## Experiment 7. Withdraw support and restart from a checkpoint
 
-Select a short published argument from your own field. Encode its exact target, source theorem applications, one nontrivial transformation, and the return implication. Construct a valid replay and two damaged variants: one with a missing hypothesis and one with an invalid transfer.
+```text
+For this protocol experiment, stipulate that argument A and argument B
+independently establish target T. Record their supporting evidence as stipulated.
+Withdraw A, then withdraw B, showing the status of T after each step.
+Export a self-contained checkpoint with the remaining open obligations.
+```
 
-Keep the undamaged argument hidden during method selection. Review the returned argument against the source and allow different valid methods. Publish the fixture specification, artifacts, evaluation policy, and limitations alongside your result.
+**Inspect:** after withdrawing A, B still supports T. After withdrawing both, T is unresolved, not automatically false. Start a fresh conversation with only the saved checkpoint and ask it to reconstruct the state. Compare the actual answers with the checkpoint; do not assume perfect recall.
 
-A successful capstone produces an inspectable research episode, not a claim that the system solves arbitrary open problems.
+**Save:** the withdrawal trace, checkpoint, and comparison. In Codex, the same exercise can use a saved Markdown file. File persistence and mathematical correctness remain different properties.
 
-## Reference implementation and limitations
+## Experiment 8. Compare one conversation with divided work
 
-| File | Purpose |
-|---|---|
-| [ledger.py](/files/math-reasoning-lab/ledger.py) | Introductory single-argument ledger with conservative cycle rejection |
-| [workbench.py](/files/math-reasoning-lab/workbench.py) | Alternative arguments, conditional closure, review digests, snapshot persistence |
-| [test_workbench.py](/files/math-reasoning-lab/test_workbench.py) | Eight regression tests, including an explicit false-mathematics trust-boundary test |
+This extension is optional. Use separate chats or explicitly request separate Codex tasks when your environment supports them. Give one task a source audit and another an alternative argument. Supply the same target version and assumptions.
 
-The code is a single-process, single-writer teaching implementation. It does not authenticate users, sandbox workers, verify citations, discover omitted premises, check natural-language equivalence, or run a proof kernel. Its event list is an audit aid, not a full replay protocol. Tests validate the implemented policies; they do not validate the mathematical content of supplied reviews.
+```text
+Merge these two reports. Preserve their source evidence and unresolved claims.
+One report concerns an old target version: identify it before reusing anything.
+Do not decide mathematical truth by counting votes.
+```
 
----
+**Inspect:** outdated evidence is flagged, disagreements remain visible, and duplicated work is counted. Separate chats do not guarantee independent reasoning.
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+**Save:** compare this with one conversation on the same task, using comparable source access and an effort budget fixed in advance. Record elapsed time, calls or messages, useful evidence, and errors. If divided work does not help, keep the simpler workflow.
+
+## Experiment 9. Evaluate a complete research episode
+
+Choose a short published proof you understand. Prepare the valid case and two damaged variants: a missing hypothesis and an invalid return argument. Keep your reference solution separate while the assistant attempts each task.
+
+```text
+Investigate this target using the research-record protocol.
+Preserve the original statement. For each proposed conclusion, identify
+its evidence, remaining assumptions, and unresolved obligations.
+Finish with a report of what was established, what failed, and what remains open.
+```
+
+**Inspect:** compare each answer with the actual proof and counterexamples. Count false acceptances and false rejections separately. Repeat with a simpler ordinary chat prompt under comparable conditions. Record the model or tool version shown by your environment and the date; do not infer hidden settings.
+
+**Submit:** the tasks, prompts, complete outputs, checkpoints, source audit, and comparison. Include at least one limitation. The result evaluates these particular runs, not the assistant's universal reliability.
+
+## What survives a change of tool?
+
+These exercises teach precise targets, evidence, dependency tracking, recovery, and evaluation. The prompts are starting instructions, not formulas whose wording must be memorized. Change the interface as tools improve, while retaining the mathematical checks and inspectable outputs.
+
+[Course roadmap](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/)

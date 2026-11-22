@@ -65,10 +65,12 @@ Use the [official Lean installation instructions](https://lean-lang.org/install/
 ```text
 lake build
 lake env lean Formalization.lean
-python check.py
+lake env lean fixtures/Broken.lean
+lake env lean fixtures/Incomplete.lean
+lake env lean fixtures/ExtraAxiom.lean
 ```
 
-`lake build` builds only the completed library. `Exercises.lean` and the deliberately damaged fixtures are separate. `python check.py` runs five fixed examples and compares the observed outcomes with their expected behaviors.
+`lake build` builds only the completed library. `Exercises.lean` and the deliberately damaged fixtures are separate. Run each fixture directly, or ask Codex to run the same commands and retain the actual output. The broken fixture is expected to fail. No Python wrapper is needed.
 
 | File | Observed behavior on Lean 4.19.0 | What the class should conclude |
 |---|---|---|
@@ -102,7 +104,7 @@ Suppose an agent formalizes the pointwise statement when you asked for a uniform
 
 Also distinguish these hand-inspected teaching files from arbitrary generated source. Executing generated Lean code and trusting its displayed messages is not a secure validation service. A production system needs isolated execution, controlled dependencies, and validation appropriate to its threat model. The official [proof-validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains stronger checking procedures and their trust boundaries. Its current tooling may differ from this pinned teaching project.
 
-The supplied `check.py` intentionally only regression-tests these exact fixtures. It is not an implementation of those stronger procedures.
+These direct fixture runs are demonstrations, not an implementation of those stronger procedures.
 
 ## 6. A useful first formalization project
 

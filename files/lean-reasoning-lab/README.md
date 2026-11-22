@@ -7,13 +7,13 @@ Install Lean through the [official instructions](https://lean-lang.org/install/)
 ```text
 lake build
 lake env lean Formalization.lean
-python check.py
+lake env lean fixtures/Broken.lean
+lake env lean fixtures/Incomplete.lean
+lake env lean fixtures/ExtraAxiom.lean
 ```
 
-The first command builds the completed library only. The checker runs five fixed fixtures and expects some to fail or carry unapproved axioms. A successful checker run means the expected behaviors were observed, not that all fixture theorems are established.
+Run these commands yourself or ask Codex to execute them and retain actual output. Broken.lean should fail with a type mismatch. Incomplete.lean compiles with sorryAx; ExtraAxiom.lean compiles with inventedBound. Neither meets the lesson's admission policy.
 
-`Solutions.lean` contains reference solutions. `fixtures/ExtraAxiom.lean` intentionally assumes a false bound; it is a demonstration of a trust-policy failure, not an acceptable mathematical dependency.
+Complete Exercises.lean, run `lake env lean Exercises.lean`, and inspect both axiom reports. Compare the encoded propositions with the intended statements. Solutions.lean contains reference solutions.
 
-`check.py` is a small regression script for these exact files. It reads diagnostic text and is not a robust parser or a secure checker for arbitrary generated Lean code. Production admission needs statement alignment, controlled dependencies, isolated execution, and a suitable proof-validation procedure.
-
-Complete Exercises.lean, inspect the axiom reports, and compare the informal and encoded statements. Solutions.lean contains reference solutions.
+No Python is needed. These hand-inspected examples demonstrate specific behaviors; they are not a secure validation service for arbitrary generated code.

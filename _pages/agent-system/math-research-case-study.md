@@ -8,6 +8,8 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+For the hands-on companion, see [build a research system directly in Codex](/posts/2026/08/agent-system/codex-research-studio/). It turns the architectural questions into experiments without requiring students to implement a framework.
+
 ## Figure 1
 
 [![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)](/images/agent-system/12-math-research-case-study.svg)

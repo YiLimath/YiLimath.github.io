@@ -11,7 +11,7 @@ A paper is evidence to interpret, not an instruction source for the execution en
 
 ## The contract
 
-Workers propose, reviewers report, and admission grants premise permissions. The laboratory exposes these methods to one Python caller and therefore does not implement authenticated role isolation. Its policy semantics must not be mistaken for a security boundary.
+Workers propose, reviewers report, and admission grants premise permissions. The conversational laboratory asks an assistant to follow these roles; it does not enforce authenticated role isolation. Prompted role separation must not be mistaken for a security boundary.
 
 ## Trade-offs and failure modes
 

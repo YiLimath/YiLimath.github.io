@@ -154,6 +154,8 @@ include:
   - _pages
   - files
 exclude:
+  - files/math-reasoning-lab
+  - files/math-reasoning-lab.zip
   - _pages/agent-system/teaching-materials.md
   - files/reasoning-course
   - files/reasoning-course.zip
