@@ -24,6 +24,12 @@ review 判断论证能否支持结论；admission 判断流程能否复用这一
 
 **学习目标：** 定位有缺陷的推理；区分差距和反例；通过一条链保留假设；并将审查绑定到它检查的文本。实验室使用早期模块中的极限和规定输出示例。尚不需要形式化证明器。
 
+## 最终目标：检查证据，而不是固定要求人工 reviewer
+
+下文的 informal review 训练我们识别错误推理，但它不是最强的接受机制。当精确目标及其依赖已经 formalized，就可以用机械验证与明确的 admission policy 替代日常人工验算。另一个模型表示赞同，不等于证明已被检查。
+
+区分两个层次：探索中的 informal claims 可以有用，也可以保留条件；正式纳入的结果则携带固定 declaration 的验证证据。两者之间的升级需要实际证据，不能只提高置信度标签。参见[模块 6 的 proof-producing architecture](/posts/2026/08/agent-system-zh/lean-formalization/#automated-proof-admission)。
+
 <a id="1-a-reviewer-needs-a-claim-an-argument-and-a-context"></a>
 
 ## 1. 审查者需要断言、论证和上下文

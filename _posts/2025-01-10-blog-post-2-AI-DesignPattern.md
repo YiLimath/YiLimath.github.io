@@ -13,6 +13,26 @@ How do we build a system that can work on a mathematical problem, explain its pr
 This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a direct experiment in ChatGPT or Codex.
 
 
+## Design for a future without routine human proof checking
+
+**The long-term goal is a system that discovers and constructs proofs autonomously, while acceptance rests on mechanically checkable evidence.** Human-written proofs and line-by-line human verification need not remain mandatory steps for a precisely formalized target. Stronger AI should expand what can be discovered and formalized, rather than become an authority whose assertions must be trusted.
+
+The stable architecture separates **specification, proof generation, checking, and admission**. Fix the intended formal target and definitions; let agents explore; require a proof term or an appropriate checkable certificate; admit the result only after validation under an explicit foundation and dependency policy. This does not guarantee that proof search will succeed or finish.
+
+Formal checking establishes the encoded theorem relative to its foundations. It does not, by itself, establish that the encoding expresses the intended research question. Semantic alignment and the trusted computing base remain explicit boundaries; they are not an assertion that humans must personally inspect every future proof. Once a formal specification is established, routine checking and admission can be automated. [Module 6](/posts/2026/08/agent-system/lean-formalization/#8-build-an-admission-path-without-routine-human-proof-review) develops this architecture and its failure tests.
+
+The early informal exercises teach these distinctions with accessible mathematics. They are stepping stones toward proof-producing systems, not a permanent requirement for human sign-off.
+
+### What to learn for stronger future models
+
+| Likely to change with capabilities | Design knowledge that remains useful |
+|---|---|
+| How much proof construction, formalization, and coordination can be delegated | How to specify the exact task and preserve its meaning across transformations |
+| Which model, agent framework, or prover interface performs the work | How to bind evidence to a target, its definitions, dependencies, and checking environment |
+| How much routine human reading is practical or necessary | How to define an acceptance policy, automate checking, and measure actual mathematical progress |
+
+A future system may produce proofs too numerous or lengthy for routine human inspection. Explanations can still support understanding and research choice, while acceptance relies on validated proof evidence. Learn to design that separation. Today's ChatGPT, Codex, and Lean exercises are concrete ways to learn it; their interfaces are not the curriculum's endpoint.
+
 ## Before the first module
 
 <div class="research-start-grid">

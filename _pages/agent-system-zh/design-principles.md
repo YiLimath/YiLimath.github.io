@@ -21,6 +21,16 @@ tags:
 
 本系列是关于那些持久的设计问题。 智能体框架和提示是可替换的机制。架构是数学工作和证据的组织。
 
+## 证明生成可以复杂，接受结果的边界应当清楚
+
+proof generator 应当可替换。它可以使用语言模型、informal arguments、符号计算或多个协作 worker。结果是否被接受，应取决于返回的证据，而不是模型名气或赞成票数。
+
+对于固定的 formal target，成功的机械验证可以替代逐步人工验算。小型 checker 与另一个判断“证明看起来正确”的模型，承担的是不同职责。Lean 区分复杂的证明构造与 core theory 中的检查；独立实现的 kernel 还可增加保障，见官方 [external-kernel 文档](https://lean-lang.org/doc/reference/latest/External-Kernels/)。
+
+仍需明确三个边界：目标是否表达原意；证据是否在允许的假设下确立该目标；验证是否确实发生在声明的环境中。明确这些职责，并不意味着它们永远只能由人完成。AI 也可以帮助构造、审查 specification；完全形式化的任务甚至可以避免反复进行自然语言翻译。
+
+长期值得学习的是如何组织证据，使越来越强的搜索能力运行在稳定的接受规则之下。这是系统设计方向，不是宣称任意研究数学已经实现全自动化。
+
 <a id="a-small-problem-that-exposes-the-architecture"></a>
 
 ## 一个暴露架构的小问题

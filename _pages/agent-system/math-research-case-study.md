@@ -78,6 +78,14 @@ For an open target, assess intermediate results individually rather than labelin
 
 The advanced skill is designing a system that can change its mind for the right mathematical reason while retaining valid work. Future models may simplify the implementation, but the distinctions tested by these experiments remain necessary.
 
+## Advanced extension: an autonomous formal admission lane
+
+Extend the persistent workspace with a fixed specification store, a candidate area, a controlled validation environment, and an accepted theorem library. The generator may revise its candidates but cannot rewrite the specification or acceptance policy to make a failed attempt pass. Validation receipts refer to exact artifacts and environments; the admission process consumes those receipts, not the candidate's self-reported success.
+
+Reuse Module 6's five failure tests, then add interruption and replay: a proof saved before validation remains pending after restart; an already admitted receipt does not create a second independent proof; a definition change forces a fresh check. Demonstrate the behavior before claiming the files enforce it.
+
+The capstone can therefore have an autonomous formal lane alongside open informal research. Once the specification is established, no routine human proof review is required for that lane. This describes a design objective and an experiment, not a reproduced feature or measured superiority over Danus or Rethlas.
+
 ## The task and baseline
 
 Choose one short mathematical argument you can check, plus two damaged versions: one missing a hypothesis and one missing a return implication. Use the lifting or blow-up experiments from the preceding projects if you need a controlled starting point.

@@ -104,6 +104,14 @@ CHECKPOINT.md             recovery entry point with artifact locations
 
 高级技能是设计一个系统，该系统可以出于正确的数学原因改变想法，同时保留有效的工作。未来的模型可能会简化实现，但这些实验测试的区别仍然是必要的。
 
+## 进阶扩展：自主 formal admission 路径
+
+为持久化工作区增加固定 specification 库、候选区、受控 validation 环境和 accepted theorem library。生成者可以修改候选，但不能改写 specification 或 acceptance policy，让失败尝试变成“通过”。validation receipt 绑定精确记录与环境；admission 消费这个 receipt，而不是候选的成功宣言。
+
+复用模块 6 的五项测试，再加入中断与重放：证明保存后尚未验证就中断，恢复时应仍为 pending；已纳入的 receipt 再次送达，不能变成第二个独立证明；definition 改变必须重新检查。先展示实际行为，再声称文件组织能保障它。
+
+因此，capstone 可以同时维护自主 formal lane 与开放的 informal research。specification 确立后，formal lane 无需日常人工 proof review。这是设计目标与实验任务，不是已经复现的具名系统功能，也不是优于 Danus 或 Rethlas 的实测结论。
+
 <a id="the-task-and-baseline"></a>
 
 ## 任务和基线

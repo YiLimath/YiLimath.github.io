@@ -21,6 +21,12 @@ translation_of: /posts/2026/08/agent-system/human-in-the-loop/
 
 数学研究系统需要明确的政策来改变其目标、支出预算、接受证据和发布结果。这些责任并不意味着人类必须批准每项行动。
 
+## 人工验算不必成为永久关卡
+
+对于固定 formal target，proof-producing system 可以把机械验证作为接受关卡。人的签字不能补上缺失的 proof term。研究者可以先确定研究目标和 acceptance policy，再委托日常生成、检查与 admission，无需逐个批准 lemma。
+
+specification 设计、结果解释与研究优先级，也可以获得越来越多的 AI 协助。重点是公开其权限与证据，而不是预测哪些工作永远只能由人完成。授权继续研究与确立一个定理，仍是不同的决定。参见[自动 admission 实验](/posts/2026/08/agent-system-zh/lean-formalization/#automated-proof-admission)。
+
 <a id="control-is-an-interface"></a>
 
 ## Control 是接口

@@ -12,6 +12,12 @@ full_page_reading: true
 
 A mathematical research system needs an explicit policy for changing its objective, spending its budget, accepting evidence, and releasing results. These responsibilities do not imply that a human must approve every action.
 
+## Human proof checking need not be a permanent gate
+
+For a fixed formal target, a proof-producing system can use mechanical validation as its acceptance gate. A human signature adds no missing proof term. The researcher may define the research objective and acceptance policy once, then delegate routine generation, checking, and admission without approving each lemma.
+
+Specification design, interpretation, and research priorities can also receive increasing AI assistance. The point is to keep their authority and evidence visible, not to predict a permanent list of tasks machines cannot perform. Preserve the distinction between authorizing research and establishing a theorem. See the [automated admission exercise](/posts/2026/08/agent-system/lean-formalization/#8-build-an-admission-path-without-routine-human-proof-review).
+
 ## Control is an interface
 
 Routine search, source checking, and bounded revision can proceed under delegated authority. Escalate when an action would change the agreed target or exceed that authority. A model can propose the decision; the policy determines who may authorize it.

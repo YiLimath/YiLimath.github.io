@@ -133,6 +133,12 @@ The assessment should ask what a mathematician can now do that was not justified
 **Answer.** Assess whether the obstruction is correct, addresses a serious route, and changes the next research decision. A precise counterexample to the route's central lemma can be substantial progress. An unsupported statement that a route “seems difficult” is not comparable evidence.
 </details>
 
+## Evaluate automated admission separately from proof discovery
+
+For the formal track, add a benchmark with frozen specifications, known valid proofs, wrong-target proofs, and forbidden assumptions. Measure valid admissions, invalid admissions, unresolved attempts, time spent generating versus checking, and mathematical human interventions. An always-rejecting gate is not a successful autonomous system.
+
+Report “no human proof review during this run” only when the trace supports it. Disclose prior human specification work and library infrastructure separately. A correct checker does not establish the novelty, importance, or intended meaning of a theorem. A failed search does not refute the target. This evaluation makes progress toward autonomous research measurable without requiring a person to certify every proof step.
+
 ## 9. Final submission: an inspectable research result
 
 Submit task inputs, reference reasoning where available, original responses, review decisions, repairs, resource observations, and limitations. Conclude with one concrete design decision: retain, revise, or remove a mechanism, explaining which observed failure or benefit supports that decision.

@@ -9,6 +9,16 @@ A mathematical reasoning system must preserve the meaning of a problem while cha
 
 This series is about those enduring design problems. Agent frameworks and prompts are replaceable mechanisms. The architecture is the organization of mathematical work and evidence.
 
+## Proof production with a small acceptance boundary
+
+Treat the proof generator as replaceable. Its search may use language models, informal arguments, symbolic computation, or many cooperating workers. The acceptance path should depend on the returned evidence, not the generator's reputation or a majority of approving agents.
+
+For a fixed formal target, successful mechanical validation can replace routine human checking of individual proof steps. A small checker has a different role from a second model asked whether a proof looks right. Lean separates elaborate proof construction from checking in its core theory; independently implemented kernels can provide additional assurance. See the official [external-kernel documentation](https://lean-lang.org/doc/reference/latest/External-Kernels/).
+
+Three boundaries remain: does the target mean what was intended; does the evidence establish that target under the allowed assumptions; and was the validation performed in the declared environment? Making these responsibilities explicit does not reserve them permanently for humans. AI may help construct and audit specifications too. A fully formal task can avoid repeated natural-language translation altogether.
+
+The durable lesson is to organize evidence so that increasingly powerful search can operate behind a stable acceptance boundary. This is a proposed system architecture, not a claim that arbitrary research mathematics is already fully automated.
+
 ## A small problem that exposes the architecture
 
 Consider the deliberately false conjecture: every continuous real-valued function on the open interval $(0,1)$ attains a maximum. One worker invokes the extreme value theorem; another proposes $f(x)=x$ as a counterexample. A vote between workers would be meaningless. The theorem application requires compactness, which is missing. The counterexample requires two checks: continuity and failure to attain a maximum. For every $x\in(0,1)$, the point $(x+1)/2$ remains in the interval and has a larger value.

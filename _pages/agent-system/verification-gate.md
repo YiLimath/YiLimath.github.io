@@ -12,6 +12,12 @@ Review asks whether an argument supports its conclusion. Admission asks whether 
 
 **Learning goals:** localize a defective inference; distinguish a gap from a counterexample; preserve assumptions through a chain; and bind a review to the text it examined. The laboratory uses the limit and prescribed-output examples from earlier modules. No formal prover is required yet.
 
+## The endpoint: checking evidence rather than requiring a human reviewer
+
+The informal reviews below teach how to identify defective inferences. They are not the strongest available acceptance mechanism. When the exact target and its dependencies are formalized, replace routine human proof review with mechanical validation and an explicit admission policy. A second approving model is not equivalent to a checked proof.
+
+Maintain separate lanes: exploratory informal claims may remain useful and conditional; formally admitted results carry validated evidence for a fixed declaration. Promoting between lanes requires the evidence, not a stronger confidence label. This is the [proof-producing architecture in Module 6](/posts/2026/08/agent-system/lean-formalization/#8-build-an-admission-path-without-routine-human-proof-review).
+
 ## 1. A reviewer needs a claim, an argument, and a context
 
 Consider this submission:

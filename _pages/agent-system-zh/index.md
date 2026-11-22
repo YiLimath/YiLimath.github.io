@@ -24,6 +24,26 @@ translation_of: /posts/2026/12/Agent-System/
 
 贯穿课程的主线是**变与不变**：模型、提示词和工具会持续变化；问题的精确定义、推理的适用条件、证据的范围，以及结论如何回答原始问题，仍是需要掌握的知识。
 
+## 面向不再需要日常人工验算的未来
+
+**长期目标是：系统自主发现并构造证明，而结果是否被接受，取决于可机械检查的证据。**对于精确形式化的目标，人手写证明和逐步人工验算都不必是固定环节。模型变强，应扩大可发现、可形式化的数学范围，而不是让模型的断言本身成为权威。
+
+稳定的架构区分 **specification、proof generation、checking、admission**：固定目标与定义，让 agent 自由探索，要求返回 proof term 或适当的可检查 certificate，再按明确的基础与依赖规则纳入结果。这并不保证 proof search 一定成功或结束。
+
+formal checking 确立的是给定基础下的编码命题，不能单独证明编码忠实表达了研究问题。semantic alignment 与 trusted computing base 仍须明确，但这不意味着未来每个证明都必须由人亲自检查。一旦 formal specification 确立，日常 checking 与 admission 可以自动化。[模块 6](/posts/2026/08/agent-system-zh/lean-formalization/#automated-proof-admission)给出具体架构和失败测试。
+
+前面的 informal 练习用简单数学讲清这些区别，是通往 proof-producing systems 的阶梯，而不是要求人永远逐条签字。
+
+### 为更强的未来模型学习什么
+
+| 可能随能力变化的部分 | 仍值得掌握的设计知识 |
+|---|---|
+| 可以委托多少证明构造、formalization 与协作 | 怎样精确定义任务，并在变换中保留原意 |
+| 由哪个模型、agent framework 或 prover interface 执行 | 怎样把证据绑定到目标、定义、依赖与检查环境 |
+| 日常人工阅读是否必要、是否现实 | 怎样制定 acceptance policy、自动检查，并评估真实数学进展 |
+
+未来系统生成的证明，可能多到或长到不适合逐一人工审阅。解释仍可服务于理解与研究选择，而结果的接受依据可以是经过验证的 proof evidence。课程要教会的是设计这种分工。今天的 ChatGPT、Codex 和 Lean 实验是学习原则的具体方式，其界面和操作习惯并不是课程终点。
+
 ## 开始之前
 
 <div class="research-start-grid">

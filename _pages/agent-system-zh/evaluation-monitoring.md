@@ -159,6 +159,12 @@ translation_of: /posts/2026/08/agent-system/evaluation-monitoring/
 **解答.** 评估障碍是否正确，解决严重路线，并更改下一个研究决策。路线中心引理的精确反例可能是实质性进展。一条不受支持的命题，一条路线“看起来很困难”，不是可比证据。
 </details>
 
+## 分别评估自动 admission 与证明发现
+
+formal track 应增加固定 specification 的测试集，包含已知有效证明、证明了错误目标的案例，以及使用禁止假设的案例。记录正确纳入、错误纳入、未解决尝试、生成与检查各自耗时，以及人对数学的实际干预。一个一律拒绝的关卡，不是成功的自主系统。
+
+只有运行记录支持时，才报告“本次运行无需人工 proof review”；先前的人工 specification 工作与已有库基础应另行披露。checker 正确，不代表定理新颖、重要或符合原意；搜索失败也不是反例。这样可以衡量自主研究的进展，而不要求人逐步签字证明正确。
+
 <a id="9-final-submission-an-inspectable-research-result"></a>
 
 ## 9. 最终提交：可检查的研究结果

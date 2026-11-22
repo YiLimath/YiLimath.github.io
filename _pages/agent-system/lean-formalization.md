@@ -190,6 +190,35 @@ A useful progression is: read existing formal statements, fill short proofs, reu
 
 The enduring design principle is to keep **the intended proposition, encoded proposition, proof evidence, and admission decision** distinguishable. Future AI may automate more of their construction. The distinctions remain necessary for evaluating its output.
 
+## 8. Build an admission path without routine human proof review
+
+The earlier exercises ask learners to inspect proof states so they understand the evidence. That teaching method is not a permanent runtime requirement. For an established formal specification, the system can generate, check, and admit proofs without a human rereading each derivation.
+
+[![Automated proof admission: a fixed specification and generated evidence meet at a controlled validator; only validated results enter the theorem library.](/images/agent-system/course-proof-producing.svg)](/images/agent-system/course-proof-producing.svg)
+
+Keep four artifacts separate:
+
+| Artifact | Owner or authority | Admission requirement |
+|---|---|---|
+| Specification | Fixed task record, including definitions and hypotheses | The checked declaration matches this target in the intended environment |
+| Candidate proof | Replaceable search process | Supplies proof evidence; cannot edit the acceptance rules |
+| Validation receipt | Controlled checker execution | Binds target, proof, environment, dependency and axiom audit, and actual outcome |
+| Accepted theorem | Admission process | Names the exact validated result and permitted scope of reuse |
+
+For these elementary exercises, reject `sorryAx` and added assumptions; the completed proofs need no axioms. A larger development may deliberately allow standard axioms. The policy must state which foundations are allowed, rather than treating every axiom as a defect. The current [Lean proof-validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) distinguishes routine checking from stronger validation of unreviewed generated code. Follow version-compatible procedures; an exit code or a generator-supplied log is not the entire acceptance path.
+
+**Codex construction exercise.** Freeze the two exercise declarations and their imported definitions. Ask Codex to propose proofs without modifying that specification. Keep validation outside the candidate's writable workspace and retain its real output. The workflow may automatically admit the correctly checked theorem under the chosen policy; a Markdown instruction alone does not enforce this separation. If the stronger validator is unavailable, record the weaker check actually performed.
+
+Run the following tests before claiming this architecture works:
+
+1. A valid proof of the exact target should be admitted without a human approving its steps.
+2. A proof of a nearby true statement must not solve the target.
+3. A hidden placeholder or added axiom in a dependency must fail the declared policy.
+4. A changed definition or import must trigger a new specification and applicability check, even if the displayed theorem text is unchanged.
+5. A report for an older target must remain historical evidence, not current authorization.
+
+Report each expected and actual outcome, whether any human corrected the mathematics, and what remained trusted. These are proposed experiments, not new measured results in this article. Automated proof checking can remove routine human verification; it does not remove the need for a well-specified question or guarantee that the search finds a proof.
+
 [Return to the course](/posts/2026/12/Agent-System/)
 
 [Next: recover research state](/posts/2026/08/agent-system/memory-management/)

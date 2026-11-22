@@ -220,6 +220,37 @@ If execution is unavailable, report proposed code, not a checked proof.
 
 持久的设计原则是保持**预期命题、编码命题、证明证据和结果纳入决策**可区分。未来的人工智能可能会自动化更多的构建。对于评估其产出，这些区别仍然是必要的。
 
+<a id="automated-proof-admission"></a>
+
+## 8. 建立不依赖日常人工验算的 admission 路径
+
+前面的练习让学习者阅读 proof states，是为了理解证据，并不意味着系统运行时必须永远这样做。formal specification 确立之后，系统可以自主生成、检查并纳入证明，而无需人逐步重读推导。
+
+[![固定 specification 与候选证明在受控 validator 处汇合，只有满足规则的结果进入 theorem library。](/images/agent-system-zh/course-proof-producing.svg)](/images/agent-system-zh/course-proof-producing.svg)
+
+分别维护四类记录：
+
+| 记录 | 负责方或权限来源 | admission 要求 |
+|---|---|---|
+| Specification | 固定任务记录，包括定义和假设 | 被检查的 declaration 在预期环境中确实对应目标 |
+| Candidate proof | 可替换的搜索过程 | 提交证明证据，不能改写接受规则 |
+| Validation receipt | 受控 checker 的实际运行 | 绑定目标、证明、环境、依赖、公理检查与真实结果 |
+| Accepted theorem | admission 环节 | 记录精确结果及允许复用的范围 |
+
+当前基础练习应拒绝 `sorryAx` 和新增假设，完整证明不需要 axioms。较大项目可以明确允许标准 axioms；规则应说明允许的基础，而不是把所有 axiom 都视为错误。官方 [Lean proof-validation 指南](https://lean-lang.org/doc/reference/latest/ValidatingProofs/)区分日常检查与对未审查生成代码的更强验证。采用与版本相容的流程；exit code 或生成者自己提供的日志，不是完整的接受依据。
+
+**Codex 搭建练习：**固定两个练习的 declarations 及 imported definitions，让 Codex 只提出证明。validation 应在候选不能修改规则的环境中进行，并保留实际输出。满足规则后，可以自动纳入，无需人批准证明步骤；但一份 Markdown 指令本身不能强制实现这种隔离。如果没有更强的 validator，就如实记录实际执行的较弱检查。
+
+声称架构有效前，完成五个测试：
+
+1. 精确目标的有效证明，无需人工逐步批准即可纳入。
+2. 相近真命题的证明，不能算作完成原目标。
+3. 依赖中隐藏的 placeholder 或新增 axiom，应被规则拒绝。
+4. 即使显示的 theorem 文本不变，definition 或 import 改变也应触发重新检查。
+5. 旧目标的报告保留为历史证据，不能授权当前结果。
+
+逐项报告预期与实际结果、是否有人修正数学，以及仍然信任什么。这些是待运行的实验设计，不是本文新测得的结果。自动 proof checking 可以替代日常人工验算，但不会免除精确定义问题的要求，也不保证搜索一定找到证明。
+
 [返回课程](/posts/2026/12/Agent-System-zh/)
 
 [下一条：恢复研究状态](/posts/2026/08/agent-system-zh/memory-management/)
