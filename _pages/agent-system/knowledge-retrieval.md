@@ -70,7 +70,16 @@ These files do not enforce correctness. They make the assistant's decisions visi
 
 The source locator should be recoverable: a theorem number, section, page in a specified edition, or stable identifier. Do not invent missing locators. A supplied excerpt can support an application within its stated scope, but should be labeled as supplied rather than independently checked against the entire paper.
 
-## 4. Research transfer: the wrong line bundle
+## 4. Check the exact object, not just the theorem name
+
+In Module 1, a claim about outputs of linear functions cannot automatically be applied to a problem allowing only constants. The words “function” and “two values” match, but the allowed inputs differ. Source applications need the same object-level precision.
+
+The following extension shows this issue in geometry. It is optional; the maximum example supplies everything needed for the laboratory below.
+
+<details markdown="1">
+<summary>Advanced connection: a vanishing theorem for the wrong line bundle</summary>
+
+### The wrong line bundle
 
 Return to a line bundle $L$ and an effective Cartier divisor $D$ on $X$. The restriction sequence is
 
@@ -85,6 +94,9 @@ An application table should identify the ambient category, the exact sheaf, the 
 If the positivity of $L(-D)$ is unresolved, save it as an obligation. There are then at least three sensible next actions: prove that positivity; find a theorem with weaker hypotheses; or abandon global vanishing and compute the obstruction of the particular section. The table helps choose among these actions because it localizes the difficulty.
 
 The distinction matters in research opportunity discovery too. A paper's projective theorem may suggest a Kähler extension, but a shared keyword does not transfer the result. A useful proposal identifies the precise proof step using projectivity and offers a replacement argument that can actually be tested.
+
+
+</details>
 
 ## 5. A laboratory in ChatGPT or Codex
 

@@ -97,6 +97,48 @@ Do that probe, preserving the full argument or actual tool output.
 
 Useful probes include proving a restricted version of the hardest lemma, checking boundary examples, finding a counterexample to the proposed bridge, or verifying a precise source application. A long proof sketch whose main difficulty is hidden in “standard arguments” fails this stage.
 
+## A worked opportunity audit: replace compactness by what the proof needs
+
+This is a calibration exercise in established analysis, not a claim of a new research result. It shows the level of detail required before recommending a genuine paper improvement.
+
+Start with the theorem that a continuous real-valued function on a nonempty compact space attains a minimum. A naive proposal removes compactness and uses the domain $\mathbb R$. It fails: $f(x)=e^x$ has infimum zero, but never takes that value. The positive values along $x=-n$ approach zero, so the failure is attainment, not the existence of an infimum.
+
+The proof audit identifies what compactness was doing: it kept a sequence of almost-minimizers from escaping and supplied a convergent subsequence. This suggests a more precise candidate than simply deleting a hypothesis.
+
+**Candidate:** a continuous function $f:\mathbb R\to\mathbb R$ attains a minimum if there is a point $x_0$ such that the sublevel set
+
+$$
+K=\lbrace x\in\mathbb R:f(x)\leq f(x_0)\rbrace
+$$
+
+is compact. This hypothesis concerns only a relevant part of the domain; the whole domain need not be compact.
+
+### Complete the first bridge
+
+The set $K$ is nonempty because it contains $x_0$. Continuity and compactness imply that the restriction of $f$ to $K$ has a minimum, attained at some $x_{\ast}$. For any $x\in K$, we have $f(x_{\ast})\leq f(x)$. For any $x\notin K$, we have
+
+$$
+f(x)>f(x_0)\geq f(x_{\ast}).
+$$
+
+Thus $x_{\ast}$ is a global minimizer. The return argument from the restricted problem to the original domain has been proved, rather than hidden in the phrase “localize the problem.”
+
+For a concrete test, take $f(x)=x^2$ and $x_0=1$. Then $K=[-1,1]$, and the minimum at zero is also global. For $e^x$, every sublevel set at a value $f(x_0)$ is $(-\infty,x_0]$, which is unbounded and not compact. The failed proposal does not satisfy the repaired hypothesis.
+
+### Turn the calculation into a decision record
+
+| Candidate | First probe | Decision supported by the probe |
+|---|---|---|
+| Remove compactness with no replacement | $e^x$ on $\mathbb R$ | Reject: target is false |
+| Require one compact sublevel set | Restrict, minimize, compare outside | Mathematically established under the stated assumptions |
+| Apply the same idea in a new function space | Identify topology, compactness, and behavior under limits | Still an open task until those bridges are checked |
+
+The second row is not a publishable discovery: it is a standard elementary consequence. A system that labels it novel fails the research-opportunity exercise even if its proof is correct. The third row is not a project recommendation yet; the words “new function space” do not specify a theorem.
+
+For an actual paper, replace the toy source with an inspected theorem and identify the corresponding compactness step by location. Write the new space, topology, functional, and precise replacement hypothesis. Then attempt the weakest bridge: does the proposed sublevel set really have the compactness needed, and does the limit preserve the required inequality? These are concrete mathematical tasks on which a proceed/defer decision can be based.
+
+**Practice:** supply Codex with the original theorem and the three candidate rows, withholding the worked proof initially. Ask for the counterexample, repaired statement, complete return argument, and novelty classification. Then inspect its actual output against the derivation above. In the research run, replace the reference answer with a review of the real lemma attempt and the actual prior-art evidence.
+
 ## Feasibility means evidence, not optimism
 
 Use qualitative decisions with explicit reasons:

@@ -27,14 +27,14 @@ Use paired cases that change one important condition. The following set has know
 | Continuous real-valued $f$ on $[0,1]$ | Maximum exists | Rejecting an applicable theorem |
 | $f(x)=x$ on $(0,1)$ | No maximum | Missing attainment or compactness |
 | Constant zero on $(0,1)$ | Maximum exists | Treating a failed hypothesis as a false target |
-| Two-point section $(1,1)$ | Lifts as constant one | Rejecting a valid witness |
-| Two-point section $(1,0)$ | Does not lift | Changing the specified section |
+| Requested output $(1,1)$ | Produced by input $c=1$ | Rejecting a valid witness |
+| Requested output $(1,0)$ | Cannot be produced | Changing the specified output |
 | Each natural number has a bound | True with $C=n$ | Misreading witness dependence |
 | One natural number bounds all natural numbers | False using $n=C+1$ | Exchanging quantifiers |
 | Uniform limit of continuous functions | Continuous | Rejecting a valid return bridge |
 | $x^n$ on $[0,1]$, pointwise limit | Limit is discontinuous | Using the wrong convergence mode |
 
-The two-point cases use the trivial bundle on the projective line over a field and two distinct rational points. Include these hypotheses in the inputs. A short label in the table does not replace a complete task statement.
+The two output cases use real numbers and the fixed rule $r(c)=(c,c)$ from Module 1. Include that rule in the inputs. If you test the optional geometric version instead, specify its projective line, trivial bundle, and two distinct rational points; do not mix the two task descriptions silently.
 
 Keep reference reasoning outside the tested conversation. Save the model's original response before giving feedback. Evaluate the first answer and any repaired answer separately. Otherwise an interactive lesson can be mistaken for first-attempt performance.
 
@@ -76,7 +76,7 @@ These small counts are descriptive. They do not establish a stable error rate fo
 
 Many dangerous errors appear after an initially correct answer. Add transition tests:
 
-1. Change the section from $(1,1)$ to $(1,0)$ and deliver an old review.
+1. Change the requested output from $(1,1)$ to $(1,0)$ and deliver an old review.
 2. Withdraw one of two alternative proof routes, then their shared premise.
 3. Replace uniform convergence by pointwise convergence.
 4. Resume from a checkpoint whose cited proof artifact is missing.

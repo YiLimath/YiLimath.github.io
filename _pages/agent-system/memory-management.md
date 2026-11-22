@@ -13,9 +13,9 @@ A research checkpoint should let a new session reconstruct what is known, why it
 
 ## 1. Memory is a claim about the research state
 
-Suppose a conversation concludes that a particular section fails to lift. A later summary says “there are no global sections.” The files persisted, but the mathematics changed. In the two-point example, constants are global sections; the failure concerns the prescribed pair $(1,0)$.
+Suppose a conversation concludes that the requested output cannot be produced. A later summary says “there are no allowed inputs.” The files persisted, but the mathematics changed. For the elementary rule $r(c)=(c,c)$, plenty of inputs exist; the failure concerns producing the prescribed output $(1,0)$. In the geometric version those inputs are global sections.
 
-Every summary is an interpretation of evidence. It can introduce a new error. Keep the full argument available and write summaries with explicit objects and quantifiers. A compact statement such as “restriction has diagonal image, so $(1,0)$ is excluded” is both shorter and more faithful than a vague conclusion about nonexistence.
+Every summary is an interpretation of evidence. It can introduce a new error. Keep the full argument available and write summaries with explicit objects and quantifiers. A compact statement such as “every output has equal entries, so $(1,0)$ is excluded” is both shorter and more faithful than a vague conclusion about nonexistence.
 
 Useful memory has three layers. The **current view** states the target, supported results, and next action. The **support records** explain each result through arguments and sources. The **history** preserves revisions, failed attempts, and withdrawals. A new session usually begins with the current view and opens support records as needed; history is essential when a disputed assumption reappears.
 
@@ -30,7 +30,7 @@ $$
 \end{aligned}
 $$
 
-Here $E$ is a shared structural fact, while $P$ and $Q$ support alternative routes. For this protocol exercise the implications are stipulated inputs, not newly proved mathematical theorems. In the lifting interpretation, $E$ can encode the valid restriction sequence, $P$ global vanishing, and $Q$ a direct calculation that the chosen obstruction is zero.
+Here $E$ is a shared structural fact, while $P$ and $Q$ support alternative routes. For this protocol exercise the implications are stipulated inputs, not newly proved mathematical theorems. Read $E$ as a shared rule whose applicability has been checked; $P$ and $Q$ are different additional facts used by the two arguments. For example, two calculations can use the same model of the allowed inputs. If that model is wrong, both calculations need reconsideration. The optional geometric interpretation takes $E$ to encode the restriction sequence, $P$ global vanishing, and $Q$ zero obstruction for the chosen section.
 
 | Event | Route A: $E,P$ | Route B: $E,Q$ | Status of $T$ |
 |---|---|---|---|
@@ -111,7 +111,7 @@ For a harder test, omit a linked proof file. The proper response identifies the 
 <details markdown="1">
 <summary>3. Compress the two-point calculation faithfully</summary>
 
-**Answer.** Write: “For the trivial bundle on the projective line over the fixed field, restriction to the two distinct rational points has image the diagonal. Thus the specified pair $(1,0)$ does not lift; pairs $(c,c)$ do.” This preserves both the obstruction and the positive cases.
+**Answer.** Write: “With real inputs and the rule $r(c)=(c,c)$, exactly the equal-entry pairs can be produced. Thus $(1,0)$ cannot be produced, while every pair $(a,a)$ is produced by $c=a$.” This preserves both the obstruction and the positive cases.
 </details>
 
 <details markdown="1">

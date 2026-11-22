@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/multiple-agent-cooperation/). Geometry references below refer to the optional extension of Case A.
+
+
 Case A has alternative vanishing and direct-obstruction routes. Within either route, its setup and hypotheses are jointly necessary. Concurrency changes execution time, not this logical structure.
 
 ## The contract
@@ -25,4 +28,4 @@ Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbe
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

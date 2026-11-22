@@ -13,7 +13,7 @@ Dividing research work is useful when the parts produce evidence that can be com
 
 ## 1. Divide by mathematical obligation
 
-For the section-lifting problem, two useful tasks are a theorem-application audit and a direct calculation of the restriction map. They answer different questions. The first determines whether a general vanishing theorem is available; the second can settle an explicit section even when the general route is unavailable.
+For a prescribed-output problem, two useful tasks are checking whether a general solvability theorem applies and calculating the actual outputs directly. They answer different questions. The first may establish that every requested output is possible; the second can settle the chosen output even when the general theorem is unavailable.
 
 Contrast this with asking three workers to “think harder about lifting.” Their reports may repeat the same unsupported claim, use different targets, and produce little that can be merged. Job titles such as researcher, critic, and expert do not specify mathematical outputs.
 
@@ -21,19 +21,21 @@ A task should identify its input, allowed scope, expected artifact, and stopping
 
 ## 2. A complete merge example
 
-Fix a field $k$, the projective line $X=\mathbb P^1_k$, the trivial line bundle, and two distinct $k$-rational points $p,q$. The target T1 asks whether the specified section $(1,0)$ on those points lifts globally.
+Use Module 1's real-number rule $r(c)=(c,c)$. Target T1 asks whether an input produces $(1,0)$. One task audits a proposed general theorem; the other calculates the possible outputs.
 
-The source-audit task reports: “The proposed vanishing route has not been justified for the required twist. No conclusion about this target follows from that route.” The calculation task proves that global sections are constants and hence restriction is
+The source-audit task reports: “The proposed theorem requires allowing linear polynomials, while this target permits only constants. This application does not settle T1.” The calculation task proves that every output has equal entries:
 
 $$
-k\longrightarrow k^2,\qquad c\longmapsto(c,c).
+r(c)=(c,c).
 $$
 
-The pair $(1,0)$ is outside the image, so it does not lift. The merged result is a negative answer supported by the calculation. The unresolved vanishing route does not make the target unresolved once another valid argument settles it.
+The pair $(1,0)$ has unequal entries, so no input produces it. The merged result is a negative answer supported by that calculation. Failure of the theorem route does not make the target unresolved once another valid argument settles it.
 
-Now introduce a third report: “The constant-one section lifts.” This is correct for $(1,1)$, but does not contradict the negative answer about $(1,0)$. A useful merge checks the objects before comparing verdicts. It can retain the third report as a positive control while rejecting it as support for T1.
+In the optional geometry, inputs are global sections and the output rule is restriction. The same merge principle applies; the numerical experiment below does not require that interpretation.
 
-Finally, suppose a report claims that restriction is surjective. This really conflicts with the diagonal-image calculation. The merge must inspect both arguments and locate the error; it cannot resolve the conflict by counting approvals or averaging confidence.
+Now introduce a third report: “The input $c=1$ produces $(1,1)$.” This is correct for $(1,1)$, but does not contradict the negative answer about $(1,0)$. A useful merge checks the objects before comparing verdicts. It can retain the third report as a positive control while rejecting it as support for T1.
+
+Finally, suppose a report claims that every requested pair can be produced. This really conflicts with the equal-entry calculation. The merge must inspect both arguments and locate the error; it cannot resolve the conflict by counting approvals or averaging confidence.
 
 [![Parallel evidence tasks return scoped artifacts; a merge checks their targets, hypotheses, and logical contributions before updating the research state.](/images/agent-system/course-evidence-merge.svg)](/images/agent-system/course-evidence-merge.svg)
 
@@ -45,8 +47,8 @@ Use the following table before launching any work:
 
 | Task | Input | Required output | Stop when |
 |---|---|---|---|
-| Source audit | Target version, exact twist, candidate passage | Substitution and hypothesis evidence | Application justified, blocked, or source unavailable |
-| Direct calculation | Same target and explicit objects | Restriction image and consequence for the chosen section | Calculation is complete or a precise gap remains |
+| Source audit | Target version, allowed inputs, candidate passage | Substitution and hypothesis evidence | Application justified, blocked, or source unavailable |
+| Direct calculation | Same target and explicit objects | Possible outputs and consequence for the requested output | Calculation is complete or a precise gap remains |
 | Review | Frozen argument and supporting material | Accepted inferences and localized defects | Every substantive step has a stated disposition |
 | Merge | Reports plus current target | Reusable support, conflicts, open obligations | Each report's scope and effect are accounted for |
 
@@ -66,7 +68,7 @@ For a calculation task, replace the theorem application with the explicit map to
 
 ## 4. Merge mathematics before merging prose
 
-Inspect reports in this order. First compare the targets: domain, objects, specified section, and quantifiers. Next compare assumptions and source versions. Then inspect the actual argument and its remaining gaps. Finally decide its contribution: completion, conditional result, obstruction, reusable lemma, or no new support.
+Inspect reports in this order. First compare the targets: domain, objects, requested output, and quantifiers. Next compare assumptions and source versions. Then inspect the actual argument and its remaining gaps. Finally decide its contribution: completion, conditional result, obstruction, reusable lemma, or no new support.
 
 This order prevents a common mistake: producing a polished synthesis before discovering that its ingredients refer to different problems. A report about the wrong target may still contain useful mathematics, but transferring it requires a new applicability check.
 
@@ -76,16 +78,16 @@ Use a simple conflict record when necessary:
 
 ```text
 Conflict C1
-  Report A: restriction has diagonal image, with explicit calculation
-  Report B: restriction is surjective, using a claimed vanishing theorem
+  Report A: all outputs have equal entries, with explicit calculation
+  Report B: every requested pair can be produced, using a theorem about linear polynomials
   Same objects and target? Check before treating as contradiction
-  Disputed step: applicability of the vanishing theorem to the required twist
+  Disputed step: whether the theorem allows the constants-only input constraint
   Next action: inspect that exact hypothesis; preserve both original reports
 ```
 
 ## 5. Revision while work is in flight
 
-Change T1 from $(1,0)$ to $(1,1)$ while a task is still working on the old snapshot. When its report arrives, do not overwrite its version label. The negative verdict for the old section does not answer the new question, but the diagonal-image calculation does: $(1,1)$ lies in the image.
+Change T1 from $(1,0)$ to $(1,1)$ while a task is still working on the old snapshot. When its report arrives, do not overwrite its version label. The negative verdict for the old requested output does not answer the new question, but the equal-entry calculation does: $(1,1)$ lies in the image.
 
 This is a small but realistic test of asynchronous work. A delayed report is not necessarily worthless; its reusable content must be separated from its expired conclusion. The same issue occurs when a research project changes a divisor, removes a hypothesis, or switches between a variety and a birational model.
 

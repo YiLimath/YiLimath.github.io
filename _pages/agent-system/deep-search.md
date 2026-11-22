@@ -8,6 +8,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/). Geometry references below refer to the optional extension of Case A.
+
+
 A lifting problem may appear under extension, restriction, vanishing, or obstruction classes. Decompose the mathematical need before expanding the vocabulary. Search the sufficient-vanishing and direct-obstruction routes separately.
 
 ## The contract
@@ -26,4 +29,4 @@ Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbe
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/lean-formalization/). Geometry references below refer to the optional extension of Case A.
+
+
 **In one sentence.** Act through typed interfaces that return explicit observations, so side effects are authorized and checkable rather than asserted.
 
 ## Problem
@@ -40,9 +43,7 @@ the next state.
 
 ## Example
 
-The Rethlas generation agent exposes theorem search and proof verification as
-explicit tools; Danus adds a role-gated gateway so different agents see
-different capabilities.
+A theorem-search action should return inspected source passages and locators. A Lean-checking action should return the exact declaration, environment, and actual checker output. For a named system, inspect its identified version before claiming that it exposes or restricts either capability.
 
 ## Mathematical system design: bind observations to the question actually computed
 
@@ -69,4 +70,4 @@ when it is needed — see Stephen Clear, *Claude AI Bible*, Chapters 14 and 16.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

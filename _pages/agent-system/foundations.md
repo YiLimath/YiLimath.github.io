@@ -7,11 +7,11 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-A mathematical research system must preserve the meaning of its task while its methods, evidence, and conclusions change. This module develops a representation that makes those changes inspectable. We begin with elementary logic, work through a complete geometric example, and then construct a research record directly in Codex.
+A mathematical research system must preserve the meaning of its task while its methods, evidence, and conclusions change. This module develops a representation that makes those changes inspectable. We begin with elementary logic, work through a constant-function example, and then construct a research record directly in Codex. An optional extension connects the calculation to geometry.
 
 **Lesson format:** plan for 60–90 minutes of explanation and discussion, followed by a separate laboratory. These are teaching allocations, not measured recording times. Sections 1–4 form the conceptual core; Sections 5–7 connect it to research; Sections 8–10 supply practice and assessment.
 
-**By the end, you should be able to:** distinguish a statement from an argument; track assumptions through several steps; identify a changed target; explain which evidence survives a revision; and build a checkpoint another researcher can audit. No programming is required. The geometric example is derived below and can first be read as a linear-algebra problem.
+**By the end, you should be able to:** distinguish a statement from an argument; track assumptions through several steps; identify a changed target; explain which evidence survives a revision; and build a checkpoint another researcher can audit. No programming is required. The main example needs only real numbers and equality. Geometry is optional.
 
 ## 1. Why conversation history is not a mathematical state
 
@@ -187,7 +187,7 @@ A minimal design uses statements, arguments, evidence, reviews, and execution ta
 | Review | Exact statement and argument examined, findings, scope | Reusing approval after relevant changes |
 | Task | Requested action, input versions, execution outcome | Confusing a timeout with a refutation |
 
-For T1, the statement records the chosen pair (1,0). An argument records that every image of r has equal coordinates. Evidence includes the explicit map and its derivation. A review checks that the argument really concerns T1. A task might request the image calculation; its failure to finish says nothing by itself about liftability.
+For T1, the statement asks for an input $c$ with $r(c)=(1,0)$ under the rule $r(c)=(c,c)$. The argument explains that every possible output has equal entries. Evidence is the calculation establishing that rule and its consequence. A review checks that the argument addresses the requested pair. A task might ask the assistant to describe all possible outputs; failure to finish that task does not show that the requested output is impossible.
 
 A source quotation can be evidence about what a paper states without establishing that the theorem applies here. A tool log can establish that a process ran without establishing that its output means what we intended. Evidence must have an interpretation and a scope.
 
@@ -220,7 +220,7 @@ Likewise, P implies Q and Q implies P do not establish either proposition withou
 
 ## 6. Versions and identity: what changed mathematically?
 
-Versioning is useful because reviews have a subject. Changing (1,1) to (1,0) changes that subject. Changing a notation while preserving its definition may not change the proposition, but the system must justify the correspondence rather than infer it from similar wording.
+Versioning is useful because reviews have a subject. Changing the requested output from $(1,1)$ to $(1,0)$ changes that subject. Changing a notation while preserving its definition may not change the proposition, but the system must justify the correspondence rather than infer it from similar wording.
 
 Distinguish three changes:
 
@@ -232,7 +232,7 @@ An identifier is a reference, not a mathematical invariant. A content hash detec
 
 ### A useful revision experiment
 
-Review T2 using the witness 1. Then change the chosen section to (1,0) and retain the old review. Ask which parts survive. The existence of the constant section survives, as does the description of restriction. The claim that this witness lifts the newly chosen section fails. This is selective reuse rather than erasing all earlier work or carrying forward all approval.
+Review T2 using the input $c=1$: its output is $(1,1)$, as requested. Then change the requested output to $(1,0)$ and retain the old review. The calculation $r(1)=(1,1)$ is still correct, but it no longer matches the request. The rule describing all outputs also survives. Reuse those calculations while withdrawing the claim that this input solves the new target.
 
 ## 7. From the example to a research reduction
 
@@ -275,14 +275,15 @@ Separate the given rule from the conclusions you derive.
 ### Round B: introduce a bad witness and a stale review
 
 ```text
-For the target of lifting (1,0), consider the proposed witness 1.
-Check the defining equation for a lift.
-Now take a review of the (1,1) argument and apply it to the revised target.
+For r(c) = (c,c), the requested output is (1,0). Test the input c = 1.
+Compute its output and compare both entries with the requested pair.
+Now take a review approving c = 1 for the old target (1,1).
+Determine whether that review also approves it for the new target (1,0).
 Identify exactly what survives and what requires a new justification.
 Preserve the initial incorrect proposal and its diagnosis.
 ```
 
-**Expected result:** restriction of 1 is (1,1). The witness fails for (1,0). The earlier computation remains valid but its approval does not solve the revised problem.
+**Expected result:** $r(1)=(1,1)$, so the input fails to produce $(1,0)$. The earlier calculation remains valid, but the old approval does not solve the revised problem.
 
 ### Round C: test assumptions and alternatives
 
@@ -305,9 +306,9 @@ Ask Codex to save the exact targets, arguments, assumptions, rejected witness, a
 <details markdown="1">
 <summary>Exercise 1 — Diagnose a change of target</summary>
 
-A task asks for a section extending a specified s. The response proves only that a nonzero global section exists. What additional equation must its witness satisfy?
+A task asks for an input producing a specified output $s$. The response supplies only a nonzero input $c$. What additional equation must be checked?
 
-**Answer.** If r denotes restriction and t is the proposed global section, the missing condition is r(t)=s. Nonzeroness of t gives no such equality. In the two-point example t=1 witnesses existence but does not lift (1,0).
+**Answer.** Check $r(c)=s$. Being nonzero does not establish this equality. For $r(c)=(c,c)$, the input $c=1$ produces $(1,1)$, not $(1,0)$. In the optional geometric interpretation, this is the equation saying that a global section restricts to the specified section.
 
 </details>
 
@@ -332,16 +333,16 @@ A source correction adds hypothesis H to a theorem previously used to establish 
 <details markdown="1">
 <summary>Exercise 4 — Generalize the worked calculation</summary>
 
-Restrict constants to m distinct k-rational points on the projective line. Which value tuples lift? Treat m=1 separately, and explain why the result does not extend unchanged to a different line bundle.
+Extend the output rule to $m$ entries: an input $c$ produces $(c,\ldots,c)$. Which requested outputs are possible? Treat $m=1$ separately. What must be reconsidered if the output rule changes?
 
-**Answer.** For m≥1 the restriction sends c to (c,…,c). Its image consists of tuples with all coordinates equal; for m=1 every value lifts. For a different line bundle, its global sections and the restriction map can change. The constant-function calculation no longer describes the problem without an additional identification.
+**Answer.** For $m\geq1$, precisely the outputs whose entries are all equal can be produced. For $m=1$, any requested value $a$ is produced by $c=a$. A different rule requires a new calculation of possible outputs. **Optional geometry:** changing the line bundle can change both the global sections and the restriction map, so the constants-only calculation must not be reused without justification.
 
 </details>
 
 <details markdown="1">
 <summary>Exercise 5 — Design a record for your own mathematics</summary>
 
-Choose a proof step involving a specified map, divisor, section, or parameter. Write its exact target, one argument, and one tempting nearby statement. Identify a change that would invalidate the argument's current review.
+Choose a proof step involving a specified function, output, bound, or parameter. If you know geometry, a divisor or section is another option. Write its exact target, one argument, and one tempting nearby statement. Identify a change that would invalidate the argument's current review.
 
 **Answer guide.** There is no universal target here. A satisfactory submission names the mathematical objects and assumptions, supplies the actual inference, and gives a concrete distinction that affects the conclusion. “The model might hallucinate” is not a localized failure analysis. An example of a meaningful change is replacing the specified section, changing the divisor twist in a vanishing theorem, or interchanging the order of dependent quantifiers.
 

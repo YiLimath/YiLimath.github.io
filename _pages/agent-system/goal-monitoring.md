@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/). Geometry references below refer to the optional extension of Case A.
+
+
 Case A may end with a lift, a justified non-liftability result for the chosen section, or an open obstruction. Case B may produce useful estimates without the uniformity required by the target. These outcomes deserve different names.
 
 ## The contract
@@ -15,7 +18,7 @@ Keep the target immutable within an attempt. Additional hypotheses create condit
 
 ## Trade-offs and failure modes
 
-Budget exhaustion ends execution, not mathematics. A local lemma can be complete while the programme remains open. The workbench implements usable, conditional, and unresolved outcomes; it does not infer refutation from an absent proof.
+Budget exhaustion ends execution, not mathematics. A local lemma can be complete while the programme remains open. The conversational exercise asks you to distinguish usable, conditional, and unresolved outcomes. Inspect the actual responses; the instructions do not enforce these states.
 
 ## Build and test
 
@@ -25,4 +28,4 @@ Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbe
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

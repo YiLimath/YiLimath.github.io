@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/design-principles/). Geometry references below refer to the optional extension of Case A.
+
+
 A mathematical research system needs an explicit policy for changing its objective, spending its budget, accepting evidence, and releasing results. These responsibilities do not imply that a human must approve every action.
 
 ## Control is an interface
@@ -31,4 +34,4 @@ Gulli, *Agentic Design Patterns*, Chapter 13, treats human involvement as a patt
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

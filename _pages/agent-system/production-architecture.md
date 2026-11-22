@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/). Geometry references below refer to the optional extension of Case A.
+
+
 After a crash, the system should recover the same target, arguments, reviews, and open obligations. Reconstructing them from a conversational summary can silently change mathematical scope.
 
 ## The contract
@@ -15,14 +18,14 @@ Use immutable artifact versions, durable writes, and explicit review bindings. C
 
 ## Trade-offs and failure modes
 
-The workbench uses temporary-file replacement for a single-writer snapshot. It is not a transactional multi-user database or a complete event-sourcing implementation. Production needs concurrency control, authenticated roles, migrations, backups, and reproducible tools. Monitor infrastructure health separately from mathematical progress.
+The current course laboratory saves Markdown records through ChatGPT or Codex. It does not implement transactional storage or automatic crash recovery. Production needs concurrency control, authenticated roles, migrations, backups, and reproducible tools. Monitor infrastructure health separately from mathematical progress.
 
 ## Build and test
 
-Save after withdrawing one Case A route, reload, and verify that the alternative survives. Corrupt the saved conclusion and confirm that its review digest no longer matches.
+Save after withdrawing one Case A route, reload, and verify that the alternative survives. Change the saved conclusion and ask the resumed session to compare it with the exact statement covered by its review. Record whether the mismatch is detected; no automatic digest check is supplied.
 
 Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -23,6 +23,43 @@ This is a useful control: moving to a smooth birational model does not preserve 
 
 The displayed calculation is a reference argument, not an automated research result. Students must justify the blow-up formula and intersection identities from a source or a proof they can inspect.
 
+## Unpack the calculation before designing the workflow
+
+This is an advanced module. It assumes basic divisors and intersection numbers on smooth projective surfaces. Its system-design lesson is accessible without reconstructing surface theory: **a property of a pulled-back object is not automatically a property of another object on the same model.**
+
+On a projective surface, a divisor is nef when its intersection with every integral curve is nonnegative. To disprove nefness, one curve with negative intersection is enough. The exceptional curve $E$ is therefore a decisive test, not an arbitrary example chosen after the conclusion.
+
+There are three divisors that the record must distinguish:
+
+| Divisor | Space | Role |
+|---|---|---|
+| $K_X$ | Original surface $X$ | Object in the original positivity hypothesis |
+| $\pi^*K_X$ | Blown-up surface $Y$ | Pullback of that object |
+| $K_Y$ | Blown-up surface $Y$ | Canonical divisor of the new surface |
+
+The last two live on the same surface but differ by $E$. Using the supplied canonical-divisor identity, bilinearity of intersection gives
+
+$$
+\begin{aligned}
+K_Y\cdot E
+&=(\pi^*K_X+E)\cdot E\\
+&=(\pi^*K_X)\cdot E+E^2\\
+&=0-1=-1.
+\end{aligned}
+$$
+
+The pullback term has intersection zero because $E$ is contracted to a point: the projection formula pairs $K_X$ with the zero pushforward curve class. The other input, $E^2=-1$, is the exceptional-curve identity for this blow-up. A complete source reconstruction must justify these inputs and the canonical-divisor formula; the arithmetic after them is not a substitute for that audit.
+
+If $X$ is an abelian surface, its trivial canonical bundle makes $K_X$ nef. Yet the calculation proves that $K_Y$ is not nef. The contradicted implication is specifically “nef canonical divisor remains nef after this blow-up.” Neither the smoothness of $Y$ nor the original nefness on $X$ has been disproved.
+
+### A useful repair has a different statement
+
+The identity gives $K_Y-E=\pi^*K_X$. That correction removes the offending exceptional term. It does not prove nefness of $K_Y$. A report that changes the object to $K_Y-E$ must label the new claim rather than announcing that the original target was repaired.
+
+For the laboratory, require a four-line review: the exact false implication, the curve testing it, the computation giving the contradiction, and the corrected object identity that survives. Then remove the exceptional term from the submitted formula and ask the reviewer to identify the missing input. This checks whether the system understands the object change rather than memorizing the answer “blow-ups are bad.”
+
+For a checkable source for the three blow-up identities, see Proposition 7.6, items (3)–(5), in [Sam Frengley’s algebraic-surfaces course notes](https://samfrengley.github.io/teaching/DRAFT-notes/alg-surfaces-notes.html). Match the smooth-surface and point-blow-up hypotheses before using them.
+
 ## Build from an empty Codex folder
 
 ```text

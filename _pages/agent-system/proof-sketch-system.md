@@ -11,6 +11,57 @@ full_page_reading: true
 
 A useful method recommendation ends with an attempted mathematical argument. This project asks Codex to compare routes, identify their decisive obligations, and work on one of those obligations. No orchestration software is required.
 
+## First understand the method-selection problem without geometry
+
+Module 1 used one input $c$ to produce $(c,c)$. Here is a harder control with two unknowns and three output conditions. Let
+
+$$
+A(x,y)=(x+y,\ x-y,\ 2x).
+$$
+
+For a specified output $(a,b,c)$, determine whether an input exists. “Find a method” is not the deliverable: we need an applicable method and a calculation that settles this output.
+
+### Route 1: solve for the input, then check the unused condition
+
+The first two equations give $x=(a+b)/2$ and $y=(a-b)/2$. Substitute these values into the third equation. Its left side becomes $2x=a+b$, so the third requirement holds exactly when $c=a+b$.
+
+This proves both necessity and sufficiency:
+
+$$
+(a,b,c)\text{ is obtainable}\quad\Longleftrightarrow\quad c=a+b.
+$$
+
+Necessity alone would reject incompatible outputs but would not construct a solution for compatible ones. Sufficiency is supplied by the explicit formulas for $x$ and $y$, with all three equations checked.
+
+### Route 2: identify an obstruction before solving
+
+Every output of $A$ satisfies “third entry equals first plus second,” since $(x+y)+(x-y)=2x$. Define the obstruction of a proposed output to be
+
+$$
+o(a,b,c)=c-a-b.
+$$
+
+If this number is nonzero, the output is impossible and there is no reason to search for inputs. If it is zero, the formulas from Route 1 establish that this is the only obstruction. The obstruction test is exact because we proved that converse; defining a quantity that must vanish would not alone prove completeness of the test.
+
+For $(3,1,4)$ the obstruction is zero. The input $(2,1)$ works, as direct substitution gives $(3,1,4)$. For $(3,1,5)$ the obstruction is one, so no input works. Reusing $(2,1)$ after changing the final entry would solve the old task, not the new one.
+
+### What the two method cards should contain
+
+| Method | Decisive work | Best reason to choose it | What it cannot skip |
+|---|---|---|---|
+| Construct a candidate | Solve the first two equations | A concrete witness is needed | Check the third equation |
+| Test compatibility | Evaluate $c-a-b$ | Many proposed outputs need quick rejection | Prove zero obstruction is sufficient before claiming an exact criterion |
+
+The routes share mathematics. Do not advertise them as statistically independent evidence. Their value is that they expose different failure points and can be chosen for different immediate tasks.
+
+Ask Codex to create the four files below using this example first. Give it $(3,1,4)$, then revise only the third entry to five. Require it to preserve the old witness, recompute its output, and distinguish candidate failure from a proof of impossibility. These are reference outcomes, not a record of a measured Codex run.
+
+### From this calculation to the geometric project
+
+In the next task, a global section plays the role of an input, restriction plays the role of $A$, and the specified section plays the role of $(a,b,c)$. A connecting homomorphism supplies the obstruction. The advanced work is proving that this machinery applies to the given geometric objects; the logical structure is the one just derived.
+
+**Prerequisites for the geometric extension:** line bundles, effective Cartier divisors, and the cohomology sequence of a short exact sequence. If those are unfamiliar, complete the linear example and use Modules 3–5 to design and review its method cards.
+
 ## The controlled mathematical task
 
 Let X be a projective variety, L a line bundle, D an effective Cartier divisor, and s a specified section of L restricted to D. Determine whether this particular s lifts to a global section of L. Work from the exact sequence

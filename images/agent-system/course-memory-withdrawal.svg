@@ -5,13 +5,13 @@
 <text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Two alternative routes share E. Inputs within each route are joint requirements.</text>
 <rect x="40" y="130" width="280" height="90" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
 <text x="58" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">P: route-specific premise</text>
-<text x="58" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Example: global vanishing</text>
+<text x="58" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">First route needs this fact</text>
 <rect x="40" y="300" width="280" height="90" rx="12" fill="#e9eef9" stroke="#b8ccd5" stroke-width="1.5"/>
 <text x="58" y="331" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">E: shared structural fact</text>
-<text x="58" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Example: valid exact sequence</text>
+<text x="58" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Both routes need this rule</text>
 <rect x="40" y="470" width="280" height="90" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
 <text x="58" y="501" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Q: route-specific premise</text>
-<text x="58" y="530" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Example: zero obstruction</text>
+<text x="58" y="530" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Second route needs this fact</text>
 <rect x="420" y="160" width="270" height="110" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
 <text x="438" y="191" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Argument A</text>
 <text x="438" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Requires E AND P</text>

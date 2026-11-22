@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/foundations/). Geometry references below refer to the optional extension of Case A.
+
+
 Architecture diagrams should answer a named question. A box called “reasoning engine” is useful only if its input, output, and authority are specified.
 
 [![Research components and their artifact contracts](/images/agent-system/research-architecture.svg)](/images/agent-system/research-architecture.svg)
@@ -40,4 +43,4 @@ Draw the four views for the ledger lab. Mark which components are implemented an
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

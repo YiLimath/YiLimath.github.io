@@ -48,6 +48,36 @@ An informal review is fallible mathematical evidence. A label such as 'correct' 
 
 Run these interventions and retain the actual responses. A prompt requesting the right behavior is not evidence that the behavior occurred.
 
+## A reference episode with expected state changes
+
+Use the real-number rule $r(c)=(c,c)$ from Module 1. The following is a hand-derived test specification, not an observed transcript of Danus, Rethlas, or Codex.
+
+| Event | Evidence actually available | Expected state |
+|---|---|---|
+| Set target V1 to producing $(1,1)$ | Rule and candidate $c=1$ | Check $r(1)=(1,1)$, then admit this solution |
+| Change target to V2, producing $(1,0)$ | Old calculation still available | Old witness does not solve V2 |
+| Deliver an old approving review | Review concerns V1 | Keep it with V1; do not transfer its verdict |
+| Calculate every possible output | Both entries always equal | V2 impossible, with a general argument |
+| Save a checkpoint and restart | Rule, targets, arguments, reviews | Recover V1 solved and V2 refuted for different reasons |
+
+An important distinction appears in the second and fourth rows. A failed witness establishes only that this candidate does not work. The fourth row supplies a universal reason no candidate can work. A system that declares impossibility immediately after testing $c=1$ happens to reach the right answer here but has not justified it.
+
+Test that weakness with a second rule $q(c)=(c,1-c)$. The same candidate $c=1$ now produces $(1,0)$. Changing the rule changes the problem, so the old equal-entry argument is inapplicable. A memorized negative verdict should not survive this intervention.
+
+### Attribute an improvement to a mechanism
+
+Compare the baseline with a version that adds only explicit target versions. If the new run catches the stale review but still mistakes candidate failure for impossibility, report exactly that. The version record addressed identity; it did not supply the missing universal argument.
+
+Then add a review question: “Does this evidence reject one candidate, or all possible candidates?” Test both rules again, preserving first responses. If several mechanisms are added at once, you can assess the combined workflow but cannot isolate their individual effects from that experiment.
+
+Avoid converting this five-event episode into an impressive-looking success percentage. Report the events, expected transitions, actual transitions, and mathematical reasons. More cases and repeated runs can later support a broader empirical claim.
+
+### What to inspect in a named implementation
+
+For a version of Danus or Rethlas you can actually inspect, trace one result through proposal, evidence, review, reuse, and revision. Ask which artifact identifies the target and argument, how conditional assumptions survive, and what happens when a previously accepted premise is withdrawn. Record code or document locations and actual run evidence separately.
+
+If a feature cannot be found, mark it unlocated in the inspected material; do not conclude that no version has it. This project teaches an audit procedure. It does not make undocumented feature claims about either named system.
+
 ## Decide whether more coordination helps
 
 If source checking and an alternative proof can proceed separately, try distinct Codex tasks or conversations. Fix comparable total effort and source access. Count duplicated work, elapsed time, accepted errors, missed valid arguments, and useful partial conclusions. A single-worker system is a valid outcome when coordination adds no value.

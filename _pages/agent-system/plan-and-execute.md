@@ -13,6 +13,8 @@ Planning means deciding which missing mathematical justification to pursue next.
 
 ## A complete example before the architecture
 
+Recall Module 1: a constant $c$ produces the pair $(c,c)$. We now ask what changes when we allow a linear polynomial instead of only constants. You may take all numbers to be real on a first reading; the same calculation works over any field. A “preimage” is an input producing the requested output, and “surjective” means that every output in the stated target space can be produced.
+
 Let $k$ be a field and let $a,b\in k$ be distinct. Given $u,v\in k$, seek a polynomial $f$ of degree at most $d$ satisfying
 
 $$f(a)=u,\qquad f(b)=v.$$
@@ -45,7 +47,7 @@ This argument proves more than existence for one pair: the evaluation map is sur
 
 For $d=0$, every allowed polynomial is constant. A solution exists precisely when $u=v$. The pair $(1,1)$ lifts and $(1,0)$ does not. Surjectivity onto all of $k^2$ is false, but some specified pairs still have preimages.
 
-This boundary case is the planning lesson: failure of a stronger route does not imply failure of the chosen target. Module 1's restriction map for the trivial bundle on the projective line is exactly this constant-polynomial pattern.
+This boundary case is the planning lesson: failure of a stronger route does not imply failure of the chosen target. This is exactly Module 1's rule $r(c)=(c,c)$. The geometric interpretation is optional.
 
 ## Work backward, then verify forward
 
@@ -59,7 +61,25 @@ Before scheduling subtasks, ask: **if every listed subtask succeeded, would the 
 
 Lean's official [tactic tutorial](https://lean-lang.org/theorem_proving_in_lean4/Tactics/) illustrates how theorem application creates remaining goals. Our informal plans use analogous distinctions, but still need mathematical review; Markdown goal lists are not kernel-checked proofs.
 
-## Two routes to one lifting target
+## Two routes to one specified output
+
+Keep the target fixed: produce the requested pair $(u,v)$ by evaluating an allowed polynomial at the distinct points $a,b$.
+
+| Route | What must be checked together | Result |
+|---|---|---|
+| Direct witness | Formula is defined; both values match; degree is allowed | This requested pair is produced |
+| General solvability | Degree bound allows linear polynomials; evaluation matrix is invertible | Every pair can be produced, including this one |
+
+For degree zero, the general route fails because constants cannot produce every pair. The direct route still succeeds for $(1,1)$ using the constant $1$. This is why failure of a stronger route must not be treated as failure of the specified target.
+
+[![Two elementary proof routes: check one witness or establish solvability for every pair.](/images/agent-system/course-elementary-routes.svg)](/images/agent-system/course-elementary-routes.svg)
+
+The two routes end at the same question. Each route requires all of its own checks; completing checks from unrelated targets does not supply a proof.
+
+<details markdown="1">
+<summary>Advanced connection: the same planning distinction in geometry</summary>
+
+### Optional geometry: two routes to a section lift
 
 For a line bundle $L$ and effective Cartier divisor $D$, the restriction sequence gives a connecting map $\delta$. Exactness says that a specified section $s$ lifts precisely when $\delta(s)=0$.
 
@@ -75,6 +95,9 @@ For the two-point example on the projective line, direct calculation distinguish
 [![Two proof routes and their distinct evidence requirements](/images/agent-system/course-proof-routes.svg)](/images/agent-system/course-proof-routes.svg)
 
 *Solid arrows denote justified inference once all inputs are available. The dashed arrow is a request for research work: it produces a candidate result, not automatic support for the conclusion. Both routes must concern the same target version.*
+
+
+</details>
 
 ## The dependency rule
 

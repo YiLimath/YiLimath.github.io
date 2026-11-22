@@ -184,7 +184,7 @@
 /* Keep diagram labels legible on narrow screens; images also link to the SVG. */
 .agent-system-page .page__content,
 .agent-system-hub .page__content {
-  > p:has(img[src*="/images/agent-system/"]) {
+  p:has(img[src*="/images/agent-system/"]) {
     overflow-x: auto;
   }
   img[src*="/images/agent-system/"] {

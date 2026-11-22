@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">02 / Two routes to the same requested output</title><desc id="desc">Allowed inputs: polynomials of degree at most d. Evaluation points a and b are distinct.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">02 / Two routes to the same requested output</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Allowed inputs: polynomials of degree at most d. Evaluation points a and b are distinct.</text>
+<rect x="40" y="140" width="290" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="171" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Route A: one witness</text>
+<text x="58" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Write a candidate polynomial</text>
+<text x="58" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Check its value at a</text>
+<text x="58" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Check its value at b</text>
+<rect x="420" y="140" width="280" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="438" y="171" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Joint checks</text>
+<text x="438" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Denominators are nonzero</text>
+<text x="438" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Both values match u and v</text>
+<text x="438" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Degree is at most d</text>
+<rect x="40" y="390" width="290" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="421" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Route B: all outputs</text>
+<text x="58" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Allow linear polynomials</text>
+<text x="58" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Write the evaluation matrix</text>
+<text x="58" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Compute its determinant</text>
+<rect x="420" y="390" width="280" height="135" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="438" y="421" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Joint checks</text>
+<text x="438" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Degree bound d is at least 1</text>
+<text x="438" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Determinant b minus a is nonzero</text>
+<text x="438" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Every pair can be produced</text>
+<rect x="800" y="270" width="280" height="130" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="818" y="301" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Fixed target</text>
+<text x="818" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Produce this pair (u,v)</text>
+<text x="818" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">At these points a and b</text>
+<text x="818" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Within the allowed degree</text>
+<polyline points="330,200 420,200" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="330,450 420,450" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="700,200 750,200 750,310 800,310" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="700,450 750,450 750,365 800,365" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">Degree zero: Route B is unavailable, but Route A still works when u = v.</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">Failure to produce every pair does not prevent producing one particular pair.</text>
+</svg>

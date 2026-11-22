@@ -63,6 +63,36 @@ For the maximum example, inspect the counterexample and the failure of compactne
 
 **Deliverable:** one complete episode, including the initial response and any correction. Do not erase a mistaken first answer from the experiment record.
 
+### What the files should contain after the first cycle
+
+Here is a reference state for the maximum example. It illustrates substantive content rather than a required software format; it is not a log of an executed assistant session.
+
+```text
+TARGET.md
+  T1-v1: every continuous f:(0,1)->R attains a maximum.
+  A counterexample must satisfy continuity and show nonattainment.
+
+ARGUMENTS.md
+  A1 addresses T1-v1 using f(x)=x.
+  This function is continuous on (0,1).
+  For any proposed maximizer x, let y=(x+1)/2.
+  Then x<y<1, and f(y)>f(x). Thus no maximizer exists.
+
+REVIEWS.md
+  Review A1 against T1-v1.
+  Check continuity, membership of y in the domain, and strict inequality.
+  If accepted, its scope is refutation of T1-v1 by this counterexample.
+
+STATE.md
+  T1-v1 is refuted by A1.
+  T1-v2, with domain [0,1], is a separate proposed repair.
+  A1 does not refute T1-v2: the endpoint 1 changes the argument.
+```
+
+The inequality $x<(x+1)/2<1$ follows from $x<1$. At the closed interval's endpoint $x=1$, the same construction gives $y=1$, so strict improvement fails. This explains exactly why the counterexample proof does not transfer to the repaired domain.
+
+Before moving on, ask Codex to reconstruct these distinctions from its files. If `STATE.md` says only “maximum theorem solved,” the record is insufficient: it fails to say which version was refuted and which was proposed as a repair. Fix the record at that point instead of adding more orchestration.
+
 ## 4. Add alternative routes without multiplying agents
 
 Ask for two genuinely different routes to a target, each listing joint premises, expected evidence, and its weakest bridge. One conversation is sufficient to begin.

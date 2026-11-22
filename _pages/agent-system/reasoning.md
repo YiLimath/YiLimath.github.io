@@ -16,15 +16,17 @@ A reduction is useful only if solving the new problem helps solve the original o
 
 Let $T$ be the target and $R$ a proposed replacement. If you prove $R\Rightarrow T$, solving $R$ is sufficient. If you only know $T\Rightarrow R$, then $R$ is a necessary condition: failure of $R$ can obstruct $T$, but success need not establish it. If both implications hold, the transformation is an equivalence.
 
-Consider proving that a particular section $s$ lifts through a restriction map. Exactness gives
+For Module 1's rule $r(c)=(c,c)$, asking whether $(a,b)$ can be produced is equivalent to asking whether $a=b$. If an input exists, both output entries equal that input, so $a=b$. Conversely, if $a=b$, choose $c=a$. These two short arguments justify both directions of the reduction.
 
-$$
-s\text{ lifts}\quad\Longleftrightarrow\quad\delta(s)=0.
-$$
+Requiring that **every** pair can be produced would be stronger and false. That failure does not stop the particular pair $(1,1)$ from being produced. The transformed task may demand more than the original needs.
 
-Vanishing of the entire obstruction space is a stronger sufficient condition. A failed attempt to prove that space vanishes does not show that this particular obstruction is nonzero. The transformed task may be unnecessarily difficult.
+A good system stores both the new obligation and its relation to the original. “Try a stronger general theorem” is a research action. “That theorem implies this target under these hypotheses” is a mathematical dependency. Keeping them separate lets the system change its plan without changing what has been proved.
 
-A good system therefore stores both the new obligation and its relation to the original. “Try vanishing” is a research action. “Vanishing implies liftability by this exact sequence” is a mathematical dependency. Keeping them separate lets the system change its plan without changing what has been proved.
+<details markdown="1">
+<summary>Advanced connection: the obstruction to lifting a section</summary>
+
+In the geometric interpretation, the desired output is a specified section $s$, and the input is a global section restricting to it. For the valid restriction exact sequence, exactness gives $s$ liftable if and only if $\delta(s)=0$. Vanishing of the entire obstruction space is a stronger sufficient condition. Failure to prove that space vanishes does not prove that the particular obstruction is nonzero. See Module 1's optional geometry for the objects and hypotheses.
+</details>
 
 ## 2. Full example: approximating a continuous function
 

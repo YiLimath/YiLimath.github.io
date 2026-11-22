@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/verification-gate/). Geometry references below refer to the optional extension of Case A.
+
+
 In Case B, “be more rigorous” is not actionable. “The estimate permits C to depend on j, but the compactness step needs a uniform bound” names the missing bridge. The critic should localize a mathematical defect.
 
 ## The contract
@@ -25,4 +28,4 @@ Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbe
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

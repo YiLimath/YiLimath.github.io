@@ -7,7 +7,18 @@ full_page_reading: true
 
 The examples in this series have different jobs. The elementary maximum example is a smoke test for a missing hypothesis. The following three cases expose deeper architectural requirements: transferring a result between objects, preserving quantifiers through approximation, and organizing induction. None is offered as a new research theorem.
 
-## Case A. A section downstairs is not yet a section upstairs
+## Case A. Produce the specified output, not merely some output
+
+Start with real numbers and the rule $r(c)=(c,c)$. Choosing $c=1$ produces $(1,1)$. It does not produce the requested pair $(1,0)$. Indeed, no input can produce that pair because every output has equal entries.
+
+This separates three questions: does an input exist at all, does one produce $(1,1)$, and does one produce $(1,0)$? The first two answers are yes; the third is no. A system that substitutes one question for another can report a valid calculation as a solution to the wrong target.
+
+Save the exact output rule, requested pair, candidate input, and comparison of actual versus requested output. Module 1 works through this example step by step. The geometry below gives a research setting with the same structure and is optional on a first reading.
+
+<details markdown="1">
+<summary>Advanced connection: lifting a specified section in geometry</summary>
+
+### A section on a smaller space need not extend
 
 Let $X$ be a scheme, let $S\subset X$ be an effective Cartier divisor, and let $L$ be an invertible sheaf on $X$. Fix a nonzero section $s\in H^0(S,L\vert _S)$. The research task is to lift this particular section to $X$.
 
@@ -44,9 +55,12 @@ Store the exact objects, the restriction map, the chosen section, the obstructio
 
 The [Stacks Project's Cartier-divisor treatment](https://stacks.math.columbia.edu/tag/0C4S) supplies the ideal-sheaf conventions. The exact-sequence argument above is written out here so the inference, including its weaker sufficient alternatives, is inspectable.
 
+
+</details>
+
 ## Case B. Approximation does not manufacture a uniform bound
 
-Suppose a method constructs quantities $u_j$ and proves $\\vert u_j\\vert \le C_j$ for every $j$. The target requires a single finite $C$ with $\\vert u_j\\vert \le C$ for all $j$. These are different quantifier structures:
+Suppose a method constructs quantities $u_j$ and proves $\vert u_j\vert \le C_j$ for every $j$. The target requires a single finite $C$ with $\vert u_j\vert \le C$ for all $j$. These are different quantifier structures:
 
 $$
 \forall j\;\exists C_j\quad\text{versus}\quad\exists C\;\forall j.
@@ -88,8 +102,8 @@ Store the statement family, quantified parameter, base cases, step implications,
 | False completion | Downstairs result reported upstairs | Pointwise bounds reported uniform | Circular support reported induction |
 | Useful partial result | A section plus an open obstruction | Valid parameter-dependent estimate | A verified step with missing base case |
 
-Use these cases throughout the [chapter route](/posts/2026/08/Agent-System/) and [project laboratory](/posts/2026/08/agent-system/hands-on-lab/). The same artifact contracts should handle all three. If an implementation only catches one example by matching its vocabulary, it has learned a fixture rather than enforced a design rule.
+Use these cases throughout the [chapter route](/posts/2026/12/Agent-System/) and [project laboratory](/posts/2026/08/agent-system/hands-on-lab/). The same artifact contracts should handle all three. If an implementation only catches one example by matching its vocabulary, it has learned a fixture rather than enforced a design rule.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

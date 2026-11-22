@@ -10,7 +10,7 @@ full_page_reading: true
 
 Review asks whether an argument supports its conclusion. Admission asks whether the workflow may reuse that conclusion, under which assumptions and for which version. These decisions are related, but neither an approving tone nor a field named `verified` supplies mathematical evidence.
 
-**Learning goals:** localize a defective inference; distinguish a gap from a counterexample; preserve assumptions through a chain; and bind a review to the text it examined. The laboratory uses the limit and section-lifting examples from earlier modules. No formal prover is required yet.
+**Learning goals:** localize a defective inference; distinguish a gap from a counterexample; preserve assumptions through a chain; and bind a review to the text it examined. The laboratory uses the limit and prescribed-output examples from earlier modules. No formal prover is required yet.
 
 ## 1. A reviewer needs a claim, an argument, and a context
 
@@ -44,15 +44,15 @@ This report preserves the valid work. It also suggests a concrete repair: establ
 
 Suppose a draft establishes $P\Rightarrow Q$ and $Q\Rightarrow R$, while $P$ is an unproved assumption. Then $R$ is available conditionally on $P$. Writing a separate lemma for $Q$ does not discharge $P$.
 
-For the lifting problem, let $P$ mean that $H^1(X,L(-D))$ vanishes. With the restriction exact sequence and its hypotheses fixed, the proof may correctly establish liftability from $P$. Until $P$ is proved, this is a conditional lifting result. It is useful: it isolates the remaining obligation. Calling it an unconditional theorem would lose the mathematical content of the condition.
+For the output problem, let $P$ say that the requested pair has equal entries. The rule $r(c)=(c,c)$ then gives a solution by choosing that common value. Until the equality is established, this is a conditional result. It is useful because it identifies the remaining check; it does not justify a solution for arbitrary requested pairs.
 
 Store three distinct fields:
 
 | Field | What it answers | Example |
 |---|---|---|
 | Workflow status | What has been done? | Reviewed and admitted for conditional use |
-| Evidence | Why is the implication supported? | Inspected exact-sequence argument |
-| Scope | What may be concluded? | Liftability assuming the named vanishing statement |
+| Evidence | Why is the implication supported? | Inspected argument using the common value as input |
+| Scope | What may be concluded? | A solution assuming the two requested entries are equal |
 
 Do not compress these fields into a confidence percentage. A confidence score cannot say which hypothesis a downstream proof must retain.
 
@@ -62,15 +62,15 @@ The diagram separates the reviewer from the decision to reuse a result. In a sma
 
 ## 4. What changes when a proof is revised?
 
-On $\mathbb P^1$ over a field, restrict the trivial line bundle to two distinct rational points. Constants restrict to pairs $(c,c)$. The section $(1,1)$ lifts, while $(1,0)$ does not.
+Recall Module 1's rule $r(c)=(c,c)$. The requested output $(1,1)$ is produced by $c=1$, while $(1,0)$ cannot be produced. No geometric interpretation is needed for this review test.
 
-A review of the constant-one witness supports the first section. If a revision replaces it by $(1,0)$, the old review no longer supports the target. Yet the calculation of the restriction image remains reusable. A good change review therefore says both what expires and what survives.
+A review of the input $c=1$ supports the first requested output. If a revision replaces that output by $(1,0)$, the old review no longer supports the target. Yet the description of the possible outputs remains reusable. A good change review therefore says both what expires and what survives.
 
 Compare three revisions:
 
 1. A typographical correction leaves the proposition and proof unchanged. Confirm that it is only editorial.
 2. A new proof of the same statement replaces a cited theorem. Review the replacement argument and its assumptions; the old review remains evidence about the old proof.
-3. A changed section, domain, quantifier, or line bundle changes the mathematical target. Recheck applicability even if most prose is identical.
+3. A changed requested output, domain, quantifier, or allowed input changes the mathematical target. Recheck applicability even if most prose is identical.
 
 This is why “review every changed file from scratch” can waste effort, while “reuse every old approval” is unsafe. The useful unit is the affected mathematical inference. The system must still justify its judgment that an edit is irrelevant.
 
@@ -127,9 +127,9 @@ A failed continuity proof on $[0,1]$ is replaced by a correct proof on every $[0
 <details markdown="1">
 <summary>3. Two approvals disagree with a direct calculation</summary>
 
-Two reviews approve a lift of $(1,0)$, but the restriction image is proved to be the diagonal. What should the merge do?
+Two reviews approve an input for $(1,0)$, but every possible output is proved to have equal entries. What should the merge do?
 
-**Answer.** Inspect the arguments and objects, not the vote count. Under the stated hypotheses, the diagonal calculation excludes $(1,0)$. Locate the erroneous step in the approvals and withdraw their support. Agreement supplies no alternative mathematical implication.
+**Answer.** Inspect the arguments and objects, not the vote count. Under the stated hypotheses, the equal-entry calculation excludes $(1,0)$. Locate the erroneous step in the approvals and withdraw their support. Agreement supplies no alternative mathematical implication.
 </details>
 
 <details markdown="1">

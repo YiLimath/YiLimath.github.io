@@ -7,6 +7,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/). Geometry references below refer to the optional extension of Case A.
+
+
 A timeout, inaccessible source, malformed record, and nonzero connecting class require different responses. Only the last may establish that the chosen section does not lift, and only with mathematical evidence.
 
 ## The contract
@@ -25,4 +28,4 @@ Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbe
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
