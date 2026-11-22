@@ -201,3 +201,59 @@
   overflow-y: hidden;
   padding-bottom: 0.2em;
 }
+
+/* Series landing page: a short entry path and an expandable chapter guide. */
+.agent-system-hub .page__content {
+  .research-start-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 64rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .research-start-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1.35rem;
+    border: 1px solid #cbd9e3;
+    border-radius: 10px;
+    background: #f6f9fc;
+    color: #263746;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1.6;
+    strong { font-size: 1.12em; line-height: 1.35; }
+    &:hover { border-color: #376887; background: #edf4f9; }
+    &:focus-visible { outline: 3px solid #376887; outline-offset: 3px; }
+  }
+  .research-card-step { color: #526779; font-size: 0.86em; font-weight: 600; }
+  .research-card-link { margin-top: auto; color: #245978; font-weight: 600; }
+  .research-chapter-group {
+    max-width: 55rem;
+    margin: 0 0 0.9rem;
+    border: 1px solid #d4dfe7;
+    border-radius: 8px;
+    background: #fff;
+    summary {
+      padding: 1rem 1.15rem;
+      cursor: pointer;
+      color: #203f56;
+      font-weight: 600;
+      line-height: 1.5;
+      &:hover { background: #f4f8fb; }
+      &:focus-visible { outline: 3px solid #376887; outline-offset: 2px; }
+    }
+    &[open] summary { border-bottom: 1px solid #e1e8ee; }
+    > p, > ul { margin: 1rem 1.25rem; font-size: 0.94em; }
+    > ul { padding-left: 1.3rem; }
+    li { margin-bottom: 0.7rem; }
+  }
+  .research-part-number { margin-right: 0.4rem; color: #657d90; }
+}
+@media (max-width: 760px) {
+  .agent-system-hub .page__content .research-start-grid { grid-template-columns: 1fr; }
+}
+@media print {
+  .agent-system-hub .research-chapter-group > :not(summary) { display: block !important; }
+}
