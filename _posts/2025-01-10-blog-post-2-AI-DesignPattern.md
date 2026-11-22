@@ -12,15 +12,8 @@ Design reasoning systems that help an agent solve real mathematical problems—o
 
 The course focuses on **birational geometry**. Its lasting subject is how to specify a problem, organize proof search, use the literature, and check evidence. Models and tools will change; these mathematical responsibilities remain.
 
-## Start with the central project
 
-[**Uniqueness of smooth minimal surfaces**](/posts/2026/08/agent-system/birational-proof-workshop/)
-
-Begin with a direct attempt using your agent. The workshop supplies the exact target, primary sources, two complete proof routes, and a relative-nef transfer problem. Work through the modules to address the gaps you actually encounter.
-
-**Background:** smooth surfaces, divisors, intersection numbers, nefness, and blowups. Elementary examples within the modules are optional explanations.
-
-## The course at a glance
+## Outline of the posts
 
 Follow this sequence while working on the same proof project.
 
