@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Prompt Chaining Pattern"
+title: "Stage a Theorem Application"
 permalink: /posts/2026/08/agent-system/prompt-chaining/
 tags:
   - Agent System
@@ -7,59 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A theorem application has natural stages: retrieve, transcribe, instantiate, check hypotheses, and derive the requested conclusion. In Case A, a result about a nearby sheaf is not a result about the group needed by the lifting sequence.
 
-![Prompt chaining workflow](/images/agent-system/02-prompt-chaining.svg)
+## The contract
 
-*Figure: specialized stages pass structured artifacts forward.*
+Each stage consumes versioned artifacts and returns its promised artifact or an obstruction. Preserve the source statement beside the extraction. The matching stage must supply evidence for positivity or retain it as open; the presentation stage cannot erase that condition.
 
-**In one sentence.** Split one overloaded prompt into stages so each has a checkable output, paying latency and the risk that an early error propagates.
+## Trade-offs and failure modes
 
-## Problem
+Chaining localizes errors but can amplify an early transcription mistake. Audit the weakest boundary. When the stages require revision, represent the feedback explicitly instead of forcing a one-way pipeline. A chain is an implementation of mathematical interfaces, not a reason to divide every task into more prompts.
 
-A single prompt must often perform incompatible jobs: interpret an input,
-extract structure, reason, verify, and format a deliverable. The result is hard
-to inspect and difficult to repair.
+## Build and test
 
-## Intent and structure
+Construct a source statement, hypothesis matrix, and conditional lifting argument. Leave positivity unresolved and confirm that no stage silently promotes it to a premise.
 
-Prompt chaining divides the task into ordered stages:
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-`input → extraction → transformation → checking → presentation`
+---
 
-Each stage has a narrower responsibility and passes an intermediate artifact to
-the next stage. The chain can use one model or different models.
-
-## Stable interface
-
-The interface is the intermediate artifact: its schema, required fields,
-provenance, and error status. Natural-language instructions are implementation
-details around that contract.
-
-## When it helps
-
-Use chaining when stages have clear dependencies, when intermediate errors need
-to be localized, or when different stages require different models or tools. A
-mathematical example is `paper → metadata → theorem statement → proof skeleton
-→ checked exposition`.
-
-## Forces and failure modes
-
-Chaining improves observability and revision, but adds latency and can propagate
-an early extraction error through every later stage. Validate high-value
-artifacts before continuing; formatting success is not mathematical correctness.
-
-## Real-world application
-
-In an invoice or compliance workflow, one stage extracts fields, another
-checks them against policy, and a final stage prepares a human-readable report.
-Each stage can be replayed from its artifact when a supplier changes a field or
-the policy is revised.
-
-## Reference basis
-
-This pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 1, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-the explicit workflow treatment in Chapters 2
-and 6. Anthropic gives an independent engineering description of prompt
-chaining and its intermediate gates in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

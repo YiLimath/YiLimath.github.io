@@ -8,142 +8,54 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+An admission gate controls what a research system may use as a premise. It does not turn a model's confidence into mathematical truth.
 
-![The verification gate](/images/agent-system/33-verification-gate.svg)
+[![Claim admission and revision](/images/agent-system/research-admission.svg)](/images/agent-system/research-admission.svg)
 
-*Figure: generation is broad and may be wrong; a single gate decides what is
-allowed to become something other results depend on.*
+The arrows describe stored state transitions. A rejected or unresolved argument returns to an obligation queue; it is never silently promoted by repeated agreement.
 
-**In one sentence.** Separate the tier of things the system has *produced* from
-the tier of things it may *build on*, and let nothing cross between them except
-through an independent verdict.
+## The record being checked
 
-## Problem
+Freeze the statement, quantifiers, hypotheses, proof text, source versions, and dependency identifiers before review. A verdict applies to that version only. Give the reviewer the complete argument and cited evidence, but omit persuasive summaries of earlier approval. A fresh context can reduce anchoring; it cannot establish statistical independence between models.
 
-Reflection improves a draft. It does not answer a different question: once a
-result is produced, may other work depend on it?
+## Admission policy and evidence status
 
-Without an answer, an agent's outputs form a flat pool in which a checked lemma,
-an unchecked lemma, and a plausible-sounding guess are indistinguishable. The
-damage compounds. A later step cites the guess, a third step cites the second,
-and by the time the error surfaces there is no way to determine what is
-contaminated without redoing everything. This is the characteristic failure of
-long-running research systems, and no amount of care inside any single step
-prevents it, because the defect is in the absence of a tier boundary rather than
-in the quality of the reasoning.
+Admission is a permission decision. Keep three independent fields instead of one ambiguous “verified” flag:
 
-## Intent and structure
+| Field | Example values | Question answered |
+|---|---|---|
+| Workflow | Candidate, in review, admitted, withdrawn | What has happened to the artifact? |
+| Evidence | Source-checked, informal-reviewed, formal-checked | What kind of check supports it? |
+| Scope | Unconditional, conditional on P, fixed object version | Exactly what may be concluded? |
 
-`candidate → independent verifier → binary verdict → gated write → dependency graph`
+A conditional argument can be admitted for conditional use. Its assumptions must remain visible in every dependent result. A withdrawn argument loses its permission to support further work; another argument may still justify the same statement.
 
-Four commitments make this a pattern rather than an intention.
+A model-reviewed argument can still be wrong. Human review also remains fallible. Formal checking gives a different assurance: the kernel checks the encoded proposition relative to its axioms. Audit both the correspondence to the intended mathematics and the axioms, including placeholders. See the [Lean reference on axioms](https://lean-lang.org/doc/reference/latest/Axioms/).
 
-**The verifier is independent.** Different context, ideally a cold one, and no
-access to the generator's reasoning. A critic that inherits the generator's
-context inherits its blind spot, and self-assessment then measures fluency
-instead of correctness.
+## A mathematical test case
 
-**The verdict is binary.** A result is accepted only with zero critical errors
-and zero gaps. "Correct modulo a routine argument" is not accepted. This rule
-looks harsh and is the entire load-bearing element: the moment a partial verdict
-can be stored, the tier distinction is gone and the store is back to being a
-pool of assertions with optimistic labels.
+Suppose a worker proposes to apply a theorem proved for projective varieties to a compact Kähler space. A bibliography match is insufficient. Record the source's precise statement and a hypothesis table. The projectivity row is unresolved unless a separate argument supplies it or a suitable Kähler theorem is found. The candidate remains conditional; adding a second approving model does not discharge that row.
 
-**The write is gated by role.** The component that generates cannot be the
-component that admits. If a worker can write to the store directly, the gate is
-advisory, and an advisory gate is not a gate.
+The reviewer returns one of: a localized gap, a counterexample with all hypotheses checked, an unresolved source question, or a review report explaining each inference. A failed proof does not refute its conclusion. A failed source search does not establish novelty.
 
-**Dependencies are recorded.** Each accepted result names what it was derived
-from. This is what makes an error survivable: when a fact is revoked, everything
-downstream is revoked with it, mechanically, without a judgment call about how
-far the damage reached.
+## Changes and invalidation
 
-## Stable interface
+Only the admission service may change premise permissions. Store the reviewer, review criteria, evidence, and content hashes. When a dependency is withdrawn, mark its descendants stale and suspend their use. Descendants may have alternative proofs; recheck those rather than declaring every descendant false. Deduplicate identical retries and never accept a verdict for a different statement hash.
 
-An accepted record carries the statement, the argument, the verdict with its
-criteria, the verifier's identity and version, the dependencies by identifier,
-and a content address. Content addressing matters more than it appears to: if
-the statement is edited, the identifier changes, so a silent revision cannot
-masquerade as the thing that was verified.
+## Evaluation
 
-The rejection path needs a contract too. A rejection returns the violated
-criterion and repairable feedback, never a bare score, since a score tells the
-generator that something is wrong without telling it what to change.
-
-## Mathematical application
-
-This is the pattern's home ground, and the one place where its strictness is
-uncontroversial. Search over proof strategies is enormously productive and
-enormously unreliable; the two facts are compatible only if the system
-distinguishes what it tried from what it established.
-
-Concretely, the tiers separate as: conjectures and heuristics, which may be
-stored freely and cited as motivation; findings, which record what an
-exploration observed; and facts, which have passed the gate and may be used as
-lemmas. Only the third tier is citable in a proof. A retrieved theorem is not a
-fact about the current problem until its hypotheses have been checked against
-the current hypotheses — which is why retrieval and verification are different
-patterns, and why a successful retrieval with mismatched hypotheses is the most
-dangerous output the system can produce.
-
-The discipline pays off precisely when something goes wrong. If a lemma accepted
-in week two is found defective in week six, the dependency graph answers "what
-else falls?" in one query, rather than by rereading six weeks of work.
-
-## Forces and failure modes
-
-A strict gate is slow and rejects work that is probably fine, and the pressure
-to relax it is constant and reasonable-sounding. The failure modes are worth
-naming because each is a specific way of keeping the gate while losing its
-value: verifier capture, where the generator learns to produce what the verifier
-accepts rather than what is correct; gate erosion, where a "provisional" tier is
-added and gradually becomes citable; and unrecorded dependencies, which leave
-the graph unable to cascade and so silently convert revocation into a manual
-audit.
-
-Independence is also expensive. A cold-context verifier re-reads material the
-generator already has in context, and this cost is the price of the
-independence, not an inefficiency to optimize away.
-
-## Real-world application
-
-The pattern generalizes past mathematics wherever a system accumulates results
-over time: a compliance assistant that separates retrieved policy text from its
-own interpretation, a data pipeline that separates validated records from
-inferred ones, a code agent that separates tests that pass from changes that
-merely compile. In each case the question is the same — what may the next step
-treat as settled — and in each case the answer must be a property of the store
-rather than of anyone's confidence.
-
-## Exercises
-
-1. In a system you have built, classify every persisted item as conjecture,
-   finding, or fact. Which items are cited as if they were facts but were never
-   gated?
-2. Design the rejection contract for a proof checker so that a generator can act
-   on it without seeing the checker's full reasoning. What is the minimum it must
-   return?
-3. A worker proposes a lemma the verifier accepts, and a later verifier version
-   would reject it. What does the record need for this to be detectable?
-4. Argue the case for a "provisional" tier, then show concretely how it becomes
-   citable within six months. What control would prevent that?
-5. Compare the cost of a cold-context verifier against a critic sharing the
-   generator's context, on a task where the generator's premise is wrong.
+Seed the workflow with a missing hypothesis, a circular dependency, a changed source version, and a deliberately incomplete proof. Check whether the gate blocks each defect and reports the exact obligation. Measure false admissions as well as false rejections. Agreement rates and fluent reports are not substitutes for these tests.
 
 ## Reference basis
 
-The pattern is a generalization of the correctness boundary in the Danus and
-Rethlas case study on the [case-study page](/posts/2026/08/agent-system/math-research-case-study/),
-where a role-gated write path admits only verifier-accepted results into a
-content-addressed fact graph. Its components appear separately in the pattern
-books: reflection and critique in Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 4, and the trustworthy-generation, LLM-as-Judge, and self-check patterns
-in Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-Patterns 11, 17, and 31. What the books treat as quality improvement on a single
-output becomes, when combined with a gated write and a dependency graph, a
-constraint on what the system is permitted to accumulate. Dibia,
-[*Designing Multi-Agent Systems*](https://multiagentbook.com/), Chapter 10,
-supplies the corresponding evaluation vocabulary, and the plan-approve-execute
-control in Mitra, [*System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
-Chapter 2, is the same separation applied to actions rather than to claims.
+Gulli's *Agentic Design Patterns*, Chapter 4, supplies the reflection pattern. The admission policy here is a proposed mathematical specialization, not a correctness theorem about reflection. Formal checking and axiom auditing follow the Lean documentation linked above. Keep the distinction between a design proposal and a measured property of an implementation throughout the series.
+
+## Capstone practice
+
+Run Stage 6 with the false open-interval claim. Write a review that names the missing hypothesis and supplies the exact counterexample. Then replay a review against a changed statement version: admission must reject the mismatch.
+
+Use the [lab](/posts/2026/08/agent-system/hands-on-lab/) for record mechanics. Supply mathematical evidence separately.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

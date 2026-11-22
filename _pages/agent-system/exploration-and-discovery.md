@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Exploration and Discovery"
+title: "Explore for Information, Not Reassurance"
 permalink: /posts/2026/08/agent-system/exploration-and-discovery/
 tags:
   - Agent System
@@ -7,63 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+Case B invites a cheap probe: does the proposed estimate depend on the approximation index? Answering that can change the plan more than a polished draft of the limit argument. Choose probes by what they can teach the scheduler.
 
-![Exploration and discovery workflow](/images/agent-system/22-exploration-discovery.svg)
+## The contract
 
-*Figure: course redraw of the pattern. The architecture makes the candidate
-frontier, worker roles, evidence ledger, and termination gate explicit; it is
-not a reproduction of the book's conceptual visual summary.*
+An exact counterexample refutes a specified implication. Numerical samples can suggest one but do not prove a universal assertion. An exploratory calculation may produce a complete proof; classify its output by evidence rather than by its origin in exploration.
 
-**In one sentence.** Search deliberately over candidates with an explicit test and a stopping rule; exploration produces evidence, never proof.
+## Trade-offs and failure modes
 
-## Problem
+Preserve the scope of negative results. In Case A, (1,0) does not lift from the two-point divisor, but nonzero upstairs sections still exist. “The method failed” and “the target is false” require different evidence. A budgeted search with no witness remains inconclusive.
 
-A single greedy line of reasoning can miss useful cases, counterexamples, or
-alternative proof strategies. Open-ended exploration can also spend resources
-without producing new information.
+## Build and test
 
-## Intent and structure
+Write compatible reports for non-liftability of (1,0) and successful lifting of (1,1). Name the exact statement each report addresses.
 
-`seed → branch or mutate → test → retain evidence → select or stop`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-The candidate representation, test procedure, scoring rule, and termination
-condition must be explicit. Exploration is a search procedure; it is not itself
-proof.
+---
 
-## Mathematical uses
-
-Use the pattern to generate conjectures, search examples, compare proof
-strategies, or explore neighboring definitions. Candidate records should retain
-the assumptions tested, the computation or argument used, and the reason for
-retaining or discarding the candidate.
-
-## Forces and failure modes
-
-Breadth improves discovery but creates combinatorial growth, duplicate
-candidates, and selection bias. Beam limits, diversity criteria, counterexample
-tests, budgets, and human review keep the process meaningful.
-
-## Design question
-
-What new evidence justifies expanding the search, and what evidence justifies
-stopping it?
-
-## Real-world application
-
-For product discovery or scientific search, several candidate explanations can
-be explored in parallel and tested against examples or counterexamples. The
-system should preserve discarded branches and apply a budgeted selection rule,
-so novelty does not replace evidence.
-
-## Reference basis
-
-The source pattern is Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 21.
-The branch-evaluate-prune structure, with an explicit state evaluator and search
-budget, is Pattern 14 in Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-after Yao et al., [Tree of Thoughts](https://arxiv.org/abs/2305.10601). The
-six-role decomposition in the figure follows the published description of
-Google Research's [AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Generation,
-Reflection, Ranking, Evolution, Proximity, and Meta-review coordinated by a
-Supervisor. For a research workflow that makes perspective discovery, source
-gathering, and outline curation concrete, compare the [STORM paper](https://aclanthology.org/2024.naacl-long.347/).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

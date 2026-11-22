@@ -7,12 +7,6 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
-
-![Tool use and code execution](/images/agent-system/06-tool-use.svg)
-
-*Figure: the agent acts through typed tool interfaces and receives explicit observations.*
-
 **In one sentence.** Act through typed interfaces that return explicit observations, so side effects are authorized and checkable rather than asserted.
 
 ## Problem
@@ -50,12 +44,15 @@ The Rethlas generation agent exposes theorem search and proof verification as
 explicit tools; Danus adds a role-gated gateway so different agents see
 different capabilities.
 
-## Real-world application
+## Mathematical system design: bind observations to the question actually computed
 
-An operations agent may query a database, run a diagnostic command, and open a
-ticket. Typed tool schemas, permission checks, timeouts, and explicit
-observations turn those side effects into a controlled workflow rather than an
-unreviewable conversation.
+Record exact inputs, arithmetic mode, software version, and the translation from mathematical objects to code.
+
+### Hands-on practice
+
+Compare floating-point samples of f(x)=x with the exact witness argument. State precisely what each output establishes.
+
+**Deliverable.** Save the input, intermediate artifacts, expected outcome, and actual outcome. Include one negative case that the system must reject. Use the [runnable ledger lab](/posts/2026/08/agent-system/hands-on-lab/) as a starting point; do not treat its bookkeeping checks as a proof checker.
 
 ## Reference basis
 
@@ -69,3 +66,7 @@ practically in James Phoenix and Mike Taylor, *Prompt Engineering for Generative
 AI*, O'Reilly, 2024, Chapter 4. For the packaging of tools and instructions as
 named, loadable capabilities — so that a capability's detail enters context only
 when it is needed — see Stephen Clear, *Claude AI Bible*, Chapters 14 and 16.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

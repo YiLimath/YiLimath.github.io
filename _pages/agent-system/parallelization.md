@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Parallelization Pattern"
+title: "Parallel Search Needs a Mathematical Merge Rule"
 permalink: /posts/2026/08/agent-system/parallelization/
 tags:
   - Agent System
@@ -7,56 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+Case A has alternative vanishing and direct-obstruction routes. Within either route, its setup and hypotheses are jointly necessary. Concurrency changes execution time, not this logical structure.
 
-![Parallelization pattern](/images/agent-system/04-parallelization.svg)
+## The contract
 
-*Figure: independent branches run concurrently and are combined by an aggregation step.*
+Preserve each branch as an argument with its own premises. One complete route can suffice; two incomplete routes do not become complete by agreeing. A common false setup can contaminate every branch, so record shared dependencies before interpreting agreement.
 
-**In one sentence.** Run genuinely independent branches at once and aggregate deliberately; the hard part is the aggregation rule, not the concurrency.
+## Trade-offs and failure modes
 
-## Problem
+Separate execution is not statistical independence. Compare parallel work with a sequential baseline under the same total budget. Cancel redundant work when a sufficient route closes unless another route has independent mathematical value, and retain useful evidence from cancelled branches.
 
-Some tasks contain independent branches, but a sequential agent wastes latency
-and may become anchored to its first idea.
+## Build and test
 
-## Intent and structure
+Withdraw the vanishing evidence in the workbench: the direct route must survive. Withdraw the common setup: both routes must stop supporting the conclusion.
 
-`shared input → independent branches → aggregation → evaluation`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-Branches may use different prompts, models, representations, or search
-directions. The aggregator compares outputs instead of merely concatenating
-them.
+---
 
-## Mathematical example
-
-For a difficult conjecture, one branch can search for counterexamples, another
-can try a direct proof, and another can look for a reduction to a known result.
-Each branch should return assumptions, claims, evidence, and unresolved gaps.
-
-## Forces and failure modes
-
-Parallelization improves coverage and latency when work is independent, but it
-increases cost, duplicate work, and aggregation difficulty. Shared mutable state
-can create race conditions; use immutable artifacts or explicit ownership. The
-aggregator needs a quality rule, not just a majority vote.
-
-## Design test
-
-Would the branches still be correct if they were run in a different order or on
-different machines?
-
-## Real-world application
-
-In due-diligence or incident analysis, independent workers can inspect separate
-repositories, logs, or source collections at the same time. Aggregation is safe
-only after each branch returns a typed result with provenance and an explicit
-failure status.
-
-## Reference basis
-
-This is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 3, combined with Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapters 2 and 6. Anthropic distinguishes
-sectioning and voting forms of the pattern in [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
-and warns that shared mutable state requires an explicit conflict policy.
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

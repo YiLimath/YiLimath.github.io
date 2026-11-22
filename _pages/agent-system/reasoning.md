@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Reasoning and Representation Change"
+title: "Representation Change and the Return Argument"
 permalink: /posts/2026/08/agent-system/reasoning/
 tags:
   - Agent System
@@ -8,80 +8,32 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+Case A changes a geometric question into an obstruction calculation. Exactness supplies the bridge: the chosen section lifts precisely when its connecting class vanishes. The new representation is useful because its relationship to the target is proved.
 
-![Reasoning and representation change](/images/agent-system/27-reasoning-representation.svg)
+A transformation without such a bridge may solve only a related problem. Passing to a larger domain, special fiber, birational model, or numerical class can lose the information needed by the original conclusion.
 
-*Figure: a course architecture for changing representations when the current
-view hides the next useful inference. Read it left to right; the dashed loop
-means that a failed check triggers revision rather than a more confident claim.*
+## The transformation contract
 
-**In one sentence.** When the model is not underpowered but the representation is wrong, change the representation; chains and trees are the two shapes, and a tree pays only when partial work can be judged.
+Record the original objects, transformed objects, construction, preserved hypotheses, new assumptions, transformed result, and return implication. These are mathematical obligations, not just fields to fill with confident prose.
 
-## Problem
+[![A reduction with an explicit return proof](/images/agent-system/research-transfer.svg)](/images/agent-system/research-transfer.svg)
 
-Some tasks fail because the chosen representation hides the next obstruction,
-not because the model needs a longer response.
+*If the return implication is open, keep the transformed result as partial progress and the original target unresolved.*
 
-## Intent and structure
+In Case B, passing to a limit requires a specified topology, suitable compactness or convergence evidence, and an argument that the desired property survives. A bound for each approximant does not automatically supply a uniform bound. In Case C, changing a model without lowering the induction rank is preparation, not induction.
 
-`current representation → transform or decompose → candidate reasoning → check`
+## Search structure is a separate choice
 
-The system may use linear decomposition, multiple candidate paths, program-aided
-reasoning, abstraction, analogy, or example generation. The output should be an
-artifact or proof obligation, not an unbounded private monologue.
+Chains, branching search, and shared dependency graphs organize attempts. None supplies the missing implication. A heuristic may rank transformations, but its score is evidence about search preference, not mathematical validity.
 
-## Mathematical representation changes
+Sometimes the best next step is to change the target explicitly and pursue a useful partial theorem. That is a new branch with a named scope, not a silent repair of the original claim.
 
-- prose → definitions, claims, and hypotheses;
-- geometric picture → invariant, diagram, or coordinate model;
-- conjecture → examples and counterexample tests;
-- proof idea → lemmas and dependency graph;
-- symbolic expression → computer algebra or formal code.
+## Build and test
 
-## Linear and branching reasoning
+Write the complete Case A transformation contract. Remove exactness from the evidence and identify the missing bridge. Then write the Case B limit contract and leave uniformity unresolved. Both records should remain useful without being reported as completed proofs.
 
-Two shapes cover most of what is used in practice. A **chain** decomposes the
-problem into ordered steps and commits to each; it is cheap, and it fails when an
-early commitment was wrong, since nothing revisits it. A **tree** maintains
-several partial candidates, evaluates them against a heuristic, and expands or
-abandons branches deliberately, which buys the ability to backtrack at the cost
-of a search budget and an evaluation rule.
+Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-The choice is not a matter of sophistication. A tree is worth its cost only when
-the problem admits a meaningful intermediate evaluation — when a partial solution
-can be judged before it is complete. Where no such judgement exists, branching
-multiplies cost while selecting essentially at random, and a chain with an
-independent check afterwards is the better design.
+---
 
-## Forces and failure modes
-
-More search can improve coverage but increases cost and distracts from the
-obstruction. Tree-style exploration can explode; linear reasoning can miss a
-branch. Use a budget, a verifier, and a criterion for changing representation.
-
-## Design test
-
-Which representation makes the next mathematical obstruction visible, and what
-independent check can reject the resulting candidate?
-
-## Real-world application
-
-In root-cause analysis, the same incident can be represented as a timeline, a
-dependency graph, and a set of competing hypotheses. Representation change is
-valuable when one view hides a dependency; each proposed explanation still
-needs tests or evidence before it is accepted.
-
-## Reference basis
-
-This page synthesizes Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 17, with the reasoning and representation patterns in Lakshmanan and
-Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-Chapter 5, where chain-of-thought and tree-of-thoughts appear as Patterns 13 and
-14. The two shapes have primary sources: Wei et al., [Chain-of-Thought Prompting
-Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903),
-and Yao et al., [Tree of Thoughts: Deliberate Problem Solving with Large Language
-Models](https://arxiv.org/abs/2305.10601), which makes the state evaluator and
-the search budget explicit components rather than prompting style. ReAct provides
-a primary example of interleaving reasoning with information-gathering actions:
-[paper](https://arxiv.org/abs/2210.03629).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

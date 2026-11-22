@@ -32,7 +32,7 @@ mathematically accountable?**
 > can autonomously solve the problems discussed here. The mathematical examples
 > motivate the design; the software contracts below are proposed interfaces.
 
-![Spiraling induction: descend to a suitable object, return through a transfer proof, and advance an acyclic theorem ledger](/images/agent-system/30-birational-geometry-agent.svg)
+[![Spiraling induction: descend to a suitable object, return through a transfer proof, and advance an acyclic theorem ledger](/images/agent-system/30-birational-geometry-agent.svg)](/images/agent-system/30-birational-geometry-agent.svg)
 
 *A turn of the spiral has an outward journey and a return journey. Constructing
 a lower-dimensional pair is only the first half. A separate transfer argument
@@ -226,7 +226,7 @@ $$
 
 Fix a positive integer $m$ such that $mD$ is Cartier. Suppose the available
 lower-dimensional input gives
-$H^0(S,\mathcal O_S(mD|_S))\ne0$, and suppose separately that
+$H^0(S,\mathcal O_S(mD\vert _S))\ne0$, and suppose separately that
 
 $$
 H^1(X,\mathcal O_X(mD-S))=0.
@@ -236,7 +236,7 @@ $$
 
 | Step | Artifact produced | What remains |
 |---|---|---|
-| Construct | $(S,B|_S)$ with $D|_S=K_S+B|_S$ | Check the lower-dimensional theorem |
+| Construct | $(S,B\vert _S)$ with $D\vert _S=K_S+B\vert _S$ | Check the lower-dimensional theorem |
 | Check | Smooth $S$, dimension $n-1$, klt induced pair | Match any positivity and divisibility assumptions |
 | Invoke | A nonzero section $s_S$ at this particular multiple $m$ | Lift it to $X$ |
 | Transfer | Surjectivity of the restriction map below | Choose a lift of $s_S$ |
@@ -451,3 +451,13 @@ round of discussion has finished.
 6. R. Lazarsfeld, *Positivity in Algebraic Geometry I: Classical Setting:
    Line Bundles and Linear Series*, Springer, 2004.
    [Publisher record](https://link.springer.com/book/10.1007/978-3-642-18808-4).
+
+## Capstone practice
+
+Implement the divisor-return example as construction, applicability, lower-dimensional result, and transfer records. Remove the vanishing input in one fixture and change the multiple in another. Neither fixture may close the ambient target. Include one valid case so that rejecting everything cannot pass.
+
+Use the [lab](/posts/2026/08/agent-system/hands-on-lab/) for record mechanics. Supply mathematical evidence separately.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Exception Handling and Recovery"
+title: "Distinguish a Tool Failure from a Mathematical Obstruction"
 permalink: /posts/2026/08/agent-system/exception-recovery/
 tags:
   - Agent System
@@ -7,56 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A timeout, inaccessible source, malformed record, and nonzero connecting class require different responses. Only the last may establish that the chosen section does not lift, and only with mathematical evidence.
 
-![Exception handling and recovery](/images/agent-system/16-exception-recovery.svg)
+## The contract
 
-*Figure: failures are classified and routed to bounded retry, repair, fallback, escalation, or safe stop.*
+Classify before retrying. Bound transient retries, repair malformed inputs, seek another source where appropriate, and replan when the route fails mathematically. Save completed observations at artifact boundaries before acknowledging work.
 
-**In one sentence.** Treat failure as state rather than as another prompt: classify it, retry only where retrying helps, and surface what cannot be repaired.
+## Trade-offs and failure modes
 
-## Problem
+A restarted worker should consume the same versioned inputs or create a new attempt. It must not merge fragments from different sheaves or sections. A failed method leaves the target open unless its failure actually proves the target false.
 
-Tools fail, retrieval returns nothing, output violates a schema, services time
-out, and plans become invalid. Treating every failure as another prompt hides
-the actual state of the system.
+## Build and test
 
-## Intent and structure
+Inject a timeout, stale review, and nonzero obstruction. Write three recovery records and justify which one, if any, supports a mathematical conclusion.
 
-`action → classify failure → retry / repair / fallback / escalate / stop`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-Classify failures as transient, structural, semantic, permission-related, or
-mathematical uncertainty. The category determines the recovery policy.
+---
 
-## Recovery contract
-
-Preserve the failed artifact, error, inputs, attempt count, and checkpoint. Retry
-only when the operation is safe and bounded. Repair malformed structure without
-silently changing content. Fall back to a simpler method only when its quality
-limits are explicit.
-
-## Mathematical rule
-
-An unresolved gap is a valid terminal state. Never convert it into a successful-
-looking summary merely because a later generation step is fluent.
-
-## Forces and failure modes
-
-Recovery improves availability but can amplify side effects, duplicate work, or
-loop forever. Use idempotence, exponential backoff where appropriate, retry
-limits, circuit breakers, and human escalation.
-
-## Real-world application
-
-When a payment API, retriever, or code tool fails, the system should classify
-the failure before retrying. A bounded retry, an idempotent replay, a fallback,
-or a human escalation is safer than sending the same action again until the
-context window or budget is exhausted.
-
-## Reference basis
-
-The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 12, “Exception Handling and Recovery.” The production consequences of
-retries, fallbacks, and failure isolation are developed in Mitra, [*System
-Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
-Chapter 2, including the circuit-breaker and tiered-fallback patterns.
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

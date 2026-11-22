@@ -99,7 +99,7 @@
 <text x="750" y="866" text-anchor="middle" class="body">write-paper (publication) · human-summary (progress report)</text>
 <path d="M1160 625H1130V775H1060V805" class="teal"/>
 <polygon points="1060,805 1054.5,794 1065.5,794" class="ah-teal"/>
-<text x="1190" y="766" text-anchor="middle" class="small">verified facts / reports</text>
+<text x="1190" y="766" text-anchor="middle" class="small">reviewed claims / reports</text>
 
 <!-- Cross-cutting services -->
 <rect x="330" y="905" width="990" height="45" rx="9" fill="#ffffff" stroke="#c4ced8" stroke-width="2"/>

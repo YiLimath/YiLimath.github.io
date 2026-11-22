@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Choosing and Composing Patterns"
+title: "Choose Architecture Against a Named Failure"
 permalink: /posts/2026/08/agent-system/choosing-patterns/
 tags:
   - Agent System
@@ -7,81 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figures
+If the failure is a missing theorem hypothesis, add an applicability record. If it is stale evidence, bind reviews to versions. If it is duplicated exploration, share task state. A larger team does not automatically fix any of these.
 
-![Agent system: system context view](/images/agent-system/00-agent-system-architecture.svg)
+## The contract
 
-*Figure: the context view shows the agent system as one unit and labels its
-external relationships.*
+Chaining organizes stages, routing selects capabilities, parallelization explores alternatives, memory preserves evidence, and admission controls reuse. They should operate on common statements and arguments rather than invent incompatible records for every pattern.
 
-![Agent system: container view](/images/agent-system/28-agent-system-container.svg)
+## Trade-offs and failure modes
 
-*Figure: the container view expands the boundary into replaceable
-responsibilities and labels the interfaces between them.*
+Compare each added mechanism against a simpler baseline under a fixed budget. A stronger model may combine several responsibilities in one worker without erasing their contracts. The same design should preserve the chosen section, quantifier dependence, and induction rank across all three cases.
 
-**In one sentence.** Begin with the smallest deterministic structure that meets the requirement, and add a pattern only against a named source of complexity.
+## Build and test
 
-## Start with the task shape
+Start with one worker and the workbench. Add one mechanism to address a measured failure. State what result would persuade you to remove it again.
 
-Place the task on the workflow–autonomy spectrum: fixed workflow, bounded loop,
-or open-ended delegation. Then identify the dominant difficulty: decomposition,
-specialization, uncertainty, long context, coordination, reliability, or cost.
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-## Selection rule
+---
 
-Start with the smallest deterministic structure that meets the requirement. Add
-a pattern only when it addresses a named source of complexity. Compare candidate
-designs by correctness, latency, cost, observability, reversibility, reliability,
-and ease of revision.
-
-## Useful compositions
-
-- chaining + structured output for staged transformations;
-- router + specialized tools for heterogeneous requests;
-- plan + memory + checkpoints for long-horizon work;
-- parallelization + aggregation + evaluation for independent alternatives;
-- retrieval + provenance + reflection for source-sensitive answers;
-- multi-agent cooperation + human delegation for high-stakes decisions.
-
-## Anti-patterns
-
-Do not add agents merely to sound autonomous, use retrieval without an
-applicability check, or add reflection without a stopping rule. More components
-increase coordination surfaces and failure modes.
-
-## Design questions
-
-What is uncertain? Which interface makes it observable? What is the simplest
-pattern that provides that interface?
-
-## Read the architecture at multiple levels
-
-Do not ask one diagram to answer every architecture question. Read the views in
-order:
-
-1. **Context:** who exchanges responsibility with the agent system?
-2. **Container:** which internal responsibilities own orchestration, runtime,
-   knowledge, action, evaluation, and persistence?
-3. **Dynamic:** in what order do messages, decisions, parallel branches, and
-   feedback occur? The sequence and workflow pages provide these views.
-4. **Operations:** which gateways, fallbacks, checkpoints, and evaluators make
-   the design reliable in production?
-
-The same system can therefore be structurally complicated without becoming
-conceptually muddled. Keep the visual language stable, but choose the diagram
-form that matches the relation being explained.
-
-## Real-world application
-
-For a customer-support or repository-maintenance system, begin with the
-failure that matters: misrouting, unsafe side effects, missing evidence, or an
-unreviewed result. Select the smallest composition that exposes that failure,
-then add parallel workers, memory, or reflection only when the workflow needs
-their contract.
-
-## Reference basis
-
-The selection principle follows Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapter 2, Sections 2.1–2.4, and Anthropic's [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents),
-which recommends simple composable workflows before adding autonomous
-complexity.
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

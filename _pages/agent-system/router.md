@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Router Pattern"
+title: "Route by the Evidence Required"
 permalink: /posts/2026/08/agent-system/router/
 tags:
   - Agent System
@@ -7,61 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+In Case B, finding a compactness theorem, checking constant dependence, and justifying passage to a limit are different tasks. A router should inspect the unresolved obligation rather than route everything containing “analysis” to one specialist.
 
-![Router pattern](/images/agent-system/03-router.svg)
+## The contract
 
-*Figure: an abstract routing decision selects one interchangeable handler while
-preserving a common result contract.*
+A source handler returns a source and proposed match; a calculation handler returns inputs and interpreted output; a reviewer returns an assessment of an inference. Their shared envelope preserves different evidence kinds. Routing success is not proof success.
 
-**In one sentence.** Send each request to the handler suited to it while preserving one result contract, so that specialization does not fragment the interface.
+## Trade-offs and failure modes
 
-## Problem
+Allow abstention when the obligation is underspecified. Record the routing reason and permit reassignment after new evidence. Classification is a search decision; rules, models, or researchers may implement it without changing its mathematical status.
 
-One general agent is rarely the best implementation for every task class. A
-retrieval question, a code execution request, and a proof critique need
-different tools, prompts, or levels of reasoning.
+## Build and test
 
-## Intent and structure
+Split “justify the limit” into topology, uniformity, compactness, and identification obligations. Specify the evidence that would close each one.
 
-`request → classify → specialized path → common output`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-The router may be a deterministic rule, a small classifier, or a model-based
-decision. The downstream paths should converge on a common result schema.
+---
 
-## Stable interface
-
-Make the routing label, confidence or rationale, selected capability, and
-fallback behavior explicit. The router must not silently discard a request it
-cannot classify.
-
-## Mathematical example
-
-A research assistant can route a request to definition lookup, theorem search,
-example construction, proof checking, or exposition. The output should state
-which route was used and what evidence supports it.
-
-Those are application examples, not elements of the abstract pattern. The
-pattern itself only assumes a request, a routing decision, interchangeable
-handlers, and a shared result contract.
-
-## Forces and failure modes
-
-Routing reduces prompt complexity and allows specialization, but misclassification
-can be worse than using a general path. Use an abstain or human-escalation path,
-monitor route distributions, and test boundary cases.
-
-## Real-world application
-
-Customer support is a direct use: billing, technical, and account requests have
-different tools and owners, while the caller still expects one response
-contract. Low-confidence or high-risk cases should route to a human queue.
-
-## Reference basis
-
-The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 2. It is also treated
-as a routing workflow in Anthropic's [engineering guide](https://www.anthropic.com/engineering/building-effective-agents)
-and as model routing, tiered orchestration, and intent routing in Mitra, [*System
-Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
-Chapters 2 and 6.
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

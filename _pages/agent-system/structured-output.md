@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Structured Output and Dependency Injection"
+title: "Types That Preserve Mathematical Distinctions"
 permalink: /posts/2026/08/agent-system/structured-output/
 tags:
   - Agent System
@@ -7,59 +7,26 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A record with `claim` and `confidence` is structured but mathematically weak. Useful types distinguish a statement from its argument, an assumption from a justified premise, and an evidence category from a workflow status.
 
-![Structured output pattern](/images/agent-system/13-structured-output.svg)
+Case A needs the chosen section and exact restriction map. Case B needs quantifier order and allowed constant dependencies. Case C needs indexed statements, base cases, and a rank. A generic summary field conceals all three.
 
-*Figure: a schema boundary makes intermediate artifacts parseable without claiming that they are true.*
+## Four checks, four meanings
 
-**In one sentence.** Fix the shape of whatever crosses a boundary, so the next component can consume it instead of interpreting prose.
+Parsing checks required fields. Referential validation checks that linked objects exist and match their versions. Policy validation checks whether the available evidence permits use. Mathematical review checks whether the inference is justified. Return these failures separately.
 
-## Problem
+The workbench hashes the argument together with its statement and premise records. This binds a review to what it inspected. It does not authenticate the reviewer, discover missing premises, or prove equivalence between differently worded statements.
 
-Free-form language is ambiguous at a workflow boundary. A downstream component
-should not have to guess whether a sentence is a claim, an error, a citation,
-or a request for another action.
+## Replace components without erasing evidence
 
-## Intent and structure
+Dependency injection supplies a source adapter or reviewer through a stable interface. It is useful when the implementation changes. However, an informal review cannot satisfy a policy requiring a formal certificate merely because both fit the same JSON schema.
 
-`task → schema-constrained artifact → parser/validator → next component`
+## Build and test
 
-The schema can constrain fields, types, enumerated statuses, or a grammar. It
-does not make the content true; it makes missing or malformed content visible.
+Create a valid record that interchanges the quantifiers in Case B. Parsing should succeed. Explain the separate semantic obligation needed to catch the error. Then run the workbench under informal-only and formal-only policies and compare the outcomes.
 
-## Mathematical artifacts
+Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-A theorem record can contain objects, hypotheses, conclusion, source, and
-status. A proof-step record can contain claim, dependencies, justification,
-verification status, and repair hints. A citation record can contain source,
-location, extracted statement, and provenance.
+---
 
-## Dependency injection
-
-Pass the model, retriever, checker, or tool into a component through an
-interface. The component then depends on a capability, not on one concrete
-implementation. This permits offline tests, model replacement, and controlled
-experiments.
-
-## Forces and failure modes
-
-Schemas improve parsing, testing, and auditing, but overly rigid schemas can
-discard useful uncertainty. Validate both syntax and semantics, and preserve an
-explicit `unknown`, `incomplete`, or `needs_review` status.
-
-## Real-world application
-
-An underwriting or compliance service can require every model response to be a
-record containing decision, evidence, uncertainty, and next action. The parser
-can reject malformed records before they reach a policy engine, while a valid
-record still remains subject to semantic review.
-
-## Reference basis
-
-The interface-first treatment follows Dibia, [*Designing Multi-Agent
-Systems*](https://multiagentbook.com/), Chapter 4, Section 4.5, “Enabling
-Structured Output,” together with Lakshmanan and Hapke, [*Generative AI Design
-Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-the constrained generation patterns in Chapters 1 and 2. The page treats
-schema validity and truth as separate checks, as required by both sources.
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

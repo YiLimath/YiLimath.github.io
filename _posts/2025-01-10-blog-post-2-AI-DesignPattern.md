@@ -1,5 +1,5 @@
 ---
-title: 'Agent System Design Pattern'
+title: 'Designing Reasoning Systems for Mathematical Research'
 date: 2026-08-01
 permalink: /posts/2026/08/Agent-System/
 tags:
@@ -8,107 +8,80 @@ classes: agent-system-hub
 full_page_reading: true
 ---
 
-The aim of this series is to give an introduction to design patterns for agent systems. The pages are independent, but they share one question:
+**A reasoning system for mathematical research should preserve the meaning of its problem while it searches, transforms objects, and accumulates knowledge.** This series develops the architecture needed to do that. Its subject is not a particular model, framework, or prompting fashion.
 
-> Where does the system need flexibility, and where does it need a stable, testable interface?
+A stronger model may change how much work a component can perform. It does not erase the distinction between a statement and an argument, a sufficient condition and a necessary one, or a useful partial result and a proof of the original target.
 
-An agent system trades determinism for flexibility. A design pattern is a reusable way to buy back determinism at the boundary where the task requires it. Each page therefore describes the recurring problem, intent, structure, stable interface, variable implementation, trade-offs, failure modes, and an example.
+## Start here
 
-![Agent system: system context view](/images/agent-system/00-agent-system-architecture.svg)
+1. Read the [design principles](/posts/2026/08/agent-system/design-principles/) for the central architectural boundaries.
+2. Work through the [three running cases](/posts/2026/08/agent-system/research-cases/): lifting a section, obtaining a uniform estimate, and composing a well-founded induction.
+3. Build the [research workbench](/posts/2026/08/agent-system/hands-on-lab/). The downloadable Python project runs without an API key and exposes both the power and the limits of dependency bookkeeping.
 
-*Architecture figure: the system context view introduces the agent system's
-external relationships; its internal containers are explained on the
-architecture-views page.*
+The elementary maximum example in the introduction is a smoke test. The three running cases carry the deeper lessons. The later birational-geometry chapter shows how the contracts scale to a proposed research architecture; it does not claim to implement a universal prover.
 
-> Claim. This series of blog posts was written in cooperation with AI.
+## How to study the series
 
+For a first pass, follow the six parts below. For implementation, keep the laboratory open and complete its eight stages alongside the relevant chapters. For a research project, begin with a known short proof, construct damaged variants, and evaluate the system before attempting an open problem.
 
-## Part I. Foundations
+Each chapter starts from a mathematical design decision, explains the contract and failure modes, and ends with a concrete experiment. Read the [source and claim guide](/posts/2026/08/agent-system/sources-and-claims/) to distinguish established precedents, worked mathematical arguments, design proposals, and reported implementations.
 
-1. [Terminology and atomic building blocks](/posts/2026/08/agent-system/foundations/)
-2. [The core agent loop](/posts/2026/08/agent-system/core-loop/)
-3. [Variation points and the stable interface](/posts/2026/08/agent-system/variation-points/)
+## I. Preserve the meaning of the problem
 
+- [The Objects a Reasoning System Must Represent](/posts/2026/08/agent-system/foundations/)
+- [Stable Contracts Under Changing Models](/posts/2026/08/agent-system/variation-points/)
+- [Types That Preserve Mathematical Distinctions](/posts/2026/08/agent-system/structured-output/)
+- [Context as a Scoped View of Research State](/posts/2026/08/agent-system/context-engineering/)
 
-## Part II. Workflow and control-flow patterns
+## II. Organize search without confusing it with proof
 
-5. [Prompt chaining](/posts/2026/08/agent-system/prompt-chaining/)
-6. [Router](/posts/2026/08/agent-system/router/)
-7. [Parallelization](/posts/2026/08/agent-system/parallelization/)
-8. [Plan and execute](/posts/2026/08/agent-system/plan-and-execute/)
-9. [Exploration and discovery](/posts/2026/08/agent-system/exploration-and-discovery/)
+- [A Research Loop Changes an Obligation](/posts/2026/08/agent-system/core-loop/)
+- [Proof Plans as Obligations and Alternatives](/posts/2026/08/agent-system/plan-and-execute/)
+- [Stage a Theorem Application](/posts/2026/08/agent-system/prompt-chaining/)
+- [Route by the Evidence Required](/posts/2026/08/agent-system/router/)
+- [Parallel Search Needs a Mathematical Merge Rule](/posts/2026/08/agent-system/parallelization/)
+- [Explore for Information, Not Reassurance](/posts/2026/08/agent-system/exploration-and-discovery/)
+- [Representation Change and the Return Argument](/posts/2026/08/agent-system/reasoning/)
+- [Spend Computation Where It Can Change the Argument](/posts/2026/08/agent-system/resource-aware-optimization/)
 
-## Part III. Knowledge and reasoning patterns
+## III. Make knowledge applicable and revisable
 
-10. [Context engineering](/posts/2026/08/agent-system/context-engineering/)
-11. [Structured output and dependency injection](/posts/2026/08/agent-system/structured-output/)
-12. [Tool use and code execution](/posts/2026/08/agent-system/tool-use/)
-13. [Knowledge retrieval and provenance](/posts/2026/08/agent-system/knowledge-retrieval/)
-14. [Deep search](/posts/2026/08/agent-system/deep-search/)
-15. [Reasoning and representation change](/posts/2026/08/agent-system/reasoning/)
-16. [Reflection](/posts/2026/08/agent-system/reflection/)
+- [Theorem Retrieval Ends with Applicability](/posts/2026/08/agent-system/knowledge-retrieval/)
+- [A Search Should Leave an Auditable Frontier](/posts/2026/08/agent-system/deep-search/)
+- [Knowledge as Versioned Arguments](/posts/2026/08/agent-system/memory-management/)
+- [Critique the Failed Inference](/posts/2026/08/agent-system/reflection/)
+- [Agent Systems: The Verification Gate](/posts/2026/08/agent-system/verification-gate/)
 
-## Part IV. Multi-agent and human coordination
+## IV. Coordinate work and authority
 
-17. [Multiple-agent cooperation](/posts/2026/08/agent-system/multiple-agent-cooperation/)
-18. [Inter-agent communication and protocols](/posts/2026/08/agent-system/inter-agent-communication/)
-19. [Human delegation](/posts/2026/08/agent-system/human-in-the-loop/)
+- [Partition Evidence-Producing Work](/posts/2026/08/agent-system/multiple-agent-cooperation/)
+- [Messages Carry Versioned Mathematical Work](/posts/2026/08/agent-system/inter-agent-communication/)
+- [Agent Systems: Human-in-the-Loop Pattern](/posts/2026/08/agent-system/human-in-the-loop/)
+- [Protect Evidence and Admission Authority](/posts/2026/08/agent-system/guardrails-safety/)
 
-## Part V. Reliability and operations
+## V. Evaluate, recover, and improve
 
-20. [Memory management](/posts/2026/08/agent-system/memory-management/)
-21. [Learning and adaptation](/posts/2026/08/agent-system/learning-and-adaptation/)
-22. [Exception handling and recovery](/posts/2026/08/agent-system/exception-recovery/)
-23. [Goal setting, prioritization, and termination](/posts/2026/08/agent-system/goal-monitoring/)
-24. [Evaluation and monitoring](/posts/2026/08/agent-system/evaluation-monitoring/)
-25. [The verification gate](/posts/2026/08/agent-system/verification-gate/)
-26. [Resource-aware optimization](/posts/2026/08/agent-system/resource-aware-optimization/)
-27. [Guardrails and safety](/posts/2026/08/agent-system/guardrails-safety/)
-28. [Production architecture](/posts/2026/08/agent-system/production-architecture/)
-29. [Choosing and composing patterns](/posts/2026/08/agent-system/choosing-patterns/)
-30. [Architecture views](/posts/2026/08/agent-system/architecture-views/)
+- [Completion Is Relative to the Original Target](/posts/2026/08/agent-system/goal-monitoring/)
+- [Evaluate Mathematical Progress and Failure Together](/posts/2026/08/agent-system/evaluation-monitoring/)
+- [Distinguish a Tool Failure from a Mathematical Obstruction](/posts/2026/08/agent-system/exception-recovery/)
+- [Learn Search Preferences, Not Unproved Theorems](/posts/2026/08/agent-system/learning-and-adaptation/)
+- [Durable Research State and Reproducible Recovery](/posts/2026/08/agent-system/production-architecture/)
+- [Agent Systems: Architecture Views](/posts/2026/08/agent-system/architecture-views/)
+- [Choose Architecture Against a Named Failure](/posts/2026/08/agent-system/choosing-patterns/)
 
-## Part VI. Case study and domain-specific design
+## VI. Build a research architecture
 
-31. [Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
-32. [Proof-sketch and method-recommendation system](/posts/2026/08/agent-system/proof-sketch-system/)
-33. [Building an agent system for birational geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
+- [Agent Systems for Mathematical Research: A Working Protocol](/posts/2026/08/agent-system/research-workflow/)
+- [Research Architecture: A Proof-Sketch and Method-Recommendation System](/posts/2026/08/agent-system/proof-sketch-system/)
+- [Designing a Spiraling Induction System for Birational Geometry](/posts/2026/08/agent-system/birational-geometry-agent/)
+- [Case Study: Danus and Rethlas](/posts/2026/08/agent-system/math-research-case-study/)
 
-The first case study uses the real Danus and Rethlas codebases. The
-proof-sketch page develops a professional architecture for recommending proof
-methods and compiling them into critic-tested obligation graphs. The final page
-specializes that architecture to the spiraling induction that appears in
-birational geometry.
+## What you should be able to build
 
-## References
+By the end, you should be able to represent a mathematical target precisely, expose alternative arguments and their joint premises, preserve conditional results, audit a theorem application, track a geometric return argument, and explain what the system has and has not checked. You should also be able to reproduce a failed attempt and compare a more elaborate architecture with a simpler baseline.
 
-The series draws on six books, each covering a different altitude. Individual
-pages cite chapters and sections; this is the shared basis.
+The practical outcome is an inspectable research episode: a target, evidence, argument graph, review record, and open frontier. The software may become more autonomous; the mathematical meaning of those artifacts should remain visible.
 
-1. Antonio Gulli, *Agentic Design Patterns: A Hands-On Guide to Building
-   Intelligent Systems*, Springer, 2025.
-   [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
-   The broadest pattern catalogue, and the closest to this series' organization.
-2. Victor Dibia, *Designing Multi-Agent Systems: Principles, Patterns, and
-   Implementation for AI Agents*, 2025. [Book site](https://multiagentbook.com/).
-   Strongest on the execution loop, context engineering, agent composition, and
-   evaluation of trajectories rather than answers.
-3. Valliappa Lakshmanan and Hannes Hapke, *Generative AI Design Patterns*,
-   O'Reilly, first edition, October 2025.
-   [Publisher record](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
-   Thirty-two numbered patterns at the level of individual mechanisms, including
-   the retrieval, judging, and guardrail patterns used here.
-4. Sampriti Mitra, *System Design for the LLM Era: Patterns and Principles for
-   Production-Grade AI Architecture*, Packt, first edition.
-   [Publisher record](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923).
-   The production and security altitude: gateways, fallbacks, caching, cost
-   control, observability, and the named security threats.
-5. James Phoenix and Mike Taylor, *Prompt Engineering for Generative AI*,
-   O'Reilly, first edition, May 2024, ISBN 978-1-098-15343-4. The level below the
-   patterns: what a single well-specified inference should contain.
-6. Stephen Clear, *Claude AI Bible: The Complete Guide to Mastering Claude,
-   Claude Code, MCP, AI Agents and Automation*. A practitioner reference for
-   tool protocols, packaged capabilities, and agent SDK mechanics.
+For a short motivation, see [why explicit architecture matters](/posts/2026/08/agent-system/why-mathematicians-need-patterns/). For books and primary references, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-Primary research papers are cited on the pages where they apply, rather than
-collected here, so that each claim sits next to its source.
+> Written in cooperation with AI. Architectural proposals and teaching implementations are labelled as such; model-reviewed work is not presented as kernel-checked mathematics.

@@ -11,7 +11,7 @@ full_page_reading: true
 
 ## Figure
 
-![Architecture of a proof-sketch and method-recommendation system](/images/agent-system/34-proof-sketch-system.svg)
+[![Architecture of a proof-sketch and method-recommendation system](/images/agent-system/34-proof-sketch-system.svg)](/images/agent-system/34-proof-sketch-system.svg)
 
 *Figure. The system first constructs a portfolio of proof methods, tests their
 applicability with bounded probes, and selects a small, diverse set of viable
@@ -356,3 +356,13 @@ and localize failure when the plan breaks.
 12. V. Lakshmanan and H. Hapke, *Generative AI Design Patterns*, O'Reilly,
     2025, Patterns 13, 14, 17–19, 21, 23, and 31.
     [Publisher record](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
+
+## Capstone practice
+
+Choose one published proof and encode two method cards, including one plausible method that fails a precondition. Produce the hypothesis matrix, a blueprint with explicit open nodes, and a critic report. Hide the published proof during method selection; reveal it only for comparison. A different valid route is not an error.
+
+Use the [lab](/posts/2026/08/agent-system/hands-on-lab/) for record mechanics. Supply mathematical evidence separately.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

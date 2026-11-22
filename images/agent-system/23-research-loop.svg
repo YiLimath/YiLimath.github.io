@@ -9,8 +9,8 @@
 </defs>
 
 <rect width="1600" height="1000" fill="#f7f9fc"/>
-<text x="60" y="68" class="title">Rethlas / Danus — Verified-Proof State Machine</text>
-<text x="60" y="103" class="subtitle">Rethlas closes a generation–verification loop; Danus adds a guarded path for admitting verified facts</text>
+<text x="60" y="68" class="title">Rethlas / Danus — Reviewed-Argument State Machine</text>
+<text x="60" y="103" class="subtitle">Rethlas closes a generation–verification loop; Danus adds a guarded path for admitting reviewed claims</text>
 
 <!-- Rethlas standalone loop -->
 <rect x="70" y="140" width="1460" height="545" rx="20" class="scope"/>
@@ -64,7 +64,7 @@
 <path d="M1000 620H1120" class="teal"/><polygon points="1120,620 1109,614.5 1109,625.5" class="ah-teal"/>
 <text x="1060" y="606" text-anchor="middle" class="small" style="font-weight:700;fill:#219487">correct</text>
 <rect x="1120" y="570" width="290" height="100" rx="12" fill="#e9f5f1" stroke="#219487" class="box"/>
-<text x="1265" y="608" text-anchor="middle" class="label">Verified artifact</text>
+<text x="1265" y="608" text-anchor="middle" class="label">Reviewed artifact</text>
 <text x="1265" y="637" text-anchor="middle" class="body">blueprint_verified.md</text>
 <text x="1265" y="658" text-anchor="middle" class="body">accepted proof blueprint</text>
 

@@ -10,16 +10,16 @@ full_page_reading: true
 
 ## Figure 1
 
-![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)
+[![Danus and Rethlas architecture](/images/agent-system/12-math-research-case-study.svg)](/images/agent-system/12-math-research-case-study.svg)
 
 *Figure 1. A layered as-built view of the case study. Solid navy arrows show
 control, dashed teal arrows show data or feedback, and red arrows mark the
-correctness-gated path into the fact graph. The dashed teal return carries the
+review-gated path into the fact graph. The dashed teal return carries the
 verifier's verdict and repair hints back to the gateway; the gateway's
 `fact_submit` path contains the write gate, and only `verdict == "correct"`
 leaves on the red commit path into the fact graph.*
 
-**In one sentence.** Two real codebases read as an as-built pattern map: what the books call reflection, tool use, and evaluation appear here as concrete modules around one correctness boundary.
+**In one sentence.** Two real codebases read as an as-built pattern map: what the books call reflection, tool use, and evaluation appear here as concrete modules around one admission boundary.
 
 This case study uses two real codebases. **Rethlas** is the smaller proof-search
 system: a generation agent reads a mathematical problem and drafts a proof
@@ -34,6 +34,12 @@ critic-tested obligation graphs, see the [proof-sketch and method-recommendation
 system](/posts/2026/08/agent-system/proof-sketch-system/). Its domain-specific
 specialization is the [birational-geometry research
 architecture](/posts/2026/08/agent-system/birational-geometry-agent/).
+
+## Evidence boundary in this case study
+
+The public [Rethlas–Archon paper, version 2](https://arxiv.org/abs/2604.03789v2) distinguishes Rethlas, the informal reasoning agent, from Archon, the Lean formalization agent. A local review service returning `correct` is not the same event as a Lean kernel accepting a proof. Likewise, `blueprint_verified.md` is a workflow filename, not a statement of formal assurance.
+
+The [Danus paper, version 2](https://arxiv.org/abs/2607.06447v2) describes a shared fact graph and a stateless admission verifier. Read “fact” here as the system's record category. The public paper supports this architectural description; the detailed local endpoints below are historical implementation notes whose exact snapshot was not recorded. They should not be treated as a current API specification.
 
 ## Rethlas: the two-agent core
 
@@ -50,7 +56,7 @@ The Rethlas repository separates proof generation from proof verification.
    submits again.
 6. A successful run produces `blueprint_verified.md`.
 
-![Rethlas and Danus verified-proof loop](/images/agent-system/23-research-loop.svg)
+[![Rethlas and Danus verified-proof loop](/images/agent-system/23-research-loop.svg)](/images/agent-system/23-research-loop.svg)
 
 *Figure 2. The upper state machine is the standalone Rethlas loop. The lower
 flow is Danus's per-worker fact-admission path, where `fact_submit` reaches the
@@ -66,15 +72,14 @@ long-running operation:
 
 - **Orchestration:** the main agent and the `danus` CLI create projects, assign
   tasks, start workers, inspect status, and stop execution. The orchestrator
-  coordinates work; it is not the correctness authority.
+  coordinates work; it is not the admission authority.
 - **Strategy:** an elaboration is prepared, a strategy consultation is run, and
   the resulting `master_guidance` steers the next worker round.
 - **Execution:** detached workers run rounds, each using the inherited Rethlas
   proving skills. Multiple workers provide parallel exploration.
 - **Verification:** a cold-start verifier judges submitted statements and
-  proofs. The verdict is strict: a result is correct only when there are no
-  critical errors and no gaps.
-- **Truth and memory:** worker-local memory, project-global memory, and a
+  proofs. The verdict is strict: the verifier is instructed to accept only when it identifies no critical errors or gaps.
+- **Evidence and memory:** worker-local memory, project-global memory, and a
   content-addressed fact graph have different roles. Only verifier-accepted
   facts enter the fact graph.
 - **Gateway:** the role-gated MCP gateway controls the tool surface. Workers can
@@ -103,8 +108,8 @@ long-running operation:
 
 ## Design lessons
 
-1. The most important pattern is the **correctness boundary**: generation may be
-   broad and exploratory, but truth is introduced only through verification.
+1. The most important pattern is the **admission boundary**: generation may be
+   broad and exploratory, but claims become usable only under an explicit evidence policy; model acceptance remains fallible.
 2. The **interface boundary** matters more than the agent's label. MCP tool
    schemas, the `/verify` request, the verification JSON, and fact identifiers
    make components replaceable.
@@ -143,3 +148,11 @@ recovery. Both describe the same code-based case study.*
    Systems*, Springer, 2025. [Publisher record](https://link.springer.com/book/10.1007/978-3-032-01402-3).
 4. V. Dibia, *Designing Multi-Agent Systems: Principles, Patterns and
    Implementation for AI Agents*. [Author's book site](https://multiagentbook.com/).
+
+## Hands-on: audit one admission path
+
+Choose a pinned repository revision before reproducing this case. Trace one candidate from submission to stored record. Save the request, review report, evidence type, and dependency identifiers. Submit the same statement with a changed hypothesis and confirm that the old verdict is not reused. Report whether the path performs informal review, formal checking, or both; do not infer this from filenames.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

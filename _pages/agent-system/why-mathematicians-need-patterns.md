@@ -8,13 +8,7 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
-
-![Design patterns translated into mathematical research](/images/agent-system/24-mathematics-design-patterns.svg)
-
-*Figure: decomposition, abstraction, composition, and validation turn recurring research activities into explicit artifacts.*
-
-**In one sentence.** Research is already a composition of recurring activities; patterns matter because a research loop must preserve failed paths and expose uncertainty, which a solver loop need not.
+**In one sentence.** Research is already a composition of recurring activities; patterns matter because a research loop must preserve failed paths and expose uncertainty, including during ordinary proof search.
 
 Mathematical research is a composition of activities: reading, retrieving,
 constructing examples, forming conjectures, searching for proofs, checking
@@ -34,7 +28,7 @@ activity has an explicit boundary.
 
 ## Solver loop versus research loop
 
-A solver loop aims at an answer. A research loop must also preserve failed paths,
+Both solving and research benefit from preserving failed paths. Open-ended research additionally needs to
 expose uncertainty, compare alternatives, and decide whether a result is worth
 developing. Design patterns help with this organization; they do not turn a
 plausible language-model explanation into a proof.
@@ -52,3 +46,7 @@ and Dibia's treatment of task decomposition, workflow architecture, evaluation,
 and responsible AI in [*Designing Multi-Agent Systems*](https://multiagentbook.com/).
 The relevant books and supporting research sources are linked directly in the
 reference basis at the end of each page.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Production Architecture"
+title: "Durable Research State and Reproducible Recovery"
 permalink: /posts/2026/08/agent-system/production-architecture/
 tags:
   - Agent System
@@ -7,68 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+After a crash, the system should recover the same target, arguments, reviews, and open obligations. Reconstructing them from a conversational summary can silently change mathematical scope.
 
-![Production architecture for LLM agents](/images/agent-system/26-production-architecture.svg)
+## The contract
 
-*Figure: gateways, caching, fallbacks, and evaluation surround the agent core.*
+Use immutable artifact versions, durable writes, and explicit review bindings. Cache keys include the relevant statement, source, context, and policy versions. A hit for another sheaf or assumption set is a correctness defect.
 
-**In one sentence.** The whole request path — gateway, cache, fallback, observability — decides reliability; the model call is a small part of it.
+## Trade-offs and failure modes
 
-## Problem
+The workbench uses temporary-file replacement for a single-writer snapshot. It is not a transactional multi-user database or a complete event-sourcing implementation. Production needs concurrency control, authenticated roles, migrations, backups, and reproducible tools. Monitor infrastructure health separately from mathematical progress.
 
-An agent prototype may work in a notebook but fail under load, provider errors,
-long latency, changing prompts, or partial tool availability. Production design
-must control the whole request path, not only the model call.
+## Build and test
 
-## Architecture
+Save after withdrawing one Case A route, reload, and verify that the alternative survives. Corrupt the saved conclusion and confirm that its review digest no longer matches.
 
-`client → gateway → agent core → model/tools`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-Around this path, add authentication and rate limits, caching and context
-compression, synchronous or asynchronous execution, circuit breakers, tiered
-fallbacks, traces, and evaluation. The gateway is a policy boundary; it should
-not become a second source of truth.
+---
 
-## Reliability patterns
-
-- **Circuit breaker:** stop repeatedly calling a failing provider.
-- **Tiered fallback:** move to a cheaper or simpler method with explicit quality
-  limits.
-- **Checkpointing:** persist a long-running task so it can resume after failure.
-- **Degradation testing:** measure behavior when models, retrieval, or tools are
-  unavailable.
-
-## Data and evaluation
-
-Use stable request IDs, version prompts and schemas, record latency/cost/error
-metrics, and maintain a golden evaluation set. Cache only when the cache key
-captures all state that affects correctness.
-
-## Mathematical caution
-
-A fallback that returns a shorter answer must not claim the quality of a verified
-proof. Degraded operation should expose reduced confidence, reduced scope, or a
-human escalation.
-
-## Real-world application
-
-For a customer-facing agent, the gateway owns authentication, rate limits, and
-request identity; the runtime owns task state; and the evaluator owns quality
-signals. Keeping those responsibilities separate makes provider failures,
-prompt changes, and partial tool outages observable in production.
-
-## Reference basis
-
-The production patterns follow Mitra, [*System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923),
-Chapters 2–6, especially gateways, circuit breakers, asynchronous processing,
-caching, evaluation, and security. Dibia's [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapters 10–13 provide complementary
-references for trajectory evaluation, optimization, distributed protocols, and
-responsible deployment.
-
-## Reference architecture
-
-This is a course synthesis of production concerns, not a copy of a vendor
-reference architecture. For the production-design viewpoint used here, see
-Sampriti Mitra's [*System Design for the LLM Era*](https://www.packtpub.com/en-us/product/system-design-for-the-llm-era-9781807789923).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

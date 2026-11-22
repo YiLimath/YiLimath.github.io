@@ -7,57 +7,28 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A mathematical research system needs an explicit policy for changing its objective, spending its budget, accepting evidence, and releasing results. These responsibilities do not imply that a human must approve every action.
 
-![Human-in-the-loop pattern](/images/agent-system/11-human-in-loop.svg)
+## Control is an interface
 
-*Figure: the system pauses at an explicit checkpoint when human judgment is required.*
+Routine search, source checking, and bounded revision can proceed under delegated authority. Escalate when an action would change the agreed target or exceed that authority. A model can propose the decision; the policy determines who may authorize it.
 
-**In one sentence.** Place a person at the decisions that are irreversible or beyond an evaluator, and make the handover an interface rather than an interruption.
+For example, replacing a compact Kähler hypothesis with projectivity may make a route work. The system should preserve the original task, create a separate strengthened statement, and explain what has and has not been achieved. It should not interrupt simply because a proof attempt failed.
 
-## Problem
+## What a decision packet contains
 
-Some decisions are high impact, ambiguous, irreversible, or not captured by an
-automated evaluator. Full autonomy would hide responsibility rather than remove
-the decision.
+Present the original target, the proposed change, the mathematical reason, supporting evidence, alternatives, and the work that can continue independently. Record the decision and its scope. Approval of further exploration is not approval of a theorem's correctness.
 
-## Intent and structure
+Humans can also miss errors. A signature does not replace the evidence contract. Conversely, increasingly capable agents may perform more of the design and review work; the need for explicit objectives, evidence, and authority remains.
 
-`agent work → checkpoint → human review or correction → resume, revise, or stop`
+## Hands-on practice
 
-A checkpoint should present the artifact, evidence, uncertainty, available
-choices, and consequences. “Human approval” is not useful if the reviewer cannot
-see what is being approved.
-
-## Where to place checkpoints
-
-Use them before irreversible tool actions, after ambiguous routing, when a
-quality evaluator disagrees, when the budget or stopping condition is reached,
-or when a result is ready for publication. Routine low-risk work can remain
-automated.
-
-## Forces and failure modes
-
-Human review improves accountability and handles open-ended judgment, but it
-adds latency and can become a rubber stamp. Escalate selectively, explain why,
-record the decision, and make resumption idempotent.
-
-## Mathematical example
-
-The system may propose a proof direction or a literature connection, while the
-mathematician decides whether it is relevant, novel, or worth pursuing.
-
-## Real-world application
-
-Refunds, access changes, publication decisions, and other consequential actions
-need an explicit approval checkpoint. The agent should present the proposed
-action, evidence, uncertainty, and reversible alternatives, then resume from a
-durable checkpoint after the human accepts or rejects it.
+Write a decision packet for the open-interval example in the [introduction](/posts/2026/08/agent-system/design-principles/). Offer two distinct tasks: finish the refutation of the original conjecture, or study a repaired compact-domain theorem. Show that the first can finish without awaiting a preference about the second. Test that resuming the same decision twice does not duplicate work.
 
 ## Reference basis
 
-This follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 13, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapter 4, Section 4.13, “Adding Humans in the
-Loop.” For a current engineering discussion of human control, transparency, and
-agent risk, see Anthropic's [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents).
+Gulli, *Agentic Design Patterns*, Chapter 13, treats human involvement as a pattern. This page specializes the interface to mathematical scope changes and delegated research. It makes no claim that a particular cognitive task will remain exclusively human.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

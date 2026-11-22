@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Knowledge Retrieval and Provenance"
+title: "Theorem Retrieval Ends with Applicability"
 permalink: /posts/2026/08/agent-system/knowledge-retrieval/
 tags:
   - Agent System
@@ -8,59 +8,30 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A relevant theorem is a candidate tool. In Case A, a vanishing theorem helps only if its hypotheses apply to the exact cohomology group needed by the lifting sequence. A result for a nearby twist can be relevant and still fail the task.
 
-![Knowledge retrieval and provenance](/images/agent-system/14-knowledge-retrieval.svg)
+## From source to usable premise
 
-*Figure: course architecture redraw. Query-time grounding is separated from
-index-time ingestion, with hybrid indexes, access metadata, reranking,
-provenance, freshness feedback, and a bounded context builder.*
+Retrieve a stable source locator, theorem statement, definitions, and version. Instantiate the theorem's variables with the current objects. For each hypothesis record established evidence, a contradiction, or an open obligation. Keep the derived conclusion explicit so that a result about the wrong sheaf cannot masquerade as completion.
 
-**In one sentence.** Ground claims in retrieved sources and carry provenance with them; a relevant-looking theorem with mismatched hypotheses is a retrieval failure disguised as a success.
+[![An applicability matrix with a blocked hypothesis](/images/agent-system/research-applicability.svg)](/images/agent-system/research-applicability.svg)
 
-## Problem
+*The elementary compactness example is a diagnostic fixture. The same matrix is needed for positivity, singularity, and divisibility assumptions in research mathematics.*
 
-Context is bounded, while a technical corpus is large. Internal model memory is
-not a reliable source for domain-specific or source-sensitive claims.
+Retrieval establishes that a source contains a statement. It does not by itself verify that statement or our application. The project's policy determines how external results are admitted; the application still needs its own justification.
 
-## Intent and structure
+## Preserve rejected matches
 
-`corpus → index → retrieve → rerank/postprocess → grounded generation`
+“Positivity unavailable for this twist” is useful memory. “Irrelevant paper” often is not. A later worker may repair the missing condition or use the same theorem on another branch.
 
-The retrieval pattern includes more than a vector database. Lexical search,
-semantic indexing, metadata filters, hybrid retrieval, graph traversal, and
-node postprocessing solve different parts of the problem.
+Version the source and application separately. A corrected theorem can invalidate applications, while a new object version can make a previously valid application inapplicable without changing the source.
 
-## Mathematical retrieval
+## Build and test
 
-Retrieve definitions and notation before theorems; retrieve theorem statements
-with hypotheses; retrieve proof dependencies, examples, counterexamples, and
-source locations. A related theorem with mismatched hypotheses is a dangerous
-retrieval success, not a correct answer.
+Prepare two Case A source records: one applicable after an explicit positivity argument and one for the wrong twist. Produce the hypothesis matrix and the exact resulting conclusion for each. Reject the mismatch even if both records contain the word “vanishing.”
 
-## Provenance contract
+Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-Every important generated claim should point to a source record and preserve the
-retrieval query, location, and applicability judgment. Separate source text,
-interpretation, and new inference. Do not silently merge duplicate or stale
-statements.
+---
 
-## Forces and failure modes
-
-Retrieval improves grounding but can introduce irrelevant context, ranking bias,
-and citation drift. Evaluate recall and precision separately, cap context,
-rerank for applicability, and allow the system to say that no adequate source
-was found.
-
-## Real-world application
-
-An internal policy assistant should retrieve the current policy version and
-return a claim with its source location, rather than answer from model memory.
-The retrieval boundary can enforce access control, freshness, and citation
-requirements before generation.
-
-## Reference basis
-
-The RAG treatment follows Antonio Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3), Chapter 14, and
-Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/), Chapter 3, including the RAG pattern. The foundational retrieval-plus-generation formulation is
-Lewis et al., [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

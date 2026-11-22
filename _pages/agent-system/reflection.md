@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Reflection Pattern"
+title: "Critique the Failed Inference"
 permalink: /posts/2026/08/agent-system/reflection/
 tags:
   - Agent System
@@ -7,55 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+In Case B, “be more rigorous” is not actionable. “The estimate permits C to depend on j, but the compactness step needs a uniform bound” names the missing bridge. The critic should localize a mathematical defect.
 
-![Reflection pattern](/images/agent-system/05-reflection.svg)
+## The contract
 
-*Figure: a draft is evaluated and revised before it is passed onward.*
+Supply the complete argument and relevant evidence. Return the affected inference, violated condition, evidence, and possible repair. If repair strengthens the theorem, record a new branch rather than replacing the original target.
 
-**In one sentence.** Separate the generator from the critic so quality is checked by something with a different blind spot, and bound the revision loop.
+## Trade-offs and failure modes
 
-## Problem
+Reviewers can share blind spots. Repeated agreement is not a proof certificate. Bound revision loops and retain previous drafts so that a real repair can be distinguished from paraphrase. A critique may itself be wrong and should be supported by inspectable reasoning.
 
-A first draft can be fluent, incomplete, or subtly inconsistent. Asking for a
-single answer does not create an independent quality check.
+## Build and test
 
-## Intent and structure
+Diagnose a Case B proof that swaps quantifiers. Give the exact counterexample u_j=j and distinguish seeking a uniform estimate from weakening the target.
 
-`draft → critique → targeted revision → re-evaluation`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-The critic may be another model, a deterministic test, a tool, a proof checker,
-or a human. Good reflection names the violated criterion and returns repairable
-feedback rather than merely a numerical score.
+---
 
-## Separation of roles
-
-The generator should optimize for proposing a useful candidate; the critic
-should inspect it against explicit requirements. Using the same prompt and
-context for both can preserve the same blind spot, so independence matters.
-
-## Mathematical example
-
-A proof critique checks definitions, hypotheses, quantifiers, theorem
-applications, and hidden existence claims. The revised proof should preserve the
-original claim while recording which gap was addressed.
-
-## Forces and failure modes
-
-Reflection catches local defects but adds latency and may lead to endless
-rewriting. Limit revision rounds, retain the rejected draft, and stop when a
-defined quality threshold or human checkpoint is reached.
-
-## Real-world application
-
-In code review or report production, a generator creates a candidate and an
-independent checker compares it with explicit requirements. The checker should
-return localized repair instructions, so the workflow can revise one defect and
-retain the rejected version for audit.
-
-## Reference basis
-
-The source pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 4, and Lakshmanan and Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/),
-Pattern 18. The
-feedback-and-refinement loop is studied directly in Madaan et al., [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

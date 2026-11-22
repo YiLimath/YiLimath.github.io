@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Memory Management Pattern"
+title: "Knowledge as Versioned Arguments"
 permalink: /posts/2026/08/agent-system/memory-management/
 tags:
   - Agent System
@@ -7,69 +7,30 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+A statement can have several arguments. Case A's vanishing route may fail while its direct-obstruction route survives. A single Boolean beside the conclusion cannot represent this situation.
 
-![Memory management pattern](/images/agent-system/09-memory-management.svg)
+## Store support, not just conclusions
 
-*Figure: bounded working context is written to and recovered from longer-term memory.*
+Persist statements, arguments, reviews, and dependency links separately. Keep withdrawn arguments for audit but exclude them from new support. Recompute usability from surviving arguments rather than declaring all downstream statements false.
 
-**In one sentence.** Decide what survives beyond the current task and under what policy; storing every message is not a design.
+[![Alternative support after withdrawal](/images/agent-system/research-alternatives.svg)](/images/agent-system/research-alternatives.svg)
 
-## Problem
+*An argument loses permission to support a conclusion; the conclusion may retain another justification.*
 
-Context windows are bounded, while tasks and histories are not. Copying every
-past message into every step increases noise, cost, and the chance of retrieving
-an obsolete instruction.
+A remembered lemma includes its hypotheses and source versions. A remembered failure identifies the exact attempted implication. The non-liftability of (1,0) on the two-point divisor must not be remembered as “no sections upstairs.” Likewise, failure to find a uniform estimate is not evidence that none exists.
 
-## Intent and structure
+## Conditional knowledge is worth retaining
 
-`experience → select → store → retrieve → current context`
+If a result follows from an open assumption P, retain it as conditional on P. The assumption must propagate through downstream arguments. It cannot disappear because the conditional result has been retrieved many times.
 
-The books distinguish short-term working context from long-term memory and from
-external knowledge retrieval. A memory item needs content, scope, metadata,
-provenance, and a retrieval policy.
+The advanced workbench demonstrates this with assumption-labelled closure. It selects one supporting argument for explanation rather than enumerating all minimal support sets. That is an explicit limitation, not a mathematical equivalence between different assumptions.
 
-Memory is the persistence question: what survives beyond this task, and under
-what policy. It is distinct from deciding what enters a particular inference
-window, which is treated separately under
-[context engineering](/posts/2026/08/agent-system/context-engineering/). The two
-meet at retrieval — memory decides what may be recalled, context engineering
-decides what is actually admitted and at what priority.
+## Build and test
 
-## Memory operations
+Run the conditional-result and alternative-route tests. Withdraw one argument, save, and reload. Confirm that the surviving route and the withdrawal history remain visible. Then change saved statement text: its existing review digest must fail validation.
 
-Write only information that may be useful later; retrieve by the current task;
-compress or summarize under a stated policy; and expire or revise stale items.
-Memory should preserve failed paths when those failures prevent repeated work.
+Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-## Mathematical design
+---
 
-Separate definitions and verified results from conjectures, heuristics, and
-scratch reasoning. A retrieved lemma must still be checked against the current
-hypotheses. Memory improves continuity; it is not a correctness certificate.
-
-## Forces and failure modes
-
-More memory improves recall but increases context pollution and retrieval bias.
-Use scopes, provenance, ranking, limits, and explicit invalidation. Test whether
-the system performs better with a memory item rather than assuming persistence
-is always helpful.
-
-## Real-world application
-
-In case management, short-term conversation state and durable customer records
-have different retention and access rules. A memory policy should decide what
-to write, how to retrieve it, how to expire it, and how to correct a stale
-record; storing every message is not a design.
-
-## Reference basis
-
-The pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 8, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapter 4, Sections 4.7 and 4.8, which distinguish application-managed retrieval
-from agent-managed memory in which the agent explicitly creates and deletes its
-own records. Long-term memory is Pattern 28 in Lakshmanan and Hapke,
-[*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
-The treatment of a bounded window as a managed resource with paging between
-tiers, by analogy with virtual memory, is Packer et al., [MemGPT: Towards LLMs as
-Operating Systems](https://arxiv.org/abs/2310.08560).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Goal Setting, Prioritization, and Termination"
+title: "Completion Is Relative to the Original Target"
 permalink: /posts/2026/08/agent-system/goal-monitoring/
 tags:
   - Agent System
@@ -7,51 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+Case A may end with a lift, a justified non-liftability result for the chosen section, or an open obstruction. Case B may produce useful estimates without the uniformity required by the target. These outcomes deserve different names.
 
-![Goal setting, prioritization, and termination](/images/agent-system/17-goal-monitoring.svg)
+## The contract
 
-*Figure: goals become operational through priorities, bounded actions, progress checks, and termination.*
+Keep the target immutable within an attempt. Additional hypotheses create conditional branches. A final report identifies the exact target version, evidence, remaining assumptions, and next informative action.
 
-**In one sentence.** State the objective, how progress is measured, and what makes stopping correct; termination is a design decision, not an accident of budget.
+## Trade-offs and failure modes
 
-## Problem
+Budget exhaustion ends execution, not mathematics. A local lemma can be complete while the programme remains open. The workbench implements usable, conditional, and unresolved outcomes; it does not infer refutation from an absent proof.
 
-Autonomous execution can drift from the user's objective, spend resources on
-low-value actions, or continue after meaningful progress has stopped.
+## Build and test
 
-## Intent and structure
+Report Case B with only parameter-dependent estimates available. State the partial result and missing uniformity assertion without claiming the main problem solved.
 
-`goal → milestones → prioritized action → progress check → continue, redirect, or stop`
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-A goal needs a success criterion, scope, budget, priority, dependencies, and
-termination policy. Monitor artifacts and state transitions rather than
-conversational confidence.
+---
 
-## Termination conditions
-
-Stop when the goal is achieved, a quality threshold is met, the budget is
-exhausted, no progress occurs after bounded attempts, or a human interrupts.
-Distinguish semantic completion (“the agent says done”) from verified completion
-(“the required artifact passed its checks”).
-
-## Forces and failure modes
-
-Aggressive stopping saves cost but can miss a solution; permissive stopping can
-run indefinitely. Make the stopping decision observable and allow escalation or
-replanning when the goal changes.
-
-## Real-world application
-
-For a long-running migration or investigation, a goal ledger records milestones,
-dependencies, budget, and termination criteria. Monitoring can distinguish real
-progress from repeated tool calls and stop or escalate when the goal becomes
-infeasible.
-
-## Reference basis
-
-The source pattern is Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 11, “Goal Setting and Monitoring.” Dibia's orchestrator loop and
-task-management
-treatment appears in *Designing Multi-Agent Systems*, Chapters 2 and 7; the
-task and progress ledgers are also explicit in the [Magentic-One technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

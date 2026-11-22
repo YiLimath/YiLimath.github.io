@@ -7,83 +7,37 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figures
+Architecture diagrams should answer a named question. A box called “reasoning engine” is useful only if its input, output, and authority are specified.
 
-![Agent system: system context view](/images/agent-system/00-agent-system-architecture.svg)
+[![Research components and their artifact contracts](/images/agent-system/research-architecture.svg)](/images/agent-system/research-architecture.svg)
 
-*Figure 1. Context view: the agent system is treated as one unit and its
-external relationships are shown; internal containers are deliberately hidden.*
+*This is a proposed responsibility map, not a deployment diagram. Arrows carry artifacts; the admission component alone grants permission to use a claim as a premise.*
 
-![Agent system: container view](/images/agent-system/28-agent-system-container.svg)
+## Four views of the same system
 
-*Figure 2. Container view: the system boundary is opened into replaceable
-responsibilities, stable interfaces, and operational controls.*
+| View | Question | Required content |
+|---|---|---|
+| Semantic | What does the system reason about? | Statements, object versions, assumptions, inference records |
+| Logical | What justifies this conclusion? | Joint premises, alternative arguments, theorem applications, induction order |
+| Execution | What action runs next? | Queues, retries, budgets, checkpoints, cancellation |
+| Operational | What survives failure? | Durable writes, identities, service boundaries, replay and invalidation |
 
-**In one sentence.** No single diagram answers every architecture question; read the context, container, dynamic, and operational views in that order.
+A dependency arrow must not also mean a network call. A search loop must not be read as a circular proof. Use the [two-graph example](/posts/2026/08/agent-system/design-principles/) to see the distinction.
 
-## Why one architecture diagram is not enough
+## Responsibilities before agents
 
-An agent system combines control flow, model calls, tools, knowledge, state,
-evaluation, and human responsibility. A single picture that shows all of them
-usually becomes a map of crossing arrows rather than an explanation. Use a
-small set of views, each with one question and one scope.
+The controller schedules work; a worker proposes an artifact; a reviewer supplies evidence; admission checks policy; the ledger retains versions and dependencies. These may share a process. Separating responsibilities does not require one model, service, or person per box.
 
-## Context view: the boundary
+The formal checker, if present, checks an encoded proposition. The source adapter locates evidence. Neither can silently change the original target. The researcher interface presents proposed scope changes and the evidence needed to decide them.
 
-The context view treats the agent system as one unit. It identifies the people,
-services, knowledge sources, and reviewers that exchange responsibility with
-that unit. It is the right view for introducing the system and for deciding
-what belongs inside or outside the architecture. Figure 1 gives this view.
+## Hands-on practice
 
-## Container view: the responsibilities
-
-The container view opens the system boundary. The important design question is
-not whether every box is an “agent”, but which responsibility owns each stable
-interface:
-
-- the orchestrator owns task state, routing, policy, and termination;
-- the agent runtime performs bounded reasoning and action selection;
-- knowledge and memory provide context and persistent state;
-- the tool gateway authorizes and adapts external actions;
-- the evaluator turns quality or policy requirements into a verdict;
-- the artifact store makes checkpoints, traces, and results durable. Figure 2
-  gives this view; commands, data, and evaluation feedback use distinct arrow
-  conventions.
-
-## Dynamic and operational views
-
-Static structure does not explain execution order. Use the tool-use page for a
-message sequence, the plan-and-execute page for a checkpointed workflow, and
-the human-in-the-loop page for an approval swimlane. Use the production page for
-gateways, caching, fallbacks, observability, and evaluation around the runtime.
-
-The figures deliberately share typography, palette, stroke weights, and arrow
-construction. Their shapes differ because a sequence, a decision, a fork/join,
-a feedback loop, a data store, and a responsibility boundary are different
-relations.
-
-## Reading rule
-
-Read from outside to inside, then from structure to execution:
-
-`context → containers → dynamic behavior → operations → code case`
-
-This keeps a complicated architecture visible without forcing one diagram to
-carry incompatible levels of abstraction.
-
-## Real-world application
-
-For an internal research assistant, the context view identifies the operator,
-source systems, and downstream report; the container view separates retrieval,
-runtime, evaluation, and storage; and the dynamic view shows the evidence and
-repair loop. A single diagram cannot answer all three questions without hiding
-important responsibility boundaries.
+Draw the four views for the ledger lab. Mark which components are implemented and which are merely assumed. Then place a crash between saving a review and updating task status. In the operational view, show how replay recovers without applying the review twice or to the wrong statement version.
 
 ## Reference notation
 
-The context and container figures are teaching redraws of the first two levels
-of Simon Brown's C4 model: a system-context diagram shows the system in its
-surrounding world, while a container diagram opens the system boundary. Compare
-the [official C4 introduction](https://c4model.com/introduction), the [system-context
-diagram guide](https://c4model.com/diagrams/system-context), and the [complete
-diagram catalogue](https://c4model.com/diagrams).
+[C4](https://c4model.com/introduction) supplies established context and container views for software architecture. The semantic and logical views here add the mathematical content that a deployment view cannot express. These are design proposals; the figure does not assert that any particular research system implements them.
+
+---
+
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)

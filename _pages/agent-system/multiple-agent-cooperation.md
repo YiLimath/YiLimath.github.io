@@ -1,5 +1,5 @@
 ---
-title: "Agent Systems: Multiple-Agent Cooperation"
+title: "Partition Evidence-Producing Work"
 permalink: /posts/2026/08/agent-system/multiple-agent-cooperation/
 tags:
   - Agent System
@@ -7,92 +7,22 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-## Figure
+For Case A, one worker can investigate source applicability, another can calculate the obstruction, and a reviewer can check the transfer. These are deliverables. Labels such as “creative thinker” or “skeptic” do not specify the work.
 
-![Multiple-agent cooperation](/images/agent-system/07-multi-agent-cooperation.svg)
+## The contract
 
-*Figure: specialized agents return typed artifacts through a shared message
-protocol; the coordinator aggregates and verifies the result.*
+Separate workers when their tasks can progress independently or need different context. Share the target version and artifact schema. Before comparing conclusions, check that the workers used the same objects and assumptions. Disagreement may reveal a scope mismatch rather than a deep mathematical dispute.
 
-**In one sentence.** Divide work across specialists exchanging typed artifacts; the cost is coordination, and agreement between agents is not correctness.
+## Trade-offs and failure modes
 
-## Problem
+Coordination adds duplicated search, communication, and inconsistent state. One capable worker may outperform several specialists. Measure useful results and false admissions under equal budgets; team size remains an implementation choice.
 
-A complex task may require incompatible skills, independent exploration, or
-different permissions. One general agent can become a bottleneck and a single
-point of failure.
+## Build and test
 
-## Intent and structures
+Run Case A sequentially and with two branch workers. Compare total work, unique evidence, duplicated lookups, and time to a usable route.
 
-The main forms are a **supervisor** that delegates to specialists, a **peer
-group** that exchanges artifacts, a **pipeline** in which each agent owns a
-stage, and a **debate** in which agents critique alternatives. The choice should
-be driven by task dependencies, not by a desire to maximize agent count.
+Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
 
-## Agents as tools
+---
 
-One composition mechanism deserves separate mention because it dissolves the
-distinction between a specialist agent and a tool. An agent can be wrapped so
-that it presents the ordinary tool interface — a description telling the caller
-when to use it, and a single task parameter — while keeping its own model,
-tools, memory, and configuration behind that interface. A coordinator then calls
-a specialist exactly as it calls a function.
-
-This is the variation-point argument applied to agents: the caller depends on the
-contract, so a specialist can use a cheap model for routine lookups and an
-expensive one for analysis without the coordinator knowing or caring.
-
-It also carries a consequence that is easy to miss. What returns from the
-specialist is a design decision, not a default. Returning only the final message
-gives maximum context isolation — the specialist may spend thirty thousand tokens
-internally while the coordinator's context grows by a two-hundred-token summary —
-but loses information when the final message is uninformative and the substance
-appeared earlier. Returning everything preserves detail and reintroduces the
-context explosion the delegation was meant to prevent. Each layer of a hierarchy
-therefore has to set its own return policy; see
-[context engineering](/posts/2026/08/agent-system/context-engineering/).
-
-## Stable interface
-
-Every subtask needs an owner, input contract, expected artifact, status, evidence
-format, and completion condition. The coordinator aggregates artifacts and owns
-the global termination decision.
-
-## Mathematical example
-
-Separate search for examples, retrieval of known results, proof construction,
-and proof criticism. Specialization is useful only if the outputs can be
-reconciled and checked.
-
-## Forces and failure modes
-
-Multiple agents improve diversity and throughput but create coordination cost,
-duplicate work, inconsistent assumptions, and error amplification. Shared truth
-must be guarded by an evaluator or verifier; consensus is not correctness.
-
-## Real-world application
-
-An incident-response system can assign log analysis, dependency lookup, and
-remediation planning to separate specialists. A coordinator merges their typed
-artifacts and sends only the agreed incident state to the operator; specialists
-do not need to share hidden conversational context.
-
-## Reference basis
-
-The pattern follows Gulli, [*Agentic Design Patterns*](https://link.springer.com/book/10.1007/978-3-032-01402-3),
-Chapter 7, and Dibia, [*Designing Multi-Agent Systems*](https://multiagentbook.com/),
-Chapters 2 and 7; multi-agent collaboration is Pattern 23 in Lakshmanan and
-Hapke, [*Generative AI Design Patterns*](https://www.oreilly.com/library/view/generative-ai-design/9798341622654/).
-The agents-as-tools mechanism and the return-policy trade-off between context
-isolation and informativeness are Dibia, Chapter 4, Section 4.11. Published
-system examples
-include AutoGen's [multi-agent conversation paper](https://arxiv.org/abs/2308.08155)
-and Microsoft's [Magentic-One report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
-
-## Related systems
-
-This figure is a teaching abstraction of supervisor-style coordination. Compare
-Victor Dibia's [multi-agent systems book and companion material](https://multiagentbook.com/)
-for explicit orchestration patterns. For a research system with an orchestrator
-directing specialized agents, see Microsoft's [Magentic-One overview](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/)
-and [technical report](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/11/Magentic-One.pdf).
+[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
