@@ -9,6 +9,15 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Practical project: A geometric reduction with a checked return argument
+
+**Build from zero in Codex.** Use a known theorem in your field before an open conjecture. Ask Codex to record every space, map, divisor or class, and category assumption in OBJECTS.md. Create REDUCTIONS.md with hypotheses and return implications, and INDUCTION.md with the parameter order and base cases. Ask it to trace one complete reduction using the actual source proof.
+
+**Acceptance evidence.** Introduce a changed positivity assumption and a missing induction base. Require the system to identify the exact broken step. A diagram or theorem-name list alone is insufficient; submit the mathematical argument and unresolved obligations.
+
+The architecture below is a design reference. Its components earn their place by helping this experiment; implementing every component is not the assignment. Use [the base Codex setup](/posts/2026/08/agent-system/codex-research-studio/) and [the research-opportunity project](/posts/2026/08/agent-system/research-opportunity-system/) for the working protocol.
+
+
 The goal is to build a research system whose unit of reasoning is a **geometric
 induction step**: construct the right object, establish the hypotheses of an
 available theorem, obtain a conclusion, and prove how that conclusion advances

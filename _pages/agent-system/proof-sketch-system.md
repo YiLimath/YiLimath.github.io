@@ -9,6 +9,15 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Practical project: A method that survives a first proof attempt
+
+**Build from zero in Codex.** Start with one exact target and two methods drawn from actual proofs. Ask Codex to create TARGET.md, METHODS.md, BRIDGES.md, and REVIEW.md. For each method, require applicability conditions, intermediate lemmas, and the implication back to the target. Have it attempt the hardest bridge before expanding the architecture.
+
+**Acceptance evidence.** Submit one detailed attempted bridge, one rejected method with a mathematical reason, and a comparison with an ordinary chat proof attempt. Reject recommendations based only on thematic similarity.
+
+The architecture below is a design reference. Its components earn their place by helping this experiment; implementing every component is not the assignment. Use [the base Codex setup](/posts/2026/08/agent-system/codex-research-studio/) and [the research-opportunity project](/posts/2026/08/agent-system/research-opportunity-system/) for the working protocol.
+
+
 ## Figure
 
 [![Architecture of a proof-sketch and method-recommendation system](/images/agent-system/34-proof-sketch-system.svg)](/images/agent-system/34-proof-sketch-system.svg)

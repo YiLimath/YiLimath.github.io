@@ -70,7 +70,9 @@ Submit the original mathematical task, your records and diagrams, a reproducible
 
 ### Optional advanced modules
 
-These can follow Module 9 or replace a project session for a specialist audience:
+Choose an advanced project because it helps a real research task. Each includes architecture, a from-zero Codex workflow, and an acceptance experiment. A polished diagram alone is not a successful submission.
+
+- [Research opportunity discovery](/posts/2026/08/agent-system/research-opportunity-system/) — search an authorized vault, database, and accessible literature; propose a precise improvement and test its hardest bridge before recommending a project.
 
 - [Method recommendation and proof-sketch systems](/posts/2026/08/agent-system/proof-sketch-system/) — develop the full architecture introduced in Module 4.
 - [Birational geometry and spiraling induction](/posts/2026/08/agent-system/birational-geometry-agent/) — apply the contracts to geometric reductions and theorem packages.

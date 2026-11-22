@@ -8,6 +8,15 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Practical project: A tested Codex workflow rather than an imitation of an architecture
+
+**Build from zero in Codex.** Build the linked Codex workspace from an empty folder. Reproduce one research episode with alternatives, versioned reviews, a withdrawn premise, and recovery in a new conversation. Use Danus and Rethlas as architectural references, and distinguish documented behavior from your proposed extensions.
+
+**Acceptance evidence.** Compare against a single-conversation baseline on a valid case and damaged variants. Claim superiority to a named system only after testing a specified version under comparable conditions. Record any capability that the available tools cannot actually execute.
+
+The architecture below is a design reference. Its components earn their place by helping this experiment; implementing every component is not the assignment. Use [the base Codex setup](/posts/2026/08/agent-system/codex-research-studio/) and [the research-opportunity project](/posts/2026/08/agent-system/research-opportunity-system/) for the working protocol.
+
+
 For the hands-on companion, see [build a research system directly in Codex](/posts/2026/08/agent-system/codex-research-studio/). It turns the architectural questions into experiments without requiring students to implement a framework.
 
 ## Figure 1
