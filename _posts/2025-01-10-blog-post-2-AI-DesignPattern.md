@@ -285,10 +285,6 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 </details>
 
-## Materials for teaching and recording
-
-The [English teaching pack](/posts/2026/08/agent-system/teaching-materials/) contains the full nine-module lecture scripts, presentation slides, demonstration cues, and student exercises. Each short lesson begins with a concrete failure and ends with an artifact students can inspect.
-
 ## A repeatable lesson format
 
 Begin with a mathematical attempt that almost works, or a recorded failure from a real workflow. Ask students to locate the missing distinction or implication before introducing the architecture. Draw the relevant records or dependencies, implement the smallest useful mechanism, and test it on both a valid case and a damaged variant.

@@ -154,6 +154,9 @@ include:
   - _pages
   - files
 exclude:
+  - _pages/agent-system/teaching-materials.md
+  - files/reasoning-course
+  - files/reasoning-course.zip
   - "*.bak"
   - "*.orig"
   - "*~"
