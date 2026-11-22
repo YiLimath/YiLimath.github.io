@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">05 / Review evidence, then decide reuse</title><desc id="desc">The report identifies inferences; admission preserves their assumptions and version scope.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#357477"/></marker></defs><rect width="1120" height="680" rx="20" fill="#f4f7fa"/>
+<text x="40" y="49" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#19364b">05 / Review evidence, then decide reuse</text>
+<text x="40" y="82" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">The report identifies inferences; admission preserves their assumptions and version scope.</text>
+<rect x="40" y="130" width="290" height="140" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Frozen submission</text>
+<text x="58" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Target T-v2</text>
+<text x="58" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Argument A-v3</text>
+<text x="58" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Sources and explicit assumptions</text>
+<rect x="415" y="130" width="290" height="140" rx="12" fill="#e7f2f2" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="433" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Localized review</text>
+<text x="433" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Check substantive inferences</text>
+<text x="433" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Preserve valid steps</text>
+<text x="433" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Name errors and missing bridges</text>
+<rect x="790" y="130" width="290" height="140" rx="12" fill="#e9eef9" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="808" y="161" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Admission decision</text>
+<text x="808" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">What may be reused?</text>
+<text x="808" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Under which assumptions?</text>
+<text x="808" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">For which target version?</text>
+<polyline points="330,200 415,200" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="705,200 790,200" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="385" width="290" height="120" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="58" y="416" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Revision arrives</text>
+<text x="58" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Changed section or hypothesis</text>
+<text x="58" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Old proof remains inspectable</text>
+<text x="58" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Identify the affected inference</text>
+<rect x="415" y="385" width="290" height="120" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="433" y="416" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Impact check</text>
+<text x="433" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Unchanged evidence may survive</text>
+<text x="433" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Changed inference needs review</text>
+<text x="433" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">No automatic transfer of approval</text>
+<rect x="790" y="385" width="290" height="120" rx="12" fill="#ffffff" stroke="#b8ccd5" stroke-width="1.5"/>
+<text x="808" y="416" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#19364b">Current research state</text>
+<text x="808" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Supported conclusions</text>
+<text x="808" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Conditional conclusions</text>
+<text x="808" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#19364b">Unresolved obligations</text>
+<polyline points="935,270 935,385" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="949" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">update</text>
+<polyline points="790,445 705,445" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="718" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">revision</text>
+<polyline points="330,445 415,445" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)"/>
+<polyline points="560,385 560,270" fill="none" stroke="#357477" stroke-width="2.3" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+<text x="573" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#32696d">recheck</text>
+<path d="M40 596 H1080" stroke="#cbd8df"/>
+<text x="40" y="624" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#19364b">Example: a review of the lift (1,1) does not establish a lift of (1,0).</text>
+<text x="40" y="652" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#19364b">The diagonal-image calculation can survive; the old positive verdict cannot.</text>
+</svg>

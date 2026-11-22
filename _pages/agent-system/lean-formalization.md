@@ -21,8 +21,12 @@ This module introduces formalization through one small mathematical mistake: exc
 For every natural number $n$, there is a natural number $C$ with $n\leq C$. Choose $C=n$. But there is no single natural number bounding every natural number: given $C$, choose $n=C+1$.
 
 $$
-\forall n\in\mathbb N\;\exists C\in\mathbb N:\ n\leq C
-\qquad\text{does not imply}\qquad
+\forall n\in\mathbb N\;\exists C\in\mathbb N:\ n\leq C.
+$$
+
+This does not imply the uniform statement
+
+$$
 \exists C\in\mathbb N\;\forall n\in\mathbb N:\ n\leq C.
 $$
 
@@ -57,6 +61,19 @@ theorem noUniformBound : ¬ ∃ C : Nat, ∀ n : Nat, n ≤ C := by
 Assume the proposed uniform bound exists. Extract its value `C` and the assertion `hC` that every natural number is at most `C`. Apply that assertion to `Nat.succ C`. It contradicts `Nat.not_succ_le_self C`.
 
 **Pause before running:** point to the exact expression that chooses a counterexample *after* seeing the proposed bound. It is `hC (Nat.succ C)`. This dependence explains the mathematics.
+
+Read the proof through its changing context:
+
+| Step | New information | Task remaining |
+|---|---|---|
+| `intro h` | A hypothetical common bound exists | Derive `False` |
+| `cases h` | A particular `C` and `hC : ∀ n, n ≤ C` | Derive `False` using these witnesses |
+| `hC (Nat.succ C)` | A proof that `C + 1 ≤ C` | Contradict the order on natural numbers |
+| `Nat.not_succ_le_self C` | A proof of `¬ (C + 1 ≤ C)` | Apply it to the contradictory inequality |
+
+Negation is used here as an implication to `False`. The last line supplies the forbidden inequality to a proof that it cannot hold. Nothing numerical about `C` needs to be computed: the argument works for the arbitrary bound extracted from `h`.
+
+This also explains a common failed repair. If the assistant changes the existential witness to a number depending on `n`, it is proving the pointwise statement again. The uniform statement chooses `C` before `n` is introduced. The official [quantifiers tutorial](https://lean-lang.org/theorem_proving_in_lean4/Quantifiers-and-Equality/) develops the introduction and use of universal and existential claims; the proof-state analysis here applies those rules to our example.
 
 ## 3. Run the laboratory
 
@@ -100,6 +117,10 @@ An operational record should bind the original statement, formal declaration, ex
 
 ## 5. The boundary formalization does not remove
 
+[![Formalization separates intended statement, encoded declaration, actual check, dependency audit, and scoped admission.](/images/agent-system/course-formal-evidence.svg)](/images/agent-system/course-formal-evidence.svg)
+
+Two different inputs meet at admission. One is evidence that the formal declaration was checked under the chosen environment and dependency policy. The other is a semantic comparison showing that the declaration says what the research task intended. A successful checker run cannot supply the second comparison by itself.
+
 Suppose an agent formalizes the pointwise statement when you asked for a uniform bound. A correct proof of the first statement still misses your target. Compare the intended and encoded statements before accepting the result: domains, quantifier order, assumptions, definitions, and conclusion all matter.
 
 Also distinguish these hand-inspected teaching files from arbitrary generated source. Executing generated Lean code and trusting its displayed messages is not a secure validation service. A production system needs isolated execution, controlled dependencies, and validation appropriate to its threat model. The official [proof-validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains stronger checking procedures and their trust boundaries. Its current tooling may differ from this pinned teaching project.
@@ -117,6 +138,49 @@ Complete `Exercises.lean` before opening `Solutions.lean`:
 5. Submit a short admission report: exact declaration, toolchain, dependencies, checker output, semantic alignment, and decision.
 
 **Success criterion:** both completed proofs compile without placeholders, their axiom reports match the stated policy, and the informal/formal comparison preserves the problem. A repaired proof of a weakened target does not satisfy the assignment.
+
+### Work with Codex without giving away the mathematical task
+
+Ask for a small, inspectable change and an actual execution record:
+
+```text
+Read the pinned Lean project and the existing exercise declarations.
+Explain the mathematical statement before editing a proof.
+Complete one exercise without changing its declaration or adding axioms.
+Run it with the pinned toolchain and retain the real command output.
+Inspect its axiom dependencies and compare the result with the original task.
+If execution is unavailable, report proposed code, not a checked proof.
+```
+
+When an error occurs, ask the assistant to explain the goal and available hypotheses at that location before changing tactics. An arbitrary tactic search can eventually succeed, but reading the proof state teaches you whether the assistant is proving the right statement. Reject repairs that add the desired result as an assumption or change the quantifier order.
+
+You do not need to learn general-purpose programming to conduct this exercise. You do need to read the proposition, inspect a few proof states, and understand what the execution evidence establishes. Delegating syntax does not remove responsibility for selecting the right mathematical statement.
+
+### Questions to answer before opening the solutions
+
+<details markdown="1">
+<summary>Why does a strict pointwise bound use a successor?</summary>
+
+For a fixed natural number $n$, choose $C=n+1$. The required property is $n<n+1$. Choosing $C=n$ worked for a non-strict bound but fails for this strict one. The witness and the proof of its property must both change. The supplied solution uses the corresponding basic fact about the successor order.
+</details>
+
+<details markdown="1">
+<summary>Why can a file compile while its result is unacceptable?</summary>
+
+The incomplete fixture contains a placeholder, represented in the dependencies by `sorryAx`. The extra-axiom fixture assumes a bound instead of proving it. A checker can accept a derivation relative to such assumptions while the course's admission policy rejects it as an unconditional solution. Inspect warnings and dependencies, not only the exit code.
+</details>
+
+<details markdown="1">
+<summary>Does an empty axiom report prove semantic alignment?</summary>
+
+No. A proof of the pointwise statement can have no axioms and still fail a request for a uniform bound. Inspect the declaration, including domains, assumptions, definitions, and quantifier order. Checking a different true proposition is not completion of the intended problem.
+</details>
+
+<details markdown="1">
+<summary>What should be formalized first in a research argument?</summary>
+
+Choose a consequential, sharply stated bridge whose prerequisites can be represented with available definitions. Estimate that translation work before committing. A small formalized lemma is useful when its interface with the informal proof is explicit; it should not be advertised as verification of the entire paper.
+</details>
 
 ## 7. Moving toward research mathematics
 
