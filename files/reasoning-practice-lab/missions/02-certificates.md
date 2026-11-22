@@ -1,11 +1,19 @@
-# 02 — Search for evidence in both directions
+# Apply negativity with the correct sign
 
-A(x,y)=(x+y,x-y,2x). Classify outputs (3,1,4), (3,1,5), and arbitrary (a,b,c).
+## Mathematical work
 
-Produce two routes: solve for x,y; find a linear rule on outputs that vanishes for every possible image. Prove the criterion is sufficient as well as necessary.
+Read Birkar Lemma 4.15, arXiv:1210.2670v1 p.21. On a common resolution define D=p* K_X-q* K_Y=E_q-E_p. Ask the agent to derive D>=0 over X and D<=0 over Y. Require the signed divisor, relative nefness, and effective pushforward for each application.
 
-Inject: “I tried ten inputs without finding (3,1,5), so no solution exists.” Replace this with a proof. Next append a fourth coordinate y to A. Test whether the old compatibility test remains sufficient.
+## Acceptance
 
-Deliver: positive and negative certificates, a complete four-coordinate criterion, and a counterexample to the incomplete test.
+Two justified inequalities. Do not assume D is exceptional before proving anything; that may import the desired relationship between exceptional loci.
 
-Harder transfer: explain why a single nonzero linear obstruction may be insufficient for a map whose image has codimension two. Construct your own explicit example and its full criterion.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

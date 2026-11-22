@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: provide the decisive theorem context
 
-Even an enormous context window needs a distinction between current assumptions, rejected attempts, source statements, and control instructions. A longer transcript does not automatically supply that distinction.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Prepare the exact negativity statement and the definitions of D, p and q. Compare it with a long topic summary under a declared context allowance. Check both signs and pushforwards in the actual outputs.
 
-## The contract
+**Mathematical output:** Evidence about whether precise source context fixes an observed application failure; record preparation cost.
 
-For Case A, give the worker the exact input rule, requested output, and unchecked compatibility condition. For Case B, preserve parameter dependence and topology. Summaries may omit detail only when the full artifact remains retrievable and the scope survives compression.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Evaluate compression by reconstructing hypothesis and dependency lists, not by stylistic similarity. Keep an argument available to its reviewer. A cold context should remove anchoring from prior approval, not remove the evidence needed to check the mathematics.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Compress a Case B estimate to five lines, then reconstruct its dependencies. Fail the exercise if an index-dependent constant becomes uniform.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: choose context by the next inference
-
-For a theorem application, prioritize the target, relevant definitions, exact theorem, and unmatched hypotheses. A long conversation about related geometry can crowd out the one condition that decides applicability. Keep full sources retrievable outside the working summary.
-
-**Acceptance exercise.** Remove background prose while preserving the decisive hypothesis; then remove that hypothesis. Only the second change should prevent a justified application. Use this contrast to evaluate whether context selection is evidence-sensitive.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

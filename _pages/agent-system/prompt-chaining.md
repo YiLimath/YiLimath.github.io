@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: make a chain carry mathematics
 
-A theorem application has natural stages: retrieve, transcribe, instantiate, check hypotheses, and derive the requested conclusion. In Case A, a result allowing linear polynomials does not apply to a task allowing only constants.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Pass the common-resolution identities into the signed comparison, then pass the equality of exceptional divisors into descent. Each stage must supply its stated conclusion and unresolved assumptions.
 
-## The contract
+**Mathematical output:** A valid end-to-end proof; a fluent final stage cannot repair an invalid earlier premise.
 
-Each stage consumes versioned artifacts and returns its promised artifact or an obstruction. Preserve the source statement beside the extraction. The matching stage must supply evidence for positivity or retain it as open; the presentation stage cannot erase that condition.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Chaining localizes errors but can amplify an early transcription mistake. Audit the weakest boundary. When the stages require revision, represent the feedback explicitly instead of forcing a one-way pipeline. A chain is an implementation of mathematical interfaces, not a reason to divide every task into more prompts.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Construct a source statement, hypothesis matrix, and conditional lifting argument. Leave positivity unresolved and confirm that no stage silently promotes it to a premise.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: preserve the boundary between extraction and application
-
-A first step extracts a theorem; a second substitutes the current objects; a third checks the hypotheses. If extraction omits compactness, later fluent reasoning cannot recover the missing assumption reliably. Preserve the source passage alongside the extracted statement.
-
-**Acceptance exercise.** Deliberately remove one hypothesis from the extracted record. The application step should detect the discrepancy by returning to the source, not approve the shortened statement because it came from an earlier stage.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

@@ -1,11 +1,19 @@
-# 04 — Find the quantifier error
+# Finish descent, not merely the divisor identity
 
-Target: a uniform limit of continuous real-valued functions on [0,1] is continuous. Produce the proof, recording the order of choosing x0, epsilon, N, and delta.
+## Mathematical work
 
-Inject: “Pointwise convergence supplies N, and continuity of f_N supplies delta, so the same argument works for pointwise limits.” Identify the first unsupported estimate.
+Starting with E_p=E_q and positive coefficients on all exceptional curves, prove that q descends along the factorization of p into point blowups. Use Stacks Tag 0C5J explicitly, then construct the inverse.
 
-Use f_n(x)=x^n. Compute the pointwise limit, its discontinuity, and an x depending on n where the approximation error stays at least 3/4. Do not rely on a graph.
+## Acceptance
 
-Deliver: the repaired three-term estimate and the counterexample.
+The isomorphism inducing the given rational map, with preservation of contracted curves after each contraction. Stop accepting “same exceptional locus, therefore done” without the missing argument.
 
-Harder transfer: replace uniform convergence by pointwise convergence plus a common Lipschitz constant L for every f_n. Prove the limit is L-Lipschitz by passing to the limit with x,y fixed. Then prove convergence is uniform on [0,1] using a finite grid. Identify where compactness enters and test the claim on the whole real line.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

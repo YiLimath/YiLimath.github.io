@@ -8,6 +8,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: measure capability or savings on the same theorem
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Apply the workshop rubric to direct and assisted runs, including all retries and mathematical hints. Use the relative-nef variant as a transfer task only if its solution has not been supplied. If both methods solve the problem, compare measured resources at the same proof quality.
+
+**Mathematical output:** Original outputs, localized correctness judgments, actual resource observations, and an honest no-improvement result when appropriate.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A research system should be judged by the mathematics it delivers and the errors it prevents at an acceptable cost. It should neither accept every plausible argument nor reject every proposal. This module builds a small controlled evaluation and then explains what must change when the target is an open research problem.
 
 **Learning goals:** prepare valid and invalid controls, distinguish a decision from its supporting argument, report denominators and abstentions, compare workflows fairly, and assess partial progress without pretending to know the answer to an open problem.
@@ -148,3 +159,8 @@ This completes the core course. The advanced modules apply the same discipline t
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/)
+
+
+## Source basis and limits
+
+The scoring and comparison procedure here is a course proposal. Its mathematical reference task uses [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21) and the surface results listed in the workshop. Hypothetical scoring examples below are not collected performance data.

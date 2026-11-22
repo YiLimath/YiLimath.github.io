@@ -9,6 +9,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: choose a geometric method by its prerequisites
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare Route A using negativity with Route B using the last exceptional curve. Explain which is usable for the exact target and which step would need replacement in higher dimension.
+
+**Mathematical output:** One completed applicable route and a concrete account of the unused route’s cost or limitation.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A method recommendation earns its place by producing evidence. This workshop starts with a small system of equations, develops a complete distinction between success and impossibility, and then asks a harder question: can a method be exactly correct but dangerously unstable?
 
 **Deliverable:** two method cards, an attempted decisive calculation, a record of rejected claims, and a transfer experiment. You need elementary linear algebra and polynomials. The reference calculations below are mathematical examples, not reported autonomous research results.

@@ -5,6 +5,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: make the architecture earn its complexity
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the surface proof obligations to decide what needs explicit representation, retrieval, and checking. Retain mechanisms only when they fix an observed failure or reduce measured work.
+
+**Mathematical output:** A correct proof and a justified design choice, not a count of agents or files.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A mathematical reasoning system must preserve the meaning of a problem while changing its representation, searching for arguments, and accumulating knowledge. Better models expand the search we can afford. They do not remove the need to specify what was proved, from which premises, or how a conclusion answers the original question.
 
 This series is about those enduring design problems. Agent frameworks and prompts are replaceable mechanisms. The architecture is the organization of mathematical work and evidence.

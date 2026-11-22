@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/verification-gate/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: request a specific mathematical criticism
 
-In Case B, “be more rigorous” is not actionable. “The estimate permits C to depend on j, but the compactness step needs a uniform bound” names the missing bridge. The critic should localize a mathematical defect.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Ask a reviewer to check whether D really must be exceptional before negativity can apply and whether equality of exceptional supports completes descent. Compare this with an unrestricted “check your answer” request.
 
-## The contract
+**Mathematical output:** An identified invalid inference or missing bridge, followed by a repair with actual evidence.
 
-Supply the complete argument and relevant evidence. Return the affected inference, violated condition, evidence, and possible repair. If repair strengthens the theorem, record a new branch rather than replacing the original target.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Reviewers can share blind spots. Repeated agreement is not a proof certificate. Bound revision loops and retain previous drafts so that a real repair can be distinguished from paraphrase. A critique may itself be wrong and should be supported by inspectable reasoning.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Diagnose a Case B proof that swaps quantifiers. Give the exact counterexample u_j=j and distinguish seeking a uniform estimate from weakening the target.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: turn criticism into a falsifiable objection
-
-For a proposed proof that every continuous function on an open interval attains its minimum, a useful critic identifies the unsupported compactness step and supplies f(x)=x on (0,1). A request to “think harder” supplies neither a diagnosis nor a repair.
-
-**Acceptance exercise.** After repair, inspect the changed inference. Adding compactness gives a different theorem; replacing the argument requires a new proof. Retain the original target so a silent weakening cannot pass.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

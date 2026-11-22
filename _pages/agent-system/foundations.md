@@ -7,6 +7,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: state the actual surface target
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Record the given birational map, smooth projective surfaces, characteristic-zero algebraically closed field, and nef canonical divisors. Distinguish extending this map to an isomorphism from merely finding an unrelated isomorphism. Test a proposed answer that proves only equality of canonical pullbacks.
+
+**Mathematical output:** A target statement and an explicit account of the missing descent implication.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A mathematical research system must preserve the meaning of its task while its methods, evidence, and conclusions change. This module develops a representation that makes those changes inspectable. We begin with elementary logic, work through a constant-function example, and then construct a research record directly in Codex. The same records will later support linear systems and analysis examples.
 
 **Lesson format:** plan for 60–90 minutes of explanation and discussion, followed by a separate laboratory. These are teaching allocations, not measured recording times. Sections 1–4 form the conceptual core; Sections 5–7 connect it to research; Sections 8–10 supply practice and assessment.

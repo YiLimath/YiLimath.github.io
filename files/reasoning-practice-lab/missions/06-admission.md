@@ -1,11 +1,19 @@
-# 06 — A proof-producing system that can reject its own output
+# Formalize a genuinely scoped component
 
-Use the course Module 6 and its pinned Lean lab. If no executable environment is available, record this as a design exercise; never report a compilation success.
+## Mathematical work
 
-Select one exact statement from missions 02 or 05. Ask Codex to encode it and produce a proof. Inspect the actual declaration and domain assumptions. Retain the environment identification, source, actual checker output, and dependency/axiom inspection.
+If the geometry is not available in your Lean library, formalize only the coefficientwise implication that D and -D effective imply D=0, on a stated finite index set. Keep the imported negativity theorem, its applications, and descent visibly outside that formal claim.
 
-Faults to inject separately: a wrong target encoded as a true theorem; a placeholder proof; an extra assumption that already implies the conclusion; an old successful check attached to modified source.
+## Acceptance
 
-Deliver: admission decisions for each artifact, including which policy check rejects each fault. A zero exit code alone is not the complete admission record. A conversation asserting “verified” is no execution evidence.
+Actual toolchain/checker/axiom evidence if executed, an exact declaration, and an honest statement that this does not formalize the surface theorem. If no executable environment exists, mark the exercise unexecuted.
 
-Harder challenge: arrange a reproducible admission path for an unchanged approved statement and pinned dependencies, then rerun it on the faults. Explain the remaining trusted components and semantic-alignment boundary. Do not claim all mathematical statements can be decided automatically.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

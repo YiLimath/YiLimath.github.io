@@ -1,11 +1,19 @@
-# 01 — A correct answer to the wrong question
+# Baseline and exact target
 
-Operation: r(c)=(c,c), with c real. Target v1: produce (1,1). Target v2: produce (1,0).
+## Mathematical work
 
-Solve both, showing the equality check or contradiction. Inject this response to v2: “Take c=1; it produces a nonzero output.” Identify exactly which proposition was proved and why it does not settle v2.
+Ask your agent to prove that a given birational map between smooth projective surfaces with nef canonical divisors extends to an isomorphism, over an algebraically closed characteristic-zero field. Supply the same source packet to both baseline and later assisted runs. Preserve the unedited answer, all retries, and measured resource use.
 
-Deliver: the two target records, a classification for arbitrary (a,b), and a revision decision about which v1 evidence survives.
+## Acceptance
 
-Acceptance: existence iff a=b, with the actual witness and necessity argument. The existence of some nonzero output must never count as the requested output.
+Locate any gap in common resolution, canonical comparison, exceptional support, or descent. If the baseline already succeeds, do not claim a capability gain; compare cost or select a harder task.
 
-Harder transfer: r(c)=(c,2c,c+1). Derive all compatibility conditions for (a,b,d); do not merely test examples. Explain why this map is affine rather than linear and why blindly importing a linear obstruction theorem is inappropriate.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

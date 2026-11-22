@@ -8,6 +8,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: inspect a proof whose ending is missing
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Review the baseline for the signs in negativity, positivity of exceptional coefficients, and descent. Preserve correct steps. If the proof ends at equality of exceptional loci, require the factorization argument rather than accepting the phrase “therefore isomorphic.”
+
+**Mathematical output:** A localized gap report and a repaired argument; the informal report is not a formal certificate.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 Review asks whether an argument supports its conclusion. Admission asks whether the workflow may reuse that conclusion, under which assumptions and for which version. These decisions are related, but neither an approving tone nor a field named `verified` supplies mathematical evidence.
 
 **Learning goals:** localize a defective inference; distinguish a gap from a counterexample; preserve assumptions through a chain; and bind a review to the text it examined. The laboratory uses the limit and prescribed-output examples from earlier modules. No formal prover is required yet.
@@ -151,3 +162,8 @@ Submit the frozen inputs, localized reports, repaired versions, and final scoped
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/lean-formalization/)
+
+
+## Source basis and limits
+
+The official [Lean validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains the distinction between a valid formal proof and the meaning of its statement. Informal review procedures below are our design proposals and do not inherit kernel-checking guarantees.

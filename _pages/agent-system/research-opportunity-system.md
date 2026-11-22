@@ -5,6 +5,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: distinguish a known variant from a new opportunity
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Start with the relative-nef variant of the surface theorem and inspect why the absolute proof transfers. Then select a real paper and a precisely changed hypothesis; compare prior results before recommending work.
+
+**Mathematical output:** An actual attempted bridge and prior-art comparison, not a confidence score or a list of topics.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 The deliverable is a research proposal you can actually begin: an exact candidate theorem, a source audit, a plausible method, and a tested first lemma. A list of fashionable papers or a polished architecture diagram does not meet this standard.
 
 This is a design and laboratory, not a report that a system has already discovered a new theorem. It requires access to real sources and mathematical checking. Do not assign numerical success probabilities without calibration data.
@@ -214,18 +225,17 @@ Use qualitative decisions with explicit reasons:
 
 Even the first category is not a promise of success. Ask a separate review conversation to attack the weakest step using the full evidence. Distinct conversations do not guarantee independent judgments.
 
-## Run a pilot before searching your whole corpus
+## Pilot on a source-based geometric proof
 
-Start with the interpolation problem in the [method-selection project](/posts/2026/08/agent-system/proof-sketch-system/). Give the system three distinct nodes, specified data, and a degree bound of one. Ask whether the sufficient degree allowance of two is necessary for these particular data. Require an exact compatibility criterion. Then investigate the stability challenge: changing the output domain changes the sharp error bound.
-
-Use the projective line with the trivial bundle and two distinct rational points as a control. The restriction map sends a constant c to (c,c), so (1,1) lifts while (1,0) does not. Ask the system to produce that calculation before proposing a generalization. This is established elementary mathematics, not a new research opportunity; recognizing that boundary is part of the exercise.
-
-Next select three actual papers from your authorized corpus. For one candidate, complete the hypothesis-use table, prior-art search, and first proof attempt. Save all outputs, including a rejected candidate. Compare this with an ordinary request to suggest research topics using the same material and effort budget.
-
-Judge the system by whether its proposal is precise, its source comparisons are correct, and its first attempt materially changes your assessment. A clean negative report can outperform a confident list of untested ideas. Do not score verbosity or number of proposed projects as research progress.
+Use the minimal-surface workshop to establish a baseline before searching an entire corpus. Its relative-nef variant demonstrates how to audit a changed hypothesis, but is not a novel research proposal. For an actual opportunity, select a theorem in a paper you use, state the proposed difference precisely, and attempt its first unsupported implication. Measure whether the structured workflow improves that proof attempt or reduces its cost compared with the direct request. Do not recommend a project merely because the records are complete.
 
 ## Final output to the researcher
 
 Submit one recommended project, up to two alternatives, and rejected candidates with reasons. For the recommendation include the proposed theorem, closest prior results, proof plan, completed probe, outstanding lemmas, and the next concrete research session. If nothing survives, submit an honest negative report.
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Build the base workspace in Codex](/posts/2026/08/agent-system/codex-research-studio/)
+
+
+## Source basis and limits
+
+The geometric starting point uses [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21). The proposal-selection procedure is a course synthesis: no source cited here validates a probability that its recommendations will produce new theorems.

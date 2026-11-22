@@ -5,35 +5,55 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-This series combines established software patterns with a proposed architecture for mathematical research. A citation to a pattern book supports the pattern's provenance; it does not establish that our mathematical specialization is effective.
+The course is under a substantive source and exercise revision. Its criterion is practical: help an agent complete previously unfinished mathematical work, or reach the same justified result with less measured cost. This page distinguishes support for a mathematical theorem from evidence that a workflow improves performance. Neither replaces the other.
 
-## Primary sources and what they support
+## What the first audit found
 
-| Source | Use in this series | What it does not establish |
+The pre-revision snapshot contained 41 public chapter pages; 29 had no direct external source link. This was a citation-coverage check, not a verdict that 29 pages were mathematically false. Many short pattern pages repeated procedural exercises without a source-based research problem. They are now optional reference cards tied to the [minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/), not independent advanced lectures.
+
+The new workshop supplies complete proof routes relative to explicitly imported theorems. Its mathematical exposition has been checked in this editing pass, but it is not a formally verified development. No controlled agent experiment has yet established that the proposed course workflows improve capability or cost. Student runs must supply that evidence.
+
+## Mathematical source map
+
+| Result or input | Source and locator | Scope of the support |
 |---|---|---|
-| [Bundy, Proof Planning (1996)](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf) | Plans built from methods with preconditions; control of proof search | Reliability of a general language-model researcher |
-| [Lean reference: axioms](https://lean-lang.org/doc/reference/latest/Axioms/) | Formal results depend on the encoded statement and audited axioms | Correctness of an informal-to-formal translation |
-| [NIST DLMF: interpolation](https://dlmf.nist.gov/3.3) | Polynomial interpolation at distinct nodes | Solvability under an arbitrary smaller degree bound |
-| [Anthropic, Building effective agents](https://www.anthropic.com/research/building-effective-agents) | Distinction between fixed workflows and dynamically selected actions | A prescription for how many mathematical workers to use |
-| [Danus, version 2](https://arxiv.org/abs/2607.06447v2) | A reported fact-graph orchestration system | A correctness guarantee for every admitted informal claim |
-| [Rethlas–Archon, version 2](https://arxiv.org/abs/2604.03789v2) | Separation of informal reasoning and Lean formalization | Equivalence between an informal review verdict and kernel checking |
+| Negativity lemma | [Birkar, *Lectures on Birational Geometry*, arXiv:1210.2670v1, Lemma 4.15, p. 21](https://arxiv.org/pdf/1210.2670v1#page=21) | The specified projective birational algebraic theorem; not an automatic analytic extension |
+| Common resolution of regular surfaces | [Stacks, Tag 0C5S](https://stacks.math.columbia.edu/tag/0C5S), Lemma 54.17.2 | Common point-blowup model for a birational map of proper regular surfaces |
+| Factorization of surface morphisms | [Stacks, Tag 0C5R](https://stacks.math.columbia.edu/tag/0C5R), Lemma 54.17.1 | Factorization into point blowups under its regular surface hypotheses |
+| Descent through a contracted exceptional curve | [Stacks, Tag 0C5J](https://stacks.math.columbia.edu/tag/0C5J), Lemma 54.16.1 | Factorization of a morphism constant on that curve |
+| Continuity of a uniform limit | [Lebl, *Basic Analysis*, §6.2.1](https://www.jirka.org/ra/html/sec_liminter.html) | The analysis calibration proof; no claim about an agent's accuracy |
+| Dini's theorem | [Müger, *Topology for the Working Mathematician*, Proposition 7.7.37, p. 158](https://www.math.ru.nl/~mueger/topology.pdf#page=158) | Monotone convergence with a continuous limit on a countably compact space; the course uses the compact metric specialization |
+| Extreme values on compact spaces | [Müger, Corollary 7.7.30, pp. 156–157](https://www.math.ru.nl/~mueger/topology.pdf#page=157) | The nonempty-domain attainment examples in Module 3 |
+| Classical polynomial interpolation | [NIST DLMF, §3.3](https://dlmf.nist.gov/3.3) | Interpolation formulas; degree restrictions and elementary error bounds are derived in the course |
 
-## Books as supporting references
+Local calculations and consequences are written out and labeled as course exposition. They are not attributed as quotations or claimed to be new theorems. The geometric project imports the four listed results and proves the remaining comparisons and descent steps explicitly.
 
-Antonio Gulli's *Agentic Design Patterns* supplies a broad catalogue. The local attachment's contents identify chaining, routing, parallelization, reflection, tools, planning, and multi-agent work as Chapters 1–7, followed by memory and other operational patterns. These names organize implementation choices below the mathematical contracts.
+## Reasoning-system sources
 
-Victor Dibia's *Designing Multi-Agent Systems* and Lakshmanan and Hapke's *Generative AI Design Patterns* provide complementary engineering perspectives. Their framework-specific mechanisms should be read as replaceable implementations. The series does not rely on a vendor SDK, a particular model generation, or practitioner claims about permanent AI limitations.
+- **Proof planning:** Bundy, [“Proof Planning” (1996), pp. 261–262, “The Nature of Proof Plans”](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf#page=1). Methods describe tactic prerequisites and effects; critics concern failures and possible repairs. This supplies a historical basis for method applicability, not a guarantee for language-model research.
+- **Dependency revision:** Doyle, [“The Ins and Outs of Reason Maintenance” (1983), opening description of reason maintenance](https://ijcai.org/proceedings/1983/82). Tracking the reasons for derived beliefs predates modern agents. Our Markdown records are a proposed manual interface, not an implementation of the paper's algorithms.
+- **Formal meaning and assumptions:** the official Lean text, [“Propositions and Proofs”](https://lean-lang.org/theorem_proving_in_lean4/Propositions-and-Proofs/), supplies the logical foundation used in Module 1.
+- **Validation boundary:** the official [“Validating a Lean Proof”](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) distinguishes what was proved from what the statement means and describes checks of different strength. Its “Printing Axioms” and “Gold Standard” sections support the need to inspect dependencies and the validation environment. Current documentation does not imply that every tool described there exists in the older pinned teaching environment.
+- **Workflow vocabulary:** [Anthropic, “Building effective agents”](https://www.anthropic.com/research/building-effective-agents), is practitioner guidance on workflow and agent patterns. It is not an empirical validation of this mathematics course.
 
-## Evidence labels used in the text
+Gulli's, Dibia's, and Lakshmanan–Hapke's books remain optional engineering background. Merely naming these books does not justify a particular mathematical claim or a performance forecast. Claims that depend on a book passage need an edition and inspected location before being treated as sourced.
 
-A **worked argument** has its reasoning supplied in the article. A **design proposal** specifies behavior to implement and test. A **reported system** is attributed to its source. A **historical implementation note** may describe a local snapshot and requires a pinned revision before reproduction. The laboratory is a guided ChatGPT or Codex workflow. A written protocol specifies intended behavior; its execution must be recorded and evaluated. Only the separately identified Lean exercises supply proof-assistant checks.
+## Reported systems are a separate evidence category
 
-The three running cases are teaching examples with explicit conclusions. They do not resolve the open problems that motivate advanced mathematical research. The basic birational example is derived using coordinate formulas; every inverse comes with an explicit domain restriction.
+[Danus v2](https://arxiv.org/abs/2607.06447v2), abstract, reports fact-graph memory, planning, parallel workers, and claim checking before admission. [Rethlas–Archon v2](https://arxiv.org/abs/2604.03789v2), abstract, reports informal reasoning linked to Lean formalization. These high-level descriptions were checked against the versioned abstracts in this pass. Their experiments and artifacts were not independently reproduced here. Quantitative comparisons or claims of superiority require inspection of the relevant evaluation and matched runs.
 
-## Source audit exercise
+## What must still be demonstrated
 
-Select one citation, write its exact supported assertion, and copy the source locator into an evidence record. Then list the extra claims that would require additional evidence. For example, a paper describing a verifier supports the existence of that component; measuring the verifier's false-acceptance rate requires an evaluation, and asserting soundness requires a different argument altogether.
+| Part of the course | Current status | Required evidence before a stronger claim |
+|---|---|---|
+| Geometric workshop | Source-based teaching proof with explicit imported lemmas | Actual baseline and assisted runs; localized checking of each output |
+| Core modules 1–5 | Methods and examples, now attached to geometric proof obligations | Show which intervention fixes which observed proof failure |
+| Module 6 | Formalization tutorial and separately scoped teaching artifacts | Actual execution and statement/dependency checks for each new formalization |
+| Modules 7–8 | Proposed recovery and coordination protocols | Recovery/coordination outcomes and full resource accounting |
+| Module 9 | Proposed evaluation rubric | Collected results; no invented savings or discovery rates |
+| Opportunity discovery | A hypothesis-audit and prior-art workflow proposal | A real candidate, inspected neighboring results, and an attempted decisive lemma |
+| Short pattern cards | Optional interventions, not standalone modules | Retain only when they improve a relevant run |
 
----
+A learned method is valuable when it changes an outcome or its cost. A correct proof supplied in the lesson is a reference answer, not evidence that an agent produced it. A repaired run with a human-supplied key lemma is assisted work, not autonomous discovery. An elementary control is not a benchmark of original research.
 
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Start the birational proof project](/posts/2026/08/agent-system/birational-proof-workshop/) · [Course roadmap](/posts/2026/12/Agent-System/)

@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: keep the theorem distinct from its intermediate identity
 
-Case A may end with a lift, a proof that the specified output is impossible, or an open obstruction. Case B may produce useful estimates without the uniformity required by the target. These outcomes deserve different names.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Challenge an answer that declares completion after p* K_X = q* K_Y. Ask it to produce the morphism extending the given birational map and prove its inverse.
 
-## The contract
+**Mathematical output:** The actual target completed, with the extra work needed after the divisor comparison.
 
-Keep the target immutable within an attempt. Additional hypotheses create conditional branches. A final report identifies the exact target version, evidence, remaining assumptions, and next informative action.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Budget exhaustion ends execution, not mathematics. A local lemma can be complete while the programme remains open. The conversational exercise asks you to distinguish usable, conditional, and unresolved outcomes. Inspect the actual responses; the instructions do not enforce these states.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Report Case B with only parameter-dependent estimates available. State the partial result and missing uniformity assertion without claiming the main problem solved.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: detect a solved substitute
-
-The target is to lift a specified pair (a,b) to a constant function. Producing a lift for (1,1) does not solve the target (1,0). Monitor the actual input, output, and quantifiers, not whether the conversation contains a plausible solution.
-
-**Acceptance exercise.** Keep the original target beside the current subgoal. Every completed subgoal needs a stated implication back to the target. A change of target requires an explicit decision and leaves the earlier task unresolved.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

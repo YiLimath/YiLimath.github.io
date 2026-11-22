@@ -5,7 +5,10 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Practice pack:** [Download seven progressively harder missions](/files/reasoning-practice-lab.zip), with starter records, deliberate faults, transfer challenges, and separate reference answers. Begin with one mission; preserve the first attempt before reviewing it.
+**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Start here if the elementary calibration problems are already familiar.
+
+
+**Practice pack:** [Download seven progressively harder missions](/files/reasoning-practice-lab.zip), following the birational proof project, with baseline records, source checks, descent, hypothesis changes, and transfer tasks. Begin with one mission; preserve the first attempt before reviewing it.
 
 
 Use ChatGPT or Codex directly. No Python project, API integration, or programming prerequisite is needed. Each experiment produces a small record that you can inspect and carry into the next experiment.

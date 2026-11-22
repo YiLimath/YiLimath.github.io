@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/plan-and-execute/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: route by the unmet obligation
 
-In Case B, finding a compactness theorem, checking constant dependence, and justifying passage to a limit are different tasks. A router should inspect the unresolved obligation rather than route everything containing “analysis” to one specialist.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Send an unresolved theorem hypothesis to source/application work; send E_p = E_q with no morphism to descent work; send a completed proof to checking.
 
-## The contract
+**Mathematical output:** The next task addresses the actual gap rather than producing another general discussion.
 
-A source handler returns a source and proposed match; a calculation handler returns inputs and interpreted output; a reviewer returns an assessment of an inference. Their shared envelope preserves different evidence kinds. Routing success is not proof success.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Allow abstention when the obligation is underspecified. Record the routing reason and permit reassignment after new evidence. Classification is a search decision; rules, models, or researchers may implement it without changing its mathematical status.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Split “justify the limit” into topology, uniformity, compactness, and identification obligations. Specify the evidence that would close each one.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: route an unresolved estimate
-
-Suppose a proof needs a bound independent of a parameter. If a cited theorem supplies the bound, route to source inspection with the exact parameter dependence as the question. If the theorem does not apply, route to a mathematical argument or counterexample search. Sending the same question to more literature workers does not repair a failed hypothesis.
-
-**Acceptance exercise.** Require the result to name the missing estimate, its quantifiers, and the evidence needed to discharge it. Test an ambiguous request and check that the router asks for the missing domain instead of inventing one.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

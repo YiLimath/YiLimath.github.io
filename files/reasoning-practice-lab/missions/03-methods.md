@@ -1,11 +1,19 @@
-# 03 — Solvable is not the same as stable
+# Choose a proof route
 
-Find a real polynomial of degree at most one taking values (0,1,3) at (0,1,2). Compare coefficient elimination and a compatibility relation. Then change the degree bound to two.
+## Mathematical work
 
-Inject the quadratic answer as a supposed solution to the first target. Require the reviewer to check the degree, not only the three values. Next submit the old impossibility verdict to the revised target.
+Compare the negativity route with the last-blowup route from the workshop. Use the baseline failure to select which to develop. Keep the same mathematical target and available source inputs.
 
-Deliver: both versioned decisions and a formula characterizing all data (a,b,c) that admit a linear fit.
+## Acceptance
 
-Harder challenge: interpolate arbitrary a,b at nodes 0,h, h>0. If each datum changes by at most eta, prove a sharp output-error bound on [0,h] and at a fixed t>h. Supply perturbations attaining the bounds. Explain why near-colliding nodes do not by themselves prove instability on every output domain.
+One completed route, an exact description of its prerequisites, and actual search/retry cost. Two unfinished plans do not count as a proof.
 
-Research transfer: inspect an accessible interpolation theorem, change one node/domain assumption, and attempt the first missing estimate. Mark classical rediscovery separately from a novelty claim.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: retain a useful method without memorizing a verdict
 
-Repeated success with matrix inversion can justify trying it earlier on related linear systems. It does not establish invertibility in every new case. The learned object is a scoped search preference.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Save the two-sign application as a method with preconditions. Apply it to the relative-nef variant with a new applicability check, not the old conclusion.
 
-## The contract
+**Mathematical output:** Successful transfer with the curve-to-base argument supplied; otherwise an unresolved prerequisite.
 
-Record the task family, proposed policy change, supporting episodes, and held-out results. Keep mutable rankings separate from mathematical evidence. A policy rollback should not rewrite the theorem ledger.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Include difficult negative cases when evaluating adaptation. A policy that improves easy examples can hide rare missing-hypothesis failures. Changing the evidence policy is a separate migration and may require rechecking old records.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Tune a route preference on invertible matrices, then test a singular matrix with one solvable and one impossible requested vector. Direct compatibility checking must remain available.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: learn a method with its eligibility conditions
-
-A successful compactness argument may suggest a reusable method: obtain uniform bounds, choose a topology, extract a subsequence, identify the limit. Store the necessary hypotheses with that sequence. “Use compactness” alone is not reusable mathematical knowledge.
-
-**Acceptance exercise.** Test the extracted method on a nearby problem lacking the bound. It should expose a missing premise. Record failures and scope restrictions alongside successes to avoid teaching the system a false universal rule.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

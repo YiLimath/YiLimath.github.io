@@ -7,35 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/foundations/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: use structure only to expose the sign computation
 
-A record with `claim` and `confidence` is structured but mathematically weak. Useful types distinguish a statement from its argument, an assumption from a justified premise, and an evidence category from a workflow status.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Represent the two negativity applications in separate rows with B, -B, morphism, pushforward and conclusion. Challenge a perfectly formatted row with the wrong sign.
 
-Case A needs the specified output and exact input-to-output map. Case B needs quantifier order and allowed constant dependencies. Case C needs indexed statements, base cases, and a rank. A generic summary field conceals all three.
+**Mathematical output:** Mathematical rejection of the wrong row; field presence alone does not validate a proof.
 
-## Four checks, four meanings
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-Parsing checks required fields. Referential validation checks that linked objects exist and match their versions. Policy validation checks whether the available evidence permits use. Mathematical review checks whether the inference is justified. Return these failures separately.
+## Evidence and scope
 
-In the current Markdown laboratory, retain the exact statement and argument versions with each review. A separate implementation could add content hashes to detect textual changes, but this course does not supply an automatic hashing gate. Neither labels nor hashes establish mathematical correctness.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Replace components without erasing evidence
-
-Dependency injection supplies a source adapter or reviewer through a stable interface. It is useful when the implementation changes. However, an informal review cannot satisfy a policy requiring a formal certificate merely because both fit the same JSON schema.
-
-## Build and test
-
-Create a valid record that interchanges the quantifiers in Case B. Parsing should succeed. Explain the separate semantic obligation needed to catch the error. Then ask which results meet an informal-review policy and which meet a policy requiring actual Lean evidence. Missing formal execution must remain explicit.
-
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: validate meaning after validating fields
-
-A record can contain every required field and still claim that an open interval is compact. Structural validation checks presence and format; mathematical review checks the argument and applicability. Store these as separate outcomes.
-
-**Acceptance exercise.** Create one malformed but mathematically correct record and one well-formed but false record. A useful system distinguishes them and requests the appropriate repair instead of assigning one generic confidence score.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

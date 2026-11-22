@@ -8,6 +8,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: retrieve the right form of negativity
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Inspect Birkar Lemma 4.15. For D = p* K_X - q* K_Y, check the sign, morphism, Cartier condition, and effective pushforward in each of the two applications. Do not impose exceptional support on D before proving it.
+
+**Mathematical output:** Two valid instantiated theorem applications and rejection of a wrong-sign application, with the precise source locator.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A relevant paper is a starting point. To use it in a proof, you must identify its exact theorem, match its objects to yours, and discharge its hypotheses. This module turns that familiar mathematical practice into a research workflow that can be delegated and audited.
 
 **Learning goals:** distinguish retrieval from application; build a hypothesis table; diagnose a near-match; and decide when more searching is less useful than proving a missing condition. Modules 1–2 are prerequisites. The main example needs only elementary real analysis; the second example uses elementary linear algebra.
@@ -151,3 +162,8 @@ The durable skill is recognizing **which theorem is being applied to which objec
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/reasoning/)
+
+
+## Source basis and limits
+
+For the analysis calibration, see Müger, [Corollary 7.7.30, pp. 156–157](https://www.math.ru.nl/~mueger/topology.pdf#page=157). For the main geometry task, inspect [Birkar Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21). A source statement and its applicability here require separate checks.

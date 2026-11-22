@@ -7,6 +7,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: choose between two real proof routes
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare the two-negativity-application route with the last-blowup route before expanding either. Identify their imported inputs and the first obligation the baseline failed to close. Develop the route that addresses that failure; do not require every possible route to finish.
+
+**Mathematical output:** A completed proof route, or the exact unresolved inference; record searches and failed branches used to reach it.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 Planning means deciding which missing mathematical justification to pursue next. A task list alone does not express which results actually imply the target. This lesson develops the distinction through a complete interpolation problem, then transfers it to geometric research. Bring the statement and argument records from Module 1.
 
 **Learning outcome:** you should be able to justify a decomposition, compare routes without confusing sufficient and necessary conditions, choose an informative next action, and preserve useful results when a route fails. Use the worked calculations for the lecture and the four-round laboratory for a separate practice session.
@@ -219,3 +230,8 @@ Use both (1,1) and (1,0). Then remove the evidence for one route and ask which a
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/knowledge-retrieval/)
+
+
+## Source basis and limits
+
+Bundy, [“Proof Planning,” pp. 261–262](https://cdn.aaai.org/AIPS/1996/AIPS96-033.pdf#page=1), distinguishes proof methods and their prerequisites. Our task files and route-selection policy are proposed teaching implementations, not results validated by that paper.

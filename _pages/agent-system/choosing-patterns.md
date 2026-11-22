@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/evaluation-monitoring/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: choose an intervention from a failed proof
 
-If the failure is a missing theorem hypothesis, add an applicability record. If it is stale evidence, bind reviews to versions. If it is duplicated exploration, share task state. A larger team does not automatically fix any of these.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. If the baseline has a sign error, add a signed applicability check. If it omits descent, add the return obligation. Test only the intervention relevant to the observed failure.
 
-## The contract
+**Mathematical output:** A repaired inference and its additional cost; remove a mechanism that does not help.
 
-Chaining organizes stages, routing selects capabilities, parallelization explores alternatives, memory preserves evidence, and admission controls reuse. They should operate on common statements and arguments rather than invent incompatible records for every pattern.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Compare each added mechanism against a simpler baseline under a fixed budget. A stronger model may combine several responsibilities in one worker without erasing their contracts. The same design should preserve the specified output, quantifier dependence, and induction rank across all three cases.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Start with one worker and the workbench. Add one mechanism to address a measured failure. State what result would persuade you to remove it again.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: choose from a diagnosed failure
-
-If the problem is a missing source hypothesis, add an application check. If it is incompatible worker assumptions, add explicit branch records. If it is a stale verdict, add a version-sensitive admission step. More agents do not address every failure.
-
-**Acceptance exercise.** Write the failure observed before adding the component, then rerun that case and an unaffected control. Keep the component only if its benefit justifies the extra work and new failure modes.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

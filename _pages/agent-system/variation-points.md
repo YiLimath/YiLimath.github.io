@@ -7,35 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/lean-formalization/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: compare models without changing the task
 
-A stronger model may replace several workers or discover a shorter proof. It must still identify what was proved, from which premises, under which assumptions. These are the stable contracts; model selection and prompting are mechanisms behind them.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Hold the surface statement, source access, allowed assistance, and acceptance rubric fixed while changing the model. Record actual settings and resource use.
 
-For theorem retrieval, the contract is a source locator, statement, hypotheses, and proposed object substitution. For review, it includes the exact argument version and evidence kind. Compatibility is semantic, not merely a matching response shape.
+**Mathematical output:** Comparable outcomes without attributing extra tools or supplied proof steps to model quality.
 
-## Find a real axis of change
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-Name a plausible replacement and ask what callers must still be able to rely on. Keep method ranking separate from hypothesis matching; keep candidate generation separate from premise permissions; keep storage identity separate from display names.
+## Evidence and scope
 
-Do not create an abstraction that conceals the distinction the caller needs. A universal `verify()` returning a Boolean hides parsing, testing, source matching, and kernel checking. A review envelope should name the check and its limits.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Substitution has conditions
-
-A formal checker, a model critic, and a human reader may share an interface without being interchangeable under every policy. Substituting one for another can require changing the permitted use of its output. Record that policy change rather than calling all outputs “verified.”
-
-## Build and test
-
-Replace the worker with a scripted response and retain the same version and admission checks. Then change the evidence policy to formal-only. Informal reports must not be admitted as formal evidence; a shared schema must not upgrade their assurance.
-
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: replace a model while preserving the research contract
-
-A new model can generate candidates faster without changing what counts as an admissible premise. Keep the target format, evidence requirements, and review scope stable while testing the replacement on the same tasks. Change those contracts only through an explicit redesign.
-
-**Acceptance exercise.** Compare actual outputs under equal conditions and disclose different tool access. Better prose or faster completion alone does not show improved proof reliability.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

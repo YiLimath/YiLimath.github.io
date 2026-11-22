@@ -7,46 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/foundations/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: draw only the dependencies the proof uses
 
-Architecture diagrams should answer a named question. A box called “reasoning engine” is useful only if its input, output, and authority are specified.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Separate the logical arrows leading to D = 0 and descent from the operational arrows used to retrieve and inspect sources. Label each logical arrow with its hypotheses.
 
-[![Research components and their artifact contracts](/images/agent-system/research-architecture.svg)](/images/agent-system/research-architecture.svg)
+**Mathematical output:** A diagram from which another reader can reconstruct the actual proof obligations.
 
-*This is a proposed responsibility map, not a deployment diagram. Arrows carry artifacts; the admission component alone grants permission to use a claim as a premise.*
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Four views of the same system
+## Evidence and scope
 
-| View | Question | Required content |
-|---|---|---|
-| Semantic | What does the system reason about? | Statements, object versions, assumptions, inference records |
-| Logical | What justifies this conclusion? | Joint premises, alternative arguments, theorem applications, induction order |
-| Execution | What action runs next? | Queues, retries, budgets, checkpoints, cancellation |
-| Operational | What survives failure? | Durable writes, identities, service boundaries, replay and invalidation |
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-A dependency arrow must not also mean a network call. A search loop must not be read as a circular proof. Use the [two-graph example](/posts/2026/08/agent-system/design-principles/) to see the distinction.
-
-## Responsibilities before agents
-
-The controller schedules work; a worker proposes an artifact; a reviewer supplies evidence; admission checks policy; the ledger retains versions and dependencies. These may share a process. Separating responsibilities does not require one model, service, or person per box.
-
-The formal checker, if present, checks an encoded proposition. The source adapter locates evidence. Neither can silently change the original target. The researcher interface presents proposed scope changes and the evidence needed to decide them.
-
-## Hands-on practice
-
-Draw the four views for the ledger lab. Mark which components are implemented and which are merely assumed. Then place a crash between saving a review and updating task status. In the operational view, show how replay recovers without applying the review twice or to the wrong statement version.
-
-## Reference notation
-
-[C4](https://c4model.com/introduction) supplies established context and container views for software architecture. The semantic and logical views here add the mathematical content that a deployment view cannot express. These are design proposals; the figure does not assert that any particular research system implements them.
-
-## Worked design decision: draw one system from complementary views
-
-A dependency view shows which claims rely on which premises. A workflow view shows how proposals move through review. A storage view shows where versions and sources persist. Combining all three into unlabeled arrows hides the difference between logical implication and a file transfer.
-
-**Acceptance exercise.** For every arrow, state its meaning and a failure that can occur there. If an arrow cannot be given an operational or mathematical interpretation, remove it or mark it as a proposed relationship.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

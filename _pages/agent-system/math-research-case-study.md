@@ -8,6 +8,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: evaluate architecture on proof completion
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the same surface proof packet to compare direct conversation with a persistent workspace. Test a new hypothesis only after retaining the first outcomes. Do not call this a reproduction of Danus or Rethlas.
+
+**Mathematical output:** Measured capability/cost results for this local experiment; reported systems remain separate evidence.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 Use existing research systems as sources of questions, not templates whose complexity must be copied. This chapter builds and evaluates a small Codex workflow. It does not claim to reproduce a current Danus or Rethlas implementation, and it does not treat historical local API names as a usable specification.
 
 **Reading route:** start with the workshop below for the advanced design; use [A reference episode with expected state changes](#a-reference-episode-with-expected-state-changes) as a concrete calibration when needed. Complete the research assignment after the control example.

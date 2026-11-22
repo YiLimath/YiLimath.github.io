@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: resume an interrupted proof faithfully
 
-A timeout, inaccessible source, malformed record, and failed compatibility equation require different responses. Only the last may prove the requested output impossible, and only after proving that every allowed output must satisfy that equation.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Interrupt after the first signed negativity application. Resume from the saved argument and identify the second sign and descent as unfinished. Do not rerun completed source extraction unnecessarily.
 
-## The contract
+**Mathematical output:** The remaining proof completed with actual recovery cost and no fabricated earlier review.
 
-Classify before retrying. Bound transient retries, repair malformed inputs, seek another source where appropriate, and replan when the route fails mathematically. Save completed observations at artifact boundaries before acknowledging work.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-A restarted worker should consume the same versioned inputs or create a new attempt. It must not merge fragments from different maps or requested vectors. A failed method leaves the target open unless its failure actually proves the target false.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Inject a timeout, stale review, and nonzero obstruction. Write three recovery records and justify which one, if any, supports a mathematical conclusion.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: recover without manufacturing evidence
-
-If a source download fails, the state is “source inaccessible,” not “the theorem is false.” Preserve the requested source, failed operation, and unfinished mathematical obligation. Resume from the last supported state after access returns.
-
-**Acceptance exercise.** Interrupt a run after a proposed proof is saved but before review. On restart, the proposal must remain unreviewed. Check that a repeated operation does not create two independent-looking pieces of evidence.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

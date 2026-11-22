@@ -8,45 +8,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**In one sentence.** Research is already a composition of recurring activities; patterns matter because a research loop must preserve failed paths and expose uncertainty, including during ordinary proof search.
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
-Mathematical research is a composition of activities: reading, retrieving,
-constructing examples, forming conjectures, searching for proofs, checking
-claims, and writing exposition. An agent becomes useful when each recurring
-activity has an explicit boundary.
+## Research task: ask whether the design changed the result
 
-## Translation of design principles
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare what the agent accomplished before and after one intervention on a real proof obligation. A workflow that changes only presentation has not demonstrated increased mathematical capability.
 
-- **Decomposition** becomes lemmas, proof obligations, or independent searches.
-- **Abstraction** becomes definitions, contracts, and representations that hide
-  irrelevant implementation details.
-- **Composition** becomes a proof or research workflow whose artifacts can be
-  passed from one stage to the next.
-- **Encapsulation** keeps a tool, model, or retrieval method replaceable.
-- **Validation** uses tests, counterexamples, proof assistants, source checks,
-  or human review.
+**Mathematical output:** A localized proof improvement or measured resource saving under a shared quality standard.
 
-## Solver loop versus research loop
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-Both solving and research benefit from preserving failed paths. Open-ended research additionally needs to
-expose uncertainty, compare alternatives, and decide whether a result is worth
-developing. Design patterns help with this organization; they do not turn a
-plausible language-model explanation into a proof.
+## Evidence and scope
 
-## Quality criteria
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-For mathematical work, correctness is necessary but not sufficient. Relevance,
-provenance, reproducibility, inspectability, and failure detectability are also
-architectural requirements.
-
-## Reference basis
-
-This translation is a course synthesis of Gulli's [pattern catalogue](https://link.springer.com/book/10.1007/978-3-032-01402-3)
-and Dibia's treatment of task decomposition, workflow architecture, evaluation,
-and responsible AI in [*Designing Multi-Agent Systems*](https://multiagentbook.com/).
-The relevant books and supporting research sources are linked directly in the
-reference basis at the end of each page.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

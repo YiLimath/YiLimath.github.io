@@ -8,6 +8,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: formalize the dependency without disguising assumptions
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. If the necessary geometric library is unavailable, encode only the abstract two-sign implication: coefficientwise nonnegativity of D and -D implies D = 0. State the finite index set and coefficient function explicitly. Keep the geometric negativity applications and descent as imported, unformalized obligations.
+
+**Mathematical output:** Actual checker evidence for the encoded lemma, if run, and an explicit list of what it does not certify about the surface theorem.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 **The practical question:** when an agent returns Lean code, what evidence would justify using its result in another proof?
 
 This module introduces formalization through one small mathematical mistake: exchanging two quantifiers. You will read a proof state, complete a proof, and compare a rejected argument with two files that compile but do not establish their claimed result under our policy.

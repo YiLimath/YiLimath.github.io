@@ -1,11 +1,19 @@
-# 05 — What did the coordinates lose?
+# Change a hypothesis and retain only valid work
 
-F(u,v)=(u,uv), over the real numbers. Classify all outputs by existence and uniqueness. Keep the inverse domain explicit.
+## Mathematical work
 
-Then parametrize y^2=x^2(1+x) using t=y/x away from x=0. Prove forward substitution, reverse coverage, and the omitted case. Determine all parameter values mapping to the origin.
+Remove nefness of K_X while retaining nefness of K_Y. Ask the agent which half of the two-sign proof survives. Require a counterexample to the stronger theorem, not merely a statement that a hypothesis is missing.
 
-Inject: substitute x=u,y=uv and cancel u^2 without a case split. Describe exactly which points of the transformed equation disappear. Distinguish coverage of the original curve from equality of the two transformed solution sets.
+## Acceptance
 
-Deliver: a map record, exception record, complete coverage proof, and a corrected cancellation statement.
+A surface blowup example, the intersection with its exceptional curve, the surviving inequality, and the withdrawn isomorphism conclusion.
 
-Harder transfer: repeat for y^2=x^3. Compare uniqueness at the origin. Then explain why a recursive reduction also needs a decreasing rank, using the Euclidean algorithm as a fully proved example.
+## Source packet
+
+- Main lesson and reference proofs: https://yilimath.github.io/posts/2026/08/agent-system/birational-proof-workshop/
+- Birkar, Lemma 4.15: https://arxiv.org/pdf/1210.2670v1#page=21
+- Common resolution: https://stacks.math.columbia.edu/tag/0C5S
+- Surface factorization: https://stacks.math.columbia.edu/tag/0C5R
+- Descent through a contraction: https://stacks.math.columbia.edu/tag/0C5J
+
+The workflow is a proposed teaching intervention. These citations support mathematical inputs, not a claim of improved agent performance. Withhold the reference proof from a baseline intended to measure independent solving.

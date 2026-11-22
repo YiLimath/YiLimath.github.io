@@ -7,6 +7,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: divide only independent mathematical work
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Compare one-session solving with a split between checking the two negativity applications and independently closing the descent argument. Give both configurations the same source packet and total allowance. Merge only after checking that both concern the same W, p, q and canonical choices.
+
+**Mathematical output:** A valid combined proof and measured total work; no presumed advantage from additional workers.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 Dividing research work is useful when the parts produce evidence that can be combined correctly. More workers do not automatically mean more mathematical progress. This module begins with a sequential workflow, then asks when separate tasks or conversations improve its evidence or elapsed time.
 
 **Learning goals:** choose a useful division of work, specify a handoff, merge reports about the same target, and compare divided work with a simpler baseline. You can complete the laboratory with ordinary conversations or a Codex workspace; a custom multi-agent implementation is not required.
@@ -134,3 +145,8 @@ Submit task contracts, unedited reports, the merge decision, the delayed-report 
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/evaluation-monitoring/)
+
+
+## Source basis and limits
+
+The [Danus v2 abstract](https://arxiv.org/abs/2607.06447v2) reports coordinated workers and fact-graph memory. This motivates a question to test; it does not establish that splitting this course task will outperform a sequential run.

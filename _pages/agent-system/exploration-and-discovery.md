@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/research-opportunity-system/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: propose a meaningful hypothesis variant
 
-Case B invites a cheap probe: does the proposed estimate depend on the approximation index? Answering that can change the plan more than a polished draft of the limit argument. Choose probes by what they can teach the scheduler.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Replace absolute nefness by relative nefness over a common base. Identify the needed commutativity and check where the image of a contracted curve lies.
 
-## The contract
+**Mathematical output:** A valid relative proof or localized obstruction; call it a classical exercise, not a novel discovery.
 
-An exact counterexample refutes a specified implication. Numerical samples can suggest one but do not prove a universal assertion. An exploratory calculation may produce a complete proof; classify its output by evidence rather than by its origin in exploration.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Preserve the scope of negative results. In Case A, (1,0) cannot be produced by the constants-only rule, but nonzero constant functions still exist. “The method failed” and “the target is false” require different evidence. A budgeted search with no witness remains inconclusive.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Write compatible reports for non-liftability of (1,0) and successful lifting of (1,1). Name the exact statement each report addresses.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: explore a controlled change
-
-Vary one hypothesis of a known theorem and predict where the proof first stops. For minimum attainment, removing compactness suggests testing open domains, then looking for a replacement compact sublevel set. This generates a concrete bridge rather than an unbounded list of ideas.
-
-**Acceptance exercise.** Produce a counterexample to the unrestricted variant and a proof under a stated replacement condition. Before calling the replacement a research opportunity, check whether it is already standard.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

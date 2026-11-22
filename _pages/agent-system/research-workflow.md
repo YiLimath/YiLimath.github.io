@@ -5,6 +5,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: repair one real birational argument
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the surface uniqueness proof as the first complete episode, then select a cited proof in your own project. Locate the first failing application under a changed hypothesis and attempt a replacement lemma.
+
+**Mathematical output:** A completed repair, meaningful partial theorem, or concrete obstruction; no novelty claim from a failed search.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 ## Begin with a mathematical obligation
 
 A useful research system must preserve the question while exploring ways to answer it. Consider this recurring task: a proof uses uniform convergence, but the target assumes only pointwise convergence. The assignment is to identify whether the step survives, find an applicable replacement, or isolate the missing lemma. Merely rewriting the same estimates is not progress.

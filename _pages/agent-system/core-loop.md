@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/codex-research-studio/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: make the next action close an obligation
 
-In Case A, finding an invertibility theorem is not completion: the actual matrix and its hypotheses must match. The next action may be an applicability check rather than another proof draft. A useful iteration begins with an open obligation and ends with a recorded change.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. When the proof reaches E_p = E_q, the next action is to establish descent through a point blowup. Retrieve and apply Tag 0C5J rather than asking for another general proof sketch.
 
-## The contract
+**Mathematical output:** The new factorization, or a precise reason it cannot be justified.
 
-The controller selects an action under a budget, executes it, stores the observation, and updates the frontier. Admission of a claim is a separate transition. Record target version, input artifacts, action, output, cost, and resulting status. A retry is a new attempt on the same target; changing the target creates a new task version.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Every action should have an informative possible outcome: a usable theorem, a rejected match, a localized gap, or a new example. A failed branch returns control to the scheduler rather than restarting indefinitely. Keep infrastructure success separate from mathematical progress.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Replay three actions: try an invertibility criterion, discover a zero determinant, and test whether the requested vector is nevertheless in the image. Save the trace and mark the exact replanning event.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: make one iteration produce a state change
-
-Begin with an exact unresolved obligation. Choose an action that could resolve or sharpen it, inspect the evidence returned, and update the record. A repeated suggestion with no new argument, source, or counterexample is not a productive iteration.
-
-**Acceptance exercise.** For each iteration, write what was known before, what evidence arrived, and what changed. Permit “still unresolved” as an honest result, but require a different next action or a reason to stop.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

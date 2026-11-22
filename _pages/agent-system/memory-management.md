@@ -7,6 +7,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: reuse mathematics after a genuine hypothesis change
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Start from the completed proof, then remove nefness of K_X while retaining nefness of K_Y. Identify which sign inequality survives. Preserve the common-resolution calculation and source theorem, withdraw the unjustified reverse inequality, and recover the blowup counterexample.
+
+**Mathematical output:** A faithful revised proof state that neither discards valid work nor retains the old isomorphism verdict.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 A research checkpoint should let a new session reconstruct what is known, why it is supported, and what remains conditional. Saving every message is not enough: the next reader can still confuse an abandoned route with a current theorem or lose the assumptions of a useful lemma.
 
 **Learning goals:** maintain alternative arguments, propagate a withdrawal without overreacting, compress context without dropping mathematical scope, and test recovery in a fresh conversation. The practical deliverable is a checkpoint that survives a deliberate change of evidence.
@@ -129,3 +140,8 @@ Submit the update trace, checkpoint, fresh-session reconstruction, and compariso
 ---
 
 [Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/multiple-agent-cooperation/)
+
+
+## Source basis and limits
+
+Doyle, [“The Ins and Outs of Reason Maintenance” (1983)](https://ijcai.org/proceedings/1983/82), describes revision using recorded reasons. The current-view/support/history layout below is our proposed interface; it is not a reproduced implementation or a measured reliability result.

@@ -7,31 +7,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/memory-management/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: bind acceptance to the proof actually inspected
 
-After a crash, the system should recover the same target, arguments, reviews, and open obligations. Reconstructing them from a conversational summary can silently change mathematical scope.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Preserve the exact statement, proof, source versions, and checker evidence if any. Change the field or nefness assumption and require an applicability review before reuse.
 
-## The contract
+**Mathematical output:** No stale admission; ordinary Markdown conventions are not claimed to enforce transactional guarantees.
 
-Use immutable artifact versions, durable writes, and explicit review bindings. Cache keys include the relevant statement, source, context, and policy versions. A hit for another domain or assumption set is a correctness defect.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-The current course laboratory saves Markdown records through ChatGPT or Codex. It does not implement transactional storage or automatic crash recovery. Production needs concurrency control, authenticated roles, migrations, backups, and reproducible tools. Monitor infrastructure health separately from mathematical progress.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Save after withdrawing one Case A route, reload, and verify that the alternative survives. Change the saved conclusion and ask the resumed session to compare it with the exact statement covered by its review. Record whether the mismatch is detected; no automatic digest check is supplied.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: separate research correctness from operational reliability
-
-A process can recover every file correctly and still preserve a false lemma. Conversely, a correct proof can be lost by a broken save operation. Maintain separate checks for mathematical admission and storage recovery, with distinct failure reports.
-
-**Acceptance exercise.** Interrupt a write, replay an already processed proposal, and withdraw a supporting premise. Explain which behaviors a manual workflow can demonstrate and which require an implemented transactional storage mechanism.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)

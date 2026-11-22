@@ -5,6 +5,17 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+## Research task: use a complete geometric case across modules
+
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Use the surface uniqueness workshop as the shared proof task. The constant-function and analysis cases below remain optional diagnostics for particular logical errors.
+
+**Mathematical output:** A proof-level result in the geometric case; elementary diagnostics alone do not establish research usefulness.
+
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
+
+**Reading order:** start with this geometric task. The elementary examples below are optional calibration material; they are not evidence that the workflow solves research problems.
+
+
 The examples in this series have different jobs. The elementary maximum example is a smoke test for a missing hypothesis. The following three cases expose deeper architectural requirements: transferring a result between objects, preserving quantifiers through approximation, and organizing induction. None is offered as a new research theorem.
 
 ## Case A. Produce the specified output, not merely some output

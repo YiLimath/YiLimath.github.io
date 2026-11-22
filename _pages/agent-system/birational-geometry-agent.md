@@ -9,6 +9,9 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
+**Birational geometry proof project:** [Uniqueness of smooth minimal surfaces](/posts/2026/08/agent-system/birational-proof-workshop/) supplies a real target, exact sources, two complete proof routes, a relative variant, and a direct-request versus assisted-workflow comparison. Start here if the elementary calibration problems are already familiar.
+
+
 The difficult part of a change of coordinates is often the part the new coordinates do not cover. This workshop develops that issue through explicit formulas, then connects it to a research system's obligation to preserve domains, recover solutions, and justify recursive reductions. You need polynomial algebra, functions, and induction—not algebraic geometry terminology.
 
 **Research workshop C.** Produce a complete reduction record, including an inverse-domain check, an exceptional-case calculation, and an induction audit. The examples are reference mathematics. The Codex experiments are tasks to run and record, not reported successes of an autonomous system.
@@ -170,3 +173,38 @@ Choose one assumption to weaken. Locate the first broken application, formulate 
 For a spiraling induction package, list each statement with all its parameters. Draw an arrow only when the proof actually invokes another statement. Check every arrow against the proposed rank, including boundary cases. If a same-rank cycle remains, identify the missing independent input. A visually convincing spiral has no evidential value without these checks.
 
 Use the [proof-based hands-on track](/posts/2026/08/agent-system/hands-on-lab/#research-track-audit-and-improve-an-actual-proof) and mission 07 in the practice pack. No numerical experiment is required. The deliverable is a source-grounded proof attempt that another researcher can resume and scrutinize.
+
+
+## 9. A source-based assignment: negativity and uniqueness
+
+This is the research-background track. It assumes divisors, relative nefness, and birational morphisms; readers without that background can use Module 4's analysis track. Its purpose is to audit an actual theorem application rather than to build more orchestration files.
+
+**Read first:** Caucher Birkar, [*Lectures on Birational Geometry*, arXiv:1210.2670v1, Lemma 4.15, printed p. 21](https://arxiv.org/pdf/1210.2670v1#page=21). Work in the notes' characteristic-zero algebraic setting. The lemma concerns a projective birational morphism $f:Y\to X$ of normal varieties and an $\mathbb R$-Cartier divisor D with $-D$ nef over X; it equates effectivity of D and of its pushforward. We use that result as an imported theorem. The full proof of the negativity lemma is not supplied or formally verified here.
+
+### Worked application: an exceptional numerically trivial divisor vanishes
+
+Assume D is exceptional over X and $D\equiv_f0$. Here exceptional means every prime component maps into codimension at least two, and numerical triviality means intersection zero with every contracted integral curve. Prove $D=0$ as a divisor, not merely as a numerical class.
+
+Exceptional support gives $f_*D=0$. Numerical triviality makes both D and $-D$ relatively nef. Apply the negativity lemma first to D: its required negative is nef and its pushforward is effective, so $D\geq0$. Apply it again to $-D$: its negative is nef and its pushforward is zero, so $-D\geq0$. Every coefficient is both nonnegative and nonpositive; hence D is the zero divisor.
+
+The two applications have opposite signs. A system that records only “nef, therefore effective” can silently reverse one of them. The source statement, the substitution, and the resulting inequality should be readable next to one another.
+
+### Assignment: recover uniqueness, then test the boundary
+
+Let $D_1,D_2$ be exceptional $\mathbb R$-Cartier divisors for the same morphism and assume $D_1\equiv_fD_2$. Prove equality. Then test the proposed strengthening that exceptional support can be removed. Do not respond only that a hypothesis is missing: produce an actual counterexample satisfying the remaining assumptions.
+
+<details markdown="1">
+<summary>Proof and counterexample checkpoints</summary>
+
+Apply the worked argument to $D=D_1-D_2$. This difference is still exceptional and $\mathbb R$-Cartier, and is numerically trivial over X. Thus $D_1=D_2$.
+
+To remove exceptional support, take the identity morphism on $\mathbb P^1$ and a nonzero point divisor P. No curves are contracted, so $P\equiv_f0$ is vacuous, yet P is not the zero divisor. Its pushforward is P, not zero. This counterexample pinpoints the lost input to the two-sign argument. It does not contradict the negativity lemma.
+</details>
+
+### The harder question is a proof obligation, not a promise
+
+Suppose a manuscript replaces the algebraic projective morphism by a proper bimeromorphic map of compact complex spaces. This source alone does not authorize that replacement. Identify which analytic negativity result would be needed, its Cartier and positivity hypotheses, and whether the manuscript satisfies them. If the source is unavailable or a hypothesis remains open, keep the application conditional. Do not infer that the desired conclusion is false merely because this citation is insufficient.
+
+For an induction package, use an actual cited proof to identify where this uniqueness statement is needed. Mark whether it compares models, identifies a divisor, or returns a result to the original space. That dependency must be a written implication. A diagram labeled “spiraling induction” without such implications is not a research result.
+
+**Submit:** the two signed applications, the uniqueness proof, the counterexample, and one precisely scoped application or unresolved analytic replacement. These deliverables assess proof construction and source use. There is no requirement to claim a new theorem, run a numerical calculation, or create multiple agents.

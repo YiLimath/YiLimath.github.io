@@ -8,31 +8,18 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-**Pattern reference.** This is a short design note, not a standalone lesson. For the worked argument, step-by-step practice, and assessment, read the [full course chapter](/posts/2026/08/agent-system/knowledge-retrieval/).
+This is an optional design reference card, not a standalone lecture or a validated research system. Its purpose is to address one failure in a real birational proof.
 
+## Research task: search for the exact missing descent result
 
-A linear-system problem may appear under solvability, matrix rank, compatibility, or null-space tests. Identify the exact missing claim before expanding the search vocabulary. Search general solvability and compatibility of the requested vector separately.
+Use [the minimal-surface uniqueness workshop](/posts/2026/08/agent-system/birational-proof-workshop/) and its source packet. Search for a morphism factoring through the contraction of an exceptional curve. Inspect Tag 0C5J and check its hypotheses in the common resolution.
 
-## The contract
+**Mathematical output:** A justified application; search failure alone must not be called a counterexample.
 
-Save inspected theorem statements, stable locators, rejected matches, and promising uninspected leads. A useful report identifies the smallest remaining applicability question. It gives the next worker a frontier rather than a pile of links.
+**Value test:** preserve the direct-request baseline. Assess whether this intervention closes a previously unresolved obligation or reaches the same checked result with less measured work. Include retries and mathematical hints. This is a proposed exercise, not a reported improvement.
 
-## Trade-offs and failure modes
+## Evidence and scope
 
-Stop when a suitable result is found, the budget ends, or searches repeat evidence. Failure to find a theorem in the inspected corpus is not proof that no such theorem exists. Novelty claims likewise need more than an unsuccessful search.
+The mathematical reference is Birkar, [*Lectures on Birational Geometry*, Lemma 4.15](https://arxiv.org/pdf/1210.2670v1#page=21), together with the factorization and descent results identified in the workshop. These justify mathematical steps, not the effectiveness of this workflow intervention. The card's operational choices are course proposals; retain them only if actual runs support their usefulness.
 
-## Build and test
-
-Use a ten-query budget. Return the source ledger, one rejected near-match, remaining leads, and an explicitly bounded conclusion about the search.
-
-Use the [running cases](/posts/2026/08/agent-system/research-cases/) and [workbench laboratory](/posts/2026/08/agent-system/hands-on-lab/). Record inputs, expected outcomes, actual outcomes, and the mathematical reason for the expectation. For references and claim boundaries, see [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
-
-## Worked design decision: search a missing bridge, not a broad topic
-
-After finding a relevant theorem, search for the exact unmatched hypothesis or comparison lemma. Record the query, corpus, source version, and why each result changes the argument. More papers about the same topic are not necessarily progress.
-
-**Acceptance exercise.** Stop with a bounded coverage statement: which sources were checked, what remained inaccessible, and which bridge remains open. A failed search is not evidence that no theorem exists.
-
----
-
-[Series guide](/posts/2026/12/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Source map and course status](/posts/2026/08/agent-system/sources-and-claims/) · [Course roadmap](/posts/2026/12/Agent-System/)
