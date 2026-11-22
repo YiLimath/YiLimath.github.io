@@ -1,0 +1,6 @@
+name = "lean-reasoning-lab"
+version = "0.1.0"
+defaultTargets = ["Formalization"]
+
+[[lean_lib]]
+name = "Formalization"

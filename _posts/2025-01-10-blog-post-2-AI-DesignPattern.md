@@ -12,7 +12,7 @@ redirect_from:
 
 How do we build a system that can work on a mathematical problem, explain its progress, and keep track of what remains unproved?
 
-This course develops the answer in **eight modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a small implementation task.
+This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a small implementation task.
 
 **For self-study:** follow the modules in order on your first pass. **For teaching:** use one or two meetings per module, depending on the audience and the time available for laboratories. The modules also work as individual lessons once their prerequisites are covered.
 
@@ -63,9 +63,10 @@ Follow the sequence to build one system progressively. Each module adds a capabi
 3. [Use the literature](#module-3) — find results and check that they apply.
 4. [Change the viewpoint](#module-4) — transform a problem without losing the way back.
 5. [Review and admit results](#module-5) — decide what evidence permits reuse.
-6. [Remember and recover](#module-6) — preserve versions, alternatives, and unfinished work.
-7. [Coordinate the work](#module-7) — an optional extension when one worker is not enough.
-8. [Evaluate and assemble](#module-8) — test the complete system on a mathematical task.
+6. [Formalize a proof](#module-6) — use Lean and audit what a checked proof establishes.
+7. [Remember and recover](#module-7) — preserve versions, alternatives, and unfinished work.
+8. [Coordinate the work](#module-8) — an optional extension when one worker is not enough.
+9. [Evaluate and assemble](#module-9) — test the complete system on a mathematical task.
 
 ## Module guide
 
@@ -189,7 +190,29 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 </details>
 
 <details id="module-6" class="research-chapter-group" markdown="1">
-<summary><span class="research-part-number">Module 6</span> Remember and recover</summary>
+<summary><span class="research-part-number">Module 6</span> Formalize a proof with Lean</summary>
+
+**Before this module:** Modules 1–5. No previous Lean knowledge is needed.
+
+**By the end:** Read a proof state, complete an elementary proof, and distinguish compilation from acceptable formal evidence.
+
+### Teaching sequence
+
+1. [Translate a quantifier distinction into Lean](/posts/2026/08/agent-system/lean-formalization/).
+2. Follow the witness construction and the proof that no uniform bound exists.
+3. Run a type error, a `sorry` placeholder, and an extra-axiom example.
+4. Compare the intended statement with the formal declaration and inspect its dependencies.
+
+**Build:** Complete the [Lean laboratory](/files/lean-reasoning-lab.zip) and submit an admission report tied to the exact declaration and toolchain.
+
+**Check your understanding:** Explain why a correct proof of the wrong statement, or compilation using an unapproved axiom, does not satisfy the research task.
+
+**Laboratory connection:** This separate project supplies real formal evidence. The Python workbench's evidence labels alone do not invoke Lean or validate a proof.
+
+</details>
+
+<details id="module-7" class="research-chapter-group" markdown="1">
+<summary><span class="research-part-number">Module 7</span> Remember and recover</summary>
 
 **Before this module:** Modules 1–2 and 5.
 
@@ -211,10 +234,10 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 </details>
 
-<details id="module-7" class="research-chapter-group" markdown="1">
-<summary><span class="research-part-number">Module 7 · Optional extension</span> Coordinate the work</summary>
+<details id="module-8" class="research-chapter-group" markdown="1">
+<summary><span class="research-part-number">Module 8 · Optional extension</span> Coordinate the work</summary>
 
-**Before this module:** Modules 1–3 and 5–6.
+**Before this module:** Modules 1–3 and 5–7.
 
 **By the end:** Add collaborators only where the division of work has a clear mathematical and operational benefit.
 
@@ -236,10 +259,10 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 </details>
 
-<details id="module-8" class="research-chapter-group" markdown="1">
-<summary><span class="research-part-number">Module 8</span> Evaluate and assemble</summary>
+<details id="module-9" class="research-chapter-group" markdown="1">
+<summary><span class="research-part-number">Module 9</span> Evaluate and assemble</summary>
 
-**Before this module:** Modules 1–6. Include Module 7 only if your project needs multiple workers.
+**Before this module:** Modules 1–7. Include Module 8 only if your project needs multiple workers.
 
 **By the end:** Judge the architecture by useful mathematical progress, reproducibility, and its treatment of invalid arguments.
 
@@ -262,6 +285,10 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 </details>
 
+## Materials for teaching and recording
+
+The [English teaching pack](/posts/2026/08/agent-system/teaching-materials/) contains the full nine-module lecture scripts, presentation slides, demonstration cues, and student exercises. Each short lesson begins with a concrete failure and ends with an artifact students can inspect.
+
 ## A repeatable lesson format
 
 Begin with a mathematical attempt that almost works, or a recorded failure from a real workflow. Ask students to locate the missing distinction or implication before introducing the architecture. Draw the relevant records or dependencies, implement the smallest useful mechanism, and test it on both a valid case and a damaged variant.
@@ -276,7 +303,7 @@ Submit the original mathematical task, your records and diagrams, a reproducible
 
 ### Optional advanced modules
 
-These can follow Module 8 or replace a project session for a specialist audience:
+These can follow Module 9 or replace a project session for a specialist audience:
 
 - [Method recommendation and proof-sketch systems](/posts/2026/08/agent-system/proof-sketch-system/) — develop the full architecture introduced in Module 4.
 - [Birational geometry and spiraling induction](/posts/2026/08/agent-system/birational-geometry-agent/) — apply the contracts to geometric reductions and theorem packages.
@@ -284,7 +311,7 @@ These can follow Module 8 or replace a project session for a specialist audience
 
 ## Use the course modularly
 
-For a **conceptual seminar**, emphasize Modules 1, 2, 4, 5, and 8, with diagrams and written arguments replacing code. For an **implementation workshop**, follow all eight modules and carry the same workbench forward. A **reading group** can assign one module per meeting and compare solutions to its exercise.
+For a **conceptual seminar**, emphasize Modules 1, 2, 4, 5, 6, and 9, with diagrams and written arguments replacing code. For an **implementation workshop**, follow all nine modules and carry the same workbench forward. A **reading group** can assign one module per meeting and compare solutions to its exercise.
 
 These are teaching formats, not different standards of mathematical evidence. In every format, keep the target, assumptions, and remaining obligations visible.
 

@@ -59,3 +59,5 @@ Use the [lab](/posts/2026/08/agent-system/hands-on-lab/) for record mechanics. S
 ---
 
 [Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+
+For a runnable introduction, continue to [Module 6: Lean formalization](/posts/2026/08/agent-system/lean-formalization/).
