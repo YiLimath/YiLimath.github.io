@@ -61,33 +61,34 @@ Lean's official [tactic tutorial](https://lean-lang.org/theorem_proving_in_lean4
 
 ## Two routes to one lifting target
 
-For a line bundle L and effective Cartier divisor D, the restriction sequence gives a connecting map δ. Exactness says that a specified section s lifts precisely when δ(s)=0.
+For a line bundle $L$ and effective Cartier divisor $D$, the restriction sequence gives a connecting map $\delta$. Exactness says that a specified section $s$ lifts precisely when $\delta(s)=0$.
 
 | Route | Premises needed together | Conclusion |
 |---|---|---|
-| Vanishing | Correct restriction sequence; H¹(X,L(-D))=0 | Every section on D lifts |
-| Direct obstruction | Correct restriction sequence; δ(s)=0 | This section s lifts |
+| Vanishing | Correct restriction sequence; $H^1(X,L(-D))=0$ | Every section on $D$ lifts |
+| Direct obstruction | Correct restriction sequence; $\delta(s)=0$ | This section $s$ lifts |
 
-Within each row the premises are joint requirements. Between rows there are alternatives for proving that s lifts. Failure of the vanishing route leaves the direct route available; it does not refute liftability.
+Within each row the premises are joint requirements. Between rows there are alternatives for proving that $s$ lifts. Failure of the vanishing route leaves the direct route available; it does not refute liftability.
 
 For the two-point example on the projective line, direct calculation distinguishes (1,1) from (1,0). A plan that merely says “apply vanishing” has not done that work.
 
+[![Two proof routes and their distinct evidence requirements](/images/agent-system/course-proof-routes.svg)](/images/agent-system/course-proof-routes.svg)
+
+*Solid arrows denote justified inference once all inputs are available. The dashed arrow is a request for research work: it produces a candidate result, not automatic support for the conclusion. Both routes must concern the same target version.*
+
 ## The dependency rule
 
-A conclusion becomes supported when at least one justified argument has all its premises supported or explicitly assumed. If P implies Q and Q implies P, neither P nor Q follows without a starting point. Repeated execution does not add a logical premise.
+A conclusion becomes supported when at least one justified argument has all its premises supported or explicitly assumed. If $P\Rightarrow Q$ and $Q\Rightarrow P$, neither $P$ nor $Q$ follows without a starting point. Repeated execution does not add a logical premise.
 
-For an indexed argument, a finite dependency trace is not a proof of induction. State the base and the well-founded order separately. For example, B₀, A₁, B₁, A₂, B₂ is a valid order if Aₙ uses Bₙ₋₁ and Bₙ uses Aₙ, and each implication is proved.
+For an indexed argument, a finite dependency trace is not a proof of induction. Suppose $B_0$ is established and, for every $n\ge1$, the following implications are proved:
 
-## Decide the next action
+$$B_{n-1}\Rightarrow A_n,\qquad A_n\Rightarrow B_n.$$
 
-Prefer an action that can change the assessment: check a missing positivity assumption, calculate δ(s), or seek a counterexample to a proposed bridge. Record the expected information and a stopping budget. A heuristic ranking is a search decision, not evidence for its chosen conclusion.
+Then the dependencies admit the order
 
-```text
-Plan the lifting task using the two routes above.
-List the joint premises of each route, their current status, and the next
-useful action. Allow three actions. Preserve failed routes and their reasons.
-If a premise is unavailable, do not mark it false without evidence.
-```
+$$B_0,\ A_1,\ B_1,\ A_2,\ B_2,\ldots.$$
+
+The general implications and base case justify induction. Checking a finite list of instances does not replace either obligation.
 
 ## Choose an action that can change the assessment
 

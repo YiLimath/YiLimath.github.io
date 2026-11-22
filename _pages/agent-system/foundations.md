@@ -103,6 +103,10 @@ For T1, the statement records the chosen pair (1,0). An argument records that ev
 
 A source quotation can be evidence about what a paper states without establishing that the theorem applies here. A tool log can establish that a process ran without establishing that its output means what we intended. Evidence must have an interpretation and a scope.
 
+[![Mathematical records and their evidence relationships](/images/agent-system/course-research-records.svg)](/images/agent-system/course-research-records.svg)
+
+*Arrows name relationships between records, not steps that prove a theorem. The review is tied to the exact target and argument versions. A changed section requires checking that relationship again.*
+
 ### Why a single “verified” flag fails
 
 A statement may have two arguments, only one of which has been reviewed. A review may approve a conditional argument. A formal check may concern a mistranslated proposition. A single flag collapses these situations.
