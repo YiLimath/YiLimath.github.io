@@ -1,5 +1,5 @@
 ---
-title: "Evaluate Mathematical Progress and Failure Together"
+title: "Module 9. Evaluate the mathematics and the workflow separately"
 permalink: /posts/2026/08/agent-system/evaluation-monitoring/
 tags:
   - Agent System
@@ -8,34 +8,45 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-Rejecting every claim gives a low false-admission rate and no useful research. Accepting every fluent proof gives apparent productivity until the evidence collapses. Evaluation must measure valid progress and justified rejection together.
+A system that rejects every claim is unhelpful. A system that accepts every plausible argument is unreliable. Evaluation needs valid controls, invalid variants, and explicit expected outcomes prepared before the run.
 
-## Three different evaluation layers
+## A small reference set
 
-Software tests check identifiers, closure, persistence, and evidence policy. Mathematical audits check the actual inference and applicability of sources. Research evaluation asks whether the partial results and directions are useful. Passing one layer does not imply passing the next.
+| Case | Expected mathematical result | Failure exposed |
+|---|---|---|
+| Continuous real-valued f on [0,1] | A maximum exists | Rejecting a valid theorem application |
+| f(x)=x on (0,1) | No maximum | Missing compactness |
+| Two-point section (1,1) | Lifts as constant 1 | Rejecting a valid direct calculation |
+| Two-point section (1,0) | Does not lift | Changing the specified section |
+| Every n has a natural-number bound | True with C=n | Incorrect quantifier interpretation |
+| One natural number bounds all n | False using n=C+1 | Invalid uniformity bridge |
 
-The workbench deliberately includes a false mathematical statement accepted under a supplied review. That passing test documents the software's trust boundary; it must never be counted as successful theorem verification.
+The two-point cases use the trivial bundle on the projective line and two distinct rational points. Keep these hypotheses in the test input. The table gives reference outcomes, not measured agent performance.
 
-## Turn the cases into families
+## Separate the evaluation questions
 
-Vary the chosen section, sheaf, parameter dependence, and induction base. Include valid controls beside missing-hypothesis and circular cases. Keep some variants hidden while tuning prompts or search policies. If the system catches only the exact vocabulary of the example, it has learned a fixture rather than a contract.
+Protocol fidelity asks whether the assistant preserved versions, sources, and assumptions. Mathematical correctness asks whether its actual argument is valid. Research usefulness asks whether the work advances the chosen research objective at acceptable cost. A neat record can fail the second question; a correct elementary answer can still have little research value.
 
-| Measure | Necessary interpretation |
-|---|---|
-| False admission | Invalid arguments admitted, with denominator and review standard |
-| Valid progress | Correctly completed obligations or useful conditional results |
-| Diagnosis quality | Whether the failed inference and missing condition are localized |
-| Reproducibility | Whether another reader can recover inputs, sources, and decisions |
-| Cost | Total resource use, including rejected and duplicate attempts |
+```text
+Investigate this target and preserve its exact statement.
+Return the argument, sources actually used, remaining assumptions, and gaps.
+Do not use the reference answer, which I will keep outside this conversation.
+```
 
-Closure percentage alone can be gamed by splitting easy nodes or omitting hard ones. Audit the decomposition and original target before interpreting the metric.
+Save the full response before giving feedback. Evaluate the original and repaired answers separately. Otherwise an interactive correction can be mistaken for first-attempt success.
 
-## Build and test
+## A fair comparison
 
-Create valid and invalid variants of Cases A, B, and C. Write expected outcomes before running agents. Compare a single worker with a more elaborate workflow under equal budgets, and report both successful repairs and false acceptances.
+Run an ordinary prompt and the structured workspace with comparable source access and effort. Record the visible model settings, date, number of attempts, and all failures. If possible repeat runs; report their variation. Small controlled examples test specific behaviors, not general research competence, and familiar examples may be known to the model.
 
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
+Report invalid arguments accepted out of invalid cases, and valid arguments rejected out of valid cases. Record abstentions separately. Do not fabricate a percentage when the classification is unresolved. Counting completed subtasks can be misleading if the hardest obligation was omitted.
+
+## Research-level assessment
+
+Use the challenging final project to evaluate substantive progress: a reviewed intermediate theorem, a meaningful special case, or a decisive obstruction. A failed proof does not refute its target, and failure to find prior work does not prove novelty.
+
+Submit inputs, outputs, reference reasoning, evaluation decisions, costs, and limitations. State which design change helped which observed failure. Remove mechanisms that added no demonstrated benefit.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/)

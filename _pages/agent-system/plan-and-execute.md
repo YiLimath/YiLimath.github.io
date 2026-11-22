@@ -1,5 +1,5 @@
 ---
-title: "Proof Plans as Obligations and Alternatives"
+title: "Module 2. Plan with joint premises and alternative routes"
 permalink: /posts/2026/08/agent-system/plan-and-execute/
 tags:
   - Agent System
@@ -7,34 +7,42 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-A plan for Case A exposes the exact-sequence setup and two routes: prove sufficient vanishing, or control the obstruction of the chosen section directly. “Apply vanishing and lift” is a method suggestion until its hypotheses and return inference become explicit obligations.
+Planning means deciding which missing mathematical justification to pursue next. A task list alone does not express which results actually imply the target.
 
-## AND within an inference, OR between arguments
+## Two routes to one lifting target
 
-Each argument requires all its premises. A statement may have several alternative arguments. These relationships should be represented separately. Otherwise the scheduler may mistake jointly necessary premises for competing routes or require every alternative proof to succeed.
+For a line bundle L and effective Cartier divisor D, the restriction sequence gives a connecting map δ. Exactness says that a specified section s lifts precisely when δ(s)=0.
 
-[![Alternative arguments and their dependencies](/images/agent-system/research-alternatives.svg)](/images/agent-system/research-alternatives.svg)
+| Route | Premises needed together | Conclusion |
+|---|---|---|
+| Vanishing | Correct restriction sequence; H¹(X,L(-D))=0 | Every section on D lifts |
+| Direct obstruction | Correct restriction sequence; δ(s)=0 | This section s lifts |
 
-*Withdrawal suspends the argument using that premise. Another complete argument can still support the same conclusion.*
+Within each row the premises are joint requirements. Between rows there are alternatives for proving that s lifts. Failure of the vanishing route leaves the direct route available; it does not refute liftability.
 
-## Closure is not a vote
+For the two-point example on the projective line, direct calculation distinguishes (1,1) from (1,0). A plan that merely says “apply vanishing” has not done that work.
 
-The advanced workbench computes a least fixed point. Start with admitted premise-free arguments and explicitly assumed statements. Repeatedly add a conclusion when one reviewed argument has all its premises available. Unsupported cycles never enter the closure by themselves.
+## The dependency rule
 
-The candidate graph may contain a cyclic alternative and an independent valid proof. Rejecting the whole graph would discard useful work. What matters is that the selected justification has grounded support. The simple introductory ledger uses the more conservative policy of rejecting cycles outright; the advanced implementation makes the distinction explicit.
+A conclusion becomes supported when at least one justified argument has all its premises supported or explicitly assumed. If P implies Q and Q implies P, neither P nor Q follows without a starting point. Repeated execution does not add a logical premise.
 
-This finite bookkeeping does not prove an induction scheme. Case C still needs base cases, step arguments, and a well-founded order for the indexed family. A finite simulation verifies only its encoded instances.
+For an indexed argument, a finite dependency trace is not a proof of induction. State the base and the well-founded order separately. For example, B₀, A₁, B₁, A₂, B₂ is a valid order if Aₙ uses Bₙ₋₁ and Bₙ uses Aₙ, and each implication is proved.
 
-## Replanning preserves what was learned
+## Decide the next action
 
-If a sufficient vanishing condition is unavailable, retain the exact-sequence setup and the direct-obstruction route. Do not erase the entire plan or declare lifting impossible. Replanning changes the search frontier; it does not rewrite the target.
+Prefer an action that can change the assessment: check a missing positivity assumption, calculate δ(s), or seek a counterexample to a proposed bridge. Record the expected information and a stopping budget. A heuristic ranking is a search decision, not evidence for its chosen conclusion.
 
-## Build and test
+```text
+Plan the lifting task using the two routes above.
+List the joint premises of each route, their current status, and the next
+useful action. Allow three actions. Preserve failed routes and their reasons.
+If a premise is unavailable, do not mark it false without evidence.
+```
 
-Run the alternative-route test. Then encode Case C through n=3, remove its base case, and inspect closure. Write the general induction argument separately. Explain which part the program checks and which part it assumes.
+## Test the plan
 
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
+Use both (1,1) and (1,0). Then remove the evidence for one route and ask which alternatives remain. Separately test the circular P/Q example. Submit the actual plan, actions, and revised status; compare with the mathematical reference rather than accepting a confident completion label.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/knowledge-retrieval/)

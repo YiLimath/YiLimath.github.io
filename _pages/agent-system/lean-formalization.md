@@ -127,3 +127,5 @@ A useful progression is: read existing formal statements, fill short proofs, reu
 The enduring design principle is to keep **the intended proposition, encoded proposition, proof evidence, and admission decision** distinguishable. Future AI may automate more of their construction. The distinctions remain necessary for evaluating its output.
 
 [Return to the course](/posts/2026/12/Agent-System/)
+
+[Next: recover research state](/posts/2026/08/agent-system/memory-management/)

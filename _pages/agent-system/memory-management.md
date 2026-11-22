@@ -1,5 +1,5 @@
 ---
-title: "Knowledge as Versioned Arguments"
+title: "Module 7. Recover evidence and assumptions, not just a summary"
 permalink: /posts/2026/08/agent-system/memory-management/
 tags:
   - Agent System
@@ -7,30 +7,42 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-A statement can have several arguments. Case A's vanishing route may fail while its direct-obstruction route survives. A single Boolean beside the conclusion cannot represent this situation.
+A checkpoint is useful when another research session can reconstruct what is supported and why. A fluent summary that drops conditional assumptions is a mathematical regression.
 
-## Store support, not just conclusions
+## A withdrawal trace
 
-Persist statements, arguments, reviews, and dependency links separately. Keep withdrawn arguments for audit but exclude them from new support. Recompute usability from surviving arguments rather than declaring all downstream statements false.
+Consider two arguments for target T: argument A uses premise P; argument B uses premise Q. For this protocol exercise, stipulate that both implications are valid. Label that input as stipulated rather than pretending a theorem was proved.
 
-[![Alternative support after withdrawal](/images/agent-system/research-alternatives.svg)](/images/agent-system/research-alternatives.svg)
+| State | Available support | Status of T |
+|---|---|---|
+| P and Q established | A and B | Supported by either route |
+| P withdrawn, Q established | B | Still supported |
+| Both withdrawn | Neither route | Unresolved, not refuted |
+| Q only assumed | B conditional on Q | Conditional on Q |
 
-*An argument loses permission to support a conclusion; the conclusion may retain another justification.*
+This explicit trace is more useful than a generic memory diagram: it specifies the state changes the workflow must reproduce.
 
-A remembered lemma includes its hypotheses and source versions. A remembered failure identifies the exact attempted implication. The non-liftability of (1,0) on the two-point divisor must not be remembered as “no sections upstairs.” Likewise, failure to find a uniform estimate is not evidence that none exists.
+## What the checkpoint contains
 
-## Conditional knowledge is worth retaining
+Record the exact target version, established facts with arguments, assumptions, surviving alternatives, withdrawn evidence and reasons, unresolved obligations, source locations, and the next action. Keep the full proof artifacts available; a checkpoint can link to them rather than compressing their mathematics into a confidence score.
 
-If a result follows from an open assumption P, retain it as conditional on P. The assumption must propagate through downstream arguments. It cannot disappear because the conditional result has been retrieved many times.
+```text
+Write CHECKPOINT.md sufficient to resume without this conversation.
+List each conclusion with its supporting argument and remaining assumptions.
+Preserve withdrawn routes and why they were withdrawn.
+Do not interpret a timeout as a counterexample or a failed search as nonexistence.
+```
 
-The advanced workbench demonstrates this with assumption-labelled closure. It selects one supporting argument for explanation rather than enumerating all minimal support sets. That is an explicit limitation, not a mathematical equivalence between different assumptions.
+Start a fresh conversation with only the saved files and ask it to reconstruct the state before doing more work. Compare the result with the table and original artifacts. If an assumption disappears, record a failed recovery even if the assistant produces an attractive next plan.
 
-## Build and test
+## Research use
 
-Run the conditional-result and alternative-route tests. Withdraw one argument, save, and reload. Confirm that the surviving route and the withdrawal history remain visible. Then change saved statement text: its existing review digest must fail validation.
+Remember that (1,0) fails to lift in the two-point example. Do not compress this into “there are no global sections”: constants provide global sections. Store the failed implication with its objects and scope.
 
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
+## Acceptance
+
+Submit the withdrawal trace, exported checkpoint, fresh-session reconstruction, and a comparison of target, dependencies, and assumptions. File persistence proves that text survived; the comparison tests whether the mathematical state survived interpretation.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/multiple-agent-cooperation/)

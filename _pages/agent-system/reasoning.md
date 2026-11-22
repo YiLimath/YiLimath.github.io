@@ -1,5 +1,5 @@
 ---
-title: "Representation Change and the Return Argument"
+title: "Module 4. Preserve the implication back to the target"
 permalink: /posts/2026/08/agent-system/reasoning/
 tags:
   - Agent System
@@ -8,32 +8,44 @@ classes: agent-system-page
 full_page_reading: true
 ---
 
-Case A changes a geometric question into an obstruction calculation. Exactness supplies the bridge: the chosen section lifts precisely when its connecting class vanishes. The new representation is useful because its relationship to the target is proved.
+A useful reduction replaces a difficult obligation with another one and justifies how its solution returns to the original problem. That return implication deserves as much attention as the construction.
 
-A transformation without such a bridge may solve only a related problem. Passing to a larger domain, special fiber, birational model, or numerical class can lose the information needed by the original conclusion.
+## A reduction whose bridge is exact
 
-## The transformation contract
+In the section-lifting problem, exactness identifies the image of restriction with the kernel of δ. Hence s lifts if and only if δ(s)=0. This is an equivalence for the specified s. The stronger assertion H¹(X,L(-D))=0 is a sufficient condition, not the definition of liftability.
 
-Record the original objects, transformed objects, construction, preserved hypotheses, new assumptions, transformed result, and return implication. These are mathematical obligations, not just fields to fill with confident prose.
+| Item | What must be recorded |
+|---|---|
+| Original target | Lift the specified s |
+| New obligation | Prove δ(s)=0 |
+| Construction | Restriction sequence and connecting map |
+| Return justification | Exactness at the section space on D |
+| Stronger optional route | Vanishing of the entire target cohomology group |
 
-[![A reduction with an explicit return proof](/images/agent-system/research-transfer.svg)](/images/agent-system/research-transfer.svg)
+This table is the architecture of the reduction: every entry names mathematical information that must survive a change of representation.
 
-*If the return implication is open, keep the transformed result as partial progress and the original target unresolved.*
+## A tempting reduction that fails
 
-In Case B, passing to a limit requires a specified topology, suitable compactness or convergence evidence, and an argument that the desired property survives. A bound for each approximant does not automatically supply a uniform bound. In Case C, changing a model without lowering the induction rank is preparation, not induction.
+For every natural number n, choose C=n. This proves that each n has a bound. It does not prove that a single natural number bounds them all. Given any proposed common C, choose n=C+1.
 
-## Search structure is a separate choice
+The failed implication is between “for every n there exists C” and “there exists C for every n”. All individual subproblems can succeed while the original uniform task remains unsolved.
 
-Chains, branching search, and shared dependency graphs organize attempts. None supplies the missing implication. A heuristic may rank transformations, but its score is evidence about search preference, not mathematical validity.
+```text
+Write the original and transformed statements with their quantifiers.
+Classify the relation as equivalence, sufficient condition, necessary condition,
+or unproved implication. Supply the actual return argument.
+Test the bound example by choosing a counterexample after a proposed C.
+Keep the local result even when the return implication fails.
+```
 
-Sometimes the best next step is to change the target explicitly and pursue a useful partial theorem. That is a new branch with a named scope, not a silent repair of the original claim.
+## Transfer to geometric research
 
-## Build and test
+When replacing a variety by a model, record the map and the objects on each space. A property of a pullback need not be a property of a different divisor on that model. When passing to a limit, identify the topology, convergence evidence, and property preserved by the limit.
 
-Write the complete Case A transformation contract. Remove exactness from the evidence and identify the missing bridge. Then write the Case B limit contract and leave uniformity unresolved. Both records should remain useful without being reported as completed proofs.
+## Acceptance
 
-Read with the [three running cases](/posts/2026/08/agent-system/research-cases/). Source provenance and the distinction between established patterns and our proposed specialization are explained in [sources and claims](/posts/2026/08/agent-system/sources-and-claims/).
+Submit one justified reduction and one failed return implication. Identify precisely which result survives the failure. If you weaken the research target to obtain a useful partial theorem, record a new branch rather than claiming completion of the old target.
 
 ---
 
-[Series guide](/posts/2026/08/Agent-System/) · [Running cases](/posts/2026/08/agent-system/research-cases/) · [Laboratory](/posts/2026/08/agent-system/hands-on-lab/)
+[Course roadmap](/posts/2026/12/Agent-System/) · [Direct experiments](/posts/2026/08/agent-system/hands-on-lab/) · [Next module](/posts/2026/08/agent-system/verification-gate/)
