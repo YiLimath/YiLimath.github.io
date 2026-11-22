@@ -1,20 +1,17 @@
 ---
 title: 'Designing Reasoning Systems for Mathematical Research'
-date: 2026-08-01
+date: 2026-12-01
 permalink: /posts/2026/12/Agent-System/
 tags:
   - Agent System
 classes: agent-system-hub
 full_page_reading: true
-redirect_from:
-  - /posts/2026/08/Agent-System/
 ---
 
 How do we build a system that can work on a mathematical problem, explain its progress, and keep track of what remains unproved?
 
 This course develops the answer in **nine modules**. We begin with the mathematical objects the system must represent, then add search, literature, verification, formalization, memory, coordination, and evaluation. Each module combines a design idea, a worked example, and a small implementation task.
 
-**For self-study:** follow the modules in order on your first pass. **For teaching:** use one or two meetings per module, depending on the audience and the time available for laboratories. The modules also work as individual lessons once their prerequisites are covered.
 
 ## Before the first module
 
@@ -39,20 +36,8 @@ This course develops the answer in **nine modules**. We begin with the mathemati
   </a>
 </div>
 
-**Background.** You should be comfortable reading and writing proofs. Basic Python is enough for the implementation exercises. The introductory examples need no algebraic geometry; the section-lifting case and the final birational-geometry project can be taught as advanced options.
+**Background.** No background is needed.
 
-## The rule for including a design idea
-
-**Teach a mechanism because it solves a real problem, and test whether it helps.** Knowing a pattern's name is not a learning outcome. A useful outcome is catching a missing hypothesis, avoiding an invalid theorem application, recovering interrupted work, or finding a better proof route at an acceptable cost.
-
-Before adding a component, answer four questions:
-
-1. What concrete failure does the simpler system have?
-2. What is the smallest change that could address it?
-3. What experiment would show a benefit—and what extra cost does it introduce?
-4. When should we leave it out or remove it?
-
-The core course concerns problems any sustained mathematical workflow can encounter. Multiple workers, elaborate routing, and adaptive policies are **optional mechanisms**, not requirements for a good system. A single-worker capstone is entirely sufficient. Some mathematical specializations in this series are design proposals: students should test them rather than assume their effectiveness.
 
 ## The course at a glance
 
@@ -79,7 +64,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **By the end:** Distinguish a mathematical statement from an argument for it, and make assumptions and unresolved obligations visible.
 
-### Teaching sequence
+### Materials
 
 1. [Start with statements, arguments, and obligations](/posts/2026/08/agent-system/foundations/).
 2. [Turn those distinctions into records](/posts/2026/08/agent-system/structured-output/).
@@ -129,7 +114,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **By the end:** Turn a relevant source into an explicitly justified theorem application.
 
-### Teaching sequence
+### Materials
 
 1. [Extract a theorem and match its hypotheses](/posts/2026/08/agent-system/knowledge-retrieval/).
 2. [Search systematically and preserve rejected matches](/posts/2026/08/agent-system/deep-search/).
@@ -174,7 +159,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **By the end:** Separate critique, evidence kind, conditional scope, and permission to use a result as a premise.
 
-### Teaching sequence
+### Materials
 
 1. [Localize the failed inference](/posts/2026/08/agent-system/reflection/).
 2. [Define an admission policy with explicit evidence types](/posts/2026/08/agent-system/verification-gate/).
@@ -241,7 +226,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **By the end:** Add collaborators only where the division of work has a clear mathematical and operational benefit.
 
-### Teaching sequence
+### Materials
 
 1. [Merge alternative routes without voting on truth](/posts/2026/08/agent-system/parallelization/).
 2. [Assign evidence-producing responsibilities](/posts/2026/08/agent-system/multiple-agent-cooperation/).
@@ -266,7 +251,7 @@ Open a module for its teaching sequence and assignment. Module 1 is expanded to 
 
 **By the end:** Judge the architecture by useful mathematical progress, reproducibility, and its treatment of invalid arguments.
 
-### Teaching sequence
+### Materials
 
 1. [Define completion against the original target](/posts/2026/08/agent-system/goal-monitoring/).
 2. [Build valid and invalid evaluation cases](/posts/2026/08/agent-system/evaluation-monitoring/).

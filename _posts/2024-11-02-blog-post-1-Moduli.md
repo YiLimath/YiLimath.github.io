@@ -128,11 +128,10 @@ In this part, we discuss further aspects of moduli of Abelian varieties and K3 s
 
 
 ---
-## Part L. Geometric Langlands and Mirror Symmetry
+## Part L. Fourier-Mukai Transform
 
 
 1. A Brief Introduction to D-modules *(in preparation)*
 
 2. A Brief Introduction to Fourier–Mukai Transform *(in preparation)*
 
-3. A Brief Introduction to Geometric Langlands *(in preparation)*
