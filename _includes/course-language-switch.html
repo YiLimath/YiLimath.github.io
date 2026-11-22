@@ -1,7 +1,3 @@
 {% if page.permalink == '/posts/2026/12/Agent-System/' %}
   <nav aria-label="Course language"><p><strong>English</strong> · <a href="{{ base_path }}/posts/2026/12/Agent-System-zh/" lang="zh-CN" hreflang="zh-CN">中文版</a></p></nav>
-{% elsif page.permalink contains '/posts/2026/08/agent-system/' %}
-  {% unless page.permalink contains '/teaching-materials/' %}
-    <nav aria-label="Course language"><p><strong>English</strong> · <a href="{{ base_path }}{{ page.permalink | replace: '/agent-system/', '/agent-system-zh/' }}" lang="zh-CN" hreflang="zh-CN">中文版</a></p></nav>
-  {% endunless %}
 {% endif %}

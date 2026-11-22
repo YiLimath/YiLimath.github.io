@@ -1,3 +1,4 @@
+{% unless post.hidden %}
 {% include base_path %}
 
 {% if post.header.teaser %}
@@ -62,3 +63,5 @@
 
   </article>
 </div>
+
+{% endunless %}

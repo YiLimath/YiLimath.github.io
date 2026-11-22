@@ -8,6 +8,10 @@ tags:
 classes: agent-system-hub
 full_page_reading: true
 lang: zh-CN
+hidden: true
+sitemap: false
+search: false
+robots: noindex, follow
 read_time: false
 translation_of: /posts/2026/12/Agent-System/
 ---

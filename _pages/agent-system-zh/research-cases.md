@@ -4,6 +4,10 @@ permalink: /posts/2026/08/agent-system-zh/research-cases/
 classes: agent-system-page
 full_page_reading: true
 lang: zh-CN
+hidden: true
+sitemap: false
+search: false
+robots: noindex, follow
 read_time: false
 translation_revision: 88f5a30
 translation_of: /posts/2026/08/agent-system/research-cases/
