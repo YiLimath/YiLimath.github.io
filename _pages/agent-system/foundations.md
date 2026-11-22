@@ -29,7 +29,7 @@ Write a mathematical judgment schematically as
 
 $$\Gamma\vdash P.$$
 
-Here P is the proposition under consideration and Γ contains the objects, definitions, and assumptions available to the argument. In this chapter the notation describes intended mathematical support; writing it in a Markdown file does not invoke a proof checker.
+Here $P$ is the proposition under consideration and $\Gamma$ contains the objects, definitions, and assumptions available to the argument. In this chapter the notation describes intended mathematical support; writing it in a Markdown file does not invoke a proof checker.
 
 For example, Γ might specify a real-valued continuous function f on [0,1]. The proposition P says that f attains a maximum. If the domain changes to (0,1), the context changes, and the previous theorem application must be reconsidered. The function f(x)=x supplies a counterexample to the corresponding general claim on the open interval.
 
@@ -63,7 +63,7 @@ over a field k. Its image is the diagonal. The vector (a,b) has a preimage if an
 
 Now interpret the map geometrically. Let X be the projective line over k, let L be its trivial line bundle, and let D consist of two distinct k-rational points p and q. Sections of L on D are pairs of values. Global sections of L on X are constants.
 
-Here is a direct justification of the last assertion. Cover the projective line by its two standard affine charts with coordinates t and u=1/t. A regular function is represented by polynomials f(t) and g(u) that agree on the overlap. In the Laurent polynomial ring, f(t)=g(t⁻¹). The left side has only nonnegative powers and the right side only nonpositive powers. Their common expression is therefore constant. Restricting that constant to p and q gives precisely r.
+Here is a direct justification of the last assertion. Cover the projective line by its two standard affine charts with coordinates $t$ and $u=1/t$. A regular function is represented by polynomials $f(t)$ and $g(u)$ that agree on the overlap. In the Laurent polynomial ring, $f(t)=g(t^{-1})$. The left side has only nonnegative powers and the right side only nonpositive powers. Their common expression is therefore constant. Restricting that constant to $p$ and $q$ gives precisely $r$.
 
 We can now distinguish three tasks:
 
@@ -148,7 +148,7 @@ For an effective Cartier divisor D and a line bundle L, the restriction sequence
 
 $$0\longrightarrow L(-D)\longrightarrow L\longrightarrow L|_D\longrightarrow0.$$
 
-The associated cohomology sequence identifies the liftable sections with the kernel of the connecting map δ. Thus a specified s lifts exactly when δ(s)=0. Vanishing of H¹(X,L(-D)) is sufficient to make every obstruction zero, but it is stronger than the vanishing of the obstruction of one section.
+The associated cohomology sequence identifies the liftable sections with the kernel of the connecting map $\delta$. Thus a specified $s$ lifts exactly when $\delta(s)=0$. Vanishing of $H^1(X,L(-D))$ is sufficient to make every obstruction zero, but it is stronger than the vanishing of the obstruction of one section.
 
 In a research record, preserve the distinction between these obligations:
 
