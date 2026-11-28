@@ -51,6 +51,14 @@ After a revision, identify dependent conclusions that need reconsideration.
 
 Inspect the files. An instruction file is a behavioral specification, not an enforcement mechanism. A model can overlook a rule. The following experiments determine whether this particular run follows it.
 
+### Build a sandbox for the proof attempt
+
+Make a disposable copy of the course project. Put the exact target version and authorized source packet in a read-only input directory. Give the worker a writable scratch directory and a place to submit named proof attempts. Keep the review record and accepted claims under the control of a separate admission step. For the first run, you can act as that step yourself. If the runtime supports filesystem restrictions, enforce the worker's write scope there and keep the accepted record outside it. With a shared writable folder, you can still rehearse the protocol and inspect what each role changed.
+
+Start with the reverse negativity inequality. Give the worker the current hypotheses, the definition of $D$, and the relevant statement of the negativity lemma. Send a fresh reviewer the exact submission, its cited premises, and its target version. Keep tentative sign calculations in scratch work and send the next worker only the result that was admitted, its proof, and any open obligations it needs. Danus illustrates how separate memory and tool permissions support this handoff. [Stanford MATH 289, Agents, slides 21 and 30](https://web.stanford.edu/class/math289/agents.pdf#page=87).
+
+Test the boundary in the disposable copy. Confirm the worker can save a scratch note. Where the runtime enforces the restriction, try writing a dummy file in the protected area and record whether the write is denied. Then remove nefness of $K_X$ from the target and deliver the old approval again. Check that the admission step preserves the old proof under its original hypotheses and leaves the reverse inequality open for the revised target.
+
 ## 3. Run one complete research cycle
 
 ```text

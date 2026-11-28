@@ -34,6 +34,11 @@ Local calculations and consequences are written out and labeled as course exposi
 
 Gulli's, Dibia's, and Lakshmanan–Hapke's books remain optional engineering background. Merely naming these books does not justify a particular mathematical claim or a performance forecast. Claims that depend on a book passage need an edition and inspected location before being treated as sourced.
 
+## Stanford MATH 289 lecture examples
+
+- **Module 6:** Otis's lecture supplies the Erdős #480 example of a mismatch between the intended and encoded problem and a paper-to-Lean blueprint. Fred's lecture follows a proof of injectivity of a composition through elaboration and kernel checking. [Otis's Lean introduction](https://web.stanford.edu/class/math289/lean_otis.pdf) · [Fred's Lean kernel lecture](https://web.stanford.edu/class/math289/lean_fred.pdf).
+- **Modules 7–8:** Shurui Liu's lecture illustrates fact-graph memory with a Danus investigation and describes how the harness assigns tools and context to different roles. His survey covers Rethlas, Danus, Pharos, and OSVerify. These sources document the reported designs. The surface exercises use them to formulate tests of recovery and coordination. [Agents lecture](https://web.stanford.edu/class/math289/agents.pdf) · [Notes on Generative AI for Mathematical Research](https://arxiv.org/abs/2611.29811).
+
 ## Reported systems are a separate evidence category
 
 [Danus v2](https://arxiv.org/abs/2607.06447v2), abstract, reports fact-graph memory, planning, parallel workers, and claim checking before admission. [Rethlas–Archon v2](https://arxiv.org/abs/2604.03789v2), abstract, reports informal reasoning linked to Lean formalization. These high-level descriptions were checked against the versioned abstracts in this pass. Their experiments and artifacts were not independently reproduced here. Quantitative comparisons or claims of superiority require inspection of the relevant evaluation and matched runs.

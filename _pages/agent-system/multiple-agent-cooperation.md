@@ -51,6 +51,8 @@ But fully developing two routes costs more. Use that extra work when it addresse
 
 [Danus v2](https://arxiv.org/abs/2607.06447v2) reports planning, parallel workers, and fact-graph memory. That description motivates a design question; it does not establish that our particular split outperforms the sequential baseline. The surface mathematics is supported by the sources in the central workshop.
 
+Danus makes the handoff enforceable through tool permissions. Workers can submit a claim, the coordinator assigns work and can read accepted claims, and a stateless verifier examines submissions before admission. Model that division of authority in the workshop. Give the reviewer the signed calculation, exact lemma, and hypotheses in a fresh session. Give the coordinator the verdict and its scope. If the coordinator sends the descent worker a summary saying both signs are proved, ask which accepted claim supplies the reverse inequality. [Stanford MATH 289, Agents, slide 30](https://web.stanford.edu/class/math289/agents.pdf#page=116) · [Danus paper](https://arxiv.org/abs/2607.06447v2).
+
 ## 6. Compare total effort and elapsed time
 
 Give both configurations identical authorized sources and comparable total allowances. Parallel work can reduce elapsed time while increasing tokens, source lookups, and reconciliation work. Report those dimensions separately rather than collapsing them into “more efficient.”

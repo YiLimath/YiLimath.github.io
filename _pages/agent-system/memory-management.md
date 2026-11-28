@@ -21,6 +21,8 @@ Keep the two signed applications separately. Over X, nefness of $K_Y$ supports $
 
 A summary saying “negativity proves uniqueness” loses the exact dependencies. It cannot answer what happens when only one nefness assumption changes. The complete proof is in the [central workshop](/posts/2026/08/agent-system/birational-proof-workshop/); the saved state should point to the actual argument, not replace it with confidence.
 
+Shurui Liu illustrates three kinds of memory with a Danus fact graph from a matroid tangent-class investigation. A worker keeps tentative calculations in its scratch work. Shared project notes record plans, leads, and dead ends. The fact graph holds claims admitted after independent language-model review, together with their arguments and dependencies. In the surface exercise, a tentative sign computation belongs in scratch work, a reminder to attempt the symmetric comparison belongs in the project notes, and the justified inequality is a candidate for the fact graph, with the nefness hypothesis it uses. [Stanford MATH 289, Agents, slide 21](https://web.stanford.edu/class/math289/agents.pdf#page=87) · [Danus paper](https://arxiv.org/abs/2607.06447v2).
+
 ## 2. Withdraw one hypothesis selectively
 
 Remove nefness of $K_X$, keeping the other assumptions. Recompute support by the inferences actually used.
@@ -58,6 +60,8 @@ Next choice: restore a hypothesis or formulate a different conclusion.
 ```
 
 This is a mathematical revision, not a request to delete the earlier theorem. The original two-nef statement and proof remain valid under their original assumptions.
+
+Liu's context lecture distinguishes keeping the current task focused from preserving enough information to resume it. Use the checkpoint as a compact view of the proof state. When handing off the reverse inequality to a fresh session, include the exact definition of $D$, the current nefness assumptions, and the relevant source passage. Keep earlier tool output and failed attempts accessible by reference. When an assumption changes, regenerate the checkpoint from the revised proof state. [Stanford MATH 289, Agents, slide 25](https://web.stanford.edu/class/math289/agents.pdf#page=97).
 
 ## 5. Test recovery before trusting it
 

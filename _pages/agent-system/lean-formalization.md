@@ -119,6 +119,8 @@ lake env lean fixtures/ExtraAxiom.lean
 
 The first file supplies `hP : P` where `Q` is required. The second uses `sorry`. The third declares the desired bound as an axiom and then uses it. Merely checking the process exit code would miss both latter cases.
 
+The elaborator turns the source and tactic instructions into an explicit proposition and proof term. The kernel then checks that the term has the proposition as its type. In Fred's example, from $g(f(x))=g(f(y))$, injectivity of $g$ supplies the equality $f(x)=f(y)$ that injectivity of $f$ requires. Applying injectivity of $f$ directly would supply a term of the wrong type. This is the same kind of check exposed by the broken fixture. [Stanford MATH 289, Lean kernel lecture, pp. 9 and 18–26](https://web.stanford.edu/class/math289/lean_fred.pdf#page=9).
+
 Lean provides `#print axioms theoremName` to expose a declaration's axiom dependencies. Our completed elementary examples need none. This does not justify a universal “reject every axiom” policy: other developments deliberately use standard foundations such as choice. State the allowed foundations for the project and audit unexpected additions. See the official [axiom reference](https://lean-lang.org/doc/reference/latest/Axioms/).
 
 An operational record should bind the original statement, formal declaration, exact source and dependency versions, validation output, and reviewer decision. If any of those inputs change, reconsider the admission decision. A label such as `formal-checked` without this evidence is just text.
@@ -130,6 +132,8 @@ An operational record should bind the original statement, formal declaration, ex
 Two different inputs meet at admission. One is evidence that the formal declaration was checked under the chosen environment and dependency policy. The other is a semantic comparison showing that the declaration says what the research task intended. A successful checker run cannot supply the second comparison by itself.
 
 Suppose an agent formalizes the pointwise statement when you asked for a uniform bound. A correct proof of the first statement still misses your target. Compare the intended and encoded statements before accepting the result: domains, quantifier order, assumptions, definitions, and conclusion all matter.
+
+Otis's example from Erdős problem #480 shows how small the mismatch can be. An early formalization required $m\ne 0$, leaving $n=0$ available where the intended statement required $n\ne 0$. For $n=0$, the two sequence terms coincide and Lean's division by zero makes the right-hand side zero. The inequality holds for every positive $m$, so the encoded infinitude claim has an easy proof. As a specification test, ask which degenerate inputs the declaration admits and compute what the conclusion says on them. [Stanford MATH 289, Lean introduction, pp. 27–28](https://web.stanford.edu/class/math289/lean_otis.pdf#page=27).
 
 Also distinguish these hand-inspected teaching files from arbitrary generated source. Executing generated Lean code and trusting its displayed messages is not a secure validation service. A production system needs isolated execution, controlled dependencies, and validation appropriate to its threat model. The official [proof-validation guide](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains stronger checking procedures and their trust boundaries. Its current tooling may differ from this pinned teaching project.
 
@@ -195,6 +199,8 @@ Choose a consequential, sharply stated bridge whose prerequisites can be represe
 For larger developments, [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) teaches mathematical use of Lean and mathlib. Begin with a small lemma whose definitions and prerequisites already exist in the library. Pin the project toolchain and dependency revision together. Library availability and translation effort are part of project selection.
 
 A useful progression is: read existing formal statements, fill short proofs, reuse library theorems with the right hypotheses, and then formalize one fragile bridge in a research argument. An advanced geometry theorem may require substantial missing infrastructure. A formalized local lemma is valuable partial progress, but does not certify an entire informal manuscript.
+
+For a paper-scale project, Otis's liquid-drop example starts with a Lean statement of the target and a blueprint of precise intermediate lemmas. Agents work on the blueprint, and a comparator checks that the resulting formal theorem matches the separately specified formal target. The link from the paper to that target still calls for a mathematical comparison. In our surface project, the analogous blueprint would keep the two geometric negativity applications, the coefficientwise comparison, and descent as separate obligations. A checked coefficient lemma then closes exactly one of them. [Stanford MATH 289, Lean introduction, pp. 33–39](https://web.stanford.edu/class/math289/lean_otis.pdf#page=33).
 
 The enduring design principle is to keep **the intended proposition, encoded proposition, proof evidence, and admission decision** distinguishable. Future AI may automate more of their construction. The distinctions remain necessary for evaluating its output.
 
